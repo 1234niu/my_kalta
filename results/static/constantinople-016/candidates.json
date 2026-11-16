@@ -1,0 +1,25 @@
+{
+  "id": "constantinople-016",
+  "fingerprint": "b1436fe2d112b00099c5d1dcbc2a055a00f75379b9fec715c57196af12f14de6",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "51bf45a89751196f24c72878d568c50c307e6cc8",
+  "candidates": [
+    "org.apache.commons.net.imap.IMAPClient.list(java.lang.String,java.lang.String)",
+    "org.apache.commons.net.imap.IMAPClient.lsub(java.lang.String,java.lang.String)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.net.imap.IMAP.quoteString(java.lang.String)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.net.imap.IMAPClient.list(java.lang.String,java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.net.imap.IMAPClient.lsub(java.lang.String,java.lang.String)": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

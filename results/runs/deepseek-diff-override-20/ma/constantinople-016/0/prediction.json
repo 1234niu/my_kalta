@@ -1,0 +1,13 @@
+{
+  "id": "constantinople-016",
+  "variant": "ma",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 0,
+  "predictions": [
+    "org.apache.commons.net.imap.IMAPClient.list(java.lang.String,java.lang.String)",
+    "org.apache.commons.net.imap.IMAPClient.lsub(java.lang.String,java.lang.String)"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "2eb2c79217d226125d1b746598ad14e34c08807a212dc5b64af66c1e800ddcc3",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

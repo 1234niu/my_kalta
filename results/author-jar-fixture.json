@@ -1,0 +1,41 @@
+{
+  "methods": {
+    "p.A.caller()": [
+      "IS_CALLED_BY"
+    ],
+    "p.A.helper()": [
+      "CALLS"
+    ]
+  },
+  "fields": {
+    "p.A.A()": [
+      "WRITE"
+    ],
+    "p.A.reader()": [
+      "READ"
+    ],
+    "p.A.writer()": [
+      "WRITE"
+    ]
+  },
+  "types": {
+    "p.B": [
+      "EXTENDS"
+    ],
+    "p.Child": [
+      "IS_EXTENDED_BY"
+    ]
+  },
+  "constructor": {
+    "p.Child.Child()": [
+      "IS_CALLED_BY"
+    ],
+    "p.A.factory()": [
+      "IS_CALLED_BY"
+    ],
+    "p.B.B()": [
+      "CALLS"
+    ]
+  },
+  "absent": {}
+}

@@ -1,0 +1,18 @@
+{
+  "sp": {
+    "calls": 9,
+    "seconds_sum": 10.278881540999999,
+    "tokens": 8079,
+    "reported_models": [
+      "deepseek-v4.1-flash-1017"
+    ]
+  },
+  "ma": {
+    "calls": 27,
+    "seconds_sum": 134.194067458,
+    "tokens": 51388,
+    "reported_models": [
+      "deepseek-v4.1-flash-1017"
+    ]
+  }
+}

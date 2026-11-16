@@ -1,0 +1,13 @@
+{
+  "id": "constantinople-012",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 0,
+  "predictions": [
+    "org.apache.ivy.util.XMLHelper.parseToDom(org.xml.sax.InputSource,org.xml.sax.EntityResolver)",
+    "org.apache.ivy.util.XMLHelper.toSystemId(java.net.URL)"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "ba94a22e3f418be17edc9b8b28cbc752c1d4ae62ecb5712ebc2b59ecf1f20cc7",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

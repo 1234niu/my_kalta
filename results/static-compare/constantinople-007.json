@@ -1,0 +1,468 @@
+{
+  "id": "constantinople-007",
+  "graph_edges": 3838,
+  "seeds": {
+    "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.makeObject()": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.dbcp2.ConnectionFactory.createConnection()",
+      "org.apache.commons.dbcp2.DelegatingConnection.setCacheState(boolean)",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.getCacheState()",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.getConnectionFactory()",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.getMaxOpenPreparedStatements()",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.getPool()",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.getPoolStatements()",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.initializeConnection(java.sql.Connection)",
+      "org.apache.commons.dbcp2.PoolingConnection.PoolingConnection(java.sql.Connection)",
+      "org.apache.commons.dbcp2.PoolingConnection.setStatementPool(org.apache.commons.pool2.KeyedObjectPool)"
+    ],
+    "fields": [
+      "org.apache.commons.dbcp2.ConnectionFactory.createConnection()",
+      "org.apache.commons.dbcp2.DelegatingConnection.setCacheState(boolean)",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.getCacheState()",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.getConnectionFactory()",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.getMaxOpenPreparedStatements()",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.getPool()",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.getPoolStatements()",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.initializeConnection(java.sql.Connection)",
+      "org.apache.commons.dbcp2.PoolingConnection.PoolingConnection(java.sql.Connection)",
+      "org.apache.commons.dbcp2.PoolingConnection.setStatementPool(org.apache.commons.pool2.KeyedObjectPool)",
+      "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.PoolableManagedConnectionFactory(org.apache.commons.dbcp2.managed.XAConnectionFactory,javax.management.ObjectName)",
+      "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.transactionRegistry"
+    ],
+    "multihop": [
+      "org.apache.commons.dbcp2.ConnectionFactory.createConnection()",
+      "org.apache.commons.dbcp2.DelegatingConnection.setCacheState(boolean)",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.PoolableConnectionFactory(org.apache.commons.dbcp2.ConnectionFactory,javax.management.ObjectName)",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory._cacheState",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory._connFactory",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory._connectionInitSqls",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory._pool",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.getCacheState()",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.getConnectionFactory()",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.getMaxOpenPreparedStatements()",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.getPool()",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.getPoolStatements()",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.initializeConnection(java.sql.Connection)",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.maxOpenPreparedStatements",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.poolStatements",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.setCacheState(boolean)",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.setConnectionInitSql(java.util.Collection)",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.setMaxOpenPrepatedStatements(int)",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.setPool(org.apache.commons.pool2.ObjectPool)",
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.setPoolStatements(boolean)",
+      "org.apache.commons.dbcp2.PoolingConnection.PoolingConnection(java.sql.Connection)",
+      "org.apache.commons.dbcp2.PoolingConnection.setStatementPool(org.apache.commons.pool2.KeyedObjectPool)",
+      "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.PoolableManagedConnectionFactory(org.apache.commons.dbcp2.managed.XAConnectionFactory,javax.management.ObjectName)",
+      "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.transactionRegistry"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.transactionRegistry": {
+        "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.transactionRegistry": [
+          {
+            "from": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.makeObject()",
+            "to": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.transactionRegistry",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/dbcp2/managed/PoolableManagedConnectionFactory.java",
+            "line": 84
+          }
+        ]
+      },
+      "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.PoolableManagedConnectionFactory(org.apache.commons.dbcp2.managed.XAConnectionFactory,javax.management.ObjectName)": {
+        "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.transactionRegistry": [
+          {
+            "from": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.makeObject()",
+            "to": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.transactionRegistry",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/dbcp2/managed/PoolableManagedConnectionFactory.java",
+            "line": 84
+          },
+          {
+            "from": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.PoolableManagedConnectionFactory(org.apache.commons.dbcp2.managed.XAConnectionFactory,javax.management.ObjectName)",
+            "to": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.transactionRegistry",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/dbcp2/managed/PoolableManagedConnectionFactory.java",
+            "line": 53
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.transactionRegistry": {
+        "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.transactionRegistry": [
+          {
+            "from": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.makeObject()",
+            "to": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.transactionRegistry",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/dbcp2/managed/PoolableManagedConnectionFactory.java",
+            "line": 84
+          }
+        ]
+      },
+      "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.PoolableManagedConnectionFactory(org.apache.commons.dbcp2.managed.XAConnectionFactory,javax.management.ObjectName)": {
+        "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.transactionRegistry": [
+          {
+            "from": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.makeObject()",
+            "to": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.transactionRegistry",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/dbcp2/managed/PoolableManagedConnectionFactory.java",
+            "line": 84
+          },
+          {
+            "from": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.PoolableManagedConnectionFactory(org.apache.commons.dbcp2.managed.XAConnectionFactory,javax.management.ObjectName)",
+            "to": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.transactionRegistry",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/dbcp2/managed/PoolableManagedConnectionFactory.java",
+            "line": 53
+          }
+        ],
+        "org.apache.commons.dbcp2.PoolableConnectionFactory._connFactory": [
+          {
+            "from": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.makeObject()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory.getConnectionFactory()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/dbcp2/managed/PoolableManagedConnectionFactory.java",
+            "line": 65
+          },
+          {
+            "from": "org.apache.commons.dbcp2.PoolableConnectionFactory.getConnectionFactory()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory._connFactory",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/dbcp2/PoolableConnectionFactory.java",
+            "line": 431
+          },
+          {
+            "from": "org.apache.commons.dbcp2.PoolableConnectionFactory.PoolableConnectionFactory(org.apache.commons.dbcp2.ConnectionFactory,javax.management.ObjectName)",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory._connFactory",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/dbcp2/PoolableConnectionFactory.java",
+            "line": 62
+          },
+          {
+            "from": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.PoolableManagedConnectionFactory(org.apache.commons.dbcp2.managed.XAConnectionFactory,javax.management.ObjectName)",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory.PoolableConnectionFactory(org.apache.commons.dbcp2.ConnectionFactory,javax.management.ObjectName)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/dbcp2/managed/PoolableManagedConnectionFactory.java",
+            "line": 52
+          }
+        ]
+      },
+      "org.apache.commons.dbcp2.PoolableConnectionFactory._connFactory": {
+        "org.apache.commons.dbcp2.PoolableConnectionFactory._connFactory": [
+          {
+            "from": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.makeObject()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory.getConnectionFactory()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/dbcp2/managed/PoolableManagedConnectionFactory.java",
+            "line": 65
+          },
+          {
+            "from": "org.apache.commons.dbcp2.PoolableConnectionFactory.getConnectionFactory()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory._connFactory",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/dbcp2/PoolableConnectionFactory.java",
+            "line": 431
+          }
+        ]
+      },
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.PoolableConnectionFactory(org.apache.commons.dbcp2.ConnectionFactory,javax.management.ObjectName)": {
+        "org.apache.commons.dbcp2.PoolableConnectionFactory._connFactory": [
+          {
+            "from": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.makeObject()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory.getConnectionFactory()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/dbcp2/managed/PoolableManagedConnectionFactory.java",
+            "line": 65
+          },
+          {
+            "from": "org.apache.commons.dbcp2.PoolableConnectionFactory.getConnectionFactory()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory._connFactory",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/dbcp2/PoolableConnectionFactory.java",
+            "line": 431
+          },
+          {
+            "from": "org.apache.commons.dbcp2.PoolableConnectionFactory.PoolableConnectionFactory(org.apache.commons.dbcp2.ConnectionFactory,javax.management.ObjectName)",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory._connFactory",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/dbcp2/PoolableConnectionFactory.java",
+            "line": 62
+          }
+        ]
+      },
+      "org.apache.commons.dbcp2.PoolableConnectionFactory._connectionInitSqls": {
+        "org.apache.commons.dbcp2.PoolableConnectionFactory._connectionInitSqls": [
+          {
+            "from": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.makeObject()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory.initializeConnection(java.sql.Connection)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/dbcp2/managed/PoolableManagedConnectionFactory.java",
+            "line": 69
+          },
+          {
+            "from": "org.apache.commons.dbcp2.PoolableConnectionFactory.initializeConnection(java.sql.Connection)",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory._connectionInitSqls",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/dbcp2/PoolableConnectionFactory.java",
+            "line": 312
+          }
+        ]
+      },
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.setConnectionInitSql(java.util.Collection)": {
+        "org.apache.commons.dbcp2.PoolableConnectionFactory._connectionInitSqls": [
+          {
+            "from": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.makeObject()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory.initializeConnection(java.sql.Connection)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/dbcp2/managed/PoolableManagedConnectionFactory.java",
+            "line": 69
+          },
+          {
+            "from": "org.apache.commons.dbcp2.PoolableConnectionFactory.initializeConnection(java.sql.Connection)",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory._connectionInitSqls",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/dbcp2/PoolableConnectionFactory.java",
+            "line": 312
+          },
+          {
+            "from": "org.apache.commons.dbcp2.PoolableConnectionFactory.setConnectionInitSql(java.util.Collection)",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory._connectionInitSqls",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/dbcp2/PoolableConnectionFactory.java",
+            "line": 95
+          }
+        ]
+      },
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.poolStatements": {
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.poolStatements": [
+          {
+            "from": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.makeObject()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory.getPoolStatements()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/dbcp2/managed/PoolableManagedConnectionFactory.java",
+            "line": 70
+          },
+          {
+            "from": "org.apache.commons.dbcp2.PoolableConnectionFactory.getPoolStatements()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory.poolStatements",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/dbcp2/PoolableConnectionFactory.java",
+            "line": 435
+          }
+        ]
+      },
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.setPoolStatements(boolean)": {
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.poolStatements": [
+          {
+            "from": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.makeObject()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory.getPoolStatements()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/dbcp2/managed/PoolableManagedConnectionFactory.java",
+            "line": 70
+          },
+          {
+            "from": "org.apache.commons.dbcp2.PoolableConnectionFactory.getPoolStatements()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory.poolStatements",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/dbcp2/PoolableConnectionFactory.java",
+            "line": 435
+          },
+          {
+            "from": "org.apache.commons.dbcp2.PoolableConnectionFactory.setPoolStatements(boolean)",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory.poolStatements",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/dbcp2/PoolableConnectionFactory.java",
+            "line": 158
+          }
+        ]
+      },
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.maxOpenPreparedStatements": {
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.maxOpenPreparedStatements": [
+          {
+            "from": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.makeObject()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory.getMaxOpenPreparedStatements()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/dbcp2/managed/PoolableManagedConnectionFactory.java",
+            "line": 77
+          },
+          {
+            "from": "org.apache.commons.dbcp2.PoolableConnectionFactory.getMaxOpenPreparedStatements()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory.maxOpenPreparedStatements",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/dbcp2/PoolableConnectionFactory.java",
+            "line": 439
+          }
+        ]
+      },
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.setMaxOpenPrepatedStatements(int)": {
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.maxOpenPreparedStatements": [
+          {
+            "from": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.makeObject()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory.getMaxOpenPreparedStatements()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/dbcp2/managed/PoolableManagedConnectionFactory.java",
+            "line": 77
+          },
+          {
+            "from": "org.apache.commons.dbcp2.PoolableConnectionFactory.getMaxOpenPreparedStatements()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory.maxOpenPreparedStatements",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/dbcp2/PoolableConnectionFactory.java",
+            "line": 439
+          },
+          {
+            "from": "org.apache.commons.dbcp2.PoolableConnectionFactory.setMaxOpenPrepatedStatements(int)",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory.maxOpenPreparedStatements",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/dbcp2/PoolableConnectionFactory.java",
+            "line": 162
+          }
+        ]
+      },
+      "org.apache.commons.dbcp2.PoolableConnectionFactory._cacheState": {
+        "org.apache.commons.dbcp2.PoolableConnectionFactory._cacheState": [
+          {
+            "from": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.makeObject()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory.getCacheState()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/dbcp2/managed/PoolableManagedConnectionFactory.java",
+            "line": 81
+          },
+          {
+            "from": "org.apache.commons.dbcp2.PoolableConnectionFactory.getCacheState()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory._cacheState",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/dbcp2/PoolableConnectionFactory.java",
+            "line": 443
+          }
+        ]
+      },
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.setCacheState(boolean)": {
+        "org.apache.commons.dbcp2.PoolableConnectionFactory._cacheState": [
+          {
+            "from": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.makeObject()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory.getCacheState()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/dbcp2/managed/PoolableManagedConnectionFactory.java",
+            "line": 81
+          },
+          {
+            "from": "org.apache.commons.dbcp2.PoolableConnectionFactory.getCacheState()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory._cacheState",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/dbcp2/PoolableConnectionFactory.java",
+            "line": 443
+          },
+          {
+            "from": "org.apache.commons.dbcp2.PoolableConnectionFactory.setCacheState(boolean)",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory._cacheState",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/dbcp2/PoolableConnectionFactory.java",
+            "line": 154
+          }
+        ]
+      },
+      "org.apache.commons.dbcp2.PoolableConnectionFactory._pool": {
+        "org.apache.commons.dbcp2.PoolableConnectionFactory._pool": [
+          {
+            "from": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.makeObject()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory.getPool()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/dbcp2/managed/PoolableManagedConnectionFactory.java",
+            "line": 84
+          },
+          {
+            "from": "org.apache.commons.dbcp2.PoolableConnectionFactory.getPool()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory._pool",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/dbcp2/PoolableConnectionFactory.java",
+            "line": 118
+          }
+        ]
+      },
+      "org.apache.commons.dbcp2.PoolableConnectionFactory.setPool(org.apache.commons.pool2.ObjectPool)": {
+        "org.apache.commons.dbcp2.PoolableConnectionFactory._pool": [
+          {
+            "from": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.makeObject()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory.getPool()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/dbcp2/managed/PoolableManagedConnectionFactory.java",
+            "line": 84
+          },
+          {
+            "from": "org.apache.commons.dbcp2.PoolableConnectionFactory.getPool()",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory._pool",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/dbcp2/PoolableConnectionFactory.java",
+            "line": 118
+          },
+          {
+            "from": "org.apache.commons.dbcp2.PoolableConnectionFactory.setPool(org.apache.commons.pool2.ObjectPool)",
+            "to": "org.apache.commons.dbcp2.PoolableConnectionFactory._pool",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/dbcp2/PoolableConnectionFactory.java",
+            "line": 110
+          }
+        ]
+      }
+    }
+  },
+  "indexed_targets": [
+    "org.apache.commons.dbcp2.BasicDataSource.createConnectionPool(org.apache.commons.dbcp2.PoolableConnectionFactory)",
+    "org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject()"
+  ],
+  "unindexed_targets": [
+    "org.apache.commons.dbcp2.PoolableConnectionFactory.getConnectionIndex()",
+    "org.apache.commons.dbcp2.PoolableConnectionFactory.getDataSourceJmxName()"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 10,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.dbcp2.BasicDataSource.createConnectionPool(org.apache.commons.dbcp2.PoolableConnectionFactory)",
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.getConnectionIndex()",
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.getDataSourceJmxName()",
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.dbcp2.BasicDataSource.createConnectionPool(org.apache.commons.dbcp2.PoolableConnectionFactory)",
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 12,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.dbcp2.BasicDataSource.createConnectionPool(org.apache.commons.dbcp2.PoolableConnectionFactory)",
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.getConnectionIndex()",
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.getDataSourceJmxName()",
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.dbcp2.BasicDataSource.createConnectionPool(org.apache.commons.dbcp2.PoolableConnectionFactory)",
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "multihop": {
+      "candidate_count": 24,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.dbcp2.BasicDataSource.createConnectionPool(org.apache.commons.dbcp2.PoolableConnectionFactory)",
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.getConnectionIndex()",
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.getDataSourceJmxName()",
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.dbcp2.BasicDataSource.createConnectionPool(org.apache.commons.dbcp2.PoolableConnectionFactory)",
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject()"
+      ],
+      "indexed_recall": 0.0
+    }
+  }
+}

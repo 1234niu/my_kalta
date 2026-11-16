@@ -1,0 +1,48 @@
+{
+  "request_sha256": "9c9e0c405cb2c61279f6b24615ae2887aacbe5e78537cb6291d2968c567f7139",
+  "request": {
+    "model": "deepseek-v4.1-flash-1017",
+    "temperature": 0,
+    "messages": [
+      {
+        "role": "user",
+        "content": "# System Information\nYou are an expert in Java and in analyzing the impact of source code changes on other code entities in a project's production code.\n\n# General Information\nYou receive information about a set of changes, called seed changes, that were made to fix a bug reported in Jira.\nYou also receive the Jira bug report title and description and an initial impact set consisting of the fully qualified names of code entities that are statically related to the seed changes.\n\n# Task\nYour task is to refine the initial impact set.\nA code entity is part of the impact set if it requires modification or, if it does not already exist, must be created as a consequence of the seed changes.\nFirst, remove code entities unless the provided information indicates that they must be modified.\nSecond, add code entities that must be modified or created according to the provided evidence.\n\nYour goal is to report a final impact set that consists of the fully qualified names of code entities that must be modified or created because of the seed changes.\n\n# Inputs\n- Jira bug report title: Disable JMX for Statement Pool\n- Jira bug report description: I'm using the PoolableConnectionFactory and don't care about JMX, so I don't set the dataSourceJmxName, but I want to use a pool for my PreparedStatements. The makeObject() method initializes this pool automatically (lines 224-243) but seems to forget to disable JMX completely if I don't want it, i.e. GenericKeyedObjectPoolConfig.setJmxEnabled(...) is never called and always has the default value (=true). Therefore the JMX registration happens, which can cause a problem for me because of security constraints.\\n\\nBecause of the way the makeObject() method is written, I have no influence on this part, so my quick solution was to disable the poolStatement option for the PoolableConnectionFactory and provide a custom ConnectionFactory object instead that basically does the same thing with the statement pool and also disables the JMX option.\n- Seed changes and their Git diff hunks: [{\"fqn\": \"org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.makeObject()\", \"git_diff_hunk\": \"@@ -70 +71 @@ public class PoolableManagedConnectionFactory extends PoolableConnectionFactory\\n- if(getPoolStatements()) {\\n+ if (getPoolStatements()) {\\n@@ -77,0 +79,11 @@ public class PoolableManagedConnectionFactory extends PoolableConnectionFactory\\n+ ObjectName dataSourceJmxName = getDataSourceJmxName();\\n+ long connIndex = getConnectionIndex().getAndIncrement();\\n+ if (dataSourceJmxName != null) {\\n+ StringBuilder base = new StringBuilder(dataSourceJmxName.toString());\\n+ base.append(Constants.JMX_CONNECTION_BASE_EXT);\\n+ base.append(Long.toString(connIndex));\\n+ config.setJmxNameBase(base.toString());\\n+ config.setJmxNamePrefix(Constants.JMX_STATEMENT_POOL_PREFIX);\\n+ } else {\\n+ config.setJmxEnabled(false);\\n+ }\"}]\n- Initial static code change impact set: [\"org.apache.commons.dbcp2.ConnectionFactory.createConnection()\", \"org.apache.commons.dbcp2.DelegatingConnection.setCacheState(boolean)\", \"org.apache.commons.dbcp2.PoolableConnectionFactory.getCacheState()\", \"org.apache.commons.dbcp2.PoolableConnectionFactory.getConnectionFactory()\", \"org.apache.commons.dbcp2.PoolableConnectionFactory.getMaxOpenPreparedStatements()\", \"org.apache.commons.dbcp2.PoolableConnectionFactory.getPool()\", \"org.apache.commons.dbcp2.PoolableConnectionFactory.getPoolStatements()\", \"org.apache.commons.dbcp2.PoolableConnectionFactory.initializeConnection(java.sql.Connection)\", \"org.apache.commons.dbcp2.PoolingConnection.PoolingConnection(java.sql.Connection)\", \"org.apache.commons.dbcp2.PoolingConnection.setStatementPool(org.apache.commons.pool2.KeyedObjectPool)\"]\n\n# Output Format\nReturn exactly one valid single-line JSON array of strings.\nEach string must be the fully qualified name of an impacted code entity.\nDo not include any additional text, formatting, or meta-information.\nDo not include seed changes in the output.\n\nExample output (four impacted code entities):\n[\"com.example.Foo.someMethod(java.lang.String, int)\", \"com.example.bar.attribute1\", \"com.example.bar.Class.NestedClass\", \"com.example.bar.Class.Class()\"]\n\nExample output (two impacted code entities):\n[\"com.example.package.ParentClass.ChildClass.field\", \"com.example.package.ParentClass.apply(long, com.example.package.ParentClass)\"]\n\nExample output (zero impacted code entities):\n[]"
+      }
+    ],
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096
+  },
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "[\"org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject()\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1794812364,
+    "id": "021794812363881fa5ea4275a5d3d4c29bbd2274cbba1b3ada545",
+    "model": "deepseek-v4.1-flash-1017",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 18,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1036,
+      "prompt_tokens": 1036,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 1054
+    }
+  },
+  "seconds": 1.032367458000003,
+  "endpoint": "http://api.aicnic.cn/v1"
+}

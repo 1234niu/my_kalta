@@ -1,0 +1,12 @@
+{
+  "id": "constantinople-011",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 0,
+  "predictions": [
+    "org.apache.commons.net.smtp.SimpleSMTPHeader.addHeaderField(java.lang.String,java.lang.String)"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "6a092e20f53a4932e76c94e0c2d14b294f9ecc79d7b2a8d540a60ac5c0796870",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

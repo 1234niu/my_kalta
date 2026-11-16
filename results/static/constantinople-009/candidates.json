@@ -1,0 +1,29 @@
+{
+  "id": "constantinople-009",
+  "fingerprint": "4fd6b572e071edba21d84f1acb2fbc8bdd97eb6425b060e14f8a3970f8a21f64",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "7ae1b1c4c46ab8741b06a5a77d4fff1aa2f06f87",
+  "candidates": [
+    "org.apache.sysml.api.mlcontext.MLContext.setConfigProperty(java.lang.String,java.lang.String)",
+    "org.apache.sysml.conf.DMLConfig.setTextValue(org.w3c.dom.Element,java.lang.String,java.lang.String)",
+    "org.apache.sysml.runtime.DMLRuntimeException.DMLRuntimeException(java.lang.String,java.lang.Exception)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.sysml.conf.DMLConfig.setTextValue(java.lang.String,java.lang.String)",
+      "type": "executable",
+      "relations": {
+        "org.apache.sysml.conf.DMLConfig.setTextValue(org.w3c.dom.Element,java.lang.String,java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.sysml.runtime.DMLRuntimeException.DMLRuntimeException(java.lang.String,java.lang.Exception)": [
+          "CALLS"
+        ],
+        "org.apache.sysml.api.mlcontext.MLContext.setConfigProperty(java.lang.String,java.lang.String)": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "files": [
+    {
+      "id": 66391529,
+      "name": "final_dataset.csv",
+      "size": 1258151,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/66391529",
+      "supplied_md5": "03f5ed0fdb0155c07b05cb66af2aea2d",
+      "computed_md5": "03f5ed0fdb0155c07b05cb66af2aea2d",
+      "mimetype": "text/csv"
+    },
+    {
+      "id": 66615560,
+      "name": "agents.yaml",
+      "size": 1280,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/66615560",
+      "supplied_md5": "ebe64bb9ba480683412cb8fbf3af01f7",
+      "computed_md5": "ebe64bb9ba480683412cb8fbf3af01f7",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 66615563,
+      "name": "baseline.j2",
+      "size": 1973,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/66615563",
+      "supplied_md5": "c978ffa1408e1c833fc9af01637c31b1",
+      "computed_md5": "c978ffa1408e1c833fc9af01637c31b1",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 66615566,
+      "name": "tasks.yaml",
+      "size": 3609,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/66615566",
+      "supplied_md5": "469dc57b6c04b960e7e315b3a056d24a",
+      "computed_md5": "469dc57b6c04b960e7e315b3a056d24a",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 66615569,
+      "name": "StaticCodeAnalysis-1.0-SNAPSHOT-jar-with-dependencies.jar",
+      "size": 15745846,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/66615569",
+      "supplied_md5": "25b4cb50199e633a5057b64b39bb61d0",
+      "computed_md5": "25b4cb50199e633a5057b64b39bb61d0",
+      "mimetype": "application/zip"
+    }
+  ],
+  "folder_structure": {
+    "66391529": "",
+    "66615560": "Prompts",
+    "66615563": "Prompts",
+    "66615566": "Prompts",
+    "66615569": ""
+  },
+  "authors": [
+    {
+      "id": 24276276,
+      "full_name": "Katharina Stengg",
+      "first_name": "Katharina",
+      "last_name": "Stengg",
+      "is_active": true,
+      "url_name": "Katharina_Stengg",
+      "orcid_id": ""
+    }
+  ],
+  "custom_fields": [],
+  "figshare_url": "https://figshare.com/articles/conference_contribution/Replication_Package_katIA_Hybrid_Source_Code_Change_Impact_Analysis_/32924534",
+  "download_disabled": false,
+  "description": "<p dir=\"ltr\">This supplementary material is provided for the reviewers of the paper \"katIA: Hybrid Source Code Change Impact Analysis\".</p><p dir=\"ltr\">It consists of the following:</p><ol><li><b>final_dataset.csv</b> which is the final version of our labeled dataset</li><li><b>Prompts/baseline.j2</b> which is the prompt used in the single prompt variant of katIA</li><li><b>Prompts/agents.yaml</b> which contains the definitions of the agents used in the multi-agent variant of katIA</li><li><b>Prompts/tasks.yaml</b> which contains the definitions of the tasks used in the multi-agent variant of katIA</li><li><b>StaticCodeAnalysis-1.0-SNAPSHOT-jar-with-dependencies</b> which is the .jar of our static code analysis tool used in the first phase of katIA for Static Impact Set Construction</li></ol><p dir=\"ltr\">If you use this content, please cite: <a href=\"https://doi.org/10.48550/arXiv.2611.10958\" target=\"_blank\" rel=\"noreferrer\">Hybrid Source Code Change Impact Analysis</a></p>",
+  "funding": "Omitted for double blind",
+  "funding_list": [
+    {
+      "id": 30317147,
+      "title": "Omitted for double blind",
+      "grant_code": "",
+      "funder_name": null,
+      "is_user_defined": 1
+    }
+  ],
+  "version": 3,
+  "status": "public",
+  "size": 17010859,
+  "created_date": "2026-11-11T09:34:48Z",
+  "modified_date": "2026-11-11T09:34:49Z",
+  "is_public": true,
+  "is_confidential": false,
+  "is_metadata_record": false,
+  "confidential_reason": "",
+  "metadata_reason": "",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "tags": [
+    "Java",
+    "Change Impact Analysis",
+    "Source Code Changes",
+    "Large Language Models"
+  ],
+  "keywords": [
+    "Java",
+    "Change Impact Analysis",
+    "Source Code Changes",
+    "Large Language Models"
+  ],
+  "categories": [
+    {
+      "id": 29179,
+      "title": "Automated software engineering",
+      "parent_id": 29176,
+      "path": "/28798/29176/29179",
+      "source_id": "461201",
+      "taxonomy_id": 100
+    }
+  ],
+  "references": [],
+  "has_linked_file": false,
+  "citation": "Stengg, Katharina (2026). Supplementary Material for the paper \"katIA: Hybrid Source Code Change Impact Analysis\". figshare. Conference contribution. https://doi.org/10.6084/m9.figshare.32924534.v3",
+  "related_materials": [],
+  "is_embargoed": false,
+  "embargo_date": null,
+  "embargo_type": null,
+  "embargo_title": "",
+  "embargo_reason": "",
+  "embargo_options": [],
+  "id": 32924534,
+  "title": "Supplementary Material for the paper \"katIA: Hybrid Source Code Change Impact Analysis\"",
+  "doi": "10.6084/m9.figshare.32924534.v3",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/articles/32924534",
+  "published_date": "2026-11-11T09:34:48Z",
+  "thumb": "",
+  "defined_type": 14,
+  "defined_type_name": "conference contribution",
+  "group_id": null,
+  "url_private_api": "https://api.figshare.com/v2/account/articles/32924534",
+  "url_public_api": "https://api.figshare.com/v2/articles/32924534",
+  "url_private_html": "https://figshare.com/account/articles/32924534",
+  "url_public_html": "https://figshare.com/articles/conference_contribution/Replication_Package_katIA_Hybrid_Source_Code_Change_Impact_Analysis_/32924534",
+  "timeline": {
+    "posted": "2026-11-11T09:34:48"
+  },
+  "resource_title": null,
+  "resource_doi": null
+}

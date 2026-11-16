@@ -1,0 +1,1650 @@
+{
+  "id": "constantinople-004",
+  "graph_edges": 20305,
+  "seeds": {
+    "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.ivy.core.module.descriptor.ModuleDescriptor.getConfigurationsNames()",
+      "org.apache.ivy.core.module.descriptor.ModuleDescriptor.getPublicConfigurationsNames()",
+      "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+      "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+      "org.apache.ivy.core.resolve.ResolveEngine.computeConflicts(org.apache.ivy.core.resolve.VisitNode,org.apache.ivy.core.resolve.VisitNode,java.lang.String,java.util.Collection,java.util.Collection)"
+    ],
+    "fields": [
+      "org.apache.ivy.core.module.descriptor.ModuleDescriptor.getConfigurationsNames()",
+      "org.apache.ivy.core.module.descriptor.ModuleDescriptor.getPublicConfigurationsNames()",
+      "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.module.descriptor.ModuleDescriptor)",
+      "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+      "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+      "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+      "org.apache.ivy.core.resolve.IvyNode.md",
+      "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+      "org.apache.ivy.core.resolve.ResolveEngine.computeConflicts(org.apache.ivy.core.resolve.VisitNode,org.apache.ivy.core.resolve.VisitNode,java.lang.String,java.util.Collection,java.util.Collection)"
+    ],
+    "multihop": [
+      "org.apache.ivy.core.module.descriptor.ModuleDescriptor.getConfigurationsNames()",
+      "org.apache.ivy.core.module.descriptor.ModuleDescriptor.getPublicConfigurationsNames()",
+      "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.module.descriptor.ModuleDescriptor)",
+      "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+      "org.apache.ivy.core.resolve.IvyNode.confsToFetch",
+      "org.apache.ivy.core.resolve.IvyNode.data",
+      "org.apache.ivy.core.resolve.IvyNode.dds",
+      "org.apache.ivy.core.resolve.IvyNode.downloaded",
+      "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+      "org.apache.ivy.core.resolve.IvyNode.init(org.apache.ivy.core.resolve.ResolveData)",
+      "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+      "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+      "org.apache.ivy.core.resolve.IvyNode.md",
+      "org.apache.ivy.core.resolve.IvyNode.module",
+      "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+      "org.apache.ivy.core.resolve.IvyNode.problem",
+      "org.apache.ivy.core.resolve.IvyNode.root",
+      "org.apache.ivy.core.resolve.IvyNode.searched",
+      "org.apache.ivy.core.resolve.IvyNode.settings",
+      "org.apache.ivy.core.resolve.IvyNode.usage",
+      "org.apache.ivy.core.resolve.ResolveEngine.computeConflicts(org.apache.ivy.core.resolve.VisitNode,org.apache.ivy.core.resolve.VisitNode,java.lang.String,java.util.Collection,java.util.Collection)"
+    ],
+    "two_hop_calls": [
+      "org.apache.ivy.core.module.descriptor.DependencyDescriptor.getDependencyConfigurations(java.lang.String,java.lang.String)",
+      "org.apache.ivy.core.module.descriptor.DependencyDescriptor.getDependencyRevisionId()",
+      "org.apache.ivy.core.module.descriptor.ModuleDescriptor.getConfigurationsNames()",
+      "org.apache.ivy.core.module.descriptor.ModuleDescriptor.getDependencies()",
+      "org.apache.ivy.core.module.descriptor.ModuleDescriptor.getPublicConfigurationsNames()",
+      "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.module.descriptor.ModuleDescriptor)",
+      "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+      "org.apache.ivy.core.resolve.IvyNode.addCaller(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,java.lang.String[],org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+      "org.apache.ivy.core.resolve.IvyNode.addDependencyDescriptor(org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+      "org.apache.ivy.core.resolve.IvyNode.addRootModuleConfigurations(org.apache.ivy.core.resolve.IvyNodeUsage,java.lang.String,java.lang.String[])",
+      "org.apache.ivy.core.resolve.IvyNode.confsToFetch",
+      "org.apache.ivy.core.resolve.IvyNode.data",
+      "org.apache.ivy.core.resolve.IvyNode.dds",
+      "org.apache.ivy.core.resolve.IvyNode.downloaded",
+      "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+      "org.apache.ivy.core.resolve.IvyNode.hasProblem()",
+      "org.apache.ivy.core.resolve.IvyNode.init(org.apache.ivy.core.resolve.ResolveData)",
+      "org.apache.ivy.core.resolve.IvyNode.isDependencyModuleExcluded(org.apache.ivy.core.module.descriptor.DependencyDescriptor,java.lang.String,org.apache.ivy.core.module.id.ModuleRevisionId,java.lang.String)",
+      "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+      "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+      "org.apache.ivy.core.resolve.IvyNode.md",
+      "org.apache.ivy.core.resolve.IvyNode.module",
+      "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+      "org.apache.ivy.core.resolve.IvyNode.problem",
+      "org.apache.ivy.core.resolve.IvyNode.resolveSpecialConfigurations(java.lang.String[])",
+      "org.apache.ivy.core.resolve.IvyNode.root",
+      "org.apache.ivy.core.resolve.IvyNode.searched",
+      "org.apache.ivy.core.resolve.IvyNode.settings",
+      "org.apache.ivy.core.resolve.IvyNode.updateConfsToFetch(java.util.Collection)",
+      "org.apache.ivy.core.resolve.IvyNode.usage",
+      "org.apache.ivy.core.resolve.IvyNodeUsage.setRequiredConfs(org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.util.Collection)",
+      "org.apache.ivy.core.resolve.ResolveData.getNode(org.apache.ivy.core.module.id.ModuleRevisionId)",
+      "org.apache.ivy.core.resolve.ResolveData.mediate(org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+      "org.apache.ivy.core.resolve.ResolveEngine.computeConflicts(org.apache.ivy.core.resolve.VisitNode,org.apache.ivy.core.resolve.VisitNode,java.lang.String,java.util.Collection,java.util.Collection)",
+      "org.apache.ivy.util.Message.verbose(java.lang.String)"
+    ],
+    "diff_and_override": [
+      "org.apache.ivy.core.module.descriptor.DependencyDescriptor.getDependencyConfigurations(java.lang.String,java.lang.String)",
+      "org.apache.ivy.core.module.descriptor.DependencyDescriptor.getDependencyRevisionId()",
+      "org.apache.ivy.core.module.descriptor.ModuleDescriptor.getConfigurationsNames()",
+      "org.apache.ivy.core.module.descriptor.ModuleDescriptor.getDependencies()",
+      "org.apache.ivy.core.module.descriptor.ModuleDescriptor.getPublicConfigurationsNames()",
+      "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.module.descriptor.ModuleDescriptor)",
+      "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+      "org.apache.ivy.core.resolve.IvyNode.addCaller(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,java.lang.String[],org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+      "org.apache.ivy.core.resolve.IvyNode.addDependencyDescriptor(org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+      "org.apache.ivy.core.resolve.IvyNode.addRootModuleConfigurations(org.apache.ivy.core.resolve.IvyNodeUsage,java.lang.String,java.lang.String[])",
+      "org.apache.ivy.core.resolve.IvyNode.confsToFetch",
+      "org.apache.ivy.core.resolve.IvyNode.data",
+      "org.apache.ivy.core.resolve.IvyNode.dds",
+      "org.apache.ivy.core.resolve.IvyNode.downloaded",
+      "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+      "org.apache.ivy.core.resolve.IvyNode.hasProblem()",
+      "org.apache.ivy.core.resolve.IvyNode.init(org.apache.ivy.core.resolve.ResolveData)",
+      "org.apache.ivy.core.resolve.IvyNode.isDependencyModuleExcluded(org.apache.ivy.core.module.descriptor.DependencyDescriptor,java.lang.String,org.apache.ivy.core.module.id.ModuleRevisionId,java.lang.String)",
+      "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+      "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+      "org.apache.ivy.core.resolve.IvyNode.md",
+      "org.apache.ivy.core.resolve.IvyNode.module",
+      "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+      "org.apache.ivy.core.resolve.IvyNode.problem",
+      "org.apache.ivy.core.resolve.IvyNode.resolveSpecialConfigurations(java.lang.String[])",
+      "org.apache.ivy.core.resolve.IvyNode.root",
+      "org.apache.ivy.core.resolve.IvyNode.searched",
+      "org.apache.ivy.core.resolve.IvyNode.settings",
+      "org.apache.ivy.core.resolve.IvyNode.updateConfsToFetch(java.util.Collection)",
+      "org.apache.ivy.core.resolve.IvyNode.usage",
+      "org.apache.ivy.core.resolve.IvyNodeUsage.setRequiredConfs(org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.util.Collection)",
+      "org.apache.ivy.core.resolve.ResolveData.getNode(org.apache.ivy.core.module.id.ModuleRevisionId)",
+      "org.apache.ivy.core.resolve.ResolveData.mediate(org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+      "org.apache.ivy.core.resolve.ResolveEngine.computeConflicts(org.apache.ivy.core.resolve.VisitNode,org.apache.ivy.core.resolve.VisitNode,java.lang.String,java.util.Collection,java.util.Collection)",
+      "org.apache.ivy.util.Message.verbose(java.lang.String)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.ivy.core.resolve.IvyNode.md": {
+        "org.apache.ivy.core.resolve.IvyNode.md": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 292
+          }
+        ]
+      },
+      "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.module.descriptor.ModuleDescriptor)": {
+        "org.apache.ivy.core.resolve.IvyNode.md": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 292
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.module.descriptor.ModuleDescriptor)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 119
+          }
+        ]
+      },
+      "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)": {
+        "org.apache.ivy.core.resolve.IvyNode.md": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 292
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 204
+          }
+        ]
+      },
+      "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)": {
+        "org.apache.ivy.core.resolve.IvyNode.md": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 292
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 268
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.ivy.core.resolve.IvyNode.md": {
+        "org.apache.ivy.core.resolve.IvyNode.md": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 292
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.root": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 297
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+            "to": "org.apache.ivy.core.resolve.IvyNode.root",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 961
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.root",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 354
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 324
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.data": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 305
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.data",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 331
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.init(org.apache.ivy.core.resolve.ResolveData)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.data",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 125
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.init(org.apache.ivy.core.resolve.ResolveData)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 354
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 324
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.usage": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 305
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 366
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 279
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 267
+          }
+        ]
+      },
+      "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.module.descriptor.ModuleDescriptor)": {
+        "org.apache.ivy.core.resolve.IvyNode.md": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 292
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.module.descriptor.ModuleDescriptor)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 119
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.root": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 297
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+            "to": "org.apache.ivy.core.resolve.IvyNode.root",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 961
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.module.descriptor.ModuleDescriptor)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.root",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 120
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.data": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 305
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.data",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 331
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.init(org.apache.ivy.core.resolve.ResolveData)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.data",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 125
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.module.descriptor.ModuleDescriptor)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.init(org.apache.ivy.core.resolve.ResolveData)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 121
+          }
+        ]
+      },
+      "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)": {
+        "org.apache.ivy.core.resolve.IvyNode.md": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 292
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 204
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.usage": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 305
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 366
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 279
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 210
+          }
+        ]
+      },
+      "org.apache.ivy.core.resolve.IvyNode.data": {
+        "org.apache.ivy.core.resolve.IvyNode.md": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 292
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 204
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.data",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 138
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.root": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 297
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+            "to": "org.apache.ivy.core.resolve.IvyNode.root",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 961
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.root",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 354
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.data",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 331
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.data": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 305
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.data",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 331
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.usage": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 305
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 366
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 279
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.data",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 281
+          }
+        ]
+      },
+      "org.apache.ivy.core.resolve.IvyNode.module": {
+        "org.apache.ivy.core.resolve.IvyNode.md": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 292
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 204
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.module",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 173
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.usage": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 305
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 366
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 279
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.module",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 270
+          }
+        ]
+      },
+      "org.apache.ivy.core.resolve.IvyNode.settings": {
+        "org.apache.ivy.core.resolve.IvyNode.md": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 292
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 204
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.settings",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 180
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.usage": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 305
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 366
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 279
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.settings",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 283
+          }
+        ]
+      },
+      "org.apache.ivy.core.resolve.IvyNode.confsToFetch": {
+        "org.apache.ivy.core.resolve.IvyNode.md": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 292
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 204
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.confsToFetch",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 231
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.usage": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 305
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 366
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 279
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 210
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.confsToFetch",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 231
+          }
+        ]
+      },
+      "org.apache.ivy.core.resolve.IvyNode.problem": {
+        "org.apache.ivy.core.resolve.IvyNode.md": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 292
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 204
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.problem",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 254
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.usage": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 305
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 366
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 279
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 210
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.problem",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 254
+          }
+        ]
+      },
+      "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)": {
+        "org.apache.ivy.core.resolve.IvyNode.md": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 292
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 268
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.usage": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 305
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 366
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 279
+          }
+        ]
+      },
+      "org.apache.ivy.core.resolve.IvyNode.downloaded": {
+        "org.apache.ivy.core.resolve.IvyNode.md": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 292
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 268
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.downloaded",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 273
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.usage": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 305
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 366
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 279
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.downloaded",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 273
+          }
+        ]
+      },
+      "org.apache.ivy.core.resolve.IvyNode.searched": {
+        "org.apache.ivy.core.resolve.IvyNode.md": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 292
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 268
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.searched",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 274
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.usage": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 305
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 366
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 279
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.searched",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 274
+          }
+        ]
+      },
+      "org.apache.ivy.core.resolve.IvyNode.dds": {
+        "org.apache.ivy.core.resolve.IvyNode.md": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 292
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 268
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.dds",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 275
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.root": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 297
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+            "to": "org.apache.ivy.core.resolve.IvyNode.root",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 961
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.root",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.dds",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 112
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.data": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 305
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.data",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 331
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.init(org.apache.ivy.core.resolve.ResolveData)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.data",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 125
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.init(org.apache.ivy.core.resolve.ResolveData)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.dds",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 112
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.usage": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 305
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 366
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 279
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.dds",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 275
+          }
+        ]
+      },
+      "org.apache.ivy.core.resolve.IvyNode.usage": {
+        "org.apache.ivy.core.resolve.IvyNode.md": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 292
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.md",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 268
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 277
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.root": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 297
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+            "to": "org.apache.ivy.core.resolve.IvyNode.root",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 961
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.root",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 354
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 366
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.data": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 305
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.data",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 331
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.init(org.apache.ivy.core.resolve.ResolveData)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.data",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 125
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.init(org.apache.ivy.core.resolve.ResolveData)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 354
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 366
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.usage": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 305
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.usage",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 366
+          }
+        ]
+      },
+      "org.apache.ivy.core.resolve.IvyNode.root": {
+        "org.apache.ivy.core.resolve.IvyNode.root": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 297
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+            "to": "org.apache.ivy.core.resolve.IvyNode.root",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 961
+          }
+        ]
+      },
+      "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)": {
+        "org.apache.ivy.core.resolve.IvyNode.root": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 297
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+            "to": "org.apache.ivy.core.resolve.IvyNode.root",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 961
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.root",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 113
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.data": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 305
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.data",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 331
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.init(org.apache.ivy.core.resolve.ResolveData)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.data",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 125
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.init(org.apache.ivy.core.resolve.ResolveData)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 114
+          }
+        ]
+      },
+      "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)": {
+        "org.apache.ivy.core.resolve.IvyNode.root": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 297
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+            "to": "org.apache.ivy.core.resolve.IvyNode.root",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 961
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.root",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 354
+          }
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.data": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 305
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.data",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 331
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.init(org.apache.ivy.core.resolve.ResolveData)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.data",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 125
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.init(org.apache.ivy.core.resolve.ResolveData)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 354
+          }
+        ]
+      },
+      "org.apache.ivy.core.resolve.IvyNode.init(org.apache.ivy.core.resolve.ResolveData)": {
+        "org.apache.ivy.core.resolve.IvyNode.data": [
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+            "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 305
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.data",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 331
+          },
+          {
+            "from": "org.apache.ivy.core.resolve.IvyNode.init(org.apache.ivy.core.resolve.ResolveData)",
+            "to": "org.apache.ivy.core.resolve.IvyNode.data",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+            "line": 125
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.ivy.core.module.descriptor.ModuleDescriptor.getDependencies()": [
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+          "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 305
+        },
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "to": "org.apache.ivy.core.module.descriptor.ModuleDescriptor.getDependencies()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 328
+        }
+      ],
+      "org.apache.ivy.core.resolve.ResolveData.mediate(org.apache.ivy.core.module.descriptor.DependencyDescriptor)": [
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+          "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 305
+        },
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "to": "org.apache.ivy.core.resolve.ResolveData.mediate(org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 331
+        }
+      ],
+      "org.apache.ivy.core.module.descriptor.DependencyDescriptor.getDependencyConfigurations(java.lang.String,java.lang.String)": [
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+          "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 305
+        },
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "to": "org.apache.ivy.core.module.descriptor.DependencyDescriptor.getDependencyConfigurations(java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 332
+        }
+      ],
+      "org.apache.ivy.core.module.descriptor.DependencyDescriptor.getDependencyRevisionId()": [
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+          "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 305
+        },
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "to": "org.apache.ivy.core.module.descriptor.DependencyDescriptor.getDependencyRevisionId()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 338
+        }
+      ],
+      "org.apache.ivy.core.resolve.IvyNode.isDependencyModuleExcluded(org.apache.ivy.core.module.descriptor.DependencyDescriptor,java.lang.String,org.apache.ivy.core.module.id.ModuleRevisionId,java.lang.String)": [
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+          "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 305
+        },
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "to": "org.apache.ivy.core.resolve.IvyNode.isDependencyModuleExcluded(org.apache.ivy.core.module.descriptor.DependencyDescriptor,java.lang.String,org.apache.ivy.core.module.id.ModuleRevisionId,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 339
+        }
+      ],
+      "org.apache.ivy.util.Message.verbose(java.lang.String)": [
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+          "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 305
+        },
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "to": "org.apache.ivy.util.Message.verbose(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 342
+        }
+      ],
+      "org.apache.ivy.core.resolve.ResolveData.getNode(org.apache.ivy.core.module.id.ModuleRevisionId)": [
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+          "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 305
+        },
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "to": "org.apache.ivy.core.resolve.ResolveData.getNode(org.apache.ivy.core.module.id.ModuleRevisionId)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 350
+        }
+      ],
+      "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)": [
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+          "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 305
+        },
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "to": "org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 354
+        }
+      ],
+      "org.apache.ivy.core.resolve.IvyNode.addDependencyDescriptor(org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)": [
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+          "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 305
+        },
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "to": "org.apache.ivy.core.resolve.IvyNode.addDependencyDescriptor(org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 356
+        }
+      ],
+      "org.apache.ivy.core.resolve.IvyNode.hasProblem()": [
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+          "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 305
+        },
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "to": "org.apache.ivy.core.resolve.IvyNode.hasProblem()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 357
+        }
+      ],
+      "org.apache.ivy.core.resolve.IvyNode.resolveSpecialConfigurations(java.lang.String[])": [
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+          "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 305
+        },
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "to": "org.apache.ivy.core.resolve.IvyNode.resolveSpecialConfigurations(java.lang.String[])",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 363
+        }
+      ],
+      "org.apache.ivy.core.resolve.IvyNode.updateConfsToFetch(java.util.Collection)": [
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+          "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 305
+        },
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "to": "org.apache.ivy.core.resolve.IvyNode.updateConfsToFetch(java.util.Collection)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 365
+        }
+      ],
+      "org.apache.ivy.core.resolve.IvyNode.addRootModuleConfigurations(org.apache.ivy.core.resolve.IvyNodeUsage,java.lang.String,java.lang.String[])": [
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+          "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 305
+        },
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "to": "org.apache.ivy.core.resolve.IvyNode.addRootModuleConfigurations(org.apache.ivy.core.resolve.IvyNodeUsage,java.lang.String,java.lang.String[])",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 366
+        }
+      ],
+      "org.apache.ivy.core.resolve.IvyNodeUsage.setRequiredConfs(org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.util.Collection)": [
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+          "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 305
+        },
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "to": "org.apache.ivy.core.resolve.IvyNodeUsage.setRequiredConfs(org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.util.Collection)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 367
+        }
+      ],
+      "org.apache.ivy.core.resolve.IvyNode.addCaller(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,java.lang.String[],org.apache.ivy.core.module.descriptor.DependencyDescriptor)": [
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+          "to": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 305
+        },
+        {
+          "from": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+          "to": "org.apache.ivy.core.resolve.IvyNode.addCaller(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,java.lang.String[],org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/resolve/IvyNode.java",
+          "line": 369
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 5315,
+      "ma_analysis": 4897,
+      "ma_refinement_fixed": 3851
+    },
+    "two_hop_calls": {
+      "sp": 6953,
+      "ma_analysis": 6535,
+      "ma_refinement_fixed": 5489
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [
+    "org.apache.ivy.core.resolve.ResolveEngine.computeConflicts(org.apache.ivy.core.resolve.VisitNode,org.apache.ivy.core.resolve.VisitNode,java.lang.String,java.util.Collection,java.util.Collection)"
+  ],
+  "unindexed_targets": [],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 5,
+      "hits": [
+        "org.apache.ivy.core.resolve.ResolveEngine.computeConflicts(org.apache.ivy.core.resolve.VisitNode,org.apache.ivy.core.resolve.VisitNode,java.lang.String,java.util.Collection,java.util.Collection)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "fields": {
+      "candidate_count": 9,
+      "hits": [
+        "org.apache.ivy.core.resolve.ResolveEngine.computeConflicts(org.apache.ivy.core.resolve.VisitNode,org.apache.ivy.core.resolve.VisitNode,java.lang.String,java.util.Collection,java.util.Collection)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "multihop": {
+      "candidate_count": 21,
+      "hits": [
+        "org.apache.ivy.core.resolve.ResolveEngine.computeConflicts(org.apache.ivy.core.resolve.VisitNode,org.apache.ivy.core.resolve.VisitNode,java.lang.String,java.util.Collection,java.util.Collection)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 35,
+      "hits": [
+        "org.apache.ivy.core.resolve.ResolveEngine.computeConflicts(org.apache.ivy.core.resolve.VisitNode,org.apache.ivy.core.resolve.VisitNode,java.lang.String,java.util.Collection,java.util.Collection)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "diff_and_override": {
+      "candidate_count": 35,
+      "hits": [
+        "org.apache.ivy.core.resolve.ResolveEngine.computeConflicts(org.apache.ivy.core.resolve.VisitNode,org.apache.ivy.core.resolve.VisitNode,java.lang.String,java.util.Collection,java.util.Collection)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    }
+  }
+}

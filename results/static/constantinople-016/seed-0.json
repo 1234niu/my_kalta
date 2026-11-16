@@ -1,0 +1,1 @@
+{"org.apache.commons.net.imap.IMAPClient.list(java.lang.String,java.lang.String)":["IS_CALLED_BY"],"org.apache.commons.net.imap.IMAPClient.lsub(java.lang.String,java.lang.String)":["IS_CALLED_BY"]}

@@ -1,0 +1,48 @@
+{
+  "request_sha256": "742214aa20e1de252fde7e0d3a2eaf280d9a573e59960fc091eca60fd2d68520",
+  "request": {
+    "model": "deepseek-v4.1-flash-1017",
+    "temperature": 0,
+    "messages": [
+      {
+        "role": "user",
+        "content": "# System Information\nYou are an expert in Java and in analyzing the impact of source code changes on other code entities in a project's production code.\n\n# General Information\nYou receive information about a set of changes, called seed changes, that were made to fix a bug reported in Jira.\nYou also receive the Jira bug report title and description and an initial impact set consisting of the fully qualified names of code entities that are statically related to the seed changes.\n\n# Task\nYour task is to refine the initial impact set.\nA code entity is part of the impact set if it requires modification or, if it does not already exist, must be created as a consequence of the seed changes.\nFirst, remove code entities unless the provided information indicates that they must be modified.\nSecond, add code entities that must be modified or created according to the provided evidence.\n\nYour goal is to report a final impact set that consists of the fully qualified names of code entities that must be modified or created because of the seed changes.\n\n# Inputs\n- Jira bug report title: When in ssh plugin we does not set username in scheme, Ivy always try to connect with guest username, even if we change one in panel.\n- Jira bug report description: When in ssh plugin we does not set username in scheme, Ivy always try to connect with username 'guest', even if we change one in panel.\\n(It is becouse CredentialPanel is shown from SshCache.getSession(), where user is already set.)\n- Seed changes and their Git diff hunks: [{\"fqn\": \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)\", \"git_diff_hunk\": \"@@ -81,0 +94,9 @@ public abstract class AbstractSshBasedRepository extends AbstractRepository {\\n+ if (user == null) {\\n+ Credentials c = requestCredentials(host);\\n+ if (c != null) {\\n+ user = c.getUserName();\\n+ userPassword = c.getPasswd();\\n+ } else {\\n+ Message.error(\\\"username is not set\\\");\\n+ }\\n+ }\"}]\n- Initial static code change impact set: [\"org.apache.ivy.plugins.repository.sftp.SFTPRepository.getSftpChannel(java.lang.String)\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getHost()\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFile()\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFilePassword()\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPassFile()\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPort()\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getRepositoryScheme()\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUser()\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUserPassword()\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.host\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.keyFile\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.keyFilePassword\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.passFile\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.port\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setHost(java.lang.String)\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setKeyFile(java.io.File)\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setKeyFilePassword(java.lang.String)\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setPassFile(java.io.File)\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setPort(int)\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setUser(java.lang.String)\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setUserPassword(java.lang.String)\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.user\", \"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.userPassword\", \"org.apache.ivy.plugins.repository.ssh.SshCache.CfUserInfo.CfUserInfo(java.lang.String,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)\", \"org.apache.ivy.plugins.repository.ssh.SshCache.Entry.getSession()\", \"org.apache.ivy.plugins.repository.ssh.SshCache.getCacheEntry(java.lang.String,java.lang.String,int)\", \"org.apache.ivy.plugins.repository.ssh.SshCache.getInstance()\", \"org.apache.ivy.plugins.repository.ssh.SshCache.getSession(java.lang.String,int,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)\", \"org.apache.ivy.plugins.repository.ssh.SshCache.requestCredentials(java.lang.String)\", \"org.apache.ivy.plugins.repository.ssh.SshCache.setSession(java.lang.String,java.lang.String,int,com.jcraft.jsch.Session)\", \"org.apache.ivy.plugins.repository.ssh.SshRepository.get(java.lang.String,java.io.File)\", \"org.apache.ivy.plugins.repository.ssh.SshRepository.list(java.lang.String)\", \"org.apache.ivy.plugins.repository.ssh.SshRepository.openStream(org.apache.ivy.plugins.repository.ssh.SshResource)\", \"org.apache.ivy.plugins.repository.ssh.SshRepository.put(java.io.File,java.lang.String,boolean)\", \"org.apache.ivy.plugins.repository.ssh.SshRepository.resolveResource(java.lang.String)\", \"org.apache.ivy.util.Message.error(java.lang.String)\", \"org.apache.ivy.util.Message.requestCredentials(java.lang.String)\", \"org.apache.ivy.util.Message.verbose(java.lang.String)\"]\n\n# Output Format\nReturn exactly one valid single-line JSON array of strings.\nEach string must be the fully qualified name of an impacted code entity.\nDo not include any additional text, formatting, or meta-information.\nDo not include seed changes in the output.\n\nExample output (four impacted code entities):\n[\"com.example.Foo.someMethod(java.lang.String, int)\", \"com.example.bar.attribute1\", \"com.example.bar.Class.NestedClass\", \"com.example.bar.Class.Class()\"]\n\nExample output (two impacted code entities):\n[\"com.example.package.ParentClass.ChildClass.field\", \"com.example.package.ParentClass.apply(long, com.example.package.ParentClass)\"]\n\nExample output (zero impacted code entities):\n[]"
+      }
+    ],
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096
+  },
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "[\"org.apache.ivy.plugins.repository.ssh.SshCache.getSession(java.lang.String,int,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)\",\"org.apache.ivy.plugins.repository.ssh.SshCache.requestCredentials(java.lang.String)\",\"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUser()\",\"org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUserPassword()\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1794816405,
+    "id": "021794816404217efa62bfca375794f3a9b85f4d703cfecf15da7",
+    "model": "deepseek-v4.1-flash-1017",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 107,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 2,
+      "prompt_tokens": 1538,
+      "prompt_tokens_details": {
+        "cached_tokens": 1536
+      },
+      "total_tokens": 1645
+    }
+  },
+  "seconds": 1.293600375,
+  "endpoint": "http://api.aicnic.cn/v1"
+}

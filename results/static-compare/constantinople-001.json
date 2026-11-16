@@ -1,0 +1,1066 @@
+{
+  "id": "constantinople-001",
+  "graph_edges": 2220,
+  "seeds": {
+    "org.apache.commons.io.input.CharSequenceInputStream.reset()": true
+  },
+  "candidates": {
+    "baseline": [],
+    "fields": [
+      "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+      "org.apache.commons.io.input.CharSequenceInputStream.NO_MARK",
+      "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+      "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+      "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+      "org.apache.commons.io.input.CharSequenceInputStream.mark",
+      "org.apache.commons.io.input.CharSequenceInputStream.mark(int)"
+    ],
+    "multihop": [
+      "org.apache.commons.io.input.CharSequenceInputStream.BUFFER_SIZE",
+      "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String)",
+      "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String,int)",
+      "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset)",
+      "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+      "org.apache.commons.io.input.CharSequenceInputStream.NO_MARK",
+      "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+      "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+      "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+      "org.apache.commons.io.input.CharSequenceInputStream.mark",
+      "org.apache.commons.io.input.CharSequenceInputStream.mark(int)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.io.input.CharSequenceInputStream.mark": {
+        "org.apache.commons.io.input.CharSequenceInputStream.mark": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 220
+          }
+        ]
+      },
+      "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)": {
+        "org.apache.commons.io.input.CharSequenceInputStream.mark": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 73
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.cbuf": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 221
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 72
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.bbuf": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 223
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 70
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.encoder": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 224
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 62
+          }
+        ]
+      },
+      "org.apache.commons.io.input.CharSequenceInputStream.mark(int)": {
+        "org.apache.commons.io.input.CharSequenceInputStream.mark": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.mark(int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 215
+          }
+        ]
+      },
+      "org.apache.commons.io.input.CharSequenceInputStream.NO_MARK": {
+        "org.apache.commons.io.input.CharSequenceInputStream.NO_MARK": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.NO_MARK",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 220
+          }
+        ]
+      },
+      "org.apache.commons.io.input.CharSequenceInputStream.cbuf": {
+        "org.apache.commons.io.input.CharSequenceInputStream.cbuf": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 221
+          }
+        ]
+      },
+      "org.apache.commons.io.input.CharSequenceInputStream.bbuf": {
+        "org.apache.commons.io.input.CharSequenceInputStream.bbuf": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 223
+          }
+        ]
+      },
+      "org.apache.commons.io.input.CharSequenceInputStream.encoder": {
+        "org.apache.commons.io.input.CharSequenceInputStream.encoder": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 224
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.io.input.CharSequenceInputStream.mark": {
+        "org.apache.commons.io.input.CharSequenceInputStream.mark": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 220
+          }
+        ]
+      },
+      "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)": {
+        "org.apache.commons.io.input.CharSequenceInputStream.mark": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 73
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.cbuf": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 221
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 72
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.bbuf": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 223
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 70
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.encoder": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 224
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 62
+          }
+        ]
+      },
+      "org.apache.commons.io.input.CharSequenceInputStream.encoder": {
+        "org.apache.commons.io.input.CharSequenceInputStream.mark": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 73
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 66
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.cbuf": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 221
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 72
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 66
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.bbuf": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 223
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 70
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 66
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.encoder": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 224
+          }
+        ]
+      },
+      "org.apache.commons.io.input.CharSequenceInputStream.bbuf": {
+        "org.apache.commons.io.input.CharSequenceInputStream.mark": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 73
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 71
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.cbuf": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 221
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 72
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 71
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.bbuf": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 223
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.encoder": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 224
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 62
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 71
+          }
+        ]
+      },
+      "org.apache.commons.io.input.CharSequenceInputStream.NO_MARK": {
+        "org.apache.commons.io.input.CharSequenceInputStream.mark": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 73
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.NO_MARK",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 73
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.NO_MARK": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.NO_MARK",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 220
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.cbuf": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 221
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 72
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.NO_MARK",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 73
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.bbuf": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 223
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 70
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.NO_MARK",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 73
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.encoder": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 224
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 62
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.NO_MARK",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 73
+          }
+        ]
+      },
+      "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String,int)": {
+        "org.apache.commons.io.input.CharSequenceInputStream.mark": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 73
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 85
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.cbuf": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 221
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 72
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 85
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.bbuf": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 223
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 70
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 85
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.encoder": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 224
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 62
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 85
+          }
+        ]
+      },
+      "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String)": {
+        "org.apache.commons.io.input.CharSequenceInputStream.mark": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 73
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 85
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 109
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.cbuf": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 221
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 72
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 85
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 109
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.bbuf": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 223
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 70
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 85
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 109
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.encoder": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 224
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 62
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 85
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 109
+          }
+        ]
+      },
+      "org.apache.commons.io.input.CharSequenceInputStream.BUFFER_SIZE": {
+        "org.apache.commons.io.input.CharSequenceInputStream.mark": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 73
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 97
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.BUFFER_SIZE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 97
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.cbuf": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 221
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 72
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 97
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.BUFFER_SIZE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 97
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.bbuf": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 223
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 70
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 97
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.BUFFER_SIZE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 97
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.encoder": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 224
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 62
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 97
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.BUFFER_SIZE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 97
+          }
+        ]
+      },
+      "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset)": {
+        "org.apache.commons.io.input.CharSequenceInputStream.mark": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 73
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 97
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.cbuf": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 221
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 72
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 97
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.bbuf": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 223
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.bbuf",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 70
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 97
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.encoder": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 224
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.encoder",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 62
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 97
+          }
+        ]
+      },
+      "org.apache.commons.io.input.CharSequenceInputStream.mark(int)": {
+        "org.apache.commons.io.input.CharSequenceInputStream.mark": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.mark(int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 215
+          }
+        ]
+      },
+      "org.apache.commons.io.input.CharSequenceInputStream.cbuf": {
+        "org.apache.commons.io.input.CharSequenceInputStream.mark": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.mark(int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.mark",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 215
+          },
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.mark(int)",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 215
+          }
+        ],
+        "org.apache.commons.io.input.CharSequenceInputStream.cbuf": [
+          {
+            "from": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+            "to": "org.apache.commons.io.input.CharSequenceInputStream.cbuf",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/io/input/CharSequenceInputStream.java",
+            "line": 221
+          }
+        ]
+      }
+    }
+  },
+  "indexed_targets": [
+    "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+    "org.apache.commons.io.input.CharSequenceInputStream.mark",
+    "org.apache.commons.io.input.CharSequenceInputStream.mark(int)",
+    "org.apache.commons.io.input.CharSequenceInputStream.skip(long)"
+  ],
+  "unindexed_targets": [
+    "org.apache.commons.io.input.CharSequenceInputStream.mark_bbuf",
+    "org.apache.commons.io.input.CharSequenceInputStream.mark_cbuf"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 0,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+        "org.apache.commons.io.input.CharSequenceInputStream.mark",
+        "org.apache.commons.io.input.CharSequenceInputStream.mark(int)",
+        "org.apache.commons.io.input.CharSequenceInputStream.mark_bbuf",
+        "org.apache.commons.io.input.CharSequenceInputStream.mark_cbuf",
+        "org.apache.commons.io.input.CharSequenceInputStream.skip(long)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+        "org.apache.commons.io.input.CharSequenceInputStream.mark",
+        "org.apache.commons.io.input.CharSequenceInputStream.mark(int)",
+        "org.apache.commons.io.input.CharSequenceInputStream.skip(long)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 7,
+      "hits": [
+        "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+        "org.apache.commons.io.input.CharSequenceInputStream.mark",
+        "org.apache.commons.io.input.CharSequenceInputStream.mark(int)"
+      ],
+      "misses": [
+        "org.apache.commons.io.input.CharSequenceInputStream.mark_bbuf",
+        "org.apache.commons.io.input.CharSequenceInputStream.mark_cbuf",
+        "org.apache.commons.io.input.CharSequenceInputStream.skip(long)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.io.input.CharSequenceInputStream.skip(long)"
+      ],
+      "indexed_recall": 0.75
+    },
+    "multihop": {
+      "candidate_count": 11,
+      "hits": [
+        "org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)",
+        "org.apache.commons.io.input.CharSequenceInputStream.mark",
+        "org.apache.commons.io.input.CharSequenceInputStream.mark(int)"
+      ],
+      "misses": [
+        "org.apache.commons.io.input.CharSequenceInputStream.mark_bbuf",
+        "org.apache.commons.io.input.CharSequenceInputStream.mark_cbuf",
+        "org.apache.commons.io.input.CharSequenceInputStream.skip(long)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.io.input.CharSequenceInputStream.skip(long)"
+      ],
+      "indexed_recall": 0.75
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "constantinople-008",
+  "fingerprint": "96cb0199c1129c0379531fc14114469f0d891b3b9f2090346e15039d7ca27244",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "7cf2f78bb6d42c5929194bd37fa5eeb654178576",
+  "candidates": [
+    "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.allocateBlocks(int)",
+    "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.calculateByteOffsetForBlock(int)",
+    "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.calculateTheNumberOfBlocksNeeded(byte[])",
+    "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.read(int[])",
+    "org.apache.commons.jcs.auxiliary.disk.block.BlockDiskCache.processUpdate(org.apache.commons.jcs.engine.behavior.ICacheElement)",
+    "org.apache.commons.jcs.engine.behavior.IElementSerializer.serialize(java.lang.Object)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.calculateTheNumberOfBlocksNeeded(byte[])": [
+          "CALLS"
+        ],
+        "org.apache.commons.jcs.engine.behavior.IElementSerializer.serialize(java.lang.Object)": [
+          "CALLS"
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.allocateBlocks(int)": [
+          "CALLS"
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.calculateByteOffsetForBlock(int)": [
+          "CALLS"
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDiskCache.processUpdate(org.apache.commons.jcs.engine.behavior.ICacheElement)": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.readBlock(int)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.read(int[])": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.calculateByteOffsetForBlock(int)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

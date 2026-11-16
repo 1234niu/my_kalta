@@ -1,0 +1,33 @@
+{
+  "id": "constantinople-013",
+  "fingerprint": "98de01b5890f7131b4f3270c9bc719f9d1c7203c169940bfab3d6c36be56c1ba",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "9967600bdf3b856f00c9078282847d76410140b4",
+  "candidates": [
+    "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getConfigurationResolveReportInCache(java.lang.String,java.lang.String)",
+    "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getConfigurationResolveReportsInCache(java.lang.String)",
+    "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolvedIvyFileInCache(org.apache.ivy.core.module.id.ModuleRevisionId)",
+    "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolvedIvyPropertiesInCache(org.apache.ivy.core.module.id.ModuleRevisionId)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolutionCacheRoot()",
+      "type": "executable",
+      "relations": {
+        "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolvedIvyFileInCache(org.apache.ivy.core.module.id.ModuleRevisionId)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getConfigurationResolveReportsInCache(java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getConfigurationResolveReportInCache(java.lang.String,java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolvedIvyPropertiesInCache(org.apache.ivy.core.module.id.ModuleRevisionId)": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "constantinople-012",
+  "fingerprint": "49537f9fffd0d8de46064ec080a55451bb6f65f1475765724b8ad93e9df21d96",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "c7d2c91cfd046ee0d1fb264b7a5806e0d8110922",
+  "candidates": [
+    "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser.parseDescriptor(org.apache.ivy.plugins.parser.ParserSettings,java.net.URL,org.apache.ivy.plugins.repository.Resource,boolean)",
+    "org.apache.ivy.plugins.parser.m2.PomReader.1.1()",
+    "org.apache.ivy.plugins.parser.m2.PomReader.AddDTDFilterInputStream.AddDTDFilterInputStream(java.io.InputStream)",
+    "org.apache.ivy.plugins.parser.m2.PomReader.getFirstChildElement(org.w3c.dom.Element,java.lang.String)",
+    "org.apache.ivy.plugins.repository.Resource.getName()",
+    "org.apache.ivy.util.XMLHelper.parseToDom(java.io.InputStream,org.apache.ivy.plugins.repository.Resource,org.xml.sax.EntityResolver)",
+    "org.apache.ivy.util.url.URLHandler.openStream(java.net.URL)",
+    "org.apache.ivy.util.url.URLHandlerRegistry.getDefault()"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+      "type": "executable",
+      "relations": {
+        "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser.parseDescriptor(org.apache.ivy.plugins.parser.ParserSettings,java.net.URL,org.apache.ivy.plugins.repository.Resource,boolean)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.ivy.plugins.parser.m2.PomReader.AddDTDFilterInputStream.AddDTDFilterInputStream(java.io.InputStream)": [
+          "CALLS"
+        ],
+        "org.apache.ivy.plugins.parser.m2.PomReader.getFirstChildElement(org.w3c.dom.Element,java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.ivy.util.url.URLHandler.openStream(java.net.URL)": [
+          "CALLS"
+        ],
+        "org.apache.ivy.plugins.parser.m2.PomReader.1.1()": [
+          "CALLS"
+        ],
+        "org.apache.ivy.plugins.repository.Resource.getName()": [
+          "CALLS"
+        ],
+        "org.apache.ivy.util.XMLHelper.parseToDom(java.io.InputStream,org.apache.ivy.plugins.repository.Resource,org.xml.sax.EntityResolver)": [
+          "CALLS"
+        ],
+        "org.apache.ivy.util.url.URLHandlerRegistry.getDefault()": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

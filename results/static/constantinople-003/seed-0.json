@@ -1,0 +1,1 @@
+{"fr.jayasoft.ivy.repository.vfs.VfsResource.getChildren()":["CALLS"],"fr.jayasoft.ivy.repository.vfs.VfsResource.VfsResource(java.lang.String,org.apache.commons.vfs.FileSystemManager)":["CALLS"],"fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()":["CALLS"]}

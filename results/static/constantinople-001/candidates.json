@@ -1,0 +1,15 @@
+{
+  "id": "constantinople-001",
+  "fingerprint": "e5f123346c724cf192644a5ddf076561af6c699a6b97ddd85a4265515fc96aa3",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "4271d0f15e0b675a83f20343eaa38fe642b09e65",
+  "candidates": [],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.io.input.CharSequenceInputStream.reset()",
+      "type": "executable",
+      "relations": {},
+      "resolution": "empty_unresolved_or_no_relations"
+    }
+  ]
+}

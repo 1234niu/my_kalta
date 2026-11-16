@@ -1,0 +1,15 @@
+{
+  "id": "constantinople-001",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 0,
+  "predictions": [
+    "org.apache.commons.io.input.CharSequenceInputStream.fillBuffer()",
+    "org.apache.commons.io.input.CharSequenceInputStream.mark(int)",
+    "org.apache.commons.io.input.CharSequenceInputStream.mark_bbuf",
+    "org.apache.commons.io.input.CharSequenceInputStream.mark_cbuf"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "c8ec6d074badc31781ad94e0fdc06877405f1fa46ef0549fa7a53c2345eab771",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

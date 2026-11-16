@@ -1,0 +1,29 @@
+{
+  "id": "constantinople-014",
+  "fingerprint": "b0f4ff7a6ad447c8f63b5bf8807bca12b2a4da8b9892211ec589d2cd205a9040",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "e194bd41a1655aef9747a03f1267b8a62cfa5fa6",
+  "candidates": [
+    "org.apache.commons.configuration.AbstractConfiguration.interpolate(java.lang.Object)",
+    "org.apache.commons.configuration.Configuration.containsKey(java.lang.String)",
+    "org.apache.commons.configuration.Configuration.getList(java.lang.String)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.configuration.Configuration.containsKey(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.configuration.Configuration.getList(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.configuration.AbstractConfiguration.interpolate(java.lang.Object)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

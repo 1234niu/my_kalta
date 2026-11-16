@@ -1,0 +1,37 @@
+{
+  "id": "constantinople-017",
+  "fingerprint": "9c68ba90649b913b9726a35574d65f61364ba09dc737f18648660fd1689b354c",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "6b537b20f98b380ee3ecfd51d09ec8de6aa8c048",
+  "candidates": [
+    "org.apache.commons.math3.linear.RealMatrix.getRowVector(int)",
+    "org.apache.commons.math3.linear.RealMatrix.setRowVector(int,org.apache.commons.math3.linear.RealVector)",
+    "org.apache.commons.math3.linear.RealVector.mapMultiply(double)",
+    "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+    "org.apache.commons.math3.optimization.linear.SimplexSolver.doIteration(org.apache.commons.math3.optimization.linear.SimplexTableau)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.math3.optimization.linear.SimplexSolver.doIteration(org.apache.commons.math3.optimization.linear.SimplexTableau)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.math3.linear.RealMatrix.setRowVector(int,org.apache.commons.math3.linear.RealVector)": [
+          "CALLS"
+        ],
+        "org.apache.commons.math3.linear.RealMatrix.getRowVector(int)": [
+          "CALLS"
+        ],
+        "org.apache.commons.math3.linear.RealVector.mapMultiply(double)": [
+          "CALLS"
+        ],
+        "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "constantinople-011",
+  "fingerprint": "d3ddbb804a7a6b5df7e1aaffdb2976f8a3206aa43b05a290fed91628a1140ec0",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "77a30c218d8b1505a9ed450e62625321bdf000fb",
+  "candidates": [
+    "examples.mail.SMTPMail.main(java.lang.String[])"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+      "type": "executable",
+      "relations": {
+        "examples.mail.SMTPMail.main(java.lang.String[])": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

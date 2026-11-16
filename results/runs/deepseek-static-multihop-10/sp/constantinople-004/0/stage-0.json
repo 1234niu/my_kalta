@@ -1,0 +1,48 @@
+{
+  "request_sha256": "033009df1e7cae56dad27aa6952c31a2961d7c99041518d99ae967d263ed9dcb",
+  "request": {
+    "model": "deepseek-v4.1-flash-1017",
+    "temperature": 0,
+    "messages": [
+      {
+        "role": "user",
+        "content": "# System Information\nYou are an expert in Java and in analyzing the impact of source code changes on other code entities in a project's production code.\n\n# General Information\nYou receive information about a set of changes, called seed changes, that were made to fix a bug reported in Jira.\nYou also receive the Jira bug report title and description and an initial impact set consisting of the fully qualified names of code entities that are statically related to the seed changes.\n\n# Task\nYour task is to refine the initial impact set.\nA code entity is part of the impact set if it requires modification or, if it does not already exist, must be created as a consequence of the seed changes.\nFirst, remove code entities unless the provided information indicates that they must be modified.\nSecond, add code entities that must be modified or created according to the provided evidence.\n\nYour goal is to report a final impact set that consists of the fully qualified names of code entities that must be modified or created because of the seed changes.\n\n# Inputs\n- Jira bug report title: Resolve does not deliver all dependent artifacts\n- Jira bug report description: We have three configurations.\\n\\n{code:title=Configurations}\\n<configurations>\\n <conf name=\"runtime\" extends=\"requires, compile\" transitive=\"true\"/>\\n <conf name=\"requires\" />\\n <conf name=\"compile\"/>\\n</configurations>\\n{code}\\n\\nAdditional we have the following dependencies between ivy modules (test, a, b, c) (each module has a simple jar as artifact):\\n{code:title=Dependencies}\\ntest \"requires->#\" a\\ntest \"requires->#\" c\\n\\nc \"requires->#\" a\\nc \"requires->#\" b\\n{code}\\nThe artifacts have the configuration compile.\\n\\nIf I do a resolve on test with configuration \"runtime\" I only get artifacts for modules a and c but not b. \\n\\nThe problem happens in conflict resolution. Ivy generates the dependendies with wrong rootModuleConfigurations. In out case, the module b is loaded with root module configuration requires and not runtime.\\n\\nYou find attached the example a unit test and a possible resolution in method computeConflicts of ResolveEngine.\\n\\nPossible dependency to IVY-729\n- Seed changes and their Git diff hunks: [{\"fqn\": \"org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])\", \"git_diff_hunk\": \"@@ -291 +291 @@ public class IvyNode implements Comparable {\\n- public Collection getDependencies(String rootModuleConf, String[] confs) {\\n+ public Collection getDependencies(String rootModuleConf, String[] confs, String requestedConf) {\\n@@ -305 +305 @@ public class IvyNode implements Comparable {\\n- deps.addAll(getDependencies(rootModuleConf, confs[i], confs[i]));\\n+ deps.addAll(getDependencies(rootModuleConf, confs[i], requestedConf));\"}]\n- Initial static code change impact set: [\"org.apache.ivy.core.module.descriptor.ModuleDescriptor.getConfigurationsNames()\", \"org.apache.ivy.core.module.descriptor.ModuleDescriptor.getPublicConfigurationsNames()\", \"org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.module.descriptor.ModuleDescriptor)\", \"org.apache.ivy.core.resolve.IvyNode.IvyNode(org.apache.ivy.core.resolve.ResolveData,org.apache.ivy.core.resolve.IvyNode,org.apache.ivy.core.module.descriptor.DependencyDescriptor)\", \"org.apache.ivy.core.resolve.IvyNode.confsToFetch\", \"org.apache.ivy.core.resolve.IvyNode.data\", \"org.apache.ivy.core.resolve.IvyNode.dds\", \"org.apache.ivy.core.resolve.IvyNode.downloaded\", \"org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)\", \"org.apache.ivy.core.resolve.IvyNode.init(org.apache.ivy.core.resolve.ResolveData)\", \"org.apache.ivy.core.resolve.IvyNode.isRoot()\", \"org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)\", \"org.apache.ivy.core.resolve.IvyNode.md\", \"org.apache.ivy.core.resolve.IvyNode.module\", \"org.apache.ivy.core.resolve.IvyNode.moveToRealNode(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNode)\", \"org.apache.ivy.core.resolve.IvyNode.problem\", \"org.apache.ivy.core.resolve.IvyNode.root\", \"org.apache.ivy.core.resolve.IvyNode.searched\", \"org.apache.ivy.core.resolve.IvyNode.settings\", \"org.apache.ivy.core.resolve.IvyNode.usage\", \"org.apache.ivy.core.resolve.ResolveEngine.computeConflicts(org.apache.ivy.core.resolve.VisitNode,org.apache.ivy.core.resolve.VisitNode,java.lang.String,java.util.Collection,java.util.Collection)\"]\n\n# Output Format\nReturn exactly one valid single-line JSON array of strings.\nEach string must be the fully qualified name of an impacted code entity.\nDo not include any additional text, formatting, or meta-information.\nDo not include seed changes in the output.\n\nExample output (four impacted code entities):\n[\"com.example.Foo.someMethod(java.lang.String, int)\", \"com.example.bar.attribute1\", \"com.example.bar.Class.NestedClass\", \"com.example.bar.Class.Class()\"]\n\nExample output (two impacted code entities):\n[\"com.example.package.ParentClass.ChildClass.field\", \"com.example.package.ParentClass.apply(long, com.example.package.ParentClass)\"]\n\nExample output (zero impacted code entities):\n[]"
+      }
+    ],
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096
+  },
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "[\"org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)\",\"org.apache.ivy.core.resolve.ResolveEngine.computeConflicts(org.apache.ivy.core.resolve.VisitNode,org.apache.ivy.core.resolve.VisitNode,java.lang.String,java.util.Collection,java.util.Collection)\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1794812322,
+    "id": "0217948123217011bf4585e48db892caa0c2994c31993746a8704",
+    "model": "deepseek-v4.1-flash-1017",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 80,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1307,
+      "prompt_tokens": 1307,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 1387
+    }
+  },
+  "seconds": 1.3919254169999995,
+  "endpoint": "http://api.aicnic.cn/v1"
+}

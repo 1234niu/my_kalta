@@ -1,0 +1,85 @@
+{
+  "id": "constantinople-018",
+  "fingerprint": "2aeeb4462005da2c3fb62cb858211220adb0de1faa8d7780221ab53fc4745bc9",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "22ba38f8a902de29e9bc4d40ec5da14fe31cdc8e",
+  "candidates": [
+    "opennlp.tools.namefind.DefaultNameContextGenerator.getContext(int,java.lang.String[],java.lang.String[],java.lang.Object[])",
+    "opennlp.tools.util.featuregen.BigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+    "opennlp.tools.util.featuregen.BrownTokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+    "opennlp.tools.util.featuregen.StringPattern.containsComma()",
+    "opennlp.tools.util.featuregen.StringPattern.containsDigit()",
+    "opennlp.tools.util.featuregen.StringPattern.containsHyphen()",
+    "opennlp.tools.util.featuregen.StringPattern.containsLetters()",
+    "opennlp.tools.util.featuregen.StringPattern.containsPeriod()",
+    "opennlp.tools.util.featuregen.StringPattern.containsSlash()",
+    "opennlp.tools.util.featuregen.StringPattern.digits()",
+    "opennlp.tools.util.featuregen.StringPattern.isAllCapitalLetter()",
+    "opennlp.tools.util.featuregen.StringPattern.isAllLowerCaseLetter()",
+    "opennlp.tools.util.featuregen.StringPattern.isInitialCapitalLetter()",
+    "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+    "opennlp.tools.util.featuregen.TokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+    "opennlp.tools.util.featuregen.TokenPatternFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+    "opennlp.tools.util.featuregen.TrigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])"
+  ],
+  "seeds": [
+    {
+      "fqn": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+      "type": "executable",
+      "relations": {
+        "opennlp.tools.util.featuregen.StringPattern.containsSlash()": [
+          "CALLS"
+        ],
+        "opennlp.tools.util.featuregen.StringPattern.digits()": [
+          "CALLS"
+        ],
+        "opennlp.tools.util.featuregen.StringPattern.isInitialCapitalLetter()": [
+          "CALLS"
+        ],
+        "opennlp.tools.util.featuregen.StringPattern.containsHyphen()": [
+          "CALLS"
+        ],
+        "opennlp.tools.util.featuregen.BigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])": [
+          "IS_CALLED_BY"
+        ],
+        "opennlp.tools.util.featuregen.StringPattern.isAllCapitalLetter()": [
+          "CALLS"
+        ],
+        "opennlp.tools.util.featuregen.BrownTokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])": [
+          "IS_CALLED_BY"
+        ],
+        "opennlp.tools.util.featuregen.StringPattern.containsLetters()": [
+          "CALLS"
+        ],
+        "opennlp.tools.util.featuregen.StringPattern.isAllLowerCaseLetter()": [
+          "CALLS"
+        ],
+        "opennlp.tools.util.featuregen.TokenPatternFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])": [
+          "IS_CALLED_BY"
+        ],
+        "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)": [
+          "CALLS"
+        ],
+        "opennlp.tools.util.featuregen.TrigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])": [
+          "IS_CALLED_BY"
+        ],
+        "opennlp.tools.util.featuregen.StringPattern.containsComma()": [
+          "CALLS"
+        ],
+        "opennlp.tools.util.featuregen.TokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])": [
+          "IS_CALLED_BY"
+        ],
+        "opennlp.tools.namefind.DefaultNameContextGenerator.getContext(int,java.lang.String[],java.lang.String[],java.lang.Object[])": [
+          "IS_CALLED_BY"
+        ],
+        "opennlp.tools.util.featuregen.StringPattern.containsPeriod()": [
+          "CALLS"
+        ],
+        "opennlp.tools.util.featuregen.StringPattern.containsDigit()": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

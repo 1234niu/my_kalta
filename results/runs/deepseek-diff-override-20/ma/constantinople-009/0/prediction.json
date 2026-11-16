@@ -1,0 +1,15 @@
+{
+  "id": "constantinople-009",
+  "variant": "ma",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 0,
+  "predictions": [
+    "org.apache.sysml.conf.DMLConfig.DMLConfig(org.w3c.dom.Element)",
+    "org.apache.sysml.conf.DMLConfig._document",
+    "org.apache.sysml.conf.DMLConfig.clone()",
+    "org.apache.sysml.conf.DMLConfig.getDocumentBuilder()"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "aeff10b82e71b1deae25f1551853bddca6cd47d709e03d5f4524a051723f7f83",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

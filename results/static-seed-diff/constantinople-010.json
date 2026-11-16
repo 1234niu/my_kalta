@@ -1,0 +1,775 @@
+{
+  "id": "constantinople-010",
+  "graph_edges": 13061,
+  "seeds": {
+    "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.ivy.plugins.repository.sftp.SFTPRepository.getSftpChannel(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getHost()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFile()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFilePassword()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPassFile()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPort()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUser()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUserPassword()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.SshCache.getInstance()",
+      "org.apache.ivy.plugins.repository.ssh.SshCache.getSession(java.lang.String,int,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.get(java.lang.String,java.io.File)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.list(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.openStream(org.apache.ivy.plugins.repository.ssh.SshResource)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.put(java.io.File,java.lang.String,boolean)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.resolveResource(java.lang.String)"
+    ],
+    "fields": [
+      "org.apache.ivy.plugins.repository.sftp.SFTPRepository.getSftpChannel(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getHost()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFile()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFilePassword()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPassFile()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPort()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUser()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUserPassword()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.SshCache.getInstance()",
+      "org.apache.ivy.plugins.repository.ssh.SshCache.getSession(java.lang.String,int,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.get(java.lang.String,java.io.File)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.list(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.openStream(org.apache.ivy.plugins.repository.ssh.SshResource)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.put(java.io.File,java.lang.String,boolean)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.resolveResource(java.lang.String)"
+    ],
+    "multihop": [
+      "org.apache.ivy.plugins.repository.sftp.SFTPRepository.getSftpChannel(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getHost()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFile()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFilePassword()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPassFile()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPort()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUser()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUserPassword()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.host",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.keyFile",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.keyFilePassword",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.passFile",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.port",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setHost(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setKeyFile(java.io.File)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setKeyFilePassword(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setPassFile(java.io.File)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setPort(int)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setUser(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setUserPassword(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.user",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.userPassword",
+      "org.apache.ivy.plugins.repository.ssh.SshCache.getInstance()",
+      "org.apache.ivy.plugins.repository.ssh.SshCache.getSession(java.lang.String,int,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.get(java.lang.String,java.io.File)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.list(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.openStream(org.apache.ivy.plugins.repository.ssh.SshResource)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.put(java.io.File,java.lang.String,boolean)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.resolveResource(java.lang.String)"
+    ],
+    "two_hop_calls": [
+      "org.apache.ivy.plugins.repository.sftp.SFTPRepository.getSftpChannel(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getHost()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFile()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFilePassword()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPassFile()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPort()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getRepositoryScheme()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUser()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUserPassword()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.host",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.keyFile",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.keyFilePassword",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.passFile",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.port",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setHost(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setKeyFile(java.io.File)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setKeyFilePassword(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setPassFile(java.io.File)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setPort(int)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setUser(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setUserPassword(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.user",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.userPassword",
+      "org.apache.ivy.plugins.repository.ssh.SshCache.CfUserInfo.CfUserInfo(java.lang.String,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)",
+      "org.apache.ivy.plugins.repository.ssh.SshCache.Entry.getSession()",
+      "org.apache.ivy.plugins.repository.ssh.SshCache.getCacheEntry(java.lang.String,java.lang.String,int)",
+      "org.apache.ivy.plugins.repository.ssh.SshCache.getInstance()",
+      "org.apache.ivy.plugins.repository.ssh.SshCache.getSession(java.lang.String,int,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)",
+      "org.apache.ivy.plugins.repository.ssh.SshCache.setSession(java.lang.String,java.lang.String,int,com.jcraft.jsch.Session)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.get(java.lang.String,java.io.File)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.list(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.openStream(org.apache.ivy.plugins.repository.ssh.SshResource)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.put(java.io.File,java.lang.String,boolean)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.resolveResource(java.lang.String)",
+      "org.apache.ivy.util.Message.error(java.lang.String)",
+      "org.apache.ivy.util.Message.verbose(java.lang.String)"
+    ],
+    "diff_and_override": [
+      "org.apache.ivy.plugins.repository.sftp.SFTPRepository.getSftpChannel(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getHost()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFile()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFilePassword()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPassFile()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPort()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getRepositoryScheme()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUser()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUserPassword()",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.host",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.keyFile",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.keyFilePassword",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.passFile",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.port",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setHost(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setKeyFile(java.io.File)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setKeyFilePassword(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setPassFile(java.io.File)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setPort(int)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setUser(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setUserPassword(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.user",
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.userPassword",
+      "org.apache.ivy.plugins.repository.ssh.SshCache.CfUserInfo.CfUserInfo(java.lang.String,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)",
+      "org.apache.ivy.plugins.repository.ssh.SshCache.Entry.getSession()",
+      "org.apache.ivy.plugins.repository.ssh.SshCache.getCacheEntry(java.lang.String,java.lang.String,int)",
+      "org.apache.ivy.plugins.repository.ssh.SshCache.getInstance()",
+      "org.apache.ivy.plugins.repository.ssh.SshCache.getSession(java.lang.String,int,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)",
+      "org.apache.ivy.plugins.repository.ssh.SshCache.requestCredentials(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.SshCache.setSession(java.lang.String,java.lang.String,int,com.jcraft.jsch.Session)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.get(java.lang.String,java.io.File)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.list(java.lang.String)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.openStream(org.apache.ivy.plugins.repository.ssh.SshResource)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.put(java.io.File,java.lang.String,boolean)",
+      "org.apache.ivy.plugins.repository.ssh.SshRepository.resolveResource(java.lang.String)",
+      "org.apache.ivy.util.Message.error(java.lang.String)",
+      "org.apache.ivy.util.Message.requestCredentials(java.lang.String)",
+      "org.apache.ivy.util.Message.verbose(java.lang.String)"
+    ]
+  },
+  "evidence": {
+    "fields": {},
+    "multihop": {
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.host": {
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.host": [
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getHost()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 61
+          },
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getHost()",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.host",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 209
+          }
+        ]
+      },
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setHost(java.lang.String)": {
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.host": [
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getHost()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 61
+          },
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getHost()",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.host",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 209
+          },
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setHost(java.lang.String)",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.host",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 217
+          }
+        ]
+      },
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.port": {
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.port": [
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPort()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 62
+          },
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPort()",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.port",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 224
+          }
+        ]
+      },
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setPort(int)": {
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.port": [
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPort()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 62
+          },
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPort()",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.port",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 224
+          },
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setPort(int)",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.port",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 232
+          }
+        ]
+      },
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.user": {
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.user": [
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUser()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 63
+          },
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUser()",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.user",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 146
+          }
+        ]
+      },
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setUser(java.lang.String)": {
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.user": [
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUser()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 63
+          },
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUser()",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.user",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 146
+          },
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setUser(java.lang.String)",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.user",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 139
+          }
+        ]
+      },
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.userPassword": {
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.userPassword": [
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUserPassword()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 64
+          },
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUserPassword()",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.userPassword",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 202
+          }
+        ]
+      },
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setUserPassword(java.lang.String)": {
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.userPassword": [
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUserPassword()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 64
+          },
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUserPassword()",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.userPassword",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setUserPassword(java.lang.String)",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.userPassword",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 180
+          }
+        ]
+      },
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.keyFile": {
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.keyFile": [
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFile()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 82
+          },
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFile()",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.keyFile",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 172
+          }
+        ]
+      },
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setKeyFile(java.io.File)": {
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.keyFile": [
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFile()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 82
+          },
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFile()",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.keyFile",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 172
+          },
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setKeyFile(java.io.File)",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.keyFile",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 156
+          }
+        ]
+      },
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.keyFilePassword": {
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.keyFilePassword": [
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFilePassword()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 83
+          },
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFilePassword()",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.keyFilePassword",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 187
+          }
+        ]
+      },
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setKeyFilePassword(java.lang.String)": {
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.keyFilePassword": [
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFilePassword()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 83
+          },
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFilePassword()",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.keyFilePassword",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 187
+          },
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setKeyFilePassword(java.lang.String)",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.keyFilePassword",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 195
+          }
+        ]
+      },
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.passFile": {
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.passFile": [
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPassFile()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 83
+          },
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPassFile()",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.passFile",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 247
+          }
+        ]
+      },
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setPassFile(java.io.File)": {
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.passFile": [
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPassFile()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 83
+          },
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPassFile()",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.passFile",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 247
+          },
+          {
+            "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.setPassFile(java.io.File)",
+            "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.passFile",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+            "line": 240
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getRepositoryScheme()": [
+        {
+          "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+          "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+          "line": 60
+        },
+        {
+          "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)",
+          "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getRepositoryScheme()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+          "line": 97
+        }
+      ],
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getHost()": [
+        {
+          "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+          "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+          "line": 60
+        },
+        {
+          "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)",
+          "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getHost()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+          "line": 101
+        }
+      ],
+      "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUser()": [
+        {
+          "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+          "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+          "line": 60
+        },
+        {
+          "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)",
+          "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUser()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+          "line": 107
+        }
+      ],
+      "org.apache.ivy.util.Message.error(java.lang.String)": [
+        {
+          "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+          "to": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+          "line": 60
+        },
+        {
+          "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)",
+          "to": "org.apache.ivy.util.Message.error(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+          "line": 112
+        }
+      ],
+      "org.apache.ivy.plugins.repository.ssh.SshCache.getCacheEntry(java.lang.String,java.lang.String,int)": [
+        {
+          "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+          "to": "org.apache.ivy.plugins.repository.ssh.SshCache.getSession(java.lang.String,int,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+          "line": 82
+        },
+        {
+          "from": "org.apache.ivy.plugins.repository.ssh.SshCache.getSession(java.lang.String,int,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)",
+          "to": "org.apache.ivy.plugins.repository.ssh.SshCache.getCacheEntry(java.lang.String,java.lang.String,int)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/plugins/repository/ssh/SshCache.java",
+          "line": 307
+        }
+      ],
+      "org.apache.ivy.plugins.repository.ssh.SshCache.Entry.getSession()": [
+        {
+          "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+          "to": "org.apache.ivy.plugins.repository.ssh.SshCache.getSession(java.lang.String,int,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+          "line": 82
+        },
+        {
+          "from": "org.apache.ivy.plugins.repository.ssh.SshCache.getSession(java.lang.String,int,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)",
+          "to": "org.apache.ivy.plugins.repository.ssh.SshCache.Entry.getSession()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/plugins/repository/ssh/SshCache.java",
+          "line": 310
+        }
+      ],
+      "org.apache.ivy.util.Message.verbose(java.lang.String)": [
+        {
+          "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+          "to": "org.apache.ivy.plugins.repository.ssh.SshCache.getSession(java.lang.String,int,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+          "line": 82
+        },
+        {
+          "from": "org.apache.ivy.plugins.repository.ssh.SshCache.getSession(java.lang.String,int,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)",
+          "to": "org.apache.ivy.util.Message.verbose(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/plugins/repository/ssh/SshCache.java",
+          "line": 313
+        }
+      ],
+      "org.apache.ivy.plugins.repository.ssh.SshCache.CfUserInfo.CfUserInfo(java.lang.String,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)": [
+        {
+          "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+          "to": "org.apache.ivy.plugins.repository.ssh.SshCache.getSession(java.lang.String,int,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+          "line": 82
+        },
+        {
+          "from": "org.apache.ivy.plugins.repository.ssh.SshCache.getSession(java.lang.String,int,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)",
+          "to": "org.apache.ivy.plugins.repository.ssh.SshCache.CfUserInfo.CfUserInfo(java.lang.String,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/plugins/repository/ssh/SshCache.java",
+          "line": 324
+        }
+      ],
+      "org.apache.ivy.plugins.repository.ssh.SshCache.setSession(java.lang.String,java.lang.String,int,com.jcraft.jsch.Session)": [
+        {
+          "from": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+          "to": "org.apache.ivy.plugins.repository.ssh.SshCache.getSession(java.lang.String,int,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+          "line": 82
+        },
+        {
+          "from": "org.apache.ivy.plugins.repository.ssh.SshCache.getSession(java.lang.String,int,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)",
+          "to": "org.apache.ivy.plugins.repository.ssh.SshCache.setSession(java.lang.String,java.lang.String,int,com.jcraft.jsch.Session)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/plugins/repository/ssh/SshCache.java",
+          "line": 328
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 5347,
+      "ma_analysis": 4929,
+      "ma_refinement_fixed": 4558
+    },
+    "two_hop_calls": {
+      "sp": 6012,
+      "ma_analysis": 5594,
+      "ma_refinement_fixed": 5223
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "requestCredentials",
+        "arity": 1,
+        "arguments": [
+          "host"
+        ],
+        "receiver": null,
+        "after_line": 95,
+        "expression": "requestCredentials(host)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+        "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.ivy.plugins.repository.ssh.SshCache.requestCredentials(java.lang.String)",
+          "org.apache.ivy.util.Message.requestCredentials(java.lang.String)"
+        ]
+      },
+      {
+        "name": "getUserName",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "c",
+        "after_line": 97,
+        "expression": "getUserName()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+        "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getPasswd",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "c",
+        "after_line": 98,
+        "expression": "getPasswd()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+        "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "error",
+        "arity": 1,
+        "arguments": [
+          "\"username is not set\""
+        ],
+        "receiver": "Message",
+        "after_line": 100,
+        "expression": "error(\"username is not set\")",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+        "file": "src/java/org/apache/ivy/plugins/repository/ssh/AbstractSshBasedRepository.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [
+    "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)",
+    "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.user"
+  ],
+  "unindexed_targets": [
+    "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.MAX_CREDENTILAS_CACHE_SIZE",
+    "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.credentialsCache",
+    "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.requestCredentials(java.lang.String)"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 16,
+      "hits": [
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)"
+      ],
+      "misses": [
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.MAX_CREDENTILAS_CACHE_SIZE",
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.credentialsCache",
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.requestCredentials(java.lang.String)",
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.user"
+      ],
+      "indexed_misses": [
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.user"
+      ],
+      "indexed_recall": 0.5
+    },
+    "fields": {
+      "candidate_count": 16,
+      "hits": [
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)"
+      ],
+      "misses": [
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.MAX_CREDENTILAS_CACHE_SIZE",
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.credentialsCache",
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.requestCredentials(java.lang.String)",
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.user"
+      ],
+      "indexed_misses": [
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.user"
+      ],
+      "indexed_recall": 0.5
+    },
+    "multihop": {
+      "candidate_count": 30,
+      "hits": [
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)",
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.user"
+      ],
+      "misses": [
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.MAX_CREDENTILAS_CACHE_SIZE",
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.credentialsCache",
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.requestCredentials(java.lang.String)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 37,
+      "hits": [
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)",
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.user"
+      ],
+      "misses": [
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.MAX_CREDENTILAS_CACHE_SIZE",
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.credentialsCache",
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.requestCredentials(java.lang.String)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "diff_and_override": {
+      "candidate_count": 39,
+      "hits": [
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)",
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.user"
+      ],
+      "misses": [
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.MAX_CREDENTILAS_CACHE_SIZE",
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.credentialsCache",
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.requestCredentials(java.lang.String)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    }
+  }
+}

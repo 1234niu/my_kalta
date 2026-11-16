@@ -1,0 +1,12 @@
+{
+  "id": "constantinople-007",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 1,
+  "predictions": [
+    "org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject()"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "120d7bd4009d7ff6ae4894b37047be9a1d6bedbeff27def7df5a86b117a58dde",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

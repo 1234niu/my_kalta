@@ -1,0 +1,81 @@
+{
+  "id": "constantinople-010",
+  "fingerprint": "2b4a84a42eafa1f7f256e12d4d572de1a6c5ac67a39ed096d6dac4e7a8d87229",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "ea33beff535a67023a743bbade1127bde66191ee",
+  "candidates": [
+    "org.apache.ivy.plugins.repository.sftp.SFTPRepository.getSftpChannel(java.lang.String)",
+    "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getHost()",
+    "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFile()",
+    "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFilePassword()",
+    "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPassFile()",
+    "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPort()",
+    "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUser()",
+    "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUserPassword()",
+    "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)",
+    "org.apache.ivy.plugins.repository.ssh.SshCache.getInstance()",
+    "org.apache.ivy.plugins.repository.ssh.SshCache.getSession(java.lang.String,int,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)",
+    "org.apache.ivy.plugins.repository.ssh.SshRepository.get(java.lang.String,java.io.File)",
+    "org.apache.ivy.plugins.repository.ssh.SshRepository.list(java.lang.String)",
+    "org.apache.ivy.plugins.repository.ssh.SshRepository.openStream(org.apache.ivy.plugins.repository.ssh.SshResource)",
+    "org.apache.ivy.plugins.repository.ssh.SshRepository.put(java.io.File,java.lang.String,boolean)",
+    "org.apache.ivy.plugins.repository.ssh.SshRepository.resolveResource(java.lang.String)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getSession(java.lang.String)",
+      "type": "executable",
+      "relations": {
+        "org.apache.ivy.plugins.repository.sftp.SFTPRepository.getSftpChannel(java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.ivy.plugins.repository.ssh.SshRepository.put(java.io.File,java.lang.String,boolean)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.ivy.plugins.repository.ssh.SshCache.getInstance()": [
+          "CALLS"
+        ],
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUserPassword()": [
+          "CALLS"
+        ],
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.parseURI(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFilePassword()": [
+          "CALLS"
+        ],
+        "org.apache.ivy.plugins.repository.ssh.SshRepository.list(java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.ivy.plugins.repository.ssh.SshRepository.openStream(org.apache.ivy.plugins.repository.ssh.SshResource)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.ivy.plugins.repository.ssh.SshRepository.get(java.lang.String,java.io.File)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.ivy.plugins.repository.ssh.SshRepository.resolveResource(java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getUser()": [
+          "CALLS"
+        ],
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPort()": [
+          "CALLS"
+        ],
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getPassFile()": [
+          "CALLS"
+        ],
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getHost()": [
+          "CALLS"
+        ],
+        "org.apache.ivy.plugins.repository.ssh.AbstractSshBasedRepository.getKeyFile()": [
+          "CALLS"
+        ],
+        "org.apache.ivy.plugins.repository.ssh.SshCache.getSession(java.lang.String,int,java.lang.String,java.lang.String,java.io.File,java.lang.String,java.io.File)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

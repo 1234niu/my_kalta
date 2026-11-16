@@ -1,0 +1,9 @@
+.venv/
+.tools/
+__pycache__/
+*.pyc
+.env*
+dataset/sources/
+dataset/archives/
+docs/feishu-research.json
+.DS_Store

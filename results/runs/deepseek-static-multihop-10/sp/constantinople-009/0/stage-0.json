@@ -1,0 +1,48 @@
+{
+  "request_sha256": "3b15b1bac2ddd7acc4c98dee263d8f5be821d0b24077eaedad8bc5dc31a3a76e",
+  "request": {
+    "model": "deepseek-v4.1-flash-1017",
+    "temperature": 0,
+    "messages": [
+      {
+        "role": "user",
+        "content": "# System Information\nYou are an expert in Java and in analyzing the impact of source code changes on other code entities in a project's production code.\n\n# General Information\nYou receive information about a set of changes, called seed changes, that were made to fix a bug reported in Jira.\nYou also receive the Jira bug report title and description and an initial impact set consisting of the fully qualified names of code entities that are statically related to the seed changes.\n\n# Task\nYour task is to refine the initial impact set.\nA code entity is part of the impact set if it requires modification or, if it does not already exist, must be created as a consequence of the seed changes.\nFirst, remove code entities unless the provided information indicates that they must be modified.\nSecond, add code entities that must be modified or created according to the provided evidence.\n\nYour goal is to report a final impact set that consists of the fully qualified names of code entities that must be modified or created because of the seed changes.\n\n# Inputs\n- Jira bug report title: setTextValue in DMLConfig is not behaving correctly\n- Jira bug report description: The problem was discovered when trying to set a configuration property from MLContext.\\nSpecifically, it was to try and restrict which GPU to use for the program. Currently this is done via a System property.\\n\\nThis was the script:\\n{code}\\nunet = Caffe2DML(spark, solver='solver.prototxt', input_shape=img_shape)\\nunet.setGPU(True)\\nunet.setForceGPU(True)\\nunet.setConfigProperty(\"systemml.stats.extraGPU\", \"true\")\\nunet.setConfigProperty(\"systemml.gpu.availableGPUs\", \"1\")\\n{code}\\n\\n\\nHere is what I discovered:\\nThe first time [setText|https://github.com/apache/systemml/blob/master/src/main/java/org/apache/sysml/conf/DMLConfig.java#L266] value is called on an empty DMLConfig (by calling new DMLConfig()) as opposed to by parsing a file, a new _xmlRoot is initialized.\\n\\nThereafter, since the _xmlRoot is not null, it tries to call getElementsByTagName, even when the tag is different. In the example above, the tag is {{systemml.stats.extraGPU\"}} the first time around and {{systemml.gpu.availableGPUs}} the second time around.\\n\\nThe bug is in [setText|https://github.com/apache/systemml/blob/master/src/main/java/org/apache/sysml/conf/DMLConfig.java#L253]\n- Seed changes and their Git diff hunks: [{\"fqn\": \"org.apache.sysml.conf.DMLConfig.setTextValue(java.lang.String,java.lang.String)\", \"git_diff_hunk\": \"@@ -267,6 +264,12 @@ public class DMLConfig\\n- if(_xmlRoot != null)\\n- DMLConfig.setTextValue(_xmlRoot, paramName, paramValue);\\n- else {\\n- DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();\\n- factory.setIgnoringComments(true); //ignore XML comments\\n- DocumentBuilder builder;\\n+ if(_xmlRoot != null) {\\n+ NodeList list = _xmlRoot.getElementsByTagName(paramName);\\n+ if (list != null && list.getLength() > 0) {\\n+ Element elem = (Element) list.item(0);\\n+ elem.getFirstChild().setNodeValue(paramValue);\\n+ } else {\\n+ Node value = _document.createTextNode(paramValue);\\n+ Node element = _document.createElement(paramName);\\n+ element.appendChild(value);\\n+ _xmlRoot.appendChild(element);\\n+ }\\n+ } else {\\n@@ -274 +277 @@ public class DMLConfig\\n- builder = factory.newDocumentBuilder();\\n+ DocumentBuilder builder = getDocumentBuilder();\\n@@ -276,2 +279,2 @@ public class DMLConfig\\n- Document domTree = builder.parse(new ByteArrayInputStream(configString.getBytes(\\\"UTF-8\\\")));\\n- _xmlRoot = domTree.getDocumentElement();\\n+ _document = builder.parse(new ByteArrayInputStream(configString.getBytes(\\\"UTF-8\\\")));\\n+ _xmlRoot = _document.getDocumentElement();\"}]\n- Initial static code change impact set: [\"org.apache.sysml.api.mlcontext.MLContext.setConfigProperty(java.lang.String,java.lang.String)\", \"org.apache.sysml.conf.DMLConfig.DEFAULT_SYSTEMML_CONFIG_FILEPATH\", \"org.apache.sysml.conf.DMLConfig.DMLConfig(java.lang.String)\", \"org.apache.sysml.conf.DMLConfig.DMLConfig(java.lang.String,boolean)\", \"org.apache.sysml.conf.DMLConfig.DMLConfig(org.w3c.dom.Element)\", \"org.apache.sysml.conf.DMLConfig.LOCAL_TMP_DIR\", \"org.apache.sysml.conf.DMLConfig.LOG\", \"org.apache.sysml.conf.DMLConfig._fileName\", \"org.apache.sysml.conf.DMLConfig._xmlRoot\", \"org.apache.sysml.conf.DMLConfig.clone()\", \"org.apache.sysml.conf.DMLConfig.parseConfig()\", \"org.apache.sysml.conf.DMLConfig.parseDMLConfig(java.lang.String)\", \"org.apache.sysml.conf.DMLConfig.readConfigurationFile(java.lang.String)\", \"org.apache.sysml.conf.DMLConfig.setTextValue(org.w3c.dom.Element,java.lang.String,java.lang.String)\", \"org.apache.sysml.runtime.DMLRuntimeException.DMLRuntimeException(java.lang.String,java.lang.Exception)\"]\n\n# Output Format\nReturn exactly one valid single-line JSON array of strings.\nEach string must be the fully qualified name of an impacted code entity.\nDo not include any additional text, formatting, or meta-information.\nDo not include seed changes in the output.\n\nExample output (four impacted code entities):\n[\"com.example.Foo.someMethod(java.lang.String, int)\", \"com.example.bar.attribute1\", \"com.example.bar.Class.NestedClass\", \"com.example.bar.Class.Class()\"]\n\nExample output (two impacted code entities):\n[\"com.example.package.ParentClass.ChildClass.field\", \"com.example.package.ParentClass.apply(long, com.example.package.ParentClass)\"]\n\nExample output (zero impacted code entities):\n[]"
+      }
+    ],
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096
+  },
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "[\"org.apache.sysml.conf.DMLConfig._document\",\"org.apache.sysml.conf.DMLConfig.getDocumentBuilder()\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1794812384,
+    "id": "021794812383210efa62bfca375794f3a9b85f4d703cfec6246c4",
+    "model": "deepseek-v4.1-flash-1017",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 27,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1386,
+      "prompt_tokens": 1386,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 1413
+    }
+  },
+  "seconds": 1.1263582079999992,
+  "endpoint": "http://api.aicnic.cn/v1"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "constantinople-009",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 1,
+  "predictions": [
+    "org.apache.sysml.api.mlcontext.MLContext.setConfigProperty(java.lang.String,java.lang.String)"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "4fd6b572e071edba21d84f1acb2fbc8bdd97eb6425b060e14f8a3970f8a21f64",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

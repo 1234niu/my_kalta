@@ -1,0 +1,10 @@
+{
+  "tasks": 263,
+  "repositories": 22,
+  "entity_counts": {
+    "seed": 498,
+    "impact": 1327,
+    "non_related": 106
+  },
+  "input_sha256": "1b0ce0decc3c68a45117e9600d2243c9faebf61e396f5e886b65f500bfcdcbac"
+}

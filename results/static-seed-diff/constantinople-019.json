@@ -1,0 +1,996 @@
+{
+  "id": "constantinople-019",
+  "graph_edges": 15768,
+  "seeds": {
+    "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.ivy.core.settings.IvySettings.getVariableContainer()",
+      "org.apache.ivy.core.settings.IvySettings.setSettingsVariables(java.io.File)",
+      "org.apache.ivy.core.settings.IvySettings.setSettingsVariables(java.net.URL)",
+      "org.apache.ivy.core.settings.IvySettings.setVariableContainer(org.apache.ivy.core.settings.IvyVariableContainer)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.IvyVariableContainerWrapper.IvyVariableContainerWrapper(org.apache.ivy.core.settings.IvyVariableContainer)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.XmlSettingsParser(org.apache.ivy.core.settings.IvySettings)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.urlFromFileAttribute(java.lang.String)",
+      "org.apache.ivy.util.Checks.checkAbsolute(java.lang.String,java.lang.String)",
+      "org.apache.ivy.util.Message.verbose(java.lang.String)"
+    ],
+    "fields": [
+      "org.apache.ivy.core.settings.IvySettings.getVariableContainer()",
+      "org.apache.ivy.core.settings.IvySettings.setSettingsVariables(java.io.File)",
+      "org.apache.ivy.core.settings.IvySettings.setSettingsVariables(java.net.URL)",
+      "org.apache.ivy.core.settings.IvySettings.setVariableContainer(org.apache.ivy.core.settings.IvyVariableContainer)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.IvyVariableContainerWrapper.IvyVariableContainerWrapper(org.apache.ivy.core.settings.IvyVariableContainer)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.XmlSettingsParser(org.apache.ivy.core.settings.IvySettings)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+      "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.ivy",
+      "org.apache.ivy.core.settings.XmlSettingsParser.parse(java.net.URL)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+      "org.apache.ivy.core.settings.XmlSettingsParser.startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.urlFromFileAttribute(java.lang.String)",
+      "org.apache.ivy.util.Checks.checkAbsolute(java.lang.String,java.lang.String)",
+      "org.apache.ivy.util.Message.verbose(java.lang.String)"
+    ],
+    "multihop": [
+      "org.apache.ivy.core.settings.IvySettings.getVariableContainer()",
+      "org.apache.ivy.core.settings.IvySettings.setSettingsVariables(java.io.File)",
+      "org.apache.ivy.core.settings.IvySettings.setSettingsVariables(java.net.URL)",
+      "org.apache.ivy.core.settings.IvySettings.setVariableContainer(org.apache.ivy.core.settings.IvyVariableContainer)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.IvyVariableContainerWrapper.IvyVariableContainerWrapper(org.apache.ivy.core.settings.IvyVariableContainer)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.XmlSettingsParser(org.apache.ivy.core.settings.IvySettings)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+      "org.apache.ivy.core.settings.XmlSettingsParser.configuratorTags",
+      "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.ivy",
+      "org.apache.ivy.core.settings.XmlSettingsParser.parse(java.net.URL)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+      "org.apache.ivy.core.settings.XmlSettingsParser.startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.urlFromFileAttribute(java.lang.String)",
+      "org.apache.ivy.util.Checks.checkAbsolute(java.lang.String,java.lang.String)",
+      "org.apache.ivy.util.Message.verbose(java.lang.String)"
+    ],
+    "two_hop_calls": [
+      "org.apache.ivy.core.settings.IvySettings.getVariableContainer()",
+      "org.apache.ivy.core.settings.IvySettings.setDeprecatedVariable(java.lang.String,java.lang.String)",
+      "org.apache.ivy.core.settings.IvySettings.setSettingsVariables(java.io.File)",
+      "org.apache.ivy.core.settings.IvySettings.setSettingsVariables(java.net.URL)",
+      "org.apache.ivy.core.settings.IvySettings.setVariable(java.lang.String,java.lang.String)",
+      "org.apache.ivy.core.settings.IvySettings.setVariableContainer(org.apache.ivy.core.settings.IvyVariableContainer)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.IvyVariableContainerWrapper.IvyVariableContainerWrapper(org.apache.ivy.core.settings.IvyVariableContainer)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.XmlSettingsParser(org.apache.ivy.core.settings.IvySettings)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+      "org.apache.ivy.core.settings.XmlSettingsParser.configuratorTags",
+      "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.ivy",
+      "org.apache.ivy.core.settings.XmlSettingsParser.parse(java.net.URL)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+      "org.apache.ivy.core.settings.XmlSettingsParser.startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.urlFromFileAttribute(java.lang.String)",
+      "org.apache.ivy.util.Checks.checkAbsolute(java.lang.String,java.lang.String)",
+      "org.apache.ivy.util.Checks.checkNotNull(java.lang.Object,java.lang.String)",
+      "org.apache.ivy.util.Message.getLogger()",
+      "org.apache.ivy.util.Message.verbose(java.lang.String)",
+      "org.apache.ivy.util.Message.warn(java.lang.String)",
+      "org.apache.ivy.util.MessageLogger.verbose(java.lang.String)"
+    ],
+    "diff_and_override": [
+      "org.apache.ivy.core.settings.IvySettings.getVariableContainer()",
+      "org.apache.ivy.core.settings.IvySettings.setDeprecatedVariable(java.lang.String,java.lang.String)",
+      "org.apache.ivy.core.settings.IvySettings.setSettingsVariables(java.io.File)",
+      "org.apache.ivy.core.settings.IvySettings.setSettingsVariables(java.net.URL)",
+      "org.apache.ivy.core.settings.IvySettings.setVariable(java.lang.String,java.lang.String)",
+      "org.apache.ivy.core.settings.IvySettings.setVariableContainer(org.apache.ivy.core.settings.IvyVariableContainer)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.IvyVariableContainerWrapper.IvyVariableContainerWrapper(org.apache.ivy.core.settings.IvyVariableContainer)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.XmlSettingsParser(org.apache.ivy.core.settings.IvySettings)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+      "org.apache.ivy.core.settings.XmlSettingsParser.configuratorTags",
+      "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.ivy",
+      "org.apache.ivy.core.settings.XmlSettingsParser.parse(java.net.URL)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+      "org.apache.ivy.core.settings.XmlSettingsParser.startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)",
+      "org.apache.ivy.core.settings.XmlSettingsParser.urlFromFileAttribute(java.lang.String)",
+      "org.apache.ivy.util.Checks.checkAbsolute(java.lang.String,java.lang.String)",
+      "org.apache.ivy.util.Checks.checkNotNull(java.lang.Object,java.lang.String)",
+      "org.apache.ivy.util.Message.getLogger()",
+      "org.apache.ivy.util.Message.verbose(java.lang.String)",
+      "org.apache.ivy.util.Message.warn(java.lang.String)",
+      "org.apache.ivy.util.MessageLogger.verbose(java.lang.String)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.ivy.core.settings.XmlSettingsParser.ivy": {
+        "org.apache.ivy.core.settings.XmlSettingsParser.ivy": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.ivy",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 393
+          }
+        ]
+      },
+      "org.apache.ivy.core.settings.XmlSettingsParser.XmlSettingsParser(org.apache.ivy.core.settings.IvySettings)": {
+        "org.apache.ivy.core.settings.XmlSettingsParser.ivy": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.ivy",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 393
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.XmlSettingsParser(org.apache.ivy.core.settings.IvySettings)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.ivy",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 133
+          }
+        ]
+      },
+      "org.apache.ivy.core.settings.XmlSettingsParser.settings": {
+        "org.apache.ivy.core.settings.XmlSettingsParser.settings": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 409
+          }
+        ]
+      },
+      "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)": {
+        "org.apache.ivy.core.settings.XmlSettingsParser.settings": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 409
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 154
+          }
+        ]
+      },
+      "org.apache.ivy.core.settings.XmlSettingsParser.configurator": {
+        "org.apache.ivy.core.settings.XmlSettingsParser.configurator": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 425
+          }
+        ]
+      },
+      "org.apache.ivy.core.settings.XmlSettingsParser.parse(java.net.URL)": {
+        "org.apache.ivy.core.settings.XmlSettingsParser.configurator": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 425
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.parse(java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 137
+          }
+        ]
+      },
+      "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)": {
+        "org.apache.ivy.core.settings.XmlSettingsParser.configurator": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 425
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 182
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.ivy.core.settings.XmlSettingsParser.ivy": {
+        "org.apache.ivy.core.settings.XmlSettingsParser.ivy": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.ivy",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 393
+          }
+        ],
+        "org.apache.ivy.core.settings.XmlSettingsParser.settings": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 409
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 154
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.ivy",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 161
+          }
+        ],
+        "org.apache.ivy.core.settings.XmlSettingsParser.configurator": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 425
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.parse(java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 137
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.parse(java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.ivy",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 144
+          }
+        ]
+      },
+      "org.apache.ivy.core.settings.XmlSettingsParser.XmlSettingsParser(org.apache.ivy.core.settings.IvySettings)": {
+        "org.apache.ivy.core.settings.XmlSettingsParser.ivy": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.ivy",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 393
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.XmlSettingsParser(org.apache.ivy.core.settings.IvySettings)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.ivy",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 133
+          }
+        ]
+      },
+      "org.apache.ivy.core.settings.XmlSettingsParser.settings": {
+        "org.apache.ivy.core.settings.XmlSettingsParser.ivy": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.ivy",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 393
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.XmlSettingsParser(org.apache.ivy.core.settings.IvySettings)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.ivy",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 133
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.XmlSettingsParser(org.apache.ivy.core.settings.IvySettings)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 425
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 409
+          }
+        ],
+        "org.apache.ivy.core.settings.XmlSettingsParser.settings": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 409
+          }
+        ],
+        "org.apache.ivy.core.settings.XmlSettingsParser.configurator": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 425
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 182
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 425
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 409
+          }
+        ]
+      },
+      "org.apache.ivy.core.settings.XmlSettingsParser.configurator": {
+        "org.apache.ivy.core.settings.XmlSettingsParser.ivy": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.ivy",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 393
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.XmlSettingsParser(org.apache.ivy.core.settings.IvySettings)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.ivy",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 133
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.XmlSettingsParser(org.apache.ivy.core.settings.IvySettings)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 425
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 425
+          }
+        ],
+        "org.apache.ivy.core.settings.XmlSettingsParser.settings": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 409
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 154
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.parse(java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 150
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.parse(java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 138
+          }
+        ],
+        "org.apache.ivy.core.settings.XmlSettingsParser.configurator": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 425
+          }
+        ]
+      },
+      "org.apache.ivy.core.settings.XmlSettingsParser.startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)": {
+        "org.apache.ivy.core.settings.XmlSettingsParser.ivy": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.ivy",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 393
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.XmlSettingsParser(org.apache.ivy.core.settings.IvySettings)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.ivy",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 133
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.XmlSettingsParser(org.apache.ivy.core.settings.IvySettings)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 425
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 211
+          }
+        ],
+        "org.apache.ivy.core.settings.XmlSettingsParser.settings": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 409
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 154
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 183
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 425
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 211
+          }
+        ],
+        "org.apache.ivy.core.settings.XmlSettingsParser.configurator": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 425
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 182
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 425
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 211
+          }
+        ]
+      },
+      "org.apache.ivy.core.settings.XmlSettingsParser.configuratorTags": {
+        "org.apache.ivy.core.settings.XmlSettingsParser.ivy": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.ivy",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 393
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.XmlSettingsParser(org.apache.ivy.core.settings.IvySettings)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.ivy",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 133
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.XmlSettingsParser(org.apache.ivy.core.settings.IvySettings)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 425
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 211
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configuratorTags",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 220
+          }
+        ],
+        "org.apache.ivy.core.settings.XmlSettingsParser.settings": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 409
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 154
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 183
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 425
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 211
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configuratorTags",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 220
+          }
+        ],
+        "org.apache.ivy.core.settings.XmlSettingsParser.configurator": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 425
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 182
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 425
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 211
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configuratorTags",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 220
+          }
+        ]
+      },
+      "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)": {
+        "org.apache.ivy.core.settings.XmlSettingsParser.settings": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 409
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 154
+          }
+        ]
+      },
+      "org.apache.ivy.core.settings.XmlSettingsParser.parse(java.net.URL)": {
+        "org.apache.ivy.core.settings.XmlSettingsParser.settings": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 409
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 154
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.parse(java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 150
+          }
+        ],
+        "org.apache.ivy.core.settings.XmlSettingsParser.configurator": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 425
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.parse(java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 137
+          }
+        ]
+      },
+      "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)": {
+        "org.apache.ivy.core.settings.XmlSettingsParser.settings": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 409
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.settings",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 154
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 183
+          }
+        ],
+        "org.apache.ivy.core.settings.XmlSettingsParser.configurator": [
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 425
+          },
+          {
+            "from": "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)",
+            "to": "org.apache.ivy.core.settings.XmlSettingsParser.configurator",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+            "line": 182
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.ivy.util.MessageLogger.verbose(java.lang.String)": [
+        {
+          "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+          "to": "org.apache.ivy.util.Message.verbose(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+          "line": 411
+        },
+        {
+          "from": "org.apache.ivy.util.Message.verbose(java.lang.String)",
+          "to": "org.apache.ivy.util.MessageLogger.verbose(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/util/Message.java",
+          "line": 91
+        }
+      ],
+      "org.apache.ivy.util.Message.getLogger()": [
+        {
+          "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+          "to": "org.apache.ivy.util.Message.verbose(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+          "line": 411
+        },
+        {
+          "from": "org.apache.ivy.util.Message.verbose(java.lang.String)",
+          "to": "org.apache.ivy.util.Message.getLogger()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/util/Message.java",
+          "line": 91
+        }
+      ],
+      "org.apache.ivy.core.settings.IvySettings.setVariable(java.lang.String,java.lang.String)": [
+        {
+          "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+          "to": "org.apache.ivy.core.settings.IvySettings.setSettingsVariables(java.net.URL)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+          "line": 412
+        },
+        {
+          "from": "org.apache.ivy.core.settings.IvySettings.setSettingsVariables(java.net.URL)",
+          "to": "org.apache.ivy.core.settings.IvySettings.setVariable(java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/settings/IvySettings.java",
+          "line": 499
+        }
+      ],
+      "org.apache.ivy.core.settings.IvySettings.setDeprecatedVariable(java.lang.String,java.lang.String)": [
+        {
+          "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+          "to": "org.apache.ivy.core.settings.IvySettings.setSettingsVariables(java.net.URL)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+          "line": 412
+        },
+        {
+          "from": "org.apache.ivy.core.settings.IvySettings.setSettingsVariables(java.net.URL)",
+          "to": "org.apache.ivy.core.settings.IvySettings.setDeprecatedVariable(java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/settings/IvySettings.java",
+          "line": 500
+        }
+      ],
+      "org.apache.ivy.util.Message.warn(java.lang.String)": [
+        {
+          "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+          "to": "org.apache.ivy.core.settings.IvySettings.setSettingsVariables(java.net.URL)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+          "line": 412
+        },
+        {
+          "from": "org.apache.ivy.core.settings.IvySettings.setSettingsVariables(java.net.URL)",
+          "to": "org.apache.ivy.util.Message.warn(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/settings/IvySettings.java",
+          "line": 506
+        }
+      ],
+      "org.apache.ivy.util.Checks.checkNotNull(java.lang.Object,java.lang.String)": [
+        {
+          "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+          "to": "org.apache.ivy.util.Checks.checkAbsolute(java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+          "line": 419
+        },
+        {
+          "from": "org.apache.ivy.util.Checks.checkAbsolute(java.lang.String,java.lang.String)",
+          "to": "org.apache.ivy.util.Checks.checkNotNull(java.lang.Object,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/util/Checks.java",
+          "line": 54
+        }
+      ],
+      "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)": [
+        {
+          "from": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+          "to": "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+          "line": 425
+        },
+        {
+          "from": "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)",
+          "to": "org.apache.ivy.core.settings.XmlSettingsParser.doParse(java.net.URL)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+          "line": 183
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 6648,
+      "ma_analysis": 6230,
+      "ma_refinement_fixed": 3591
+    },
+    "two_hop_calls": {
+      "sp": 7078,
+      "ma_analysis": 6660,
+      "ma_refinement_fixed": 4021
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "toExternalForm",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "settingsURL",
+        "after_line": 419,
+        "expression": "toExternalForm()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+        "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "setSettingsVariables",
+        "arity": 1,
+        "arguments": [
+          "Checks.checkAbsolute(settingsURL.getPath(), \n \"settings include path\")"
+        ],
+        "receiver": "ivy",
+        "after_line": 425,
+        "expression": "setSettingsVariables(\n Checks.checkAbsolute(settingsURL.getPath(), \n \"settings include path\"))",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+        "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "checkAbsolute",
+        "arity": 2,
+        "arguments": [
+          "settingsURL.getPath()",
+          "\"settings include path\""
+        ],
+        "receiver": "Checks",
+        "after_line": 426,
+        "expression": "checkAbsolute(settingsURL.getPath(), \n \"settings include path\")",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+        "file": "src/java/org/apache/ivy/core/settings/XmlSettingsParser.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [
+    "org.apache.ivy.core.settings.XmlSettingsParser.classpathStarted(java.util.Map)"
+  ],
+  "unindexed_targets": [],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 11,
+      "hits": [],
+      "misses": [
+        "org.apache.ivy.core.settings.XmlSettingsParser.classpathStarted(java.util.Map)"
+      ],
+      "indexed_misses": [
+        "org.apache.ivy.core.settings.XmlSettingsParser.classpathStarted(java.util.Map)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 16,
+      "hits": [],
+      "misses": [
+        "org.apache.ivy.core.settings.XmlSettingsParser.classpathStarted(java.util.Map)"
+      ],
+      "indexed_misses": [
+        "org.apache.ivy.core.settings.XmlSettingsParser.classpathStarted(java.util.Map)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "multihop": {
+      "candidate_count": 17,
+      "hits": [],
+      "misses": [
+        "org.apache.ivy.core.settings.XmlSettingsParser.classpathStarted(java.util.Map)"
+      ],
+      "indexed_misses": [
+        "org.apache.ivy.core.settings.XmlSettingsParser.classpathStarted(java.util.Map)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 23,
+      "hits": [],
+      "misses": [
+        "org.apache.ivy.core.settings.XmlSettingsParser.classpathStarted(java.util.Map)"
+      ],
+      "indexed_misses": [
+        "org.apache.ivy.core.settings.XmlSettingsParser.classpathStarted(java.util.Map)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "diff_and_override": {
+      "candidate_count": 23,
+      "hits": [],
+      "misses": [
+        "org.apache.ivy.core.settings.XmlSettingsParser.classpathStarted(java.util.Map)"
+      ],
+      "indexed_misses": [
+        "org.apache.ivy.core.settings.XmlSettingsParser.classpathStarted(java.util.Map)"
+      ],
+      "indexed_recall": 0.0
+    }
+  }
+}

@@ -1,0 +1,702 @@
+{
+  "id": "constantinople-006",
+  "graph_edges": 6641,
+  "seeds": {
+    "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.configuration2.AbstractConfiguration.interpolate(java.lang.Object)",
+      "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)"
+    ],
+    "fields": [
+      "org.apache.commons.configuration2.AbstractConfiguration.interpolate(java.lang.Object)",
+      "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)",
+      "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String,java.lang.String)",
+      "org.apache.commons.configuration2.SubsetConfiguration.delimiter",
+      "org.apache.commons.configuration2.SubsetConfiguration.parent",
+      "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+      "org.apache.commons.configuration2.SubsetConfiguration.setPrefix(java.lang.String)"
+    ],
+    "multihop": [
+      "org.apache.commons.configuration2.AbstractConfiguration.interpolate(java.lang.Object)",
+      "org.apache.commons.configuration2.AbstractConfiguration.subset(java.lang.String)",
+      "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)",
+      "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String,java.lang.String)",
+      "org.apache.commons.configuration2.SubsetConfiguration.delimiter",
+      "org.apache.commons.configuration2.SubsetConfiguration.parent",
+      "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+      "org.apache.commons.configuration2.SubsetConfiguration.setPrefix(java.lang.String)"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.configuration2.AbstractConfiguration.interpolate(java.lang.Object)",
+      "org.apache.commons.configuration2.AbstractConfiguration.subset(java.lang.String)",
+      "org.apache.commons.configuration2.PropertyConverter.interpolate(java.lang.Object,org.apache.commons.configuration2.AbstractConfiguration)",
+      "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)",
+      "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String,java.lang.String)",
+      "org.apache.commons.configuration2.SubsetConfiguration.delimiter",
+      "org.apache.commons.configuration2.SubsetConfiguration.parent",
+      "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+      "org.apache.commons.configuration2.SubsetConfiguration.setPrefix(java.lang.String)"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.configuration2.AbstractConfiguration.getInterpolator()",
+      "org.apache.commons.configuration2.AbstractConfiguration.interpolate(java.lang.Object)",
+      "org.apache.commons.configuration2.AbstractConfiguration.subset(java.lang.String)",
+      "org.apache.commons.configuration2.PropertyConverter.interpolate(java.lang.Object,org.apache.commons.configuration2.AbstractConfiguration)",
+      "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)",
+      "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String,java.lang.String)",
+      "org.apache.commons.configuration2.SubsetConfiguration.delimiter",
+      "org.apache.commons.configuration2.SubsetConfiguration.getInterpolator()",
+      "org.apache.commons.configuration2.SubsetConfiguration.parent",
+      "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+      "org.apache.commons.configuration2.SubsetConfiguration.setPrefix(java.lang.String)",
+      "org.apache.commons.configuration2.event.EventSource.getInterpolator()",
+      "org.apache.commons.configuration2.interpol.ConfigurationInterpolator.registerLocalLookups(org.apache.commons.configuration2.interpol.ConfigurationInterpolator)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.configuration2.SubsetConfiguration.delimiter": {
+        "org.apache.commons.configuration2.SubsetConfiguration.delimiter": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.delimiter",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 202
+          }
+        ]
+      },
+      "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String,java.lang.String)": {
+        "org.apache.commons.configuration2.SubsetConfiguration.delimiter": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.delimiter",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String,java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.delimiter",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 67
+          }
+        ],
+        "org.apache.commons.configuration2.SubsetConfiguration.prefix": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String,java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 66
+          }
+        ],
+        "org.apache.commons.configuration2.SubsetConfiguration.parent": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.parent",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 208
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String,java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.parent",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 65
+          }
+        ]
+      },
+      "org.apache.commons.configuration2.SubsetConfiguration.prefix": {
+        "org.apache.commons.configuration2.SubsetConfiguration.prefix": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 202
+          }
+        ]
+      },
+      "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)": {
+        "org.apache.commons.configuration2.SubsetConfiguration.prefix": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 53
+          }
+        ],
+        "org.apache.commons.configuration2.SubsetConfiguration.parent": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.parent",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 208
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.parent",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 52
+          }
+        ]
+      },
+      "org.apache.commons.configuration2.SubsetConfiguration.setPrefix(java.lang.String)": {
+        "org.apache.commons.configuration2.SubsetConfiguration.prefix": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.setPrefix(java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 146
+          }
+        ]
+      },
+      "org.apache.commons.configuration2.SubsetConfiguration.parent": {
+        "org.apache.commons.configuration2.SubsetConfiguration.parent": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.parent",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 208
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.configuration2.SubsetConfiguration.delimiter": {
+        "org.apache.commons.configuration2.SubsetConfiguration.delimiter": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.delimiter",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 202
+          }
+        ],
+        "org.apache.commons.configuration2.SubsetConfiguration.prefix": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 53
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 208
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.delimiter",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 202
+          }
+        ],
+        "org.apache.commons.configuration2.SubsetConfiguration.parent": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.parent",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 208
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.parent",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 52
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 208
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.delimiter",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 202
+          }
+        ]
+      },
+      "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String,java.lang.String)": {
+        "org.apache.commons.configuration2.SubsetConfiguration.delimiter": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.delimiter",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String,java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.delimiter",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 67
+          }
+        ],
+        "org.apache.commons.configuration2.SubsetConfiguration.prefix": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String,java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 66
+          }
+        ],
+        "org.apache.commons.configuration2.SubsetConfiguration.parent": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.parent",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 208
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String,java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.parent",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 65
+          }
+        ]
+      },
+      "org.apache.commons.configuration2.AbstractConfiguration.subset(java.lang.String)": {
+        "org.apache.commons.configuration2.SubsetConfiguration.delimiter": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.delimiter",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String,java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.delimiter",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 67
+          },
+          {
+            "from": "org.apache.commons.configuration2.AbstractConfiguration.subset(java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/configuration2/AbstractConfiguration.java",
+            "line": 507
+          }
+        ],
+        "org.apache.commons.configuration2.SubsetConfiguration.prefix": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String,java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 66
+          },
+          {
+            "from": "org.apache.commons.configuration2.AbstractConfiguration.subset(java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/configuration2/AbstractConfiguration.java",
+            "line": 507
+          }
+        ],
+        "org.apache.commons.configuration2.SubsetConfiguration.parent": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.parent",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 208
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String,java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.parent",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 65
+          },
+          {
+            "from": "org.apache.commons.configuration2.AbstractConfiguration.subset(java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/configuration2/AbstractConfiguration.java",
+            "line": 507
+          }
+        ]
+      },
+      "org.apache.commons.configuration2.SubsetConfiguration.prefix": {
+        "org.apache.commons.configuration2.SubsetConfiguration.prefix": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 202
+          }
+        ],
+        "org.apache.commons.configuration2.SubsetConfiguration.parent": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.parent",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 208
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.parent",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 52
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 208
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 202
+          }
+        ]
+      },
+      "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)": {
+        "org.apache.commons.configuration2.SubsetConfiguration.prefix": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 53
+          }
+        ],
+        "org.apache.commons.configuration2.SubsetConfiguration.parent": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.parent",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 208
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.parent",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 52
+          }
+        ]
+      },
+      "org.apache.commons.configuration2.SubsetConfiguration.parent": {
+        "org.apache.commons.configuration2.SubsetConfiguration.prefix": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 53
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 208
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.parent",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 208
+          }
+        ],
+        "org.apache.commons.configuration2.SubsetConfiguration.parent": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.parent",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 208
+          }
+        ]
+      },
+      "org.apache.commons.configuration2.SubsetConfiguration.setPrefix(java.lang.String)": {
+        "org.apache.commons.configuration2.SubsetConfiguration.prefix": [
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.commons.configuration2.SubsetConfiguration.setPrefix(java.lang.String)",
+            "to": "org.apache.commons.configuration2.SubsetConfiguration.prefix",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+            "line": 146
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.commons.configuration2.PropertyConverter.interpolate(java.lang.Object,org.apache.commons.configuration2.AbstractConfiguration)": [
+        {
+          "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+          "to": "org.apache.commons.configuration2.AbstractConfiguration.interpolate(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+          "line": 204
+        },
+        {
+          "from": "org.apache.commons.configuration2.AbstractConfiguration.interpolate(java.lang.Object)",
+          "to": "org.apache.commons.configuration2.PropertyConverter.interpolate(java.lang.Object,org.apache.commons.configuration2.AbstractConfiguration)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/configuration2/AbstractConfiguration.java",
+          "line": 480
+        }
+      ],
+      "org.apache.commons.configuration2.AbstractConfiguration.interpolate(java.lang.Object)": [
+        {
+          "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+          "to": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+          "line": 209
+        },
+        {
+          "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+          "to": "org.apache.commons.configuration2.AbstractConfiguration.interpolate(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+          "line": 204
+        }
+      ],
+      "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)": [
+        {
+          "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+          "to": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+          "line": 209
+        },
+        {
+          "from": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+          "to": "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+          "line": 208
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 3104,
+      "ma_analysis": 2686,
+      "ma_refinement_fixed": 2492
+    },
+    "two_hop_calls": {
+      "sp": 3245,
+      "ma_analysis": 2827,
+      "ma_refinement_fixed": 2633
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "registerLocalLookups",
+        "arity": 1,
+        "arguments": [
+          "config.getInterpolator()"
+        ],
+        "receiver": "getInterpolator()",
+        "after_line": 214,
+        "expression": "registerLocalLookups(config.getInterpolator())",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+        "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.commons.configuration2.interpol.ConfigurationInterpolator.registerLocalLookups(org.apache.commons.configuration2.interpol.ConfigurationInterpolator)"
+        ]
+      },
+      {
+        "name": "getInterpolator",
+        "arity": 0,
+        "arguments": [],
+        "receiver": null,
+        "after_line": 214,
+        "expression": "getInterpolator()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+        "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.commons.configuration2.AbstractConfiguration.getInterpolator()",
+          "org.apache.commons.configuration2.SubsetConfiguration.getInterpolator()",
+          "org.apache.commons.configuration2.event.EventSource.getInterpolator()"
+        ]
+      },
+      {
+        "name": "getInterpolator",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "config",
+        "after_line": 214,
+        "expression": "getInterpolator()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+        "file": "src/main/java/org/apache/commons/configuration2/SubsetConfiguration.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.commons.configuration2.SubsetConfiguration.getInterpolator()"
+        ]
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": [
+      {
+        "seed": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+        "target": "org.apache.commons.configuration2.AbstractConfiguration.interpolate(java.lang.Object)",
+        "edge": "POSSIBLE_OVERRIDE"
+      }
+    ]
+  },
+  "indexed_targets": [],
+  "unindexed_targets": [
+    "org.apache.commons.configuration2.interpol.ConfigurationInterpolator.registerLocalLookups(org.apache.commons.configuration2.interpol.ConfigurationInterpolator)"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 2,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.configuration2.interpol.ConfigurationInterpolator.registerLocalLookups(org.apache.commons.configuration2.interpol.ConfigurationInterpolator)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "fields": {
+      "candidate_count": 7,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.configuration2.interpol.ConfigurationInterpolator.registerLocalLookups(org.apache.commons.configuration2.interpol.ConfigurationInterpolator)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "multihop": {
+      "candidate_count": 8,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.configuration2.interpol.ConfigurationInterpolator.registerLocalLookups(org.apache.commons.configuration2.interpol.ConfigurationInterpolator)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "two_hop_calls": {
+      "candidate_count": 9,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.configuration2.interpol.ConfigurationInterpolator.registerLocalLookups(org.apache.commons.configuration2.interpol.ConfigurationInterpolator)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "diff_and_override": {
+      "candidate_count": 13,
+      "hits": [
+        "org.apache.commons.configuration2.interpol.ConfigurationInterpolator.registerLocalLookups(org.apache.commons.configuration2.interpol.ConfigurationInterpolator)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": null
+    }
+  }
+}

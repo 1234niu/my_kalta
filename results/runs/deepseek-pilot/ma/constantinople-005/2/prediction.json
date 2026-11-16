@@ -1,0 +1,10 @@
+{
+  "id": "constantinople-005",
+  "variant": "ma",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 2,
+  "predictions": [],
+  "excluded_seeds": [],
+  "static_fingerprint": "835c1e6302baa8a683c8683acb551408790127135ee16bef1d32448b5b2970c6",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

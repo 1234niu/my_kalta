@@ -1,0 +1,25 @@
+{
+  "id": "constantinople-000",
+  "fingerprint": "c6c89ccec59dbc00d2696dc4db4959e8b9a98d536d126ce7f083806d1bbeb78a",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "ad923872f34675312d7ca774512d2e28e0052501",
+  "candidates": [
+    "org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize()",
+    "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.getValue()"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.math3.optimization.univariate.BrentOptimizer.best(org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair,org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair,boolean)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.getValue()": [
+          "CALLS"
+        ],
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize()": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

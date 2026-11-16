@@ -1,0 +1,21 @@
+{
+  "id": "constantinople-009",
+  "variant": "ma",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 2,
+  "predictions": [
+    "org.apache.sysml.conf.DMLConfig.DMLConfig(java.lang.String)",
+    "org.apache.sysml.conf.DMLConfig.DMLConfig(java.lang.String,boolean)",
+    "org.apache.sysml.conf.DMLConfig.DMLConfig(org.w3c.dom.Element)",
+    "org.apache.sysml.conf.DMLConfig._document",
+    "org.apache.sysml.conf.DMLConfig.clone()",
+    "org.apache.sysml.conf.DMLConfig.getDocumentBuilder()",
+    "org.apache.sysml.conf.DMLConfig.parseConfig()",
+    "org.apache.sysml.conf.DMLConfig.parseDMLConfig(java.lang.String)",
+    "org.apache.sysml.conf.DMLConfig.readConfigurationFile(java.lang.String)",
+    "org.apache.sysml.conf.DMLConfig.setTextValue(org.w3c.dom.Element,java.lang.String,java.lang.String)"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "87b45efb88892b4004fb6b106d7842a71f4f531ff69a6c87956fbdcd556ed0cc",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

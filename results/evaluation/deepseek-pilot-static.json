@@ -1,0 +1,70 @@
+{
+  "experiment": "deepseek-pilot",
+  "variant": "static",
+  "commits": 3,
+  "repetitions": 1,
+  "aggregation": "per-commit metric median over repetitions, then macro mean; zero-division=0",
+  "metrics": {
+    "FQN": {
+      "precision": 0.16666666666666666,
+      "recall": 0.3333333333333333,
+      "f1": 0.2222222222222222
+    },
+    "CE": {
+      "precision": 0.16666666666666666,
+      "recall": 0.3333333333333333,
+      "f1": 0.2222222222222222
+    }
+  },
+  "per_case": [
+    {
+      "id": "constantinople-000",
+      "metrics": {
+        "FQN": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        "CE": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        }
+      },
+      "consistent": true
+    },
+    {
+      "id": "constantinople-001",
+      "metrics": {
+        "FQN": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "CE": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consistent": true
+    },
+    {
+      "id": "constantinople-002",
+      "metrics": {
+        "FQN": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "CE": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "consistent": true
+    }
+  ],
+  "complete_benchmark": false
+}

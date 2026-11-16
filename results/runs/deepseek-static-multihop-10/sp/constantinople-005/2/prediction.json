@@ -1,0 +1,12 @@
+{
+  "id": "constantinople-005",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 2,
+  "predictions": [
+    "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.nullSafeValue(java.lang.String)"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "02b09c4a6f1e643fdc56033228050fa65fc1af5de10688bc4229ff6611374842",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

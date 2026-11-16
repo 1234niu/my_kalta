@@ -1,0 +1,12 @@
+{
+  "id": "constantinople-015",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 0,
+  "predictions": [],
+  "excluded_seeds": [
+    "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)"
+  ],
+  "static_fingerprint": "060ca1c9cd31339afdc195eef9b866bd885e25d3f4d3988a65d9e67e68ab7a4e",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

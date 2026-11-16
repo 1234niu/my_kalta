@@ -1,0 +1,277 @@
+{
+  "id": "constantinople-003",
+  "graph_edges": 9213,
+  "seeds": {
+    "fr.jayasoft.ivy.repository.vfs.VfsRepository.list(java.lang.String)": true
+  },
+  "candidates": {
+    "baseline": [
+      "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+      "fr.jayasoft.ivy.repository.vfs.VfsResource.VfsResource(java.lang.String,org.apache.commons.vfs.FileSystemManager)",
+      "fr.jayasoft.ivy.repository.vfs.VfsResource.getChildren()"
+    ],
+    "fields": [
+      "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+      "fr.jayasoft.ivy.repository.vfs.VfsResource.VfsResource(java.lang.String,org.apache.commons.vfs.FileSystemManager)",
+      "fr.jayasoft.ivy.repository.vfs.VfsResource.getChildren()"
+    ],
+    "multihop": [
+      "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager",
+      "fr.jayasoft.ivy.repository.vfs.VfsRepository._progress",
+      "fr.jayasoft.ivy.repository.vfs.VfsRepository.finalize()",
+      "fr.jayasoft.ivy.repository.vfs.VfsRepository.get(java.lang.String,java.io.File)",
+      "fr.jayasoft.ivy.repository.vfs.VfsRepository.getResource(java.lang.String)",
+      "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+      "fr.jayasoft.ivy.repository.vfs.VfsRepository.put(java.io.File,java.lang.String,boolean)",
+      "fr.jayasoft.ivy.repository.vfs.VfsResource.VfsResource(java.lang.String,org.apache.commons.vfs.FileSystemManager)",
+      "fr.jayasoft.ivy.repository.vfs.VfsResource.getChildren()"
+    ]
+  },
+  "evidence": {
+    "fields": {},
+    "multihop": {
+      "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager": {
+        "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager": [
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.list(java.lang.String)",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "kind": "CALLS",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 151
+          },
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager",
+            "kind": "READ",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 53
+          }
+        ]
+      },
+      "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()": {
+        "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager": [
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.list(java.lang.String)",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "kind": "CALLS",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 151
+          },
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager",
+            "kind": "READ",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 53
+          },
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager",
+            "kind": "WRITE",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 54
+          }
+        ]
+      },
+      "fr.jayasoft.ivy.repository.vfs.VfsRepository.getResource(java.lang.String)": {
+        "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager": [
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.list(java.lang.String)",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "kind": "CALLS",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 151
+          },
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager",
+            "kind": "READ",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 53
+          },
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager",
+            "kind": "WRITE",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 54
+          },
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getResource(java.lang.String)",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "kind": "CALLS",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 113
+          }
+        ]
+      },
+      "fr.jayasoft.ivy.repository.vfs.VfsRepository.get(java.lang.String,java.io.File)": {
+        "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager": [
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.list(java.lang.String)",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "kind": "CALLS",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 151
+          },
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager",
+            "kind": "READ",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 53
+          },
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager",
+            "kind": "WRITE",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 54
+          },
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.get(java.lang.String,java.io.File)",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "kind": "CALLS",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 125
+          }
+        ]
+      },
+      "fr.jayasoft.ivy.repository.vfs.VfsRepository._progress": {
+        "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager": [
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.list(java.lang.String)",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "kind": "CALLS",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 151
+          },
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager",
+            "kind": "READ",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 53
+          },
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager",
+            "kind": "WRITE",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 54
+          },
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.get(java.lang.String,java.io.File)",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "kind": "CALLS",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 125
+          },
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.get(java.lang.String,java.io.File)",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository._progress",
+            "kind": "READ",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 132
+          }
+        ]
+      },
+      "fr.jayasoft.ivy.repository.vfs.VfsRepository.put(java.io.File,java.lang.String,boolean)": {
+        "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager": [
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.list(java.lang.String)",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "kind": "CALLS",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 151
+          },
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager",
+            "kind": "READ",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 53
+          },
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager",
+            "kind": "WRITE",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 54
+          },
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.put(java.io.File,java.lang.String,boolean)",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "kind": "CALLS",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 168
+          }
+        ]
+      },
+      "fr.jayasoft.ivy.repository.vfs.VfsRepository.finalize()": {
+        "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager": [
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.list(java.lang.String)",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "kind": "CALLS",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 151
+          },
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager",
+            "kind": "READ",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 53
+          },
+          {
+            "from": "fr.jayasoft.ivy.repository.vfs.VfsRepository.finalize()",
+            "to": "fr.jayasoft.ivy.repository.vfs.VfsRepository._manager",
+            "kind": "WRITE",
+            "file": "src/java/fr/jayasoft/ivy/repository/vfs/VfsRepository.java",
+            "line": 101
+          }
+        ]
+      }
+    }
+  },
+  "indexed_targets": [
+    "fr.jayasoft.ivy.repository.vfs.VfsResource.normalize(java.lang.String)"
+  ],
+  "unindexed_targets": [],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 3,
+      "hits": [],
+      "misses": [
+        "fr.jayasoft.ivy.repository.vfs.VfsResource.normalize(java.lang.String)"
+      ],
+      "indexed_misses": [
+        "fr.jayasoft.ivy.repository.vfs.VfsResource.normalize(java.lang.String)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 3,
+      "hits": [],
+      "misses": [
+        "fr.jayasoft.ivy.repository.vfs.VfsResource.normalize(java.lang.String)"
+      ],
+      "indexed_misses": [
+        "fr.jayasoft.ivy.repository.vfs.VfsResource.normalize(java.lang.String)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "multihop": {
+      "candidate_count": 9,
+      "hits": [],
+      "misses": [
+        "fr.jayasoft.ivy.repository.vfs.VfsResource.normalize(java.lang.String)"
+      ],
+      "indexed_misses": [
+        "fr.jayasoft.ivy.repository.vfs.VfsResource.normalize(java.lang.String)"
+      ],
+      "indexed_recall": 0.0
+    }
+  }
+}

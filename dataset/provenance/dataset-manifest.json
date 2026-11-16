@@ -1,0 +1,29 @@
+{
+  "source": "https://ndownloader.figshare.com/files/66391529",
+  "sha256": "4d909969e8a3e1fc14a0ac90875a26000447fe6899a3532397d884b927a197e8",
+  "rows": 263,
+  "repositories": {
+    "apache/commons-math": 29,
+    "apache/commons-io": 9,
+    "apache/commons-net": 18,
+    "apache/ant-ivy": 56,
+    "apache/deltaspike": 2,
+    "apache/commons-configuration": 21,
+    "apache/commons-dbcp": 3,
+    "apache/commons-jcs": 10,
+    "apache/systemml": 1,
+    "apache/parquet-mr": 12,
+    "apache/opennlp": 12,
+    "apache/commons-compress": 19,
+    "apache/gora": 5,
+    "apache/commons-lang": 11,
+    "apache/commons-beanutils": 5,
+    "apache/commons-scxml": 8,
+    "apache/commons-bcel": 3,
+    "apache/giraph": 18,
+    "apache/commons-vfs": 10,
+    "apache/commons-codec": 2,
+    "apache/commons-validator": 5,
+    "apache/commons-digester": 4
+  }
+}

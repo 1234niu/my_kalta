@@ -1,0 +1,12 @@
+{
+  "id": "constantinople-002",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 0,
+  "predictions": [
+    "org.apache.commons.net.ftp.parser.UnixFTPEntryParser"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "7611618fe6f01f97794c329c3ad0a404c16a73174b1f53ba52db5fbaa3f5f190",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

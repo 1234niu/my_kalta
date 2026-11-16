@@ -1,0 +1,37 @@
+{
+  "id": "constantinople-004",
+  "fingerprint": "d52e826e1d991b729fc796d504e9368175d2aa19ded7e06c4994608785f3432d",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "2499f70cabfc8d17f2c6de124a81fc0940a70fa9",
+  "candidates": [
+    "org.apache.ivy.core.module.descriptor.ModuleDescriptor.getConfigurationsNames()",
+    "org.apache.ivy.core.module.descriptor.ModuleDescriptor.getPublicConfigurationsNames()",
+    "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+    "org.apache.ivy.core.resolve.IvyNode.isRoot()",
+    "org.apache.ivy.core.resolve.ResolveEngine.computeConflicts(org.apache.ivy.core.resolve.VisitNode,org.apache.ivy.core.resolve.VisitNode,java.lang.String,java.util.Collection,java.util.Collection)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String[])",
+      "type": "executable",
+      "relations": {
+        "org.apache.ivy.core.module.descriptor.ModuleDescriptor.getPublicConfigurationsNames()": [
+          "CALLS"
+        ],
+        "org.apache.ivy.core.resolve.ResolveEngine.computeConflicts(org.apache.ivy.core.resolve.VisitNode,org.apache.ivy.core.resolve.VisitNode,java.lang.String,java.util.Collection,java.util.Collection)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.ivy.core.module.descriptor.ModuleDescriptor.getConfigurationsNames()": [
+          "CALLS"
+        ],
+        "org.apache.ivy.core.resolve.IvyNode.isRoot()": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

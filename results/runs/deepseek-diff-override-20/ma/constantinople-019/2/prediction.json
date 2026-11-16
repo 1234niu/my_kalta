@@ -1,0 +1,12 @@
+{
+  "id": "constantinople-019",
+  "variant": "ma",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 2,
+  "predictions": [
+    "org.apache.ivy.util.Checks.checkAbsolute(java.io.File,java.lang.String)"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "d6b46aa562270ce21391a11bf96a652f4ccc55f5ca87906565e1554961bf62ef",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

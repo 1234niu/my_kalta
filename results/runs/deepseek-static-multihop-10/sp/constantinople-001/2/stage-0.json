@@ -1,0 +1,48 @@
+{
+  "request_sha256": "3169d7bc2b7ecd03c5a9fe49970d9dcfe4d76f54abee1ed5b0dddd6480b2f80f",
+  "request": {
+    "model": "deepseek-v4.1-flash-1017",
+    "temperature": 0,
+    "messages": [
+      {
+        "role": "user",
+        "content": "# System Information\nYou are an expert in Java and in analyzing the impact of source code changes on other code entities in a project's production code.\n\n# General Information\nYou receive information about a set of changes, called seed changes, that were made to fix a bug reported in Jira.\nYou also receive the Jira bug report title and description and an initial impact set consisting of the fully qualified names of code entities that are statically related to the seed changes.\n\n# Task\nYour task is to refine the initial impact set.\nA code entity is part of the impact set if it requires modification or, if it does not already exist, must be created as a consequence of the seed changes.\nFirst, remove code entities unless the provided information indicates that they must be modified.\nSecond, add code entities that must be modified or created according to the provided evidence.\n\nYour goal is to report a final impact set that consists of the fully qualified names of code entities that must be modified or created because of the seed changes.\n\n# Inputs\n- Jira bug report title: CharSequenceInputStream#reset() behaves incorrectly in case when buffer size is not dividable by data size\n- Jira bug report description: The size effect happens when buffer size of input stream is not dividable by requested data size. The bug is hidden in {{CharSequenceInputStream#reset()}} method which should also call (I think) {{bbuf.limit(0)}} otherwise next call to {{CharSequenceInputStream#read()}} will return the remaining tail which {{bbuf}} has accumulated.\\n\\nIn the attached test case the test fails, if {{dataSize = 13}} (not dividable by 10) and runs OK if {{dataSize = 20}} (dividable by 10).\n- Seed changes and their Git diff hunks: [{\"fqn\": \"org.apache.commons.io.input.CharSequenceInputStream.reset()\", \"git_diff_hunk\": \"@@ -220,5 +231,29 @@ public synchronized void reset() throws IOException {\\n- if (this.mark != NO_MARK) {\\n- this.cbuf.position(this.mark);\\n- this.mark = NO_MARK;\\n- this.bbuf.limit(0);\\n- this.encoder.reset();\\n+ /*\\n+ * This is not the most efficient implementation, as it re-encodes from the beginning.\\n+ *\\n+ * Since the bbuf is re-used, in general it's necessary to re-encode the data.\\n+ *\\n+ * It should be possible to apply some optimisations however:\\n+ * + use mark/reset on the cbuf and bbuf. This would only work if the buffer had not been (re)filled since the mark.\\n+ * The code would have to catch InvalidMarkException - does not seem possible to check if mark is valid otherwise.\\n+ * + Try saving the state of the cbuf before each fillBuffer; it might be possible to restart from there.\\n+ */\\n+ if (this.mark_cbuf != NO_MARK) {\\n+ // if cbuf is at 0, we have not started reading anything, so skip re-encoding\\n+ if (this.cbuf.position() != 0) {\\n+ this.encoder.reset();\\n+ this.cbuf.rewind();\\n+ this.bbuf.rewind();\\n+ this.bbuf.limit(0); // rewind does not clear the buffer\\n+ while(this.cbuf.position() < this.mark_cbuf) {\\n+ this.bbuf.rewind(); // empty the buffer (we only refill when empty during normal processing)\\n+ this.bbuf.limit(0);\\n+ fillBuffer();\\n+ }\\n+ }\\n+ if (this.cbuf.position() != this.mark_cbuf) {\\n+ throw new IllegalStateException(\\\"Unexpected CharBuffer postion: actual=\\\"+cbuf.position() + \\\" expected=\\\" + this.mark_cbuf);\\n+ }\\n+ this.bbuf.position(this.mark_bbuf);\\n+ this.mark_cbuf = NO_MARK;\\n+ this.mark_bbuf = NO_MARK;\"}]\n- Initial static code change impact set: [\"org.apache.commons.io.input.CharSequenceInputStream.BUFFER_SIZE\", \"org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String)\", \"org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.lang.String,int)\", \"org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset)\", \"org.apache.commons.io.input.CharSequenceInputStream.CharSequenceInputStream(java.lang.CharSequence,java.nio.charset.Charset,int)\", \"org.apache.commons.io.input.CharSequenceInputStream.NO_MARK\", \"org.apache.commons.io.input.CharSequenceInputStream.bbuf\", \"org.apache.commons.io.input.CharSequenceInputStream.cbuf\", \"org.apache.commons.io.input.CharSequenceInputStream.encoder\", \"org.apache.commons.io.input.CharSequenceInputStream.mark\", \"org.apache.commons.io.input.CharSequenceInputStream.mark(int)\"]\n\n# Output Format\nReturn exactly one valid single-line JSON array of strings.\nEach string must be the fully qualified name of an impacted code entity.\nDo not include any additional text, formatting, or meta-information.\nDo not include seed changes in the output.\n\nExample output (four impacted code entities):\n[\"com.example.Foo.someMethod(java.lang.String, int)\", \"com.example.bar.attribute1\", \"com.example.bar.Class.NestedClass\", \"com.example.bar.Class.Class()\"]\n\nExample output (two impacted code entities):\n[\"com.example.package.ParentClass.ChildClass.field\", \"com.example.package.ParentClass.apply(long, com.example.package.ParentClass)\"]\n\nExample output (zero impacted code entities):\n[]"
+      }
+    ],
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096
+  },
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "[\"org.apache.commons.io.input.CharSequenceInputStream.mark_cbuf\",\"org.apache.commons.io.input.CharSequenceInputStream.mark_bbuf\",\"org.apache.commons.io.input.CharSequenceInputStream.fillBuffer()\",\"org.apache.commons.io.input.CharSequenceInputStream.read()\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1794812321,
+    "id": "0217948123205734b8de4e4bcc885b4197a5e365ab4902cb2c6e7",
+    "model": "deepseek-v4.1-flash-1017",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 53,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 99,
+      "prompt_tokens": 1251,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152
+      },
+      "total_tokens": 1304
+    }
+  },
+  "seconds": 1.4362186670000003,
+  "endpoint": "http://api.aicnic.cn/v1"
+}

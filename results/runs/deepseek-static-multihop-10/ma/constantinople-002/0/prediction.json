@@ -1,0 +1,16 @@
+{
+  "id": "constantinople-002",
+  "variant": "ma",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 0,
+  "predictions": [
+    "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+    "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser()",
+    "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)",
+    "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig, boolean)",
+    "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.trimLeadingSpaces"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "6d452d5484203373b3ecf5ff3b6863e904833803173309afb13c2d2c7e5c27f7",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

@@ -1,0 +1,35 @@
+# System Information
+You are an expert in Java and in analyzing the impact of source code changes on other code entities in a project's production code.
+
+# General Information
+You receive information about a set of changes, called seed changes, that were made to fix a bug reported in Jira.
+You also receive the Jira bug report title and description and an initial impact set consisting of the fully qualified names of code entities that are statically related to the seed changes.
+
+# Task
+Your task is to refine the initial impact set.
+A code entity is part of the impact set if it requires modification or, if it does not already exist, must be created as a consequence of the seed changes.
+First, remove code entities unless the provided information indicates that they must be modified.
+Second, add code entities that must be modified or created according to the provided evidence.
+
+Your goal is to report a final impact set that consists of the fully qualified names of code entities that must be modified or created because of the seed changes.
+
+# Inputs
+- Jira bug report title: {{ jira_title }}
+- Jira bug report description: {{ jira_description }}
+- Seed changes and their Git diff hunks: {{ seed_changes }}
+- Initial static code change impact set: {{ static_impact_set }}
+
+# Output Format
+Return exactly one valid single-line JSON array of strings.
+Each string must be the fully qualified name of an impacted code entity.
+Do not include any additional text, formatting, or meta-information.
+Do not include seed changes in the output.
+
+Example output (four impacted code entities):
+["com.example.Foo.someMethod(java.lang.String, int)", "com.example.bar.attribute1", "com.example.bar.Class.NestedClass", "com.example.bar.Class.Class()"]
+
+Example output (two impacted code entities):
+["com.example.package.ParentClass.ChildClass.field", "com.example.package.ParentClass.apply(long, com.example.package.ParentClass)"]
+
+Example output (zero impacted code entities):
+[]

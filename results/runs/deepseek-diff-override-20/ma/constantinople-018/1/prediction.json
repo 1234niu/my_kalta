@@ -1,0 +1,13 @@
+{
+  "id": "constantinople-018",
+  "variant": "ma",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 1,
+  "predictions": [
+    "opennlp.tools.util.featuregen.StringPattern.isAllHiragana()",
+    "opennlp.tools.util.featuregen.StringPattern.isAllKatakana()"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "6e3e2dd6730ac9823b0ef9c3e8c2079495ebe012a17d84a935b641b1d3105b36",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

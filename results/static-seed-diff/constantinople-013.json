@@ -1,0 +1,236 @@
+{
+  "id": "constantinople-013",
+  "graph_edges": 21246,
+  "seeds": {
+    "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolutionCacheRoot()": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getConfigurationResolveReportInCache(java.lang.String,java.lang.String)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getConfigurationResolveReportsInCache(java.lang.String)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolvedIvyFileInCache(org.apache.ivy.core.module.id.ModuleRevisionId)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolvedIvyPropertiesInCache(org.apache.ivy.core.module.id.ModuleRevisionId)"
+    ],
+    "fields": [
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.basedir",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getConfigurationResolveReportInCache(java.lang.String,java.lang.String)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getConfigurationResolveReportsInCache(java.lang.String)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolvedIvyFileInCache(org.apache.ivy.core.module.id.ModuleRevisionId)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolvedIvyPropertiesInCache(org.apache.ivy.core.module.id.ModuleRevisionId)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.setBasedir(java.io.File)"
+    ],
+    "multihop": [
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.DefaultResolutionCacheManager(java.io.File)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.basedir",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getConfigurationResolveReportInCache(java.lang.String,java.lang.String)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getConfigurationResolveReportsInCache(java.lang.String)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolvedIvyFileInCache(org.apache.ivy.core.module.id.ModuleRevisionId)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolvedIvyPropertiesInCache(org.apache.ivy.core.module.id.ModuleRevisionId)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.setBasedir(java.io.File)"
+    ],
+    "two_hop_calls": [
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.DefaultResolutionCacheManager(java.io.File)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.basedir",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getConfigurationResolveReportInCache(java.lang.String,java.lang.String)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getConfigurationResolveReportsInCache(java.lang.String)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolvedIvyFileInCache(org.apache.ivy.core.module.id.ModuleRevisionId)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolvedIvyPropertiesInCache(org.apache.ivy.core.module.id.ModuleRevisionId)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.setBasedir(java.io.File)"
+    ],
+    "diff_and_override": [
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.DefaultResolutionCacheManager(java.io.File)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.basedir",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getConfigurationResolveReportInCache(java.lang.String,java.lang.String)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getConfigurationResolveReportsInCache(java.lang.String)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolvedIvyFileInCache(org.apache.ivy.core.module.id.ModuleRevisionId)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolvedIvyPropertiesInCache(org.apache.ivy.core.module.id.ModuleRevisionId)",
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.setBasedir(java.io.File)",
+      "org.apache.ivy.core.settings.IvySettings.getDefaultResolutionCacheBasedir()"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.basedir": {
+        "org.apache.ivy.core.cache.DefaultResolutionCacheManager.basedir": [
+          {
+            "from": "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolutionCacheRoot()",
+            "to": "org.apache.ivy.core.cache.DefaultResolutionCacheManager.basedir",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/cache/DefaultResolutionCacheManager.java",
+            "line": 77
+          }
+        ]
+      },
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.setBasedir(java.io.File)": {
+        "org.apache.ivy.core.cache.DefaultResolutionCacheManager.basedir": [
+          {
+            "from": "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolutionCacheRoot()",
+            "to": "org.apache.ivy.core.cache.DefaultResolutionCacheManager.basedir",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/cache/DefaultResolutionCacheManager.java",
+            "line": 77
+          },
+          {
+            "from": "org.apache.ivy.core.cache.DefaultResolutionCacheManager.setBasedir(java.io.File)",
+            "to": "org.apache.ivy.core.cache.DefaultResolutionCacheManager.basedir",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/cache/DefaultResolutionCacheManager.java",
+            "line": 85
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.basedir": {
+        "org.apache.ivy.core.cache.DefaultResolutionCacheManager.basedir": [
+          {
+            "from": "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolutionCacheRoot()",
+            "to": "org.apache.ivy.core.cache.DefaultResolutionCacheManager.basedir",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/cache/DefaultResolutionCacheManager.java",
+            "line": 77
+          }
+        ]
+      },
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.setBasedir(java.io.File)": {
+        "org.apache.ivy.core.cache.DefaultResolutionCacheManager.basedir": [
+          {
+            "from": "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolutionCacheRoot()",
+            "to": "org.apache.ivy.core.cache.DefaultResolutionCacheManager.basedir",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/cache/DefaultResolutionCacheManager.java",
+            "line": 77
+          },
+          {
+            "from": "org.apache.ivy.core.cache.DefaultResolutionCacheManager.setBasedir(java.io.File)",
+            "to": "org.apache.ivy.core.cache.DefaultResolutionCacheManager.basedir",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/cache/DefaultResolutionCacheManager.java",
+            "line": 85
+          }
+        ]
+      },
+      "org.apache.ivy.core.cache.DefaultResolutionCacheManager.DefaultResolutionCacheManager(java.io.File)": {
+        "org.apache.ivy.core.cache.DefaultResolutionCacheManager.basedir": [
+          {
+            "from": "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolutionCacheRoot()",
+            "to": "org.apache.ivy.core.cache.DefaultResolutionCacheManager.basedir",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/core/cache/DefaultResolutionCacheManager.java",
+            "line": 77
+          },
+          {
+            "from": "org.apache.ivy.core.cache.DefaultResolutionCacheManager.setBasedir(java.io.File)",
+            "to": "org.apache.ivy.core.cache.DefaultResolutionCacheManager.basedir",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/core/cache/DefaultResolutionCacheManager.java",
+            "line": 85
+          },
+          {
+            "from": "org.apache.ivy.core.cache.DefaultResolutionCacheManager.DefaultResolutionCacheManager(java.io.File)",
+            "to": "org.apache.ivy.core.cache.DefaultResolutionCacheManager.setBasedir(java.io.File)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/ivy/core/cache/DefaultResolutionCacheManager.java",
+            "line": 69
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {}
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 4860,
+      "ma_analysis": 4442,
+      "ma_refinement_fixed": 2694
+    },
+    "two_hop_calls": {
+      "sp": 4860,
+      "ma_analysis": 4442,
+      "ma_refinement_fixed": 2694
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "getDefaultResolutionCacheBasedir",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "settings",
+        "after_line": 81,
+        "expression": "getDefaultResolutionCacheBasedir()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.ivy.core.cache.DefaultResolutionCacheManager.getResolutionCacheRoot()",
+        "file": "src/java/org/apache/ivy/core/cache/DefaultResolutionCacheManager.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.ivy.core.settings.IvySettings.getDefaultResolutionCacheBasedir()"
+        ]
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [
+    "org.apache.ivy.core.cache.DefaultResolutionCacheManager.clean()"
+  ],
+  "unindexed_targets": [],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 4,
+      "hits": [],
+      "misses": [
+        "org.apache.ivy.core.cache.DefaultResolutionCacheManager.clean()"
+      ],
+      "indexed_misses": [
+        "org.apache.ivy.core.cache.DefaultResolutionCacheManager.clean()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 6,
+      "hits": [],
+      "misses": [
+        "org.apache.ivy.core.cache.DefaultResolutionCacheManager.clean()"
+      ],
+      "indexed_misses": [
+        "org.apache.ivy.core.cache.DefaultResolutionCacheManager.clean()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "multihop": {
+      "candidate_count": 7,
+      "hits": [],
+      "misses": [
+        "org.apache.ivy.core.cache.DefaultResolutionCacheManager.clean()"
+      ],
+      "indexed_misses": [
+        "org.apache.ivy.core.cache.DefaultResolutionCacheManager.clean()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 7,
+      "hits": [],
+      "misses": [
+        "org.apache.ivy.core.cache.DefaultResolutionCacheManager.clean()"
+      ],
+      "indexed_misses": [
+        "org.apache.ivy.core.cache.DefaultResolutionCacheManager.clean()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "diff_and_override": {
+      "candidate_count": 8,
+      "hits": [],
+      "misses": [
+        "org.apache.ivy.core.cache.DefaultResolutionCacheManager.clean()"
+      ],
+      "indexed_misses": [
+        "org.apache.ivy.core.cache.DefaultResolutionCacheManager.clean()"
+      ],
+      "indexed_recall": 0.0
+    }
+  }
+}

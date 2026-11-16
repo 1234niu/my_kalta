@@ -1,0 +1,29 @@
+{
+  "id": "constantinople-003",
+  "fingerprint": "c0605a56b805db52b7862f8375ed121e2f8ec225444b86b158df9b60ef5d446f",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "6fac855ab9f475f358f822bdc804761dc0416bb0",
+  "candidates": [
+    "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()",
+    "fr.jayasoft.ivy.repository.vfs.VfsResource.VfsResource(java.lang.String,org.apache.commons.vfs.FileSystemManager)",
+    "fr.jayasoft.ivy.repository.vfs.VfsResource.getChildren()"
+  ],
+  "seeds": [
+    {
+      "fqn": "fr.jayasoft.ivy.repository.vfs.VfsRepository.list(java.lang.String)",
+      "type": "executable",
+      "relations": {
+        "fr.jayasoft.ivy.repository.vfs.VfsResource.getChildren()": [
+          "CALLS"
+        ],
+        "fr.jayasoft.ivy.repository.vfs.VfsResource.VfsResource(java.lang.String,org.apache.commons.vfs.FileSystemManager)": [
+          "CALLS"
+        ],
+        "fr.jayasoft.ivy.repository.vfs.VfsRepository.getVFSManager()": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

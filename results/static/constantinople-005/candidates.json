@@ -1,0 +1,21 @@
+{
+  "id": "constantinople-005",
+  "fingerprint": "835c1e6302baa8a683c8683acb551408790127135ee16bef1d32448b5b2970c6",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "b68774d4b8975f6ac44c70812b465bcb88598c93",
+  "candidates": [
+    "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewriteToCount()"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+      "type": "executable",
+      "relations": {
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewriteToCount()": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

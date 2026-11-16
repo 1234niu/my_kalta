@@ -1,0 +1,48 @@
+{
+  "request_sha256": "b840b7cdfafcfd063709ec421292f1dcf0806d9b8b09debc52e5fe7c131b900f",
+  "request": {
+    "model": "deepseek-v4.1-flash-1017",
+    "temperature": 0,
+    "messages": [
+      {
+        "role": "user",
+        "content": "# System Information\nYou are an expert in Java and in analyzing the impact of source code changes on other code entities in a project's production code.\n\n# General Information\nYou receive information about a set of changes, called seed changes, that were made to fix a bug reported in Jira.\nYou also receive the Jira bug report title and description and an initial impact set consisting of the fully qualified names of code entities that are statically related to the seed changes.\n\n# Task\nYour task is to refine the initial impact set.\nA code entity is part of the impact set if it requires modification or, if it does not already exist, must be created as a consequence of the seed changes.\nFirst, remove code entities unless the provided information indicates that they must be modified.\nSecond, add code entities that must be modified or created according to the provided evidence.\n\nYour goal is to report a final impact set that consists of the fully qualified names of code entities that must be modified or created because of the seed changes.\n\n# Inputs\n- Jira bug report title: UnixFTPEntryParser Drops Leading Spaces from File Names\n- Jira bug report description: The {{UnixFTPEntryParser}} [regular expression | http://svn.apache.org/viewvc/commons/proper/net/trunk/src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java?view=markup] (line 106) consumes all spaces between the timestamp and the file name.\\n\\nThe {{FTPFile.name}} property ends up getting a value with stripped leading spaces.\\n\\nReported by Spring Integration user at https://jira.spring.io/browse/INT-3591\n- Seed changes and their Git diff hunks: [{\"fqn\": \"org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)\", \"git_diff_hunk\": \"@@ -201,0 +225,3 @@ public class UnixFTPEntryParser extends ConfigurableFTPFileEntryParserImpl\\n+ if (trimLeadingSpaces) {\\n+ name = name.replaceFirst(\\\"^\\\\\\\\s+\\\", \\\"\\\");\\n+ }\"}]\n- Initial static code change impact set: [\"org.apache.commons.net.ftp.FTPFile.DIRECTORY_TYPE\", \"org.apache.commons.net.ftp.FTPFile.EXECUTE_PERMISSION\", \"org.apache.commons.net.ftp.FTPFile.FILE_TYPE\", \"org.apache.commons.net.ftp.FTPFile.FTPFile()\", \"org.apache.commons.net.ftp.FTPFile.READ_PERMISSION\", \"org.apache.commons.net.ftp.FTPFile.SYMBOLIC_LINK_TYPE\", \"org.apache.commons.net.ftp.FTPFile.UNKNOWN_TYPE\", \"org.apache.commons.net.ftp.FTPFile.WRITE_PERMISSION\", \"org.apache.commons.net.ftp.FTPFile.setGroup(java.lang.String)\", \"org.apache.commons.net.ftp.FTPFile.setHardLinkCount(int)\", \"org.apache.commons.net.ftp.FTPFile.setLink(java.lang.String)\", \"org.apache.commons.net.ftp.FTPFile.setName(java.lang.String)\", \"org.apache.commons.net.ftp.FTPFile.setPermission(int,int,boolean)\", \"org.apache.commons.net.ftp.FTPFile.setRawListing(java.lang.String)\", \"org.apache.commons.net.ftp.FTPFile.setSize(long)\", \"org.apache.commons.net.ftp.FTPFile.setTimestamp(java.util.Calendar)\", \"org.apache.commons.net.ftp.FTPFile.setType(int)\", \"org.apache.commons.net.ftp.FTPFile.setUser(java.lang.String)\", \"org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String)\", \"org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String,int)\", \"org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)\", \"org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser\", \"org.apache.commons.net.ftp.parser.MVSFTPEntryParser.parseUnixList(org.apache.commons.net.ftp.FTPFile,java.lang.String)\", \"org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String)\", \"org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String,int)\", \"org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_\", \"org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)\", \"org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.group(int)\", \"org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)\", \"org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern\", \"org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result\", \"org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.setRegex(java.lang.String)\", \"org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.setRegex(java.lang.String,int)\", \"org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX\", \"org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser()\", \"org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)\"]\n\n# Output Format\nReturn exactly one valid single-line JSON array of strings.\nEach string must be the fully qualified name of an impacted code entity.\nDo not include any additional text, formatting, or meta-information.\nDo not include seed changes in the output.\n\nExample output (four impacted code entities):\n[\"com.example.Foo.someMethod(java.lang.String, int)\", \"com.example.bar.attribute1\", \"com.example.bar.Class.NestedClass\", \"com.example.bar.Class.Class()\"]\n\nExample output (two impacted code entities):\n[\"com.example.package.ParentClass.ChildClass.field\", \"com.example.package.ParentClass.apply(long, com.example.package.ParentClass)\"]\n\nExample output (zero impacted code entities):\n[]"
+      }
+    ],
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096
+  },
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "[\"org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX\", \"org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser()\", \"org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1794812321,
+    "id": "0217948123203031bf4585e48db892caa0c2994c3199374b38b71",
+    "model": "deepseek-v4.1-flash-1017",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 80,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 3,
+      "prompt_tokens": 1411,
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      },
+      "total_tokens": 1491
+    }
+  },
+  "seconds": 1.4318795840000003,
+  "endpoint": "http://api.aicnic.cn/v1"
+}

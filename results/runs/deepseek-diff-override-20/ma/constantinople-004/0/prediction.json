@@ -1,0 +1,17 @@
+{
+  "id": "constantinople-004",
+  "variant": "ma",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 0,
+  "predictions": [
+    "org.apache.ivy.core.resolve.IvyNode.addCaller(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,java.lang.String[],org.apache.ivy.core.module.descriptor.DependencyDescriptor)",
+    "org.apache.ivy.core.resolve.IvyNode.addRootModuleConfigurations(org.apache.ivy.core.resolve.IvyNodeUsage,java.lang.String,java.lang.String[])",
+    "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+    "org.apache.ivy.core.resolve.IvyNode.loadData(java.lang.String,org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.lang.String,boolean,org.apache.ivy.core.resolve.IvyNodeUsage)",
+    "org.apache.ivy.core.resolve.IvyNodeUsage.setRequiredConfs(org.apache.ivy.core.resolve.IvyNode,java.lang.String,java.util.Collection)",
+    "org.apache.ivy.core.resolve.ResolveEngine.computeConflicts(org.apache.ivy.core.resolve.VisitNode,org.apache.ivy.core.resolve.VisitNode,java.lang.String,java.util.Collection,java.util.Collection)"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "0a4652cd510c695ecfa8a0d9e1655ae1c344b2644826c29c47602ea1ddfe4826",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

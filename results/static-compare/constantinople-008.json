@@ -1,0 +1,874 @@
+{
+  "id": "constantinople-008",
+  "graph_edges": 10917,
+  "seeds": {
+    "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)": true,
+    "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.readBlock(int)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.allocateBlocks(int)",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.calculateByteOffsetForBlock(int)",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.calculateTheNumberOfBlocksNeeded(byte[])",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.read(int[])",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDiskCache.processUpdate(org.apache.commons.jcs.engine.behavior.ICacheElement)",
+      "org.apache.commons.jcs.engine.behavior.IElementSerializer.serialize(java.lang.Object)"
+    ],
+    "fields": [
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.HEADER_SIZE_BYTES",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.allocateBlocks(int)",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.calculateByteOffsetForBlock(int)",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.calculateTheNumberOfBlocksNeeded(byte[])",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.log",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.putBytes",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.putCount",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.read(int[])",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDiskCache.processUpdate(org.apache.commons.jcs.engine.behavior.ICacheElement)",
+      "org.apache.commons.jcs.engine.behavior.IElementSerializer.serialize(java.lang.Object)"
+    ],
+    "multihop": [
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int)",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.DEFAULT_BLOCK_SIZE_BYTES",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.HEADER_SIZE_BYTES",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.allocateBlocks(int)",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.calculateByteOffsetForBlock(int)",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.calculateTheNumberOfBlocksNeeded(byte[])",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.emptyBlocks",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.filepath",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.log",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.numberOfBlocks",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.putBytes",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.putCount",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.read(int[])",
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDiskCache.processUpdate(org.apache.commons.jcs.engine.behavior.ICacheElement)",
+      "org.apache.commons.jcs.engine.behavior.IElementSerializer.serialize(java.lang.Object)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 180
+          }
+        ]
+      },
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 180
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 131
+          }
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 130
+          }
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 216
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 122
+          }
+        ]
+      },
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.log": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.log": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.log",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 182
+          }
+        ]
+      },
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.putBytes": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.putBytes": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.putBytes",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 187
+          }
+        ]
+      },
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.putCount": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.putCount": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.putCount",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 188
+          }
+        ]
+      },
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 202
+          }
+        ]
+      },
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.HEADER_SIZE_BYTES": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.HEADER_SIZE_BYTES": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.HEADER_SIZE_BYTES",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 202
+          }
+        ]
+      },
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 216
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 180
+          }
+        ]
+      },
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 180
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 131
+          }
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 130
+          }
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 216
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 122
+          }
+        ]
+      },
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.filepath": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 180
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 131
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.filepath",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 121
+          }
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.filepath",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 121
+          }
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 216
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 122
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.filepath",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 121
+          }
+        ]
+      },
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.numberOfBlocks": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 180
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 131
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.numberOfBlocks",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 123
+          }
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.numberOfBlocks",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 123
+          }
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 216
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 122
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.numberOfBlocks",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 123
+          }
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.numberOfBlocks": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.allocateBlocks(int)",
+            "kind": "CALLS",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 199
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.allocateBlocks(int)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.numberOfBlocks",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 151
+          }
+        ]
+      },
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 180
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 131
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 123
+          }
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 123
+          }
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 216
+          }
+        ]
+      },
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.log": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 180
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 131
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.log",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 125
+          }
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.log": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.log",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 182
+          }
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.log",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 125
+          }
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 216
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 122
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.log",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 125
+          }
+        ]
+      },
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,org.apache.commons.jcs.engine.behavior.IElementSerializer)": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 180
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 131
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "kind": "CALLS",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 93
+          }
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "kind": "CALLS",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 93
+          }
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 216
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 122
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "kind": "CALLS",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 93
+          }
+        ]
+      },
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.DEFAULT_BLOCK_SIZE_BYTES": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 180
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 131
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "kind": "CALLS",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 93
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.DEFAULT_BLOCK_SIZE_BYTES",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 93
+          }
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "kind": "CALLS",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 93
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.DEFAULT_BLOCK_SIZE_BYTES",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 93
+          }
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 216
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 122
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "kind": "CALLS",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 93
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.DEFAULT_BLOCK_SIZE_BYTES",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 93
+          }
+        ]
+      },
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int)": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 180
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.elementSerializer",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 131
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "kind": "CALLS",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 106
+          }
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "kind": "CALLS",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 106
+          }
+        ],
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 216
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.fc",
+            "kind": "WRITE",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 122
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.BlockDisk(java.io.File,int,org.apache.commons.jcs.engine.behavior.IElementSerializer)",
+            "kind": "CALLS",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 106
+          }
+        ]
+      },
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.putBytes": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.putBytes": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.putBytes",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 187
+          }
+        ]
+      },
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.putCount": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.putCount": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.putCount",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 188
+          }
+        ]
+      },
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.blockSizeBytes",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 202
+          }
+        ]
+      },
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.HEADER_SIZE_BYTES": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.HEADER_SIZE_BYTES": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.HEADER_SIZE_BYTES",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 202
+          }
+        ]
+      },
+      "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.emptyBlocks": {
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.emptyBlocks": [
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.write(java.io.Serializable)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.allocateBlocks(int)",
+            "kind": "CALLS",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 199
+          },
+          {
+            "from": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.allocateBlocks(int)",
+            "to": "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.emptyBlocks",
+            "kind": "READ",
+            "file": "commons-jcs-core/src/main/java/org/apache/commons/jcs/auxiliary/disk/block/BlockDisk.java",
+            "line": 148
+          }
+        ]
+      }
+    }
+  },
+  "indexed_targets": [],
+  "unindexed_targets": [
+    "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.calculateByteOffsetForBlockAsLong(int)"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 6,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.calculateByteOffsetForBlockAsLong(int)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "fields": {
+      "candidate_count": 14,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.calculateByteOffsetForBlockAsLong(int)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "multihop": {
+      "candidate_count": 20,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.calculateByteOffsetForBlockAsLong(int)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    }
+  }
+}

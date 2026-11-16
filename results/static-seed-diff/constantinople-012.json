@@ -1,0 +1,521 @@
+{
+  "id": "constantinople-012",
+  "graph_edges": 19992,
+  "seeds": {
+    "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser.parseDescriptor(org.apache.ivy.plugins.parser.ParserSettings,java.net.URL,org.apache.ivy.plugins.repository.Resource,boolean)",
+      "org.apache.ivy.plugins.parser.m2.PomReader.1.1()",
+      "org.apache.ivy.plugins.parser.m2.PomReader.AddDTDFilterInputStream.AddDTDFilterInputStream(java.io.InputStream)",
+      "org.apache.ivy.plugins.parser.m2.PomReader.getFirstChildElement(org.w3c.dom.Element,java.lang.String)",
+      "org.apache.ivy.plugins.repository.Resource.getName()",
+      "org.apache.ivy.util.XMLHelper.parseToDom(java.io.InputStream,org.apache.ivy.plugins.repository.Resource,org.xml.sax.EntityResolver)",
+      "org.apache.ivy.util.url.URLHandler.openStream(java.net.URL)",
+      "org.apache.ivy.util.url.URLHandlerRegistry.getDefault()"
+    ],
+    "fields": [
+      "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser.parseDescriptor(org.apache.ivy.plugins.parser.ParserSettings,java.net.URL,org.apache.ivy.plugins.repository.Resource,boolean)",
+      "org.apache.ivy.plugins.parser.m2.PomReader.1.1()",
+      "org.apache.ivy.plugins.parser.m2.PomReader.AddDTDFilterInputStream.AddDTDFilterInputStream(java.io.InputStream)",
+      "org.apache.ivy.plugins.parser.m2.PomReader.MODEL",
+      "org.apache.ivy.plugins.parser.m2.PomReader.PARENT",
+      "org.apache.ivy.plugins.parser.m2.PomReader.PROJECT",
+      "org.apache.ivy.plugins.parser.m2.PomReader.getFirstChildElement(org.w3c.dom.Element,java.lang.String)",
+      "org.apache.ivy.plugins.parser.m2.PomReader.parentElement",
+      "org.apache.ivy.plugins.parser.m2.PomReader.projectElement",
+      "org.apache.ivy.plugins.repository.Resource.getName()",
+      "org.apache.ivy.util.XMLHelper.parseToDom(java.io.InputStream,org.apache.ivy.plugins.repository.Resource,org.xml.sax.EntityResolver)",
+      "org.apache.ivy.util.url.URLHandler.openStream(java.net.URL)",
+      "org.apache.ivy.util.url.URLHandlerRegistry.getDefault()"
+    ],
+    "multihop": [
+      "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser.parseDescriptor(org.apache.ivy.plugins.parser.ParserSettings,java.net.URL,org.apache.ivy.plugins.repository.Resource,boolean)",
+      "org.apache.ivy.plugins.parser.m2.PomReader.1.1()",
+      "org.apache.ivy.plugins.parser.m2.PomReader.AddDTDFilterInputStream.AddDTDFilterInputStream(java.io.InputStream)",
+      "org.apache.ivy.plugins.parser.m2.PomReader.MODEL",
+      "org.apache.ivy.plugins.parser.m2.PomReader.PARENT",
+      "org.apache.ivy.plugins.parser.m2.PomReader.PROJECT",
+      "org.apache.ivy.plugins.parser.m2.PomReader.getFirstChildElement(org.w3c.dom.Element,java.lang.String)",
+      "org.apache.ivy.plugins.parser.m2.PomReader.parentElement",
+      "org.apache.ivy.plugins.parser.m2.PomReader.projectElement",
+      "org.apache.ivy.plugins.repository.Resource.getName()",
+      "org.apache.ivy.util.XMLHelper.parseToDom(java.io.InputStream,org.apache.ivy.plugins.repository.Resource,org.xml.sax.EntityResolver)",
+      "org.apache.ivy.util.url.URLHandler.openStream(java.net.URL)",
+      "org.apache.ivy.util.url.URLHandlerRegistry.getDefault()"
+    ],
+    "two_hop_calls": [
+      "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser.parseDescriptor(org.apache.ivy.plugins.parser.ParserSettings,java.net.URL,org.apache.ivy.plugins.repository.Resource,boolean)",
+      "org.apache.ivy.plugins.parser.m2.PomReader.1.1()",
+      "org.apache.ivy.plugins.parser.m2.PomReader.AddDTDFilterInputStream.AddDTDFilterInputStream(java.io.InputStream)",
+      "org.apache.ivy.plugins.parser.m2.PomReader.MODEL",
+      "org.apache.ivy.plugins.parser.m2.PomReader.PARENT",
+      "org.apache.ivy.plugins.parser.m2.PomReader.PROJECT",
+      "org.apache.ivy.plugins.parser.m2.PomReader.getFirstChildElement(org.w3c.dom.Element,java.lang.String)",
+      "org.apache.ivy.plugins.parser.m2.PomReader.parentElement",
+      "org.apache.ivy.plugins.parser.m2.PomReader.projectElement",
+      "org.apache.ivy.plugins.repository.Resource.getName()",
+      "org.apache.ivy.util.XMLHelper.getDocBuilder(org.xml.sax.EntityResolver)",
+      "org.apache.ivy.util.XMLHelper.parseToDom(java.io.InputStream,org.apache.ivy.plugins.repository.Resource,org.xml.sax.EntityResolver)",
+      "org.apache.ivy.util.url.URLHandler.openStream(java.net.URL)",
+      "org.apache.ivy.util.url.URLHandlerRegistry.getDefault()"
+    ],
+    "diff_and_override": [
+      "org.apache.ivy.plugins.parser.m2.PomModuleDescriptorParser.parseDescriptor(org.apache.ivy.plugins.parser.ParserSettings,java.net.URL,org.apache.ivy.plugins.repository.Resource,boolean)",
+      "org.apache.ivy.plugins.parser.m2.PomReader.1.1()",
+      "org.apache.ivy.plugins.parser.m2.PomReader.AddDTDFilterInputStream.AddDTDFilterInputStream(java.io.InputStream)",
+      "org.apache.ivy.plugins.parser.m2.PomReader.MODEL",
+      "org.apache.ivy.plugins.parser.m2.PomReader.PARENT",
+      "org.apache.ivy.plugins.parser.m2.PomReader.PROJECT",
+      "org.apache.ivy.plugins.parser.m2.PomReader.getFirstChildElement(org.w3c.dom.Element,java.lang.String)",
+      "org.apache.ivy.plugins.parser.m2.PomReader.parentElement",
+      "org.apache.ivy.plugins.parser.m2.PomReader.projectElement",
+      "org.apache.ivy.plugins.repository.Resource.getName()",
+      "org.apache.ivy.util.XMLHelper.getDocBuilder(org.xml.sax.EntityResolver)",
+      "org.apache.ivy.util.XMLHelper.parseToDom(java.io.InputStream,org.apache.ivy.plugins.repository.Resource,org.xml.sax.EntityResolver)",
+      "org.apache.ivy.util.url.URLHandler.openStream(java.net.URL)",
+      "org.apache.ivy.util.url.URLHandlerRegistry.getDefault()"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.ivy.plugins.parser.m2.PomReader.projectElement": {
+        "org.apache.ivy.plugins.parser.m2.PomReader.projectElement": [
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.projectElement",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 105
+          }
+        ]
+      },
+      "org.apache.ivy.plugins.parser.m2.PomReader.PROJECT": {
+        "org.apache.ivy.plugins.parser.m2.PomReader.PROJECT": [
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.PROJECT",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 106
+          }
+        ]
+      },
+      "org.apache.ivy.plugins.parser.m2.PomReader.MODEL": {
+        "org.apache.ivy.plugins.parser.m2.PomReader.MODEL": [
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.MODEL",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 106
+          }
+        ]
+      },
+      "org.apache.ivy.plugins.parser.m2.PomReader.parentElement": {
+        "org.apache.ivy.plugins.parser.m2.PomReader.parentElement": [
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.parentElement",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 110
+          }
+        ]
+      },
+      "org.apache.ivy.plugins.parser.m2.PomReader.PARENT": {
+        "org.apache.ivy.plugins.parser.m2.PomReader.PARENT": [
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.PARENT",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 110
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.ivy.plugins.parser.m2.PomReader.projectElement": {
+        "org.apache.ivy.plugins.parser.m2.PomReader.projectElement": [
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.projectElement",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 105
+          }
+        ],
+        "org.apache.ivy.plugins.parser.m2.PomReader.parentElement": [
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.parentElement",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 110
+          },
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.parentElement",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 110
+          },
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.projectElement",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 106
+          }
+        ]
+      },
+      "org.apache.ivy.plugins.parser.m2.PomReader.PROJECT": {
+        "org.apache.ivy.plugins.parser.m2.PomReader.projectElement": [
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.projectElement",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 105
+          },
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.projectElement",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 105
+          },
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.PROJECT",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 106
+          }
+        ],
+        "org.apache.ivy.plugins.parser.m2.PomReader.PROJECT": [
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.PROJECT",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 106
+          }
+        ],
+        "org.apache.ivy.plugins.parser.m2.PomReader.parentElement": [
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.parentElement",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 110
+          },
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.parentElement",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 110
+          },
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.PROJECT",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 106
+          }
+        ]
+      },
+      "org.apache.ivy.plugins.parser.m2.PomReader.MODEL": {
+        "org.apache.ivy.plugins.parser.m2.PomReader.projectElement": [
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.projectElement",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 105
+          },
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.projectElement",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 105
+          },
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.MODEL",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 106
+          }
+        ],
+        "org.apache.ivy.plugins.parser.m2.PomReader.MODEL": [
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.MODEL",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 106
+          }
+        ],
+        "org.apache.ivy.plugins.parser.m2.PomReader.parentElement": [
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.parentElement",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 110
+          },
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.parentElement",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 110
+          },
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.MODEL",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 106
+          }
+        ]
+      },
+      "org.apache.ivy.plugins.parser.m2.PomReader.PARENT": {
+        "org.apache.ivy.plugins.parser.m2.PomReader.projectElement": [
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.projectElement",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 105
+          },
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.projectElement",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 105
+          },
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.PARENT",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 110
+          }
+        ],
+        "org.apache.ivy.plugins.parser.m2.PomReader.parentElement": [
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.parentElement",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 110
+          },
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.parentElement",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 110
+          },
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.PARENT",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 110
+          }
+        ],
+        "org.apache.ivy.plugins.parser.m2.PomReader.PARENT": [
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.PARENT",
+            "kind": "READ",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 110
+          }
+        ]
+      },
+      "org.apache.ivy.plugins.parser.m2.PomReader.parentElement": {
+        "org.apache.ivy.plugins.parser.m2.PomReader.parentElement": [
+          {
+            "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+            "to": "org.apache.ivy.plugins.parser.m2.PomReader.parentElement",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+            "line": 110
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.ivy.util.XMLHelper.getDocBuilder(org.xml.sax.EntityResolver)": [
+        {
+          "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+          "to": "org.apache.ivy.util.XMLHelper.parseToDom(java.io.InputStream,org.apache.ivy.plugins.repository.Resource,org.xml.sax.EntityResolver)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+          "line": 95
+        },
+        {
+          "from": "org.apache.ivy.util.XMLHelper.parseToDom(java.io.InputStream,org.apache.ivy.plugins.repository.Resource,org.xml.sax.EntityResolver)",
+          "to": "org.apache.ivy.util.XMLHelper.getDocBuilder(org.xml.sax.EntityResolver)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/util/XMLHelper.java",
+          "line": 195
+        }
+      ],
+      "org.apache.ivy.plugins.repository.Resource.getName()": [
+        {
+          "from": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+          "to": "org.apache.ivy.util.XMLHelper.parseToDom(java.io.InputStream,org.apache.ivy.plugins.repository.Resource,org.xml.sax.EntityResolver)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+          "line": 95
+        },
+        {
+          "from": "org.apache.ivy.util.XMLHelper.parseToDom(java.io.InputStream,org.apache.ivy.plugins.repository.Resource,org.xml.sax.EntityResolver)",
+          "to": "org.apache.ivy.plugins.repository.Resource.getName()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/ivy/util/XMLHelper.java",
+          "line": 198
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 5516,
+      "ma_analysis": 5098,
+      "ma_refinement_fixed": 3230
+    },
+    "two_hop_calls": {
+      "sp": 5591,
+      "ma_analysis": 5173,
+      "ma_refinement_fixed": 3305
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "setSystemId",
+        "arity": 1,
+        "arguments": [
+          "XMLHelper.toSystemId(descriptorURL)"
+        ],
+        "receiver": "source",
+        "after_line": 93,
+        "expression": "setSystemId(XMLHelper.toSystemId(descriptorURL))",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+        "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "toSystemId",
+        "arity": 1,
+        "arguments": [
+          "descriptorURL"
+        ],
+        "receiver": "XMLHelper",
+        "after_line": 93,
+        "expression": "toSystemId(descriptorURL)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.ivy.plugins.parser.m2.PomReader.PomReader(java.net.URL,org.apache.ivy.plugins.repository.Resource)",
+        "file": "src/java/org/apache/ivy/plugins/parser/m2/PomReader.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [
+    "org.apache.ivy.util.XMLHelper.parse(java.net.URL,java.net.URL,org.xml.sax.helpers.DefaultHandler,org.xml.sax.ext.LexicalHandler)",
+    "org.apache.ivy.util.XMLHelper.parseToDom(java.io.InputStream,org.apache.ivy.plugins.repository.Resource,org.xml.sax.EntityResolver)"
+  ],
+  "unindexed_targets": [
+    "org.apache.ivy.util.XMLHelper.toSystemId(java.net.URL)"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 8,
+      "hits": [
+        "org.apache.ivy.util.XMLHelper.parseToDom(java.io.InputStream,org.apache.ivy.plugins.repository.Resource,org.xml.sax.EntityResolver)"
+      ],
+      "misses": [
+        "org.apache.ivy.util.XMLHelper.parse(java.net.URL,java.net.URL,org.xml.sax.helpers.DefaultHandler,org.xml.sax.ext.LexicalHandler)",
+        "org.apache.ivy.util.XMLHelper.toSystemId(java.net.URL)"
+      ],
+      "indexed_misses": [
+        "org.apache.ivy.util.XMLHelper.parse(java.net.URL,java.net.URL,org.xml.sax.helpers.DefaultHandler,org.xml.sax.ext.LexicalHandler)"
+      ],
+      "indexed_recall": 0.5
+    },
+    "fields": {
+      "candidate_count": 13,
+      "hits": [
+        "org.apache.ivy.util.XMLHelper.parseToDom(java.io.InputStream,org.apache.ivy.plugins.repository.Resource,org.xml.sax.EntityResolver)"
+      ],
+      "misses": [
+        "org.apache.ivy.util.XMLHelper.parse(java.net.URL,java.net.URL,org.xml.sax.helpers.DefaultHandler,org.xml.sax.ext.LexicalHandler)",
+        "org.apache.ivy.util.XMLHelper.toSystemId(java.net.URL)"
+      ],
+      "indexed_misses": [
+        "org.apache.ivy.util.XMLHelper.parse(java.net.URL,java.net.URL,org.xml.sax.helpers.DefaultHandler,org.xml.sax.ext.LexicalHandler)"
+      ],
+      "indexed_recall": 0.5
+    },
+    "multihop": {
+      "candidate_count": 13,
+      "hits": [
+        "org.apache.ivy.util.XMLHelper.parseToDom(java.io.InputStream,org.apache.ivy.plugins.repository.Resource,org.xml.sax.EntityResolver)"
+      ],
+      "misses": [
+        "org.apache.ivy.util.XMLHelper.parse(java.net.URL,java.net.URL,org.xml.sax.helpers.DefaultHandler,org.xml.sax.ext.LexicalHandler)",
+        "org.apache.ivy.util.XMLHelper.toSystemId(java.net.URL)"
+      ],
+      "indexed_misses": [
+        "org.apache.ivy.util.XMLHelper.parse(java.net.URL,java.net.URL,org.xml.sax.helpers.DefaultHandler,org.xml.sax.ext.LexicalHandler)"
+      ],
+      "indexed_recall": 0.5
+    },
+    "two_hop_calls": {
+      "candidate_count": 14,
+      "hits": [
+        "org.apache.ivy.util.XMLHelper.parseToDom(java.io.InputStream,org.apache.ivy.plugins.repository.Resource,org.xml.sax.EntityResolver)"
+      ],
+      "misses": [
+        "org.apache.ivy.util.XMLHelper.parse(java.net.URL,java.net.URL,org.xml.sax.helpers.DefaultHandler,org.xml.sax.ext.LexicalHandler)",
+        "org.apache.ivy.util.XMLHelper.toSystemId(java.net.URL)"
+      ],
+      "indexed_misses": [
+        "org.apache.ivy.util.XMLHelper.parse(java.net.URL,java.net.URL,org.xml.sax.helpers.DefaultHandler,org.xml.sax.ext.LexicalHandler)"
+      ],
+      "indexed_recall": 0.5
+    },
+    "diff_and_override": {
+      "candidate_count": 14,
+      "hits": [
+        "org.apache.ivy.util.XMLHelper.parseToDom(java.io.InputStream,org.apache.ivy.plugins.repository.Resource,org.xml.sax.EntityResolver)"
+      ],
+      "misses": [
+        "org.apache.ivy.util.XMLHelper.parse(java.net.URL,java.net.URL,org.xml.sax.helpers.DefaultHandler,org.xml.sax.ext.LexicalHandler)",
+        "org.apache.ivy.util.XMLHelper.toSystemId(java.net.URL)"
+      ],
+      "indexed_misses": [
+        "org.apache.ivy.util.XMLHelper.parse(java.net.URL,java.net.URL,org.xml.sax.helpers.DefaultHandler,org.xml.sax.ext.LexicalHandler)"
+      ],
+      "indexed_recall": 0.5
+    }
+  }
+}

@@ -1,0 +1,473 @@
+{
+  "id": "constantinople-009",
+  "graph_edges": 101353,
+  "seeds": {
+    "org.apache.sysml.conf.DMLConfig.setTextValue(java.lang.String,java.lang.String)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.sysml.api.mlcontext.MLContext.setConfigProperty(java.lang.String,java.lang.String)",
+      "org.apache.sysml.conf.DMLConfig.setTextValue(org.w3c.dom.Element,java.lang.String,java.lang.String)",
+      "org.apache.sysml.runtime.DMLRuntimeException.DMLRuntimeException(java.lang.String,java.lang.Exception)"
+    ],
+    "fields": [
+      "org.apache.sysml.api.mlcontext.MLContext.setConfigProperty(java.lang.String,java.lang.String)",
+      "org.apache.sysml.conf.DMLConfig.DMLConfig(org.w3c.dom.Element)",
+      "org.apache.sysml.conf.DMLConfig._xmlRoot",
+      "org.apache.sysml.conf.DMLConfig.clone()",
+      "org.apache.sysml.conf.DMLConfig.parseConfig()",
+      "org.apache.sysml.conf.DMLConfig.setTextValue(org.w3c.dom.Element,java.lang.String,java.lang.String)",
+      "org.apache.sysml.runtime.DMLRuntimeException.DMLRuntimeException(java.lang.String,java.lang.Exception)"
+    ],
+    "multihop": [
+      "org.apache.sysml.api.mlcontext.MLContext.setConfigProperty(java.lang.String,java.lang.String)",
+      "org.apache.sysml.conf.DMLConfig.DEFAULT_SYSTEMML_CONFIG_FILEPATH",
+      "org.apache.sysml.conf.DMLConfig.DMLConfig(java.lang.String)",
+      "org.apache.sysml.conf.DMLConfig.DMLConfig(java.lang.String,boolean)",
+      "org.apache.sysml.conf.DMLConfig.DMLConfig(org.w3c.dom.Element)",
+      "org.apache.sysml.conf.DMLConfig.LOCAL_TMP_DIR",
+      "org.apache.sysml.conf.DMLConfig.LOG",
+      "org.apache.sysml.conf.DMLConfig._fileName",
+      "org.apache.sysml.conf.DMLConfig._xmlRoot",
+      "org.apache.sysml.conf.DMLConfig.clone()",
+      "org.apache.sysml.conf.DMLConfig.parseConfig()",
+      "org.apache.sysml.conf.DMLConfig.parseDMLConfig(java.lang.String)",
+      "org.apache.sysml.conf.DMLConfig.readConfigurationFile(java.lang.String)",
+      "org.apache.sysml.conf.DMLConfig.setTextValue(org.w3c.dom.Element,java.lang.String,java.lang.String)",
+      "org.apache.sysml.runtime.DMLRuntimeException.DMLRuntimeException(java.lang.String,java.lang.Exception)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.sysml.conf.DMLConfig._xmlRoot": {
+        "org.apache.sysml.conf.DMLConfig._xmlRoot": [
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.setTextValue(java.lang.String,java.lang.String)",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 267
+          }
+        ]
+      },
+      "org.apache.sysml.conf.DMLConfig.DMLConfig(org.w3c.dom.Element)": {
+        "org.apache.sysml.conf.DMLConfig._xmlRoot": [
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.setTextValue(java.lang.String,java.lang.String)",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 267
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.DMLConfig(org.w3c.dom.Element)",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 161
+          }
+        ]
+      },
+      "org.apache.sysml.conf.DMLConfig.parseConfig()": {
+        "org.apache.sysml.conf.DMLConfig._xmlRoot": [
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.setTextValue(java.lang.String,java.lang.String)",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 267
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.parseConfig()",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 188
+          }
+        ]
+      },
+      "org.apache.sysml.conf.DMLConfig.clone()": {
+        "org.apache.sysml.conf.DMLConfig._xmlRoot": [
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.setTextValue(java.lang.String,java.lang.String)",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 267
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.clone()",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 448
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.sysml.conf.DMLConfig._xmlRoot": {
+        "org.apache.sysml.conf.DMLConfig._xmlRoot": [
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.setTextValue(java.lang.String,java.lang.String)",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 267
+          }
+        ]
+      },
+      "org.apache.sysml.conf.DMLConfig.DMLConfig(org.w3c.dom.Element)": {
+        "org.apache.sysml.conf.DMLConfig._xmlRoot": [
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.setTextValue(java.lang.String,java.lang.String)",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 267
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.DMLConfig(org.w3c.dom.Element)",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 161
+          }
+        ]
+      },
+      "org.apache.sysml.conf.DMLConfig.parseDMLConfig(java.lang.String)": {
+        "org.apache.sysml.conf.DMLConfig._xmlRoot": [
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.setTextValue(java.lang.String,java.lang.String)",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 267
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.DMLConfig(org.w3c.dom.Element)",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 161
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.parseDMLConfig(java.lang.String)",
+            "to": "org.apache.sysml.conf.DMLConfig.DMLConfig(org.w3c.dom.Element)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 347
+          }
+        ]
+      },
+      "org.apache.sysml.conf.DMLConfig.parseConfig()": {
+        "org.apache.sysml.conf.DMLConfig._xmlRoot": [
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.setTextValue(java.lang.String,java.lang.String)",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 267
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.parseConfig()",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 188
+          }
+        ]
+      },
+      "org.apache.sysml.conf.DMLConfig._fileName": {
+        "org.apache.sysml.conf.DMLConfig._xmlRoot": [
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.setTextValue(java.lang.String,java.lang.String)",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 267
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.parseConfig()",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 188
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.parseConfig()",
+            "to": "org.apache.sysml.conf.DMLConfig._fileName",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 176
+          }
+        ]
+      },
+      "org.apache.sysml.conf.DMLConfig.DMLConfig(java.lang.String,boolean)": {
+        "org.apache.sysml.conf.DMLConfig._xmlRoot": [
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.setTextValue(java.lang.String,java.lang.String)",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 267
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.parseConfig()",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 188
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.DMLConfig(java.lang.String,boolean)",
+            "to": "org.apache.sysml.conf.DMLConfig.parseConfig()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 145
+          }
+        ]
+      },
+      "org.apache.sysml.conf.DMLConfig.LOCAL_TMP_DIR": {
+        "org.apache.sysml.conf.DMLConfig._xmlRoot": [
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.setTextValue(java.lang.String,java.lang.String)",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 267
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.parseConfig()",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 188
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.DMLConfig(java.lang.String,boolean)",
+            "to": "org.apache.sysml.conf.DMLConfig.parseConfig()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 145
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.DMLConfig(java.lang.String,boolean)",
+            "to": "org.apache.sysml.conf.DMLConfig.LOCAL_TMP_DIR",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 147
+          }
+        ]
+      },
+      "org.apache.sysml.conf.DMLConfig.LOG": {
+        "org.apache.sysml.conf.DMLConfig._xmlRoot": [
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.setTextValue(java.lang.String,java.lang.String)",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 267
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.parseConfig()",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 188
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.DMLConfig(java.lang.String,boolean)",
+            "to": "org.apache.sysml.conf.DMLConfig.parseConfig()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 145
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.DMLConfig(java.lang.String,boolean)",
+            "to": "org.apache.sysml.conf.DMLConfig.LOG",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 152
+          }
+        ]
+      },
+      "org.apache.sysml.conf.DMLConfig.DMLConfig(java.lang.String)": {
+        "org.apache.sysml.conf.DMLConfig._xmlRoot": [
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.setTextValue(java.lang.String,java.lang.String)",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 267
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.parseConfig()",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 188
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.DMLConfig(java.lang.String,boolean)",
+            "to": "org.apache.sysml.conf.DMLConfig.parseConfig()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 145
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.DMLConfig(java.lang.String)",
+            "to": "org.apache.sysml.conf.DMLConfig.DMLConfig(java.lang.String,boolean)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 137
+          }
+        ]
+      },
+      "org.apache.sysml.conf.DMLConfig.readConfigurationFile(java.lang.String)": {
+        "org.apache.sysml.conf.DMLConfig._xmlRoot": [
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.setTextValue(java.lang.String,java.lang.String)",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 267
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.parseConfig()",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 188
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.DMLConfig(java.lang.String,boolean)",
+            "to": "org.apache.sysml.conf.DMLConfig.parseConfig()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 145
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.readConfigurationFile(java.lang.String)",
+            "to": "org.apache.sysml.conf.DMLConfig.DMLConfig(java.lang.String,boolean)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 378
+          }
+        ]
+      },
+      "org.apache.sysml.conf.DMLConfig.DEFAULT_SYSTEMML_CONFIG_FILEPATH": {
+        "org.apache.sysml.conf.DMLConfig._xmlRoot": [
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.setTextValue(java.lang.String,java.lang.String)",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 267
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.parseConfig()",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 188
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.DMLConfig(java.lang.String,boolean)",
+            "to": "org.apache.sysml.conf.DMLConfig.parseConfig()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 145
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.readConfigurationFile(java.lang.String)",
+            "to": "org.apache.sysml.conf.DMLConfig.DMLConfig(java.lang.String,boolean)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 378
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.readConfigurationFile(java.lang.String)",
+            "to": "org.apache.sysml.conf.DMLConfig.DEFAULT_SYSTEMML_CONFIG_FILEPATH",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 388
+          }
+        ]
+      },
+      "org.apache.sysml.conf.DMLConfig.clone()": {
+        "org.apache.sysml.conf.DMLConfig._xmlRoot": [
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.setTextValue(java.lang.String,java.lang.String)",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 267
+          },
+          {
+            "from": "org.apache.sysml.conf.DMLConfig.clone()",
+            "to": "org.apache.sysml.conf.DMLConfig._xmlRoot",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/sysml/conf/DMLConfig.java",
+            "line": 448
+          }
+        ]
+      }
+    }
+  },
+  "indexed_targets": [
+    "org.apache.sysml.conf.DMLConfig.parseConfig()",
+    "org.apache.sysml.conf.DMLConfig.setTextValue(org.w3c.dom.Element,java.lang.String,java.lang.String)"
+  ],
+  "unindexed_targets": [
+    "org.apache.sysml.conf.DMLConfig._document",
+    "org.apache.sysml.conf.DMLConfig._documentBuilder",
+    "org.apache.sysml.conf.DMLConfig.getDocumentBuilder()"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 3,
+      "hits": [
+        "org.apache.sysml.conf.DMLConfig.setTextValue(org.w3c.dom.Element,java.lang.String,java.lang.String)"
+      ],
+      "misses": [
+        "org.apache.sysml.conf.DMLConfig._document",
+        "org.apache.sysml.conf.DMLConfig._documentBuilder",
+        "org.apache.sysml.conf.DMLConfig.getDocumentBuilder()",
+        "org.apache.sysml.conf.DMLConfig.parseConfig()"
+      ],
+      "indexed_misses": [
+        "org.apache.sysml.conf.DMLConfig.parseConfig()"
+      ],
+      "indexed_recall": 0.5
+    },
+    "fields": {
+      "candidate_count": 7,
+      "hits": [
+        "org.apache.sysml.conf.DMLConfig.parseConfig()",
+        "org.apache.sysml.conf.DMLConfig.setTextValue(org.w3c.dom.Element,java.lang.String,java.lang.String)"
+      ],
+      "misses": [
+        "org.apache.sysml.conf.DMLConfig._document",
+        "org.apache.sysml.conf.DMLConfig._documentBuilder",
+        "org.apache.sysml.conf.DMLConfig.getDocumentBuilder()"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "multihop": {
+      "candidate_count": 15,
+      "hits": [
+        "org.apache.sysml.conf.DMLConfig.parseConfig()",
+        "org.apache.sysml.conf.DMLConfig.setTextValue(org.w3c.dom.Element,java.lang.String,java.lang.String)"
+      ],
+      "misses": [
+        "org.apache.sysml.conf.DMLConfig._document",
+        "org.apache.sysml.conf.DMLConfig._documentBuilder",
+        "org.apache.sysml.conf.DMLConfig.getDocumentBuilder()"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "request_sha256": "22d160b7869806f56292629322f669a2a0c1b3674b839bc6c7ec418a23bb1e4c",
+  "request": {
+    "model": "deepseek-v4.1-flash-1017",
+    "temperature": 0,
+    "messages": [
+      {
+        "role": "user",
+        "content": "# System Information\nYou are an expert in Java and in analyzing the impact of source code changes on other code entities in a project's production code.\n\n# General Information\nYou receive information about a set of changes, called seed changes, that were made to fix a bug reported in Jira.\nYou also receive the Jira bug report title and description and an initial impact set consisting of the fully qualified names of code entities that are statically related to the seed changes.\n\n# Task\nYour task is to refine the initial impact set.\nA code entity is part of the impact set if it requires modification or, if it does not already exist, must be created as a consequence of the seed changes.\nFirst, remove code entities unless the provided information indicates that they must be modified.\nSecond, add code entities that must be modified or created according to the provided evidence.\n\nYour goal is to report a final impact set that consists of the fully qualified names of code entities that must be modified or created because of the seed changes.\n\n# Inputs\n- Jira bug report title: Writing Protobuf messages with extensions results in an error or data corruption.\n- Jira bug report description: Currently, in ProtoParquetWriter there's not any support for extended protobuf messages. An attempt to write a protobuf message with extension either:\\n\\n* Results in an uninformative error like this:\\n{code}\\nparquet.proto.ProtoWriteSupport: Cannot write message \\nYOUR_EXTENSION_TYPE cannot be cast to A_BASE_FIELD_TYPE : BASE_FIELD_NAME \\n{code}\\n* Results in a data corruption, if an extension type is compatible with a base field type with a corresponding index.\\n\\nImo there are two possible solutions:\\n \\n1. Ignore extension fields.\\n2. When an extension field is detected in a message, throw an informative error.\n- Seed changes and their Git diff hunks: [{\"fqn\": \"org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)\", \"git_diff_hunk\": \"@@ -222,0 +221,7 @@ public class ProtoWriteSupport<T extends MessageOrBuilder> extends WriteSupport<\\n+\\n+ if(fieldDescriptor.isExtension()) {\\n+ // Field index of an extension field might overlap with a base field.\\n+ throw new UnsupportedOperationException(\\n+ \\\"Cannot convert Protobuf message with extension field(s)\\\");\\n+ }\\n+\"}]\n- Initial static code change impact set: [\"org.apache.parquet.io.api.RecordConsumer.endField(java.lang.String,int)\", \"org.apache.parquet.io.api.RecordConsumer.startField(java.lang.String,int)\", \"org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName\", \"org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index\", \"org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setFieldName(java.lang.String)\", \"org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setIndex(int)\", \"org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)\", \"org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeRawValue(java.lang.Object)\", \"org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)\", \"org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters\", \"org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeField(java.lang.Object)\", \"org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeRawValue(java.lang.Object)\", \"org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeTopLevelMessage(java.lang.Object)\", \"org.apache.parquet.proto.ProtoWriteSupport.recordConsumer\"]\n\n# Output Format\nReturn exactly one valid single-line JSON array of strings.\nEach string must be the fully qualified name of an impacted code entity.\nDo not include any additional text, formatting, or meta-information.\nDo not include seed changes in the output.\n\nExample output (four impacted code entities):\n[\"com.example.Foo.someMethod(java.lang.String, int)\", \"com.example.bar.attribute1\", \"com.example.bar.Class.NestedClass\", \"com.example.bar.Class.Class()\"]\n\nExample output (two impacted code entities):\n[\"com.example.package.ParentClass.ChildClass.field\", \"com.example.package.ParentClass.apply(long, com.example.package.ParentClass)\"]\n\nExample output (zero impacted code entities):\n[]"
+      }
+    ],
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096
+  },
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "[\"org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1794816413,
+    "id": "021794816412624d3c2e618d7484aa1e725a14aca115cd7dd8f06",
+    "model": "deepseek-v4.1-flash-1017",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 28,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 89,
+      "prompt_tokens": 985,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "total_tokens": 1013
+    }
+  },
+  "seconds": 1.094637958,
+  "endpoint": "http://api.aicnic.cn/v1"
+}

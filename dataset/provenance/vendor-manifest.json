@@ -1,0 +1,22 @@
+{
+  "ripple_source": "../work/ripple",
+  "ripple_commit": "4863de4f595a024ec9fd57debb2d6a6ecfc25f2c",
+  "copied_working_tree": true,
+  "files_sha256": {
+    "vendor/.DS_Store": "ca96c52cac0962e71f3803b363de0f16df9af757155a7cc4e80e3fe700fe6c28",
+    "vendor/katia/agents.yaml": "e4a0df6cc5fecfb255b9c510e7e78636ba0eef07a0cf39bbd70e37f29377df58",
+    "vendor/katia/StaticCodeAnalysis-1.0-SNAPSHOT-jar-with-dependencies.jar": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+    "vendor/katia/figshare-metadata.json": "a771d00f655099c9bcf20f5a964b6dcc71bc22986788eb36720fa9399c94a05a",
+    "vendor/katia/baseline.j2": "b365d53dadc3591c9efaa0abb18622aca21171e3a2b170c8cdaf46f2318b0e6c",
+    "vendor/katia/tasks.yaml": "e156e14cbc93c9d703b92227ae7003f84a539a17d3fa120c064a3fa4d5f1fbf6",
+    "vendor/ripple/LICENSE": "4585a9d714be349527827f8a9025aece25027361a109bf5bc329b291ae7bdef8",
+    "vendor/ripple/README.md": "e620e0257369dc08978526b2332c04f8b8eb5bd0460b1d9d61dc17b971f7db9f",
+    "vendor/ripple/pipeline.py": "50c7c8a7a62e457a27030ef095435b1ef3558ca8fb62f178600f3c930846b5a9",
+    "vendor/ripple/ripple/structural.py": "3a56368432038f6176075e4aa30eb4f346353d2b635af7749710a68788d8f186",
+    "vendor/ripple/ripple/prompt_templates.py": "e7ec6b00ef399dcc117be2b66406797957251a6da4d5f664dc2db900c0994559",
+    "vendor/ripple/ripple/parse_utils.py": "a4bb560e9546bf25e8c297350fb9cd55a439a0a5f8b1424da822dc53fade57e3",
+    "vendor/ripple/ripple/llm.py": "f947985609786117cbb8148e48413927889e3ea8e19fff0f57223ecebf6ffb24",
+    "vendor/ripple/ripple/utils.py": "2f0ab8965b51ac31c1d317911acc04beca88d0a127a61ec6b741ef37e0cb8efa",
+    "vendor/ripple/ripple/evolutionary.py": "7bdc7e6b8931c954fa7d8825c2cbda75f603e9b2961c56ecfc3a0ca100070b31"
+  }
+}

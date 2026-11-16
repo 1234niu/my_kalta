@@ -1,0 +1,14 @@
+{
+  "id": "constantinople-008",
+  "variant": "ma",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 2,
+  "predictions": [
+    "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.calculateByteOffsetForBlock(int)",
+    "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.calculateByteOffsetForBlockAsLong(int)",
+    "org.apache.commons.jcs.auxiliary.disk.block.BlockDisk.read(int[])"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "96cb0199c1129c0379531fc14114469f0d891b3b9f2090346e15039d7ca27244",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

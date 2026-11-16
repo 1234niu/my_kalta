@@ -1,0 +1,486 @@
+{
+  "id": "constantinople-005",
+  "graph_edges": 6476,
+  "seeds": {
+    "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewriteToCount()"
+    ],
+    "fields": [
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.entityName",
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.extractEntityName()",
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.from",
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewriteToCount()",
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.select",
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()",
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.where"
+    ],
+    "multihop": [
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.entityName",
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.extractEntityName()",
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.from",
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.query",
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewriteToCount()",
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.select",
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()",
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.where"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.select": {
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.select": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.select",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          }
+        ]
+      },
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()": {
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.select": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.select",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.select",
+            "kind": "WRITE",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 109
+          }
+        ],
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.from": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.from",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.from",
+            "kind": "WRITE",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 113
+          }
+        ],
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.where": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.where",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.where",
+            "kind": "WRITE",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 114
+          }
+        ]
+      },
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.entityName": {
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.entityName": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.entityName",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          }
+        ]
+      },
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.extractEntityName()": {
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.entityName": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.entityName",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.extractEntityName()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.entityName",
+            "kind": "WRITE",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 93
+          }
+        ]
+      },
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.from": {
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.from": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.from",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          }
+        ]
+      },
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.where": {
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.where": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.where",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.select": {
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.select": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.select",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          }
+        ]
+      },
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()": {
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.select": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.select",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.select",
+            "kind": "WRITE",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 109
+          }
+        ],
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.from": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.from",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.from",
+            "kind": "WRITE",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 113
+          }
+        ],
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.where": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.where",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.where",
+            "kind": "WRITE",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 114
+          }
+        ]
+      },
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.query": {
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.select": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.select",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.select",
+            "kind": "WRITE",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 109
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.query",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 103
+          }
+        ],
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.from": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.from",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.from",
+            "kind": "WRITE",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.query",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 103
+          }
+        ],
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.where": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.where",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.where",
+            "kind": "WRITE",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.query",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 103
+          }
+        ]
+      },
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewriteToCount()": {
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.select": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.select",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.select",
+            "kind": "WRITE",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 109
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewriteToCount()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()",
+            "kind": "CALLS",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 78
+          }
+        ],
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.entityName": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.entityName",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.extractEntityName()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.entityName",
+            "kind": "WRITE",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 93
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewriteToCount()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.extractEntityName()",
+            "kind": "CALLS",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 79
+          }
+        ],
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.from": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.from",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.from",
+            "kind": "WRITE",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewriteToCount()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()",
+            "kind": "CALLS",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 78
+          }
+        ],
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.where": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.where",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.where",
+            "kind": "WRITE",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewriteToCount()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.splitQuery()",
+            "kind": "CALLS",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 78
+          }
+        ]
+      },
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.entityName": {
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.entityName": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.entityName",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          }
+        ]
+      },
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.extractEntityName()": {
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.entityName": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.entityName",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.extractEntityName()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.entityName",
+            "kind": "WRITE",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 93
+          }
+        ]
+      },
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.from": {
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.entityName": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.entityName",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.extractEntityName()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.entityName",
+            "kind": "WRITE",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 93
+          },
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.extractEntityName()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.from",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 90
+          }
+        ],
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.from": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.from",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          }
+        ]
+      },
+      "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.where": {
+        "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.where": [
+          {
+            "from": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.rewrite()",
+            "to": "org.apache.deltaspike.data.impl.builder.postprocessor.CountQueryPostProcessor.QueryExtraction.where",
+            "kind": "READ",
+            "file": "deltaspike/modules/data/impl/src/main/java/org/apache/deltaspike/data/impl/builder/postprocessor/CountQueryPostProcessor.java",
+            "line": 85
+          }
+        ]
+      }
+    }
+  },
+  "indexed_targets": [],
+  "unindexed_targets": [
+    "org.apache.deltaspike.data.impl.util.QueryUtils.nullSafeValue(java.lang.String)",
+    "org.apache.deltaspike.data.impl.util.QueryUtils.nullSafeValue(java.lang.String,java.lang.String)"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 1,
+      "hits": [],
+      "misses": [
+        "org.apache.deltaspike.data.impl.util.QueryUtils.nullSafeValue(java.lang.String)",
+        "org.apache.deltaspike.data.impl.util.QueryUtils.nullSafeValue(java.lang.String,java.lang.String)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "fields": {
+      "candidate_count": 7,
+      "hits": [],
+      "misses": [
+        "org.apache.deltaspike.data.impl.util.QueryUtils.nullSafeValue(java.lang.String)",
+        "org.apache.deltaspike.data.impl.util.QueryUtils.nullSafeValue(java.lang.String,java.lang.String)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "multihop": {
+      "candidate_count": 8,
+      "hits": [],
+      "misses": [
+        "org.apache.deltaspike.data.impl.util.QueryUtils.nullSafeValue(java.lang.String)",
+        "org.apache.deltaspike.data.impl.util.QueryUtils.nullSafeValue(java.lang.String,java.lang.String)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    }
+  }
+}

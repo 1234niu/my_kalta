@@ -1,0 +1,228 @@
+{
+  "id": "constantinople-016",
+  "graph_edges": 6339,
+  "seeds": {
+    "org.apache.commons.net.imap.IMAP.quoteString(java.lang.String)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.net.imap.IMAPClient.list(java.lang.String,java.lang.String)",
+      "org.apache.commons.net.imap.IMAPClient.lsub(java.lang.String,java.lang.String)"
+    ],
+    "fields": [
+      "org.apache.commons.net.imap.IMAPClient.list(java.lang.String,java.lang.String)",
+      "org.apache.commons.net.imap.IMAPClient.lsub(java.lang.String,java.lang.String)"
+    ],
+    "multihop": [
+      "org.apache.commons.net.imap.IMAPClient.list(java.lang.String,java.lang.String)",
+      "org.apache.commons.net.imap.IMAPClient.lsub(java.lang.String,java.lang.String)"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.net.imap.IMAPClient.list(java.lang.String,java.lang.String)",
+      "org.apache.commons.net.imap.IMAPClient.lsub(java.lang.String,java.lang.String)"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.net.imap.IMAPClient.list(java.lang.String,java.lang.String)",
+      "org.apache.commons.net.imap.IMAPClient.lsub(java.lang.String,java.lang.String)"
+    ]
+  },
+  "evidence": {
+    "fields": {},
+    "multihop": {},
+    "two_hop_calls": {}
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 2627,
+      "ma_analysis": 2209,
+      "ma_refinement_fixed": 1879
+    },
+    "two_hop_calls": {
+      "sp": 2627,
+      "ma_analysis": 2209,
+      "ma_refinement_fixed": 1879
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [
+    "org.apache.commons.net.imap.IMAPClient.append(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+    "org.apache.commons.net.imap.IMAPClient.copy(java.lang.String,java.lang.String)",
+    "org.apache.commons.net.imap.IMAPClient.create(java.lang.String)",
+    "org.apache.commons.net.imap.IMAPClient.delete(java.lang.String)",
+    "org.apache.commons.net.imap.IMAPClient.examine(java.lang.String)",
+    "org.apache.commons.net.imap.IMAPClient.list(java.lang.String,java.lang.String)",
+    "org.apache.commons.net.imap.IMAPClient.lsub(java.lang.String,java.lang.String)",
+    "org.apache.commons.net.imap.IMAPClient.rename(java.lang.String,java.lang.String)",
+    "org.apache.commons.net.imap.IMAPClient.select(java.lang.String)",
+    "org.apache.commons.net.imap.IMAPClient.status(java.lang.String,java.lang.String[])",
+    "org.apache.commons.net.imap.IMAPClient.subscribe(java.lang.String)",
+    "org.apache.commons.net.imap.IMAPClient.unsubscribe(java.lang.String)"
+  ],
+  "unindexed_targets": [],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 2,
+      "hits": [
+        "org.apache.commons.net.imap.IMAPClient.list(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.lsub(java.lang.String,java.lang.String)"
+      ],
+      "misses": [
+        "org.apache.commons.net.imap.IMAPClient.append(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.copy(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.create(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.delete(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.examine(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.rename(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.select(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.status(java.lang.String,java.lang.String[])",
+        "org.apache.commons.net.imap.IMAPClient.subscribe(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.unsubscribe(java.lang.String)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.net.imap.IMAPClient.append(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.copy(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.create(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.delete(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.examine(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.rename(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.select(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.status(java.lang.String,java.lang.String[])",
+        "org.apache.commons.net.imap.IMAPClient.subscribe(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.unsubscribe(java.lang.String)"
+      ],
+      "indexed_recall": 0.16666666666666666
+    },
+    "fields": {
+      "candidate_count": 2,
+      "hits": [
+        "org.apache.commons.net.imap.IMAPClient.list(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.lsub(java.lang.String,java.lang.String)"
+      ],
+      "misses": [
+        "org.apache.commons.net.imap.IMAPClient.append(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.copy(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.create(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.delete(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.examine(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.rename(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.select(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.status(java.lang.String,java.lang.String[])",
+        "org.apache.commons.net.imap.IMAPClient.subscribe(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.unsubscribe(java.lang.String)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.net.imap.IMAPClient.append(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.copy(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.create(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.delete(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.examine(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.rename(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.select(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.status(java.lang.String,java.lang.String[])",
+        "org.apache.commons.net.imap.IMAPClient.subscribe(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.unsubscribe(java.lang.String)"
+      ],
+      "indexed_recall": 0.16666666666666666
+    },
+    "multihop": {
+      "candidate_count": 2,
+      "hits": [
+        "org.apache.commons.net.imap.IMAPClient.list(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.lsub(java.lang.String,java.lang.String)"
+      ],
+      "misses": [
+        "org.apache.commons.net.imap.IMAPClient.append(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.copy(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.create(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.delete(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.examine(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.rename(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.select(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.status(java.lang.String,java.lang.String[])",
+        "org.apache.commons.net.imap.IMAPClient.subscribe(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.unsubscribe(java.lang.String)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.net.imap.IMAPClient.append(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.copy(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.create(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.delete(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.examine(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.rename(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.select(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.status(java.lang.String,java.lang.String[])",
+        "org.apache.commons.net.imap.IMAPClient.subscribe(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.unsubscribe(java.lang.String)"
+      ],
+      "indexed_recall": 0.16666666666666666
+    },
+    "two_hop_calls": {
+      "candidate_count": 2,
+      "hits": [
+        "org.apache.commons.net.imap.IMAPClient.list(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.lsub(java.lang.String,java.lang.String)"
+      ],
+      "misses": [
+        "org.apache.commons.net.imap.IMAPClient.append(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.copy(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.create(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.delete(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.examine(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.rename(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.select(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.status(java.lang.String,java.lang.String[])",
+        "org.apache.commons.net.imap.IMAPClient.subscribe(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.unsubscribe(java.lang.String)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.net.imap.IMAPClient.append(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.copy(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.create(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.delete(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.examine(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.rename(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.select(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.status(java.lang.String,java.lang.String[])",
+        "org.apache.commons.net.imap.IMAPClient.subscribe(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.unsubscribe(java.lang.String)"
+      ],
+      "indexed_recall": 0.16666666666666666
+    },
+    "diff_and_override": {
+      "candidate_count": 2,
+      "hits": [
+        "org.apache.commons.net.imap.IMAPClient.list(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.lsub(java.lang.String,java.lang.String)"
+      ],
+      "misses": [
+        "org.apache.commons.net.imap.IMAPClient.append(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.copy(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.create(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.delete(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.examine(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.rename(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.select(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.status(java.lang.String,java.lang.String[])",
+        "org.apache.commons.net.imap.IMAPClient.subscribe(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.unsubscribe(java.lang.String)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.net.imap.IMAPClient.append(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.copy(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.create(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.delete(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.examine(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.rename(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.select(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.status(java.lang.String,java.lang.String[])",
+        "org.apache.commons.net.imap.IMAPClient.subscribe(java.lang.String)",
+        "org.apache.commons.net.imap.IMAPClient.unsubscribe(java.lang.String)"
+      ],
+      "indexed_recall": 0.16666666666666666
+    }
+  }
+}

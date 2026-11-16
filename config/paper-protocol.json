@@ -1,0 +1,13 @@
+{
+  "paper": "https://arxiv.org/html/2611.10958v1",
+  "temperature": 0,
+  "repetitions": 3,
+  "models": [
+    {"model": "openai/gpt-5.4-mini", "provider_paper_name": "OpenAI", "variants": ["sp"]},
+    {"model": "qwen/qwen3-coder-plus", "provider_paper_name": "Alibaba Cloud Int.", "variants": ["sp"]},
+    {"model": "google/gemini-2.5-flash", "provider_paper_name": "Google Vertex (EU)", "variants": ["sp", "ma"]}
+  ],
+  "provider_routing": "Not yet configured/verified. Use explicit OpenRouter provider order and allow_fallbacks=false only after verifying provider slug.",
+  "evaluation": "median of each metric across three runs per commit, then macro mean across all 263 commits",
+  "status": "protocol reference, not evidence of a completed paper-model experiment"
+}

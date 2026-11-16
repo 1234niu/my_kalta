@@ -1,0 +1,12 @@
+{
+  "id": "constantinople-006",
+  "variant": "ma",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 1,
+  "predictions": [
+    "org.apache.commons.configuration2.interpol.ConfigurationInterpolator.registerLocalLookups(org.apache.commons.configuration2.interpol.ConfigurationInterpolator)"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "a5f84f01f4d6407916bceb0acd56da72229072413c96bedb02576163526a7f81",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

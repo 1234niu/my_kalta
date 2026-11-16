@@ -1,0 +1,61 @@
+{
+  "id": "constantinople-019",
+  "fingerprint": "727d88867ce9f6335fffb4d04a908c018d9cf9fa1bba60fd166df01e485c0066",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "c443b39bd623e94277af5cc835b04ac8901f5084",
+  "candidates": [
+    "org.apache.ivy.core.settings.IvySettings.getVariableContainer()",
+    "org.apache.ivy.core.settings.IvySettings.setSettingsVariables(java.io.File)",
+    "org.apache.ivy.core.settings.IvySettings.setSettingsVariables(java.net.URL)",
+    "org.apache.ivy.core.settings.IvySettings.setVariableContainer(org.apache.ivy.core.settings.IvyVariableContainer)",
+    "org.apache.ivy.core.settings.XmlSettingsParser.IvyVariableContainerWrapper.IvyVariableContainerWrapper(org.apache.ivy.core.settings.IvyVariableContainer)",
+    "org.apache.ivy.core.settings.XmlSettingsParser.XmlSettingsParser(org.apache.ivy.core.settings.IvySettings)",
+    "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)",
+    "org.apache.ivy.core.settings.XmlSettingsParser.startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)",
+    "org.apache.ivy.core.settings.XmlSettingsParser.urlFromFileAttribute(java.lang.String)",
+    "org.apache.ivy.util.Checks.checkAbsolute(java.lang.String,java.lang.String)",
+    "org.apache.ivy.util.Message.verbose(java.lang.String)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.ivy.core.settings.XmlSettingsParser.includeStarted(java.util.Map)",
+      "type": "executable",
+      "relations": {
+        "org.apache.ivy.core.settings.IvySettings.getVariableContainer()": [
+          "CALLS"
+        ],
+        "org.apache.ivy.core.settings.XmlSettingsParser.IvyVariableContainerWrapper.IvyVariableContainerWrapper(org.apache.ivy.core.settings.IvyVariableContainer)": [
+          "CALLS"
+        ],
+        "org.apache.ivy.core.settings.IvySettings.setVariableContainer(org.apache.ivy.core.settings.IvyVariableContainer)": [
+          "CALLS"
+        ],
+        "org.apache.ivy.core.settings.IvySettings.setSettingsVariables(java.io.File)": [
+          "CALLS"
+        ],
+        "org.apache.ivy.core.settings.XmlSettingsParser.startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.ivy.core.settings.XmlSettingsParser.parse(org.apache.ivy.util.Configurator,java.net.URL)": [
+          "CALLS"
+        ],
+        "org.apache.ivy.core.settings.XmlSettingsParser.XmlSettingsParser(org.apache.ivy.core.settings.IvySettings)": [
+          "CALLS"
+        ],
+        "org.apache.ivy.util.Checks.checkAbsolute(java.lang.String,java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.ivy.util.Message.verbose(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.ivy.core.settings.XmlSettingsParser.urlFromFileAttribute(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.ivy.core.settings.IvySettings.setSettingsVariables(java.net.URL)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

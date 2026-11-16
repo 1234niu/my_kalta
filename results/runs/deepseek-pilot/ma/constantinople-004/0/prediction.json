@@ -1,0 +1,15 @@
+{
+  "id": "constantinople-004",
+  "variant": "ma",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 0,
+  "predictions": [
+    "org.apache.ivy.core.resolve.IvyNode.addRootModuleConfig(java.lang.String)",
+    "org.apache.ivy.core.resolve.IvyNode.getDependencies(java.lang.String,java.lang.String,java.lang.String)",
+    "org.apache.ivy.core.resolve.ResolveEngine.computeConflicts(org.apache.ivy.core.resolve.VisitNode,org.apache.ivy.core.resolve.VisitNode,java.lang.String,java.util.Collection,java.util.Collection)",
+    "org.apache.ivy.core.resolve.ResolveEngine.resolve(org.apache.ivy.core.resolve.ResolveOptions)"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "d52e826e1d991b729fc796d504e9368175d2aa19ded7e06c4994608785f3432d",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

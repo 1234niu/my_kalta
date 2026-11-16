@@ -1,0 +1,12 @@
+{
+  "id": "constantinople-006",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 2,
+  "predictions": [
+    "org.apache.commons.configuration2.AbstractConfiguration.interpolate(java.lang.Object)"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "a5f84f01f4d6407916bceb0acd56da72229072413c96bedb02576163526a7f81",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

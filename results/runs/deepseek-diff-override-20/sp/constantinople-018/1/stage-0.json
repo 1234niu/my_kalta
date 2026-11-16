@@ -1,0 +1,48 @@
+{
+  "request_sha256": "025a5f94b714522076e02af68b739824ffd568179e3b7da4d1f36f54b0172ed0",
+  "request": {
+    "model": "deepseek-v4.1-flash-1017",
+    "temperature": 0,
+    "messages": [
+      {
+        "role": "user",
+        "content": "# System Information\nYou are an expert in Java and in analyzing the impact of source code changes on other code entities in a project's production code.\n\n# General Information\nYou receive information about a set of changes, called seed changes, that were made to fix a bug reported in Jira.\nYou also receive the Jira bug report title and description and an initial impact set consisting of the fully qualified names of code entities that are statically related to the seed changes.\n\n# Task\nYour task is to refine the initial impact set.\nA code entity is part of the impact set if it requires modification or, if it does not already exist, must be created as a consequence of the seed changes.\nFirst, remove code entities unless the provided information indicates that they must be modified.\nSecond, add code entities that must be modified or created according to the provided evidence.\n\nYour goal is to report a final impact set that consists of the fully qualified names of code entities that must be modified or created because of the seed changes.\n\n# Inputs\n- Jira bug report title: FeatureGeneratorUtil.tokenFeature() always returns \"lc\" for Japanese words\n- Jira bug report description: FeatureGeneratorUtil.tokenFeature() always recognizes Japanese words as \"lc\" (lower case). It looks a bug to me because they're not lower case letters, but other than that, it seems that FeatureGeneratorUtil.tokenFeature() takes care only Europe/American languages.\\n\\nFor example, in Japanese NER problem, typical token classes are as follows:\\n\\n- DIGIT\\n- HIRA : あ, い, う, え, お etc.\\n- KATA : ア, イ, ウ, エ, オ etc.\\n- ALPHA : we don't need to distinguish lower/upper case\\n- OTHER\\n\\nI think it's possible that we get FeatureGeneratorUtil.tokenFeature() to have additional token classes I mentioned above, but later on, someone who comes from Asia and may claim similar thing.\\n\\nI'd like to make FeatureGeneratorUtil plugable, but I don't have any idea now.\n- Seed changes and their Git diff hunks: [{\"fqn\": \"opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)\", \"git_diff_hunk\": \"@@ -59 +61,7 @@ public class FeatureGeneratorUtil {\\n- if (pattern.isAllLowerCaseLetter()) {\\n+ if (pattern.isAllHiragana()) {\\n+ feat = \\\"jah\\\";\\n+ }\\n+ else if (pattern.isAllKatakana()) {\\n+ feat = \\\"jak\\\";\\n+ }\\n+ else if (pattern.isAllLowerCaseLetter()) {\"}]\n- Initial static code change impact set: [\"opennlp.tools.namefind.DefaultNameContextGenerator.getContext(int,java.lang.String[],java.lang.String[],java.lang.Object[])\", \"opennlp.tools.util.featuregen.BigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])\", \"opennlp.tools.util.featuregen.BrownTokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])\", \"opennlp.tools.util.featuregen.FeatureGeneratorUtil.capPeriod\", \"opennlp.tools.util.featuregen.StringPattern.StringPattern(int,int)\", \"opennlp.tools.util.featuregen.StringPattern.containsComma()\", \"opennlp.tools.util.featuregen.StringPattern.containsDigit()\", \"opennlp.tools.util.featuregen.StringPattern.containsHyphen()\", \"opennlp.tools.util.featuregen.StringPattern.containsLetters()\", \"opennlp.tools.util.featuregen.StringPattern.containsPeriod()\", \"opennlp.tools.util.featuregen.StringPattern.containsSlash()\", \"opennlp.tools.util.featuregen.StringPattern.digits()\", \"opennlp.tools.util.featuregen.StringPattern.isAllCapitalLetter()\", \"opennlp.tools.util.featuregen.StringPattern.isAllHiragana()\", \"opennlp.tools.util.featuregen.StringPattern.isAllKatakana()\", \"opennlp.tools.util.featuregen.StringPattern.isAllLowerCaseLetter()\", \"opennlp.tools.util.featuregen.StringPattern.isInitialCapitalLetter()\", \"opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)\", \"opennlp.tools.util.featuregen.TokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])\", \"opennlp.tools.util.featuregen.TokenPatternFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])\", \"opennlp.tools.util.featuregen.TrigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])\"]\n\n# Output Format\nReturn exactly one valid single-line JSON array of strings.\nEach string must be the fully qualified name of an impacted code entity.\nDo not include any additional text, formatting, or meta-information.\nDo not include seed changes in the output.\n\nExample output (four impacted code entities):\n[\"com.example.Foo.someMethod(java.lang.String, int)\", \"com.example.bar.attribute1\", \"com.example.bar.Class.NestedClass\", \"com.example.bar.Class.Class()\"]\n\nExample output (two impacted code entities):\n[\"com.example.package.ParentClass.ChildClass.field\", \"com.example.package.ParentClass.apply(long, com.example.package.ParentClass)\"]\n\nExample output (zero impacted code entities):\n[]"
+      }
+    ],
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096
+  },
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "[\"opennlp.tools.util.featuregen.StringPattern.isAllHiragana()\", \"opennlp.tools.util.featuregen.StringPattern.isAllKatakana()\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1794816415,
+    "id": "021794816413773b3954f28f435bddee30da27ebc9f6d6e738b2b",
+    "model": "deepseek-v4.1-flash-1017",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 39,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 1152,
+      "prompt_cache_miss_tokens": 47,
+      "prompt_tokens": 1199,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152
+      },
+      "total_tokens": 1238
+    }
+  },
+  "seconds": 1.4491800419999998,
+  "endpoint": "http://api.aicnic.cn/v1"
+}

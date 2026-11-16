@@ -1,0 +1,13 @@
+{
+  "id": "constantinople-009",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 1,
+  "predictions": [
+    "org.apache.sysml.conf.DMLConfig._document",
+    "org.apache.sysml.conf.DMLConfig.getDocumentBuilder()"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "87b45efb88892b4004fb6b106d7842a71f4f531ff69a6c87956fbdcd556ed0cc",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

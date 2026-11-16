@@ -1,0 +1,25 @@
+{
+  "id": "constantinople-006",
+  "fingerprint": "a5f84f01f4d6407916bceb0acd56da72229072413c96bedb02576163526a7f81",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "b4a04746a0714675eeb44de5c6fd7f0d07d8d3ed",
+  "candidates": [
+    "org.apache.commons.configuration2.AbstractConfiguration.interpolate(java.lang.Object)",
+    "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.configuration2.SubsetConfiguration.interpolate(java.lang.Object)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.configuration2.AbstractConfiguration.interpolate(java.lang.Object)": [
+          "CALLS"
+        ],
+        "org.apache.commons.configuration2.SubsetConfiguration.SubsetConfiguration(org.apache.commons.configuration2.Configuration,java.lang.String)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

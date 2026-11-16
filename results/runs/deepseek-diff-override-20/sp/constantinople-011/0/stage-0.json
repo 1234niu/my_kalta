@@ -1,0 +1,48 @@
+{
+  "request_sha256": "5197102e68d0c3ca674bb3efb0553c44b98877cda7e2fe92acdcf640849662fd",
+  "request": {
+    "model": "deepseek-v4.1-flash-1017",
+    "temperature": 0,
+    "messages": [
+      {
+        "role": "user",
+        "content": "# System Information\nYou are an expert in Java and in analyzing the impact of source code changes on other code entities in a project's production code.\n\n# General Information\nYou receive information about a set of changes, called seed changes, that were made to fix a bug reported in Jira.\nYou also receive the Jira bug report title and description and an initial impact set consisting of the fully qualified names of code entities that are statically related to the seed changes.\n\n# Task\nYour task is to refine the initial impact set.\nA code entity is part of the impact set if it requires modification or, if it does not already exist, must be created as a consequence of the seed changes.\nFirst, remove code entities unless the provided information indicates that they must be modified.\nSecond, add code entities that must be modified or created according to the provided evidence.\n\nYour goal is to report a final impact set that consists of the fully qualified names of code entities that must be modified or created because of the seed changes.\n\n# Inputs\n- Jira bug report title: SimpleSMTPHeader fails to supply the required Date: header\n- Jira bug report description: According to RFC 5322 [1] (previously 2822, 822) the message headers MUST include both the From: and Date: (orig-date) fields.\\n\\nHowever this is not provided by SimpleSMTPHeader#toString()\\n\\nThe code should be amended to generate this if the user has not supplied a Date: header.\\n\\n[1] https://tools.ietf.org/html/rfc5322#section-3.6\n- Seed changes and their Git diff hunks: [{\"fqn\": \"org.apache.commons.net.smtp.SimpleSMTPHeader.toString()\", \"git_diff_hunk\": \"@@ -132,0 +141,6 @@ public class SimpleSMTPHeader\\n+ final String pattern = \\\"EEE, dd MMM yyyy HH:mm:ss Z\\\"; // Fri, 21 Nov 1997 09:55:06 -0600\\n+ final SimpleDateFormat format = new SimpleDateFormat(pattern, Locale.ENGLISH);\\n+\\n+ if (!hasHeaderDate) {\\n+ addHeaderField(\\\"Date\\\", format.format(new Date()));\\n+ }\"}]\n- Initial static code change impact set: [\"examples.mail.SMTPMail.main(java.lang.String[])\", \"org.apache.commons.net.smtp.SimpleSMTPHeader.SimpleSMTPHeader(java.lang.String,java.lang.String,java.lang.String)\", \"org.apache.commons.net.smtp.SimpleSMTPHeader.__cc\", \"org.apache.commons.net.smtp.SimpleSMTPHeader.__from\", \"org.apache.commons.net.smtp.SimpleSMTPHeader.__headerFields\", \"org.apache.commons.net.smtp.SimpleSMTPHeader.__subject\", \"org.apache.commons.net.smtp.SimpleSMTPHeader.__to\", \"org.apache.commons.net.smtp.SimpleSMTPHeader.addCC(java.lang.String)\", \"org.apache.commons.net.smtp.SimpleSMTPHeader.addHeaderField(java.lang.String,java.lang.String)\"]\n\n# Output Format\nReturn exactly one valid single-line JSON array of strings.\nEach string must be the fully qualified name of an impacted code entity.\nDo not include any additional text, formatting, or meta-information.\nDo not include seed changes in the output.\n\nExample output (four impacted code entities):\n[\"com.example.Foo.someMethod(java.lang.String, int)\", \"com.example.bar.attribute1\", \"com.example.bar.Class.NestedClass\", \"com.example.bar.Class.Class()\"]\n\nExample output (two impacted code entities):\n[\"com.example.package.ParentClass.ChildClass.field\", \"com.example.package.ParentClass.apply(long, com.example.package.ParentClass)\"]\n\nExample output (zero impacted code entities):\n[]"
+      }
+    ],
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096
+  },
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "[\"org.apache.commons.net.smtp.SimpleSMTPHeader.addHeaderField(java.lang.String,java.lang.String)\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1794816413,
+    "id": "021794816412623fa5ea4275a5d3d4c29bbd2274cbba1b3e6290a",
+    "model": "deepseek-v4.1-flash-1017",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 27,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 768,
+      "prompt_cache_miss_tokens": 59,
+      "prompt_tokens": 827,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "total_tokens": 854
+    }
+  },
+  "seconds": 1.441251625,
+  "endpoint": "http://api.aicnic.cn/v1"
+}

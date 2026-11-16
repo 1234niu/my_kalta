@@ -1,0 +1,33 @@
+{
+  "id": "constantinople-015",
+  "fingerprint": "7f55bf58e8bb2be1b5e0d83fafc4cf69fd10d08004b4a00b2a83fa4990f5b967",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "044de16c14076019f87763b7b58c45664ee57c11",
+  "candidates": [
+    "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+    "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeField(java.lang.Object)",
+    "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeRawValue(java.lang.Object)",
+    "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeTopLevelMessage(java.lang.Object)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+      "type": "executable",
+      "relations": {
+        "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeTopLevelMessage(java.lang.Object)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeRawValue(java.lang.Object)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)": [
+          "CALLS"
+        ],
+        "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeField(java.lang.Object)": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

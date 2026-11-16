@@ -1,0 +1,57 @@
+{
+  "id": "constantinople-007",
+  "fingerprint": "5c0a4c646a89f11aad21e6c24293af8e1532146dcd4ffa14c1bf722be90fc823",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "aacdf02f8c783ee97bc7278b71c4c7c359c20e99",
+  "candidates": [
+    "org.apache.commons.dbcp2.ConnectionFactory.createConnection()",
+    "org.apache.commons.dbcp2.DelegatingConnection.setCacheState(boolean)",
+    "org.apache.commons.dbcp2.PoolableConnectionFactory.getCacheState()",
+    "org.apache.commons.dbcp2.PoolableConnectionFactory.getConnectionFactory()",
+    "org.apache.commons.dbcp2.PoolableConnectionFactory.getMaxOpenPreparedStatements()",
+    "org.apache.commons.dbcp2.PoolableConnectionFactory.getPool()",
+    "org.apache.commons.dbcp2.PoolableConnectionFactory.getPoolStatements()",
+    "org.apache.commons.dbcp2.PoolableConnectionFactory.initializeConnection(java.sql.Connection)",
+    "org.apache.commons.dbcp2.PoolingConnection.PoolingConnection(java.sql.Connection)",
+    "org.apache.commons.dbcp2.PoolingConnection.setStatementPool(org.apache.commons.pool2.KeyedObjectPool)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.dbcp2.managed.PoolableManagedConnectionFactory.makeObject()",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.dbcp2.PoolingConnection.setStatementPool(org.apache.commons.pool2.KeyedObjectPool)": [
+          "CALLS"
+        ],
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.getConnectionFactory()": [
+          "CALLS"
+        ],
+        "org.apache.commons.dbcp2.DelegatingConnection.setCacheState(boolean)": [
+          "CALLS"
+        ],
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.getPool()": [
+          "CALLS"
+        ],
+        "org.apache.commons.dbcp2.ConnectionFactory.createConnection()": [
+          "CALLS"
+        ],
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.getCacheState()": [
+          "CALLS"
+        ],
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.getPoolStatements()": [
+          "CALLS"
+        ],
+        "org.apache.commons.dbcp2.PoolingConnection.PoolingConnection(java.sql.Connection)": [
+          "CALLS"
+        ],
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.getMaxOpenPreparedStatements()": [
+          "CALLS"
+        ],
+        "org.apache.commons.dbcp2.PoolableConnectionFactory.initializeConnection(java.sql.Connection)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}
