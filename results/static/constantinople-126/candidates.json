@@ -1,0 +1,69 @@
+{
+  "id": "constantinople-126",
+  "fingerprint": "8d630f7048d74a7442884f894b607781c3641beff095ec39b38a8055324ebd78",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "727bcac61f5c559ef33fd607081ade8413488b93",
+  "candidates": [
+    "org.apache.commons.beanutils.DynaClass.newInstance()",
+    "org.apache.commons.beanutils.LazyDynaClass.LazyDynaClass()",
+    "org.apache.commons.beanutils.LazyDynaList.add(int,java.lang.Object)",
+    "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+    "org.apache.commons.beanutils.LazyDynaList.addAll(int,java.util.Collection)",
+    "org.apache.commons.beanutils.LazyDynaList.growList(int)",
+    "org.apache.commons.beanutils.LazyDynaList.set(int,java.lang.Object)",
+    "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+    "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+    "org.apache.commons.beanutils.LazyDynaMap.LazyDynaMap(java.util.Map)",
+    "org.apache.commons.beanutils.LazyDynaMap.getMap()",
+    "org.apache.commons.beanutils.WrapDynaBean.WrapDynaBean(java.lang.Object)",
+    "org.apache.commons.beanutils.WrapDynaBean.getInstance()"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.beanutils.LazyDynaMap.getMap()": [
+          "CALLS"
+        ],
+        "org.apache.commons.beanutils.WrapDynaBean.getInstance()": [
+          "CALLS"
+        ],
+        "org.apache.commons.beanutils.DynaClass.newInstance()": [
+          "CALLS"
+        ],
+        "org.apache.commons.beanutils.LazyDynaMap.LazyDynaMap(java.util.Map)": [
+          "CALLS"
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.addAll(int,java.util.Collection)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.beanutils.LazyDynaClass.LazyDynaClass()": [
+          "CALLS"
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)": [
+          "CALLS"
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.growList(int)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.add(int,java.lang.Object)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)": [
+          "CALLS"
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.set(int,java.lang.Object)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.beanutils.WrapDynaBean.WrapDynaBean(java.lang.Object)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

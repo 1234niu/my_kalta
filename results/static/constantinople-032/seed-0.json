@@ -1,0 +1,1 @@
+{"org.apache.gora.solr.store.SolrStore.deserializeFieldValue(org.apache.avro.Schema.Field,org.apache.avro.Schema,java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)":["IS_CALLED_BY"]}

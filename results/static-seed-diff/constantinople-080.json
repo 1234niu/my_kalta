@@ -1,0 +1,452 @@
+{
+  "id": "constantinople-080",
+  "graph_edges": 1072,
+  "seeds": {
+    "org.apache.commons.codec.binary.Base64InputStream.read(byte[],int,int)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.codec.binary.Base64.decode(byte[],int,int)",
+      "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+      "org.apache.commons.codec.binary.Base64.hasData()",
+      "org.apache.commons.codec.binary.Base64.readResults(byte[],int,int)",
+      "org.apache.commons.codec.binary.Base64.setInitialBuffer(byte[],int,int)",
+      "org.apache.commons.codec.binary.Base64InputStream.read()"
+    ],
+    "fields": [
+      "org.apache.commons.codec.binary.Base64.decode(byte[],int,int)",
+      "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+      "org.apache.commons.codec.binary.Base64.hasData()",
+      "org.apache.commons.codec.binary.Base64.readResults(byte[],int,int)",
+      "org.apache.commons.codec.binary.Base64.setInitialBuffer(byte[],int,int)",
+      "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean,int,byte[])",
+      "org.apache.commons.codec.binary.Base64InputStream.base64",
+      "org.apache.commons.codec.binary.Base64InputStream.doEncode",
+      "org.apache.commons.codec.binary.Base64InputStream.read()"
+    ],
+    "multihop": [
+      "org.apache.commons.codec.binary.Base64.decode(byte[],int,int)",
+      "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+      "org.apache.commons.codec.binary.Base64.hasData()",
+      "org.apache.commons.codec.binary.Base64.readResults(byte[],int,int)",
+      "org.apache.commons.codec.binary.Base64.setInitialBuffer(byte[],int,int)",
+      "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream)",
+      "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean,int,byte[])",
+      "org.apache.commons.codec.binary.Base64InputStream.base64",
+      "org.apache.commons.codec.binary.Base64InputStream.doEncode",
+      "org.apache.commons.codec.binary.Base64InputStream.read()"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.codec.binary.Base64.avail()",
+      "org.apache.commons.codec.binary.Base64.decode(byte[],int,int)",
+      "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+      "org.apache.commons.codec.binary.Base64.hasData()",
+      "org.apache.commons.codec.binary.Base64.readResults(byte[],int,int)",
+      "org.apache.commons.codec.binary.Base64.resizeBuffer()",
+      "org.apache.commons.codec.binary.Base64.setInitialBuffer(byte[],int,int)",
+      "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream)",
+      "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean,int,byte[])",
+      "org.apache.commons.codec.binary.Base64InputStream.base64",
+      "org.apache.commons.codec.binary.Base64InputStream.doEncode",
+      "org.apache.commons.codec.binary.Base64InputStream.read()"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.codec.binary.Base64.avail()",
+      "org.apache.commons.codec.binary.Base64.decode(byte[],int,int)",
+      "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+      "org.apache.commons.codec.binary.Base64.hasData()",
+      "org.apache.commons.codec.binary.Base64.readResults(byte[],int,int)",
+      "org.apache.commons.codec.binary.Base64.resizeBuffer()",
+      "org.apache.commons.codec.binary.Base64.setInitialBuffer(byte[],int,int)",
+      "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream)",
+      "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean,int,byte[])",
+      "org.apache.commons.codec.binary.Base64InputStream.base64",
+      "org.apache.commons.codec.binary.Base64InputStream.doEncode",
+      "org.apache.commons.codec.binary.Base64InputStream.read()"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.codec.binary.Base64InputStream.base64": {
+        "org.apache.commons.codec.binary.Base64InputStream.base64": [
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.read(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.base64",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 166
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean)": {
+        "org.apache.commons.codec.binary.Base64InputStream.base64": [
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.read(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.base64",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 166
+          },
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.base64",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 76
+          }
+        ],
+        "org.apache.commons.codec.binary.Base64InputStream.doEncode": [
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.read(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.doEncode",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 167
+          },
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.doEncode",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 75
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean,int,byte[])": {
+        "org.apache.commons.codec.binary.Base64InputStream.base64": [
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.read(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.base64",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 166
+          },
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean,int,byte[])",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.base64",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 98
+          }
+        ],
+        "org.apache.commons.codec.binary.Base64InputStream.doEncode": [
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.read(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.doEncode",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 167
+          },
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean,int,byte[])",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.doEncode",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 97
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.Base64InputStream.doEncode": {
+        "org.apache.commons.codec.binary.Base64InputStream.doEncode": [
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.read(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.doEncode",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 167
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.codec.binary.Base64InputStream.base64": {
+        "org.apache.commons.codec.binary.Base64InputStream.base64": [
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.read(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.base64",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 166
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean)": {
+        "org.apache.commons.codec.binary.Base64InputStream.base64": [
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.read(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.base64",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 166
+          },
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.base64",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 76
+          }
+        ],
+        "org.apache.commons.codec.binary.Base64InputStream.doEncode": [
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.read(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.doEncode",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 167
+          },
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.doEncode",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 75
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream)": {
+        "org.apache.commons.codec.binary.Base64InputStream.base64": [
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.read(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.base64",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 166
+          },
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.base64",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 76
+          },
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 61
+          }
+        ],
+        "org.apache.commons.codec.binary.Base64InputStream.doEncode": [
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.read(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.doEncode",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 167
+          },
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.doEncode",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 75
+          },
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 61
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean,int,byte[])": {
+        "org.apache.commons.codec.binary.Base64InputStream.base64": [
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.read(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.base64",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 166
+          },
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean,int,byte[])",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.base64",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 98
+          }
+        ],
+        "org.apache.commons.codec.binary.Base64InputStream.doEncode": [
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.read(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.doEncode",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 167
+          },
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.Base64InputStream(java.io.InputStream,boolean,int,byte[])",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.doEncode",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 97
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.Base64InputStream.doEncode": {
+        "org.apache.commons.codec.binary.Base64InputStream.doEncode": [
+          {
+            "from": "org.apache.commons.codec.binary.Base64InputStream.read(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.Base64InputStream.doEncode",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+            "line": 167
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.commons.codec.binary.Base64.resizeBuffer()": [
+        {
+          "from": "org.apache.commons.codec.binary.Base64InputStream.read(byte[],int,int)",
+          "to": "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+          "line": 175
+        },
+        {
+          "from": "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+          "to": "org.apache.commons.codec.binary.Base64.resizeBuffer()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/codec/binary/Base64.java",
+          "line": 473
+        }
+      ],
+      "org.apache.commons.codec.binary.Base64.avail()": [
+        {
+          "from": "org.apache.commons.codec.binary.Base64InputStream.read(byte[],int,int)",
+          "to": "org.apache.commons.codec.binary.Base64.readResults(byte[],int,int)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/codec/binary/Base64InputStream.java",
+          "line": 180
+        },
+        {
+          "from": "org.apache.commons.codec.binary.Base64.readResults(byte[],int,int)",
+          "to": "org.apache.commons.codec.binary.Base64.avail()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/codec/binary/Base64.java",
+          "line": 408
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 4258,
+      "ma_analysis": 3840,
+      "ma_refinement_fixed": 2625
+    },
+    "two_hop_calls": {
+      "sp": 4365,
+      "ma_analysis": 3947,
+      "ma_refinement_fixed": 2732
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [
+    "org.apache.commons.codec.binary.Base64.decode(byte[])",
+    "org.apache.commons.codec.binary.Base64.encode(byte[])",
+    "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+    "org.apache.commons.codec.binary.Base64.readResults(byte[],int,int)",
+    "org.apache.commons.codec.binary.Base64.setInitialBuffer(byte[],int,int)"
+  ],
+  "unindexed_targets": [],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 6,
+      "hits": [
+        "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.readResults(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.setInitialBuffer(byte[],int,int)"
+      ],
+      "misses": [
+        "org.apache.commons.codec.binary.Base64.decode(byte[])",
+        "org.apache.commons.codec.binary.Base64.encode(byte[])"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.codec.binary.Base64.decode(byte[])",
+        "org.apache.commons.codec.binary.Base64.encode(byte[])"
+      ],
+      "indexed_recall": 0.6
+    },
+    "fields": {
+      "candidate_count": 10,
+      "hits": [
+        "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.readResults(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.setInitialBuffer(byte[],int,int)"
+      ],
+      "misses": [
+        "org.apache.commons.codec.binary.Base64.decode(byte[])",
+        "org.apache.commons.codec.binary.Base64.encode(byte[])"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.codec.binary.Base64.decode(byte[])",
+        "org.apache.commons.codec.binary.Base64.encode(byte[])"
+      ],
+      "indexed_recall": 0.6
+    },
+    "multihop": {
+      "candidate_count": 11,
+      "hits": [
+        "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.readResults(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.setInitialBuffer(byte[],int,int)"
+      ],
+      "misses": [
+        "org.apache.commons.codec.binary.Base64.decode(byte[])",
+        "org.apache.commons.codec.binary.Base64.encode(byte[])"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.codec.binary.Base64.decode(byte[])",
+        "org.apache.commons.codec.binary.Base64.encode(byte[])"
+      ],
+      "indexed_recall": 0.6
+    },
+    "two_hop_calls": {
+      "candidate_count": 13,
+      "hits": [
+        "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.readResults(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.setInitialBuffer(byte[],int,int)"
+      ],
+      "misses": [
+        "org.apache.commons.codec.binary.Base64.decode(byte[])",
+        "org.apache.commons.codec.binary.Base64.encode(byte[])"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.codec.binary.Base64.decode(byte[])",
+        "org.apache.commons.codec.binary.Base64.encode(byte[])"
+      ],
+      "indexed_recall": 0.6
+    },
+    "diff_and_override": {
+      "candidate_count": 13,
+      "hits": [
+        "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.readResults(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.setInitialBuffer(byte[],int,int)"
+      ],
+      "misses": [
+        "org.apache.commons.codec.binary.Base64.decode(byte[])",
+        "org.apache.commons.codec.binary.Base64.encode(byte[])"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.codec.binary.Base64.decode(byte[])",
+        "org.apache.commons.codec.binary.Base64.encode(byte[])"
+      ],
+      "indexed_recall": 0.6
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "constantinople-190",
+  "fingerprint": "e4a9038653024137442274075cb3b693f2358a652de5b912cbce4ee5b97cb318",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "f424976a31abcc77c7bd1ce558437e04c7fe68f5",
+  "candidates": [
+    "org.apache.commons.codec.binary.Base64.decodeBase64(byte[])",
+    "org.apache.commons.codec.binary.Base64.encodeBase64(byte[],boolean,boolean,int)",
+    "org.apache.commons.codec.binary.BaseNCodec.decode(byte[],int,int)",
+    "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.Object)",
+    "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.String)",
+    "org.apache.commons.codec.binary.BaseNCodec.encode(byte[],int,int)",
+    "org.apache.commons.codec.binary.BaseNCodec.encode(java.lang.Object)",
+    "org.apache.commons.codec.binary.BaseNCodec.encodeAsString(byte[])",
+    "org.apache.commons.codec.binary.BaseNCodec.encodeToString(byte[])",
+    "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+    "org.apache.commons.codec.binary.BaseNCodec.reset()"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)": [
+          "CALLS"
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.Object)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.reset()": [
+          "CALLS"
+        ],
+        "org.apache.commons.codec.binary.Base64.decodeBase64(byte[])": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.decode(byte[],int,int)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.codec.binary.BaseNCodec.encode(java.lang.Object)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)": [
+          "CALLS"
+        ],
+        "org.apache.commons.codec.binary.Base64.encodeBase64(byte[],boolean,boolean,int)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.encodeAsString(byte[])": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.reset()": [
+          "CALLS"
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.encodeToString(byte[])": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.encode(byte[],int,int)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

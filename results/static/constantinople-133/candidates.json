@@ -1,0 +1,65 @@
+{
+  "id": "constantinople-133",
+  "fingerprint": "6662d3428b605d91acb8efcffa9f907f38f77638925031f3beef87ae52508754",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "007901c19daead0f9b76fda63f4fa67518206d1f",
+  "candidates": [
+    "org.apache.commons.digester3.Digester.parse(org.xml.sax.InputSource)",
+    "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+    "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+    "org.apache.commons.digester3.binder.DigesterLoader.newDigester()",
+    "org.apache.commons.digester3.binder.DigesterLoader.newLoader(org.apache.commons.digester3.binder.RulesModule[])",
+    "org.apache.commons.digester3.binder.DigesterLoader.register(java.lang.String,java.lang.String)",
+    "org.apache.commons.digester3.binder.DigesterLoader.setValidating(boolean)",
+    "org.apache.commons.digester3.binder.DigesterLoader.setXIncludeAware(boolean)",
+    "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.getSystemIds()",
+    "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.loadRules()",
+    "org.apache.commons.digester3.xmlrules.NameSpaceURIRulesBinder.NameSpaceURIRulesBinder(org.apache.commons.digester3.binder.RulesBinder)",
+    "org.apache.commons.digester3.xmlrules.XmlRulesModule.XmlRulesModule(org.apache.commons.digester3.xmlrules.NameSpaceURIRulesBinder,java.util.Set,java.lang.String)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.digester3.xmlrules.NameSpaceURIRulesBinder.NameSpaceURIRulesBinder(org.apache.commons.digester3.binder.RulesBinder)": [
+          "CALLS"
+        ],
+        "org.apache.commons.digester3.Digester.parse(org.xml.sax.InputSource)": [
+          "CALLS"
+        ],
+        "org.apache.commons.digester3.binder.DigesterLoader.register(java.lang.String,java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.digester3.binder.DigesterLoader.newLoader(org.apache.commons.digester3.binder.RulesModule[])": [
+          "CALLS"
+        ],
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.loadRules()": [
+          "CALLS"
+        ],
+        "org.apache.commons.digester3.binder.DigesterLoader.setXIncludeAware(boolean)": [
+          "CALLS"
+        ],
+        "org.apache.commons.digester3.binder.DigesterLoader.newDigester()": [
+          "CALLS"
+        ],
+        "org.apache.commons.digester3.binder.DigesterLoader.setValidating(boolean)": [
+          "CALLS"
+        ],
+        "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])": [
+          "CALLS"
+        ],
+        "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()": [
+          "CALLS"
+        ],
+        "org.apache.commons.digester3.xmlrules.XmlRulesModule.XmlRulesModule(org.apache.commons.digester3.xmlrules.NameSpaceURIRulesBinder,java.util.Set,java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.getSystemIds()": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

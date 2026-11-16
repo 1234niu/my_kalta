@@ -1,0 +1,27 @@
+{
+  "id": "constantinople-087",
+  "fingerprint": "26c20a3c030959a4b0347d939bbbba65b3dfb7ec4255e399219ffd09d51e1dca",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "c002c76720bcff54ebdb429bfce3d75d6a7ea6b2",
+  "candidates": [
+    "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.digester3.binder.BinderClassLoader.getAdaptedClassLoader()",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.digester3.binder.BinderClassLoader.loadClass(java.lang.String,boolean)",
+      "type": "executable",
+      "relations": {},
+      "resolution": "empty_unresolved_or_no_relations"
+    }
+  ]
+}

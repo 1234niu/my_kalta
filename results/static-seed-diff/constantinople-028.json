@@ -1,0 +1,198 @@
+{
+  "id": "constantinople-028",
+  "graph_edges": 7667,
+  "seeds": {
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntry.userId": true,
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntry.groupId": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getGroupId()",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getUserId()",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.parseTarHeader(byte[],org.apache.commons.compress.archivers.zip.ZipEncoding,boolean)",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setGroupId(int)",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setUserId(int)",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.writeEntryHeader(byte[],org.apache.commons.compress.archivers.zip.ZipEncoding,boolean)"
+    ],
+    "fields": [
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getGroupId()",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getUserId()",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.parseTarHeader(byte[],org.apache.commons.compress.archivers.zip.ZipEncoding,boolean)",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setGroupId(int)",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setUserId(int)",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.writeEntryHeader(byte[],org.apache.commons.compress.archivers.zip.ZipEncoding,boolean)"
+    ],
+    "multihop": [
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getGroupId()",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getUserId()",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.parseTarHeader(byte[],org.apache.commons.compress.archivers.zip.ZipEncoding,boolean)",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setGroupId(int)",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setUserId(int)",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.writeEntryHeader(byte[],org.apache.commons.compress.archivers.zip.ZipEncoding,boolean)"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getGroupId()",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getUserId()",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.parseTarHeader(byte[],org.apache.commons.compress.archivers.zip.ZipEncoding,boolean)",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setGroupId(int)",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setUserId(int)",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.writeEntryHeader(byte[],org.apache.commons.compress.archivers.zip.ZipEncoding,boolean)"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getGroupId()",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getUserId()",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.parseTarHeader(byte[],org.apache.commons.compress.archivers.zip.ZipEncoding,boolean)",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setGroupId(int)",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setUserId(int)",
+      "org.apache.commons.compress.archivers.tar.TarArchiveEntry.writeEntryHeader(byte[],org.apache.commons.compress.archivers.zip.ZipEncoding,boolean)"
+    ]
+  },
+  "evidence": {
+    "fields": {},
+    "multihop": {},
+    "two_hop_calls": {}
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 3132,
+      "ma_analysis": 2714,
+      "ma_refinement_fixed": 2541
+    },
+    "two_hop_calls": {
+      "sp": 3132,
+      "ma_analysis": 2714,
+      "ma_refinement_fixed": 2541
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getGroupId()",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getUserId()",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setGroupId(int)",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setUserId(int)",
+    "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.addPaxHeadersForBigNumbers(java.util.Map,org.apache.commons.compress.archivers.tar.TarArchiveEntry)",
+    "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.failForBigNumbers(org.apache.commons.compress.archivers.tar.TarArchiveEntry)"
+  ],
+  "unindexed_targets": [
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getLongGroupId()",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getLongUserId()",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setGroupId(long)",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setUserId(long)"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 6,
+      "hits": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getGroupId()",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getUserId()",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setGroupId(int)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setUserId(int)"
+      ],
+      "misses": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getLongGroupId()",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getLongUserId()",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setGroupId(long)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setUserId(long)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.addPaxHeadersForBigNumbers(java.util.Map,org.apache.commons.compress.archivers.tar.TarArchiveEntry)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.failForBigNumbers(org.apache.commons.compress.archivers.tar.TarArchiveEntry)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.addPaxHeadersForBigNumbers(java.util.Map,org.apache.commons.compress.archivers.tar.TarArchiveEntry)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.failForBigNumbers(org.apache.commons.compress.archivers.tar.TarArchiveEntry)"
+      ],
+      "indexed_recall": 0.6666666666666666
+    },
+    "fields": {
+      "candidate_count": 6,
+      "hits": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getGroupId()",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getUserId()",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setGroupId(int)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setUserId(int)"
+      ],
+      "misses": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getLongGroupId()",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getLongUserId()",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setGroupId(long)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setUserId(long)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.addPaxHeadersForBigNumbers(java.util.Map,org.apache.commons.compress.archivers.tar.TarArchiveEntry)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.failForBigNumbers(org.apache.commons.compress.archivers.tar.TarArchiveEntry)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.addPaxHeadersForBigNumbers(java.util.Map,org.apache.commons.compress.archivers.tar.TarArchiveEntry)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.failForBigNumbers(org.apache.commons.compress.archivers.tar.TarArchiveEntry)"
+      ],
+      "indexed_recall": 0.6666666666666666
+    },
+    "multihop": {
+      "candidate_count": 6,
+      "hits": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getGroupId()",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getUserId()",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setGroupId(int)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setUserId(int)"
+      ],
+      "misses": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getLongGroupId()",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getLongUserId()",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setGroupId(long)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setUserId(long)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.addPaxHeadersForBigNumbers(java.util.Map,org.apache.commons.compress.archivers.tar.TarArchiveEntry)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.failForBigNumbers(org.apache.commons.compress.archivers.tar.TarArchiveEntry)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.addPaxHeadersForBigNumbers(java.util.Map,org.apache.commons.compress.archivers.tar.TarArchiveEntry)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.failForBigNumbers(org.apache.commons.compress.archivers.tar.TarArchiveEntry)"
+      ],
+      "indexed_recall": 0.6666666666666666
+    },
+    "two_hop_calls": {
+      "candidate_count": 6,
+      "hits": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getGroupId()",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getUserId()",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setGroupId(int)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setUserId(int)"
+      ],
+      "misses": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getLongGroupId()",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getLongUserId()",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setGroupId(long)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setUserId(long)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.addPaxHeadersForBigNumbers(java.util.Map,org.apache.commons.compress.archivers.tar.TarArchiveEntry)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.failForBigNumbers(org.apache.commons.compress.archivers.tar.TarArchiveEntry)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.addPaxHeadersForBigNumbers(java.util.Map,org.apache.commons.compress.archivers.tar.TarArchiveEntry)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.failForBigNumbers(org.apache.commons.compress.archivers.tar.TarArchiveEntry)"
+      ],
+      "indexed_recall": 0.6666666666666666
+    },
+    "diff_and_override": {
+      "candidate_count": 6,
+      "hits": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getGroupId()",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getUserId()",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setGroupId(int)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setUserId(int)"
+      ],
+      "misses": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getLongGroupId()",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getLongUserId()",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setGroupId(long)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setUserId(long)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.addPaxHeadersForBigNumbers(java.util.Map,org.apache.commons.compress.archivers.tar.TarArchiveEntry)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.failForBigNumbers(org.apache.commons.compress.archivers.tar.TarArchiveEntry)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.addPaxHeadersForBigNumbers(java.util.Map,org.apache.commons.compress.archivers.tar.TarArchiveEntry)",
+        "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.failForBigNumbers(org.apache.commons.compress.archivers.tar.TarArchiveEntry)"
+      ],
+      "indexed_recall": 0.6666666666666666
+    }
+  }
+}

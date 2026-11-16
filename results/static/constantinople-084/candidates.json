@@ -1,0 +1,25 @@
+{
+  "id": "constantinople-084",
+  "fingerprint": "f9c0fd6e496aeb4060fc761bf607245d4b29f8b18ca77717d1f096abb6d9f7a5",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "d71bf00104a4e1c6e036d96c41cb03978977e4e9",
+  "candidates": [
+    "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+    "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.gora.compiler.GoraCompiler.header(java.lang.String)",
+      "type": "executable",
+      "relations": {
+        "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

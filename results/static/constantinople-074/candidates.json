@@ -1,0 +1,119 @@
+{
+  "id": "constantinople-074",
+  "fingerprint": "7741130eac57fa39c0fa68f5eb93cb001f9f1ff8c192ec13e5c7288e6eb49276",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "1bc6abce5296a9b284c8ec32169ab4607d62e6a3",
+  "candidates": [
+    "org.apache.commons.vfs.FileName.getPath()",
+    "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.Throwable)",
+    "org.apache.commons.vfs.provider.AbstractFileObject.getName()",
+    "org.apache.commons.vfs.provider.AbstractFileObject.injectType(org.apache.commons.vfs.FileType)",
+    "org.apache.commons.vfs.provider.GenericFileName.getHostName()",
+    "org.apache.commons.vfs.provider.GenericFileName.getPassword()",
+    "org.apache.commons.vfs.provider.GenericFileName.getPort()",
+    "org.apache.commons.vfs.provider.GenericFileName.getUserName()",
+    "org.apache.commons.vfs.provider.URLFileName.getPathQueryEncoded(java.lang.String)",
+    "org.apache.commons.vfs.provider.webdav.WebDavFileSystem.getClient()",
+    "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doAttach()",
+    "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDelete()",
+    "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doListChildrenResolved()",
+    "org.apache.commons.vfs.provider.webdav.WebdavFileObject.hasAllowedMethods(java.lang.String)",
+    "org.apache.commons.vfs.provider.webdav.WebdavFileObject.processParentDavResource()",
+    "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.vfs.provider.GenericFileName.getUserName()": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doAttach()": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.vfs.provider.URLFileName.getPathQueryEncoded(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.provider.GenericFileName.getPort()": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebDavFileSystem.getClient()": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.processParentDavResource()": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.provider.AbstractFileObject.getName()": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.provider.GenericFileName.getPassword()": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.provider.GenericFileName.getHostName()": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.provider.AbstractFileObject.injectType(org.apache.commons.vfs.FileType)": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.Throwable)": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doListChildrenResolved()": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resolveRedirection()",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDelete()": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebDavFileSystem.getClient()": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.provider.AbstractFileObject.getName()": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doListChildrenResolved()": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.vfs.FileName.getPath()": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.hasAllowedMethods(java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebDavFileSystem.getClient()": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.provider.AbstractFileObject.getName()": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.FileName.getPath()": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

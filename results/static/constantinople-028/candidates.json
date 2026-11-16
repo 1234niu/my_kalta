@@ -1,0 +1,54 @@
+{
+  "id": "constantinople-028",
+  "fingerprint": "daf7f0948f13f6535c987998458c797e5d05d4eb1c0a8b552fefaafa85362a8d",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "24002bfccf7c7ddcd5ed53108deab0c49ba1930b",
+  "candidates": [
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getGroupId()",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getUserId()",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntry.parseTarHeader(byte[],org.apache.commons.compress.archivers.zip.ZipEncoding,boolean)",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setGroupId(int)",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setUserId(int)",
+    "org.apache.commons.compress.archivers.tar.TarArchiveEntry.writeEntryHeader(byte[],org.apache.commons.compress.archivers.zip.ZipEncoding,boolean)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.compress.archivers.tar.TarArchiveEntry.userId",
+      "type": "field",
+      "relations": {
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setUserId(int)": [
+          "WRITE"
+        ],
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.writeEntryHeader(byte[],org.apache.commons.compress.archivers.zip.ZipEncoding,boolean)": [
+          "READ"
+        ],
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.parseTarHeader(byte[],org.apache.commons.compress.archivers.zip.ZipEncoding,boolean)": [
+          "WRITE"
+        ],
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getUserId()": [
+          "READ"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.compress.archivers.tar.TarArchiveEntry.groupId",
+      "type": "field",
+      "relations": {
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.getGroupId()": [
+          "READ"
+        ],
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.writeEntryHeader(byte[],org.apache.commons.compress.archivers.zip.ZipEncoding,boolean)": [
+          "READ"
+        ],
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.setGroupId(int)": [
+          "WRITE"
+        ],
+        "org.apache.commons.compress.archivers.tar.TarArchiveEntry.parseTarHeader(byte[],org.apache.commons.compress.archivers.zip.ZipEncoding,boolean)": [
+          "WRITE"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

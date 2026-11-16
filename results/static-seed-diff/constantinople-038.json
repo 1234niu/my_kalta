@@ -1,0 +1,453 @@
+{
+  "id": "constantinople-038",
+  "graph_edges": 3025,
+  "seeds": {
+    "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+      "org.apache.commons.beanutils.ResultSetDynaClass.getObjectFromResultSet(java.lang.String)",
+      "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+    ],
+    "fields": [
+      "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+      "org.apache.commons.beanutils.ResultSetDynaClass.getObjectFromResultSet(java.lang.String)",
+      "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+    ],
+    "multihop": [
+      "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref",
+      "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+      "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+      "org.apache.commons.beanutils.JDBCDynaClass.introspect(java.sql.ResultSet)",
+      "org.apache.commons.beanutils.JDBCDynaClass.lowerCase",
+      "org.apache.commons.beanutils.JDBCDynaClass.properties",
+      "org.apache.commons.beanutils.JDBCDynaClass.propertiesMap",
+      "org.apache.commons.beanutils.ResultSetDynaClass.getObjectFromResultSet(java.lang.String)",
+      "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref",
+      "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+      "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+      "org.apache.commons.beanutils.JDBCDynaClass.introspect(java.sql.ResultSet)",
+      "org.apache.commons.beanutils.JDBCDynaClass.lowerCase",
+      "org.apache.commons.beanutils.JDBCDynaClass.properties",
+      "org.apache.commons.beanutils.JDBCDynaClass.propertiesMap",
+      "org.apache.commons.beanutils.ResultSetDynaClass.getObjectFromResultSet(java.lang.String)",
+      "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref",
+      "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+      "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+      "org.apache.commons.beanutils.JDBCDynaClass.getDynaProperty(java.lang.String)",
+      "org.apache.commons.beanutils.JDBCDynaClass.introspect(java.sql.ResultSet)",
+      "org.apache.commons.beanutils.JDBCDynaClass.lowerCase",
+      "org.apache.commons.beanutils.JDBCDynaClass.properties",
+      "org.apache.commons.beanutils.JDBCDynaClass.propertiesMap",
+      "org.apache.commons.beanutils.ResultSetDynaClass.getObjectFromResultSet(java.lang.String)",
+      "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+    ]
+  },
+  "evidence": {
+    "fields": {},
+    "multihop": {
+      "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref": {
+        "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref": [
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 236
+          },
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 248
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)": {
+        "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref": [
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 236
+          },
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 248
+          },
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 171
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.JDBCDynaClass.lowerCase": {
+        "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref": [
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 236
+          },
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 248
+          },
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 171
+          },
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.lowerCase",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 168
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.JDBCDynaClass.introspect(java.sql.ResultSet)": {
+        "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref": [
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 236
+          },
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 248
+          },
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 171
+          },
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.introspect(java.sql.ResultSet)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 211
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.JDBCDynaClass.properties": {
+        "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref": [
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 236
+          },
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 248
+          },
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 171
+          },
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.introspect(java.sql.ResultSet)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 211
+          },
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.introspect(java.sql.ResultSet)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.properties",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 220
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.JDBCDynaClass.propertiesMap": {
+        "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref": [
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 236
+          },
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 248
+          },
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 171
+          },
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.introspect(java.sql.ResultSet)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 211
+          },
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.introspect(java.sql.ResultSet)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.propertiesMap",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 221
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {}
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 3954,
+      "ma_analysis": 3536,
+      "ma_refinement_fixed": 2936
+    },
+    "two_hop_calls": {
+      "sp": 3954,
+      "ma_analysis": 3536,
+      "ma_refinement_fixed": 2936
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "getDynaProperty",
+        "arity": 1,
+        "arguments": [
+          "name"
+        ],
+        "receiver": null,
+        "after_line": 249,
+        "expression": "getDynaProperty(name)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+        "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+        "status": "possible_parent_targets",
+        "possible_parent_targets": [
+          "org.apache.commons.beanutils.JDBCDynaClass.getDynaProperty(java.lang.String)"
+        ],
+        "inferred_targets": []
+      },
+      {
+        "name": "getType",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "property",
+        "after_line": 254,
+        "expression": "getType()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+        "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "equals",
+        "arity": 1,
+        "arguments": [
+          "Date.class"
+        ],
+        "receiver": "type",
+        "after_line": 257,
+        "expression": "equals(Date.class)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+        "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getDate",
+        "arity": 1,
+        "arguments": [
+          "columnName"
+        ],
+        "receiver": "resultSet",
+        "after_line": 258,
+        "expression": "getDate(columnName)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+        "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "equals",
+        "arity": 1,
+        "arguments": [
+          "Timestamp.class"
+        ],
+        "receiver": "type",
+        "after_line": 262,
+        "expression": "equals(Timestamp.class)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+        "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getTimestamp",
+        "arity": 1,
+        "arguments": [
+          "columnName"
+        ],
+        "receiver": "resultSet",
+        "after_line": 263,
+        "expression": "getTimestamp(columnName)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+        "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "equals",
+        "arity": 1,
+        "arguments": [
+          "Time.class"
+        ],
+        "receiver": "type",
+        "after_line": 267,
+        "expression": "equals(Time.class)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+        "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getTime",
+        "arity": 1,
+        "arguments": [
+          "columnName"
+        ],
+        "receiver": "resultSet",
+        "after_line": 268,
+        "expression": "getTime(columnName)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+        "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [
+    "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+    "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+  ],
+  "unindexed_targets": [],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 3,
+      "hits": [
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "misses": [
+        "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)"
+      ],
+      "indexed_recall": 0.5
+    },
+    "fields": {
+      "candidate_count": 3,
+      "hits": [
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "misses": [
+        "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)"
+      ],
+      "indexed_recall": 0.5
+    },
+    "multihop": {
+      "candidate_count": 9,
+      "hits": [
+        "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 9,
+      "hits": [
+        "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "diff_and_override": {
+      "candidate_count": 10,
+      "hits": [
+        "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    }
+  }
+}

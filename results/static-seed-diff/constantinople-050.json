@@ -1,0 +1,368 @@
+{
+  "id": "constantinople-050",
+  "graph_edges": 4583,
+  "seeds": {
+    "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.appendTo(java.lang.StringBuffer,java.util.Calendar)": true
+  },
+  "candidates": {
+    "baseline": [],
+    "fields": [
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.TimeZoneNameRule(java.util.TimeZone,java.util.Locale,int)",
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mDaylight",
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStandard",
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone"
+    ],
+    "multihop": [
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.TimeZoneNameRule(java.util.TimeZone,java.util.Locale,int)",
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mDaylight",
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStandard",
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.TimeZoneNameRule(java.util.TimeZone,java.util.Locale,int)",
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mDaylight",
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStandard",
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.TimeZoneNameRule(java.util.TimeZone,java.util.Locale,int)",
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mDaylight",
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStandard",
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone": {
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.appendTo(java.lang.StringBuffer,java.util.Calendar)",
+            "to": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "line": 1127
+          }
+        ]
+      },
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.TimeZoneNameRule(java.util.TimeZone,java.util.Locale,int)": {
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.appendTo(java.lang.StringBuffer,java.util.Calendar)",
+            "to": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "line": 1127
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.TimeZoneNameRule(java.util.TimeZone,java.util.Locale,int)",
+            "to": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "line": 1108
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mDaylight": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.appendTo(java.lang.StringBuffer,java.util.Calendar)",
+            "to": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mDaylight",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "line": 1128
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.TimeZoneNameRule(java.util.TimeZone,java.util.Locale,int)",
+            "to": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mDaylight",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "line": 1111
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStandard": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.appendTo(java.lang.StringBuffer,java.util.Calendar)",
+            "to": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStandard",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "line": 1130
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.TimeZoneNameRule(java.util.TimeZone,java.util.Locale,int)",
+            "to": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStandard",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "line": 1110
+          }
+        ]
+      },
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mDaylight": {
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mDaylight": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.appendTo(java.lang.StringBuffer,java.util.Calendar)",
+            "to": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mDaylight",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "line": 1128
+          }
+        ]
+      },
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStandard": {
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStandard": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.appendTo(java.lang.StringBuffer,java.util.Calendar)",
+            "to": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStandard",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "line": 1130
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone": {
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.appendTo(java.lang.StringBuffer,java.util.Calendar)",
+            "to": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "line": 1127
+          }
+        ]
+      },
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.TimeZoneNameRule(java.util.TimeZone,java.util.Locale,int)": {
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.appendTo(java.lang.StringBuffer,java.util.Calendar)",
+            "to": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "line": 1127
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.TimeZoneNameRule(java.util.TimeZone,java.util.Locale,int)",
+            "to": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "line": 1108
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mDaylight": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.appendTo(java.lang.StringBuffer,java.util.Calendar)",
+            "to": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mDaylight",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "line": 1128
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.TimeZoneNameRule(java.util.TimeZone,java.util.Locale,int)",
+            "to": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mDaylight",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "line": 1111
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStandard": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.appendTo(java.lang.StringBuffer,java.util.Calendar)",
+            "to": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStandard",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "line": 1130
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.TimeZoneNameRule(java.util.TimeZone,java.util.Locale,int)",
+            "to": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStandard",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "line": 1110
+          }
+        ]
+      },
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mDaylight": {
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mDaylight": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.appendTo(java.lang.StringBuffer,java.util.Calendar)",
+            "to": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mDaylight",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "line": 1128
+          }
+        ]
+      },
+      "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStandard": {
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStandard": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.appendTo(java.lang.StringBuffer,java.util.Calendar)",
+            "to": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStandard",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "line": 1130
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {}
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 4595,
+      "ma_analysis": 4177,
+      "ma_refinement_fixed": 2530
+    },
+    "two_hop_calls": {
+      "sp": 4595,
+      "ma_analysis": 4177,
+      "ma_refinement_fixed": 2530
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "getTimeZone",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "calendar",
+        "after_line": 1132,
+        "expression": "getTimeZone()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.appendTo(java.lang.StringBuffer,java.util.Calendar)",
+        "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "useDaylightTime",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "zone",
+        "after_line": 1133,
+        "expression": "useDaylightTime()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.appendTo(java.lang.StringBuffer,java.util.Calendar)",
+        "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getTimeZoneDisplay",
+        "arity": 4,
+        "arguments": [
+          "zone",
+          "true",
+          "mStyle",
+          "mLocale"
+        ],
+        "receiver": null,
+        "after_line": 1135,
+        "expression": "getTimeZoneDisplay(zone, true, mStyle, mLocale)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.appendTo(java.lang.StringBuffer,java.util.Calendar)",
+        "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getTimeZoneDisplay",
+        "arity": 4,
+        "arguments": [
+          "zone",
+          "false",
+          "mStyle",
+          "mLocale"
+        ],
+        "receiver": null,
+        "after_line": 1137,
+        "expression": "getTimeZoneDisplay(zone, false, mStyle, mLocale)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.appendTo(java.lang.StringBuffer,java.util.Calendar)",
+        "file": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [
+    "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.TimeZoneNameRule(java.util.TimeZone,java.util.Locale,int)",
+    "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone"
+  ],
+  "unindexed_targets": [
+    "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mLocale",
+    "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStyle"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 0,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.TimeZoneNameRule(java.util.TimeZone,java.util.Locale,int)",
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mLocale",
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStyle",
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.TimeZoneNameRule(java.util.TimeZone,java.util.Locale,int)",
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.TimeZoneNameRule(java.util.TimeZone,java.util.Locale,int)",
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone"
+      ],
+      "misses": [
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mLocale",
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStyle"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "multihop": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.TimeZoneNameRule(java.util.TimeZone,java.util.Locale,int)",
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone"
+      ],
+      "misses": [
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mLocale",
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStyle"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.TimeZoneNameRule(java.util.TimeZone,java.util.Locale,int)",
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone"
+      ],
+      "misses": [
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mLocale",
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStyle"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "diff_and_override": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.TimeZoneNameRule(java.util.TimeZone,java.util.Locale,int)",
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mTimeZone"
+      ],
+      "misses": [
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mLocale",
+        "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.mStyle"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    }
+  }
+}

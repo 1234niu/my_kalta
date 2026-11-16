@@ -1,0 +1,41 @@
+{
+  "id": "constantinople-083",
+  "fingerprint": "3b69323f9f39e9c7963987ee94a6bc0a8ea3ac656ac60f9e6bf0a3af997cf549",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "ccb7ab62cd014b620e0755788e7c7a9fe9d3c10f",
+  "candidates": [
+    "org.apache.commons.validator.routines.DomainValidator.getInstance(boolean)",
+    "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)",
+    "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+    "org.apache.commons.validator.routines.EmailValidator.isValid(java.lang.String)",
+    "org.apache.commons.validator.routines.InetAddressValidator.getInstance()",
+    "org.apache.commons.validator.routines.InetAddressValidator.isValid(java.lang.String)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.validator.routines.EmailValidator.isValidDomain(java.lang.String)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.validator.routines.EmailValidator.isValid(java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.validator.routines.InetAddressValidator.getInstance()": [
+          "CALLS"
+        ],
+        "org.apache.commons.validator.routines.DomainValidator.getInstance(boolean)": [
+          "CALLS"
+        ],
+        "org.apache.commons.validator.routines.InetAddressValidator.isValid(java.lang.String)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "id": "constantinople-087",
+  "graph_edges": 3303,
+  "seeds": {
+    "org.apache.commons.digester3.binder.BinderClassLoader.getAdaptedClassLoader()": true,
+    "org.apache.commons.digester3.binder.BinderClassLoader.loadClass(java.lang.String,boolean)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)"
+    ],
+    "fields": [
+      "org.apache.commons.digester3.binder.BinderClassLoader.BinderClassLoader(java.lang.ClassLoader)",
+      "org.apache.commons.digester3.binder.BinderClassLoader.PRIMITIVE_TYPES",
+      "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader",
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)"
+    ],
+    "multihop": [
+      "org.apache.commons.digester3.binder.BinderClassLoader.BinderClassLoader(java.lang.ClassLoader)",
+      "org.apache.commons.digester3.binder.BinderClassLoader.PRIMITIVE_TYPES",
+      "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader",
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.digester3.binder.BinderClassLoader.BinderClassLoader(java.lang.ClassLoader)",
+      "org.apache.commons.digester3.binder.BinderClassLoader.PRIMITIVE_TYPES",
+      "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader",
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.digester3.binder.BinderClassLoader.BinderClassLoader(java.lang.ClassLoader)",
+      "org.apache.commons.digester3.binder.BinderClassLoader.PRIMITIVE_TYPES",
+      "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader",
+      "org.apache.commons.digester3.binder.BinderClassLoader.getParent()",
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader": {
+        "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader": [
+          {
+            "from": "org.apache.commons.digester3.binder.BinderClassLoader.getAdaptedClassLoader()",
+            "to": "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/BinderClassLoader.java",
+            "line": 78
+          }
+        ]
+      },
+      "org.apache.commons.digester3.binder.BinderClassLoader.BinderClassLoader(java.lang.ClassLoader)": {
+        "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader": [
+          {
+            "from": "org.apache.commons.digester3.binder.BinderClassLoader.getAdaptedClassLoader()",
+            "to": "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/BinderClassLoader.java",
+            "line": 78
+          },
+          {
+            "from": "org.apache.commons.digester3.binder.BinderClassLoader.BinderClassLoader(java.lang.ClassLoader)",
+            "to": "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/BinderClassLoader.java",
+            "line": 73
+          }
+        ]
+      },
+      "org.apache.commons.digester3.binder.BinderClassLoader.PRIMITIVE_TYPES": {
+        "org.apache.commons.digester3.binder.BinderClassLoader.PRIMITIVE_TYPES": [
+          {
+            "from": "org.apache.commons.digester3.binder.BinderClassLoader.loadClass(java.lang.String,boolean)",
+            "to": "org.apache.commons.digester3.binder.BinderClassLoader.PRIMITIVE_TYPES",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/BinderClassLoader.java",
+            "line": 88
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader": {
+        "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader": [
+          {
+            "from": "org.apache.commons.digester3.binder.BinderClassLoader.getAdaptedClassLoader()",
+            "to": "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/BinderClassLoader.java",
+            "line": 78
+          }
+        ]
+      },
+      "org.apache.commons.digester3.binder.BinderClassLoader.BinderClassLoader(java.lang.ClassLoader)": {
+        "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader": [
+          {
+            "from": "org.apache.commons.digester3.binder.BinderClassLoader.getAdaptedClassLoader()",
+            "to": "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/BinderClassLoader.java",
+            "line": 78
+          },
+          {
+            "from": "org.apache.commons.digester3.binder.BinderClassLoader.BinderClassLoader(java.lang.ClassLoader)",
+            "to": "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/BinderClassLoader.java",
+            "line": 73
+          }
+        ]
+      },
+      "org.apache.commons.digester3.binder.BinderClassLoader.PRIMITIVE_TYPES": {
+        "org.apache.commons.digester3.binder.BinderClassLoader.PRIMITIVE_TYPES": [
+          {
+            "from": "org.apache.commons.digester3.binder.BinderClassLoader.loadClass(java.lang.String,boolean)",
+            "to": "org.apache.commons.digester3.binder.BinderClassLoader.PRIMITIVE_TYPES",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/BinderClassLoader.java",
+            "line": 88
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {}
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 3412,
+      "ma_analysis": 2994,
+      "ma_refinement_fixed": 2303
+    },
+    "two_hop_calls": {
+      "sp": 3412,
+      "ma_analysis": 2994,
+      "ma_refinement_fixed": 2303
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "getParent",
+        "arity": 0,
+        "arguments": [],
+        "receiver": null,
+        "after_line": 75,
+        "expression": "getParent()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.digester3.binder.BinderClassLoader.getAdaptedClassLoader()",
+        "file": "core/src/main/java/org/apache/commons/digester3/binder/BinderClassLoader.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.commons.digester3.binder.BinderClassLoader.getParent()"
+        ]
+      },
+      {
+        "name": "loadClass",
+        "arity": 1,
+        "arguments": [
+          "name"
+        ],
+        "receiver": "getParent()",
+        "after_line": 89,
+        "expression": "loadClass( name )",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.digester3.binder.BinderClassLoader.loadClass(java.lang.String,boolean)",
+        "file": "core/src/main/java/org/apache/commons/digester3/binder/BinderClassLoader.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getParent",
+        "arity": 0,
+        "arguments": [],
+        "receiver": null,
+        "after_line": 89,
+        "expression": "getParent()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.digester3.binder.BinderClassLoader.loadClass(java.lang.String,boolean)",
+        "file": "core/src/main/java/org/apache/commons/digester3/binder/BinderClassLoader.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.commons.digester3.binder.BinderClassLoader.getParent()"
+        ]
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [
+    "org.apache.commons.digester3.binder.BinderClassLoader.BinderClassLoader(java.lang.ClassLoader)",
+    "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader"
+  ],
+  "unindexed_targets": [],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 1,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.digester3.binder.BinderClassLoader.BinderClassLoader(java.lang.ClassLoader)",
+        "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.digester3.binder.BinderClassLoader.BinderClassLoader(java.lang.ClassLoader)",
+        "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.digester3.binder.BinderClassLoader.BinderClassLoader(java.lang.ClassLoader)",
+        "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "multihop": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.digester3.binder.BinderClassLoader.BinderClassLoader(java.lang.ClassLoader)",
+        "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.digester3.binder.BinderClassLoader.BinderClassLoader(java.lang.ClassLoader)",
+        "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "diff_and_override": {
+      "candidate_count": 5,
+      "hits": [
+        "org.apache.commons.digester3.binder.BinderClassLoader.BinderClassLoader(java.lang.ClassLoader)",
+        "org.apache.commons.digester3.binder.BinderClassLoader.adaptedClassLoader"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    }
+  }
+}

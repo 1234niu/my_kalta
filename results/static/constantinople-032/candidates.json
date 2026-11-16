@@ -1,0 +1,32 @@
+{
+  "id": "constantinople-032",
+  "fingerprint": "a3632be79c3c882e866bf0a1a64532daa48dad4ee2be3a925c249d4983d89b67",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "ad5eb9da3821781dceb90b4db88f3bc4fd2d7010",
+  "candidates": [
+    "org.apache.gora.solr.store.SolrStore.deserializeFieldValue(org.apache.avro.Schema.Field,org.apache.avro.Schema,java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+    "org.apache.gora.solr.store.SolrStore.serializeFieldValue(org.apache.avro.Schema,java.lang.Object)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.gora.solr.store.SolrStore.getDatumReader(java.lang.String,org.apache.avro.Schema)",
+      "type": "executable",
+      "relations": {
+        "org.apache.gora.solr.store.SolrStore.deserializeFieldValue(org.apache.avro.Schema.Field,org.apache.avro.Schema,java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.gora.solr.store.SolrStore.getDatumWriter(java.lang.String,org.apache.avro.Schema)",
+      "type": "executable",
+      "relations": {
+        "org.apache.gora.solr.store.SolrStore.serializeFieldValue(org.apache.avro.Schema,java.lang.Object)": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

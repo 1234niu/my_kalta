@@ -1,0 +1,61 @@
+{
+  "id": "constantinople-134",
+  "fingerprint": "04c2e0716e9287f9ff38b6cdebfa125cf7568fd61778f7d922c4cd38384a17d3",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "4334624e46a1fd6b51e7226a75e16fb3e6d76cb5",
+  "candidates": [
+    "org.apache.commons.vfs.FileObject.getFileSystem()",
+    "org.apache.commons.vfs.FileSystem.addListener(org.apache.commons.vfs.FileObject,org.apache.commons.vfs.FileListener)",
+    "org.apache.commons.vfs.impl.VirtualFileSystem.addJunction(java.lang.String,org.apache.commons.vfs.FileObject)",
+    "org.apache.commons.vfs.impl.VirtualFileSystem.createFile(org.apache.commons.vfs.FileName)",
+    "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+    "org.apache.commons.vfs.provider.DelegateFileObject.doGetType()",
+    "org.apache.commons.vfs.provider.DelegateFileObject.maybeTypeChanged(org.apache.commons.vfs.FileType)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.vfs.provider.DelegateFileObject.DelegateFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem,org.apache.commons.vfs.FileObject)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.vfs.impl.VirtualFileSystem.addJunction(java.lang.String,org.apache.commons.vfs.FileObject)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.vfs.FileObject.getFileSystem()": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.FileSystem.addListener(org.apache.commons.vfs.FileObject,org.apache.commons.vfs.FileListener)": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.impl.VirtualFileSystem.createFile(org.apache.commons.vfs.FileName)": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.vfs.provider.DelegateFileObject.setFile(org.apache.commons.vfs.FileObject)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.vfs.impl.VirtualFileSystem.addJunction(java.lang.String,org.apache.commons.vfs.FileObject)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.vfs.FileObject.getFileSystem()": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.FileSystem.addListener(org.apache.commons.vfs.FileObject,org.apache.commons.vfs.FileListener)": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.provider.DelegateFileObject.doGetType()": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.provider.DelegateFileObject.maybeTypeChanged(org.apache.commons.vfs.FileType)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

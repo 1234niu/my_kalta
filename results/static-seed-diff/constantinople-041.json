@@ -1,0 +1,619 @@
+{
+  "id": "constantinople-041",
+  "graph_edges": 2147,
+  "seeds": {
+    "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.scxml.SCXMLExecutor.SCXMLExecutor(org.apache.commons.scxml.Evaluator,org.apache.commons.scxml.EventDispatcher,org.apache.commons.scxml.ErrorReporter)",
+      "org.apache.commons.scxml.SCXMLExecutor.addListener(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.SCXMLListener)",
+      "org.apache.commons.scxml.SCXMLExecutor.go()",
+      "org.apache.commons.scxml.SCXMLExecutor.setRootContext(org.apache.commons.scxml.Context)",
+      "org.apache.commons.scxml.SCXMLExecutor.setStateMachine(org.apache.commons.scxml.model.SCXML)",
+      "org.apache.commons.scxml.SCXMLExecutor.setSuperStep(boolean)",
+      "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL)",
+      "org.apache.commons.scxml.env.AbstractStateMachine.EntryListener.EntryListener()",
+      "org.apache.commons.scxml.env.AbstractStateMachine.logError(java.lang.Exception)",
+      "org.apache.commons.scxml.env.SimpleErrorHandler.SimpleErrorHandler()",
+      "org.apache.commons.scxml.io.SCXMLDigester.digest(java.net.URL,org.xml.sax.ErrorHandler)"
+    ],
+    "fields": [
+      "org.apache.commons.scxml.SCXMLExecutor.SCXMLExecutor(org.apache.commons.scxml.Evaluator,org.apache.commons.scxml.EventDispatcher,org.apache.commons.scxml.ErrorReporter)",
+      "org.apache.commons.scxml.SCXMLExecutor.addListener(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.SCXMLListener)",
+      "org.apache.commons.scxml.SCXMLExecutor.go()",
+      "org.apache.commons.scxml.SCXMLExecutor.setRootContext(org.apache.commons.scxml.Context)",
+      "org.apache.commons.scxml.SCXMLExecutor.setStateMachine(org.apache.commons.scxml.model.SCXML)",
+      "org.apache.commons.scxml.SCXMLExecutor.setSuperStep(boolean)",
+      "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL)",
+      "org.apache.commons.scxml.env.AbstractStateMachine.EntryListener.EntryListener()",
+      "org.apache.commons.scxml.env.AbstractStateMachine.engine",
+      "org.apache.commons.scxml.env.AbstractStateMachine.log",
+      "org.apache.commons.scxml.env.AbstractStateMachine.logError(java.lang.Exception)",
+      "org.apache.commons.scxml.env.AbstractStateMachine.setLog(org.apache.commons.logging.Log)",
+      "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine",
+      "org.apache.commons.scxml.env.SimpleErrorHandler.SimpleErrorHandler()",
+      "org.apache.commons.scxml.io.SCXMLDigester.digest(java.net.URL,org.xml.sax.ErrorHandler)"
+    ],
+    "multihop": [
+      "org.apache.commons.scxml.SCXMLExecutor.SCXMLExecutor(org.apache.commons.scxml.Evaluator,org.apache.commons.scxml.EventDispatcher,org.apache.commons.scxml.ErrorReporter)",
+      "org.apache.commons.scxml.SCXMLExecutor.addListener(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.SCXMLListener)",
+      "org.apache.commons.scxml.SCXMLExecutor.go()",
+      "org.apache.commons.scxml.SCXMLExecutor.setRootContext(org.apache.commons.scxml.Context)",
+      "org.apache.commons.scxml.SCXMLExecutor.setStateMachine(org.apache.commons.scxml.model.SCXML)",
+      "org.apache.commons.scxml.SCXMLExecutor.setSuperStep(boolean)",
+      "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL)",
+      "org.apache.commons.scxml.env.AbstractStateMachine.EntryListener.EntryListener()",
+      "org.apache.commons.scxml.env.AbstractStateMachine.engine",
+      "org.apache.commons.scxml.env.AbstractStateMachine.log",
+      "org.apache.commons.scxml.env.AbstractStateMachine.logError(java.lang.Exception)",
+      "org.apache.commons.scxml.env.AbstractStateMachine.setLog(org.apache.commons.logging.Log)",
+      "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine",
+      "org.apache.commons.scxml.env.SimpleErrorHandler.SimpleErrorHandler()",
+      "org.apache.commons.scxml.io.SCXMLDigester.digest(java.net.URL,org.xml.sax.ErrorHandler)"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.scxml.NotificationRegistry.addListener(java.lang.Object,org.apache.commons.scxml.SCXMLListener)",
+      "org.apache.commons.scxml.SCInstance.getNotificationRegistry()",
+      "org.apache.commons.scxml.SCInstance.setRootContext(org.apache.commons.scxml.Context)",
+      "org.apache.commons.scxml.SCXMLExecutor.SCXMLExecutor(org.apache.commons.scxml.Evaluator,org.apache.commons.scxml.EventDispatcher,org.apache.commons.scxml.ErrorReporter)",
+      "org.apache.commons.scxml.SCXMLExecutor.SCXMLExecutor(org.apache.commons.scxml.Evaluator,org.apache.commons.scxml.EventDispatcher,org.apache.commons.scxml.ErrorReporter,org.apache.commons.scxml.SCXMLSemantics)",
+      "org.apache.commons.scxml.SCXMLExecutor.addListener(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.SCXMLListener)",
+      "org.apache.commons.scxml.SCXMLExecutor.go()",
+      "org.apache.commons.scxml.SCXMLExecutor.reset()",
+      "org.apache.commons.scxml.SCXMLExecutor.setRootContext(org.apache.commons.scxml.Context)",
+      "org.apache.commons.scxml.SCXMLExecutor.setStateMachine(org.apache.commons.scxml.model.SCXML)",
+      "org.apache.commons.scxml.SCXMLExecutor.setSuperStep(boolean)",
+      "org.apache.commons.scxml.SCXMLSemantics.normalizeStateMachine(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.ErrorReporter)",
+      "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL)",
+      "org.apache.commons.scxml.env.AbstractStateMachine.EntryListener.EntryListener()",
+      "org.apache.commons.scxml.env.AbstractStateMachine.engine",
+      "org.apache.commons.scxml.env.AbstractStateMachine.log",
+      "org.apache.commons.scxml.env.AbstractStateMachine.logError(java.lang.Exception)",
+      "org.apache.commons.scxml.env.AbstractStateMachine.setLog(org.apache.commons.logging.Log)",
+      "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine",
+      "org.apache.commons.scxml.env.SimpleErrorHandler.SimpleErrorHandler()",
+      "org.apache.commons.scxml.io.SCXMLDigester.digest(java.net.URL,org.xml.sax.ErrorHandler)",
+      "org.apache.commons.scxml.io.SCXMLDigester.digest(java.net.URL,org.xml.sax.ErrorHandler,java.util.List)"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.scxml.NotificationRegistry.addListener(java.lang.Object,org.apache.commons.scxml.SCXMLListener)",
+      "org.apache.commons.scxml.SCInstance.getNotificationRegistry()",
+      "org.apache.commons.scxml.SCInstance.setRootContext(org.apache.commons.scxml.Context)",
+      "org.apache.commons.scxml.SCXMLExecutor.SCXMLExecutor(org.apache.commons.scxml.Evaluator,org.apache.commons.scxml.EventDispatcher,org.apache.commons.scxml.ErrorReporter)",
+      "org.apache.commons.scxml.SCXMLExecutor.SCXMLExecutor(org.apache.commons.scxml.Evaluator,org.apache.commons.scxml.EventDispatcher,org.apache.commons.scxml.ErrorReporter,org.apache.commons.scxml.SCXMLSemantics)",
+      "org.apache.commons.scxml.SCXMLExecutor.addListener(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.SCXMLListener)",
+      "org.apache.commons.scxml.SCXMLExecutor.go()",
+      "org.apache.commons.scxml.SCXMLExecutor.reset()",
+      "org.apache.commons.scxml.SCXMLExecutor.setRootContext(org.apache.commons.scxml.Context)",
+      "org.apache.commons.scxml.SCXMLExecutor.setStateMachine(org.apache.commons.scxml.model.SCXML)",
+      "org.apache.commons.scxml.SCXMLExecutor.setSuperStep(boolean)",
+      "org.apache.commons.scxml.SCXMLSemantics.normalizeStateMachine(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.ErrorReporter)",
+      "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL)",
+      "org.apache.commons.scxml.env.AbstractStateMachine.EntryListener.EntryListener()",
+      "org.apache.commons.scxml.env.AbstractStateMachine.engine",
+      "org.apache.commons.scxml.env.AbstractStateMachine.log",
+      "org.apache.commons.scxml.env.AbstractStateMachine.logError(java.lang.Exception)",
+      "org.apache.commons.scxml.env.AbstractStateMachine.setLog(org.apache.commons.logging.Log)",
+      "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine",
+      "org.apache.commons.scxml.env.SimpleErrorHandler.SimpleErrorHandler()",
+      "org.apache.commons.scxml.io.SCXMLDigester.digest(java.net.URL,org.xml.sax.ErrorHandler)",
+      "org.apache.commons.scxml.io.SCXMLDigester.digest(java.net.URL,org.xml.sax.ErrorHandler,java.util.List)",
+      "org.apache.commons.scxml.io.SCXMLDigester.initialize(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.scxml.env.AbstractStateMachine.log": {
+        "org.apache.commons.scxml.env.AbstractStateMachine.log": [
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.log",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 120
+          }
+        ]
+      },
+      "org.apache.commons.scxml.env.AbstractStateMachine.setLog(org.apache.commons.logging.Log)": {
+        "org.apache.commons.scxml.env.AbstractStateMachine.log": [
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.log",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 120
+          },
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.setLog(org.apache.commons.logging.Log)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.log",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 200
+          }
+        ]
+      },
+      "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine": {
+        "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine": [
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 121
+          }
+        ]
+      },
+      "org.apache.commons.scxml.env.AbstractStateMachine.engine": {
+        "org.apache.commons.scxml.env.AbstractStateMachine.engine": [
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.engine",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 135
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.scxml.env.AbstractStateMachine.log": {
+        "org.apache.commons.scxml.env.AbstractStateMachine.log": [
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.log",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 120
+          }
+        ]
+      },
+      "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine": {
+        "org.apache.commons.scxml.env.AbstractStateMachine.log": [
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.log",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 120
+          },
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.log",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 120
+          },
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 121
+          }
+        ],
+        "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine": [
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 121
+          }
+        ],
+        "org.apache.commons.scxml.env.AbstractStateMachine.engine": [
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.engine",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 135
+          },
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.engine",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 135
+          },
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 121
+          }
+        ]
+      },
+      "org.apache.commons.scxml.env.AbstractStateMachine.engine": {
+        "org.apache.commons.scxml.env.AbstractStateMachine.log": [
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.log",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 120
+          },
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.log",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 120
+          },
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.engine",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 137
+          }
+        ],
+        "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine": [
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 121
+          },
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 125
+          },
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.engine",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 137
+          }
+        ],
+        "org.apache.commons.scxml.env.AbstractStateMachine.engine": [
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.engine",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 135
+          }
+        ]
+      },
+      "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL)": {
+        "org.apache.commons.scxml.env.AbstractStateMachine.log": [
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.log",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 120
+          },
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.log",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 120
+          },
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 103
+          }
+        ],
+        "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine": [
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 121
+          },
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 125
+          },
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 103
+          }
+        ],
+        "org.apache.commons.scxml.env.AbstractStateMachine.engine": [
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.engine",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 135
+          },
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.engine",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 135
+          },
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 103
+          }
+        ]
+      },
+      "org.apache.commons.scxml.env.AbstractStateMachine.setLog(org.apache.commons.logging.Log)": {
+        "org.apache.commons.scxml.env.AbstractStateMachine.log": [
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.log",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 120
+          },
+          {
+            "from": "org.apache.commons.scxml.env.AbstractStateMachine.setLog(org.apache.commons.logging.Log)",
+            "to": "org.apache.commons.scxml.env.AbstractStateMachine.log",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+            "line": 200
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.commons.scxml.io.SCXMLDigester.digest(java.net.URL,org.xml.sax.ErrorHandler,java.util.List)": [
+        {
+          "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+          "to": "org.apache.commons.scxml.io.SCXMLDigester.digest(java.net.URL,org.xml.sax.ErrorHandler)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+          "line": 125
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLDigester.digest(java.net.URL,org.xml.sax.ErrorHandler)",
+          "to": "org.apache.commons.scxml.io.SCXMLDigester.digest(java.net.URL,org.xml.sax.ErrorHandler,java.util.List)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLDigester.java",
+          "line": 128
+        }
+      ],
+      "org.apache.commons.scxml.SCXMLExecutor.SCXMLExecutor(org.apache.commons.scxml.Evaluator,org.apache.commons.scxml.EventDispatcher,org.apache.commons.scxml.ErrorReporter,org.apache.commons.scxml.SCXMLSemantics)": [
+        {
+          "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+          "to": "org.apache.commons.scxml.SCXMLExecutor.SCXMLExecutor(org.apache.commons.scxml.Evaluator,org.apache.commons.scxml.EventDispatcher,org.apache.commons.scxml.ErrorReporter)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+          "line": 135
+        },
+        {
+          "from": "org.apache.commons.scxml.SCXMLExecutor.SCXMLExecutor(org.apache.commons.scxml.Evaluator,org.apache.commons.scxml.EventDispatcher,org.apache.commons.scxml.ErrorReporter)",
+          "to": "org.apache.commons.scxml.SCXMLExecutor.SCXMLExecutor(org.apache.commons.scxml.Evaluator,org.apache.commons.scxml.EventDispatcher,org.apache.commons.scxml.ErrorReporter,org.apache.commons.scxml.SCXMLSemantics)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/SCXMLExecutor.java",
+          "line": 172
+        }
+      ],
+      "org.apache.commons.scxml.SCXMLSemantics.normalizeStateMachine(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.ErrorReporter)": [
+        {
+          "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+          "to": "org.apache.commons.scxml.SCXMLExecutor.setStateMachine(org.apache.commons.scxml.model.SCXML)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+          "line": 137
+        },
+        {
+          "from": "org.apache.commons.scxml.SCXMLExecutor.setStateMachine(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.SCXMLSemantics.normalizeStateMachine(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.ErrorReporter)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/SCXMLExecutor.java",
+          "line": 327
+        }
+      ],
+      "org.apache.commons.scxml.SCInstance.setRootContext(org.apache.commons.scxml.Context)": [
+        {
+          "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+          "to": "org.apache.commons.scxml.SCXMLExecutor.setRootContext(org.apache.commons.scxml.Context)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+          "line": 139
+        },
+        {
+          "from": "org.apache.commons.scxml.SCXMLExecutor.setRootContext(org.apache.commons.scxml.Context)",
+          "to": "org.apache.commons.scxml.SCInstance.setRootContext(org.apache.commons.scxml.Context)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/SCXMLExecutor.java",
+          "line": 299
+        }
+      ],
+      "org.apache.commons.scxml.NotificationRegistry.addListener(java.lang.Object,org.apache.commons.scxml.SCXMLListener)": [
+        {
+          "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+          "to": "org.apache.commons.scxml.SCXMLExecutor.addListener(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.SCXMLListener)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+          "line": 140
+        },
+        {
+          "from": "org.apache.commons.scxml.SCXMLExecutor.addListener(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.SCXMLListener)",
+          "to": "org.apache.commons.scxml.NotificationRegistry.addListener(java.lang.Object,org.apache.commons.scxml.SCXMLListener)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/SCXMLExecutor.java",
+          "line": 414
+        }
+      ],
+      "org.apache.commons.scxml.SCInstance.getNotificationRegistry()": [
+        {
+          "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+          "to": "org.apache.commons.scxml.SCXMLExecutor.addListener(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.SCXMLListener)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+          "line": 140
+        },
+        {
+          "from": "org.apache.commons.scxml.SCXMLExecutor.addListener(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.SCXMLListener)",
+          "to": "org.apache.commons.scxml.SCInstance.getNotificationRegistry()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/SCXMLExecutor.java",
+          "line": 414
+        }
+      ],
+      "org.apache.commons.scxml.SCXMLExecutor.reset()": [
+        {
+          "from": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+          "to": "org.apache.commons.scxml.SCXMLExecutor.go()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+          "line": 142
+        },
+        {
+          "from": "org.apache.commons.scxml.SCXMLExecutor.go()",
+          "to": "org.apache.commons.scxml.SCXMLExecutor.reset()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/SCXMLExecutor.java",
+          "line": 341
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 6546,
+      "ma_analysis": 6128,
+      "ma_refinement_fixed": 3772
+    },
+    "two_hop_calls": {
+      "sp": 7327,
+      "ma_analysis": 6909,
+      "ma_refinement_fixed": 4553
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "initialize",
+        "arity": 3,
+        "arguments": [
+          "stateMachine",
+          "rootCtx",
+          "evaluator"
+        ],
+        "receiver": null,
+        "after_line": 132,
+        "expression": "initialize(stateMachine, rootCtx, evaluator)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+        "file": "src/main/java/org/apache/commons/scxml/env/AbstractStateMachine.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.commons.scxml.io.SCXMLDigester.initialize(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)"
+        ]
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [
+    "org.apache.commons.scxml.env.AbstractStateMachine.getStateMachine()",
+    "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine"
+  ],
+  "unindexed_targets": [
+    "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(org.apache.commons.scxml.model.SCXML)",
+    "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+    "org.apache.commons.scxml.env.AbstractStateMachine.initialize(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 11,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(org.apache.commons.scxml.model.SCXML)",
+        "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+        "org.apache.commons.scxml.env.AbstractStateMachine.getStateMachine()",
+        "org.apache.commons.scxml.env.AbstractStateMachine.initialize(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+        "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml.env.AbstractStateMachine.getStateMachine()",
+        "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 15,
+      "hits": [
+        "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine"
+      ],
+      "misses": [
+        "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(org.apache.commons.scxml.model.SCXML)",
+        "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+        "org.apache.commons.scxml.env.AbstractStateMachine.getStateMachine()",
+        "org.apache.commons.scxml.env.AbstractStateMachine.initialize(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml.env.AbstractStateMachine.getStateMachine()"
+      ],
+      "indexed_recall": 0.5
+    },
+    "multihop": {
+      "candidate_count": 15,
+      "hits": [
+        "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine"
+      ],
+      "misses": [
+        "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(org.apache.commons.scxml.model.SCXML)",
+        "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+        "org.apache.commons.scxml.env.AbstractStateMachine.getStateMachine()",
+        "org.apache.commons.scxml.env.AbstractStateMachine.initialize(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml.env.AbstractStateMachine.getStateMachine()"
+      ],
+      "indexed_recall": 0.5
+    },
+    "two_hop_calls": {
+      "candidate_count": 22,
+      "hits": [
+        "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine"
+      ],
+      "misses": [
+        "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(org.apache.commons.scxml.model.SCXML)",
+        "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+        "org.apache.commons.scxml.env.AbstractStateMachine.getStateMachine()",
+        "org.apache.commons.scxml.env.AbstractStateMachine.initialize(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml.env.AbstractStateMachine.getStateMachine()"
+      ],
+      "indexed_recall": 0.5
+    },
+    "diff_and_override": {
+      "candidate_count": 23,
+      "hits": [
+        "org.apache.commons.scxml.env.AbstractStateMachine.stateMachine"
+      ],
+      "misses": [
+        "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(org.apache.commons.scxml.model.SCXML)",
+        "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+        "org.apache.commons.scxml.env.AbstractStateMachine.getStateMachine()",
+        "org.apache.commons.scxml.env.AbstractStateMachine.initialize(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml.env.AbstractStateMachine.getStateMachine()"
+      ],
+      "indexed_recall": 0.5
+    }
+  }
+}

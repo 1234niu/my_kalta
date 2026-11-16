@@ -1,0 +1,1949 @@
+{
+  "id": "constantinople-074",
+  "graph_edges": 6118,
+  "seeds": {
+    "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)": true,
+    "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resolveRedirection()": true,
+    "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.vfs.FileName.getPath()",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.Throwable)",
+      "org.apache.commons.vfs.provider.AbstractFileObject.getName()",
+      "org.apache.commons.vfs.provider.AbstractFileObject.injectType(org.apache.commons.vfs.FileType)",
+      "org.apache.commons.vfs.provider.GenericFileName.getHostName()",
+      "org.apache.commons.vfs.provider.GenericFileName.getPassword()",
+      "org.apache.commons.vfs.provider.GenericFileName.getPort()",
+      "org.apache.commons.vfs.provider.GenericFileName.getUserName()",
+      "org.apache.commons.vfs.provider.URLFileName.getPathQueryEncoded(java.lang.String)",
+      "org.apache.commons.vfs.provider.webdav.WebDavFileSystem.getClient()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doAttach()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDelete()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doListChildrenResolved()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.hasAllowedMethods(java.lang.String)",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.processParentDavResource()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)"
+    ],
+    "fields": [
+      "org.apache.commons.vfs.FileName.getPath()",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.Throwable)",
+      "org.apache.commons.vfs.FileType.FILE",
+      "org.apache.commons.vfs.FileType.FOLDER",
+      "org.apache.commons.vfs.FileType.IMAGINARY",
+      "org.apache.commons.vfs.provider.AbstractFileObject.getName()",
+      "org.apache.commons.vfs.provider.AbstractFileObject.injectType(org.apache.commons.vfs.FileType)",
+      "org.apache.commons.vfs.provider.GenericFileName.getHostName()",
+      "org.apache.commons.vfs.provider.GenericFileName.getPassword()",
+      "org.apache.commons.vfs.provider.GenericFileName.getPort()",
+      "org.apache.commons.vfs.provider.GenericFileName.getUserName()",
+      "org.apache.commons.vfs.provider.URLFileName.getPathQueryEncoded(java.lang.String)",
+      "org.apache.commons.vfs.provider.webdav.WebDavFileSystem.getClient()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.WebdavFileObject(org.apache.commons.vfs.provider.GenericFileName,org.apache.commons.vfs.provider.webdav.WebDavFileSystem)",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doAttach()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDelete()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doListChildrenResolved()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.fileSystem",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.hasAllowedMethods(java.lang.String)",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.processParentDavResource()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.urlCharset"
+    ],
+    "multihop": [
+      "org.apache.commons.vfs.FileName.getPath()",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.Throwable)",
+      "org.apache.commons.vfs.FileType.FILE",
+      "org.apache.commons.vfs.FileType.FOLDER",
+      "org.apache.commons.vfs.FileType.IMAGINARY",
+      "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+      "org.apache.commons.vfs.provider.AbstractFileObject.getName()",
+      "org.apache.commons.vfs.provider.AbstractFileObject.injectType(org.apache.commons.vfs.FileType)",
+      "org.apache.commons.vfs.provider.AbstractFileObject.name",
+      "org.apache.commons.vfs.provider.GenericFileName.getHostName()",
+      "org.apache.commons.vfs.provider.GenericFileName.getPassword()",
+      "org.apache.commons.vfs.provider.GenericFileName.getPort()",
+      "org.apache.commons.vfs.provider.GenericFileName.getUserName()",
+      "org.apache.commons.vfs.provider.URLFileName.getPathQueryEncoded(java.lang.String)",
+      "org.apache.commons.vfs.provider.webdav.WebDavFileSystem.getClient()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.WebdavFileObject(org.apache.commons.vfs.provider.GenericFileName,org.apache.commons.vfs.provider.webdav.WebDavFileSystem)",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doAttach()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doCreateFolder()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDelete()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doIsReadable()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doIsWriteable()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doListChildrenResolved()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doRename(org.apache.commons.vfs.FileObject)",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.fileSystem",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.handleCreate(org.apache.commons.vfs.FileType)",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.hasAllowedMethods(java.lang.String)",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.processParentDavResource()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.urlCharset"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.vfs.FileName.getPath()",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object[],java.lang.Throwable)",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.Throwable)",
+      "org.apache.commons.vfs.FileType.FILE",
+      "org.apache.commons.vfs.FileType.FOLDER",
+      "org.apache.commons.vfs.FileType.IMAGINARY",
+      "org.apache.commons.vfs.provider.AbstractFileName.getPathDecoded()",
+      "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+      "org.apache.commons.vfs.provider.AbstractFileObject.getName()",
+      "org.apache.commons.vfs.provider.AbstractFileObject.getParent()",
+      "org.apache.commons.vfs.provider.AbstractFileObject.injectType(org.apache.commons.vfs.FileType)",
+      "org.apache.commons.vfs.provider.AbstractFileObject.name",
+      "org.apache.commons.vfs.provider.AbstractFileObject.setFileType(org.apache.commons.vfs.FileType)",
+      "org.apache.commons.vfs.provider.GenericFileName.getHostName()",
+      "org.apache.commons.vfs.provider.GenericFileName.getPassword()",
+      "org.apache.commons.vfs.provider.GenericFileName.getPort()",
+      "org.apache.commons.vfs.provider.GenericFileName.getUserName()",
+      "org.apache.commons.vfs.provider.URLFileName.getPathQueryEncoded(java.lang.String)",
+      "org.apache.commons.vfs.provider.URLFileName.getQueryString()",
+      "org.apache.commons.vfs.provider.webdav.WebDavFileSystem.getClient()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.WebdavFileObject(org.apache.commons.vfs.provider.GenericFileName,org.apache.commons.vfs.provider.webdav.WebDavFileSystem)",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doAttach()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doCreateFolder()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDelete()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doIsReadable()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doIsWriteable()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doListChildrenResolved()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doRename(org.apache.commons.vfs.FileObject)",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.fileSystem",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.handleCreate(org.apache.commons.vfs.FileType)",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.hasAllowedMethods(java.lang.String)",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.processParentDavResource()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.urlCharset",
+      "org.apache.commons.vfs.util.FileObjectUtils.getAbstractFileObject(org.apache.commons.vfs.FileObject)"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.vfs.FileName.getPath()",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object[],java.lang.Throwable)",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.Throwable)",
+      "org.apache.commons.vfs.FileType.FILE",
+      "org.apache.commons.vfs.FileType.FOLDER",
+      "org.apache.commons.vfs.FileType.IMAGINARY",
+      "org.apache.commons.vfs.provider.AbstractFileName.getPathDecoded()",
+      "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+      "org.apache.commons.vfs.provider.AbstractFileObject.getName()",
+      "org.apache.commons.vfs.provider.AbstractFileObject.getParent()",
+      "org.apache.commons.vfs.provider.AbstractFileObject.injectType(org.apache.commons.vfs.FileType)",
+      "org.apache.commons.vfs.provider.AbstractFileObject.name",
+      "org.apache.commons.vfs.provider.AbstractFileObject.setFileType(org.apache.commons.vfs.FileType)",
+      "org.apache.commons.vfs.provider.GenericFileName.getHostName()",
+      "org.apache.commons.vfs.provider.GenericFileName.getPassword()",
+      "org.apache.commons.vfs.provider.GenericFileName.getPort()",
+      "org.apache.commons.vfs.provider.GenericFileName.getUserName()",
+      "org.apache.commons.vfs.provider.URLFileName.getPathQueryEncoded(java.lang.String)",
+      "org.apache.commons.vfs.provider.URLFileName.getQueryString()",
+      "org.apache.commons.vfs.provider.webdav.WebDavFileSystem.getClient()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.WebdavFileObject(org.apache.commons.vfs.provider.GenericFileName,org.apache.commons.vfs.provider.webdav.WebDavFileSystem)",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doAttach()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doCreateFolder()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDelete()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doIsReadable()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doIsWriteable()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doListChildrenResolved()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doRename(org.apache.commons.vfs.FileObject)",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.fileSystem",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.handleCreate(org.apache.commons.vfs.FileType)",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.hasAllowedMethods(java.lang.String)",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.processParentDavResource()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.urlCharset",
+      "org.apache.commons.vfs.provider.webdav.WebdavFileSystemConfigBuilder.configureMethod(org.apache.webdav.lib.methods.OptionsMethod)",
+      "org.apache.commons.vfs.util.FileObjectUtils.configureMethod(org.apache.webdav.lib.methods.OptionsMethod)",
+      "org.apache.commons.vfs.util.FileObjectUtils.getAbstractFileObject(org.apache.commons.vfs.FileObject)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 114
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 98
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 102
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 546
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 99
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.urlCharset": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.urlCharset": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.urlCharset",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 121
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.WebdavFileObject(org.apache.commons.vfs.provider.GenericFileName,org.apache.commons.vfs.provider.webdav.WebDavFileSystem)": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.urlCharset": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.urlCharset",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 121
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.WebdavFileObject(org.apache.commons.vfs.provider.GenericFileName,org.apache.commons.vfs.provider.webdav.WebDavFileSystem)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.urlCharset",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 79
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.fileSystem": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.fileSystem",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 124
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.WebdavFileObject(org.apache.commons.vfs.provider.GenericFileName,org.apache.commons.vfs.provider.webdav.WebDavFileSystem)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.fileSystem",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 78
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.fileSystem": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.fileSystem": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.fileSystem",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 124
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 130
+          }
+        ]
+      },
+      "org.apache.commons.vfs.FileType.IMAGINARY": {
+        "org.apache.commons.vfs.FileType.IMAGINARY": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.FileType.IMAGINARY",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 153
+          }
+        ]
+      },
+      "org.apache.commons.vfs.FileType.FOLDER": {
+        "org.apache.commons.vfs.FileType.FOLDER": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.FileType.FOLDER",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 198
+          }
+        ]
+      },
+      "org.apache.commons.vfs.FileType.FILE": {
+        "org.apache.commons.vfs.FileType.FILE": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.FileType.FILE",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 202
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 546
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 546
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 208
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 114
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 546
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 208
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resolveRedirection()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 245
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resolveRedirection()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 233
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 98
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 102
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 546
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 99
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 98
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 95
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 130
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 546
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 99
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 95
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 98
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 493
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 102
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 493
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 546
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 99
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 493
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doCreateFolder()": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 98
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 493
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doCreateFolder()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 362
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 102
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 493
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doCreateFolder()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 362
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 546
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 99
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 493
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doCreateFolder()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 362
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDelete()": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resolveRedirection()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 247
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDelete()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resolveRedirection()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 370
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 102
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 493
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDelete()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 379
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 546
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 99
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 493
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDelete()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 379
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doRename(org.apache.commons.vfs.FileObject)": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 98
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 493
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doRename(org.apache.commons.vfs.FileObject)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 398
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 102
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 493
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doRename(org.apache.commons.vfs.FileObject)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 398
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 546
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 99
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 493
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doRename(org.apache.commons.vfs.FileObject)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 398
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.handleCreate(org.apache.commons.vfs.FileType)": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 98
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 493
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.handleCreate(org.apache.commons.vfs.FileType)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 480
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 102
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 493
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.handleCreate(org.apache.commons.vfs.FileType)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 480
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 546
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 99
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doDetach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 493
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.handleCreate(org.apache.commons.vfs.FileType)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.reattach()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 480
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.urlCharset": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.urlCharset",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 121
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.urlCharset": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.urlCharset",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 121
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.urlCharset",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 121
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 546
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 208
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 145
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.urlCharset",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 121
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.fileSystem": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.fileSystem",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 124
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.fileSystem": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.fileSystem",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 124
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.fileSystem",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 124
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 546
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 208
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 145
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.fileSystem",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 124
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doAttach()": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doAttach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 89
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doAttach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 89
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 546
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 208
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 145
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doAttach()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 89
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doListChildrenResolved()": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doListChildrenResolved()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 337
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doListChildrenResolved()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 337
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 546
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 208
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 145
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doListChildrenResolved()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 337
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.processParentDavResource()": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.redirectionResolved",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doListChildrenResolved()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 337
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.processParentDavResource()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doListChildrenResolved()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 262
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resource",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doListChildrenResolved()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 337
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.processParentDavResource()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doListChildrenResolved()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 262
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 546
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 208
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 145
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doListChildrenResolved()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 337
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.processParentDavResource()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doListChildrenResolved()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 262
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.WebdavFileObject(org.apache.commons.vfs.provider.GenericFileName,org.apache.commons.vfs.provider.webdav.WebDavFileSystem)": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.urlCharset": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.urlCharset",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 121
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.WebdavFileObject(org.apache.commons.vfs.provider.GenericFileName,org.apache.commons.vfs.provider.webdav.WebDavFileSystem)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.urlCharset",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 79
+          }
+        ],
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.fileSystem": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.fileSystem",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 124
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.WebdavFileObject(org.apache.commons.vfs.provider.GenericFileName,org.apache.commons.vfs.provider.webdav.WebDavFileSystem)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.fileSystem",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 78
+          }
+        ],
+        "org.apache.commons.vfs.provider.AbstractFileObject.name": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.AbstractFileObject.getName()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 116
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.AbstractFileObject.getName()",
+            "to": "org.apache.commons.vfs.provider.AbstractFileObject.name",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/AbstractFileObject.java",
+            "line": 361
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+            "to": "org.apache.commons.vfs.provider.AbstractFileObject.name",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/AbstractFileObject.java",
+            "line": 91
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.WebdavFileObject(org.apache.commons.vfs.provider.GenericFileName,org.apache.commons.vfs.provider.webdav.WebDavFileSystem)",
+            "to": "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 77
+          }
+        ]
+      },
+      "org.apache.commons.vfs.FileType.IMAGINARY": {
+        "org.apache.commons.vfs.FileType.IMAGINARY": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.FileType.IMAGINARY",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 153
+          }
+        ]
+      },
+      "org.apache.commons.vfs.FileType.FOLDER": {
+        "org.apache.commons.vfs.FileType.FOLDER": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.FileType.FOLDER",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 198
+          }
+        ]
+      },
+      "org.apache.commons.vfs.FileType.FILE": {
+        "org.apache.commons.vfs.FileType.FILE": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.FileType.FILE",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 202
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.AbstractFileObject.name": {
+        "org.apache.commons.vfs.provider.AbstractFileObject.name": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.AbstractFileObject.getName()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 116
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.AbstractFileObject.getName()",
+            "to": "org.apache.commons.vfs.provider.AbstractFileObject.name",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/AbstractFileObject.java",
+            "line": 361
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)": {
+        "org.apache.commons.vfs.provider.AbstractFileObject.name": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+            "to": "org.apache.commons.vfs.provider.AbstractFileObject.getName()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 116
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.AbstractFileObject.getName()",
+            "to": "org.apache.commons.vfs.provider.AbstractFileObject.name",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/AbstractFileObject.java",
+            "line": 361
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+            "to": "org.apache.commons.vfs.provider.AbstractFileObject.name",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/AbstractFileObject.java",
+            "line": 91
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 546
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 546
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 208
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.hasAllowedMethods(java.lang.String)": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 546
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 208
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 560
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.hasAllowedMethods(java.lang.String)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 225
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doIsReadable()": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 546
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 208
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 560
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.hasAllowedMethods(java.lang.String)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 225
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doIsReadable()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.hasAllowedMethods(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 534
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doIsWriteable()": {
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods": [
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 546
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.allowedMethods",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 208
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setAllowedMethods(java.util.Enumeration)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 560
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.hasAllowedMethods(java.lang.String)",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 225
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doIsWriteable()",
+            "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.hasAllowedMethods(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+            "line": 541
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.commons.vfs.provider.URLFileName.getQueryString()": [
+        {
+          "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+          "to": "org.apache.commons.vfs.provider.URLFileName.getPathQueryEncoded(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+          "line": 121
+        },
+        {
+          "from": "org.apache.commons.vfs.provider.URLFileName.getPathQueryEncoded(java.lang.String)",
+          "to": "org.apache.commons.vfs.provider.URLFileName.getQueryString()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/vfs/provider/URLFileName.java",
+          "line": 59
+        }
+      ],
+      "org.apache.commons.vfs.provider.AbstractFileName.getPathDecoded()": [
+        {
+          "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+          "to": "org.apache.commons.vfs.provider.URLFileName.getPathQueryEncoded(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+          "line": 121
+        },
+        {
+          "from": "org.apache.commons.vfs.provider.URLFileName.getPathQueryEncoded(java.lang.String)",
+          "to": "org.apache.commons.vfs.provider.AbstractFileName.getPathDecoded()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/vfs/provider/URLFileName.java",
+          "line": 63
+        }
+      ],
+      "org.apache.commons.vfs.util.FileObjectUtils.getAbstractFileObject(org.apache.commons.vfs.FileObject)": [
+        {
+          "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+          "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.processParentDavResource()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+          "line": 148
+        },
+        {
+          "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.processParentDavResource()",
+          "to": "org.apache.commons.vfs.util.FileObjectUtils.getAbstractFileObject(org.apache.commons.vfs.FileObject)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+          "line": 258
+        }
+      ],
+      "org.apache.commons.vfs.provider.AbstractFileObject.getParent()": [
+        {
+          "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+          "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.processParentDavResource()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+          "line": 148
+        },
+        {
+          "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.processParentDavResource()",
+          "to": "org.apache.commons.vfs.provider.AbstractFileObject.getParent()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+          "line": 258
+        }
+      ],
+      "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doListChildrenResolved()": [
+        {
+          "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+          "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.processParentDavResource()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+          "line": 148
+        },
+        {
+          "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.processParentDavResource()",
+          "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.doListChildrenResolved()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+          "line": 262
+        }
+      ],
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.Throwable)": [
+        {
+          "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+          "to": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.processParentDavResource()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+          "line": 148
+        },
+        {
+          "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.processParentDavResource()",
+          "to": "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.Throwable)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+          "line": 266
+        }
+      ],
+      "org.apache.commons.vfs.provider.AbstractFileObject.setFileType(org.apache.commons.vfs.FileType)": [
+        {
+          "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+          "to": "org.apache.commons.vfs.provider.AbstractFileObject.injectType(org.apache.commons.vfs.FileType)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+          "line": 153
+        },
+        {
+          "from": "org.apache.commons.vfs.provider.AbstractFileObject.injectType(org.apache.commons.vfs.FileType)",
+          "to": "org.apache.commons.vfs.provider.AbstractFileObject.setFileType(org.apache.commons.vfs.FileType)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/vfs/provider/AbstractFileObject.java",
+          "line": 1563
+        }
+      ],
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object[],java.lang.Throwable)": [
+        {
+          "from": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+          "to": "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.Throwable)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+          "line": 186
+        },
+        {
+          "from": "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.Throwable)",
+          "to": "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object[],java.lang.Throwable)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/vfs/FileSystemException.java",
+          "line": 147
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 6917,
+      "ma_analysis": 6499,
+      "ma_refinement_fixed": 4746
+    },
+    "two_hop_calls": {
+      "sp": 7442,
+      "ma_analysis": 7024,
+      "ma_refinement_fixed": 5271
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "configureMethod",
+        "arity": 1,
+        "arguments": [
+          "optionsMethod"
+        ],
+        "receiver": null,
+        "after_line": 138,
+        "expression": "configureMethod(optionsMethod)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.setDavResource(org.apache.webdav.lib.WebdavResource)",
+        "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.commons.vfs.provider.webdav.WebdavFileSystemConfigBuilder.configureMethod(org.apache.webdav.lib.methods.OptionsMethod)",
+          "org.apache.commons.vfs.util.FileObjectUtils.configureMethod(org.apache.webdav.lib.methods.OptionsMethod)"
+        ]
+      },
+      {
+        "name": "configureMethod",
+        "arity": 1,
+        "arguments": [
+          "optionsMethod"
+        ],
+        "receiver": null,
+        "after_line": 246,
+        "expression": "configureMethod(optionsMethod)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.resolveRedirection()",
+        "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.commons.vfs.provider.webdav.WebdavFileSystemConfigBuilder.configureMethod(org.apache.webdav.lib.methods.OptionsMethod)",
+          "org.apache.commons.vfs.util.FileObjectUtils.configureMethod(org.apache.webdav.lib.methods.OptionsMethod)"
+        ]
+      },
+      {
+        "name": "configureMethod",
+        "arity": 1,
+        "arguments": [
+          "optionsMethod"
+        ],
+        "receiver": null,
+        "after_line": 560,
+        "expression": "configureMethod(optionsMethod)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.vfs.provider.webdav.WebdavFileObject.getAllowedMethods()",
+        "file": "src/java/org/apache/commons/vfs/provider/webdav/WebdavFileObject.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.commons.vfs.provider.webdav.WebdavFileSystemConfigBuilder.configureMethod(org.apache.webdav.lib.methods.OptionsMethod)",
+          "org.apache.commons.vfs.util.FileObjectUtils.configureMethod(org.apache.webdav.lib.methods.OptionsMethod)"
+        ]
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [],
+  "unindexed_targets": [
+    "org.apache.commons.vfs.provider.webdav.WebdavFileObject.configureMethod(org.apache.commons.httpclient.HttpMethodBase)",
+    "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler",
+    "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.INSTANCE",
+    "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.WebdavMethodRetryHandler()",
+    "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.getInstance()",
+    "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.retryMethod(org.apache.commons.httpclient.HttpMethod,org.apache.commons.httpclient.HttpConnection,org.apache.commons.httpclient.HttpRecoverableException,int,boolean)"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 16,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.configureMethod(org.apache.commons.httpclient.HttpMethodBase)",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.INSTANCE",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.WebdavMethodRetryHandler()",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.getInstance()",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.retryMethod(org.apache.commons.httpclient.HttpMethod,org.apache.commons.httpclient.HttpConnection,org.apache.commons.httpclient.HttpRecoverableException,int,boolean)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "fields": {
+      "candidate_count": 26,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.configureMethod(org.apache.commons.httpclient.HttpMethodBase)",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.INSTANCE",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.WebdavMethodRetryHandler()",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.getInstance()",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.retryMethod(org.apache.commons.httpclient.HttpMethod,org.apache.commons.httpclient.HttpConnection,org.apache.commons.httpclient.HttpRecoverableException,int,boolean)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "multihop": {
+      "candidate_count": 34,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.configureMethod(org.apache.commons.httpclient.HttpMethodBase)",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.INSTANCE",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.WebdavMethodRetryHandler()",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.getInstance()",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.retryMethod(org.apache.commons.httpclient.HttpMethod,org.apache.commons.httpclient.HttpConnection,org.apache.commons.httpclient.HttpRecoverableException,int,boolean)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "two_hop_calls": {
+      "candidate_count": 40,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.configureMethod(org.apache.commons.httpclient.HttpMethodBase)",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.INSTANCE",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.WebdavMethodRetryHandler()",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.getInstance()",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.retryMethod(org.apache.commons.httpclient.HttpMethod,org.apache.commons.httpclient.HttpConnection,org.apache.commons.httpclient.HttpRecoverableException,int,boolean)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "diff_and_override": {
+      "candidate_count": 42,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.vfs.provider.webdav.WebdavFileObject.configureMethod(org.apache.commons.httpclient.HttpMethodBase)",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.INSTANCE",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.WebdavMethodRetryHandler()",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.getInstance()",
+        "org.apache.commons.vfs.provider.webdav.WebdavMethodRetryHandler.retryMethod(org.apache.commons.httpclient.HttpMethod,org.apache.commons.httpclient.HttpConnection,org.apache.commons.httpclient.HttpRecoverableException,int,boolean)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    }
+  }
+}

@@ -1,0 +1,2464 @@
+{
+  "id": "constantinople-056",
+  "graph_edges": 15752,
+  "seeds": {
+    "org.apache.giraph.conf.GiraphConfiguration.getZookeeperList()": true,
+    "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.giraph.bsp.BspService.BspService(int,Mapper.Context,org.apache.giraph.graph.GraphTaskManager)",
+      "org.apache.giraph.conf.GiraphConfiguration.getZooKeeperServerCount()",
+      "org.apache.giraph.conf.GiraphConfiguration.getZooKeeperSessionTimeout()",
+      "org.apache.giraph.conf.GiraphTypes.writeIfUnset(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.ImmutableClassesGiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.createComputationFactory()",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.getGiraphTypes()",
+      "org.apache.giraph.factories.ComputationFactory.initialize(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration)",
+      "org.apache.giraph.graph.GraphTaskManager.checkInput()",
+      "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+      "org.apache.giraph.graph.GraphTaskManager.getGraphFunctions()",
+      "org.apache.giraph.graph.GraphTaskManager.initializeAndConfigureLogging()",
+      "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+      "org.apache.giraph.graph.GraphTaskManager.locateZookeeperClasspath(org.apache.hadoop.fs.Path[])",
+      "org.apache.giraph.graph.GraphTaskManager.setupAndInitializeGiraphMetrics()",
+      "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+      "org.apache.giraph.master.BspServiceMaster.cleanUpZooKeeper()",
+      "org.apache.giraph.scripting.ScriptLoader.loadScripts(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.yarn.GiraphYarnClient.checkJobLocalZooKeeperSupported()",
+      "org.apache.giraph.zk.ZooKeeperManager.offlineZooKeeperServers(org.apache.giraph.zk.ZooKeeperManager.State)",
+      "org.apache.giraph.zk.ZooKeeperManager.runsZooKeeper()"
+    ],
+    "fields": [
+      "org.apache.giraph.bsp.BspService.BspService(int,Mapper.Context,org.apache.giraph.graph.GraphTaskManager)",
+      "org.apache.giraph.conf.GiraphConfiguration.getZooKeeperServerCount()",
+      "org.apache.giraph.conf.GiraphConfiguration.getZooKeeperSessionTimeout()",
+      "org.apache.giraph.conf.GiraphConstants.DEFAULT_ZOOKEEPER_INIT_LIMIT",
+      "org.apache.giraph.conf.GiraphConstants.DEFAULT_ZOOKEEPER_TICK_TIME",
+      "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_LIST",
+      "org.apache.giraph.conf.GiraphTypes.writeIfUnset(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.ImmutableClassesGiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.createComputationFactory()",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.getGiraphTypes()",
+      "org.apache.giraph.factories.ComputationFactory.initialize(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration)",
+      "org.apache.giraph.graph.GraphTaskManager.LOG",
+      "org.apache.giraph.graph.GraphTaskManager.checkInput()",
+      "org.apache.giraph.graph.GraphTaskManager.conf",
+      "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+      "org.apache.giraph.graph.GraphTaskManager.getGraphFunctions()",
+      "org.apache.giraph.graph.GraphTaskManager.graphFunctions",
+      "org.apache.giraph.graph.GraphTaskManager.initializeAndConfigureLogging()",
+      "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+      "org.apache.giraph.graph.GraphTaskManager.locateZookeeperClasspath(org.apache.hadoop.fs.Path[])",
+      "org.apache.giraph.graph.GraphTaskManager.setupAndInitializeGiraphMetrics()",
+      "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+      "org.apache.giraph.graph.GraphTaskManager.zkManager",
+      "org.apache.giraph.master.BspServiceMaster.cleanUpZooKeeper()",
+      "org.apache.giraph.scripting.ScriptLoader.loadScripts(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.yarn.GiraphYarnClient.checkJobLocalZooKeeperSupported()",
+      "org.apache.giraph.zk.ZooKeeperManager.State.FAILED",
+      "org.apache.giraph.zk.ZooKeeperManager.offlineZooKeeperServers(org.apache.giraph.zk.ZooKeeperManager.State)",
+      "org.apache.giraph.zk.ZooKeeperManager.runsZooKeeper()"
+    ],
+    "multihop": [
+      "org.apache.giraph.bsp.BspService.BspService(int,Mapper.Context,org.apache.giraph.graph.GraphTaskManager)",
+      "org.apache.giraph.conf.GiraphConfiguration.getZooKeeperServerCount()",
+      "org.apache.giraph.conf.GiraphConfiguration.getZooKeeperSessionTimeout()",
+      "org.apache.giraph.conf.GiraphConstants.DEFAULT_ZOOKEEPER_INIT_LIMIT",
+      "org.apache.giraph.conf.GiraphConstants.DEFAULT_ZOOKEEPER_TICK_TIME",
+      "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_LIST",
+      "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_SERVER_PORT_COUNTER_GROUP",
+      "org.apache.giraph.conf.GiraphTypes.writeIfUnset(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.ImmutableClassesGiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.createComputationFactory()",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.getGiraphTypes()",
+      "org.apache.giraph.factories.ComputationFactory.initialize(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration)",
+      "org.apache.giraph.graph.GraphFunctions.ALL",
+      "org.apache.giraph.graph.GraphFunctions.ALL_EXCEPT_ZOOKEEPER",
+      "org.apache.giraph.graph.GraphFunctions.MASTER_ONLY",
+      "org.apache.giraph.graph.GraphFunctions.MASTER_ZOOKEEPER_ONLY",
+      "org.apache.giraph.graph.GraphFunctions.UNKNOWN",
+      "org.apache.giraph.graph.GraphFunctions.WORKER_ONLY",
+      "org.apache.giraph.graph.GraphTaskManager.LOG",
+      "org.apache.giraph.graph.GraphTaskManager.checkInput()",
+      "org.apache.giraph.graph.GraphTaskManager.conf",
+      "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+      "org.apache.giraph.graph.GraphTaskManager.done",
+      "org.apache.giraph.graph.GraphTaskManager.getGraphFunctions()",
+      "org.apache.giraph.graph.GraphTaskManager.graphFunctions",
+      "org.apache.giraph.graph.GraphTaskManager.initializeAndConfigureLogging()",
+      "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+      "org.apache.giraph.graph.GraphTaskManager.locateZookeeperClasspath(org.apache.hadoop.fs.Path[])",
+      "org.apache.giraph.graph.GraphTaskManager.masterThread",
+      "org.apache.giraph.graph.GraphTaskManager.serviceMaster",
+      "org.apache.giraph.graph.GraphTaskManager.serviceWorker",
+      "org.apache.giraph.graph.GraphTaskManager.setupAndInitializeGiraphMetrics()",
+      "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+      "org.apache.giraph.graph.GraphTaskManager.zkManager",
+      "org.apache.giraph.master.BspServiceMaster.cleanUpZooKeeper()",
+      "org.apache.giraph.scripting.ScriptLoader.loadScripts(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.yarn.GiraphYarnClient.checkJobLocalZooKeeperSupported()",
+      "org.apache.giraph.zk.ZooKeeperManager.State.FAILED",
+      "org.apache.giraph.zk.ZooKeeperManager.offlineZooKeeperServers(org.apache.giraph.zk.ZooKeeperManager.State)",
+      "org.apache.giraph.zk.ZooKeeperManager.runsZooKeeper()"
+    ],
+    "two_hop_calls": [
+      "org.apache.giraph.bsp.BspService.BspService(int,Mapper.Context,org.apache.giraph.graph.GraphTaskManager)",
+      "org.apache.giraph.conf.BooleanConfOption.get(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.conf.ClassConfOption.setIfUnset(org.apache.hadoop.conf.Configuration,java.lang.Class)",
+      "org.apache.giraph.conf.GiraphClasses.GiraphClasses(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.conf.GiraphClasses.getGiraphTypes()",
+      "org.apache.giraph.conf.GiraphConfiguration.GiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.conf.GiraphConfiguration.getLocalLevel()",
+      "org.apache.giraph.conf.GiraphConfiguration.getLocalTestMode()",
+      "org.apache.giraph.conf.GiraphConfiguration.getMapTasks()",
+      "org.apache.giraph.conf.GiraphConfiguration.getSplitMasterWorker()",
+      "org.apache.giraph.conf.GiraphConfiguration.getTaskPartition()",
+      "org.apache.giraph.conf.GiraphConfiguration.getZooKeeperServerCount()",
+      "org.apache.giraph.conf.GiraphConfiguration.getZooKeeperSessionTimeout()",
+      "org.apache.giraph.conf.GiraphConfiguration.isZookeeperExternal()",
+      "org.apache.giraph.conf.GiraphConfiguration.setZooKeeperJar(java.lang.String)",
+      "org.apache.giraph.conf.GiraphConfiguration.setZookeeperList(java.lang.String)",
+      "org.apache.giraph.conf.GiraphConfiguration.useLogThreadLayout()",
+      "org.apache.giraph.conf.GiraphConstants.DEFAULT_ZOOKEEPER_INIT_LIMIT",
+      "org.apache.giraph.conf.GiraphConstants.DEFAULT_ZOOKEEPER_TICK_TIME",
+      "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_LIST",
+      "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_SERVER_PORT_COUNTER_GROUP",
+      "org.apache.giraph.conf.GiraphTypes.writeIfUnset(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.ImmutableClassesGiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.createComputationFactory()",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.createWrappedEdgeInputFormat()",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.createWrappedVertexInputFormat()",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.getComputationFactoryClass()",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.getGiraphTypes()",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.hasEdgeInputFormat()",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.hasVertexInputFormat()",
+      "org.apache.giraph.conf.IntConfOption.get(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.conf.PerGraphTypeBoolean.readFromConf(org.apache.giraph.conf.PerGraphTypeBooleanConfOption,org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.conf.PerGraphTypeEnum.readFromConf(org.apache.giraph.conf.PerGraphTypeEnumConfOption,org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.factories.ComputationFactory.initialize(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration)",
+      "org.apache.giraph.factories.ValueFactories.ValueFactories(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.factories.ValueFactories.initializeIVE(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration)",
+      "org.apache.giraph.graph.GraphFunctions.ALL",
+      "org.apache.giraph.graph.GraphFunctions.ALL_EXCEPT_ZOOKEEPER",
+      "org.apache.giraph.graph.GraphFunctions.MASTER_ONLY",
+      "org.apache.giraph.graph.GraphFunctions.MASTER_ZOOKEEPER_ONLY",
+      "org.apache.giraph.graph.GraphFunctions.UNKNOWN",
+      "org.apache.giraph.graph.GraphFunctions.WORKER_ONLY",
+      "org.apache.giraph.graph.GraphFunctions.isMaster()",
+      "org.apache.giraph.graph.GraphFunctions.isWorker()",
+      "org.apache.giraph.graph.GraphTaskManager.LOG",
+      "org.apache.giraph.graph.GraphTaskManager.checkInput()",
+      "org.apache.giraph.graph.GraphTaskManager.conf",
+      "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+      "org.apache.giraph.graph.GraphTaskManager.done",
+      "org.apache.giraph.graph.GraphTaskManager.findContainingJar(java.lang.Class)",
+      "org.apache.giraph.graph.GraphTaskManager.getGraphFunctions()",
+      "org.apache.giraph.graph.GraphTaskManager.graphFunctions",
+      "org.apache.giraph.graph.GraphTaskManager.initJobMetrics()",
+      "org.apache.giraph.graph.GraphTaskManager.initializeAndConfigureLogging()",
+      "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+      "org.apache.giraph.graph.GraphTaskManager.locateZookeeperClasspath(org.apache.hadoop.fs.Path[])",
+      "org.apache.giraph.graph.GraphTaskManager.masterThread",
+      "org.apache.giraph.graph.GraphTaskManager.serviceMaster",
+      "org.apache.giraph.graph.GraphTaskManager.serviceWorker",
+      "org.apache.giraph.graph.GraphTaskManager.setupAndInitializeGiraphMetrics()",
+      "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+      "org.apache.giraph.graph.GraphTaskManager.zkManager",
+      "org.apache.giraph.io.internal.WrappedEdgeInputFormat.checkInputSpecs(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.io.internal.WrappedVertexInputFormat.checkInputSpecs(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.master.BspServiceMaster.cleanUpZooKeeper()",
+      "org.apache.giraph.metrics.GiraphMetrics.addSuperstepResetObserver(org.apache.giraph.metrics.ResetSuperstepMetricsObserver)",
+      "org.apache.giraph.metrics.GiraphMetrics.get()",
+      "org.apache.giraph.metrics.GiraphMetrics.init(org.apache.giraph.conf.GiraphConfiguration)",
+      "org.apache.giraph.scripting.ScriptLoader.getScriptsToLoad(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.scripting.ScriptLoader.loadScript(org.apache.hadoop.conf.Configuration,org.apache.giraph.scripting.DeployedScript)",
+      "org.apache.giraph.scripting.ScriptLoader.loadScripts(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.utils.MemoryUtils.initMetrics()",
+      "org.apache.giraph.utils.ReflectionUtils.newInstance(java.lang.Class,org.apache.giraph.conf.ImmutableClassesGiraphConfiguration)",
+      "org.apache.giraph.worker.InputSplitsCallable.initMetrics()",
+      "org.apache.giraph.yarn.GiraphYarnClient.checkJobLocalZooKeeperSupported()",
+      "org.apache.giraph.zk.ZooKeeperManager.State.FAILED",
+      "org.apache.giraph.zk.ZooKeeperManager.computationDone()",
+      "org.apache.giraph.zk.ZooKeeperManager.createZooKeeperClosedStamp()",
+      "org.apache.giraph.zk.ZooKeeperManager.getZooKeeperServerPortString()",
+      "org.apache.giraph.zk.ZooKeeperManager.offlineZooKeeperServers(org.apache.giraph.zk.ZooKeeperManager.State)",
+      "org.apache.giraph.zk.ZooKeeperManager.onlineZooKeeperServers()",
+      "org.apache.giraph.zk.ZooKeeperManager.runsZooKeeper()",
+      "org.apache.giraph.zk.ZooKeeperManager.setup()",
+      "org.apache.giraph.zk.ZooKeeperManager.waitUntilAllTasksDone(int)"
+    ],
+    "diff_and_override": [
+      "org.apache.giraph.bsp.BspService.BspService(int,Mapper.Context,org.apache.giraph.graph.GraphTaskManager)",
+      "org.apache.giraph.conf.BooleanConfOption.get(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.conf.ClassConfOption.setIfUnset(org.apache.hadoop.conf.Configuration,java.lang.Class)",
+      "org.apache.giraph.conf.GiraphClasses.GiraphClasses(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.conf.GiraphClasses.getGiraphTypes()",
+      "org.apache.giraph.conf.GiraphConfiguration.GiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.conf.GiraphConfiguration.getLocalLevel()",
+      "org.apache.giraph.conf.GiraphConfiguration.getLocalTestMode()",
+      "org.apache.giraph.conf.GiraphConfiguration.getMapTasks()",
+      "org.apache.giraph.conf.GiraphConfiguration.getSplitMasterWorker()",
+      "org.apache.giraph.conf.GiraphConfiguration.getTaskPartition()",
+      "org.apache.giraph.conf.GiraphConfiguration.getZooKeeperServerCount()",
+      "org.apache.giraph.conf.GiraphConfiguration.getZooKeeperSessionTimeout()",
+      "org.apache.giraph.conf.GiraphConfiguration.isZookeeperExternal()",
+      "org.apache.giraph.conf.GiraphConfiguration.setZooKeeperJar(java.lang.String)",
+      "org.apache.giraph.conf.GiraphConfiguration.setZookeeperList(java.lang.String)",
+      "org.apache.giraph.conf.GiraphConfiguration.useLogThreadLayout()",
+      "org.apache.giraph.conf.GiraphConstants.DEFAULT_ZOOKEEPER_INIT_LIMIT",
+      "org.apache.giraph.conf.GiraphConstants.DEFAULT_ZOOKEEPER_TICK_TIME",
+      "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_LIST",
+      "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_SERVER_PORT_COUNTER_GROUP",
+      "org.apache.giraph.conf.GiraphTypes.writeIfUnset(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.ImmutableClassesGiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.createComputationFactory()",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.createWrappedEdgeInputFormat()",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.createWrappedVertexInputFormat()",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.getComputationFactoryClass()",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.getGiraphTypes()",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.hasEdgeInputFormat()",
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.hasVertexInputFormat()",
+      "org.apache.giraph.conf.IntConfOption.get(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.conf.PerGraphTypeBoolean.readFromConf(org.apache.giraph.conf.PerGraphTypeBooleanConfOption,org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.conf.PerGraphTypeEnum.readFromConf(org.apache.giraph.conf.PerGraphTypeEnumConfOption,org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.factories.ComputationFactory.initialize(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration)",
+      "org.apache.giraph.factories.ValueFactories.ValueFactories(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.factories.ValueFactories.initializeIVE(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration)",
+      "org.apache.giraph.graph.GraphFunctions.ALL",
+      "org.apache.giraph.graph.GraphFunctions.ALL_EXCEPT_ZOOKEEPER",
+      "org.apache.giraph.graph.GraphFunctions.MASTER_ONLY",
+      "org.apache.giraph.graph.GraphFunctions.MASTER_ZOOKEEPER_ONLY",
+      "org.apache.giraph.graph.GraphFunctions.UNKNOWN",
+      "org.apache.giraph.graph.GraphFunctions.WORKER_ONLY",
+      "org.apache.giraph.graph.GraphFunctions.isMaster()",
+      "org.apache.giraph.graph.GraphFunctions.isWorker()",
+      "org.apache.giraph.graph.GraphTaskManager.LOG",
+      "org.apache.giraph.graph.GraphTaskManager.checkInput()",
+      "org.apache.giraph.graph.GraphTaskManager.conf",
+      "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+      "org.apache.giraph.graph.GraphTaskManager.done",
+      "org.apache.giraph.graph.GraphTaskManager.findContainingJar(java.lang.Class)",
+      "org.apache.giraph.graph.GraphTaskManager.getGraphFunctions()",
+      "org.apache.giraph.graph.GraphTaskManager.graphFunctions",
+      "org.apache.giraph.graph.GraphTaskManager.initJobMetrics()",
+      "org.apache.giraph.graph.GraphTaskManager.initializeAndConfigureLogging()",
+      "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+      "org.apache.giraph.graph.GraphTaskManager.locateZookeeperClasspath(org.apache.hadoop.fs.Path[])",
+      "org.apache.giraph.graph.GraphTaskManager.masterThread",
+      "org.apache.giraph.graph.GraphTaskManager.serviceMaster",
+      "org.apache.giraph.graph.GraphTaskManager.serviceWorker",
+      "org.apache.giraph.graph.GraphTaskManager.setupAndInitializeGiraphMetrics()",
+      "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+      "org.apache.giraph.graph.GraphTaskManager.zkManager",
+      "org.apache.giraph.io.internal.WrappedEdgeInputFormat.checkInputSpecs(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.io.internal.WrappedVertexInputFormat.checkInputSpecs(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.master.BspServiceMaster.cleanUpZooKeeper()",
+      "org.apache.giraph.metrics.GiraphMetrics.addSuperstepResetObserver(org.apache.giraph.metrics.ResetSuperstepMetricsObserver)",
+      "org.apache.giraph.metrics.GiraphMetrics.get()",
+      "org.apache.giraph.metrics.GiraphMetrics.init(org.apache.giraph.conf.GiraphConfiguration)",
+      "org.apache.giraph.scripting.ScriptLoader.getScriptsToLoad(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.scripting.ScriptLoader.loadScript(org.apache.hadoop.conf.Configuration,org.apache.giraph.scripting.DeployedScript)",
+      "org.apache.giraph.scripting.ScriptLoader.loadScripts(org.apache.hadoop.conf.Configuration)",
+      "org.apache.giraph.utils.MemoryUtils.initMetrics()",
+      "org.apache.giraph.utils.ReflectionUtils.newInstance(java.lang.Class,org.apache.giraph.conf.ImmutableClassesGiraphConfiguration)",
+      "org.apache.giraph.worker.InputSplitsCallable.initMetrics()",
+      "org.apache.giraph.yarn.GiraphYarnClient.checkJobLocalZooKeeperSupported()",
+      "org.apache.giraph.zk.ZooKeeperManager.State.FAILED",
+      "org.apache.giraph.zk.ZooKeeperManager.computationDone()",
+      "org.apache.giraph.zk.ZooKeeperManager.createZooKeeperClosedStamp()",
+      "org.apache.giraph.zk.ZooKeeperManager.getZooKeeperServerPortString()",
+      "org.apache.giraph.zk.ZooKeeperManager.offlineZooKeeperServers(org.apache.giraph.zk.ZooKeeperManager.State)",
+      "org.apache.giraph.zk.ZooKeeperManager.onlineZooKeeperServers()",
+      "org.apache.giraph.zk.ZooKeeperManager.runsZooKeeper()",
+      "org.apache.giraph.zk.ZooKeeperManager.setup()",
+      "org.apache.giraph.zk.ZooKeeperManager.waitUntilAllTasksDone(int)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_LIST": {
+        "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_LIST": [
+          {
+            "from": "org.apache.giraph.conf.GiraphConfiguration.getZookeeperList()",
+            "to": "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_LIST",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java",
+            "line": 731
+          }
+        ]
+      },
+      "org.apache.giraph.graph.GraphTaskManager.conf": {
+        "org.apache.giraph.graph.GraphTaskManager.conf": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.conf",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 183
+          }
+        ]
+      },
+      "org.apache.giraph.graph.GraphTaskManager.zkManager": {
+        "org.apache.giraph.graph.GraphTaskManager.zkManager": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.zkManager",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 205
+          }
+        ]
+      },
+      "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()": {
+        "org.apache.giraph.graph.GraphTaskManager.zkManager": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.zkManager",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 205
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "to": "org.apache.giraph.graph.GraphTaskManager.zkManager",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 362
+          }
+        ]
+      },
+      "org.apache.giraph.graph.GraphTaskManager.LOG": {
+        "org.apache.giraph.graph.GraphTaskManager.LOG": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.LOG",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 206
+          }
+        ]
+      },
+      "org.apache.giraph.graph.GraphTaskManager.graphFunctions": {
+        "org.apache.giraph.graph.GraphTaskManager.graphFunctions": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.graphFunctions",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 212
+          }
+        ]
+      },
+      "org.apache.giraph.conf.GiraphConstants.DEFAULT_ZOOKEEPER_INIT_LIMIT": {
+        "org.apache.giraph.conf.GiraphConstants.DEFAULT_ZOOKEEPER_INIT_LIMIT": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.conf.GiraphConstants.DEFAULT_ZOOKEEPER_INIT_LIMIT",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 215
+          }
+        ]
+      },
+      "org.apache.giraph.conf.GiraphConstants.DEFAULT_ZOOKEEPER_TICK_TIME": {
+        "org.apache.giraph.conf.GiraphConstants.DEFAULT_ZOOKEEPER_TICK_TIME": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.conf.GiraphConstants.DEFAULT_ZOOKEEPER_TICK_TIME",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 216
+          }
+        ]
+      },
+      "org.apache.giraph.zk.ZooKeeperManager.State.FAILED": {
+        "org.apache.giraph.zk.ZooKeeperManager.State.FAILED": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.zk.ZooKeeperManager.State.FAILED",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 224
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_LIST": {
+        "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_LIST": [
+          {
+            "from": "org.apache.giraph.conf.GiraphConfiguration.getZookeeperList()",
+            "to": "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_LIST",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java",
+            "line": 731
+          }
+        ]
+      },
+      "org.apache.giraph.graph.GraphTaskManager.conf": {
+        "org.apache.giraph.graph.GraphTaskManager.conf": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.conf",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 183
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.zkManager": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.zkManager",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 205
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "to": "org.apache.giraph.graph.GraphTaskManager.zkManager",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 362
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "to": "org.apache.giraph.graph.GraphTaskManager.conf",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 362
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.graphFunctions": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.graphFunctions",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 212
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.graphFunctions",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 212
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.conf",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 187
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.done": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "to": "org.apache.giraph.graph.GraphTaskManager.done",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 366
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "to": "org.apache.giraph.graph.GraphTaskManager.done",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 366
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "to": "org.apache.giraph.graph.GraphTaskManager.conf",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 362
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.serviceMaster": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceMaster",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 549
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceMaster",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 549
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.conf",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 187
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.masterThread": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.masterThread",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 551
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.masterThread",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 551
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.conf",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 187
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.serviceWorker": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceWorker",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 558
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceWorker",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 558
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.conf",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 187
+          }
+        ]
+      },
+      "org.apache.giraph.graph.GraphTaskManager.zkManager": {
+        "org.apache.giraph.graph.GraphTaskManager.conf": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.conf",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 183
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.conf",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 183
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.zkManager",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 205
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.zkManager": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.zkManager",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 205
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.graphFunctions": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.graphFunctions",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 212
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.graphFunctions",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 212
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.zkManager",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 205
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.done": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "to": "org.apache.giraph.graph.GraphTaskManager.done",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 366
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "to": "org.apache.giraph.graph.GraphTaskManager.done",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 366
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "to": "org.apache.giraph.graph.GraphTaskManager.zkManager",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 364
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.serviceMaster": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceMaster",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 549
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceMaster",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 549
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.zkManager",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 205
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.masterThread": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.masterThread",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 551
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.masterThread",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 551
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.zkManager",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 205
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.serviceWorker": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceWorker",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 558
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceWorker",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 558
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.zkManager",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 205
+          }
+        ]
+      },
+      "org.apache.giraph.graph.GraphTaskManager.LOG": {
+        "org.apache.giraph.graph.GraphTaskManager.conf": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.conf",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 183
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.conf",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 183
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.LOG",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 206
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.zkManager": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.zkManager",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 205
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "to": "org.apache.giraph.graph.GraphTaskManager.zkManager",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 362
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.LOG",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 206
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.LOG": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.LOG",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 206
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.graphFunctions": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.graphFunctions",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 212
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.graphFunctions",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 212
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.LOG",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 206
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.done": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "to": "org.apache.giraph.graph.GraphTaskManager.done",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 366
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "to": "org.apache.giraph.graph.GraphTaskManager.done",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 366
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.LOG",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 206
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.serviceMaster": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceMaster",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 549
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceMaster",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 549
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.LOG",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 545
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.masterThread": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.masterThread",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 551
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.masterThread",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 551
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.LOG",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 545
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.serviceWorker": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceWorker",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 558
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceWorker",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 558
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.LOG",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 545
+          }
+        ]
+      },
+      "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()": {
+        "org.apache.giraph.graph.GraphTaskManager.zkManager": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.zkManager",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 205
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "to": "org.apache.giraph.graph.GraphTaskManager.zkManager",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 362
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.done": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "to": "org.apache.giraph.graph.GraphTaskManager.done",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 366
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "to": "org.apache.giraph.graph.GraphTaskManager.done",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 366
+          }
+        ]
+      },
+      "org.apache.giraph.graph.GraphTaskManager.graphFunctions": {
+        "org.apache.giraph.graph.GraphTaskManager.graphFunctions": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.graphFunctions",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 212
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.serviceMaster": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceMaster",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 549
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceMaster",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 549
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.graphFunctions",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 544
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.masterThread": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.masterThread",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 551
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.masterThread",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 551
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.graphFunctions",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 544
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.serviceWorker": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceWorker",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 558
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceWorker",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 558
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.graphFunctions",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 544
+          }
+        ]
+      },
+      "org.apache.giraph.conf.GiraphConstants.DEFAULT_ZOOKEEPER_INIT_LIMIT": {
+        "org.apache.giraph.conf.GiraphConstants.DEFAULT_ZOOKEEPER_INIT_LIMIT": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.conf.GiraphConstants.DEFAULT_ZOOKEEPER_INIT_LIMIT",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 215
+          }
+        ]
+      },
+      "org.apache.giraph.conf.GiraphConstants.DEFAULT_ZOOKEEPER_TICK_TIME": {
+        "org.apache.giraph.conf.GiraphConstants.DEFAULT_ZOOKEEPER_TICK_TIME": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.conf.GiraphConstants.DEFAULT_ZOOKEEPER_TICK_TIME",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 216
+          }
+        ]
+      },
+      "org.apache.giraph.zk.ZooKeeperManager.State.FAILED": {
+        "org.apache.giraph.zk.ZooKeeperManager.State.FAILED": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.zk.ZooKeeperManager.State.FAILED",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 224
+          }
+        ]
+      },
+      "org.apache.giraph.graph.GraphTaskManager.done": {
+        "org.apache.giraph.graph.GraphTaskManager.done": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "to": "org.apache.giraph.graph.GraphTaskManager.done",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 366
+          }
+        ]
+      },
+      "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_SERVER_PORT_COUNTER_GROUP": {
+        "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_SERVER_PORT_COUNTER_GROUP": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 202
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+            "to": "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_SERVER_PORT_COUNTER_GROUP",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 372
+          }
+        ]
+      },
+      "org.apache.giraph.graph.GraphFunctions.UNKNOWN": {
+        "org.apache.giraph.graph.GraphFunctions.UNKNOWN": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 212
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+            "to": "org.apache.giraph.graph.GraphFunctions.UNKNOWN",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 510
+          }
+        ]
+      },
+      "org.apache.giraph.graph.GraphFunctions.ALL": {
+        "org.apache.giraph.graph.GraphFunctions.ALL": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 212
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+            "to": "org.apache.giraph.graph.GraphFunctions.ALL",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 514
+          }
+        ]
+      },
+      "org.apache.giraph.graph.GraphFunctions.ALL_EXCEPT_ZOOKEEPER": {
+        "org.apache.giraph.graph.GraphFunctions.ALL_EXCEPT_ZOOKEEPER": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 212
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+            "to": "org.apache.giraph.graph.GraphFunctions.ALL_EXCEPT_ZOOKEEPER",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 516
+          }
+        ]
+      },
+      "org.apache.giraph.graph.GraphFunctions.MASTER_ONLY": {
+        "org.apache.giraph.graph.GraphFunctions.MASTER_ONLY": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 212
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+            "to": "org.apache.giraph.graph.GraphFunctions.MASTER_ONLY",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 522
+          }
+        ]
+      },
+      "org.apache.giraph.graph.GraphFunctions.WORKER_ONLY": {
+        "org.apache.giraph.graph.GraphFunctions.WORKER_ONLY": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 212
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+            "to": "org.apache.giraph.graph.GraphFunctions.WORKER_ONLY",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 524
+          }
+        ]
+      },
+      "org.apache.giraph.graph.GraphFunctions.MASTER_ZOOKEEPER_ONLY": {
+        "org.apache.giraph.graph.GraphFunctions.MASTER_ZOOKEEPER_ONLY": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 212
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+            "to": "org.apache.giraph.graph.GraphFunctions.MASTER_ZOOKEEPER_ONLY",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 528
+          }
+        ]
+      },
+      "org.apache.giraph.graph.GraphTaskManager.serviceMaster": {
+        "org.apache.giraph.graph.GraphTaskManager.serviceMaster": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceMaster",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 549
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.masterThread": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.masterThread",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 551
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.masterThread",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 551
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceMaster",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 551
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.serviceWorker": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceWorker",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 558
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceWorker",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 558
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceMaster",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 551
+          }
+        ]
+      },
+      "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)": {
+        "org.apache.giraph.graph.GraphTaskManager.serviceMaster": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceMaster",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 549
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceMaster",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 549
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.masterThread": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.masterThread",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 551
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.masterThread",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 551
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.serviceWorker": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceWorker",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 558
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceWorker",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 558
+          }
+        ]
+      },
+      "org.apache.giraph.graph.GraphTaskManager.masterThread": {
+        "org.apache.giraph.graph.GraphTaskManager.serviceMaster": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceMaster",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 549
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceMaster",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 549
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.masterThread",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 552
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.masterThread": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.masterThread",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 551
+          }
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.serviceWorker": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceWorker",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 558
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceWorker",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 558
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.masterThread",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 552
+          }
+        ]
+      },
+      "org.apache.giraph.graph.GraphTaskManager.serviceWorker": {
+        "org.apache.giraph.graph.GraphTaskManager.serviceWorker": [
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+            "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "kind": "CALLS",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 220
+          },
+          {
+            "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+            "to": "org.apache.giraph.graph.GraphTaskManager.serviceWorker",
+            "kind": "WRITE",
+            "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+            "line": 558
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.giraph.conf.GiraphConfiguration.GiraphConfiguration(org.apache.hadoop.conf.Configuration)": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.ImmutableClassesGiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 183
+        },
+        {
+          "from": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.ImmutableClassesGiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+          "to": "org.apache.giraph.conf.GiraphConfiguration.GiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/conf/ImmutableClassesGiraphConfiguration.java",
+          "line": 120
+        }
+      ],
+      "org.apache.giraph.conf.GiraphClasses.GiraphClasses(org.apache.hadoop.conf.Configuration)": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.ImmutableClassesGiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 183
+        },
+        {
+          "from": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.ImmutableClassesGiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+          "to": "org.apache.giraph.conf.GiraphClasses.GiraphClasses(org.apache.hadoop.conf.Configuration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/conf/ImmutableClassesGiraphConfiguration.java",
+          "line": 121
+        }
+      ],
+      "org.apache.giraph.conf.BooleanConfOption.get(org.apache.hadoop.conf.Configuration)": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.ImmutableClassesGiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 183
+        },
+        {
+          "from": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.ImmutableClassesGiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+          "to": "org.apache.giraph.conf.BooleanConfOption.get(org.apache.hadoop.conf.Configuration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/conf/ImmutableClassesGiraphConfiguration.java",
+          "line": 122
+        }
+      ],
+      "org.apache.giraph.conf.PerGraphTypeEnum.readFromConf(org.apache.giraph.conf.PerGraphTypeEnumConfOption,org.apache.hadoop.conf.Configuration)": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.ImmutableClassesGiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 183
+        },
+        {
+          "from": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.ImmutableClassesGiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+          "to": "org.apache.giraph.conf.PerGraphTypeEnum.readFromConf(org.apache.giraph.conf.PerGraphTypeEnumConfOption,org.apache.hadoop.conf.Configuration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/conf/ImmutableClassesGiraphConfiguration.java",
+          "line": 124
+        }
+      ],
+      "org.apache.giraph.conf.PerGraphTypeBoolean.readFromConf(org.apache.giraph.conf.PerGraphTypeBooleanConfOption,org.apache.hadoop.conf.Configuration)": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.ImmutableClassesGiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 183
+        },
+        {
+          "from": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.ImmutableClassesGiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+          "to": "org.apache.giraph.conf.PerGraphTypeBoolean.readFromConf(org.apache.giraph.conf.PerGraphTypeBooleanConfOption,org.apache.hadoop.conf.Configuration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/conf/ImmutableClassesGiraphConfiguration.java",
+          "line": 126
+        }
+      ],
+      "org.apache.giraph.factories.ValueFactories.ValueFactories(org.apache.hadoop.conf.Configuration)": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.ImmutableClassesGiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 183
+        },
+        {
+          "from": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.ImmutableClassesGiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+          "to": "org.apache.giraph.factories.ValueFactories.ValueFactories(org.apache.hadoop.conf.Configuration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/conf/ImmutableClassesGiraphConfiguration.java",
+          "line": 128
+        }
+      ],
+      "org.apache.giraph.factories.ValueFactories.initializeIVE(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration)": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.ImmutableClassesGiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 183
+        },
+        {
+          "from": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.ImmutableClassesGiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+          "to": "org.apache.giraph.factories.ValueFactories.initializeIVE(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/conf/ImmutableClassesGiraphConfiguration.java",
+          "line": 129
+        }
+      ],
+      "org.apache.giraph.conf.ClassConfOption.setIfUnset(org.apache.hadoop.conf.Configuration,java.lang.Class)": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.conf.GiraphTypes.writeIfUnset(org.apache.hadoop.conf.Configuration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 187
+        },
+        {
+          "from": "org.apache.giraph.conf.GiraphTypes.writeIfUnset(org.apache.hadoop.conf.Configuration)",
+          "to": "org.apache.giraph.conf.ClassConfOption.setIfUnset(org.apache.hadoop.conf.Configuration,java.lang.Class)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/conf/GiraphTypes.java",
+          "line": 165
+        }
+      ],
+      "org.apache.giraph.conf.GiraphClasses.getGiraphTypes()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.getGiraphTypes()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 187
+        },
+        {
+          "from": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.getGiraphTypes()",
+          "to": "org.apache.giraph.conf.GiraphClasses.getGiraphTypes()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/conf/ImmutableClassesGiraphConfiguration.java",
+          "line": 585
+        }
+      ],
+      "org.apache.giraph.conf.GiraphConfiguration.getLocalLevel()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.initializeAndConfigureLogging()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 189
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.initializeAndConfigureLogging()",
+          "to": "org.apache.giraph.conf.GiraphConfiguration.getLocalLevel()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 609
+        }
+      ],
+      "org.apache.giraph.conf.GiraphConfiguration.useLogThreadLayout()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.initializeAndConfigureLogging()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 189
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.initializeAndConfigureLogging()",
+          "to": "org.apache.giraph.conf.GiraphConfiguration.useLogThreadLayout()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 621
+        }
+      ],
+      "org.apache.giraph.conf.GiraphConfiguration.getLocalTestMode()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.initializeAndConfigureLogging()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 189
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.initializeAndConfigureLogging()",
+          "to": "org.apache.giraph.conf.GiraphConfiguration.getLocalTestMode()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 632
+        }
+      ],
+      "org.apache.giraph.metrics.GiraphMetrics.init(org.apache.giraph.conf.GiraphConfiguration)": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.setupAndInitializeGiraphMetrics()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 191
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setupAndInitializeGiraphMetrics()",
+          "to": "org.apache.giraph.metrics.GiraphMetrics.init(org.apache.giraph.conf.GiraphConfiguration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 347
+        }
+      ],
+      "org.apache.giraph.metrics.GiraphMetrics.addSuperstepResetObserver(org.apache.giraph.metrics.ResetSuperstepMetricsObserver)": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.setupAndInitializeGiraphMetrics()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 191
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setupAndInitializeGiraphMetrics()",
+          "to": "org.apache.giraph.metrics.GiraphMetrics.addSuperstepResetObserver(org.apache.giraph.metrics.ResetSuperstepMetricsObserver)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 348
+        }
+      ],
+      "org.apache.giraph.metrics.GiraphMetrics.get()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.setupAndInitializeGiraphMetrics()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 191
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setupAndInitializeGiraphMetrics()",
+          "to": "org.apache.giraph.metrics.GiraphMetrics.get()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 348
+        }
+      ],
+      "org.apache.giraph.graph.GraphTaskManager.initJobMetrics()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.setupAndInitializeGiraphMetrics()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 191
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setupAndInitializeGiraphMetrics()",
+          "to": "org.apache.giraph.graph.GraphTaskManager.initJobMetrics()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 349
+        }
+      ],
+      "org.apache.giraph.utils.MemoryUtils.initMetrics()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.setupAndInitializeGiraphMetrics()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 191
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setupAndInitializeGiraphMetrics()",
+          "to": "org.apache.giraph.utils.MemoryUtils.initMetrics()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 350
+        }
+      ],
+      "org.apache.giraph.worker.InputSplitsCallable.initMetrics()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.setupAndInitializeGiraphMetrics()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 191
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setupAndInitializeGiraphMetrics()",
+          "to": "org.apache.giraph.worker.InputSplitsCallable.initMetrics()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 351
+        }
+      ],
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.hasEdgeInputFormat()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.checkInput()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 193
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.checkInput()",
+          "to": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.hasEdgeInputFormat()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 166
+        }
+      ],
+      "org.apache.giraph.io.internal.WrappedEdgeInputFormat.checkInputSpecs(org.apache.hadoop.conf.Configuration)": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.checkInput()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 193
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.checkInput()",
+          "to": "org.apache.giraph.io.internal.WrappedEdgeInputFormat.checkInputSpecs(org.apache.hadoop.conf.Configuration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 167
+        }
+      ],
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.createWrappedEdgeInputFormat()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.checkInput()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 193
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.checkInput()",
+          "to": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.createWrappedEdgeInputFormat()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 167
+        }
+      ],
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.hasVertexInputFormat()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.checkInput()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 193
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.checkInput()",
+          "to": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.hasVertexInputFormat()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 169
+        }
+      ],
+      "org.apache.giraph.io.internal.WrappedVertexInputFormat.checkInputSpecs(org.apache.hadoop.conf.Configuration)": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.checkInput()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 193
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.checkInput()",
+          "to": "org.apache.giraph.io.internal.WrappedVertexInputFormat.checkInputSpecs(org.apache.hadoop.conf.Configuration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 170
+        }
+      ],
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.createWrappedVertexInputFormat()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.checkInput()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 193
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.checkInput()",
+          "to": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.createWrappedVertexInputFormat()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 170
+        }
+      ],
+      "org.apache.giraph.scripting.ScriptLoader.getScriptsToLoad(org.apache.hadoop.conf.Configuration)": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.scripting.ScriptLoader.loadScripts(org.apache.hadoop.conf.Configuration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 195
+        },
+        {
+          "from": "org.apache.giraph.scripting.ScriptLoader.loadScripts(org.apache.hadoop.conf.Configuration)",
+          "to": "org.apache.giraph.scripting.ScriptLoader.getScriptsToLoad(org.apache.hadoop.conf.Configuration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/scripting/ScriptLoader.java",
+          "line": 154
+        }
+      ],
+      "org.apache.giraph.scripting.ScriptLoader.loadScript(org.apache.hadoop.conf.Configuration,org.apache.giraph.scripting.DeployedScript)": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.scripting.ScriptLoader.loadScripts(org.apache.hadoop.conf.Configuration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 195
+        },
+        {
+          "from": "org.apache.giraph.scripting.ScriptLoader.loadScripts(org.apache.hadoop.conf.Configuration)",
+          "to": "org.apache.giraph.scripting.ScriptLoader.loadScript(org.apache.hadoop.conf.Configuration,org.apache.giraph.scripting.DeployedScript)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/scripting/ScriptLoader.java",
+          "line": 159
+        }
+      ],
+      "org.apache.giraph.utils.ReflectionUtils.newInstance(java.lang.Class,org.apache.giraph.conf.ImmutableClassesGiraphConfiguration)": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.createComputationFactory()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 197
+        },
+        {
+          "from": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.createComputationFactory()",
+          "to": "org.apache.giraph.utils.ReflectionUtils.newInstance(java.lang.Class,org.apache.giraph.conf.ImmutableClassesGiraphConfiguration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/conf/ImmutableClassesGiraphConfiguration.java",
+          "line": 566
+        }
+      ],
+      "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.getComputationFactoryClass()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.createComputationFactory()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 197
+        },
+        {
+          "from": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.createComputationFactory()",
+          "to": "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.getComputationFactoryClass()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/conf/ImmutableClassesGiraphConfiguration.java",
+          "line": 566
+        }
+      ],
+      "org.apache.giraph.graph.GraphTaskManager.findContainingJar(java.lang.Class)": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.locateZookeeperClasspath(org.apache.hadoop.fs.Path[])",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 200
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.locateZookeeperClasspath(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.findContainingJar(java.lang.Class)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 580
+        }
+      ],
+      "org.apache.giraph.conf.GiraphConfiguration.setZooKeeperJar(java.lang.String)": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.locateZookeeperClasspath(org.apache.hadoop.fs.Path[])",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 200
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.locateZookeeperClasspath(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.conf.GiraphConfiguration.setZooKeeperJar(java.lang.String)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 601
+        }
+      ],
+      "org.apache.giraph.zk.ZooKeeperManager.setup()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 202
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+          "to": "org.apache.giraph.zk.ZooKeeperManager.setup()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 364
+        }
+      ],
+      "org.apache.giraph.zk.ZooKeeperManager.computationDone()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 202
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+          "to": "org.apache.giraph.zk.ZooKeeperManager.computationDone()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 365
+        }
+      ],
+      "org.apache.giraph.zk.ZooKeeperManager.onlineZooKeeperServers()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 202
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+          "to": "org.apache.giraph.zk.ZooKeeperManager.onlineZooKeeperServers()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 369
+        }
+      ],
+      "org.apache.giraph.zk.ZooKeeperManager.getZooKeeperServerPortString()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 202
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+          "to": "org.apache.giraph.zk.ZooKeeperManager.getZooKeeperServerPortString()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 370
+        }
+      ],
+      "org.apache.giraph.conf.GiraphConfiguration.setZookeeperList(java.lang.String)": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 202
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+          "to": "org.apache.giraph.conf.GiraphConfiguration.setZookeeperList(java.lang.String)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 371
+        }
+      ],
+      "org.apache.giraph.conf.GiraphConfiguration.getSplitMasterWorker()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 212
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+          "to": "org.apache.giraph.conf.GiraphConfiguration.getSplitMasterWorker()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 507
+        }
+      ],
+      "org.apache.giraph.conf.GiraphConfiguration.getTaskPartition()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 212
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+          "to": "org.apache.giraph.conf.GiraphConfiguration.getTaskPartition()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 508
+        }
+      ],
+      "org.apache.giraph.conf.GiraphConfiguration.isZookeeperExternal()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 212
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+          "to": "org.apache.giraph.conf.GiraphConfiguration.isZookeeperExternal()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 509
+        }
+      ],
+      "org.apache.giraph.zk.ZooKeeperManager.runsZooKeeper()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 212
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+          "to": "org.apache.giraph.zk.ZooKeeperManager.runsZooKeeper()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 513
+        }
+      ],
+      "org.apache.giraph.conf.GiraphConfiguration.getZooKeeperServerCount()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 212
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+          "to": "org.apache.giraph.conf.GiraphConfiguration.getZooKeeperServerCount()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 520
+        }
+      ],
+      "org.apache.giraph.conf.IntConfOption.get(org.apache.hadoop.conf.Configuration)": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.conf.GiraphConfiguration.getZooKeeperServerCount()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 214
+        },
+        {
+          "from": "org.apache.giraph.conf.GiraphConfiguration.getZooKeeperServerCount()",
+          "to": "org.apache.giraph.conf.IntConfOption.get(org.apache.hadoop.conf.Configuration)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java",
+          "line": 793
+        }
+      ],
+      "org.apache.giraph.graph.GraphFunctions.isMaster()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 220
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+          "to": "org.apache.giraph.graph.GraphFunctions.isMaster()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 544
+        }
+      ],
+      "org.apache.giraph.graph.GraphFunctions.isWorker()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 220
+        },
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+          "to": "org.apache.giraph.graph.GraphFunctions.isWorker()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 554
+        }
+      ],
+      "org.apache.giraph.zk.ZooKeeperManager.createZooKeeperClosedStamp()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.zk.ZooKeeperManager.offlineZooKeeperServers(org.apache.giraph.zk.ZooKeeperManager.State)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 224
+        },
+        {
+          "from": "org.apache.giraph.zk.ZooKeeperManager.offlineZooKeeperServers(org.apache.giraph.zk.ZooKeeperManager.State)",
+          "to": "org.apache.giraph.zk.ZooKeeperManager.createZooKeeperClosedStamp()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/zk/ZooKeeperManager.java",
+          "line": 860
+        }
+      ],
+      "org.apache.giraph.conf.GiraphConfiguration.getMapTasks()": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.zk.ZooKeeperManager.offlineZooKeeperServers(org.apache.giraph.zk.ZooKeeperManager.State)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 224
+        },
+        {
+          "from": "org.apache.giraph.zk.ZooKeeperManager.offlineZooKeeperServers(org.apache.giraph.zk.ZooKeeperManager.State)",
+          "to": "org.apache.giraph.conf.GiraphConfiguration.getMapTasks()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/zk/ZooKeeperManager.java",
+          "line": 864
+        }
+      ],
+      "org.apache.giraph.zk.ZooKeeperManager.waitUntilAllTasksDone(int)": [
+        {
+          "from": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+          "to": "org.apache.giraph.zk.ZooKeeperManager.offlineZooKeeperServers(org.apache.giraph.zk.ZooKeeperManager.State)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+          "line": 224
+        },
+        {
+          "from": "org.apache.giraph.zk.ZooKeeperManager.offlineZooKeeperServers(org.apache.giraph.zk.ZooKeeperManager.State)",
+          "to": "org.apache.giraph.zk.ZooKeeperManager.waitUntilAllTasksDone(int)",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/zk/ZooKeeperManager.java",
+          "line": 865
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 5595,
+      "ma_analysis": 5177,
+      "ma_refinement_fixed": 4970
+    },
+    "two_hop_calls": {
+      "sp": 9300,
+      "ma_analysis": 8882,
+      "ma_refinement_fixed": 8675
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "get",
+        "arity": 1,
+        "arguments": [
+          "this"
+        ],
+        "receiver": "ZOOKEEPER_LIST",
+        "after_line": 731,
+        "expression": "get(this)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.giraph.conf.GiraphConfiguration.getZookeeperList()",
+        "file": "giraph-core/src/main/java/org/apache/giraph/conf/GiraphConfiguration.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "isEmpty",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "serverPortList",
+        "after_line": 202,
+        "expression": "isEmpty()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+        "file": "giraph-core/src/main/java/org/apache/giraph/graph/GraphTaskManager.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [
+    "org.apache.giraph.conf.GiraphConfiguration.setZooKeeperConfiguration(java.lang.String)",
+    "org.apache.giraph.conf.GiraphConfiguration.setZookeeperList(java.lang.String)",
+    "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_LIST",
+    "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,java.lang.String[],java.lang.String[])",
+    "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,org.apache.giraph.utils.TestGraph)"
+  ],
+  "unindexed_targets": [],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 21,
+      "hits": [],
+      "misses": [
+        "org.apache.giraph.conf.GiraphConfiguration.setZooKeeperConfiguration(java.lang.String)",
+        "org.apache.giraph.conf.GiraphConfiguration.setZookeeperList(java.lang.String)",
+        "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_LIST",
+        "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,java.lang.String[],java.lang.String[])",
+        "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,org.apache.giraph.utils.TestGraph)"
+      ],
+      "indexed_misses": [
+        "org.apache.giraph.conf.GiraphConfiguration.setZooKeeperConfiguration(java.lang.String)",
+        "org.apache.giraph.conf.GiraphConfiguration.setZookeeperList(java.lang.String)",
+        "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_LIST",
+        "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,java.lang.String[],java.lang.String[])",
+        "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,org.apache.giraph.utils.TestGraph)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 29,
+      "hits": [
+        "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_LIST"
+      ],
+      "misses": [
+        "org.apache.giraph.conf.GiraphConfiguration.setZooKeeperConfiguration(java.lang.String)",
+        "org.apache.giraph.conf.GiraphConfiguration.setZookeeperList(java.lang.String)",
+        "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,java.lang.String[],java.lang.String[])",
+        "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,org.apache.giraph.utils.TestGraph)"
+      ],
+      "indexed_misses": [
+        "org.apache.giraph.conf.GiraphConfiguration.setZooKeeperConfiguration(java.lang.String)",
+        "org.apache.giraph.conf.GiraphConfiguration.setZookeeperList(java.lang.String)",
+        "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,java.lang.String[],java.lang.String[])",
+        "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,org.apache.giraph.utils.TestGraph)"
+      ],
+      "indexed_recall": 0.2
+    },
+    "multihop": {
+      "candidate_count": 40,
+      "hits": [
+        "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_LIST"
+      ],
+      "misses": [
+        "org.apache.giraph.conf.GiraphConfiguration.setZooKeeperConfiguration(java.lang.String)",
+        "org.apache.giraph.conf.GiraphConfiguration.setZookeeperList(java.lang.String)",
+        "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,java.lang.String[],java.lang.String[])",
+        "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,org.apache.giraph.utils.TestGraph)"
+      ],
+      "indexed_misses": [
+        "org.apache.giraph.conf.GiraphConfiguration.setZooKeeperConfiguration(java.lang.String)",
+        "org.apache.giraph.conf.GiraphConfiguration.setZookeeperList(java.lang.String)",
+        "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,java.lang.String[],java.lang.String[])",
+        "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,org.apache.giraph.utils.TestGraph)"
+      ],
+      "indexed_recall": 0.2
+    },
+    "two_hop_calls": {
+      "candidate_count": 84,
+      "hits": [
+        "org.apache.giraph.conf.GiraphConfiguration.setZookeeperList(java.lang.String)",
+        "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_LIST"
+      ],
+      "misses": [
+        "org.apache.giraph.conf.GiraphConfiguration.setZooKeeperConfiguration(java.lang.String)",
+        "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,java.lang.String[],java.lang.String[])",
+        "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,org.apache.giraph.utils.TestGraph)"
+      ],
+      "indexed_misses": [
+        "org.apache.giraph.conf.GiraphConfiguration.setZooKeeperConfiguration(java.lang.String)",
+        "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,java.lang.String[],java.lang.String[])",
+        "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,org.apache.giraph.utils.TestGraph)"
+      ],
+      "indexed_recall": 0.4
+    },
+    "diff_and_override": {
+      "candidate_count": 84,
+      "hits": [
+        "org.apache.giraph.conf.GiraphConfiguration.setZookeeperList(java.lang.String)",
+        "org.apache.giraph.conf.GiraphConstants.ZOOKEEPER_LIST"
+      ],
+      "misses": [
+        "org.apache.giraph.conf.GiraphConfiguration.setZooKeeperConfiguration(java.lang.String)",
+        "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,java.lang.String[],java.lang.String[])",
+        "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,org.apache.giraph.utils.TestGraph)"
+      ],
+      "indexed_misses": [
+        "org.apache.giraph.conf.GiraphConfiguration.setZooKeeperConfiguration(java.lang.String)",
+        "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,java.lang.String[],java.lang.String[])",
+        "org.apache.giraph.utils.InternalVertexRunner.run(org.apache.giraph.conf.GiraphConfiguration,org.apache.giraph.utils.TestGraph)"
+      ],
+      "indexed_recall": 0.4
+    }
+  }
+}

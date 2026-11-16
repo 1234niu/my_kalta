@@ -1,0 +1,180 @@
+{
+  "id": "constantinople-032",
+  "graph_edges": 5583,
+  "seeds": {
+    "org.apache.gora.solr.store.SolrStore.getDatumReader(java.lang.String,org.apache.avro.Schema)": true,
+    "org.apache.gora.solr.store.SolrStore.getDatumWriter(java.lang.String,org.apache.avro.Schema)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.gora.solr.store.SolrStore.deserializeFieldValue(org.apache.avro.Schema.Field,org.apache.avro.Schema,java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+      "org.apache.gora.solr.store.SolrStore.serializeFieldValue(org.apache.avro.Schema,java.lang.Object)"
+    ],
+    "fields": [
+      "org.apache.gora.solr.store.SolrStore.deserializeFieldValue(org.apache.avro.Schema.Field,org.apache.avro.Schema,java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+      "org.apache.gora.solr.store.SolrStore.readerMap",
+      "org.apache.gora.solr.store.SolrStore.serializeFieldValue(org.apache.avro.Schema,java.lang.Object)",
+      "org.apache.gora.solr.store.SolrStore.writerMap"
+    ],
+    "multihop": [
+      "org.apache.gora.solr.store.SolrStore.deserializeFieldValue(org.apache.avro.Schema.Field,org.apache.avro.Schema,java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+      "org.apache.gora.solr.store.SolrStore.readerMap",
+      "org.apache.gora.solr.store.SolrStore.serializeFieldValue(org.apache.avro.Schema,java.lang.Object)",
+      "org.apache.gora.solr.store.SolrStore.writerMap"
+    ],
+    "two_hop_calls": [
+      "org.apache.gora.solr.store.SolrStore.deserializeFieldValue(org.apache.avro.Schema.Field,org.apache.avro.Schema,java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+      "org.apache.gora.solr.store.SolrStore.readerMap",
+      "org.apache.gora.solr.store.SolrStore.serializeFieldValue(org.apache.avro.Schema,java.lang.Object)",
+      "org.apache.gora.solr.store.SolrStore.writerMap"
+    ],
+    "diff_and_override": [
+      "org.apache.gora.solr.store.SolrStore.deserializeFieldValue(org.apache.avro.Schema.Field,org.apache.avro.Schema,java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+      "org.apache.gora.solr.store.SolrStore.readerMap",
+      "org.apache.gora.solr.store.SolrStore.serializeFieldValue(org.apache.avro.Schema,java.lang.Object)",
+      "org.apache.gora.solr.store.SolrStore.writerMap"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.gora.solr.store.SolrStore.readerMap": {
+        "org.apache.gora.solr.store.SolrStore.readerMap": [
+          {
+            "from": "org.apache.gora.solr.store.SolrStore.getDatumReader(java.lang.String,org.apache.avro.Schema)",
+            "to": "org.apache.gora.solr.store.SolrStore.readerMap",
+            "kind": "READ",
+            "file": "gora-solr/src/main/java/org/apache/gora/solr/store/SolrStore.java",
+            "line": 491
+          }
+        ]
+      },
+      "org.apache.gora.solr.store.SolrStore.writerMap": {
+        "org.apache.gora.solr.store.SolrStore.writerMap": [
+          {
+            "from": "org.apache.gora.solr.store.SolrStore.getDatumWriter(java.lang.String,org.apache.avro.Schema)",
+            "to": "org.apache.gora.solr.store.SolrStore.writerMap",
+            "kind": "READ",
+            "file": "gora-solr/src/main/java/org/apache/gora/solr/store/SolrStore.java",
+            "line": 504
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.gora.solr.store.SolrStore.readerMap": {
+        "org.apache.gora.solr.store.SolrStore.readerMap": [
+          {
+            "from": "org.apache.gora.solr.store.SolrStore.getDatumReader(java.lang.String,org.apache.avro.Schema)",
+            "to": "org.apache.gora.solr.store.SolrStore.readerMap",
+            "kind": "READ",
+            "file": "gora-solr/src/main/java/org/apache/gora/solr/store/SolrStore.java",
+            "line": 491
+          }
+        ]
+      },
+      "org.apache.gora.solr.store.SolrStore.writerMap": {
+        "org.apache.gora.solr.store.SolrStore.writerMap": [
+          {
+            "from": "org.apache.gora.solr.store.SolrStore.getDatumWriter(java.lang.String,org.apache.avro.Schema)",
+            "to": "org.apache.gora.solr.store.SolrStore.writerMap",
+            "kind": "READ",
+            "file": "gora-solr/src/main/java/org/apache/gora/solr/store/SolrStore.java",
+            "line": 504
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {}
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 4160,
+      "ma_analysis": 3742,
+      "ma_refinement_fixed": 3267
+    },
+    "two_hop_calls": {
+      "sp": 4160,
+      "ma_analysis": 3742,
+      "ma_refinement_fixed": 3267
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [
+    "org.apache.gora.solr.store.SolrStore.readerMap",
+    "org.apache.gora.solr.store.SolrStore.serializeFieldValue(org.apache.avro.Schema,java.lang.Object)",
+    "org.apache.gora.solr.store.SolrStore.writerMap"
+  ],
+  "unindexed_targets": [
+    "org.apache.gora.solr.store.SolrStore.deserializeFieldValue(org.apache.avro.Schema.Field,org.apache.avro.Schema,java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 2,
+      "hits": [
+        "org.apache.gora.solr.store.SolrStore.deserializeFieldValue(org.apache.avro.Schema.Field,org.apache.avro.Schema,java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+        "org.apache.gora.solr.store.SolrStore.serializeFieldValue(org.apache.avro.Schema,java.lang.Object)"
+      ],
+      "misses": [
+        "org.apache.gora.solr.store.SolrStore.readerMap",
+        "org.apache.gora.solr.store.SolrStore.writerMap"
+      ],
+      "indexed_misses": [
+        "org.apache.gora.solr.store.SolrStore.readerMap",
+        "org.apache.gora.solr.store.SolrStore.writerMap"
+      ],
+      "indexed_recall": 0.3333333333333333
+    },
+    "fields": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.gora.solr.store.SolrStore.deserializeFieldValue(org.apache.avro.Schema.Field,org.apache.avro.Schema,java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+        "org.apache.gora.solr.store.SolrStore.readerMap",
+        "org.apache.gora.solr.store.SolrStore.serializeFieldValue(org.apache.avro.Schema,java.lang.Object)",
+        "org.apache.gora.solr.store.SolrStore.writerMap"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "multihop": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.gora.solr.store.SolrStore.deserializeFieldValue(org.apache.avro.Schema.Field,org.apache.avro.Schema,java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+        "org.apache.gora.solr.store.SolrStore.readerMap",
+        "org.apache.gora.solr.store.SolrStore.serializeFieldValue(org.apache.avro.Schema,java.lang.Object)",
+        "org.apache.gora.solr.store.SolrStore.writerMap"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.gora.solr.store.SolrStore.deserializeFieldValue(org.apache.avro.Schema.Field,org.apache.avro.Schema,java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+        "org.apache.gora.solr.store.SolrStore.readerMap",
+        "org.apache.gora.solr.store.SolrStore.serializeFieldValue(org.apache.avro.Schema,java.lang.Object)",
+        "org.apache.gora.solr.store.SolrStore.writerMap"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "diff_and_override": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.gora.solr.store.SolrStore.deserializeFieldValue(org.apache.avro.Schema.Field,org.apache.avro.Schema,java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+        "org.apache.gora.solr.store.SolrStore.readerMap",
+        "org.apache.gora.solr.store.SolrStore.serializeFieldValue(org.apache.avro.Schema,java.lang.Object)",
+        "org.apache.gora.solr.store.SolrStore.writerMap"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    }
+  }
+}

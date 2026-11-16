@@ -1,0 +1,2867 @@
+{
+  "id": "constantinople-190",
+  "graph_edges": 1829,
+  "seeds": {
+    "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])": true,
+    "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.codec.binary.Base64.decodeBase64(byte[])",
+      "org.apache.commons.codec.binary.Base64.encodeBase64(byte[],boolean,boolean,int)",
+      "org.apache.commons.codec.binary.BaseNCodec.decode(byte[],int,int)",
+      "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.Object)",
+      "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.String)",
+      "org.apache.commons.codec.binary.BaseNCodec.encode(byte[],int,int)",
+      "org.apache.commons.codec.binary.BaseNCodec.encode(java.lang.Object)",
+      "org.apache.commons.codec.binary.BaseNCodec.encodeAsString(byte[])",
+      "org.apache.commons.codec.binary.BaseNCodec.encodeToString(byte[])",
+      "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+      "org.apache.commons.codec.binary.BaseNCodec.reset()"
+    ],
+    "fields": [
+      "org.apache.commons.codec.binary.Base64.decodeBase64(byte[])",
+      "org.apache.commons.codec.binary.Base64.encodeBase64(byte[],boolean,boolean,int)",
+      "org.apache.commons.codec.binary.BaseNCodec.EOF",
+      "org.apache.commons.codec.binary.BaseNCodec.decode(byte[],int,int)",
+      "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.Object)",
+      "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.String)",
+      "org.apache.commons.codec.binary.BaseNCodec.encode(byte[],int,int)",
+      "org.apache.commons.codec.binary.BaseNCodec.encode(java.lang.Object)",
+      "org.apache.commons.codec.binary.BaseNCodec.encodeAsString(byte[])",
+      "org.apache.commons.codec.binary.BaseNCodec.encodeToString(byte[])",
+      "org.apache.commons.codec.binary.BaseNCodec.pos",
+      "org.apache.commons.codec.binary.BaseNCodec.readPos",
+      "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+      "org.apache.commons.codec.binary.BaseNCodec.reset()",
+      "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()"
+    ],
+    "multihop": [
+      "org.apache.commons.codec.binary.Base64.decodeBase64(byte[])",
+      "org.apache.commons.codec.binary.Base64.encodeBase64(byte[],boolean,boolean,int)",
+      "org.apache.commons.codec.binary.BaseNCodec.DEFAULT_BUFFER_RESIZE_FACTOR",
+      "org.apache.commons.codec.binary.BaseNCodec.EOF",
+      "org.apache.commons.codec.binary.BaseNCodec.buffer",
+      "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+      "org.apache.commons.codec.binary.BaseNCodec.decode(byte[],int,int)",
+      "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.Object)",
+      "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.String)",
+      "org.apache.commons.codec.binary.BaseNCodec.encode(byte[],int,int)",
+      "org.apache.commons.codec.binary.BaseNCodec.encode(java.lang.Object)",
+      "org.apache.commons.codec.binary.BaseNCodec.encodeAsString(byte[])",
+      "org.apache.commons.codec.binary.BaseNCodec.encodeToString(byte[])",
+      "org.apache.commons.codec.binary.BaseNCodec.ensureBufferSize(int)",
+      "org.apache.commons.codec.binary.BaseNCodec.eof",
+      "org.apache.commons.codec.binary.BaseNCodec.modulus",
+      "org.apache.commons.codec.binary.BaseNCodec.pos",
+      "org.apache.commons.codec.binary.BaseNCodec.readPos",
+      "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+      "org.apache.commons.codec.binary.BaseNCodec.reset()",
+      "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.codec.binary.Base64.decodeBase64(byte[])",
+      "org.apache.commons.codec.binary.Base64.encodeBase64(byte[],boolean,boolean,int)",
+      "org.apache.commons.codec.binary.BaseNCodec.DEFAULT_BUFFER_RESIZE_FACTOR",
+      "org.apache.commons.codec.binary.BaseNCodec.EOF",
+      "org.apache.commons.codec.binary.BaseNCodec.available()",
+      "org.apache.commons.codec.binary.BaseNCodec.buffer",
+      "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+      "org.apache.commons.codec.binary.BaseNCodec.decode(byte[],int,int)",
+      "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.Object)",
+      "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.String)",
+      "org.apache.commons.codec.binary.BaseNCodec.encode(byte[],int,int)",
+      "org.apache.commons.codec.binary.BaseNCodec.encode(java.lang.Object)",
+      "org.apache.commons.codec.binary.BaseNCodec.encodeAsString(byte[])",
+      "org.apache.commons.codec.binary.BaseNCodec.encodeToString(byte[])",
+      "org.apache.commons.codec.binary.BaseNCodec.ensureBufferSize(int)",
+      "org.apache.commons.codec.binary.BaseNCodec.eof",
+      "org.apache.commons.codec.binary.BaseNCodec.modulus",
+      "org.apache.commons.codec.binary.BaseNCodec.pos",
+      "org.apache.commons.codec.binary.BaseNCodec.readPos",
+      "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+      "org.apache.commons.codec.binary.BaseNCodec.reset()",
+      "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.codec.binary.Base64.decodeBase64(byte[])",
+      "org.apache.commons.codec.binary.Base64.encodeBase64(byte[],boolean,boolean,int)",
+      "org.apache.commons.codec.binary.BaseNCodec.DEFAULT_BUFFER_RESIZE_FACTOR",
+      "org.apache.commons.codec.binary.BaseNCodec.EOF",
+      "org.apache.commons.codec.binary.BaseNCodec.available()",
+      "org.apache.commons.codec.binary.BaseNCodec.buffer",
+      "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+      "org.apache.commons.codec.binary.BaseNCodec.decode(byte[],int,int)",
+      "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.Object)",
+      "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.String)",
+      "org.apache.commons.codec.binary.BaseNCodec.encode(byte[],int,int)",
+      "org.apache.commons.codec.binary.BaseNCodec.encode(java.lang.Object)",
+      "org.apache.commons.codec.binary.BaseNCodec.encodeAsString(byte[])",
+      "org.apache.commons.codec.binary.BaseNCodec.encodeToString(byte[])",
+      "org.apache.commons.codec.binary.BaseNCodec.ensureBufferSize(int)",
+      "org.apache.commons.codec.binary.BaseNCodec.eof",
+      "org.apache.commons.codec.binary.BaseNCodec.modulus",
+      "org.apache.commons.codec.binary.BaseNCodec.pos",
+      "org.apache.commons.codec.binary.BaseNCodec.readPos",
+      "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+      "org.apache.commons.codec.binary.BaseNCodec.reset()",
+      "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.codec.binary.BaseNCodec.EOF": {
+        "org.apache.commons.codec.binary.BaseNCodec.EOF": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.EOF",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 329
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.BaseNCodec.pos": {
+        "org.apache.commons.codec.binary.BaseNCodec.pos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 330
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()": {
+        "org.apache.commons.codec.binary.BaseNCodec.pos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 330
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 181
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.readPos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 182
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.BaseNCodec.reset()": {
+        "org.apache.commons.codec.binary.BaseNCodec.pos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 330
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 250
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.readPos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 251
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.BaseNCodec.readPos": {
+        "org.apache.commons.codec.binary.BaseNCodec.readPos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)": {
+        "org.apache.commons.codec.binary.BaseNCodec.readPos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 217
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.codec.binary.BaseNCodec.EOF": {
+        "org.apache.commons.codec.binary.BaseNCodec.EOF": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.EOF",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 329
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.pos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 330
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 250
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.EOF",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 329
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.buffer": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 249
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 219
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.EOF",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 223
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.readPos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 217
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.EOF",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 223
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.currentLinePos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 252
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 252
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.EOF",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 329
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.modulus": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.modulus",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 253
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.modulus",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 253
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.EOF",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 329
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.eof": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.eof",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 254
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.eof",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 254
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.EOF",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 329
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.BaseNCodec.pos": {
+        "org.apache.commons.codec.binary.BaseNCodec.pos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 330
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.buffer": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 249
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 219
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 218
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.readPos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 217
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 218
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.currentLinePos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 252
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 252
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 330
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.modulus": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.modulus",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 253
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.modulus",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 253
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 330
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.eof": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.eof",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 254
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.eof",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 254
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 330
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()": {
+        "org.apache.commons.codec.binary.BaseNCodec.pos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 330
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 181
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.buffer": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 249
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 180
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.readPos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 182
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.BaseNCodec.buffer": {
+        "org.apache.commons.codec.binary.BaseNCodec.pos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 330
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 181
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 179
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.buffer": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 249
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.readPos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 182
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 179
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.BaseNCodec.DEFAULT_BUFFER_RESIZE_FACTOR": {
+        "org.apache.commons.codec.binary.BaseNCodec.pos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 330
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 181
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.DEFAULT_BUFFER_RESIZE_FACTOR",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 184
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.buffer": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 249
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 180
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.DEFAULT_BUFFER_RESIZE_FACTOR",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 184
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.readPos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 182
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.DEFAULT_BUFFER_RESIZE_FACTOR",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 184
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.BaseNCodec.ensureBufferSize(int)": {
+        "org.apache.commons.codec.binary.BaseNCodec.pos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 330
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 181
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.ensureBufferSize(int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 197
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.buffer": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 249
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 180
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.ensureBufferSize(int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 197
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.readPos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 182
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.ensureBufferSize(int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 197
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.BaseNCodec.reset()": {
+        "org.apache.commons.codec.binary.BaseNCodec.pos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 330
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 250
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.buffer": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 249
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 249
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.readPos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 251
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.currentLinePos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 252
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 252
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.modulus": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.modulus",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 253
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.modulus",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 253
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.eof": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.eof",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 254
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.eof",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 254
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.Object)": {
+        "org.apache.commons.codec.binary.BaseNCodec.pos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 330
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 250
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.Object)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 297
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.buffer": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 249
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 219
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 331
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.Object)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 297
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.readPos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 217
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 331
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.Object)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 297
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.currentLinePos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 252
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 252
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.Object)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 297
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.modulus": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.modulus",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 253
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.modulus",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 253
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.Object)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 297
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.eof": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.eof",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 254
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.eof",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 254
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.Object)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 297
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.String)": {
+        "org.apache.commons.codec.binary.BaseNCodec.pos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 330
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 250
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.String)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 313
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.buffer": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 249
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 219
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 331
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.String)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 313
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.readPos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 217
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 331
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.String)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 313
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.currentLinePos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 252
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 252
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.String)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 313
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.modulus": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.modulus",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 253
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.modulus",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 253
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.String)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 313
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.eof": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.eof",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 254
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.eof",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 254
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(java.lang.String)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 313
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.BaseNCodec.readPos": {
+        "org.apache.commons.codec.binary.BaseNCodec.pos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 330
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 250
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 343
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.buffer": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 249
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 219
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 216
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.readPos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.currentLinePos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 252
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 252
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 343
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.modulus": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.modulus",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 253
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.modulus",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 253
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 343
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.eof": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.eof",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 254
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.eof",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 254
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 343
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.BaseNCodec.encode(java.lang.Object)": {
+        "org.apache.commons.codec.binary.BaseNCodec.pos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 330
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 250
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 343
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(java.lang.Object)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 271
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.buffer": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 249
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 219
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 350
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(java.lang.Object)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 271
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.readPos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 217
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 350
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(java.lang.Object)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 271
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.currentLinePos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 252
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 252
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 343
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(java.lang.Object)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 271
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.modulus": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.modulus",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 253
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.modulus",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 253
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 343
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(java.lang.Object)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 271
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.eof": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.eof",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 254
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.eof",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 254
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 343
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(java.lang.Object)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 271
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.BaseNCodec.encodeToString(byte[])": {
+        "org.apache.commons.codec.binary.BaseNCodec.pos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 330
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 250
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 343
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encodeToString(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 282
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.buffer": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 249
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 219
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 350
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encodeToString(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 282
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.readPos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 217
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 350
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encodeToString(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 282
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.currentLinePos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 252
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 252
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 343
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encodeToString(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 282
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.modulus": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.modulus",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 253
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.modulus",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 253
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 343
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encodeToString(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 282
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.eof": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.eof",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 254
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.eof",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 254
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 343
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encodeToString(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 282
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.BaseNCodec.encodeAsString(byte[])": {
+        "org.apache.commons.codec.binary.BaseNCodec.pos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 330
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.pos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 250
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 343
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encodeAsString(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 362
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.buffer": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 249
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 219
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 350
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encodeAsString(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 362
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.readPos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 217
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 350
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encodeAsString(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 362
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.currentLinePos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 252
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 252
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 343
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encodeAsString(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 362
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.modulus": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.modulus",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 253
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.modulus",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 253
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 343
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encodeAsString(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 362
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.eof": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.eof",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 254
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.eof",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 254
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 343
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encodeAsString(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 362
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)": {
+        "org.apache.commons.codec.binary.BaseNCodec.buffer": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 249
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 219
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.readPos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 217
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.BaseNCodec.eof": {
+        "org.apache.commons.codec.binary.BaseNCodec.buffer": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 249
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.buffer",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 219
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.eof",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 223
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.readPos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 349
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.readPos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 217
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.eof",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 223
+          }
+        ],
+        "org.apache.commons.codec.binary.BaseNCodec.eof": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.eof",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 254
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.BaseNCodec.currentLinePos": {
+        "org.apache.commons.codec.binary.BaseNCodec.currentLinePos": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 252
+          }
+        ]
+      },
+      "org.apache.commons.codec.binary.BaseNCodec.modulus": {
+        "org.apache.commons.codec.binary.BaseNCodec.modulus": [
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 324
+          },
+          {
+            "from": "org.apache.commons.codec.binary.BaseNCodec.reset()",
+            "to": "org.apache.commons.codec.binary.BaseNCodec.modulus",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+            "line": 253
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.commons.codec.binary.BaseNCodec.available()": [
+        {
+          "from": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+          "to": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+          "line": 331
+        },
+        {
+          "from": "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+          "to": "org.apache.commons.codec.binary.BaseNCodec.available()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+          "line": 215
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 6001,
+      "ma_analysis": 5583,
+      "ma_refinement_fixed": 4203
+    },
+    "two_hop_calls": {
+      "sp": 6059,
+      "ma_analysis": 5641,
+      "ma_refinement_fixed": 4261
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "decode",
+        "arity": 4,
+        "arguments": [
+          "pArray",
+          "0",
+          "pArray.length",
+          "context"
+        ],
+        "receiver": null,
+        "after_line": 347,
+        "expression": "decode(pArray, 0, pArray.length, context)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+        "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "decode",
+        "arity": 4,
+        "arguments": [
+          "pArray",
+          "0",
+          "EOF",
+          "context"
+        ],
+        "receiver": null,
+        "after_line": 348,
+        "expression": "decode(pArray, 0, EOF, context)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+        "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "readResults",
+        "arity": 4,
+        "arguments": [
+          "result",
+          "0",
+          "result.length",
+          "context"
+        ],
+        "receiver": null,
+        "after_line": 350,
+        "expression": "readResults(result, 0, result.length, context)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.codec.binary.BaseNCodec.decode(byte[])",
+        "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "encode",
+        "arity": 4,
+        "arguments": [
+          "pArray",
+          "0",
+          "pArray.length",
+          "context"
+        ],
+        "receiver": null,
+        "after_line": 366,
+        "expression": "encode(pArray, 0, pArray.length, context)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+        "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "encode",
+        "arity": 4,
+        "arguments": [
+          "pArray",
+          "0",
+          "EOF",
+          "context"
+        ],
+        "receiver": null,
+        "after_line": 367,
+        "expression": "encode(pArray, 0, EOF, context)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+        "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "readResults",
+        "arity": 4,
+        "arguments": [
+          "buf",
+          "0",
+          "buf.length",
+          "context"
+        ],
+        "receiver": null,
+        "after_line": 369,
+        "expression": "readResults(buf, 0, buf.length, context)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.codec.binary.BaseNCodec.encode(byte[])",
+        "file": "src/main/java/org/apache/commons/codec/binary/BaseNCodec.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [
+    "org.apache.commons.codec.binary.Base32.bitWorkArea",
+    "org.apache.commons.codec.binary.Base32.decode(byte[],int,int)",
+    "org.apache.commons.codec.binary.Base32.encode(byte[],int,int)",
+    "org.apache.commons.codec.binary.Base64.bitWorkArea",
+    "org.apache.commons.codec.binary.Base64.decode(byte[],int,int)",
+    "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+    "org.apache.commons.codec.binary.BaseNCodec.available()",
+    "org.apache.commons.codec.binary.BaseNCodec.buffer",
+    "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+    "org.apache.commons.codec.binary.BaseNCodec.decode(byte[],int,int)",
+    "org.apache.commons.codec.binary.BaseNCodec.encode(byte[],int,int)",
+    "org.apache.commons.codec.binary.BaseNCodec.ensureBufferSize(int)",
+    "org.apache.commons.codec.binary.BaseNCodec.eof",
+    "org.apache.commons.codec.binary.BaseNCodec.hasData()",
+    "org.apache.commons.codec.binary.BaseNCodec.modulus",
+    "org.apache.commons.codec.binary.BaseNCodec.pos",
+    "org.apache.commons.codec.binary.BaseNCodec.readPos",
+    "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+    "org.apache.commons.codec.binary.BaseNCodec.reset()",
+    "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+    "org.apache.commons.codec.binary.BaseNCodecInputStream.available()",
+    "org.apache.commons.codec.binary.BaseNCodecInputStream.read(byte[],int,int)",
+    "org.apache.commons.codec.binary.BaseNCodecOutputStream.close()",
+    "org.apache.commons.codec.binary.BaseNCodecOutputStream.flush(boolean)",
+    "org.apache.commons.codec.binary.BaseNCodecOutputStream.write(byte[],int,int)"
+  ],
+  "unindexed_targets": [
+    "org.apache.commons.codec.binary.BaseNCodec.Context",
+    "org.apache.commons.codec.binary.BaseNCodec.Context.Context()",
+    "org.apache.commons.codec.binary.BaseNCodec.Context.ibitWorkArea",
+    "org.apache.commons.codec.binary.BaseNCodec.Context.lbitWorkArea",
+    "org.apache.commons.codec.binary.BaseNCodecInputStream.context",
+    "org.apache.commons.codec.binary.BaseNCodecOutputStream.context"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 11,
+      "hits": [
+        "org.apache.commons.codec.binary.BaseNCodec.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.reset()"
+      ],
+      "misses": [
+        "org.apache.commons.codec.binary.Base32.bitWorkArea",
+        "org.apache.commons.codec.binary.Base32.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base32.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.bitWorkArea",
+        "org.apache.commons.codec.binary.Base64.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.Context",
+        "org.apache.commons.codec.binary.BaseNCodec.Context.Context()",
+        "org.apache.commons.codec.binary.BaseNCodec.Context.ibitWorkArea",
+        "org.apache.commons.codec.binary.BaseNCodec.Context.lbitWorkArea",
+        "org.apache.commons.codec.binary.BaseNCodec.available()",
+        "org.apache.commons.codec.binary.BaseNCodec.buffer",
+        "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+        "org.apache.commons.codec.binary.BaseNCodec.ensureBufferSize(int)",
+        "org.apache.commons.codec.binary.BaseNCodec.eof",
+        "org.apache.commons.codec.binary.BaseNCodec.hasData()",
+        "org.apache.commons.codec.binary.BaseNCodec.modulus",
+        "org.apache.commons.codec.binary.BaseNCodec.pos",
+        "org.apache.commons.codec.binary.BaseNCodec.readPos",
+        "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.available()",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.context",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.read(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.close()",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.context",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.flush(boolean)",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.write(byte[],int,int)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.codec.binary.Base32.bitWorkArea",
+        "org.apache.commons.codec.binary.Base32.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base32.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.bitWorkArea",
+        "org.apache.commons.codec.binary.Base64.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.available()",
+        "org.apache.commons.codec.binary.BaseNCodec.buffer",
+        "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+        "org.apache.commons.codec.binary.BaseNCodec.ensureBufferSize(int)",
+        "org.apache.commons.codec.binary.BaseNCodec.eof",
+        "org.apache.commons.codec.binary.BaseNCodec.hasData()",
+        "org.apache.commons.codec.binary.BaseNCodec.modulus",
+        "org.apache.commons.codec.binary.BaseNCodec.pos",
+        "org.apache.commons.codec.binary.BaseNCodec.readPos",
+        "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.available()",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.read(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.close()",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.flush(boolean)",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.write(byte[],int,int)"
+      ],
+      "indexed_recall": 0.16
+    },
+    "fields": {
+      "candidate_count": 15,
+      "hits": [
+        "org.apache.commons.codec.binary.BaseNCodec.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.pos",
+        "org.apache.commons.codec.binary.BaseNCodec.readPos",
+        "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.reset()",
+        "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()"
+      ],
+      "misses": [
+        "org.apache.commons.codec.binary.Base32.bitWorkArea",
+        "org.apache.commons.codec.binary.Base32.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base32.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.bitWorkArea",
+        "org.apache.commons.codec.binary.Base64.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.Context",
+        "org.apache.commons.codec.binary.BaseNCodec.Context.Context()",
+        "org.apache.commons.codec.binary.BaseNCodec.Context.ibitWorkArea",
+        "org.apache.commons.codec.binary.BaseNCodec.Context.lbitWorkArea",
+        "org.apache.commons.codec.binary.BaseNCodec.available()",
+        "org.apache.commons.codec.binary.BaseNCodec.buffer",
+        "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+        "org.apache.commons.codec.binary.BaseNCodec.ensureBufferSize(int)",
+        "org.apache.commons.codec.binary.BaseNCodec.eof",
+        "org.apache.commons.codec.binary.BaseNCodec.hasData()",
+        "org.apache.commons.codec.binary.BaseNCodec.modulus",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.available()",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.context",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.read(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.close()",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.context",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.flush(boolean)",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.write(byte[],int,int)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.codec.binary.Base32.bitWorkArea",
+        "org.apache.commons.codec.binary.Base32.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base32.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.bitWorkArea",
+        "org.apache.commons.codec.binary.Base64.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.available()",
+        "org.apache.commons.codec.binary.BaseNCodec.buffer",
+        "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+        "org.apache.commons.codec.binary.BaseNCodec.ensureBufferSize(int)",
+        "org.apache.commons.codec.binary.BaseNCodec.eof",
+        "org.apache.commons.codec.binary.BaseNCodec.hasData()",
+        "org.apache.commons.codec.binary.BaseNCodec.modulus",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.available()",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.read(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.close()",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.flush(boolean)",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.write(byte[],int,int)"
+      ],
+      "indexed_recall": 0.28
+    },
+    "multihop": {
+      "candidate_count": 21,
+      "hits": [
+        "org.apache.commons.codec.binary.BaseNCodec.buffer",
+        "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+        "org.apache.commons.codec.binary.BaseNCodec.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.ensureBufferSize(int)",
+        "org.apache.commons.codec.binary.BaseNCodec.eof",
+        "org.apache.commons.codec.binary.BaseNCodec.modulus",
+        "org.apache.commons.codec.binary.BaseNCodec.pos",
+        "org.apache.commons.codec.binary.BaseNCodec.readPos",
+        "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.reset()",
+        "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()"
+      ],
+      "misses": [
+        "org.apache.commons.codec.binary.Base32.bitWorkArea",
+        "org.apache.commons.codec.binary.Base32.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base32.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.bitWorkArea",
+        "org.apache.commons.codec.binary.Base64.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.Context",
+        "org.apache.commons.codec.binary.BaseNCodec.Context.Context()",
+        "org.apache.commons.codec.binary.BaseNCodec.Context.ibitWorkArea",
+        "org.apache.commons.codec.binary.BaseNCodec.Context.lbitWorkArea",
+        "org.apache.commons.codec.binary.BaseNCodec.available()",
+        "org.apache.commons.codec.binary.BaseNCodec.hasData()",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.available()",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.context",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.read(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.close()",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.context",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.flush(boolean)",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.write(byte[],int,int)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.codec.binary.Base32.bitWorkArea",
+        "org.apache.commons.codec.binary.Base32.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base32.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.bitWorkArea",
+        "org.apache.commons.codec.binary.Base64.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.available()",
+        "org.apache.commons.codec.binary.BaseNCodec.hasData()",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.available()",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.read(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.close()",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.flush(boolean)",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.write(byte[],int,int)"
+      ],
+      "indexed_recall": 0.48
+    },
+    "two_hop_calls": {
+      "candidate_count": 22,
+      "hits": [
+        "org.apache.commons.codec.binary.BaseNCodec.available()",
+        "org.apache.commons.codec.binary.BaseNCodec.buffer",
+        "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+        "org.apache.commons.codec.binary.BaseNCodec.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.ensureBufferSize(int)",
+        "org.apache.commons.codec.binary.BaseNCodec.eof",
+        "org.apache.commons.codec.binary.BaseNCodec.modulus",
+        "org.apache.commons.codec.binary.BaseNCodec.pos",
+        "org.apache.commons.codec.binary.BaseNCodec.readPos",
+        "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.reset()",
+        "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()"
+      ],
+      "misses": [
+        "org.apache.commons.codec.binary.Base32.bitWorkArea",
+        "org.apache.commons.codec.binary.Base32.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base32.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.bitWorkArea",
+        "org.apache.commons.codec.binary.Base64.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.Context",
+        "org.apache.commons.codec.binary.BaseNCodec.Context.Context()",
+        "org.apache.commons.codec.binary.BaseNCodec.Context.ibitWorkArea",
+        "org.apache.commons.codec.binary.BaseNCodec.Context.lbitWorkArea",
+        "org.apache.commons.codec.binary.BaseNCodec.hasData()",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.available()",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.context",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.read(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.close()",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.context",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.flush(boolean)",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.write(byte[],int,int)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.codec.binary.Base32.bitWorkArea",
+        "org.apache.commons.codec.binary.Base32.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base32.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.bitWorkArea",
+        "org.apache.commons.codec.binary.Base64.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.hasData()",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.available()",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.read(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.close()",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.flush(boolean)",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.write(byte[],int,int)"
+      ],
+      "indexed_recall": 0.52
+    },
+    "diff_and_override": {
+      "candidate_count": 22,
+      "hits": [
+        "org.apache.commons.codec.binary.BaseNCodec.available()",
+        "org.apache.commons.codec.binary.BaseNCodec.buffer",
+        "org.apache.commons.codec.binary.BaseNCodec.currentLinePos",
+        "org.apache.commons.codec.binary.BaseNCodec.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.ensureBufferSize(int)",
+        "org.apache.commons.codec.binary.BaseNCodec.eof",
+        "org.apache.commons.codec.binary.BaseNCodec.modulus",
+        "org.apache.commons.codec.binary.BaseNCodec.pos",
+        "org.apache.commons.codec.binary.BaseNCodec.readPos",
+        "org.apache.commons.codec.binary.BaseNCodec.readResults(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.reset()",
+        "org.apache.commons.codec.binary.BaseNCodec.resizeBuffer()"
+      ],
+      "misses": [
+        "org.apache.commons.codec.binary.Base32.bitWorkArea",
+        "org.apache.commons.codec.binary.Base32.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base32.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.bitWorkArea",
+        "org.apache.commons.codec.binary.Base64.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.Context",
+        "org.apache.commons.codec.binary.BaseNCodec.Context.Context()",
+        "org.apache.commons.codec.binary.BaseNCodec.Context.ibitWorkArea",
+        "org.apache.commons.codec.binary.BaseNCodec.Context.lbitWorkArea",
+        "org.apache.commons.codec.binary.BaseNCodec.hasData()",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.available()",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.context",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.read(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.close()",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.context",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.flush(boolean)",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.write(byte[],int,int)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.codec.binary.Base32.bitWorkArea",
+        "org.apache.commons.codec.binary.Base32.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base32.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.bitWorkArea",
+        "org.apache.commons.codec.binary.Base64.decode(byte[],int,int)",
+        "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodec.hasData()",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.available()",
+        "org.apache.commons.codec.binary.BaseNCodecInputStream.read(byte[],int,int)",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.close()",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.flush(boolean)",
+        "org.apache.commons.codec.binary.BaseNCodecOutputStream.write(byte[],int,int)"
+      ],
+      "indexed_recall": 0.52
+    }
+  }
+}

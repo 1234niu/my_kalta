@@ -1,0 +1,541 @@
+{
+  "id": "constantinople-053",
+  "graph_edges": 3420,
+  "seeds": {
+    "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.semantics.Step,java.util.Set)": true,
+    "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.recordHistory(org.apache.commons.scxml2.semantics.Step,java.util.Set,java.util.Set)": false
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.buildStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step)",
+      "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.model.SimpleTransition,java.util.Set,java.util.Set)",
+      "org.apache.commons.scxml2.semantics.Step.getExitSet()",
+      "org.apache.commons.scxml2.semantics.Step.getTransitList()"
+    ],
+    "fields": [
+      "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.buildStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step)",
+      "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.model.SimpleTransition,java.util.Set,java.util.Set)",
+      "org.apache.commons.scxml2.semantics.Step.getExitSet()",
+      "org.apache.commons.scxml2.semantics.Step.getTransitList()"
+    ],
+    "multihop": [
+      "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.buildStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step)",
+      "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.model.SimpleTransition,java.util.Set,java.util.Set)",
+      "org.apache.commons.scxml2.semantics.Step.getExitSet()",
+      "org.apache.commons.scxml2.semantics.Step.getTransitList()"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.scxml2.model.SimpleTransition.getTargets()",
+      "org.apache.commons.scxml2.model.SimpleTransition.getTransitionDomain()",
+      "org.apache.commons.scxml2.model.TransitionTarget.isDescendantOf(org.apache.commons.scxml2.model.TransitionTarget)",
+      "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.buildStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step)",
+      "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.model.SimpleTransition,java.util.Set,java.util.Set)",
+      "org.apache.commons.scxml2.semantics.Step.getExitSet()",
+      "org.apache.commons.scxml2.semantics.Step.getTransitList()"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.scxml2.model.SimpleTransition.getTargets()",
+      "org.apache.commons.scxml2.model.SimpleTransition.getTransitionDomain()",
+      "org.apache.commons.scxml2.model.TransitionTarget.isDescendantOf(org.apache.commons.scxml2.model.TransitionTarget)",
+      "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.buildStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step)",
+      "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.model.SimpleTransition,java.util.Set,java.util.Set)",
+      "org.apache.commons.scxml2.semantics.Step.getExitSet()",
+      "org.apache.commons.scxml2.semantics.Step.getTransitList()"
+    ]
+  },
+  "evidence": {
+    "fields": {},
+    "multihop": {},
+    "two_hop_calls": {
+      "org.apache.commons.scxml2.model.SimpleTransition.getTargets()": [
+        {
+          "from": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+          "to": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.model.SimpleTransition,java.util.Set,java.util.Set)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+          "line": 346
+        },
+        {
+          "from": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.model.SimpleTransition,java.util.Set,java.util.Set)",
+          "to": "org.apache.commons.scxml2.model.SimpleTransition.getTargets()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+          "line": 360
+        }
+      ],
+      "org.apache.commons.scxml2.model.SimpleTransition.getTransitionDomain()": [
+        {
+          "from": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+          "to": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.model.SimpleTransition,java.util.Set,java.util.Set)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+          "line": 346
+        },
+        {
+          "from": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.model.SimpleTransition,java.util.Set,java.util.Set)",
+          "to": "org.apache.commons.scxml2.model.SimpleTransition.getTransitionDomain()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+          "line": 361
+        }
+      ],
+      "org.apache.commons.scxml2.model.TransitionTarget.isDescendantOf(org.apache.commons.scxml2.model.TransitionTarget)": [
+        {
+          "from": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+          "to": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.model.SimpleTransition,java.util.Set,java.util.Set)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+          "line": 346
+        },
+        {
+          "from": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.model.SimpleTransition,java.util.Set,java.util.Set)",
+          "to": "org.apache.commons.scxml2.model.TransitionTarget.isDescendantOf(org.apache.commons.scxml2.model.TransitionTarget)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+          "line": 368
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 5955,
+      "ma_analysis": 5537,
+      "ma_refinement_fixed": 3941
+    },
+    "two_hop_calls": {
+      "sp": 6211,
+      "ma_analysis": 5793,
+      "ma_refinement_fixed": 4197
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "isEmpty",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "currentStatus.getStates()",
+        "after_line": 343,
+        "expression": "isEmpty()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getStates",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "currentStatus",
+        "after_line": 343,
+        "expression": "getStates()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getAllStates",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "currentStatus",
+        "after_line": 344,
+        "expression": "getAllStates()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "recordHistory",
+        "arity": 3,
+        "arguments": [
+          "step",
+          "currentStatus.getStates()",
+          "configuration"
+        ],
+        "receiver": null,
+        "after_line": 348,
+        "expression": "recordHistory(step, currentStatus.getStates(), configuration)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getStates",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "currentStatus",
+        "after_line": 348,
+        "expression": "getStates()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getExitSet",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "step",
+        "after_line": 394,
+        "expression": "getExitSet()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.recordHistory(org.apache.commons.scxml2.semantics.Step,java.util.Set,java.util.Set)",
+        "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "hasHistory",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "((TransitionalState)es)",
+        "after_line": 395,
+        "expression": "hasHistory()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.recordHistory(org.apache.commons.scxml2.semantics.Step,java.util.Set,java.util.Set)",
+        "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getHistory",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "ts",
+        "after_line": 399,
+        "expression": "getHistory()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.recordHistory(org.apache.commons.scxml2.semantics.Step,java.util.Set,java.util.Set)",
+        "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "isDeep",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "h",
+        "after_line": 400,
+        "expression": "isDeep()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.recordHistory(org.apache.commons.scxml2.semantics.Step,java.util.Set,java.util.Set)",
+        "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "isDescendantOf",
+        "arity": 1,
+        "arguments": [
+          "es"
+        ],
+        "receiver": "ott",
+        "after_line": 405,
+        "expression": "isDescendantOf(es)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.recordHistory(org.apache.commons.scxml2.semantics.Step,java.util.Set,java.util.Set)",
+        "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "add",
+        "arity": 1,
+        "arguments": [
+          "ott"
+        ],
+        "receiver": "deep",
+        "after_line": 406,
+        "expression": "add(ott)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.recordHistory(org.apache.commons.scxml2.semantics.Step,java.util.Set,java.util.Set)",
+        "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "put",
+        "arity": 2,
+        "arguments": [
+          "h",
+          "deep"
+        ],
+        "receiver": "step.getNewHistoryConfigurations()",
+        "after_line": 410,
+        "expression": "put(h, deep)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.recordHistory(org.apache.commons.scxml2.semantics.Step,java.util.Set,java.util.Set)",
+        "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getNewHistoryConfigurations",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "step",
+        "after_line": 410,
+        "expression": "getNewHistoryConfigurations()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.recordHistory(org.apache.commons.scxml2.semantics.Step,java.util.Set,java.util.Set)",
+        "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getChildren",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "ts",
+        "after_line": 414,
+        "expression": "getChildren()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.recordHistory(org.apache.commons.scxml2.semantics.Step,java.util.Set,java.util.Set)",
+        "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "retainAll",
+        "arity": 1,
+        "arguments": [
+          "allStates"
+        ],
+        "receiver": "shallow",
+        "after_line": 415,
+        "expression": "retainAll(allStates)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.recordHistory(org.apache.commons.scxml2.semantics.Step,java.util.Set,java.util.Set)",
+        "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "put",
+        "arity": 2,
+        "arguments": [
+          "h",
+          "shallow"
+        ],
+        "receiver": "step.getNewHistoryConfigurations()",
+        "after_line": 417,
+        "expression": "put(h, shallow)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.recordHistory(org.apache.commons.scxml2.semantics.Step,java.util.Set,java.util.Set)",
+        "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getNewHistoryConfigurations",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "step",
+        "after_line": 417,
+        "expression": "getNewHistoryConfigurations()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.recordHistory(org.apache.commons.scxml2.semantics.Step,java.util.Set,java.util.Set)",
+        "file": "src/main/java/org/apache/commons/scxml2/semantics/SCXMLSemanticsImpl.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [
+    "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.addDescendantStatesToEnter(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,org.apache.commons.scxml2.model.TransitionTarget)",
+    "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.buildStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step)",
+    "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.enterStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+    "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.exitStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+    "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.microStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+    "org.apache.commons.scxml2.semantics.Step.Step(org.apache.commons.scxml2.TriggerEvent)",
+    "org.apache.commons.scxml2.semantics.Step.defaultHistoryTransitionEntryMap",
+    "org.apache.commons.scxml2.semantics.Step.getDefaultHistoryTransitionEntryMap()"
+  ],
+  "unindexed_targets": [
+    "org.apache.commons.scxml2.semantics.Step.clearIntermediateState()",
+    "org.apache.commons.scxml2.semantics.Step.defaultHistoryTransitions",
+    "org.apache.commons.scxml2.semantics.Step.getDefaultHistoryTransitions()",
+    "org.apache.commons.scxml2.semantics.Step.getNewHistoryConfigurations()",
+    "org.apache.commons.scxml2.semantics.Step.newHistoryConfigurations"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.buildStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step)"
+      ],
+      "misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.addDescendantStatesToEnter(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,org.apache.commons.scxml2.model.TransitionTarget)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.enterStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.exitStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.microStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.Step.Step(org.apache.commons.scxml2.TriggerEvent)",
+        "org.apache.commons.scxml2.semantics.Step.clearIntermediateState()",
+        "org.apache.commons.scxml2.semantics.Step.defaultHistoryTransitionEntryMap",
+        "org.apache.commons.scxml2.semantics.Step.defaultHistoryTransitions",
+        "org.apache.commons.scxml2.semantics.Step.getDefaultHistoryTransitionEntryMap()",
+        "org.apache.commons.scxml2.semantics.Step.getDefaultHistoryTransitions()",
+        "org.apache.commons.scxml2.semantics.Step.getNewHistoryConfigurations()",
+        "org.apache.commons.scxml2.semantics.Step.newHistoryConfigurations"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.addDescendantStatesToEnter(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,org.apache.commons.scxml2.model.TransitionTarget)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.enterStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.exitStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.microStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.Step.Step(org.apache.commons.scxml2.TriggerEvent)",
+        "org.apache.commons.scxml2.semantics.Step.defaultHistoryTransitionEntryMap",
+        "org.apache.commons.scxml2.semantics.Step.getDefaultHistoryTransitionEntryMap()"
+      ],
+      "indexed_recall": 0.125
+    },
+    "fields": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.buildStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step)"
+      ],
+      "misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.addDescendantStatesToEnter(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,org.apache.commons.scxml2.model.TransitionTarget)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.enterStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.exitStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.microStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.Step.Step(org.apache.commons.scxml2.TriggerEvent)",
+        "org.apache.commons.scxml2.semantics.Step.clearIntermediateState()",
+        "org.apache.commons.scxml2.semantics.Step.defaultHistoryTransitionEntryMap",
+        "org.apache.commons.scxml2.semantics.Step.defaultHistoryTransitions",
+        "org.apache.commons.scxml2.semantics.Step.getDefaultHistoryTransitionEntryMap()",
+        "org.apache.commons.scxml2.semantics.Step.getDefaultHistoryTransitions()",
+        "org.apache.commons.scxml2.semantics.Step.getNewHistoryConfigurations()",
+        "org.apache.commons.scxml2.semantics.Step.newHistoryConfigurations"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.addDescendantStatesToEnter(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,org.apache.commons.scxml2.model.TransitionTarget)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.enterStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.exitStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.microStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.Step.Step(org.apache.commons.scxml2.TriggerEvent)",
+        "org.apache.commons.scxml2.semantics.Step.defaultHistoryTransitionEntryMap",
+        "org.apache.commons.scxml2.semantics.Step.getDefaultHistoryTransitionEntryMap()"
+      ],
+      "indexed_recall": 0.125
+    },
+    "multihop": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.buildStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step)"
+      ],
+      "misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.addDescendantStatesToEnter(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,org.apache.commons.scxml2.model.TransitionTarget)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.enterStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.exitStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.microStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.Step.Step(org.apache.commons.scxml2.TriggerEvent)",
+        "org.apache.commons.scxml2.semantics.Step.clearIntermediateState()",
+        "org.apache.commons.scxml2.semantics.Step.defaultHistoryTransitionEntryMap",
+        "org.apache.commons.scxml2.semantics.Step.defaultHistoryTransitions",
+        "org.apache.commons.scxml2.semantics.Step.getDefaultHistoryTransitionEntryMap()",
+        "org.apache.commons.scxml2.semantics.Step.getDefaultHistoryTransitions()",
+        "org.apache.commons.scxml2.semantics.Step.getNewHistoryConfigurations()",
+        "org.apache.commons.scxml2.semantics.Step.newHistoryConfigurations"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.addDescendantStatesToEnter(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,org.apache.commons.scxml2.model.TransitionTarget)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.enterStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.exitStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.microStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.Step.Step(org.apache.commons.scxml2.TriggerEvent)",
+        "org.apache.commons.scxml2.semantics.Step.defaultHistoryTransitionEntryMap",
+        "org.apache.commons.scxml2.semantics.Step.getDefaultHistoryTransitionEntryMap()"
+      ],
+      "indexed_recall": 0.125
+    },
+    "two_hop_calls": {
+      "candidate_count": 7,
+      "hits": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.buildStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step)"
+      ],
+      "misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.addDescendantStatesToEnter(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,org.apache.commons.scxml2.model.TransitionTarget)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.enterStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.exitStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.microStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.Step.Step(org.apache.commons.scxml2.TriggerEvent)",
+        "org.apache.commons.scxml2.semantics.Step.clearIntermediateState()",
+        "org.apache.commons.scxml2.semantics.Step.defaultHistoryTransitionEntryMap",
+        "org.apache.commons.scxml2.semantics.Step.defaultHistoryTransitions",
+        "org.apache.commons.scxml2.semantics.Step.getDefaultHistoryTransitionEntryMap()",
+        "org.apache.commons.scxml2.semantics.Step.getDefaultHistoryTransitions()",
+        "org.apache.commons.scxml2.semantics.Step.getNewHistoryConfigurations()",
+        "org.apache.commons.scxml2.semantics.Step.newHistoryConfigurations"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.addDescendantStatesToEnter(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,org.apache.commons.scxml2.model.TransitionTarget)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.enterStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.exitStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.microStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.Step.Step(org.apache.commons.scxml2.TriggerEvent)",
+        "org.apache.commons.scxml2.semantics.Step.defaultHistoryTransitionEntryMap",
+        "org.apache.commons.scxml2.semantics.Step.getDefaultHistoryTransitionEntryMap()"
+      ],
+      "indexed_recall": 0.125
+    },
+    "diff_and_override": {
+      "candidate_count": 7,
+      "hits": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.buildStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step)"
+      ],
+      "misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.addDescendantStatesToEnter(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,org.apache.commons.scxml2.model.TransitionTarget)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.enterStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.exitStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.microStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.Step.Step(org.apache.commons.scxml2.TriggerEvent)",
+        "org.apache.commons.scxml2.semantics.Step.clearIntermediateState()",
+        "org.apache.commons.scxml2.semantics.Step.defaultHistoryTransitionEntryMap",
+        "org.apache.commons.scxml2.semantics.Step.defaultHistoryTransitions",
+        "org.apache.commons.scxml2.semantics.Step.getDefaultHistoryTransitionEntryMap()",
+        "org.apache.commons.scxml2.semantics.Step.getDefaultHistoryTransitions()",
+        "org.apache.commons.scxml2.semantics.Step.getNewHistoryConfigurations()",
+        "org.apache.commons.scxml2.semantics.Step.newHistoryConfigurations"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.addDescendantStatesToEnter(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,org.apache.commons.scxml2.model.TransitionTarget)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.enterStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.exitStates(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.microStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+        "org.apache.commons.scxml2.semantics.Step.Step(org.apache.commons.scxml2.TriggerEvent)",
+        "org.apache.commons.scxml2.semantics.Step.defaultHistoryTransitionEntryMap",
+        "org.apache.commons.scxml2.semantics.Step.getDefaultHistoryTransitionEntryMap()"
+      ],
+      "indexed_recall": 0.125
+    }
+  }
+}

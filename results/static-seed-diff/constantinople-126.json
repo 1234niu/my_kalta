@@ -1,0 +1,2444 @@
+{
+  "id": "constantinople-126",
+  "graph_edges": 3326,
+  "seeds": {
+    "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.beanutils.DynaClass.newInstance()",
+      "org.apache.commons.beanutils.LazyDynaClass.LazyDynaClass()",
+      "org.apache.commons.beanutils.LazyDynaList.add(int,java.lang.Object)",
+      "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+      "org.apache.commons.beanutils.LazyDynaList.addAll(int,java.util.Collection)",
+      "org.apache.commons.beanutils.LazyDynaList.growList(int)",
+      "org.apache.commons.beanutils.LazyDynaList.set(int,java.lang.Object)",
+      "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+      "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+      "org.apache.commons.beanutils.LazyDynaMap.LazyDynaMap(java.util.Map)",
+      "org.apache.commons.beanutils.LazyDynaMap.getMap()",
+      "org.apache.commons.beanutils.WrapDynaBean.WrapDynaBean(java.lang.Object)",
+      "org.apache.commons.beanutils.WrapDynaBean.getInstance()"
+    ],
+    "fields": [
+      "org.apache.commons.beanutils.DynaClass.newInstance()",
+      "org.apache.commons.beanutils.LazyDynaClass.LazyDynaClass()",
+      "org.apache.commons.beanutils.LazyDynaList.add(int,java.lang.Object)",
+      "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+      "org.apache.commons.beanutils.LazyDynaList.addAll(int,java.util.Collection)",
+      "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+      "org.apache.commons.beanutils.LazyDynaList.elementType",
+      "org.apache.commons.beanutils.LazyDynaList.growList(int)",
+      "org.apache.commons.beanutils.LazyDynaList.set(int,java.lang.Object)",
+      "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+      "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+      "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+      "org.apache.commons.beanutils.LazyDynaMap.LazyDynaMap(java.util.Map)",
+      "org.apache.commons.beanutils.LazyDynaMap.getMap()",
+      "org.apache.commons.beanutils.WrapDynaBean.WrapDynaBean(java.lang.Object)",
+      "org.apache.commons.beanutils.WrapDynaBean.getInstance()"
+    ],
+    "multihop": [
+      "org.apache.commons.beanutils.DynaClass.newInstance()",
+      "org.apache.commons.beanutils.LazyDynaClass.LazyDynaClass()",
+      "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(java.lang.Class)",
+      "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(java.lang.Object[])",
+      "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(org.apache.commons.beanutils.DynaClass)",
+      "org.apache.commons.beanutils.LazyDynaList.add(int,java.lang.Object)",
+      "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+      "org.apache.commons.beanutils.LazyDynaList.addAll(int,java.util.Collection)",
+      "org.apache.commons.beanutils.LazyDynaList.addAll(java.util.Collection)",
+      "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+      "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+      "org.apache.commons.beanutils.LazyDynaList.elementType",
+      "org.apache.commons.beanutils.LazyDynaList.get(int)",
+      "org.apache.commons.beanutils.LazyDynaList.growList(int)",
+      "org.apache.commons.beanutils.LazyDynaList.set(int,java.lang.Object)",
+      "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+      "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+      "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+      "org.apache.commons.beanutils.LazyDynaMap.LazyDynaMap(java.util.Map)",
+      "org.apache.commons.beanutils.LazyDynaMap.getMap()",
+      "org.apache.commons.beanutils.WrapDynaBean.WrapDynaBean(java.lang.Object)",
+      "org.apache.commons.beanutils.WrapDynaBean.getInstance()"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.beanutils.DynaBean.getDynaClass()",
+      "org.apache.commons.beanutils.DynaClass.newInstance()",
+      "org.apache.commons.beanutils.LazyDynaClass.LazyDynaClass()",
+      "org.apache.commons.beanutils.LazyDynaClass.LazyDynaClass(java.lang.String,org.apache.commons.beanutils.DynaProperty[])",
+      "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(java.lang.Class)",
+      "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(java.lang.Object[])",
+      "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(org.apache.commons.beanutils.DynaClass)",
+      "org.apache.commons.beanutils.LazyDynaList.add(int,java.lang.Object)",
+      "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+      "org.apache.commons.beanutils.LazyDynaList.addAll(int,java.util.Collection)",
+      "org.apache.commons.beanutils.LazyDynaList.addAll(java.util.Collection)",
+      "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+      "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+      "org.apache.commons.beanutils.LazyDynaList.elementType",
+      "org.apache.commons.beanutils.LazyDynaList.get(int)",
+      "org.apache.commons.beanutils.LazyDynaList.growList(int)",
+      "org.apache.commons.beanutils.LazyDynaList.set(int,java.lang.Object)",
+      "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+      "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+      "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+      "org.apache.commons.beanutils.LazyDynaMap.LazyDynaMap(java.lang.String,java.util.Map)",
+      "org.apache.commons.beanutils.LazyDynaMap.LazyDynaMap(java.util.Map)",
+      "org.apache.commons.beanutils.LazyDynaMap.getMap()",
+      "org.apache.commons.beanutils.WrapDynaBean.WrapDynaBean(java.lang.Object)",
+      "org.apache.commons.beanutils.WrapDynaBean.getDynaClass()",
+      "org.apache.commons.beanutils.WrapDynaBean.getInstance()"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.beanutils.DynaBean.getDynaClass()",
+      "org.apache.commons.beanutils.DynaClass.newInstance()",
+      "org.apache.commons.beanutils.LazyDynaClass.LazyDynaClass()",
+      "org.apache.commons.beanutils.LazyDynaClass.LazyDynaClass(java.lang.String,org.apache.commons.beanutils.DynaProperty[])",
+      "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(java.lang.Class)",
+      "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(java.lang.Object[])",
+      "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(org.apache.commons.beanutils.DynaClass)",
+      "org.apache.commons.beanutils.LazyDynaList.add(int,java.lang.Object)",
+      "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+      "org.apache.commons.beanutils.LazyDynaList.addAll(int,java.util.Collection)",
+      "org.apache.commons.beanutils.LazyDynaList.addAll(java.util.Collection)",
+      "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+      "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+      "org.apache.commons.beanutils.LazyDynaList.elementType",
+      "org.apache.commons.beanutils.LazyDynaList.get(int)",
+      "org.apache.commons.beanutils.LazyDynaList.getDynaClass()",
+      "org.apache.commons.beanutils.LazyDynaList.growList(int)",
+      "org.apache.commons.beanutils.LazyDynaList.set(int,java.lang.Object)",
+      "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+      "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+      "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+      "org.apache.commons.beanutils.LazyDynaMap.LazyDynaMap(java.lang.String,java.util.Map)",
+      "org.apache.commons.beanutils.LazyDynaMap.LazyDynaMap(java.util.Map)",
+      "org.apache.commons.beanutils.LazyDynaMap.getMap()",
+      "org.apache.commons.beanutils.WrapDynaBean.WrapDynaBean(java.lang.Object)",
+      "org.apache.commons.beanutils.WrapDynaBean.getDynaClass()",
+      "org.apache.commons.beanutils.WrapDynaBean.getInstance()"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.beanutils.LazyDynaList.elementType": {
+        "org.apache.commons.beanutils.LazyDynaList.elementType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)": {
+        "org.apache.commons.beanutils.LazyDynaList.elementType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 510
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 525
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 531
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)": {
+        "org.apache.commons.beanutils.LazyDynaList.elementType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 567
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 571
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 568
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.LazyDynaList.elementDynaClass": {
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass": {
+        "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.beanutils.LazyDynaList.elementType": {
+        "org.apache.commons.beanutils.LazyDynaList.elementType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 525
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 531
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 633
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 565
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 534
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)": {
+        "org.apache.commons.beanutils.LazyDynaList.elementType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 510
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 525
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 531
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 633
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 565
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 534
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType": {
+        "org.apache.commons.beanutils.LazyDynaList.elementType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 510
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 537
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 525
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 537
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 531
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 537
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 633
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 565
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(java.lang.Class)": {
+        "org.apache.commons.beanutils.LazyDynaList.elementType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 510
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 230
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 525
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 230
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 531
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 230
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 633
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 565
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 534
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 230
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.LazyDynaList.elementDynaClass": {
+        "org.apache.commons.beanutils.LazyDynaList.elementType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 510
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 531
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 633
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 565
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 534
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass": {
+        "org.apache.commons.beanutils.LazyDynaList.elementType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 510
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 525
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 633
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 565
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 534
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.LazyDynaList.add(int,java.lang.Object)": {
+        "org.apache.commons.beanutils.LazyDynaList.elementType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 510
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.add(int,java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 272
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 525
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.add(int,java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 272
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 531
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.add(int,java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 272
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 633
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 565
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 534
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.add(int,java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 272
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.LazyDynaList.addAll(int,java.util.Collection)": {
+        "org.apache.commons.beanutils.LazyDynaList.elementType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 510
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.addAll(int,java.util.Collection)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 341
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 525
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.addAll(int,java.util.Collection)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 341
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 531
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.addAll(int,java.util.Collection)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 341
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 633
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 565
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 534
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.addAll(int,java.util.Collection)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 341
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)": {
+        "org.apache.commons.beanutils.LazyDynaList.elementType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 510
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 288
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 525
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 288
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 531
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 288
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 633
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 565
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 534
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 288
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(java.lang.Object[])": {
+        "org.apache.commons.beanutils.LazyDynaList.elementType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 510
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 288
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(java.lang.Object[])",
+            "to": "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 253
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 525
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 288
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(java.lang.Object[])",
+            "to": "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 253
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 531
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 288
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(java.lang.Object[])",
+            "to": "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 253
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 633
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 565
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 534
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 288
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(java.lang.Object[])",
+            "to": "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 253
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.LazyDynaList.addAll(java.util.Collection)": {
+        "org.apache.commons.beanutils.LazyDynaList.elementType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 510
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 288
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.addAll(java.util.Collection)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 310
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 525
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 288
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.addAll(java.util.Collection)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 310
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 531
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 288
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.addAll(java.util.Collection)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 310
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 633
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 565
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 534
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 288
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.addAll(java.util.Collection)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.add(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 310
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.LazyDynaList.set(int,java.lang.Object)": {
+        "org.apache.commons.beanutils.LazyDynaList.elementType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 510
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.set(int,java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 386
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 525
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.set(int,java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 386
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 531
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.set(int,java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 386
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 633
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 565
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 534
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.set(int,java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 386
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.LazyDynaList.growList(int)": {
+        "org.apache.commons.beanutils.LazyDynaList.elementType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 510
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.growList(int)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 603
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 525
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.growList(int)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 603
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 531
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.growList(int)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 603
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 633
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 565
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 534
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.growList(int)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 603
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.LazyDynaList.get(int)": {
+        "org.apache.commons.beanutils.LazyDynaList.elementType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 510
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.growList(int)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 603
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.get(int)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.growList(int)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 367
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 525
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.growList(int)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 603
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.get(int)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.growList(int)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 367
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 531
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.growList(int)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 603
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.get(int)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.growList(int)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 367
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 633
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 565
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 534
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 639
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.growList(int)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 603
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.get(int)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.growList(int)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 367
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)": {
+        "org.apache.commons.beanutils.LazyDynaList.elementType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 567
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 571
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 568
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 633
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 565
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 565
+          }
+        ]
+      },
+      "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(org.apache.commons.beanutils.DynaClass)": {
+        "org.apache.commons.beanutils.LazyDynaList.elementType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 632
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 567
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 219
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 571
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 219
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 637
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.wrapDynaClass",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 568
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 219
+          }
+        ],
+        "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType": [
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 633
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 565
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.elementDynaBeanType",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 565
+          },
+          {
+            "from": "org.apache.commons.beanutils.LazyDynaList.LazyDynaList(org.apache.commons.beanutils.DynaClass)",
+            "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+            "line": 219
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.commons.beanutils.DynaClass.newInstance()": [
+        {
+          "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+          "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+          "line": 633
+        },
+        {
+          "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+          "to": "org.apache.commons.beanutils.DynaClass.newInstance()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+          "line": 564
+        }
+      ],
+      "org.apache.commons.beanutils.WrapDynaBean.getInstance()": [
+        {
+          "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+          "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+          "line": 633
+        },
+        {
+          "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+          "to": "org.apache.commons.beanutils.WrapDynaBean.getInstance()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+          "line": 567
+        }
+      ],
+      "org.apache.commons.beanutils.LazyDynaMap.getMap()": [
+        {
+          "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+          "to": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+          "line": 633
+        },
+        {
+          "from": "org.apache.commons.beanutils.LazyDynaList.setElementDynaClass(org.apache.commons.beanutils.DynaClass)",
+          "to": "org.apache.commons.beanutils.LazyDynaMap.getMap()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+          "line": 570
+        }
+      ],
+      "org.apache.commons.beanutils.LazyDynaClass.LazyDynaClass(java.lang.String,org.apache.commons.beanutils.DynaProperty[])": [
+        {
+          "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+          "to": "org.apache.commons.beanutils.LazyDynaClass.LazyDynaClass()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+          "line": 633
+        },
+        {
+          "from": "org.apache.commons.beanutils.LazyDynaClass.LazyDynaClass()",
+          "to": "org.apache.commons.beanutils.LazyDynaClass.LazyDynaClass(java.lang.String,org.apache.commons.beanutils.DynaProperty[])",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/beanutils/LazyDynaClass.java",
+          "line": 64
+        }
+      ],
+      "org.apache.commons.beanutils.LazyDynaMap.LazyDynaMap(java.util.Map)": [
+        {
+          "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+          "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+          "line": 639
+        },
+        {
+          "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+          "to": "org.apache.commons.beanutils.LazyDynaMap.LazyDynaMap(java.util.Map)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+          "line": 524
+        }
+      ],
+      "org.apache.commons.beanutils.DynaBean.getDynaClass()": [
+        {
+          "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+          "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+          "line": 639
+        },
+        {
+          "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+          "to": "org.apache.commons.beanutils.DynaBean.getDynaClass()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+          "line": 525
+        }
+      ],
+      "org.apache.commons.beanutils.WrapDynaBean.WrapDynaBean(java.lang.Object)": [
+        {
+          "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+          "to": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+          "line": 639
+        },
+        {
+          "from": "org.apache.commons.beanutils.LazyDynaList.setElementType(java.lang.Class)",
+          "to": "org.apache.commons.beanutils.WrapDynaBean.WrapDynaBean(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+          "line": 530
+        }
+      ],
+      "org.apache.commons.beanutils.LazyDynaMap.LazyDynaMap(java.lang.String,java.util.Map)": [
+        {
+          "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+          "to": "org.apache.commons.beanutils.LazyDynaMap.LazyDynaMap(java.util.Map)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+          "line": 657
+        },
+        {
+          "from": "org.apache.commons.beanutils.LazyDynaMap.LazyDynaMap(java.util.Map)",
+          "to": "org.apache.commons.beanutils.LazyDynaMap.LazyDynaMap(java.lang.String,java.util.Map)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/beanutils/LazyDynaMap.java",
+          "line": 95
+        }
+      ],
+      "org.apache.commons.beanutils.WrapDynaBean.getDynaClass()": [
+        {
+          "from": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+          "to": "org.apache.commons.beanutils.WrapDynaBean.WrapDynaBean(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+          "line": 661
+        },
+        {
+          "from": "org.apache.commons.beanutils.WrapDynaBean.WrapDynaBean(java.lang.Object)",
+          "to": "org.apache.commons.beanutils.WrapDynaBean.getDynaClass()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/beanutils/WrapDynaBean.java",
+          "line": 64
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 4425,
+      "ma_analysis": 4007,
+      "ma_refinement_fixed": 3772
+    },
+    "two_hop_calls": {
+      "sp": 4751,
+      "ma_analysis": 4333,
+      "ma_refinement_fixed": 4098
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "getDynaClass",
+        "arity": 0,
+        "arguments": [],
+        "receiver": null,
+        "after_line": 638,
+        "expression": "getDynaClass()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+        "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.commons.beanutils.LazyDynaList.getDynaClass()"
+        ]
+      },
+      {
+        "name": "newInstance",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "getDynaClass()",
+        "after_line": 644,
+        "expression": "newInstance()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+        "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getDynaClass",
+        "arity": 0,
+        "arguments": [],
+        "receiver": null,
+        "after_line": 644,
+        "expression": "getDynaClass()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+        "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.commons.beanutils.LazyDynaList.getDynaClass()"
+        ]
+      },
+      {
+        "name": "getClass",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "getDynaClass()",
+        "after_line": 648,
+        "expression": "getClass()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+        "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getDynaClass",
+        "arity": 0,
+        "arguments": [],
+        "receiver": null,
+        "after_line": 648,
+        "expression": "getDynaClass()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+        "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.commons.beanutils.LazyDynaList.getDynaClass()"
+        ]
+      },
+      {
+        "name": "equals",
+        "arity": 1,
+        "arguments": [
+          "elementType"
+        ],
+        "receiver": "newElementType",
+        "after_line": 678,
+        "expression": "equals(elementType)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.beanutils.LazyDynaList.transform(java.lang.Object)",
+        "file": "src/java/org/apache/commons/beanutils/LazyDynaList.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [],
+  "unindexed_targets": [
+    "org.apache.commons.beanutils.LazyDynaList.getDynaClass()"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 13,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.beanutils.LazyDynaList.getDynaClass()"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "fields": {
+      "candidate_count": 16,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.beanutils.LazyDynaList.getDynaClass()"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "multihop": {
+      "candidate_count": 22,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.beanutils.LazyDynaList.getDynaClass()"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "two_hop_calls": {
+      "candidate_count": 26,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.beanutils.LazyDynaList.getDynaClass()"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "diff_and_override": {
+      "candidate_count": 27,
+      "hits": [
+        "org.apache.commons.beanutils.LazyDynaList.getDynaClass()"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": null
+    }
+  }
+}

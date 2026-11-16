@@ -1,0 +1,157 @@
+{
+  "id": "constantinople-107",
+  "fingerprint": "f92a8323764b6707623b2e886b3775ce6fb73b468b58cc33f3d2480c66fc5433",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "ca4770ccc56af5e9764597a0cdc4768e12757c02",
+  "candidates": [
+    "org.apache.commons.validator.routines.DomainValidator.chompLeadingDot(java.lang.String)",
+    "org.apache.commons.validator.routines.EmailValidator.isValidDomain(java.lang.String)",
+    "org.apache.commons.validator.routines.RegexValidator.isValid(java.lang.String)",
+    "org.apache.commons.validator.routines.RegexValidator.match(java.lang.String)",
+    "org.apache.commons.validator.routines.UrlValidator.isValidAuthority(java.lang.String)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.validator.routines.EmailValidator.isValidDomain(java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.validator.routines.RegexValidator.isValid(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.validator.routines.RegexValidator.match(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.validator.routines.UrlValidator.isValidAuthority(java.lang.String)": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.validator.routines.DomainValidator.isValidDomainSyntax(java.lang.String)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.validator.routines.RegexValidator.isValid(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.validator.routines.RegexValidator.match(java.lang.String)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.validator.routines.DomainValidator.isValidLocalTld(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.validator.routines.EmailValidator.isValidDomain(java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.validator.routines.DomainValidator.isValidCountryCodeTld(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.validator.routines.DomainValidator.isValidGenericTld(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.validator.routines.DomainValidator.isValidInfrastructureTld(java.lang.String)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.validator.routines.DomainValidator.isValidInfrastructureTld(java.lang.String)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.validator.routines.DomainValidator.chompLeadingDot(java.lang.String)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.validator.routines.DomainValidator.isValidGenericTld(java.lang.String)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.validator.routines.DomainValidator.chompLeadingDot(java.lang.String)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.validator.routines.DomainValidator.isValidCountryCodeTld(java.lang.String)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.validator.routines.DomainValidator.chompLeadingDot(java.lang.String)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.validator.routines.DomainValidator.isValidLocalTld(java.lang.String)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.validator.routines.DomainValidator.chompLeadingDot(java.lang.String)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.validator.routines.DomainValidator.unicodeToASCII(java.lang.String)",
+      "type": "executable",
+      "relations": {},
+      "resolution": "empty_unresolved_or_no_relations"
+    },
+    {
+      "fqn": "org.apache.commons.validator.routines.DomainValidator.IDNHolder.getMethod()",
+      "type": "executable",
+      "relations": {},
+      "resolution": "empty_unresolved_or_no_relations"
+    },
+    {
+      "fqn": "org.apache.commons.validator.routines.DomainValidator.getIDNMethod()",
+      "type": "executable",
+      "relations": {},
+      "resolution": "empty_unresolved_or_no_relations"
+    },
+    {
+      "fqn": "org.apache.commons.validator.routines.DomainValidator.toASCII(java.lang.String)",
+      "type": "executable",
+      "relations": {},
+      "resolution": "empty_unresolved_or_no_relations"
+    },
+    {
+      "fqn": "org.apache.commons.validator.routines.DomainValidator.isOnlyASCII(java.lang.String)",
+      "type": "executable",
+      "relations": {},
+      "resolution": "empty_unresolved_or_no_relations"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"org.apache.commons.beanutils.ResultSetDynaClass.getObjectFromResultSet(java.lang.String)":["IS_CALLED_BY"],"org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)":["IS_CALLED_BY"],"org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)":["CALLS"]}

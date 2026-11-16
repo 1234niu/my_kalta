@@ -1,0 +1,173 @@
+{
+  "id": "constantinople-037",
+  "graph_edges": 4136,
+  "seeds": {
+    "org.apache.commons.lang.StringEscapeUtils.escapeJavaStyleString(java.lang.String,boolean)": true,
+    "org.apache.commons.lang.StringEscapeUtils.escapeJavaStyleString(java.io.Writer,java.lang.String,boolean)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.io.Writer,java.lang.String)",
+      "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.lang.String)",
+      "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.io.Writer,java.lang.String)",
+      "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.lang.String)",
+      "org.apache.commons.lang.StringEscapeUtils.hex(char)"
+    ],
+    "fields": [
+      "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.io.Writer,java.lang.String)",
+      "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.lang.String)",
+      "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.io.Writer,java.lang.String)",
+      "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.lang.String)",
+      "org.apache.commons.lang.StringEscapeUtils.hex(char)"
+    ],
+    "multihop": [
+      "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.io.Writer,java.lang.String)",
+      "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.lang.String)",
+      "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.io.Writer,java.lang.String)",
+      "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.lang.String)",
+      "org.apache.commons.lang.StringEscapeUtils.hex(char)"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.io.Writer,java.lang.String)",
+      "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.lang.String)",
+      "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.io.Writer,java.lang.String)",
+      "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.lang.String)",
+      "org.apache.commons.lang.StringEscapeUtils.hex(char)"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.io.Writer,java.lang.String)",
+      "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.lang.String)",
+      "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.io.Writer,java.lang.String)",
+      "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.lang.String)",
+      "org.apache.commons.lang.StringEscapeUtils.hex(char)"
+    ]
+  },
+  "evidence": {
+    "fields": {},
+    "multihop": {},
+    "two_hop_calls": {
+      "org.apache.commons.lang.StringEscapeUtils.hex(char)": [
+        {
+          "from": "org.apache.commons.lang.StringEscapeUtils.escapeJavaStyleString(java.lang.String,boolean)",
+          "to": "org.apache.commons.lang.StringEscapeUtils.escapeJavaStyleString(java.io.Writer,java.lang.String,boolean)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/lang/StringEscapeUtils.java",
+          "line": 159
+        },
+        {
+          "from": "org.apache.commons.lang.StringEscapeUtils.escapeJavaStyleString(java.io.Writer,java.lang.String,boolean)",
+          "to": "org.apache.commons.lang.StringEscapeUtils.hex(char)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/lang/StringEscapeUtils.java",
+          "line": 190
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 6080,
+      "ma_analysis": 5662,
+      "ma_refinement_fixed": 4406
+    },
+    "two_hop_calls": {
+      "sp": 6080,
+      "ma_analysis": 5662,
+      "ma_refinement_fixed": 4406
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "escapeJavaStyleString",
+        "arity": 4,
+        "arguments": [
+          "writer",
+          "str",
+          "escapeSingleQuotes",
+          "escapeForwardSlash"
+        ],
+        "receiver": null,
+        "after_line": 160,
+        "expression": "escapeJavaStyleString(writer, str, escapeSingleQuotes, escapeForwardSlash)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.lang.StringEscapeUtils.escapeJavaStyleString(java.lang.String,boolean)",
+        "file": "src/java/org/apache/commons/lang/StringEscapeUtils.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [
+    "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.io.Writer,java.lang.String)",
+    "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.lang.String)",
+    "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.io.Writer,java.lang.String)",
+    "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.lang.String)"
+  ],
+  "unindexed_targets": [],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 5,
+      "hits": [
+        "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.io.Writer,java.lang.String)",
+        "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.lang.String)",
+        "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.io.Writer,java.lang.String)",
+        "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.lang.String)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "fields": {
+      "candidate_count": 5,
+      "hits": [
+        "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.io.Writer,java.lang.String)",
+        "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.lang.String)",
+        "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.io.Writer,java.lang.String)",
+        "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.lang.String)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "multihop": {
+      "candidate_count": 5,
+      "hits": [
+        "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.io.Writer,java.lang.String)",
+        "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.lang.String)",
+        "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.io.Writer,java.lang.String)",
+        "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.lang.String)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 5,
+      "hits": [
+        "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.io.Writer,java.lang.String)",
+        "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.lang.String)",
+        "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.io.Writer,java.lang.String)",
+        "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.lang.String)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "diff_and_override": {
+      "candidate_count": 5,
+      "hits": [
+        "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.io.Writer,java.lang.String)",
+        "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.lang.String)",
+        "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.io.Writer,java.lang.String)",
+        "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.lang.String)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    }
+  }
+}

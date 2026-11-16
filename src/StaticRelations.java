@@ -9,10 +9,19 @@ import spoon.reflect.visitor.filter.TypeFilter;
 
 class StaticRelations {
     record Edge(String from, String to, String kind, String file, int line) {}
+    record Location(String file, int start, int end) {}
     record Graph(Set<String> entities, Set<Edge> edges, Map<String, String> parents,
                  Map<String, String> returnTypes, Map<String, Map<String, String>> variables,
                  Set<String> instanceMethods, Set<String> staticMethods,
-                 Map<String, String> fieldTypes) {}
+                 Map<String, String> fieldTypes, Map<String, Location> locations) {}
+
+    static void locate(Map<String, Location> locations, Path root, String id, CtElement element) {
+        var position = element.getPosition();
+        if (position.isValidPosition()) {
+            locations.putIfAbsent(id, new Location(root.relativize(position.getFile().toPath().toAbsolutePath())
+                .toString(), position.getLine(), position.getEndLine()));
+        }
+    }
 
     static String name(CtElement declaration) {
         if (declaration == null) return null;
@@ -58,15 +67,18 @@ class StaticRelations {
         Set<String> instanceMethods = new TreeSet<>();
         Set<String> staticMethods = new TreeSet<>();
         Map<String, String> fieldTypes = new TreeMap<>();
+        Map<String, Location> locations = new TreeMap<>();
         for (CtType<?> type : model.getElements(new TypeFilter<>(CtType.class))) {
             String id = type.getQualifiedName().replace('$', '.');
             entities.add(id);
+            locate(locations, root, id, type);
             if (type.getSuperclass() != null) parents.put(id, type.getSuperclass().getQualifiedName().replace('$', '.'));
         }
         for (CtField<?> field : model.getElements(new TypeFilter<>(CtField.class))) {
             String id = name(field);
             if (id == null) continue;
             entities.add(id);
+            locate(locations, root, id, field);
             if (field.getType() != null) {
                 fieldTypes.put(id, field.getType().getQualifiedName().replace('$', '.'));
             }
@@ -76,6 +88,7 @@ class StaticRelations {
             String from = name(method);
             if (from == null) continue;
             entities.add(from);
+            locate(locations, root, from, method);
             if (method instanceof CtMethod<?> m) {
                 returnTypes.put(from, m.getType().getQualifiedName().replace('$', '.'));
                 if (!m.isStatic() && !m.isPrivate()) instanceMethods.add(from);
@@ -108,6 +121,6 @@ class StaticRelations {
             }
         }
         Files.writeString(Path.of(args[1]), new Gson().toJson(
-            new Graph(entities, edges, parents, returnTypes, variables, instanceMethods, staticMethods, fieldTypes)));
+            new Graph(entities, edges, parents, returnTypes, variables, instanceMethods, staticMethods, fieldTypes, locations)));
     }
 }

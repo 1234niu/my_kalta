@@ -1,0 +1,39 @@
+{
+  "id": "constantinople-053",
+  "fingerprint": "e51209e9d1b447bc6dd06c0822ff37e546227c4d34cf8424bfe54d14af8a3404",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "dcf5c40f880c86d800a4563dd203e5fb89f3cd8e",
+  "candidates": [
+    "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.buildStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step)",
+    "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.model.SimpleTransition,java.util.Set,java.util.Set)",
+    "org.apache.commons.scxml2.semantics.Step.getExitSet()",
+    "org.apache.commons.scxml2.semantics.Step.getTransitList()"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.semantics.Step,java.util.Set)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.scxml2.semantics.Step.getTransitList()": [
+          "CALLS"
+        ],
+        "org.apache.commons.scxml2.semantics.Step.getExitSet()": [
+          "CALLS"
+        ],
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.buildStep(org.apache.commons.scxml2.SCXMLExecutionContext,org.apache.commons.scxml2.semantics.Step)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.computeExitSet(org.apache.commons.scxml2.model.SimpleTransition,java.util.Set,java.util.Set)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.recordHistory(org.apache.commons.scxml2.semantics.Step,java.util.Set,java.util.Set)",
+      "type": "executable",
+      "relations": {},
+      "resolution": "empty_unresolved_or_no_relations"
+    }
+  ]
+}

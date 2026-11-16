@@ -1,0 +1,514 @@
+{
+  "id": "constantinople-035",
+  "graph_edges": 2930,
+  "seeds": {
+    "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()": true,
+    "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read(byte[],int,int)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.compress.archivers.ar.ArArchiveEntry.ArArchiveEntry(java.lang.String,long)",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextEntry()",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read(byte[])"
+    ],
+    "fields": [
+      "org.apache.commons.compress.archivers.ar.ArArchiveEntry.ArArchiveEntry(java.lang.String,long)",
+      "org.apache.commons.compress.archivers.ar.ArArchiveEntry.HEADER",
+      "org.apache.commons.compress.archivers.ar.ArArchiveEntry.TRAILER",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.ArArchiveInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextEntry()",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.input",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read(byte[])"
+    ],
+    "multihop": [
+      "org.apache.commons.compress.archivers.ar.ArArchiveEntry.ArArchiveEntry(java.lang.String,long)",
+      "org.apache.commons.compress.archivers.ar.ArArchiveEntry.HEADER",
+      "org.apache.commons.compress.archivers.ar.ArArchiveEntry.TRAILER",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.ArArchiveInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextEntry()",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.input",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read(byte[])"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.compress.archivers.ar.ArArchiveEntry.ArArchiveEntry(java.lang.String,long)",
+      "org.apache.commons.compress.archivers.ar.ArArchiveEntry.ArArchiveEntry(java.lang.String,long,int,int,int,long)",
+      "org.apache.commons.compress.archivers.ar.ArArchiveEntry.HEADER",
+      "org.apache.commons.compress.archivers.ar.ArArchiveEntry.TRAILER",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.ArArchiveInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextEntry()",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.input",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read(byte[])"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.compress.archivers.ar.ArArchiveEntry.ArArchiveEntry(java.lang.String,long)",
+      "org.apache.commons.compress.archivers.ar.ArArchiveEntry.ArArchiveEntry(java.lang.String,long,int,int,int,long)",
+      "org.apache.commons.compress.archivers.ar.ArArchiveEntry.HEADER",
+      "org.apache.commons.compress.archivers.ar.ArArchiveEntry.TRAILER",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.ArArchiveInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.currentEntry",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.entryOffset",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextEntry()",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.input",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()",
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read(byte[])"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset": {
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset": [
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 46
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()": {
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset": [
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 46
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 114
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.ar.ArArchiveEntry.HEADER": {
+        "org.apache.commons.compress.archivers.ar.ArArchiveEntry.HEADER": [
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveEntry.HEADER",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 47
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.input": {
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.input": [
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.input",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 60
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.ArArchiveInputStream(java.io.InputStream)": {
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.input": [
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.input",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 60
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.ArArchiveInputStream(java.io.InputStream)",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.input",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 40
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.ar.ArArchiveEntry.TRAILER": {
+        "org.apache.commons.compress.archivers.ar.ArArchiveEntry.TRAILER": [
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveEntry.TRAILER",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 83
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset": {
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset": [
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 46
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()": {
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset": [
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 46
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 114
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.input": {
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset": [
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 46
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.input",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 113
+          }
+        ],
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.input": [
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.input",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 60
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextEntry()": {
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset": [
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 46
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 114
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 65
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextEntry()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 102
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read(byte[])": {
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset": [
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 46
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read(byte[],int,int)",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.offset",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 124
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read(byte[])",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read(byte[],int,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 119
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.ar.ArArchiveEntry.HEADER": {
+        "org.apache.commons.compress.archivers.ar.ArArchiveEntry.HEADER": [
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveEntry.HEADER",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 47
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.ArArchiveInputStream(java.io.InputStream)": {
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.input": [
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.input",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 60
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.ArArchiveInputStream(java.io.InputStream)",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.input",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 40
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.ar.ArArchiveEntry.TRAILER": {
+        "org.apache.commons.compress.archivers.ar.ArArchiveEntry.TRAILER": [
+          {
+            "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+            "to": "org.apache.commons.compress.archivers.ar.ArArchiveEntry.TRAILER",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+            "line": 83
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.commons.compress.archivers.ar.ArArchiveEntry.ArArchiveEntry(java.lang.String,long,int,int,int,long)": [
+        {
+          "from": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+          "to": "org.apache.commons.compress.archivers.ar.ArArchiveEntry.ArArchiveEntry(java.lang.String,long)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+          "line": 96
+        },
+        {
+          "from": "org.apache.commons.compress.archivers.ar.ArArchiveEntry.ArArchiveEntry(java.lang.String,long)",
+          "to": "org.apache.commons.compress.archivers.ar.ArArchiveEntry.ArArchiveEntry(java.lang.String,long,int,int,int,long)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveEntry.java",
+          "line": 45
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 5210,
+      "ma_analysis": 4792,
+      "ma_refinement_fixed": 4072
+    },
+    "two_hop_calls": {
+      "sp": 5324,
+      "ma_analysis": 4906,
+      "ma_refinement_fixed": 4186
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "getLength",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "currentEntry",
+        "after_line": 63,
+        "expression": "getLength()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+        "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "read",
+        "arity": 0,
+        "arguments": [],
+        "receiver": null,
+        "after_line": 90,
+        "expression": "read()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+        "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+        "status": "possible_parent_targets",
+        "possible_parent_targets": [
+          "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()"
+        ],
+        "inferred_targets": []
+      },
+      {
+        "name": "getLength",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "currentEntry",
+        "after_line": 161,
+        "expression": "getLength()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read(byte[],int,int)",
+        "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "min",
+        "arity": 2,
+        "arguments": [
+          "len",
+          "entryEnd - offset"
+        ],
+        "receiver": "Math",
+        "after_line": 163,
+        "expression": "min(len, entryEnd - offset)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read(byte[],int,int)",
+        "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [
+      {
+        "seed": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+        "edge": "ADDED_WRITE",
+        "after_line": 72,
+        "proposed_fqn": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.currentEntry",
+        "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java"
+      },
+      {
+        "seed": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+        "edge": "ADDED_WRITE",
+        "after_line": 129,
+        "proposed_fqn": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.currentEntry",
+        "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java"
+      },
+      {
+        "seed": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+        "edge": "ADDED_WRITE",
+        "after_line": 128,
+        "proposed_fqn": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.entryOffset",
+        "file": "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java"
+      }
+    ],
+    "possible_overrides": []
+  },
+  "indexed_targets": [
+    "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.close()",
+    "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()"
+  ],
+  "unindexed_targets": [
+    "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.currentEntry",
+    "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.entryOffset"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()"
+      ],
+      "misses": [
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.close()",
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.currentEntry",
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.entryOffset"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.close()"
+      ],
+      "indexed_recall": 0.5
+    },
+    "fields": {
+      "candidate_count": 9,
+      "hits": [
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()"
+      ],
+      "misses": [
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.close()",
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.currentEntry",
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.entryOffset"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.close()"
+      ],
+      "indexed_recall": 0.5
+    },
+    "multihop": {
+      "candidate_count": 9,
+      "hits": [
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()"
+      ],
+      "misses": [
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.close()",
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.currentEntry",
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.entryOffset"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.close()"
+      ],
+      "indexed_recall": 0.5
+    },
+    "two_hop_calls": {
+      "candidate_count": 10,
+      "hits": [
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()"
+      ],
+      "misses": [
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.close()",
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.currentEntry",
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.entryOffset"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.close()"
+      ],
+      "indexed_recall": 0.5
+    },
+    "diff_and_override": {
+      "candidate_count": 12,
+      "hits": [
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.currentEntry",
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.entryOffset",
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()"
+      ],
+      "misses": [
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.close()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.close()"
+      ],
+      "indexed_recall": 0.5
+    }
+  }
+}

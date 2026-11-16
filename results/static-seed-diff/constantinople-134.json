@@ -1,0 +1,526 @@
+{
+  "id": "constantinople-134",
+  "graph_edges": 6433,
+  "seeds": {
+    "org.apache.commons.vfs.provider.DelegateFileObject.DelegateFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem,org.apache.commons.vfs.FileObject)": true,
+    "org.apache.commons.vfs.provider.DelegateFileObject.setFile(org.apache.commons.vfs.FileObject)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.vfs.FileObject.getFileSystem()",
+      "org.apache.commons.vfs.FileSystem.addListener(org.apache.commons.vfs.FileObject,org.apache.commons.vfs.FileListener)",
+      "org.apache.commons.vfs.impl.VirtualFileSystem.addJunction(java.lang.String,org.apache.commons.vfs.FileObject)",
+      "org.apache.commons.vfs.impl.VirtualFileSystem.createFile(org.apache.commons.vfs.FileName)",
+      "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+      "org.apache.commons.vfs.provider.DelegateFileObject.doGetType()",
+      "org.apache.commons.vfs.provider.DelegateFileObject.maybeTypeChanged(org.apache.commons.vfs.FileType)"
+    ],
+    "fields": [
+      "org.apache.commons.vfs.FileObject.getFileSystem()",
+      "org.apache.commons.vfs.FileSystem.addListener(org.apache.commons.vfs.FileObject,org.apache.commons.vfs.FileListener)",
+      "org.apache.commons.vfs.impl.VirtualFileSystem.addJunction(java.lang.String,org.apache.commons.vfs.FileObject)",
+      "org.apache.commons.vfs.impl.VirtualFileSystem.createFile(org.apache.commons.vfs.FileName)",
+      "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+      "org.apache.commons.vfs.provider.DelegateFileObject.doGetType()",
+      "org.apache.commons.vfs.provider.DelegateFileObject.file",
+      "org.apache.commons.vfs.provider.DelegateFileObject.maybeTypeChanged(org.apache.commons.vfs.FileType)"
+    ],
+    "multihop": [
+      "org.apache.commons.vfs.FileObject.getFileSystem()",
+      "org.apache.commons.vfs.FileSystem.addListener(org.apache.commons.vfs.FileObject,org.apache.commons.vfs.FileListener)",
+      "org.apache.commons.vfs.FileType.FOLDER",
+      "org.apache.commons.vfs.FileType.IMAGINARY",
+      "org.apache.commons.vfs.impl.VirtualFileSystem.addJunction(java.lang.String,org.apache.commons.vfs.FileObject)",
+      "org.apache.commons.vfs.impl.VirtualFileSystem.createFile(org.apache.commons.vfs.FileName)",
+      "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+      "org.apache.commons.vfs.provider.AbstractFileObject.fs",
+      "org.apache.commons.vfs.provider.AbstractFileObject.name",
+      "org.apache.commons.vfs.provider.DelegateFileObject.children",
+      "org.apache.commons.vfs.provider.DelegateFileObject.doGetType()",
+      "org.apache.commons.vfs.provider.DelegateFileObject.file",
+      "org.apache.commons.vfs.provider.DelegateFileObject.maybeTypeChanged(org.apache.commons.vfs.FileType)"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.vfs.FileObject.getFileSystem()",
+      "org.apache.commons.vfs.FileObject.getType()",
+      "org.apache.commons.vfs.FileSystem.addListener(org.apache.commons.vfs.FileObject,org.apache.commons.vfs.FileListener)",
+      "org.apache.commons.vfs.FileType.FOLDER",
+      "org.apache.commons.vfs.FileType.IMAGINARY",
+      "org.apache.commons.vfs.impl.VirtualFileSystem.addJunction(java.lang.String,org.apache.commons.vfs.FileObject)",
+      "org.apache.commons.vfs.impl.VirtualFileSystem.createFile(org.apache.commons.vfs.FileName)",
+      "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+      "org.apache.commons.vfs.provider.AbstractFileObject.fs",
+      "org.apache.commons.vfs.provider.AbstractFileObject.handleCreate(org.apache.commons.vfs.FileType)",
+      "org.apache.commons.vfs.provider.AbstractFileObject.handleDelete()",
+      "org.apache.commons.vfs.provider.AbstractFileObject.name",
+      "org.apache.commons.vfs.provider.AbstractFileSystem.fileObjectHanded(org.apache.commons.vfs.FileObject)",
+      "org.apache.commons.vfs.provider.DelegateFileObject.children",
+      "org.apache.commons.vfs.provider.DelegateFileObject.doGetType()",
+      "org.apache.commons.vfs.provider.DelegateFileObject.file",
+      "org.apache.commons.vfs.provider.DelegateFileObject.maybeTypeChanged(org.apache.commons.vfs.FileType)"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.vfs.FileObject.getFileSystem()",
+      "org.apache.commons.vfs.FileObject.getType()",
+      "org.apache.commons.vfs.FileSystem.addListener(org.apache.commons.vfs.FileObject,org.apache.commons.vfs.FileListener)",
+      "org.apache.commons.vfs.FileType.FOLDER",
+      "org.apache.commons.vfs.FileType.IMAGINARY",
+      "org.apache.commons.vfs.impl.VirtualFileSystem.addJunction(java.lang.String,org.apache.commons.vfs.FileObject)",
+      "org.apache.commons.vfs.impl.VirtualFileSystem.createFile(org.apache.commons.vfs.FileName)",
+      "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+      "org.apache.commons.vfs.provider.AbstractFileObject.fs",
+      "org.apache.commons.vfs.provider.AbstractFileObject.handleCreate(org.apache.commons.vfs.FileType)",
+      "org.apache.commons.vfs.provider.AbstractFileObject.handleDelete()",
+      "org.apache.commons.vfs.provider.AbstractFileObject.name",
+      "org.apache.commons.vfs.provider.AbstractFileSystem.fileObjectHanded(org.apache.commons.vfs.FileObject)",
+      "org.apache.commons.vfs.provider.DelegateFileObject.children",
+      "org.apache.commons.vfs.provider.DelegateFileObject.doGetType()",
+      "org.apache.commons.vfs.provider.DelegateFileObject.file",
+      "org.apache.commons.vfs.provider.DelegateFileObject.maybeTypeChanged(org.apache.commons.vfs.FileType)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.vfs.provider.DelegateFileObject.file": {
+        "org.apache.commons.vfs.provider.DelegateFileObject.file": [
+          {
+            "from": "org.apache.commons.vfs.provider.DelegateFileObject.DelegateFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem,org.apache.commons.vfs.FileObject)",
+            "to": "org.apache.commons.vfs.provider.DelegateFileObject.file",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+            "line": 54
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.vfs.provider.DelegateFileObject.file": {
+        "org.apache.commons.vfs.provider.DelegateFileObject.file": [
+          {
+            "from": "org.apache.commons.vfs.provider.DelegateFileObject.DelegateFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem,org.apache.commons.vfs.FileObject)",
+            "to": "org.apache.commons.vfs.provider.DelegateFileObject.file",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+            "line": 54
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.AbstractFileObject.name": {
+        "org.apache.commons.vfs.provider.AbstractFileObject.name": [
+          {
+            "from": "org.apache.commons.vfs.provider.DelegateFileObject.DelegateFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem,org.apache.commons.vfs.FileObject)",
+            "to": "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+            "line": 53
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+            "to": "org.apache.commons.vfs.provider.AbstractFileObject.name",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/provider/AbstractFileObject.java",
+            "line": 92
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)": {
+        "org.apache.commons.vfs.provider.AbstractFileObject.name": [
+          {
+            "from": "org.apache.commons.vfs.provider.DelegateFileObject.DelegateFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem,org.apache.commons.vfs.FileObject)",
+            "to": "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+            "line": 53
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+            "to": "org.apache.commons.vfs.provider.AbstractFileObject.name",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/provider/AbstractFileObject.java",
+            "line": 92
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+            "to": "org.apache.commons.vfs.provider.AbstractFileObject.name",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/provider/AbstractFileObject.java",
+            "line": 92
+          }
+        ],
+        "org.apache.commons.vfs.provider.AbstractFileObject.fs": [
+          {
+            "from": "org.apache.commons.vfs.provider.DelegateFileObject.DelegateFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem,org.apache.commons.vfs.FileObject)",
+            "to": "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+            "line": 53
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+            "to": "org.apache.commons.vfs.provider.AbstractFileObject.fs",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/provider/AbstractFileObject.java",
+            "line": 93
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+            "to": "org.apache.commons.vfs.provider.AbstractFileObject.fs",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/provider/AbstractFileObject.java",
+            "line": 93
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.AbstractFileObject.fs": {
+        "org.apache.commons.vfs.provider.AbstractFileObject.fs": [
+          {
+            "from": "org.apache.commons.vfs.provider.DelegateFileObject.DelegateFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem,org.apache.commons.vfs.FileObject)",
+            "to": "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+            "line": 53
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+            "to": "org.apache.commons.vfs.provider.AbstractFileObject.fs",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/provider/AbstractFileObject.java",
+            "line": 93
+          }
+        ]
+      },
+      "org.apache.commons.vfs.provider.DelegateFileObject.children": {
+        "org.apache.commons.vfs.provider.DelegateFileObject.children": [
+          {
+            "from": "org.apache.commons.vfs.provider.DelegateFileObject.setFile(org.apache.commons.vfs.FileObject)",
+            "to": "org.apache.commons.vfs.provider.DelegateFileObject.doGetType()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+            "line": 79
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.DelegateFileObject.doGetType()",
+            "to": "org.apache.commons.vfs.provider.DelegateFileObject.children",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+            "line": 116
+          }
+        ]
+      },
+      "org.apache.commons.vfs.FileType.FOLDER": {
+        "org.apache.commons.vfs.FileType.FOLDER": [
+          {
+            "from": "org.apache.commons.vfs.provider.DelegateFileObject.setFile(org.apache.commons.vfs.FileObject)",
+            "to": "org.apache.commons.vfs.provider.DelegateFileObject.doGetType()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+            "line": 79
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.DelegateFileObject.doGetType()",
+            "to": "org.apache.commons.vfs.FileType.FOLDER",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+            "line": 118
+          }
+        ]
+      },
+      "org.apache.commons.vfs.FileType.IMAGINARY": {
+        "org.apache.commons.vfs.FileType.IMAGINARY": [
+          {
+            "from": "org.apache.commons.vfs.provider.DelegateFileObject.setFile(org.apache.commons.vfs.FileObject)",
+            "to": "org.apache.commons.vfs.provider.DelegateFileObject.doGetType()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+            "line": 79
+          },
+          {
+            "from": "org.apache.commons.vfs.provider.DelegateFileObject.doGetType()",
+            "to": "org.apache.commons.vfs.FileType.IMAGINARY",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+            "line": 122
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.commons.vfs.provider.AbstractFileSystem.fileObjectHanded(org.apache.commons.vfs.FileObject)": [
+        {
+          "from": "org.apache.commons.vfs.provider.DelegateFileObject.DelegateFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem,org.apache.commons.vfs.FileObject)",
+          "to": "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+          "line": 53
+        },
+        {
+          "from": "org.apache.commons.vfs.provider.AbstractFileObject.AbstractFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem)",
+          "to": "org.apache.commons.vfs.provider.AbstractFileSystem.fileObjectHanded(org.apache.commons.vfs.FileObject)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/provider/AbstractFileObject.java",
+          "line": 94
+        }
+      ],
+      "org.apache.commons.vfs.FileObject.getType()": [
+        {
+          "from": "org.apache.commons.vfs.provider.DelegateFileObject.setFile(org.apache.commons.vfs.FileObject)",
+          "to": "org.apache.commons.vfs.provider.DelegateFileObject.doGetType()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+          "line": 79
+        },
+        {
+          "from": "org.apache.commons.vfs.provider.DelegateFileObject.doGetType()",
+          "to": "org.apache.commons.vfs.FileObject.getType()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+          "line": 114
+        }
+      ],
+      "org.apache.commons.vfs.provider.DelegateFileObject.doGetType()": [
+        {
+          "from": "org.apache.commons.vfs.provider.DelegateFileObject.setFile(org.apache.commons.vfs.FileObject)",
+          "to": "org.apache.commons.vfs.provider.DelegateFileObject.maybeTypeChanged(org.apache.commons.vfs.FileType)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+          "line": 86
+        },
+        {
+          "from": "org.apache.commons.vfs.provider.DelegateFileObject.maybeTypeChanged(org.apache.commons.vfs.FileType)",
+          "to": "org.apache.commons.vfs.provider.DelegateFileObject.doGetType()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+          "line": 95
+        }
+      ],
+      "org.apache.commons.vfs.provider.AbstractFileObject.handleCreate(org.apache.commons.vfs.FileType)": [
+        {
+          "from": "org.apache.commons.vfs.provider.DelegateFileObject.setFile(org.apache.commons.vfs.FileObject)",
+          "to": "org.apache.commons.vfs.provider.DelegateFileObject.maybeTypeChanged(org.apache.commons.vfs.FileType)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+          "line": 86
+        },
+        {
+          "from": "org.apache.commons.vfs.provider.DelegateFileObject.maybeTypeChanged(org.apache.commons.vfs.FileType)",
+          "to": "org.apache.commons.vfs.provider.AbstractFileObject.handleCreate(org.apache.commons.vfs.FileType)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+          "line": 98
+        }
+      ],
+      "org.apache.commons.vfs.provider.AbstractFileObject.handleDelete()": [
+        {
+          "from": "org.apache.commons.vfs.provider.DelegateFileObject.setFile(org.apache.commons.vfs.FileObject)",
+          "to": "org.apache.commons.vfs.provider.DelegateFileObject.maybeTypeChanged(org.apache.commons.vfs.FileType)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+          "line": 86
+        },
+        {
+          "from": "org.apache.commons.vfs.provider.DelegateFileObject.maybeTypeChanged(org.apache.commons.vfs.FileType)",
+          "to": "org.apache.commons.vfs.provider.AbstractFileObject.handleDelete()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+          "line": 102
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 3874,
+      "ma_analysis": 3456,
+      "ma_refinement_fixed": 3151
+    },
+    "two_hop_calls": {
+      "sp": 4196,
+      "ma_analysis": 3778,
+      "ma_refinement_fixed": 3473
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "installListener",
+        "arity": 2,
+        "arguments": [
+          "file",
+          "this"
+        ],
+        "receiver": "WeakRefFileListener",
+        "after_line": 58,
+        "expression": "installListener(file, this)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.vfs.provider.DelegateFileObject.DelegateFileObject(org.apache.commons.vfs.FileName,org.apache.commons.vfs.provider.AbstractFileSystem,org.apache.commons.vfs.FileObject)",
+        "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "installListener",
+        "arity": 2,
+        "arguments": [
+          "file",
+          "this"
+        ],
+        "receiver": "WeakRefFileListener",
+        "after_line": 84,
+        "expression": "installListener(file, this)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.vfs.provider.DelegateFileObject.setFile(org.apache.commons.vfs.FileObject)",
+        "file": "core/src/main/java/org/apache/commons/vfs/provider/DelegateFileObject.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [
+    "org.apache.commons.vfs.provider.DelegateFileObject.fileChanged(org.apache.commons.vfs.FileChangeEvent)",
+    "org.apache.commons.vfs.provider.DelegateFileObject.fileCreated(org.apache.commons.vfs.FileChangeEvent)",
+    "org.apache.commons.vfs.provider.DelegateFileObject.fileDeleted(org.apache.commons.vfs.FileChangeEvent)"
+  ],
+  "unindexed_targets": [
+    "org.apache.commons.vfs.util.WeakRefFileListener",
+    "org.apache.commons.vfs.util.WeakRefFileListener.WeakRefFileListener(org.apache.commons.vfs.FileObject,org.apache.commons.vfs.FileListener)",
+    "org.apache.commons.vfs.util.WeakRefFileListener.fileChanged(org.apache.commons.vfs.FileChangeEvent)",
+    "org.apache.commons.vfs.util.WeakRefFileListener.fileCreated(org.apache.commons.vfs.FileChangeEvent)",
+    "org.apache.commons.vfs.util.WeakRefFileListener.fileDeleted(org.apache.commons.vfs.FileChangeEvent)",
+    "org.apache.commons.vfs.util.WeakRefFileListener.fs",
+    "org.apache.commons.vfs.util.WeakRefFileListener.getListener()",
+    "org.apache.commons.vfs.util.WeakRefFileListener.installListener(org.apache.commons.vfs.FileObject,org.apache.commons.vfs.FileListener)",
+    "org.apache.commons.vfs.util.WeakRefFileListener.listener",
+    "org.apache.commons.vfs.util.WeakRefFileListener.name"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 7,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileChanged(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileCreated(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileDeleted(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.util.WeakRefFileListener",
+        "org.apache.commons.vfs.util.WeakRefFileListener.WeakRefFileListener(org.apache.commons.vfs.FileObject,org.apache.commons.vfs.FileListener)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.fileChanged(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.fileCreated(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.fileDeleted(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.fs",
+        "org.apache.commons.vfs.util.WeakRefFileListener.getListener()",
+        "org.apache.commons.vfs.util.WeakRefFileListener.installListener(org.apache.commons.vfs.FileObject,org.apache.commons.vfs.FileListener)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.listener",
+        "org.apache.commons.vfs.util.WeakRefFileListener.name"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileChanged(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileCreated(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileDeleted(org.apache.commons.vfs.FileChangeEvent)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 8,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileChanged(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileCreated(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileDeleted(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.util.WeakRefFileListener",
+        "org.apache.commons.vfs.util.WeakRefFileListener.WeakRefFileListener(org.apache.commons.vfs.FileObject,org.apache.commons.vfs.FileListener)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.fileChanged(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.fileCreated(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.fileDeleted(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.fs",
+        "org.apache.commons.vfs.util.WeakRefFileListener.getListener()",
+        "org.apache.commons.vfs.util.WeakRefFileListener.installListener(org.apache.commons.vfs.FileObject,org.apache.commons.vfs.FileListener)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.listener",
+        "org.apache.commons.vfs.util.WeakRefFileListener.name"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileChanged(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileCreated(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileDeleted(org.apache.commons.vfs.FileChangeEvent)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "multihop": {
+      "candidate_count": 13,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileChanged(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileCreated(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileDeleted(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.util.WeakRefFileListener",
+        "org.apache.commons.vfs.util.WeakRefFileListener.WeakRefFileListener(org.apache.commons.vfs.FileObject,org.apache.commons.vfs.FileListener)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.fileChanged(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.fileCreated(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.fileDeleted(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.fs",
+        "org.apache.commons.vfs.util.WeakRefFileListener.getListener()",
+        "org.apache.commons.vfs.util.WeakRefFileListener.installListener(org.apache.commons.vfs.FileObject,org.apache.commons.vfs.FileListener)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.listener",
+        "org.apache.commons.vfs.util.WeakRefFileListener.name"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileChanged(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileCreated(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileDeleted(org.apache.commons.vfs.FileChangeEvent)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 17,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileChanged(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileCreated(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileDeleted(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.util.WeakRefFileListener",
+        "org.apache.commons.vfs.util.WeakRefFileListener.WeakRefFileListener(org.apache.commons.vfs.FileObject,org.apache.commons.vfs.FileListener)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.fileChanged(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.fileCreated(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.fileDeleted(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.fs",
+        "org.apache.commons.vfs.util.WeakRefFileListener.getListener()",
+        "org.apache.commons.vfs.util.WeakRefFileListener.installListener(org.apache.commons.vfs.FileObject,org.apache.commons.vfs.FileListener)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.listener",
+        "org.apache.commons.vfs.util.WeakRefFileListener.name"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileChanged(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileCreated(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileDeleted(org.apache.commons.vfs.FileChangeEvent)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "diff_and_override": {
+      "candidate_count": 17,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileChanged(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileCreated(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileDeleted(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.util.WeakRefFileListener",
+        "org.apache.commons.vfs.util.WeakRefFileListener.WeakRefFileListener(org.apache.commons.vfs.FileObject,org.apache.commons.vfs.FileListener)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.fileChanged(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.fileCreated(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.fileDeleted(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.fs",
+        "org.apache.commons.vfs.util.WeakRefFileListener.getListener()",
+        "org.apache.commons.vfs.util.WeakRefFileListener.installListener(org.apache.commons.vfs.FileObject,org.apache.commons.vfs.FileListener)",
+        "org.apache.commons.vfs.util.WeakRefFileListener.listener",
+        "org.apache.commons.vfs.util.WeakRefFileListener.name"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileChanged(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileCreated(org.apache.commons.vfs.FileChangeEvent)",
+        "org.apache.commons.vfs.provider.DelegateFileObject.fileDeleted(org.apache.commons.vfs.FileChangeEvent)"
+      ],
+      "indexed_recall": 0.0
+    }
+  }
+}

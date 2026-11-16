@@ -1,0 +1,578 @@
+{
+  "id": "constantinople-133",
+  "graph_edges": 3282,
+  "seeds": {
+    "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.digester3.Digester.parse(org.xml.sax.InputSource)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester()",
+      "org.apache.commons.digester3.binder.DigesterLoader.newLoader(org.apache.commons.digester3.binder.RulesModule[])",
+      "org.apache.commons.digester3.binder.DigesterLoader.register(java.lang.String,java.lang.String)",
+      "org.apache.commons.digester3.binder.DigesterLoader.setValidating(boolean)",
+      "org.apache.commons.digester3.binder.DigesterLoader.setXIncludeAware(boolean)",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.getSystemIds()",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.loadRules()",
+      "org.apache.commons.digester3.xmlrules.NameSpaceURIRulesBinder.NameSpaceURIRulesBinder(org.apache.commons.digester3.binder.RulesBinder)",
+      "org.apache.commons.digester3.xmlrules.XmlRulesModule.XmlRulesModule(org.apache.commons.digester3.xmlrules.NameSpaceURIRulesBinder,java.util.Set,java.lang.String)"
+    ],
+    "fields": [
+      "org.apache.commons.digester3.Digester.parse(org.xml.sax.InputSource)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester()",
+      "org.apache.commons.digester3.binder.DigesterLoader.newLoader(org.apache.commons.digester3.binder.RulesModule[])",
+      "org.apache.commons.digester3.binder.DigesterLoader.register(java.lang.String,java.lang.String)",
+      "org.apache.commons.digester3.binder.DigesterLoader.setValidating(boolean)",
+      "org.apache.commons.digester3.binder.DigesterLoader.setXIncludeAware(boolean)",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.DIGESTER_PUBLIC_ID",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.getSystemIds()",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.inputSource",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.loadRules()",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.rootPath",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.useRootPath(java.lang.String)",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.xmlRulesDtdUrl",
+      "org.apache.commons.digester3.xmlrules.NameSpaceURIRulesBinder.NameSpaceURIRulesBinder(org.apache.commons.digester3.binder.RulesBinder)",
+      "org.apache.commons.digester3.xmlrules.XmlRulesModule.XmlRulesModule(org.apache.commons.digester3.xmlrules.NameSpaceURIRulesBinder,java.util.Set,java.lang.String)"
+    ],
+    "multihop": [
+      "org.apache.commons.digester3.Digester.parse(org.xml.sax.InputSource)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinders",
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester()",
+      "org.apache.commons.digester3.binder.DigesterLoader.newLoader(org.apache.commons.digester3.binder.RulesModule[])",
+      "org.apache.commons.digester3.binder.DigesterLoader.register(java.lang.String,java.lang.String)",
+      "org.apache.commons.digester3.binder.DigesterLoader.setValidating(boolean)",
+      "org.apache.commons.digester3.binder.DigesterLoader.setXIncludeAware(boolean)",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.DIGESTER_PUBLIC_ID",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.getSystemIds()",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.inputSource",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.loadRules()",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.rootPath",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.systemIds",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.useRootPath(java.lang.String)",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.xmlRulesDtdUrl",
+      "org.apache.commons.digester3.xmlrules.NameSpaceURIRulesBinder.NameSpaceURIRulesBinder(org.apache.commons.digester3.binder.RulesBinder)",
+      "org.apache.commons.digester3.xmlrules.XmlRulesModule.XmlRulesModule(org.apache.commons.digester3.xmlrules.NameSpaceURIRulesBinder,java.util.Set,java.lang.String)"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.digester3.Digester.cleanup()",
+      "org.apache.commons.digester3.Digester.configure()",
+      "org.apache.commons.digester3.Digester.getRoot()",
+      "org.apache.commons.digester3.Digester.getXMLReader()",
+      "org.apache.commons.digester3.Digester.parse(org.xml.sax.InputSource)",
+      "org.apache.commons.digester3.RulesBase.RulesBase()",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinders",
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester()",
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.apache.commons.digester3.Rules)",
+      "org.apache.commons.digester3.binder.DigesterLoader.newLoader(java.lang.Iterable)",
+      "org.apache.commons.digester3.binder.DigesterLoader.newLoader(org.apache.commons.digester3.binder.RulesModule[])",
+      "org.apache.commons.digester3.binder.DigesterLoader.register(java.lang.String,java.lang.String)",
+      "org.apache.commons.digester3.binder.DigesterLoader.register(java.lang.String,java.net.URL)",
+      "org.apache.commons.digester3.binder.DigesterLoader.setValidating(boolean)",
+      "org.apache.commons.digester3.binder.DigesterLoader.setXIncludeAware(boolean)",
+      "org.apache.commons.digester3.binder.DigesterLoadingException.DigesterLoadingException(java.lang.String)",
+      "org.apache.commons.digester3.binder.RulesBinder.addError(java.lang.String,java.lang.Object[])",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.DIGESTER_PUBLIC_ID",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.getSystemIds()",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.inputSource",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.loadRules()",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.rootPath",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.systemIds",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.useRootPath(java.lang.String)",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.xmlRulesDtdUrl",
+      "org.apache.commons.digester3.xmlrules.NameSpaceURIRulesBinder.NameSpaceURIRulesBinder(org.apache.commons.digester3.binder.RulesBinder)",
+      "org.apache.commons.digester3.xmlrules.XmlRulesModule.XmlRulesModule(org.apache.commons.digester3.xmlrules.NameSpaceURIRulesBinder,java.util.Set,java.lang.String)"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.digester3.Digester.cleanup()",
+      "org.apache.commons.digester3.Digester.configure()",
+      "org.apache.commons.digester3.Digester.getRoot()",
+      "org.apache.commons.digester3.Digester.getXMLReader()",
+      "org.apache.commons.digester3.Digester.parse(org.xml.sax.InputSource)",
+      "org.apache.commons.digester3.RulesBase.RulesBase()",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.configure()",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinders",
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester()",
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.apache.commons.digester3.Rules)",
+      "org.apache.commons.digester3.binder.DigesterLoader.newLoader(java.lang.Iterable)",
+      "org.apache.commons.digester3.binder.DigesterLoader.newLoader(org.apache.commons.digester3.binder.RulesModule[])",
+      "org.apache.commons.digester3.binder.DigesterLoader.register(java.lang.String,java.lang.String)",
+      "org.apache.commons.digester3.binder.DigesterLoader.register(java.lang.String,java.net.URL)",
+      "org.apache.commons.digester3.binder.DigesterLoader.setValidating(boolean)",
+      "org.apache.commons.digester3.binder.DigesterLoader.setXIncludeAware(boolean)",
+      "org.apache.commons.digester3.binder.DigesterLoadingException.DigesterLoadingException(java.lang.String)",
+      "org.apache.commons.digester3.binder.RulesBinder.addError(java.lang.String,java.lang.Object[])",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.DIGESTER_PUBLIC_ID",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.getSystemIds()",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.inputSource",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.loadRules()",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.rootPath",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.systemIds",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.useRootPath(java.lang.String)",
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.xmlRulesDtdUrl",
+      "org.apache.commons.digester3.xmlrules.NameSpaceURIRulesBinder.NameSpaceURIRulesBinder(org.apache.commons.digester3.binder.RulesBinder)",
+      "org.apache.commons.digester3.xmlrules.XmlRulesModule.XmlRulesModule(org.apache.commons.digester3.xmlrules.NameSpaceURIRulesBinder,java.util.Set,java.lang.String)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.inputSource": {
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.inputSource": [
+          {
+            "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+            "to": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.inputSource",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+            "line": 69
+          }
+        ]
+      },
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.rootPath": {
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.rootPath": [
+          {
+            "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+            "to": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.rootPath",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+            "line": 79
+          }
+        ]
+      },
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.useRootPath(java.lang.String)": {
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.rootPath": [
+          {
+            "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+            "to": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.rootPath",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+            "line": 79
+          },
+          {
+            "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.useRootPath(java.lang.String)",
+            "to": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.rootPath",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+            "line": 255
+          }
+        ]
+      },
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.DIGESTER_PUBLIC_ID": {
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.DIGESTER_PUBLIC_ID": [
+          {
+            "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+            "to": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.DIGESTER_PUBLIC_ID",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+            "line": 81
+          }
+        ]
+      },
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.xmlRulesDtdUrl": {
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.xmlRulesDtdUrl": [
+          {
+            "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+            "to": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.xmlRulesDtdUrl",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+            "line": 81
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.inputSource": {
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.inputSource": [
+          {
+            "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+            "to": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.inputSource",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+            "line": 69
+          }
+        ]
+      },
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.rootPath": {
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.rootPath": [
+          {
+            "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+            "to": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.rootPath",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+            "line": 79
+          }
+        ]
+      },
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.useRootPath(java.lang.String)": {
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.rootPath": [
+          {
+            "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+            "to": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.rootPath",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+            "line": 79
+          },
+          {
+            "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.useRootPath(java.lang.String)",
+            "to": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.rootPath",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+            "line": 255
+          }
+        ]
+      },
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.DIGESTER_PUBLIC_ID": {
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.DIGESTER_PUBLIC_ID": [
+          {
+            "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+            "to": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.DIGESTER_PUBLIC_ID",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+            "line": 81
+          }
+        ]
+      },
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.xmlRulesDtdUrl": {
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.xmlRulesDtdUrl": [
+          {
+            "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+            "to": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.xmlRulesDtdUrl",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+            "line": 81
+          }
+        ]
+      },
+      "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinders": {
+        "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinders": [
+          {
+            "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+            "to": "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+            "line": 78
+          },
+          {
+            "from": "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+            "to": "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinders",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/AbstractRulesModule.java",
+            "line": 116
+          }
+        ]
+      },
+      "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.systemIds": {
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.systemIds": [
+          {
+            "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+            "to": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.getSystemIds()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+            "line": 79
+          },
+          {
+            "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.getSystemIds()",
+            "to": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.systemIds",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+            "line": 265
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.apache.commons.digester3.Rules)": [
+        {
+          "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.newDigester()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+          "line": 80
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.newDigester()",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.apache.commons.digester3.Rules)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 462
+        }
+      ],
+      "org.apache.commons.digester3.RulesBase.RulesBase()": [
+        {
+          "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.newDigester()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+          "line": 80
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.newDigester()",
+          "to": "org.apache.commons.digester3.RulesBase.RulesBase()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 462
+        }
+      ],
+      "org.apache.commons.digester3.binder.DigesterLoader.register(java.lang.String,java.net.URL)": [
+        {
+          "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.register(java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+          "line": 80
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.register(java.lang.String,java.lang.String)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.register(java.lang.String,java.net.URL)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 339
+        }
+      ],
+      "org.apache.commons.digester3.binder.DigesterLoadingException.DigesterLoadingException(java.lang.String)": [
+        {
+          "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.newLoader(org.apache.commons.digester3.binder.RulesModule[])",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+          "line": 80
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.newLoader(org.apache.commons.digester3.binder.RulesModule[])",
+          "to": "org.apache.commons.digester3.binder.DigesterLoadingException.DigesterLoadingException(java.lang.String)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 73
+        }
+      ],
+      "org.apache.commons.digester3.binder.DigesterLoader.newLoader(java.lang.Iterable)": [
+        {
+          "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.newLoader(org.apache.commons.digester3.binder.RulesModule[])",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+          "line": 80
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.newLoader(org.apache.commons.digester3.binder.RulesModule[])",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.newLoader(java.lang.Iterable)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 75
+        }
+      ],
+      "org.apache.commons.digester3.Digester.configure()": [
+        {
+          "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+          "to": "org.apache.commons.digester3.Digester.parse(org.xml.sax.InputSource)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+          "line": 90
+        },
+        {
+          "from": "org.apache.commons.digester3.Digester.parse(org.xml.sax.InputSource)",
+          "to": "org.apache.commons.digester3.Digester.configure()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/Digester.java",
+          "line": 1632
+        }
+      ],
+      "org.apache.commons.digester3.Digester.getXMLReader()": [
+        {
+          "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+          "to": "org.apache.commons.digester3.Digester.parse(org.xml.sax.InputSource)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+          "line": 90
+        },
+        {
+          "from": "org.apache.commons.digester3.Digester.parse(org.xml.sax.InputSource)",
+          "to": "org.apache.commons.digester3.Digester.getXMLReader()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/Digester.java",
+          "line": 1642
+        }
+      ],
+      "org.apache.commons.digester3.Digester.cleanup()": [
+        {
+          "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+          "to": "org.apache.commons.digester3.Digester.parse(org.xml.sax.InputSource)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+          "line": 90
+        },
+        {
+          "from": "org.apache.commons.digester3.Digester.parse(org.xml.sax.InputSource)",
+          "to": "org.apache.commons.digester3.Digester.cleanup()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/Digester.java",
+          "line": 1656
+        }
+      ],
+      "org.apache.commons.digester3.Digester.getRoot()": [
+        {
+          "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+          "to": "org.apache.commons.digester3.Digester.parse(org.xml.sax.InputSource)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+          "line": 90
+        },
+        {
+          "from": "org.apache.commons.digester3.Digester.parse(org.xml.sax.InputSource)",
+          "to": "org.apache.commons.digester3.Digester.getRoot()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/Digester.java",
+          "line": 1657
+        }
+      ],
+      "org.apache.commons.digester3.binder.RulesBinder.addError(java.lang.String,java.lang.Object[])": [
+        {
+          "from": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+          "to": "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+          "line": 94
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+          "to": "org.apache.commons.digester3.binder.RulesBinder.addError(java.lang.String,java.lang.Object[])",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/AbstractRulesModule.java",
+          "line": 71
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 5895,
+      "ma_analysis": 5477,
+      "ma_refinement_fixed": 4099
+    },
+    "two_hop_calls": {
+      "sp": 6644,
+      "ma_analysis": 6226,
+      "ma_refinement_fixed": 4848
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "isEmpty",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "systemIds",
+        "after_line": 65,
+        "expression": "isEmpty()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+        "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "clear",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "systemIds",
+        "after_line": 76,
+        "expression": "clear()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+        "file": "core/src/main/java/org/apache/commons/digester3/xmlrules/FromXmlRulesModule.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": [
+      {
+        "seed": "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.configure()",
+        "target": "org.apache.commons.digester3.binder.AbstractRulesModule.configure()",
+        "edge": "POSSIBLE_OVERRIDE"
+      }
+    ]
+  },
+  "indexed_targets": [
+    "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.inputSource",
+    "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.loadXMLRules(org.xml.sax.InputSource)"
+  ],
+  "unindexed_targets": [],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 12,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.inputSource",
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.loadXMLRules(org.xml.sax.InputSource)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.inputSource",
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.loadXMLRules(org.xml.sax.InputSource)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 17,
+      "hits": [
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.inputSource"
+      ],
+      "misses": [
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.loadXMLRules(org.xml.sax.InputSource)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.loadXMLRules(org.xml.sax.InputSource)"
+      ],
+      "indexed_recall": 0.5
+    },
+    "multihop": {
+      "candidate_count": 19,
+      "hits": [
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.inputSource"
+      ],
+      "misses": [
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.loadXMLRules(org.xml.sax.InputSource)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.loadXMLRules(org.xml.sax.InputSource)"
+      ],
+      "indexed_recall": 0.5
+    },
+    "two_hop_calls": {
+      "candidate_count": 29,
+      "hits": [
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.inputSource"
+      ],
+      "misses": [
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.loadXMLRules(org.xml.sax.InputSource)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.loadXMLRules(org.xml.sax.InputSource)"
+      ],
+      "indexed_recall": 0.5
+    },
+    "diff_and_override": {
+      "candidate_count": 30,
+      "hits": [
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.inputSource"
+      ],
+      "misses": [
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.loadXMLRules(org.xml.sax.InputSource)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.digester3.xmlrules.FromXmlRulesModule.loadXMLRules(org.xml.sax.InputSource)"
+      ],
+      "indexed_recall": 0.5
+    }
+  }
+}

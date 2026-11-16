@@ -1,0 +1,25 @@
+{
+  "id": "constantinople-123",
+  "fingerprint": "5fbd423cd818ba2c42d181d76ed57f0750de9c7b61506f79f0acf199b12443e5",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "6ed18c5bef0f5b93b54783a8e8fb2b9042da26ac",
+  "candidates": [
+    "org.apache.bcel.util.ClassPath.ClassPath()",
+    "org.apache.bcel.util.ClassPath.getPathComponents(java.lang.String,java.util.List)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.bcel.util.ClassPath.getClassPath()",
+      "type": "executable",
+      "relations": {
+        "org.apache.bcel.util.ClassPath.ClassPath()": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.bcel.util.ClassPath.getPathComponents(java.lang.String,java.util.List)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

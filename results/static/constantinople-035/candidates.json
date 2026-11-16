@@ -1,0 +1,43 @@
+{
+  "id": "constantinople-035",
+  "fingerprint": "f72533c48e0e672f116210734164036ebce5c6d2869febf9f11919626ed2a524",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "1cde8827c953a56b2fcabad676f8cf2ddd6ec182",
+  "candidates": [
+    "org.apache.commons.compress.archivers.ar.ArArchiveEntry.ArArchiveEntry(java.lang.String,long)",
+    "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextEntry()",
+    "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()",
+    "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read(byte[])"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry()",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read(byte[])": [
+          "CALLS"
+        ],
+        "org.apache.commons.compress.archivers.ar.ArArchiveEntry.ArArchiveEntry(java.lang.String,long)": [
+          "CALLS"
+        ],
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read()": [
+          "CALLS"
+        ],
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextEntry()": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read(byte[],int,int)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read(byte[])": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

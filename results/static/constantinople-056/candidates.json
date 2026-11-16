@@ -1,0 +1,114 @@
+{
+  "id": "constantinople-056",
+  "fingerprint": "4d8f0428965bed829ef6baaa46f3a71edcd889498905d726731070d7419b536f",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "0deccf5a21953670c478b866ee1d74784fcae277",
+  "candidates": [
+    "org.apache.giraph.bsp.BspService.BspService(int,Mapper.Context,org.apache.giraph.graph.GraphTaskManager)",
+    "org.apache.giraph.conf.GiraphConfiguration.getZooKeeperServerCount()",
+    "org.apache.giraph.conf.GiraphConfiguration.getZooKeeperSessionTimeout()",
+    "org.apache.giraph.conf.GiraphTypes.writeIfUnset(org.apache.hadoop.conf.Configuration)",
+    "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.ImmutableClassesGiraphConfiguration(org.apache.hadoop.conf.Configuration)",
+    "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.createComputationFactory()",
+    "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.getGiraphTypes()",
+    "org.apache.giraph.factories.ComputationFactory.initialize(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration)",
+    "org.apache.giraph.graph.GraphTaskManager.checkInput()",
+    "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)",
+    "org.apache.giraph.graph.GraphTaskManager.getGraphFunctions()",
+    "org.apache.giraph.graph.GraphTaskManager.initializeAndConfigureLogging()",
+    "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)",
+    "org.apache.giraph.graph.GraphTaskManager.locateZookeeperClasspath(org.apache.hadoop.fs.Path[])",
+    "org.apache.giraph.graph.GraphTaskManager.setupAndInitializeGiraphMetrics()",
+    "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()",
+    "org.apache.giraph.master.BspServiceMaster.cleanUpZooKeeper()",
+    "org.apache.giraph.scripting.ScriptLoader.loadScripts(org.apache.hadoop.conf.Configuration)",
+    "org.apache.giraph.yarn.GiraphYarnClient.checkJobLocalZooKeeperSupported()",
+    "org.apache.giraph.zk.ZooKeeperManager.offlineZooKeeperServers(org.apache.giraph.zk.ZooKeeperManager.State)",
+    "org.apache.giraph.zk.ZooKeeperManager.runsZooKeeper()"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.giraph.conf.GiraphConfiguration.getZookeeperList()",
+      "type": "executable",
+      "relations": {
+        "org.apache.giraph.master.BspServiceMaster.cleanUpZooKeeper()": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.giraph.yarn.GiraphYarnClient.checkJobLocalZooKeeperSupported()": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.giraph.bsp.BspService.BspService(int,Mapper.Context,org.apache.giraph.graph.GraphTaskManager)": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.giraph.graph.GraphTaskManager.setup(org.apache.hadoop.fs.Path[])",
+      "type": "executable",
+      "relations": {
+        "org.apache.giraph.conf.GiraphConfiguration.getZookeeperList()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.zk.ZooKeeperManager.runsZooKeeper()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.initializeAndConfigureLogging()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.ImmutableClassesGiraphConfiguration(org.apache.hadoop.conf.Configuration)": [
+          "CALLS"
+        ],
+        "org.apache.giraph.conf.GiraphTypes.writeIfUnset(org.apache.hadoop.conf.Configuration)": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.determineGraphFunctions(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration,org.apache.giraph.zk.ZooKeeperManager)": [
+          "CALLS"
+        ],
+        "org.apache.giraph.conf.GiraphConfiguration.getZooKeeperServerCount()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.zk.ZooKeeperManager.offlineZooKeeperServers(org.apache.giraph.zk.ZooKeeperManager.State)": [
+          "CALLS"
+        ],
+        "org.apache.giraph.factories.ComputationFactory.initialize(org.apache.giraph.conf.ImmutableClassesGiraphConfiguration)": [
+          "CALLS"
+        ],
+        "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.createComputationFactory()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.conf.GiraphConfiguration.getZooKeeperSessionTimeout()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.locateZookeeperClasspath(org.apache.hadoop.fs.Path[])": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.instantiateBspService(int)": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.getGraphFunctions()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.scripting.ScriptLoader.loadScripts(org.apache.hadoop.conf.Configuration)": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.setupAndInitializeGiraphMetrics()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.checkInput()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.GraphTaskManager.startZooKeeperManager()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.conf.ImmutableClassesGiraphConfiguration.getGiraphTypes()": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

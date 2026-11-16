@@ -1,0 +1,1 @@
+{"org.apache.giraph.graph.partition.GraphPartitionerFactory.createMasterGraphPartitioner()":["CALLS"],"org.apache.giraph.graph.BspService.registerBspEvent(org.apache.giraph.zk.BspEvent)":["CALLS"],"org.apache.giraph.graph.BspService.getGraphPartitionerFactory()":["CALLS"],"org.apache.giraph.graph.BspService.getConfiguration()":["CALLS"]}

@@ -1,0 +1,29 @@
+{
+  "id": "constantinople-038",
+  "fingerprint": "f3a020860f6019cd298ffa7636b79533b6491b567d69c09a86910a1047677370",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "6fa02a6bf320cc156a5bbe7eef50dd0aff5f0bf8",
+  "candidates": [
+    "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+    "org.apache.commons.beanutils.ResultSetDynaClass.getObjectFromResultSet(java.lang.String)",
+    "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.beanutils.ResultSetDynaClass.getObjectFromResultSet(java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

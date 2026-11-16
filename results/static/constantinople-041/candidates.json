@@ -1,0 +1,61 @@
+{
+  "id": "constantinople-041",
+  "fingerprint": "cb87b142f63f5877739256ffe92aec51e56e7b59683aa637b9e5ec7cf32c67c7",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "aeebe99c7bd82064184db562bb149b421a5efb1e",
+  "candidates": [
+    "org.apache.commons.scxml.SCXMLExecutor.SCXMLExecutor(org.apache.commons.scxml.Evaluator,org.apache.commons.scxml.EventDispatcher,org.apache.commons.scxml.ErrorReporter)",
+    "org.apache.commons.scxml.SCXMLExecutor.addListener(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.SCXMLListener)",
+    "org.apache.commons.scxml.SCXMLExecutor.go()",
+    "org.apache.commons.scxml.SCXMLExecutor.setRootContext(org.apache.commons.scxml.Context)",
+    "org.apache.commons.scxml.SCXMLExecutor.setStateMachine(org.apache.commons.scxml.model.SCXML)",
+    "org.apache.commons.scxml.SCXMLExecutor.setSuperStep(boolean)",
+    "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL)",
+    "org.apache.commons.scxml.env.AbstractStateMachine.EntryListener.EntryListener()",
+    "org.apache.commons.scxml.env.AbstractStateMachine.logError(java.lang.Exception)",
+    "org.apache.commons.scxml.env.SimpleErrorHandler.SimpleErrorHandler()",
+    "org.apache.commons.scxml.io.SCXMLDigester.digest(java.net.URL,org.xml.sax.ErrorHandler)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL,org.apache.commons.scxml.Context,org.apache.commons.scxml.Evaluator)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.scxml.SCXMLExecutor.setRootContext(org.apache.commons.scxml.Context)": [
+          "CALLS"
+        ],
+        "org.apache.commons.scxml.SCXMLExecutor.setStateMachine(org.apache.commons.scxml.model.SCXML)": [
+          "CALLS"
+        ],
+        "org.apache.commons.scxml.io.SCXMLDigester.digest(java.net.URL,org.xml.sax.ErrorHandler)": [
+          "CALLS"
+        ],
+        "org.apache.commons.scxml.env.SimpleErrorHandler.SimpleErrorHandler()": [
+          "CALLS"
+        ],
+        "org.apache.commons.scxml.SCXMLExecutor.setSuperStep(boolean)": [
+          "CALLS"
+        ],
+        "org.apache.commons.scxml.env.AbstractStateMachine.logError(java.lang.Exception)": [
+          "CALLS"
+        ],
+        "org.apache.commons.scxml.env.AbstractStateMachine.EntryListener.EntryListener()": [
+          "CALLS"
+        ],
+        "org.apache.commons.scxml.SCXMLExecutor.SCXMLExecutor(org.apache.commons.scxml.Evaluator,org.apache.commons.scxml.EventDispatcher,org.apache.commons.scxml.ErrorReporter)": [
+          "CALLS"
+        ],
+        "org.apache.commons.scxml.env.AbstractStateMachine.AbstractStateMachine(java.net.URL)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.scxml.SCXMLExecutor.go()": [
+          "CALLS"
+        ],
+        "org.apache.commons.scxml.SCXMLExecutor.addListener(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.SCXMLListener)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

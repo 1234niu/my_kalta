@@ -96,6 +96,8 @@ flowchart LR
 
 [20 例静态结果](docs/twenty-case-static.md)汇总 000–019 的五组静态对照，并列出新增 10 例的逐实体命中和漏报。
 
+[新版 MA](docs/ma-evidence.md)提供 Planner、Analyze、Review 和一轮补证的运行入口。[20 例新旧 MA 对照](docs/twenty-case-ma-comparison.md)记录逐例命中、漏检与工具用量。
+
 ## ⚠️ 复现边界
 
 1. **已验证工程链路，不等于论文数值复现。** 论文使用 OpenRouter 上固定 provider 的三个模型，温度 0、三次重复；当前 pilot 使用 DeepSeek。完整论文模型实验及 provider 精确路由尚未执行。[^1]

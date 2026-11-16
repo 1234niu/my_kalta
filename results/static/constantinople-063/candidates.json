@@ -1,0 +1,130 @@
+{
+  "id": "constantinople-063",
+  "fingerprint": "42a73aa42d3d39a90b9f33270131e2d841367f1af1f3369e2a73ceca02b6d0ae",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "9cacb42aed327bc29be7ddaf738d64eef4a9afbc",
+  "candidates": [
+    "org.apache.giraph.comm.WorkerServer.getPort()",
+    "org.apache.giraph.graph.BspService.getConfiguration()",
+    "org.apache.giraph.graph.BspService.getGraphPartitionerFactory()",
+    "org.apache.giraph.graph.BspService.getHostname()",
+    "org.apache.giraph.graph.BspService.getJobId()",
+    "org.apache.giraph.graph.BspService.getTaskPartition()",
+    "org.apache.giraph.graph.BspService.registerBspEvent(org.apache.giraph.zk.BspEvent)",
+    "org.apache.giraph.graph.BspUtils.createGraphPartitioner(org.apache.hadoop.conf.Configuration)",
+    "org.apache.giraph.graph.GraphMapper.getGraphState()",
+    "org.apache.giraph.graph.GraphState.setWorkerCommunications(org.apache.giraph.comm.WorkerClientServer)",
+    "org.apache.giraph.graph.WorkerInfo.WorkerInfo(java.lang.String,int,int)",
+    "org.apache.giraph.graph.partition.GraphPartitionerFactory.createMasterGraphPartitioner()",
+    "org.apache.giraph.graph.partition.GraphPartitionerFactory.createWorkerGraphPartitioner()",
+    "org.apache.giraph.zk.BspEvent.waitForever()",
+    "org.apache.giraph.zk.PredicateLock.waitMsecs(int)",
+    "org.apache.giraph.zk.ZooKeeperExt.ZooKeeperExt(java.lang.String,int,org.apache.zookeeper.Watcher)",
+    "org.apache.giraph.zk.ZooKeeperManager.getBasePath(org.apache.hadoop.conf.Configuration)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.giraph.graph.BspService.BspService(java.lang.String,int,Mapper.Context,org.apache.giraph.graph.GraphMapper)",
+      "type": "executable",
+      "relations": {
+        "org.apache.giraph.zk.BspEvent.waitForever()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.BspUtils.createGraphPartitioner(org.apache.hadoop.conf.Configuration)": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.BspService.registerBspEvent(org.apache.giraph.zk.BspEvent)": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.BspService.getJobId()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.BspService.getConfiguration()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.zk.ZooKeeperManager.getBasePath(org.apache.hadoop.conf.Configuration)": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.BspService.getTaskPartition()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.zk.ZooKeeperExt.ZooKeeperExt(java.lang.String,int,org.apache.zookeeper.Watcher)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.giraph.graph.BspServiceMaster.BspServiceMaster(java.lang.String,int,Mapper.Context,org.apache.giraph.graph.GraphMapper)",
+      "type": "executable",
+      "relations": {
+        "org.apache.giraph.graph.partition.GraphPartitionerFactory.createMasterGraphPartitioner()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.BspService.registerBspEvent(org.apache.giraph.zk.BspEvent)": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.BspService.getGraphPartitionerFactory()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.BspService.getConfiguration()": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.giraph.graph.BspServiceWorker.BspServiceWorker(java.lang.String,int,Mapper.Context,org.apache.giraph.graph.GraphMapper,org.apache.giraph.graph.GraphState)",
+      "type": "executable",
+      "relations": {
+        "org.apache.giraph.graph.BspService.registerBspEvent(org.apache.giraph.zk.BspEvent)": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.GraphState.setWorkerCommunications(org.apache.giraph.comm.WorkerClientServer)": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.BspService.getGraphPartitionerFactory()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.BspService.getHostname()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.BspService.getConfiguration()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.GraphMapper.getGraphState()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.comm.WorkerServer.getPort()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.WorkerInfo.WorkerInfo(java.lang.String,int,int)": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.BspService.getTaskPartition()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.graph.partition.GraphPartitionerFactory.createWorkerGraphPartitioner()": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.giraph.zk.PredicateLock.PredicateLock(org.apache.hadoop.util.Progressable)",
+      "type": "executable",
+      "relations": {},
+      "resolution": "empty_unresolved_or_no_relations"
+    },
+    {
+      "fqn": "org.apache.giraph.zk.PredicateLock.waitForever()",
+      "type": "executable",
+      "relations": {
+        "org.apache.giraph.zk.PredicateLock.waitMsecs(int)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

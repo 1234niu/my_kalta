@@ -1,0 +1,41 @@
+{
+  "id": "constantinople-080",
+  "fingerprint": "5dae364cfc0fdf2662f1957d04f704daf9ce8a61781163f627256331cd1feafc",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "931e25921dc0ec705a0055655aa2b2237a0888d7",
+  "candidates": [
+    "org.apache.commons.codec.binary.Base64.decode(byte[],int,int)",
+    "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)",
+    "org.apache.commons.codec.binary.Base64.hasData()",
+    "org.apache.commons.codec.binary.Base64.readResults(byte[],int,int)",
+    "org.apache.commons.codec.binary.Base64.setInitialBuffer(byte[],int,int)",
+    "org.apache.commons.codec.binary.Base64InputStream.read()"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.codec.binary.Base64InputStream.read(byte[],int,int)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.codec.binary.Base64.readResults(byte[],int,int)": [
+          "CALLS"
+        ],
+        "org.apache.commons.codec.binary.Base64.setInitialBuffer(byte[],int,int)": [
+          "CALLS"
+        ],
+        "org.apache.commons.codec.binary.Base64.encode(byte[],int,int)": [
+          "CALLS"
+        ],
+        "org.apache.commons.codec.binary.Base64InputStream.read()": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.codec.binary.Base64.decode(byte[],int,int)": [
+          "CALLS"
+        ],
+        "org.apache.commons.codec.binary.Base64.hasData()": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

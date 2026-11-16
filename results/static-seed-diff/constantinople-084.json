@@ -1,0 +1,538 @@
+{
+  "id": "constantinople-084",
+  "graph_edges": 2537,
+  "seeds": {
+    "org.apache.gora.compiler.GoraCompiler.header(java.lang.String)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+      "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)"
+    ],
+    "fields": [
+      "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+      "org.apache.gora.compiler.GoraCompiler.queue",
+      "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)"
+    ],
+    "multihop": [
+      "org.apache.gora.compiler.GoraCompiler.compile()",
+      "org.apache.gora.compiler.GoraCompiler.compile(org.apache.avro.Schema)",
+      "org.apache.gora.compiler.GoraCompiler.compileInterface(org.apache.avro.Protocol)",
+      "org.apache.gora.compiler.GoraCompiler.compileProtocol(java.io.File,java.io.File)",
+      "org.apache.gora.compiler.GoraCompiler.compileSchema(java.io.File,java.io.File)",
+      "org.apache.gora.compiler.GoraCompiler.dest",
+      "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+      "org.apache.gora.compiler.GoraCompiler.log",
+      "org.apache.gora.compiler.GoraCompiler.out",
+      "org.apache.gora.compiler.GoraCompiler.queue",
+      "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)"
+    ],
+    "two_hop_calls": [
+      "org.apache.gora.compiler.GoraCompiler.compile()",
+      "org.apache.gora.compiler.GoraCompiler.compile(org.apache.avro.Schema)",
+      "org.apache.gora.compiler.GoraCompiler.compileInterface(org.apache.avro.Protocol)",
+      "org.apache.gora.compiler.GoraCompiler.compileProtocol(java.io.File,java.io.File)",
+      "org.apache.gora.compiler.GoraCompiler.compileSchema(java.io.File,java.io.File)",
+      "org.apache.gora.compiler.GoraCompiler.dest",
+      "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+      "org.apache.gora.compiler.GoraCompiler.log",
+      "org.apache.gora.compiler.GoraCompiler.out",
+      "org.apache.gora.compiler.GoraCompiler.queue",
+      "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)"
+    ],
+    "diff_and_override": [
+      "org.apache.gora.compiler.GoraCompiler.compile()",
+      "org.apache.gora.compiler.GoraCompiler.compile(org.apache.avro.Schema)",
+      "org.apache.gora.compiler.GoraCompiler.compileInterface(org.apache.avro.Protocol)",
+      "org.apache.gora.compiler.GoraCompiler.compileProtocol(java.io.File,java.io.File)",
+      "org.apache.gora.compiler.GoraCompiler.compileSchema(java.io.File,java.io.File)",
+      "org.apache.gora.compiler.GoraCompiler.dest",
+      "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+      "org.apache.gora.compiler.GoraCompiler.log",
+      "org.apache.gora.compiler.GoraCompiler.out",
+      "org.apache.gora.compiler.GoraCompiler.queue",
+      "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.gora.compiler.GoraCompiler.queue": {
+        "org.apache.gora.compiler.GoraCompiler.queue": [
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.header(java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.queue",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 183
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.gora.compiler.GoraCompiler.queue": {
+        "org.apache.gora.compiler.GoraCompiler.queue": [
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.header(java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.queue",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 183
+          }
+        ],
+        "org.apache.gora.compiler.GoraCompiler.out": [
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.header(java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 162
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.out",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 433
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.out",
+            "kind": "WRITE",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 156
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.compile(org.apache.avro.Schema)",
+            "to": "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 215
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.compile()",
+            "to": "org.apache.gora.compiler.GoraCompiler.compile(org.apache.avro.Schema)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 127
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.compile()",
+            "to": "org.apache.gora.compiler.GoraCompiler.queue",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 126
+          }
+        ]
+      },
+      "org.apache.gora.compiler.GoraCompiler.out": {
+        "org.apache.gora.compiler.GoraCompiler.out": [
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.header(java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 162
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.out",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 433
+          }
+        ]
+      },
+      "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)": {
+        "org.apache.gora.compiler.GoraCompiler.out": [
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.header(java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 162
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.out",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 433
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.out",
+            "kind": "WRITE",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 156
+          }
+        ]
+      },
+      "org.apache.gora.compiler.GoraCompiler.dest": {
+        "org.apache.gora.compiler.GoraCompiler.out": [
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.header(java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 162
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.out",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 433
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.out",
+            "kind": "WRITE",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 156
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.dest",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 151
+          }
+        ]
+      },
+      "org.apache.gora.compiler.GoraCompiler.compileInterface(org.apache.avro.Protocol)": {
+        "org.apache.gora.compiler.GoraCompiler.out": [
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.header(java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 162
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.out",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 433
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.out",
+            "kind": "WRITE",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 156
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.compileInterface(org.apache.avro.Protocol)",
+            "to": "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 131
+          }
+        ]
+      },
+      "org.apache.gora.compiler.GoraCompiler.compileProtocol(java.io.File,java.io.File)": {
+        "org.apache.gora.compiler.GoraCompiler.out": [
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.header(java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 162
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.out",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 433
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.out",
+            "kind": "WRITE",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 156
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.compileInterface(org.apache.avro.Protocol)",
+            "to": "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 131
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.compileProtocol(java.io.File,java.io.File)",
+            "to": "org.apache.gora.compiler.GoraCompiler.compileInterface(org.apache.avro.Protocol)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 58
+          }
+        ]
+      },
+      "org.apache.gora.compiler.GoraCompiler.compile(org.apache.avro.Schema)": {
+        "org.apache.gora.compiler.GoraCompiler.out": [
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.header(java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 162
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.out",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 433
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.out",
+            "kind": "WRITE",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 156
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.compile(org.apache.avro.Schema)",
+            "to": "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 215
+          }
+        ]
+      },
+      "org.apache.gora.compiler.GoraCompiler.compile()": {
+        "org.apache.gora.compiler.GoraCompiler.out": [
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.header(java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 162
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.out",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 433
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.out",
+            "kind": "WRITE",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 156
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.compile(org.apache.avro.Schema)",
+            "to": "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 215
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.compile()",
+            "to": "org.apache.gora.compiler.GoraCompiler.compile(org.apache.avro.Schema)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 127
+          }
+        ]
+      },
+      "org.apache.gora.compiler.GoraCompiler.compileSchema(java.io.File,java.io.File)": {
+        "org.apache.gora.compiler.GoraCompiler.out": [
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.header(java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 162
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.out",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 433
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.out",
+            "kind": "WRITE",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 156
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.compile(org.apache.avro.Schema)",
+            "to": "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 215
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.compile()",
+            "to": "org.apache.gora.compiler.GoraCompiler.compile(org.apache.avro.Schema)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 127
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.compileSchema(java.io.File,java.io.File)",
+            "to": "org.apache.gora.compiler.GoraCompiler.compile()",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 67
+          }
+        ]
+      },
+      "org.apache.gora.compiler.GoraCompiler.log": {
+        "org.apache.gora.compiler.GoraCompiler.out": [
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.header(java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 162
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.out",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 433
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)",
+            "to": "org.apache.gora.compiler.GoraCompiler.out",
+            "kind": "WRITE",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 156
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.compile(org.apache.avro.Schema)",
+            "to": "org.apache.gora.compiler.GoraCompiler.startFile(java.lang.String,java.lang.String)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 215
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.compile()",
+            "to": "org.apache.gora.compiler.GoraCompiler.compile(org.apache.avro.Schema)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 127
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.compileSchema(java.io.File,java.io.File)",
+            "to": "org.apache.gora.compiler.GoraCompiler.compile()",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 67
+          },
+          {
+            "from": "org.apache.gora.compiler.GoraCompiler.compileSchema(java.io.File,java.io.File)",
+            "to": "org.apache.gora.compiler.GoraCompiler.log",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+            "line": 64
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {}
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 3319,
+      "ma_analysis": 2901,
+      "ma_refinement_fixed": 2382
+    },
+    "two_hop_calls": {
+      "sp": 3319,
+      "ma_analysis": 2901,
+      "ma_refinement_fixed": 2382
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "line",
+        "arity": 2,
+        "arguments": [
+          "0",
+          "\"import org.apache.avro.specific.FixedSize;\""
+        ],
+        "receiver": null,
+        "after_line": 174,
+        "expression": "line(0, \"import org.apache.avro.specific.FixedSize;\")",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.gora.compiler.GoraCompiler.header(java.lang.String)",
+        "file": "gora-core/src/main/java/org/apache/gora/compiler/GoraCompiler.java",
+        "status": "possible_parent_targets",
+        "possible_parent_targets": [
+          "org.apache.gora.compiler.GoraCompiler.line(int,java.lang.String)"
+        ],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [
+    "org.apache.gora.compiler.GoraCompiler.compile(org.apache.avro.Schema)"
+  ],
+  "unindexed_targets": [],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 2,
+      "hits": [],
+      "misses": [
+        "org.apache.gora.compiler.GoraCompiler.compile(org.apache.avro.Schema)"
+      ],
+      "indexed_misses": [
+        "org.apache.gora.compiler.GoraCompiler.compile(org.apache.avro.Schema)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 3,
+      "hits": [],
+      "misses": [
+        "org.apache.gora.compiler.GoraCompiler.compile(org.apache.avro.Schema)"
+      ],
+      "indexed_misses": [
+        "org.apache.gora.compiler.GoraCompiler.compile(org.apache.avro.Schema)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "multihop": {
+      "candidate_count": 11,
+      "hits": [
+        "org.apache.gora.compiler.GoraCompiler.compile(org.apache.avro.Schema)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 11,
+      "hits": [
+        "org.apache.gora.compiler.GoraCompiler.compile(org.apache.avro.Schema)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "diff_and_override": {
+      "candidate_count": 11,
+      "hits": [
+        "org.apache.gora.compiler.GoraCompiler.compile(org.apache.avro.Schema)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    }
+  }
+}

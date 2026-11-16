@@ -1,0 +1,510 @@
+{
+  "id": "constantinople-123",
+  "graph_edges": 14700,
+  "seeds": {
+    "org.apache.bcel.util.ClassPath.getClassPath()": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.bcel.util.ClassPath.ClassPath()",
+      "org.apache.bcel.util.ClassPath.getPathComponents(java.lang.String,java.util.List)"
+    ],
+    "fields": [
+      "org.apache.bcel.util.ClassPath.ARCHIVE_FILTER",
+      "org.apache.bcel.util.ClassPath.ClassPath()",
+      "org.apache.bcel.util.ClassPath.getPathComponents(java.lang.String,java.util.List)"
+    ],
+    "multihop": [
+      "org.apache.bcel.util.ClassPath.ARCHIVE_FILTER",
+      "org.apache.bcel.util.ClassPath.ClassPath()",
+      "org.apache.bcel.util.ClassPath.getPathComponents(java.lang.String,java.util.List)"
+    ],
+    "two_hop_calls": [
+      "org.apache.bcel.util.ClassPath.ARCHIVE_FILTER",
+      "org.apache.bcel.util.ClassPath.ClassPath()",
+      "org.apache.bcel.util.ClassPath.getPathComponents(java.lang.String,java.util.List)"
+    ],
+    "diff_and_override": [
+      "org.apache.bcel.util.ClassPath.ARCHIVE_FILTER",
+      "org.apache.bcel.util.ClassPath.ClassPath()",
+      "org.apache.bcel.util.ClassPath.getPathComponents(java.lang.String,java.util.List)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.bcel.util.ClassPath.ARCHIVE_FILTER": {
+        "org.apache.bcel.util.ClassPath.ARCHIVE_FILTER": [
+          {
+            "from": "org.apache.bcel.util.ClassPath.getClassPath()",
+            "to": "org.apache.bcel.util.ClassPath.ARCHIVE_FILTER",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/bcel/util/ClassPath.java",
+            "line": 165
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.bcel.util.ClassPath.ARCHIVE_FILTER": {
+        "org.apache.bcel.util.ClassPath.ARCHIVE_FILTER": [
+          {
+            "from": "org.apache.bcel.util.ClassPath.getClassPath()",
+            "to": "org.apache.bcel.util.ClassPath.ARCHIVE_FILTER",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/bcel/util/ClassPath.java",
+            "line": 165
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {}
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 4241,
+      "ma_analysis": 3823,
+      "ma_refinement_fixed": 2387
+    },
+    "two_hop_calls": {
+      "sp": 4241,
+      "ma_analysis": 3823,
+      "ma_refinement_fixed": 2387
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "getProperty",
+        "arity": 1,
+        "arguments": [
+          "\"java.modules.path\""
+        ],
+        "receiver": "System",
+        "after_line": 183,
+        "expression": "getProperty(\"java.modules.path\")",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.bcel.util.ClassPath.getClassPath()",
+        "file": "src/main/java/org/apache/bcel/util/ClassPath.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "isEmpty",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "modules_path.trim()",
+        "after_line": 184,
+        "expression": "isEmpty()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.bcel.util.ClassPath.getClassPath()",
+        "file": "src/main/java/org/apache/bcel/util/ClassPath.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "trim",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "modules_path",
+        "after_line": 184,
+        "expression": "trim()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.bcel.util.ClassPath.getClassPath()",
+        "file": "src/main/java/org/apache/bcel/util/ClassPath.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getProperty",
+        "arity": 1,
+        "arguments": [
+          "\"java.home\""
+        ],
+        "receiver": "System",
+        "after_line": 186,
+        "expression": "getProperty(\"java.home\")",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.bcel.util.ClassPath.getClassPath()",
+        "file": "src/main/java/org/apache/bcel/util/ClassPath.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "exists",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "modules_dir",
+        "after_line": 189,
+        "expression": "exists()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.bcel.util.ClassPath.getClassPath()",
+        "file": "src/main/java/org/apache/bcel/util/ClassPath.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "list",
+        "arity": 1,
+        "arguments": [
+          "MODULES_FILTER"
+        ],
+        "receiver": "modules_dir",
+        "after_line": 190,
+        "expression": "list(MODULES_FILTER)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.bcel.util.ClassPath.getClassPath()",
+        "file": "src/main/java/org/apache/bcel/util/ClassPath.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "add",
+        "arity": 1,
+        "arguments": [
+          "modules_dir.getPath() + File.separatorChar + module"
+        ],
+        "receiver": "list",
+        "after_line": 192,
+        "expression": "add(modules_dir.getPath() + File.separatorChar + module)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.bcel.util.ClassPath.getClassPath()",
+        "file": "src/main/java/org/apache/bcel/util/ClassPath.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getPath",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "modules_dir",
+        "after_line": 192,
+        "expression": "getPath()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.bcel.util.ClassPath.getClassPath()",
+        "file": "src/main/java/org/apache/bcel/util/ClassPath.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "indexed_targets": [
+    "org.apache.bcel.util.ClassPath.ClassPath(java.lang.String)",
+    "org.apache.bcel.util.ClassPath.Dir",
+    "org.apache.bcel.util.ClassPath.Dir.getClassFile(java.lang.String,java.lang.String)",
+    "org.apache.bcel.util.ClassPath.Dir.getResource(java.lang.String)",
+    "org.apache.bcel.util.ClassPath.Dir.getResourceAsStream(java.lang.String)",
+    "org.apache.bcel.util.ClassPath.PathEntry",
+    "org.apache.bcel.util.ClassPath.Zip",
+    "org.apache.bcel.util.ClassPath.Zip.Zip(java.util.zip.ZipFile)",
+    "org.apache.bcel.util.ClassPath.Zip.getClassFile(java.lang.String,java.lang.String)",
+    "org.apache.bcel.util.ClassPath.Zip.zip",
+    "org.apache.bcel.util.ClassPath.class_path",
+    "org.apache.bcel.util.ClassPath.getClassFileInternal(java.lang.String,java.lang.String)",
+    "org.apache.bcel.util.ClassPath.getInputStream(java.lang.String)",
+    "org.apache.bcel.util.ClassPath.getResource(java.lang.String)",
+    "org.apache.bcel.util.ClassPath.getResourceAsStream(java.lang.String)",
+    "org.apache.bcel.util.ClassPath.getResources(java.lang.String)",
+    "org.apache.bcel.util.ClassPath.paths"
+  ],
+  "unindexed_targets": [
+    "org.apache.bcel.util.ClassPath.AbstractZip",
+    "org.apache.bcel.util.ClassPath.AbstractZip.AbstractZip(java.util.zip.ZipFile)",
+    "org.apache.bcel.util.ClassPath.AbstractZip.toEntryName(java.lang.String,java.lang.String)",
+    "org.apache.bcel.util.ClassPath.AbstractZip.toString()",
+    "org.apache.bcel.util.ClassPath.Dir.toFile(java.lang.String)",
+    "org.apache.bcel.util.ClassPath.Jar",
+    "org.apache.bcel.util.ClassPath.Jar.toEntryName(java.lang.String,java.lang.String)",
+    "org.apache.bcel.util.ClassPath.MODULES_FILTER",
+    "org.apache.bcel.util.ClassPath.Module.Module(java.util.zip.ZipFile)",
+    "org.apache.bcel.util.ClassPath.Module.toEntryName(java.lang.String,java.lang.String)",
+    "org.apache.bcel.util.ClassPath.classPath",
+    "org.apache.bcel.util.ClassPath.packageToFolder(java.lang.String)"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 2,
+      "hits": [],
+      "misses": [
+        "org.apache.bcel.util.ClassPath.AbstractZip",
+        "org.apache.bcel.util.ClassPath.AbstractZip.AbstractZip(java.util.zip.ZipFile)",
+        "org.apache.bcel.util.ClassPath.AbstractZip.toEntryName(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.AbstractZip.toString()",
+        "org.apache.bcel.util.ClassPath.ClassPath(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir",
+        "org.apache.bcel.util.ClassPath.Dir.getClassFile(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.getResource(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.getResourceAsStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.toFile(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Jar",
+        "org.apache.bcel.util.ClassPath.Jar.toEntryName(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.MODULES_FILTER",
+        "org.apache.bcel.util.ClassPath.Module.Module(java.util.zip.ZipFile)",
+        "org.apache.bcel.util.ClassPath.Module.toEntryName(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.PathEntry",
+        "org.apache.bcel.util.ClassPath.Zip",
+        "org.apache.bcel.util.ClassPath.Zip.Zip(java.util.zip.ZipFile)",
+        "org.apache.bcel.util.ClassPath.Zip.getClassFile(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Zip.zip",
+        "org.apache.bcel.util.ClassPath.classPath",
+        "org.apache.bcel.util.ClassPath.class_path",
+        "org.apache.bcel.util.ClassPath.getClassFileInternal(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getInputStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResource(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResourceAsStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResources(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.packageToFolder(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.paths"
+      ],
+      "indexed_misses": [
+        "org.apache.bcel.util.ClassPath.ClassPath(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir",
+        "org.apache.bcel.util.ClassPath.Dir.getClassFile(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.getResource(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.getResourceAsStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.PathEntry",
+        "org.apache.bcel.util.ClassPath.Zip",
+        "org.apache.bcel.util.ClassPath.Zip.Zip(java.util.zip.ZipFile)",
+        "org.apache.bcel.util.ClassPath.Zip.getClassFile(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Zip.zip",
+        "org.apache.bcel.util.ClassPath.class_path",
+        "org.apache.bcel.util.ClassPath.getClassFileInternal(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getInputStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResource(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResourceAsStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResources(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.paths"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 3,
+      "hits": [],
+      "misses": [
+        "org.apache.bcel.util.ClassPath.AbstractZip",
+        "org.apache.bcel.util.ClassPath.AbstractZip.AbstractZip(java.util.zip.ZipFile)",
+        "org.apache.bcel.util.ClassPath.AbstractZip.toEntryName(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.AbstractZip.toString()",
+        "org.apache.bcel.util.ClassPath.ClassPath(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir",
+        "org.apache.bcel.util.ClassPath.Dir.getClassFile(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.getResource(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.getResourceAsStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.toFile(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Jar",
+        "org.apache.bcel.util.ClassPath.Jar.toEntryName(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.MODULES_FILTER",
+        "org.apache.bcel.util.ClassPath.Module.Module(java.util.zip.ZipFile)",
+        "org.apache.bcel.util.ClassPath.Module.toEntryName(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.PathEntry",
+        "org.apache.bcel.util.ClassPath.Zip",
+        "org.apache.bcel.util.ClassPath.Zip.Zip(java.util.zip.ZipFile)",
+        "org.apache.bcel.util.ClassPath.Zip.getClassFile(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Zip.zip",
+        "org.apache.bcel.util.ClassPath.classPath",
+        "org.apache.bcel.util.ClassPath.class_path",
+        "org.apache.bcel.util.ClassPath.getClassFileInternal(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getInputStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResource(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResourceAsStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResources(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.packageToFolder(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.paths"
+      ],
+      "indexed_misses": [
+        "org.apache.bcel.util.ClassPath.ClassPath(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir",
+        "org.apache.bcel.util.ClassPath.Dir.getClassFile(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.getResource(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.getResourceAsStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.PathEntry",
+        "org.apache.bcel.util.ClassPath.Zip",
+        "org.apache.bcel.util.ClassPath.Zip.Zip(java.util.zip.ZipFile)",
+        "org.apache.bcel.util.ClassPath.Zip.getClassFile(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Zip.zip",
+        "org.apache.bcel.util.ClassPath.class_path",
+        "org.apache.bcel.util.ClassPath.getClassFileInternal(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getInputStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResource(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResourceAsStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResources(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.paths"
+      ],
+      "indexed_recall": 0.0
+    },
+    "multihop": {
+      "candidate_count": 3,
+      "hits": [],
+      "misses": [
+        "org.apache.bcel.util.ClassPath.AbstractZip",
+        "org.apache.bcel.util.ClassPath.AbstractZip.AbstractZip(java.util.zip.ZipFile)",
+        "org.apache.bcel.util.ClassPath.AbstractZip.toEntryName(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.AbstractZip.toString()",
+        "org.apache.bcel.util.ClassPath.ClassPath(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir",
+        "org.apache.bcel.util.ClassPath.Dir.getClassFile(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.getResource(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.getResourceAsStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.toFile(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Jar",
+        "org.apache.bcel.util.ClassPath.Jar.toEntryName(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.MODULES_FILTER",
+        "org.apache.bcel.util.ClassPath.Module.Module(java.util.zip.ZipFile)",
+        "org.apache.bcel.util.ClassPath.Module.toEntryName(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.PathEntry",
+        "org.apache.bcel.util.ClassPath.Zip",
+        "org.apache.bcel.util.ClassPath.Zip.Zip(java.util.zip.ZipFile)",
+        "org.apache.bcel.util.ClassPath.Zip.getClassFile(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Zip.zip",
+        "org.apache.bcel.util.ClassPath.classPath",
+        "org.apache.bcel.util.ClassPath.class_path",
+        "org.apache.bcel.util.ClassPath.getClassFileInternal(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getInputStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResource(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResourceAsStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResources(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.packageToFolder(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.paths"
+      ],
+      "indexed_misses": [
+        "org.apache.bcel.util.ClassPath.ClassPath(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir",
+        "org.apache.bcel.util.ClassPath.Dir.getClassFile(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.getResource(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.getResourceAsStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.PathEntry",
+        "org.apache.bcel.util.ClassPath.Zip",
+        "org.apache.bcel.util.ClassPath.Zip.Zip(java.util.zip.ZipFile)",
+        "org.apache.bcel.util.ClassPath.Zip.getClassFile(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Zip.zip",
+        "org.apache.bcel.util.ClassPath.class_path",
+        "org.apache.bcel.util.ClassPath.getClassFileInternal(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getInputStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResource(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResourceAsStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResources(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.paths"
+      ],
+      "indexed_recall": 0.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 3,
+      "hits": [],
+      "misses": [
+        "org.apache.bcel.util.ClassPath.AbstractZip",
+        "org.apache.bcel.util.ClassPath.AbstractZip.AbstractZip(java.util.zip.ZipFile)",
+        "org.apache.bcel.util.ClassPath.AbstractZip.toEntryName(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.AbstractZip.toString()",
+        "org.apache.bcel.util.ClassPath.ClassPath(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir",
+        "org.apache.bcel.util.ClassPath.Dir.getClassFile(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.getResource(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.getResourceAsStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.toFile(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Jar",
+        "org.apache.bcel.util.ClassPath.Jar.toEntryName(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.MODULES_FILTER",
+        "org.apache.bcel.util.ClassPath.Module.Module(java.util.zip.ZipFile)",
+        "org.apache.bcel.util.ClassPath.Module.toEntryName(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.PathEntry",
+        "org.apache.bcel.util.ClassPath.Zip",
+        "org.apache.bcel.util.ClassPath.Zip.Zip(java.util.zip.ZipFile)",
+        "org.apache.bcel.util.ClassPath.Zip.getClassFile(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Zip.zip",
+        "org.apache.bcel.util.ClassPath.classPath",
+        "org.apache.bcel.util.ClassPath.class_path",
+        "org.apache.bcel.util.ClassPath.getClassFileInternal(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getInputStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResource(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResourceAsStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResources(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.packageToFolder(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.paths"
+      ],
+      "indexed_misses": [
+        "org.apache.bcel.util.ClassPath.ClassPath(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir",
+        "org.apache.bcel.util.ClassPath.Dir.getClassFile(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.getResource(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.getResourceAsStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.PathEntry",
+        "org.apache.bcel.util.ClassPath.Zip",
+        "org.apache.bcel.util.ClassPath.Zip.Zip(java.util.zip.ZipFile)",
+        "org.apache.bcel.util.ClassPath.Zip.getClassFile(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Zip.zip",
+        "org.apache.bcel.util.ClassPath.class_path",
+        "org.apache.bcel.util.ClassPath.getClassFileInternal(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getInputStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResource(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResourceAsStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResources(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.paths"
+      ],
+      "indexed_recall": 0.0
+    },
+    "diff_and_override": {
+      "candidate_count": 3,
+      "hits": [],
+      "misses": [
+        "org.apache.bcel.util.ClassPath.AbstractZip",
+        "org.apache.bcel.util.ClassPath.AbstractZip.AbstractZip(java.util.zip.ZipFile)",
+        "org.apache.bcel.util.ClassPath.AbstractZip.toEntryName(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.AbstractZip.toString()",
+        "org.apache.bcel.util.ClassPath.ClassPath(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir",
+        "org.apache.bcel.util.ClassPath.Dir.getClassFile(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.getResource(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.getResourceAsStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.toFile(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Jar",
+        "org.apache.bcel.util.ClassPath.Jar.toEntryName(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.MODULES_FILTER",
+        "org.apache.bcel.util.ClassPath.Module.Module(java.util.zip.ZipFile)",
+        "org.apache.bcel.util.ClassPath.Module.toEntryName(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.PathEntry",
+        "org.apache.bcel.util.ClassPath.Zip",
+        "org.apache.bcel.util.ClassPath.Zip.Zip(java.util.zip.ZipFile)",
+        "org.apache.bcel.util.ClassPath.Zip.getClassFile(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Zip.zip",
+        "org.apache.bcel.util.ClassPath.classPath",
+        "org.apache.bcel.util.ClassPath.class_path",
+        "org.apache.bcel.util.ClassPath.getClassFileInternal(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getInputStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResource(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResourceAsStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResources(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.packageToFolder(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.paths"
+      ],
+      "indexed_misses": [
+        "org.apache.bcel.util.ClassPath.ClassPath(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir",
+        "org.apache.bcel.util.ClassPath.Dir.getClassFile(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.getResource(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Dir.getResourceAsStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.PathEntry",
+        "org.apache.bcel.util.ClassPath.Zip",
+        "org.apache.bcel.util.ClassPath.Zip.Zip(java.util.zip.ZipFile)",
+        "org.apache.bcel.util.ClassPath.Zip.getClassFile(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.Zip.zip",
+        "org.apache.bcel.util.ClassPath.class_path",
+        "org.apache.bcel.util.ClassPath.getClassFileInternal(java.lang.String,java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getInputStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResource(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResourceAsStream(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.getResources(java.lang.String)",
+        "org.apache.bcel.util.ClassPath.paths"
+      ],
+      "indexed_recall": 0.0
+    }
+  }
+}

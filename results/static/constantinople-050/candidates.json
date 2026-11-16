@@ -1,0 +1,15 @@
+{
+  "id": "constantinople-050",
+  "fingerprint": "405a470879d7faba75d432f989dbccd3b9925d61e43bb0bb9de54731693ad487",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "cfab1e4fa19755d65de7b81206d86f9e98622d8e",
+  "candidates": [],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.lang3.time.FastDatePrinter.TimeZoneNameRule.appendTo(java.lang.StringBuffer,java.util.Calendar)",
+      "type": "executable",
+      "relations": {},
+      "resolution": "empty_unresolved_or_no_relations"
+    }
+  ]
+}

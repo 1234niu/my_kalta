@@ -1,0 +1,50 @@
+{
+  "id": "constantinople-037",
+  "fingerprint": "59497372f2ecbdb20455e2de8e355b923f8251399ece7231b9c0cdb49697e214",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "65b5dc69db3bfd08b4392dcee16fa0542b097812",
+  "candidates": [
+    "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.io.Writer,java.lang.String)",
+    "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.lang.String)",
+    "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.io.Writer,java.lang.String)",
+    "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.lang.String)",
+    "org.apache.commons.lang.StringEscapeUtils.hex(char)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.lang.StringEscapeUtils.escapeJavaStyleString(java.lang.String,boolean)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.lang.StringEscapeUtils.escapeJavaStyleString(java.io.Writer,java.lang.String,boolean)": [
+          "CALLS"
+        ],
+        "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.lang.String)": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.lang.StringEscapeUtils.escapeJavaStyleString(java.io.Writer,java.lang.String,boolean)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.lang.StringEscapeUtils.escapeJava(java.io.Writer,java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.lang.StringEscapeUtils.escapeJavaScript(java.io.Writer,java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.lang.StringEscapeUtils.escapeJavaStyleString(java.lang.String,boolean)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.lang.StringEscapeUtils.hex(char)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}
