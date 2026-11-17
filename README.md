@@ -96,7 +96,7 @@ flowchart LR
 
 [20 例静态结果](docs/twenty-case-static.md)汇总 000–019 的五组静态对照，并列出新增 10 例的逐实体命中和漏报。
 
-[新版 MA](docs/ma-evidence.md)提供 Planner、Analyze、Review 和一轮补证的运行入口。[20 例新旧 MA 对照](docs/twenty-case-ma-comparison.md)记录逐例命中、漏检与工具用量。
+[新版 MA](docs/ma-evidence.md)提供 Planner、Analyze、Review 和一轮补证的运行入口。[20 例新旧 MA 对照](docs/twenty-case-ma-comparison.md)记录逐例命中、漏检与工具用量。 [第二轮 MA 五例对照](docs/ma-guided-pilot.md)记录 Planner、Analyze、Score 的候选和证据表现。
 
 ## ⚠️ 复现边界
 
