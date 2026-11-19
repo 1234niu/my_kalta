@@ -1,0 +1,348 @@
+{
+  "id": "constantinople-206",
+  "graph_edges": 3016,
+  "seeds": {
+    "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref": false,
+    "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.beanutils.DynaProperty.DynaProperty(java.lang.String,java.lang.Class)",
+      "org.apache.commons.beanutils.JDBCDynaClass.introspect(java.sql.ResultSet)",
+      "org.apache.commons.beanutils.JDBCDynaClass.loadClass(java.lang.String)"
+    ],
+    "fields": [
+      "org.apache.commons.beanutils.DynaProperty.DynaProperty(java.lang.String,java.lang.Class)",
+      "org.apache.commons.beanutils.JDBCDynaClass.introspect(java.sql.ResultSet)",
+      "org.apache.commons.beanutils.JDBCDynaClass.loadClass(java.lang.String)",
+      "org.apache.commons.beanutils.JDBCDynaClass.lowerCase"
+    ],
+    "multihop": [
+      "org.apache.commons.beanutils.DynaProperty.DynaProperty(java.lang.String,java.lang.Class)",
+      "org.apache.commons.beanutils.JDBCDynaClass.introspect(java.sql.ResultSet)",
+      "org.apache.commons.beanutils.JDBCDynaClass.loadClass(java.lang.String)",
+      "org.apache.commons.beanutils.JDBCDynaClass.lowerCase"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.beanutils.DynaProperty.DynaProperty(java.lang.String,java.lang.Class)",
+      "org.apache.commons.beanutils.JDBCDynaClass.introspect(java.sql.ResultSet)",
+      "org.apache.commons.beanutils.JDBCDynaClass.loadClass(java.lang.String)",
+      "org.apache.commons.beanutils.JDBCDynaClass.lowerCase"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.beanutils.DynaProperty.DynaProperty(java.lang.String,java.lang.Class)",
+      "org.apache.commons.beanutils.JDBCDynaClass.introspect(java.sql.ResultSet)",
+      "org.apache.commons.beanutils.JDBCDynaClass.loadClass(java.lang.String)",
+      "org.apache.commons.beanutils.JDBCDynaClass.lowerCase"
+    ],
+    "mixed_field_paths": [
+      "org.apache.commons.beanutils.DynaProperty.DynaProperty(java.lang.String,java.lang.Class)",
+      "org.apache.commons.beanutils.JDBCDynaClass.introspect(java.sql.ResultSet)",
+      "org.apache.commons.beanutils.JDBCDynaClass.loadClass(java.lang.String)",
+      "org.apache.commons.beanutils.JDBCDynaClass.lowerCase"
+    ],
+    "seed_field_accesses": [
+      "org.apache.commons.beanutils.DynaProperty.DynaProperty(java.lang.String,java.lang.Class)",
+      "org.apache.commons.beanutils.JDBCDynaClass.introspect(java.sql.ResultSet)",
+      "org.apache.commons.beanutils.JDBCDynaClass.loadClass(java.lang.String)",
+      "org.apache.commons.beanutils.JDBCDynaClass.lowerCase"
+    ],
+    "combined_field_paths": [
+      "org.apache.commons.beanutils.DynaProperty.DynaProperty(java.lang.String,java.lang.Class)",
+      "org.apache.commons.beanutils.JDBCDynaClass.introspect(java.sql.ResultSet)",
+      "org.apache.commons.beanutils.JDBCDynaClass.loadClass(java.lang.String)",
+      "org.apache.commons.beanutils.JDBCDynaClass.lowerCase"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.beanutils.JDBCDynaClass.lowerCase": {
+        "org.apache.commons.beanutils.JDBCDynaClass.lowerCase": [
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.lowerCase",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 162
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.beanutils.JDBCDynaClass.lowerCase": {
+        "org.apache.commons.beanutils.JDBCDynaClass.lowerCase": [
+          {
+            "from": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+            "to": "org.apache.commons.beanutils.JDBCDynaClass.lowerCase",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+            "line": 162
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {},
+    "mixed_field_paths": {},
+    "seed_field_accesses": {
+      "org.apache.commons.beanutils.JDBCDynaClass.lowerCase": [
+        {
+          "seed": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+          "edge": "ADDED_READ",
+          "after_line": 168,
+          "proposed_fqn": "org.apache.commons.beanutils.JDBCDynaClass.lowerCase",
+          "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+          "from": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+          "to": "org.apache.commons.beanutils.JDBCDynaClass.lowerCase"
+        }
+      ]
+    },
+    "combined_field_paths": {
+      "org.apache.commons.beanutils.JDBCDynaClass.lowerCase": [
+        {
+          "seed": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+          "edge": "ADDED_READ",
+          "after_line": 168,
+          "proposed_fqn": "org.apache.commons.beanutils.JDBCDynaClass.lowerCase",
+          "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+          "from": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+          "to": "org.apache.commons.beanutils.JDBCDynaClass.lowerCase"
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 3858,
+      "ma_analysis": 3440,
+      "ma_refinement_fixed": 2594
+    },
+    "two_hop_calls": {
+      "sp": 3858,
+      "ma_analysis": 3440,
+      "ma_refinement_fixed": 2594
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "toLowerCase",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "columnName",
+        "after_line": 168,
+        "expression": "toLowerCase()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+        "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "equals",
+        "arity": 1,
+        "arguments": [
+          "columnName"
+        ],
+        "receiver": "name",
+        "after_line": 169,
+        "expression": "equals(columnName)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+        "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "put",
+        "arity": 2,
+        "arguments": [
+          "name",
+          "columnName"
+        ],
+        "receiver": "columnNameXref",
+        "after_line": 173,
+        "expression": "put(name, columnName)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+        "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [
+      {
+        "seed": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+        "edge": "ADDED_WRITE",
+        "after_line": 171,
+        "proposed_fqn": "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref",
+        "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java"
+      }
+    ],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [
+    {
+      "seed": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+      "edge": "ADDED_WRITE",
+      "after_line": 171,
+      "proposed_fqn": "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref",
+      "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java"
+    },
+    {
+      "seed": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+      "edge": "ADDED_READ",
+      "after_line": 168,
+      "proposed_fqn": "org.apache.commons.beanutils.JDBCDynaClass.lowerCase",
+      "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java"
+    },
+    {
+      "seed": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+      "edge": "ADDED_READ",
+      "after_line": 170,
+      "proposed_fqn": "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref",
+      "file": "src/java/org/apache/commons/beanutils/JDBCDynaClass.java"
+    }
+  ],
+  "indexed_targets": [
+    "org.apache.commons.beanutils.ResultSetIterator.get(java.lang.String)",
+    "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+  ],
+  "unindexed_targets": [
+    "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+    "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+    "org.apache.commons.beanutils.ResultSetDynaClass.getObjectFromResultSet(java.lang.String)"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 3,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+        "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+        "org.apache.commons.beanutils.ResultSetDynaClass.getObjectFromResultSet(java.lang.String)",
+        "org.apache.commons.beanutils.ResultSetIterator.get(java.lang.String)",
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.beanutils.ResultSetIterator.get(java.lang.String)",
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 4,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+        "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+        "org.apache.commons.beanutils.ResultSetDynaClass.getObjectFromResultSet(java.lang.String)",
+        "org.apache.commons.beanutils.ResultSetIterator.get(java.lang.String)",
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.beanutils.ResultSetIterator.get(java.lang.String)",
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "multihop": {
+      "candidate_count": 4,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+        "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+        "org.apache.commons.beanutils.ResultSetDynaClass.getObjectFromResultSet(java.lang.String)",
+        "org.apache.commons.beanutils.ResultSetIterator.get(java.lang.String)",
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.beanutils.ResultSetIterator.get(java.lang.String)",
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 4,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+        "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+        "org.apache.commons.beanutils.ResultSetDynaClass.getObjectFromResultSet(java.lang.String)",
+        "org.apache.commons.beanutils.ResultSetIterator.get(java.lang.String)",
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.beanutils.ResultSetIterator.get(java.lang.String)",
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "diff_and_override": {
+      "candidate_count": 4,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+        "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+        "org.apache.commons.beanutils.ResultSetDynaClass.getObjectFromResultSet(java.lang.String)",
+        "org.apache.commons.beanutils.ResultSetIterator.get(java.lang.String)",
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.beanutils.ResultSetIterator.get(java.lang.String)",
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "mixed_field_paths": {
+      "candidate_count": 4,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+        "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+        "org.apache.commons.beanutils.ResultSetDynaClass.getObjectFromResultSet(java.lang.String)",
+        "org.apache.commons.beanutils.ResultSetIterator.get(java.lang.String)",
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.beanutils.ResultSetIterator.get(java.lang.String)",
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "seed_field_accesses": {
+      "candidate_count": 4,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+        "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+        "org.apache.commons.beanutils.ResultSetDynaClass.getObjectFromResultSet(java.lang.String)",
+        "org.apache.commons.beanutils.ResultSetIterator.get(java.lang.String)",
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.beanutils.ResultSetIterator.get(java.lang.String)",
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "combined_field_paths": {
+      "candidate_count": 4,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+        "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+        "org.apache.commons.beanutils.ResultSetDynaClass.getObjectFromResultSet(java.lang.String)",
+        "org.apache.commons.beanutils.ResultSetIterator.get(java.lang.String)",
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.beanutils.ResultSetIterator.get(java.lang.String)",
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "indexed_recall": 0.0
+    }
+  }
+}

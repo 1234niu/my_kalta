@@ -1,0 +1,383 @@
+{
+  "id": "constantinople-086",
+  "graph_edges": 4934,
+  "seeds": {
+    "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)": false
+  },
+  "candidates": {
+    "baseline": [],
+    "fields": [],
+    "multihop": [],
+    "two_hop_calls": [],
+    "diff_and_override": [
+      "org.apache.gora.accumulo.store.AccumuloStore.count"
+    ],
+    "mixed_field_paths": [
+      "org.apache.gora.accumulo.store.AccumuloStore.count"
+    ],
+    "seed_field_accesses": [
+      "org.apache.gora.accumulo.store.AccumuloStore.count"
+    ],
+    "combined_field_paths": [
+      "org.apache.gora.accumulo.store.AccumuloStore.count"
+    ]
+  },
+  "evidence": {
+    "fields": {},
+    "multihop": {},
+    "two_hop_calls": {},
+    "mixed_field_paths": {},
+    "seed_field_accesses": {
+      "org.apache.gora.accumulo.store.AccumuloStore.count": [
+        {
+          "seed": "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+          "edge": "ADDED_WRITE",
+          "after_line": 676,
+          "proposed_fqn": "org.apache.gora.accumulo.store.AccumuloStore.count",
+          "file": "gora-accumulo/src/main/java/org/apache/gora/accumulo/store/AccumuloStore.java",
+          "from": "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+          "to": "org.apache.gora.accumulo.store.AccumuloStore.count"
+        }
+      ]
+    },
+    "combined_field_paths": {
+      "org.apache.gora.accumulo.store.AccumuloStore.count": [
+        {
+          "seed": "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+          "edge": "ADDED_WRITE",
+          "after_line": 676,
+          "proposed_fqn": "org.apache.gora.accumulo.store.AccumuloStore.count",
+          "file": "gora-accumulo/src/main/java/org/apache/gora/accumulo/store/AccumuloStore.java",
+          "from": "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+          "to": "org.apache.gora.accumulo.store.AccumuloStore.count"
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 3895,
+      "ma_analysis": 3477,
+      "ma_refinement_fixed": 2496
+    },
+    "two_hop_calls": {
+      "sp": 3895,
+      "ma_analysis": 3477,
+      "ma_refinement_fixed": 2496
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "putMap",
+        "arity": 6,
+        "arguments": [
+          "m",
+          "count",
+          "field.schema().getValueType()",
+          "o",
+          "col",
+          "field.name()"
+        ],
+        "receiver": null,
+        "after_line": 676,
+        "expression": "putMap(m, count, field.schema().getValueType(), o, col, field.name())",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+        "file": "gora-accumulo/src/main/java/org/apache/gora/accumulo/store/AccumuloStore.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "name",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "field",
+        "after_line": 676,
+        "expression": "name()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+        "file": "gora-accumulo/src/main/java/org/apache/gora/accumulo/store/AccumuloStore.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "putArray",
+        "arity": 5,
+        "arguments": [
+          "m",
+          "count",
+          "o",
+          "col",
+          "field.name()"
+        ],
+        "receiver": null,
+        "after_line": 679,
+        "expression": "putArray(m, count, o, col, field.name())",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+        "file": "gora-accumulo/src/main/java/org/apache/gora/accumulo/store/AccumuloStore.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "name",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "field",
+        "after_line": 679,
+        "expression": "name()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+        "file": "gora-accumulo/src/main/java/org/apache/gora/accumulo/store/AccumuloStore.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "putArray",
+        "arity": 5,
+        "arguments": [
+          "m",
+          "count",
+          "o",
+          "col",
+          "field.name()"
+        ],
+        "receiver": null,
+        "after_line": 686,
+        "expression": "putArray(m, count, o, col, field.name())",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+        "file": "gora-accumulo/src/main/java/org/apache/gora/accumulo/store/AccumuloStore.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "name",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "field",
+        "after_line": 686,
+        "expression": "name()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+        "file": "gora-accumulo/src/main/java/org/apache/gora/accumulo/store/AccumuloStore.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "putMap",
+        "arity": 6,
+        "arguments": [
+          "m",
+          "count",
+          "effectiveSchema.getValueType()",
+          "o",
+          "col",
+          "field.name()"
+        ],
+        "receiver": null,
+        "after_line": 690,
+        "expression": "putMap(m, count, effectiveSchema.getValueType(), o, col, field.name())",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+        "file": "gora-accumulo/src/main/java/org/apache/gora/accumulo/store/AccumuloStore.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "name",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "field",
+        "after_line": 690,
+        "expression": "name()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+        "file": "gora-accumulo/src/main/java/org/apache/gora/accumulo/store/AccumuloStore.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [
+      {
+        "seed": "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+        "edge": "ADDED_WRITE",
+        "after_line": 676,
+        "proposed_fqn": "org.apache.gora.accumulo.store.AccumuloStore.count",
+        "file": "gora-accumulo/src/main/java/org/apache/gora/accumulo/store/AccumuloStore.java"
+      },
+      {
+        "seed": "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+        "edge": "ADDED_WRITE",
+        "after_line": 679,
+        "proposed_fqn": "org.apache.gora.accumulo.store.AccumuloStore.count",
+        "file": "gora-accumulo/src/main/java/org/apache/gora/accumulo/store/AccumuloStore.java"
+      },
+      {
+        "seed": "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+        "edge": "ADDED_WRITE",
+        "after_line": 686,
+        "proposed_fqn": "org.apache.gora.accumulo.store.AccumuloStore.count",
+        "file": "gora-accumulo/src/main/java/org/apache/gora/accumulo/store/AccumuloStore.java"
+      },
+      {
+        "seed": "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+        "edge": "ADDED_WRITE",
+        "after_line": 690,
+        "proposed_fqn": "org.apache.gora.accumulo.store.AccumuloStore.count",
+        "file": "gora-accumulo/src/main/java/org/apache/gora/accumulo/store/AccumuloStore.java"
+      }
+    ],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [
+    {
+      "seed": "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+      "edge": "ADDED_WRITE",
+      "after_line": 676,
+      "proposed_fqn": "org.apache.gora.accumulo.store.AccumuloStore.count",
+      "file": "gora-accumulo/src/main/java/org/apache/gora/accumulo/store/AccumuloStore.java"
+    },
+    {
+      "seed": "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+      "edge": "ADDED_WRITE",
+      "after_line": 679,
+      "proposed_fqn": "org.apache.gora.accumulo.store.AccumuloStore.count",
+      "file": "gora-accumulo/src/main/java/org/apache/gora/accumulo/store/AccumuloStore.java"
+    },
+    {
+      "seed": "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+      "edge": "ADDED_WRITE",
+      "after_line": 686,
+      "proposed_fqn": "org.apache.gora.accumulo.store.AccumuloStore.count",
+      "file": "gora-accumulo/src/main/java/org/apache/gora/accumulo/store/AccumuloStore.java"
+    },
+    {
+      "seed": "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+      "edge": "ADDED_WRITE",
+      "after_line": 690,
+      "proposed_fqn": "org.apache.gora.accumulo.store.AccumuloStore.count",
+      "file": "gora-accumulo/src/main/java/org/apache/gora/accumulo/store/AccumuloStore.java"
+    }
+  ],
+  "indexed_targets": [
+    "org.apache.gora.accumulo.store.AccumuloStore.putArray(org.apache.accumulo.core.data.Mutation,int,java.lang.Object,org.apache.accumulo.core.util.Pair)",
+    "org.apache.gora.accumulo.store.AccumuloStore.putMap(org.apache.accumulo.core.data.Mutation,int,org.apache.avro.Schema,java.lang.Object,org.apache.accumulo.core.util.Pair)"
+  ],
+  "unindexed_targets": [],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 0,
+      "hits": [],
+      "misses": [
+        "org.apache.gora.accumulo.store.AccumuloStore.putArray(org.apache.accumulo.core.data.Mutation,int,java.lang.Object,org.apache.accumulo.core.util.Pair)",
+        "org.apache.gora.accumulo.store.AccumuloStore.putMap(org.apache.accumulo.core.data.Mutation,int,org.apache.avro.Schema,java.lang.Object,org.apache.accumulo.core.util.Pair)"
+      ],
+      "indexed_misses": [
+        "org.apache.gora.accumulo.store.AccumuloStore.putArray(org.apache.accumulo.core.data.Mutation,int,java.lang.Object,org.apache.accumulo.core.util.Pair)",
+        "org.apache.gora.accumulo.store.AccumuloStore.putMap(org.apache.accumulo.core.data.Mutation,int,org.apache.avro.Schema,java.lang.Object,org.apache.accumulo.core.util.Pair)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 0,
+      "hits": [],
+      "misses": [
+        "org.apache.gora.accumulo.store.AccumuloStore.putArray(org.apache.accumulo.core.data.Mutation,int,java.lang.Object,org.apache.accumulo.core.util.Pair)",
+        "org.apache.gora.accumulo.store.AccumuloStore.putMap(org.apache.accumulo.core.data.Mutation,int,org.apache.avro.Schema,java.lang.Object,org.apache.accumulo.core.util.Pair)"
+      ],
+      "indexed_misses": [
+        "org.apache.gora.accumulo.store.AccumuloStore.putArray(org.apache.accumulo.core.data.Mutation,int,java.lang.Object,org.apache.accumulo.core.util.Pair)",
+        "org.apache.gora.accumulo.store.AccumuloStore.putMap(org.apache.accumulo.core.data.Mutation,int,org.apache.avro.Schema,java.lang.Object,org.apache.accumulo.core.util.Pair)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "multihop": {
+      "candidate_count": 0,
+      "hits": [],
+      "misses": [
+        "org.apache.gora.accumulo.store.AccumuloStore.putArray(org.apache.accumulo.core.data.Mutation,int,java.lang.Object,org.apache.accumulo.core.util.Pair)",
+        "org.apache.gora.accumulo.store.AccumuloStore.putMap(org.apache.accumulo.core.data.Mutation,int,org.apache.avro.Schema,java.lang.Object,org.apache.accumulo.core.util.Pair)"
+      ],
+      "indexed_misses": [
+        "org.apache.gora.accumulo.store.AccumuloStore.putArray(org.apache.accumulo.core.data.Mutation,int,java.lang.Object,org.apache.accumulo.core.util.Pair)",
+        "org.apache.gora.accumulo.store.AccumuloStore.putMap(org.apache.accumulo.core.data.Mutation,int,org.apache.avro.Schema,java.lang.Object,org.apache.accumulo.core.util.Pair)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 0,
+      "hits": [],
+      "misses": [
+        "org.apache.gora.accumulo.store.AccumuloStore.putArray(org.apache.accumulo.core.data.Mutation,int,java.lang.Object,org.apache.accumulo.core.util.Pair)",
+        "org.apache.gora.accumulo.store.AccumuloStore.putMap(org.apache.accumulo.core.data.Mutation,int,org.apache.avro.Schema,java.lang.Object,org.apache.accumulo.core.util.Pair)"
+      ],
+      "indexed_misses": [
+        "org.apache.gora.accumulo.store.AccumuloStore.putArray(org.apache.accumulo.core.data.Mutation,int,java.lang.Object,org.apache.accumulo.core.util.Pair)",
+        "org.apache.gora.accumulo.store.AccumuloStore.putMap(org.apache.accumulo.core.data.Mutation,int,org.apache.avro.Schema,java.lang.Object,org.apache.accumulo.core.util.Pair)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "diff_and_override": {
+      "candidate_count": 1,
+      "hits": [],
+      "misses": [
+        "org.apache.gora.accumulo.store.AccumuloStore.putArray(org.apache.accumulo.core.data.Mutation,int,java.lang.Object,org.apache.accumulo.core.util.Pair)",
+        "org.apache.gora.accumulo.store.AccumuloStore.putMap(org.apache.accumulo.core.data.Mutation,int,org.apache.avro.Schema,java.lang.Object,org.apache.accumulo.core.util.Pair)"
+      ],
+      "indexed_misses": [
+        "org.apache.gora.accumulo.store.AccumuloStore.putArray(org.apache.accumulo.core.data.Mutation,int,java.lang.Object,org.apache.accumulo.core.util.Pair)",
+        "org.apache.gora.accumulo.store.AccumuloStore.putMap(org.apache.accumulo.core.data.Mutation,int,org.apache.avro.Schema,java.lang.Object,org.apache.accumulo.core.util.Pair)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "mixed_field_paths": {
+      "candidate_count": 1,
+      "hits": [],
+      "misses": [
+        "org.apache.gora.accumulo.store.AccumuloStore.putArray(org.apache.accumulo.core.data.Mutation,int,java.lang.Object,org.apache.accumulo.core.util.Pair)",
+        "org.apache.gora.accumulo.store.AccumuloStore.putMap(org.apache.accumulo.core.data.Mutation,int,org.apache.avro.Schema,java.lang.Object,org.apache.accumulo.core.util.Pair)"
+      ],
+      "indexed_misses": [
+        "org.apache.gora.accumulo.store.AccumuloStore.putArray(org.apache.accumulo.core.data.Mutation,int,java.lang.Object,org.apache.accumulo.core.util.Pair)",
+        "org.apache.gora.accumulo.store.AccumuloStore.putMap(org.apache.accumulo.core.data.Mutation,int,org.apache.avro.Schema,java.lang.Object,org.apache.accumulo.core.util.Pair)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "seed_field_accesses": {
+      "candidate_count": 1,
+      "hits": [],
+      "misses": [
+        "org.apache.gora.accumulo.store.AccumuloStore.putArray(org.apache.accumulo.core.data.Mutation,int,java.lang.Object,org.apache.accumulo.core.util.Pair)",
+        "org.apache.gora.accumulo.store.AccumuloStore.putMap(org.apache.accumulo.core.data.Mutation,int,org.apache.avro.Schema,java.lang.Object,org.apache.accumulo.core.util.Pair)"
+      ],
+      "indexed_misses": [
+        "org.apache.gora.accumulo.store.AccumuloStore.putArray(org.apache.accumulo.core.data.Mutation,int,java.lang.Object,org.apache.accumulo.core.util.Pair)",
+        "org.apache.gora.accumulo.store.AccumuloStore.putMap(org.apache.accumulo.core.data.Mutation,int,org.apache.avro.Schema,java.lang.Object,org.apache.accumulo.core.util.Pair)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "combined_field_paths": {
+      "candidate_count": 1,
+      "hits": [],
+      "misses": [
+        "org.apache.gora.accumulo.store.AccumuloStore.putArray(org.apache.accumulo.core.data.Mutation,int,java.lang.Object,org.apache.accumulo.core.util.Pair)",
+        "org.apache.gora.accumulo.store.AccumuloStore.putMap(org.apache.accumulo.core.data.Mutation,int,org.apache.avro.Schema,java.lang.Object,org.apache.accumulo.core.util.Pair)"
+      ],
+      "indexed_misses": [
+        "org.apache.gora.accumulo.store.AccumuloStore.putArray(org.apache.accumulo.core.data.Mutation,int,java.lang.Object,org.apache.accumulo.core.util.Pair)",
+        "org.apache.gora.accumulo.store.AccumuloStore.putMap(org.apache.accumulo.core.data.Mutation,int,org.apache.avro.Schema,java.lang.Object,org.apache.accumulo.core.util.Pair)"
+      ],
+      "indexed_recall": 0.0
+    }
+  }
+}

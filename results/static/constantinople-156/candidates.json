@@ -1,0 +1,53 @@
+{
+  "id": "constantinople-156",
+  "fingerprint": "b568c5d671ff28a849af238959e5c1e0414b90a7481eeb435c70f955e3436451",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "c830b993cbbfd460138ee3ce846e820a911d6a07",
+  "candidates": [
+    "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object)",
+    "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+    "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+    "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+    "org.apache.commons.vfs.impl.PrivilegedFileReplicator.PrivilegedFileReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+    "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+    "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()",
+    "org.apache.commons.vfs.impl.StandardFileSystemManager.createDefaultFileReplicator()",
+    "org.apache.commons.vfs.tasks.VfsTask.resolveFile(java.lang.String)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object)": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.impl.PrivilegedFileReplicator.PrivilegedFileReplicator(org.apache.commons.vfs.provider.FileReplicator)": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.tasks.VfsTask.resolveFile(java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.createDefaultFileReplicator()": [
+          "CALLS"
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

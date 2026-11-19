@@ -187,12 +187,13 @@ class Guided:
         return dict(edges=results, truncated=more, next_offset=offset+PAGE if more and offset < 100 else None)
 
 
-def phase(run, guided, name, instruction, data, key):
-    budget = BUDGET[name]
+def phase(run, guided, name, instruction, data, key, *, budget=None, turns=None):
+    budget = BUDGET[name] if budget is None else budget
+    turns = TURNS[name] if turns is None else turns
     usage = run.usage[name] = dict(model_turns=0, tool_rounds=0, queries=0, truncated=0, errors=0)
     messages = [{'role': 'system', 'content': instruction + '\nReturn one JSON object.'},
                 {'role': 'user', 'content': json.dumps(data, ensure_ascii=False)}]
-    for turn in range(TURNS[name]):
+    for turn in range(turns):
         usage['model_turns'] += 1
         raw = run.complete(name, turn, messages)
         try:

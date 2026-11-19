@@ -1,0 +1,12 @@
+{
+  "id": "constantinople-040",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 0,
+  "predictions": [
+    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode()"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "b7b30fde043d7352f669a4631a459ef16755b7578633d9a54aede15b5959bea5",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

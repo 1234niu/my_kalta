@@ -1,0 +1,31 @@
+{
+  "id": "constantinople-065",
+  "fingerprint": "4d7bb7d8c11c1c767334008b661046833dd06b604f5697fb6f2d9c6e35244f98",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "2abe2c8366bebe043fe7aef7d091f7b169fcec79",
+  "candidates": [
+    "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)",
+    "org.apache.commons.lang3.time.FastDateParser.init()"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)",
+      "type": "executable",
+      "relations": {},
+      "resolution": "empty_unresolved_or_no_relations"
+    },
+    {
+      "fqn": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.lang3.time.FastDateParser.init()": [
+          "CALLS"
+        ],
+        "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "constantinople-128",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 2,
+  "predictions": [
+    "org.apache.commons.validator.routines.DomainValidator.DOMAIN_VALIDATOR_WITH_LOCAL",
+    "org.apache.commons.validator.routines.DomainValidator.LOCAL_TLD_LIST",
+    "org.apache.commons.validator.routines.DomainValidator.getInstance()",
+    "org.apache.commons.validator.routines.EmailValidator.EMAIL_VALIDATOR_WITH_LOCAL",
+    "org.apache.commons.validator.routines.EmailValidator.allowLocal"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "b37303f49df1c755cb281326d4f043b550aebad8693ab70e8a52fb5a72f20dcb",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

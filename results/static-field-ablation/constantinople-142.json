@@ -1,0 +1,521 @@
+{
+  "id": "constantinople-142",
+  "graph_edges": 5851,
+  "seeds": {
+    "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.vfs2.provider.http.HttpFileContentInfoFactory.create(org.apache.commons.vfs2.FileContent)"
+    ],
+    "fields": [
+      "org.apache.commons.vfs2.provider.http.HttpFileContentInfoFactory.create(org.apache.commons.vfs2.FileContent)",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doDetach()",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.method"
+    ],
+    "multihop": [
+      "org.apache.commons.vfs2.provider.http.HttpFileContentInfoFactory.create(org.apache.commons.vfs2.FileContent)",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doDetach()",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.fileSystem",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.method"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.vfs2.provider.http.HttpFileContentInfoFactory.create(org.apache.commons.vfs2.FileContent)",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doDetach()",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.fileSystem",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.method"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.vfs2.provider.http.HttpFileContentInfoFactory.create(org.apache.commons.vfs2.FileContent)",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doDetach()",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.fileSystem",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.setupMethod(org.apache.commons.httpclient.HttpMethod)",
+      "org.apache.commons.vfs2.provider.http.HttpFileSystem.getClient()"
+    ],
+    "mixed_field_paths": [
+      "org.apache.commons.vfs2.provider.http.HttpFileContentInfoFactory.create(org.apache.commons.vfs2.FileContent)",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doDetach()",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.fileSystem",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.setupMethod(org.apache.commons.httpclient.HttpMethod)",
+      "org.apache.commons.vfs2.provider.http.HttpFileSystem.getClient()"
+    ],
+    "seed_field_accesses": [
+      "org.apache.commons.vfs2.provider.http.HttpFileContentInfoFactory.create(org.apache.commons.vfs2.FileContent)",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doDetach()",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetContentSize()",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetLastModifiedTime()",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.fileSystem",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.setupMethod(org.apache.commons.httpclient.HttpMethod)",
+      "org.apache.commons.vfs2.provider.http.HttpFileSystem.getClient()"
+    ],
+    "combined_field_paths": [
+      "org.apache.commons.vfs2.provider.http.HttpFileContentInfoFactory.create(org.apache.commons.vfs2.FileContent)",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doDetach()",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetContentSize()",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetLastModifiedTime()",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.fileSystem",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.setupMethod(org.apache.commons.httpclient.HttpMethod)",
+      "org.apache.commons.vfs2.provider.http.HttpFileSystem.getClient()"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.method": {
+        "org.apache.commons.vfs2.provider.http.HttpFileObject.method": [
+          {
+            "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+            "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+            "line": 221
+          }
+        ]
+      },
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doDetach()": {
+        "org.apache.commons.vfs2.provider.http.HttpFileObject.method": [
+          {
+            "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+            "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+            "line": 221
+          },
+          {
+            "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.doDetach()",
+            "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+            "line": 66
+          }
+        ]
+      },
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()": {
+        "org.apache.commons.vfs2.provider.http.HttpFileObject.method": [
+          {
+            "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+            "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+            "line": 221
+          },
+          {
+            "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()",
+            "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+            "line": 77
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.method": {
+        "org.apache.commons.vfs2.provider.http.HttpFileObject.method": [
+          {
+            "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+            "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+            "line": 221
+          }
+        ]
+      },
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doDetach()": {
+        "org.apache.commons.vfs2.provider.http.HttpFileObject.method": [
+          {
+            "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+            "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+            "line": 221
+          },
+          {
+            "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.doDetach()",
+            "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+            "line": 66
+          }
+        ]
+      },
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()": {
+        "org.apache.commons.vfs2.provider.http.HttpFileObject.method": [
+          {
+            "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+            "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+            "line": 221
+          },
+          {
+            "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()",
+            "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+            "line": 77
+          }
+        ]
+      },
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.fileSystem": {
+        "org.apache.commons.vfs2.provider.http.HttpFileObject.method": [
+          {
+            "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+            "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+            "line": 221
+          },
+          {
+            "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()",
+            "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+            "line": 77
+          },
+          {
+            "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()",
+            "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.fileSystem",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+            "line": 79
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {},
+    "mixed_field_paths": {},
+    "seed_field_accesses": {
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.method": [
+        {
+          "seed": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+          "edge": "ADDED_WRITE",
+          "after_line": 220,
+          "proposed_fqn": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+          "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+          "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+          "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method"
+        }
+      ],
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()": [
+        {
+          "seed": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+          "edge": "ADDED_WRITE",
+          "after_line": 220,
+          "proposed_fqn": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+          "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+          "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+          "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method"
+        },
+        {
+          "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()",
+          "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+          "line": 78
+        }
+      ],
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetContentSize()": [
+        {
+          "seed": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+          "edge": "ADDED_WRITE",
+          "after_line": 220,
+          "proposed_fqn": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+          "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+          "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+          "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method"
+        },
+        {
+          "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetContentSize()",
+          "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+          "line": 112
+        }
+      ],
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetLastModifiedTime()": [
+        {
+          "seed": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+          "edge": "ADDED_WRITE",
+          "after_line": 220,
+          "proposed_fqn": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+          "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+          "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+          "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method"
+        },
+        {
+          "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetLastModifiedTime()",
+          "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+          "line": 129
+        }
+      ]
+    },
+    "combined_field_paths": {
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.method": [
+        {
+          "seed": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+          "edge": "ADDED_WRITE",
+          "after_line": 220,
+          "proposed_fqn": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+          "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+          "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+          "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method"
+        }
+      ],
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()": [
+        {
+          "seed": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+          "edge": "ADDED_WRITE",
+          "after_line": 220,
+          "proposed_fqn": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+          "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+          "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+          "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method"
+        },
+        {
+          "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()",
+          "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+          "line": 78
+        }
+      ],
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetContentSize()": [
+        {
+          "seed": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+          "edge": "ADDED_WRITE",
+          "after_line": 220,
+          "proposed_fqn": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+          "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+          "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+          "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method"
+        },
+        {
+          "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetContentSize()",
+          "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+          "line": 112
+        }
+      ],
+      "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetLastModifiedTime()": [
+        {
+          "seed": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+          "edge": "ADDED_WRITE",
+          "after_line": 220,
+          "proposed_fqn": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+          "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+          "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+          "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method"
+        },
+        {
+          "from": "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetLastModifiedTime()",
+          "to": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+          "line": 129
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 2976,
+      "ma_analysis": 2558,
+      "ma_refinement_fixed": 2393
+    },
+    "two_hop_calls": {
+      "sp": 2976,
+      "ma_analysis": 2558,
+      "ma_refinement_fixed": 2393
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "setupMethod",
+        "arity": 1,
+        "arguments": [
+          "method"
+        ],
+        "receiver": null,
+        "after_line": 221,
+        "expression": "setupMethod(method)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+        "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+        "status": "possible_parent_targets",
+        "possible_parent_targets": [
+          "org.apache.commons.vfs2.provider.http.HttpFileObject.setupMethod(org.apache.commons.httpclient.HttpMethod)"
+        ],
+        "inferred_targets": []
+      },
+      {
+        "name": "getClient",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "fileSystem",
+        "after_line": 222,
+        "expression": "getClient()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+        "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.commons.vfs2.provider.http.HttpFileSystem.getClient()"
+        ]
+      },
+      {
+        "name": "executeMethod",
+        "arity": 1,
+        "arguments": [
+          "method"
+        ],
+        "receiver": "client",
+        "after_line": 223,
+        "expression": "executeMethod(method)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+        "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "releaseConnection",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "method",
+        "after_line": 224,
+        "expression": "releaseConnection()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+        "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [
+    {
+      "seed": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+      "edge": "ADDED_WRITE",
+      "after_line": 220,
+      "proposed_fqn": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+      "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java"
+    },
+    {
+      "seed": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+      "edge": "ADDED_READ",
+      "after_line": 217,
+      "proposed_fqn": "org.apache.commons.vfs2.provider.http.HttpFileObject.method",
+      "file": "core/src/main/java/org/apache/commons/vfs2/provider/http/HttpFileObject.java"
+    }
+  ],
+  "indexed_targets": [
+    "org.apache.commons.vfs2.provider.http.HttpFileContentInfoFactory.create(org.apache.commons.vfs2.FileContent)",
+    "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()"
+  ],
+  "unindexed_targets": [],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 1,
+      "hits": [
+        "org.apache.commons.vfs2.provider.http.HttpFileContentInfoFactory.create(org.apache.commons.vfs2.FileContent)"
+      ],
+      "misses": [
+        "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()"
+      ],
+      "indexed_recall": 0.5
+    },
+    "fields": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.vfs2.provider.http.HttpFileContentInfoFactory.create(org.apache.commons.vfs2.FileContent)",
+        "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "multihop": {
+      "candidate_count": 5,
+      "hits": [
+        "org.apache.commons.vfs2.provider.http.HttpFileContentInfoFactory.create(org.apache.commons.vfs2.FileContent)",
+        "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 5,
+      "hits": [
+        "org.apache.commons.vfs2.provider.http.HttpFileContentInfoFactory.create(org.apache.commons.vfs2.FileContent)",
+        "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "diff_and_override": {
+      "candidate_count": 7,
+      "hits": [
+        "org.apache.commons.vfs2.provider.http.HttpFileContentInfoFactory.create(org.apache.commons.vfs2.FileContent)",
+        "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "mixed_field_paths": {
+      "candidate_count": 7,
+      "hits": [
+        "org.apache.commons.vfs2.provider.http.HttpFileContentInfoFactory.create(org.apache.commons.vfs2.FileContent)",
+        "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "seed_field_accesses": {
+      "candidate_count": 9,
+      "hits": [
+        "org.apache.commons.vfs2.provider.http.HttpFileContentInfoFactory.create(org.apache.commons.vfs2.FileContent)",
+        "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "combined_field_paths": {
+      "candidate_count": 9,
+      "hits": [
+        "org.apache.commons.vfs2.provider.http.HttpFileContentInfoFactory.create(org.apache.commons.vfs2.FileContent)",
+        "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    }
+  }
+}

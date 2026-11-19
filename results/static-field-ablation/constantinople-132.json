@@ -1,0 +1,517 @@
+{
+  "id": "constantinople-132",
+  "graph_edges": 1284,
+  "seeds": {
+    "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)": true,
+    "org.apache.commons.validator.routines.DomainValidator.isValidDomainSyntax(java.lang.String)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+      "org.apache.commons.validator.routines.EmailValidator.isValidDomain(java.lang.String)",
+      "org.apache.commons.validator.routines.RegexValidator.isValid(java.lang.String)",
+      "org.apache.commons.validator.routines.RegexValidator.match(java.lang.String)",
+      "org.apache.commons.validator.routines.UrlValidator.isValidAuthority(java.lang.String)"
+    ],
+    "fields": [
+      "org.apache.commons.validator.routines.DomainValidator.DomainValidator(boolean)",
+      "org.apache.commons.validator.routines.DomainValidator.allowLocal",
+      "org.apache.commons.validator.routines.DomainValidator.domainRegex",
+      "org.apache.commons.validator.routines.DomainValidator.hostnameRegex",
+      "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+      "org.apache.commons.validator.routines.EmailValidator.isValidDomain(java.lang.String)",
+      "org.apache.commons.validator.routines.RegexValidator.isValid(java.lang.String)",
+      "org.apache.commons.validator.routines.RegexValidator.match(java.lang.String)",
+      "org.apache.commons.validator.routines.UrlValidator.isValidAuthority(java.lang.String)"
+    ],
+    "multihop": [
+      "org.apache.commons.validator.routines.DomainValidator.DomainValidator(boolean)",
+      "org.apache.commons.validator.routines.DomainValidator.allowLocal",
+      "org.apache.commons.validator.routines.DomainValidator.domainRegex",
+      "org.apache.commons.validator.routines.DomainValidator.hostnameRegex",
+      "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+      "org.apache.commons.validator.routines.EmailValidator.isValidDomain(java.lang.String)",
+      "org.apache.commons.validator.routines.RegexValidator.isValid(java.lang.String)",
+      "org.apache.commons.validator.routines.RegexValidator.match(java.lang.String)",
+      "org.apache.commons.validator.routines.UrlValidator.isValidAuthority(java.lang.String)"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.validator.routines.DomainValidator.DomainValidator(boolean)",
+      "org.apache.commons.validator.routines.DomainValidator.allowLocal",
+      "org.apache.commons.validator.routines.DomainValidator.domainRegex",
+      "org.apache.commons.validator.routines.DomainValidator.hostnameRegex",
+      "org.apache.commons.validator.routines.DomainValidator.isValidCountryCodeTld(java.lang.String)",
+      "org.apache.commons.validator.routines.DomainValidator.isValidGenericTld(java.lang.String)",
+      "org.apache.commons.validator.routines.DomainValidator.isValidInfrastructureTld(java.lang.String)",
+      "org.apache.commons.validator.routines.DomainValidator.isValidLocalTld(java.lang.String)",
+      "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+      "org.apache.commons.validator.routines.EmailValidator.isValidDomain(java.lang.String)",
+      "org.apache.commons.validator.routines.RegexValidator.isValid(java.lang.String)",
+      "org.apache.commons.validator.routines.RegexValidator.match(java.lang.String)",
+      "org.apache.commons.validator.routines.UrlValidator.isValidAuthority(java.lang.String)"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.validator.routines.DomainValidator.DomainValidator(boolean)",
+      "org.apache.commons.validator.routines.DomainValidator.allowLocal",
+      "org.apache.commons.validator.routines.DomainValidator.domainRegex",
+      "org.apache.commons.validator.routines.DomainValidator.hostnameRegex",
+      "org.apache.commons.validator.routines.DomainValidator.isValidCountryCodeTld(java.lang.String)",
+      "org.apache.commons.validator.routines.DomainValidator.isValidGenericTld(java.lang.String)",
+      "org.apache.commons.validator.routines.DomainValidator.isValidInfrastructureTld(java.lang.String)",
+      "org.apache.commons.validator.routines.DomainValidator.isValidLocalTld(java.lang.String)",
+      "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+      "org.apache.commons.validator.routines.EmailValidator.isValidDomain(java.lang.String)",
+      "org.apache.commons.validator.routines.RegexValidator.isValid(java.lang.String)",
+      "org.apache.commons.validator.routines.RegexValidator.match(java.lang.String)",
+      "org.apache.commons.validator.routines.UrlValidator.isValidAuthority(java.lang.String)"
+    ],
+    "mixed_field_paths": [
+      "org.apache.commons.validator.routines.DomainValidator.DomainValidator(boolean)",
+      "org.apache.commons.validator.routines.DomainValidator.allowLocal",
+      "org.apache.commons.validator.routines.DomainValidator.domainRegex",
+      "org.apache.commons.validator.routines.DomainValidator.hostnameRegex",
+      "org.apache.commons.validator.routines.DomainValidator.isValidCountryCodeTld(java.lang.String)",
+      "org.apache.commons.validator.routines.DomainValidator.isValidGenericTld(java.lang.String)",
+      "org.apache.commons.validator.routines.DomainValidator.isValidInfrastructureTld(java.lang.String)",
+      "org.apache.commons.validator.routines.DomainValidator.isValidLocalTld(java.lang.String)",
+      "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+      "org.apache.commons.validator.routines.EmailValidator.isValidDomain(java.lang.String)",
+      "org.apache.commons.validator.routines.RegexValidator.isValid(java.lang.String)",
+      "org.apache.commons.validator.routines.RegexValidator.match(java.lang.String)",
+      "org.apache.commons.validator.routines.RegexValidator.patterns",
+      "org.apache.commons.validator.routines.UrlValidator.isValidAuthority(java.lang.String)"
+    ],
+    "seed_field_accesses": [
+      "org.apache.commons.validator.routines.DomainValidator.DomainValidator(boolean)",
+      "org.apache.commons.validator.routines.DomainValidator.allowLocal",
+      "org.apache.commons.validator.routines.DomainValidator.domainRegex",
+      "org.apache.commons.validator.routines.DomainValidator.hostnameRegex",
+      "org.apache.commons.validator.routines.DomainValidator.isValidCountryCodeTld(java.lang.String)",
+      "org.apache.commons.validator.routines.DomainValidator.isValidGenericTld(java.lang.String)",
+      "org.apache.commons.validator.routines.DomainValidator.isValidInfrastructureTld(java.lang.String)",
+      "org.apache.commons.validator.routines.DomainValidator.isValidLocalTld(java.lang.String)",
+      "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+      "org.apache.commons.validator.routines.EmailValidator.isValidDomain(java.lang.String)",
+      "org.apache.commons.validator.routines.RegexValidator.isValid(java.lang.String)",
+      "org.apache.commons.validator.routines.RegexValidator.match(java.lang.String)",
+      "org.apache.commons.validator.routines.UrlValidator.isValidAuthority(java.lang.String)"
+    ],
+    "combined_field_paths": [
+      "org.apache.commons.validator.routines.DomainValidator.DomainValidator(boolean)",
+      "org.apache.commons.validator.routines.DomainValidator.allowLocal",
+      "org.apache.commons.validator.routines.DomainValidator.domainRegex",
+      "org.apache.commons.validator.routines.DomainValidator.hostnameRegex",
+      "org.apache.commons.validator.routines.DomainValidator.isValidCountryCodeTld(java.lang.String)",
+      "org.apache.commons.validator.routines.DomainValidator.isValidGenericTld(java.lang.String)",
+      "org.apache.commons.validator.routines.DomainValidator.isValidInfrastructureTld(java.lang.String)",
+      "org.apache.commons.validator.routines.DomainValidator.isValidLocalTld(java.lang.String)",
+      "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+      "org.apache.commons.validator.routines.EmailValidator.isValidDomain(java.lang.String)",
+      "org.apache.commons.validator.routines.RegexValidator.isValid(java.lang.String)",
+      "org.apache.commons.validator.routines.RegexValidator.match(java.lang.String)",
+      "org.apache.commons.validator.routines.RegexValidator.patterns",
+      "org.apache.commons.validator.routines.UrlValidator.isValidAuthority(java.lang.String)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.validator.routines.DomainValidator.domainRegex": {
+        "org.apache.commons.validator.routines.DomainValidator.domainRegex": [
+          {
+            "from": "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)",
+            "to": "org.apache.commons.validator.routines.DomainValidator.domainRegex",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+            "line": 138
+          }
+        ]
+      },
+      "org.apache.commons.validator.routines.DomainValidator.allowLocal": {
+        "org.apache.commons.validator.routines.DomainValidator.allowLocal": [
+          {
+            "from": "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)",
+            "to": "org.apache.commons.validator.routines.DomainValidator.allowLocal",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+            "line": 142
+          }
+        ]
+      },
+      "org.apache.commons.validator.routines.DomainValidator.DomainValidator(boolean)": {
+        "org.apache.commons.validator.routines.DomainValidator.allowLocal": [
+          {
+            "from": "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)",
+            "to": "org.apache.commons.validator.routines.DomainValidator.allowLocal",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+            "line": 142
+          },
+          {
+            "from": "org.apache.commons.validator.routines.DomainValidator.DomainValidator(boolean)",
+            "to": "org.apache.commons.validator.routines.DomainValidator.allowLocal",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+            "line": 127
+          }
+        ]
+      },
+      "org.apache.commons.validator.routines.DomainValidator.hostnameRegex": {
+        "org.apache.commons.validator.routines.DomainValidator.hostnameRegex": [
+          {
+            "from": "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)",
+            "to": "org.apache.commons.validator.routines.DomainValidator.hostnameRegex",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+            "line": 142
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.validator.routines.DomainValidator.domainRegex": {
+        "org.apache.commons.validator.routines.DomainValidator.domainRegex": [
+          {
+            "from": "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)",
+            "to": "org.apache.commons.validator.routines.DomainValidator.domainRegex",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+            "line": 138
+          }
+        ]
+      },
+      "org.apache.commons.validator.routines.DomainValidator.allowLocal": {
+        "org.apache.commons.validator.routines.DomainValidator.allowLocal": [
+          {
+            "from": "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)",
+            "to": "org.apache.commons.validator.routines.DomainValidator.allowLocal",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+            "line": 142
+          }
+        ]
+      },
+      "org.apache.commons.validator.routines.DomainValidator.DomainValidator(boolean)": {
+        "org.apache.commons.validator.routines.DomainValidator.allowLocal": [
+          {
+            "from": "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)",
+            "to": "org.apache.commons.validator.routines.DomainValidator.allowLocal",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+            "line": 142
+          },
+          {
+            "from": "org.apache.commons.validator.routines.DomainValidator.DomainValidator(boolean)",
+            "to": "org.apache.commons.validator.routines.DomainValidator.allowLocal",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+            "line": 127
+          }
+        ]
+      },
+      "org.apache.commons.validator.routines.DomainValidator.hostnameRegex": {
+        "org.apache.commons.validator.routines.DomainValidator.hostnameRegex": [
+          {
+            "from": "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)",
+            "to": "org.apache.commons.validator.routines.DomainValidator.hostnameRegex",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+            "line": 142
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.commons.validator.routines.DomainValidator.isValidLocalTld(java.lang.String)": [
+        {
+          "from": "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)",
+          "to": "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+          "line": 140
+        },
+        {
+          "from": "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+          "to": "org.apache.commons.validator.routines.DomainValidator.isValidLocalTld(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+          "line": 159
+        }
+      ],
+      "org.apache.commons.validator.routines.DomainValidator.isValidInfrastructureTld(java.lang.String)": [
+        {
+          "from": "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)",
+          "to": "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+          "line": 140
+        },
+        {
+          "from": "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+          "to": "org.apache.commons.validator.routines.DomainValidator.isValidInfrastructureTld(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+          "line": 162
+        }
+      ],
+      "org.apache.commons.validator.routines.DomainValidator.isValidGenericTld(java.lang.String)": [
+        {
+          "from": "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)",
+          "to": "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+          "line": 140
+        },
+        {
+          "from": "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+          "to": "org.apache.commons.validator.routines.DomainValidator.isValidGenericTld(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+          "line": 163
+        }
+      ],
+      "org.apache.commons.validator.routines.DomainValidator.isValidCountryCodeTld(java.lang.String)": [
+        {
+          "from": "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)",
+          "to": "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+          "line": 140
+        },
+        {
+          "from": "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+          "to": "org.apache.commons.validator.routines.DomainValidator.isValidCountryCodeTld(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+          "line": 164
+        }
+      ]
+    },
+    "mixed_field_paths": {
+      "org.apache.commons.validator.routines.RegexValidator.patterns": [
+        {
+          "from": "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)",
+          "to": "org.apache.commons.validator.routines.RegexValidator.match(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+          "line": 138
+        },
+        {
+          "from": "org.apache.commons.validator.routines.RegexValidator.match(java.lang.String)",
+          "to": "org.apache.commons.validator.routines.RegexValidator.patterns",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/validator/routines/RegexValidator.java",
+          "line": 163
+        }
+      ],
+      "org.apache.commons.validator.routines.DomainValidator.allowLocal": [
+        {
+          "from": "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)",
+          "to": "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+          "line": 140
+        },
+        {
+          "from": "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+          "to": "org.apache.commons.validator.routines.DomainValidator.allowLocal",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+          "line": 159
+        }
+      ]
+    },
+    "seed_field_accesses": {},
+    "combined_field_paths": {
+      "org.apache.commons.validator.routines.RegexValidator.patterns": [
+        {
+          "from": "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)",
+          "to": "org.apache.commons.validator.routines.RegexValidator.match(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+          "line": 138
+        },
+        {
+          "from": "org.apache.commons.validator.routines.RegexValidator.match(java.lang.String)",
+          "to": "org.apache.commons.validator.routines.RegexValidator.patterns",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/validator/routines/RegexValidator.java",
+          "line": 163
+        }
+      ],
+      "org.apache.commons.validator.routines.DomainValidator.allowLocal": [
+        {
+          "from": "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)",
+          "to": "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+          "line": 140
+        },
+        {
+          "from": "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+          "to": "org.apache.commons.validator.routines.DomainValidator.allowLocal",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+          "line": 159
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 3975,
+      "ma_analysis": 3557,
+      "ma_refinement_fixed": 2715
+    },
+    "two_hop_calls": {
+      "sp": 4356,
+      "ma_analysis": 3938,
+      "ma_refinement_fixed": 3096
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "length",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "domain",
+        "after_line": 140,
+        "expression": "length()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)",
+        "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "length",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "domain",
+        "after_line": 153,
+        "expression": "length()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.validator.routines.DomainValidator.isValidDomainSyntax(java.lang.String)",
+        "file": "src/main/java/org/apache/commons/validator/routines/DomainValidator.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [],
+  "indexed_targets": [
+    "org.apache.commons.validator.routines.DomainValidator.DOMAIN_LABEL_REGEX",
+    "org.apache.commons.validator.routines.DomainValidator.TOP_LABEL_REGEX"
+  ],
+  "unindexed_targets": [],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 5,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.validator.routines.DomainValidator.DOMAIN_LABEL_REGEX",
+        "org.apache.commons.validator.routines.DomainValidator.TOP_LABEL_REGEX"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.validator.routines.DomainValidator.DOMAIN_LABEL_REGEX",
+        "org.apache.commons.validator.routines.DomainValidator.TOP_LABEL_REGEX"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 9,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.validator.routines.DomainValidator.DOMAIN_LABEL_REGEX",
+        "org.apache.commons.validator.routines.DomainValidator.TOP_LABEL_REGEX"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.validator.routines.DomainValidator.DOMAIN_LABEL_REGEX",
+        "org.apache.commons.validator.routines.DomainValidator.TOP_LABEL_REGEX"
+      ],
+      "indexed_recall": 0.0
+    },
+    "multihop": {
+      "candidate_count": 9,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.validator.routines.DomainValidator.DOMAIN_LABEL_REGEX",
+        "org.apache.commons.validator.routines.DomainValidator.TOP_LABEL_REGEX"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.validator.routines.DomainValidator.DOMAIN_LABEL_REGEX",
+        "org.apache.commons.validator.routines.DomainValidator.TOP_LABEL_REGEX"
+      ],
+      "indexed_recall": 0.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 13,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.validator.routines.DomainValidator.DOMAIN_LABEL_REGEX",
+        "org.apache.commons.validator.routines.DomainValidator.TOP_LABEL_REGEX"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.validator.routines.DomainValidator.DOMAIN_LABEL_REGEX",
+        "org.apache.commons.validator.routines.DomainValidator.TOP_LABEL_REGEX"
+      ],
+      "indexed_recall": 0.0
+    },
+    "diff_and_override": {
+      "candidate_count": 13,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.validator.routines.DomainValidator.DOMAIN_LABEL_REGEX",
+        "org.apache.commons.validator.routines.DomainValidator.TOP_LABEL_REGEX"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.validator.routines.DomainValidator.DOMAIN_LABEL_REGEX",
+        "org.apache.commons.validator.routines.DomainValidator.TOP_LABEL_REGEX"
+      ],
+      "indexed_recall": 0.0
+    },
+    "mixed_field_paths": {
+      "candidate_count": 14,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.validator.routines.DomainValidator.DOMAIN_LABEL_REGEX",
+        "org.apache.commons.validator.routines.DomainValidator.TOP_LABEL_REGEX"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.validator.routines.DomainValidator.DOMAIN_LABEL_REGEX",
+        "org.apache.commons.validator.routines.DomainValidator.TOP_LABEL_REGEX"
+      ],
+      "indexed_recall": 0.0
+    },
+    "seed_field_accesses": {
+      "candidate_count": 13,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.validator.routines.DomainValidator.DOMAIN_LABEL_REGEX",
+        "org.apache.commons.validator.routines.DomainValidator.TOP_LABEL_REGEX"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.validator.routines.DomainValidator.DOMAIN_LABEL_REGEX",
+        "org.apache.commons.validator.routines.DomainValidator.TOP_LABEL_REGEX"
+      ],
+      "indexed_recall": 0.0
+    },
+    "combined_field_paths": {
+      "candidate_count": 14,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.validator.routines.DomainValidator.DOMAIN_LABEL_REGEX",
+        "org.apache.commons.validator.routines.DomainValidator.TOP_LABEL_REGEX"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.validator.routines.DomainValidator.DOMAIN_LABEL_REGEX",
+        "org.apache.commons.validator.routines.DomainValidator.TOP_LABEL_REGEX"
+      ],
+      "indexed_recall": 0.0
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "constantinople-068",
+  "fingerprint": "3052041d002bd5ef55d9238f7a6c9e57259f89b60d3a4c705b91422f92ca2527",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "745885cc88a53a65378bfadf34cbab15a951c319",
+  "candidates": [],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.logging.Log,java.util.Collection)",
+      "type": "executable",
+      "relations": {},
+      "resolution": "empty_unresolved_or_no_relations"
+    }
+  ]
+}

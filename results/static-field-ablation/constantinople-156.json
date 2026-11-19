@@ -1,0 +1,3428 @@
+{
+  "id": "constantinople-156",
+  "graph_edges": 6428,
+  "seeds": {
+    "org.apache.commons.vfs.impl.StandardFileSystemManager.init()": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+      "org.apache.commons.vfs.impl.PrivilegedFileReplicator.PrivilegedFileReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.createDefaultFileReplicator()",
+      "org.apache.commons.vfs.tasks.VfsTask.resolveFile(java.lang.String)"
+    ],
+    "fields": [
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+      "org.apache.commons.vfs.impl.PrivilegedFileReplicator.PrivilegedFileReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.CONFIG_RESOURCE",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.createDefaultFileReplicator()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setClassLoader(java.lang.ClassLoader)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.net.URL)",
+      "org.apache.commons.vfs.tasks.VfsTask.resolveFile(java.lang.String)"
+    ],
+    "multihop": [
+      "org.apache.commons.vfs.CacheStrategy.ON_RESOLVE",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.components",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.defaultProvider",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.providers",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setCacheStrategy(org.apache.commons.vfs.CacheStrategy)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setFileContentInfoFactory(org.apache.commons.vfs.FileContentInfoFactory)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setFilesCache(org.apache.commons.vfs.FilesCache)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.vfsProvider",
+      "org.apache.commons.vfs.impl.PrivilegedFileReplicator.PrivilegedFileReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.CONFIG_RESOURCE",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.PLUGIN_CONFIG_RESOURCE",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.createDefaultFileReplicator()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.log",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setClassLoader(java.lang.ClassLoader)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.lang.String)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.net.URL)",
+      "org.apache.commons.vfs.tasks.VfsTask.resolveFile(java.lang.String)"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.vfs.CacheStrategy.ON_RESOLVE",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object)",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object,java.lang.Throwable)",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object[],java.lang.Throwable)",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.Throwable)",
+      "org.apache.commons.vfs.cache.SoftRefFilesCache.SoftRefFilesCache()",
+      "org.apache.commons.vfs.impl.DefaultFileReplicator.DefaultFileReplicator()",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.components",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.defaultProvider",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.providers",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setCacheStrategy(org.apache.commons.vfs.CacheStrategy)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setFileContentInfoFactory(org.apache.commons.vfs.FileContentInfoFactory)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setFilesCache(org.apache.commons.vfs.FilesCache)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setupComponent(java.lang.Object)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.vfsProvider",
+      "org.apache.commons.vfs.impl.FileContentInfoFilenameFactory.FileContentInfoFilenameFactory()",
+      "org.apache.commons.vfs.impl.PrivilegedFileReplicator.PrivilegedFileReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.CONFIG_RESOURCE",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.PLUGIN_CONFIG_RESOURCE",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(org.w3c.dom.Element)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.createDefaultFileReplicator()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.createDocumentBuilder()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.findClassLoader()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.log",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setClassLoader(java.lang.ClassLoader)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.lang.String)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.net.URL)",
+      "org.apache.commons.vfs.tasks.VfsTask.resolveFile(java.lang.String)"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.vfs.CacheStrategy.ON_RESOLVE",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object)",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object,java.lang.Throwable)",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object[],java.lang.Throwable)",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.Throwable)",
+      "org.apache.commons.vfs.cache.SoftRefFilesCache.SoftRefFilesCache()",
+      "org.apache.commons.vfs.impl.DefaultFileReplicator.DefaultFileReplicator()",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.components",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.defaultProvider",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.providers",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setCacheStrategy(org.apache.commons.vfs.CacheStrategy)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setFileContentInfoFactory(org.apache.commons.vfs.FileContentInfoFactory)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setFilesCache(org.apache.commons.vfs.FilesCache)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setupComponent(java.lang.Object)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.vfsProvider",
+      "org.apache.commons.vfs.impl.FileContentInfoFilenameFactory.FileContentInfoFilenameFactory()",
+      "org.apache.commons.vfs.impl.PrivilegedFileReplicator.PrivilegedFileReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.CONFIG_RESOURCE",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.PLUGIN_CONFIG_RESOURCE",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(org.w3c.dom.Element)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.createDefaultFileReplicator()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.createDocumentBuilder()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.findClassLoader()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.log",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setClassLoader(java.lang.ClassLoader)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.lang.String)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.net.URL)",
+      "org.apache.commons.vfs.tasks.VfsTask.resolveFile(java.lang.String)"
+    ],
+    "mixed_field_paths": [
+      "org.apache.commons.vfs.CacheStrategy.ON_RESOLVE",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object)",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object,java.lang.Throwable)",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object[],java.lang.Throwable)",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.Throwable)",
+      "org.apache.commons.vfs.cache.SoftRefFilesCache.SoftRefFilesCache()",
+      "org.apache.commons.vfs.impl.DefaultFileReplicator.DefaultFileReplicator()",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.components",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.defaultProvider",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.providers",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setCacheStrategy(org.apache.commons.vfs.CacheStrategy)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setFileContentInfoFactory(org.apache.commons.vfs.FileContentInfoFactory)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setFilesCache(org.apache.commons.vfs.FilesCache)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setupComponent(java.lang.Object)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.vfsProvider",
+      "org.apache.commons.vfs.impl.FileContentInfoFilenameFactory.FileContentInfoFilenameFactory()",
+      "org.apache.commons.vfs.impl.PrivilegedFileReplicator.PrivilegedFileReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.CONFIG_RESOURCE",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.PLUGIN_CONFIG_RESOURCE",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.addOperationProvider(org.w3c.dom.Element)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.addProvider(org.w3c.dom.Element,boolean)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(org.w3c.dom.Element)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.createDefaultFileReplicator()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.createDocumentBuilder()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.findClassLoader()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.log",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setClassLoader(java.lang.ClassLoader)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.lang.String)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.net.URL)",
+      "org.apache.commons.vfs.tasks.VfsTask.resolveFile(java.lang.String)"
+    ],
+    "seed_field_accesses": [
+      "org.apache.commons.vfs.CacheStrategy.ON_RESOLVE",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object)",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object,java.lang.Throwable)",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object[],java.lang.Throwable)",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.Throwable)",
+      "org.apache.commons.vfs.cache.SoftRefFilesCache.SoftRefFilesCache()",
+      "org.apache.commons.vfs.impl.DefaultFileReplicator.DefaultFileReplicator()",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.components",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.defaultProvider",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.providers",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setCacheStrategy(org.apache.commons.vfs.CacheStrategy)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setFileContentInfoFactory(org.apache.commons.vfs.FileContentInfoFactory)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setFilesCache(org.apache.commons.vfs.FilesCache)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setupComponent(java.lang.Object)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.vfsProvider",
+      "org.apache.commons.vfs.impl.FileContentInfoFilenameFactory.FileContentInfoFilenameFactory()",
+      "org.apache.commons.vfs.impl.PrivilegedFileReplicator.PrivilegedFileReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.CONFIG_RESOURCE",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.PLUGIN_CONFIG_RESOURCE",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(org.w3c.dom.Element)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.createDefaultFileReplicator()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.createDocumentBuilder()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.findClassLoader()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.log",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setClassLoader(java.lang.ClassLoader)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.lang.String)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.net.URL)",
+      "org.apache.commons.vfs.tasks.VfsTask.resolveFile(java.lang.String)"
+    ],
+    "combined_field_paths": [
+      "org.apache.commons.vfs.CacheStrategy.ON_RESOLVE",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object)",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object,java.lang.Throwable)",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object[],java.lang.Throwable)",
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.Throwable)",
+      "org.apache.commons.vfs.cache.SoftRefFilesCache.SoftRefFilesCache()",
+      "org.apache.commons.vfs.impl.DefaultFileReplicator.DefaultFileReplicator()",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.components",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.defaultProvider",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.providers",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setCacheStrategy(org.apache.commons.vfs.CacheStrategy)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setFileContentInfoFactory(org.apache.commons.vfs.FileContentInfoFactory)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setFilesCache(org.apache.commons.vfs.FilesCache)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setupComponent(java.lang.Object)",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.vfsProvider",
+      "org.apache.commons.vfs.impl.FileContentInfoFilenameFactory.FileContentInfoFilenameFactory()",
+      "org.apache.commons.vfs.impl.PrivilegedFileReplicator.PrivilegedFileReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.CONFIG_RESOURCE",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.PLUGIN_CONFIG_RESOURCE",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.addOperationProvider(org.w3c.dom.Element)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.addProvider(org.w3c.dom.Element,boolean)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(org.w3c.dom.Element)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.createDefaultFileReplicator()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.createDocumentBuilder()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.findClassLoader()",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.log",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setClassLoader(java.lang.ClassLoader)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.lang.String)",
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.net.URL)",
+      "org.apache.commons.vfs.tasks.VfsTask.resolveFile(java.lang.String)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader": {
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 106
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setClassLoader(java.lang.ClassLoader)": {
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 106
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.setClassLoader(java.lang.ClassLoader)",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 93
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri": {
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 111
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.net.URL)": {
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 111
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.net.URL)",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 84
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.CONFIG_RESOURCE": {
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.CONFIG_RESOURCE": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.CONFIG_RESOURCE",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 114
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader": {
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 106
+          }
+        ],
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 111
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 119
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 106
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 103
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 372
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 372
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 103
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 106
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 383
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 383
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 106
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 463
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 466
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 106
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 468
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 470
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 106
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 473
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 475
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 106
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.init": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 106
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setClassLoader(java.lang.ClassLoader)": {
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 106
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.setClassLoader(java.lang.ClassLoader)",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 93
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri": {
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 106
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 109
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 111
+          }
+        ],
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 111
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 103
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 372
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 372
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 103
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 111
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 383
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 383
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 111
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 463
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 466
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 111
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 468
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 470
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 111
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 473
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 475
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 111
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.init": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 111
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.CONFIG_RESOURCE": {
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 106
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 109
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.CONFIG_RESOURCE",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 114
+          }
+        ],
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 111
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 119
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.CONFIG_RESOURCE",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 114
+          }
+        ],
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.CONFIG_RESOURCE": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.CONFIG_RESOURCE",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 114
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 103
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 372
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 372
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 103
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.CONFIG_RESOURCE",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 114
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 383
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 383
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.CONFIG_RESOURCE",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 114
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 463
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 466
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.CONFIG_RESOURCE",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 114
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 468
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 470
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.CONFIG_RESOURCE",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 114
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 473
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 475
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.CONFIG_RESOURCE",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 114
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.init": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.CONFIG_RESOURCE",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 114
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.net.URL)": {
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 111
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.net.URL)",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 84
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.lang.String)": {
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 111
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.net.URL)",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 84
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.lang.String)",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.net.URL)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 71
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.log": {
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 111
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.net.URL)",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configUri",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 84
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.lang.String)",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.net.URL)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 71
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.setConfiguration(java.lang.String)",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.log",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 75
+          }
+        ],
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.log": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 123
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.log",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 203
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator": {
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 103
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 372
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 383
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 514
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 505
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.init": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 515
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 505
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)": {
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 103
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 372
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 372
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()": {
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 103
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 372
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 513
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 383
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 514
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.init": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 515
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.init": {
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 103
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 372
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 513
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 490
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 383
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 514
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 490
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 463
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setFilesCache(org.apache.commons.vfs.FilesCache)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 259
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setFilesCache(org.apache.commons.vfs.FilesCache)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 254
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 468
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setFileContentInfoFactory(org.apache.commons.vfs.FileContentInfoFactory)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 361
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setFileContentInfoFactory(org.apache.commons.vfs.FileContentInfoFactory)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 356
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 473
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setCacheStrategy(org.apache.commons.vfs.CacheStrategy)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 282
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setCacheStrategy(org.apache.commons.vfs.CacheStrategy)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 277
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.init": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.providers": {
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 103
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 372
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 513
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.providers",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 496
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 383
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 514
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.providers",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 496
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.init": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 515
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.providers",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 496
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.defaultProvider": {
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 103
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 372
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 513
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.defaultProvider",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 504
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 383
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 514
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.defaultProvider",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 504
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.init": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 515
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.defaultProvider",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 504
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore": {
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 103
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 372
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 513
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 506
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 383
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.init": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 515
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 506
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.components": {
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 103
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 372
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 513
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.components",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 508
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 383
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 514
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.components",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 508
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.init": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 515
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.components",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 508
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache": {
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 103
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 372
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileReplicator",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 513
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 510
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 383
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 514
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.close()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 510
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 463
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 468
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 470
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 463
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 473
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 475
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 463
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.init": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 463
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)": {
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 383
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setTemporaryFileStore(org.apache.commons.vfs.provider.TemporaryFileStore)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.tempFileStore",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 383
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.PLUGIN_CONFIG_RESOURCE": {
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.PLUGIN_CONFIG_RESOURCE": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 126
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()",
+            "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.PLUGIN_CONFIG_RESOURCE",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 143
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setFilesCache(org.apache.commons.vfs.FilesCache)": {
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 463
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setFilesCache(org.apache.commons.vfs.FilesCache)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 259
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()": {
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 463
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 466
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 468
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 470
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 473
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 475
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.init": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory": {
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 463
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 466
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 468
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 468
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 473
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 475
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 468
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.init": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 468
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy": {
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 463
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 466
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 473
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 468
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 470
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 473
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 473
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.init": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 473
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.vfsProvider": {
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 463
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 466
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.vfsProvider",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 479
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 468
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 470
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.vfsProvider",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 479
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 473
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 475
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.vfsProvider",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 479
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.vfsProvider": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.vfsProvider",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 479
+          }
+        ],
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.init": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 481
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.vfsProvider",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 479
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setFileContentInfoFactory(org.apache.commons.vfs.FileContentInfoFactory)": {
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 468
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setFileContentInfoFactory(org.apache.commons.vfs.FileContentInfoFactory)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 361
+          }
+        ]
+      },
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setCacheStrategy(org.apache.commons.vfs.CacheStrategy)": {
+        "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 473
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setCacheStrategy(org.apache.commons.vfs.CacheStrategy)",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 282
+          }
+        ]
+      },
+      "org.apache.commons.vfs.CacheStrategy.ON_RESOLVE": {
+        "org.apache.commons.vfs.CacheStrategy.ON_RESOLVE": [
+          {
+            "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+            "to": "org.apache.commons.vfs.CacheStrategy.ON_RESOLVE",
+            "kind": "READ",
+            "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+            "line": 475
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.commons.vfs.impl.DefaultFileReplicator.DefaultFileReplicator()": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.createDefaultFileReplicator()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 102
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.createDefaultFileReplicator()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileReplicator.DefaultFileReplicator()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 170
+        }
+      ],
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.setupComponent(java.lang.Object)": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 103
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setReplicator(org.apache.commons.vfs.provider.FileReplicator)",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.setupComponent(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+          "line": 371
+        }
+      ],
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object[],java.lang.Throwable)": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 117
+        },
+        {
+          "from": "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object)",
+          "to": "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object[],java.lang.Throwable)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/FileSystemException.java",
+          "line": 65
+        }
+      ],
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.createDocumentBuilder()": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 123
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.createDocumentBuilder()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 183
+        }
+      ],
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(org.w3c.dom.Element)": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 123
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(org.w3c.dom.Element)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 187
+        }
+      ],
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object,java.lang.Throwable)": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 123
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+          "to": "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.String,java.lang.Object,java.lang.Throwable)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 191
+        }
+      ],
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.findClassLoader()": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 126
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.findClassLoader()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 138
+        }
+      ],
+      "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.Throwable)": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 126
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()",
+          "to": "org.apache.commons.vfs.FileSystemException.FileSystemException(java.lang.Throwable)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 147
+        }
+      ],
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 126
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 153
+        }
+      ],
+      "org.apache.commons.vfs.cache.SoftRefFilesCache.SoftRefFilesCache()": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 129
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.cache.SoftRefFilesCache.SoftRefFilesCache()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+          "line": 466
+        }
+      ],
+      "org.apache.commons.vfs.impl.FileContentInfoFilenameFactory.FileContentInfoFilenameFactory()": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 129
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.FileContentInfoFilenameFactory.FileContentInfoFilenameFactory()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+          "line": 470
+        }
+      ]
+    },
+    "mixed_field_paths": {
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+          "kind": "WRITE",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 109
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 391
+        }
+      ],
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.addProvider(org.w3c.dom.Element,boolean)": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+          "kind": "WRITE",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 109
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 391
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.addProvider(org.w3c.dom.Element,boolean)",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 340
+        }
+      ],
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+          "kind": "WRITE",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 109
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 464
+        }
+      ],
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.addOperationProvider(org.w3c.dom.Element)": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+          "kind": "WRITE",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 109
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 464
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.addOperationProvider(org.w3c.dom.Element)",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 378
+        }
+      ],
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.log": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 123
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.log",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 203
+        }
+      ],
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.PLUGIN_CONFIG_RESOURCE": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 126
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.PLUGIN_CONFIG_RESOURCE",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 143
+        }
+      ],
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 129
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+          "line": 463
+        }
+      ],
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 129
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+          "line": 468
+        }
+      ],
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 129
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+          "line": 473
+        }
+      ],
+      "org.apache.commons.vfs.CacheStrategy.ON_RESOLVE": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 129
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.CacheStrategy.ON_RESOLVE",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+          "line": 475
+        }
+      ],
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.vfsProvider": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 129
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.vfsProvider",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+          "line": 479
+        }
+      ]
+    },
+    "seed_field_accesses": {},
+    "combined_field_paths": {
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+          "kind": "WRITE",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 109
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 391
+        }
+      ],
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.addProvider(org.w3c.dom.Element,boolean)": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+          "kind": "WRITE",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 109
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 391
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.addProvider(org.w3c.dom.Element,boolean)",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 340
+        }
+      ],
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+          "kind": "WRITE",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 109
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 464
+        }
+      ],
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.addOperationProvider(org.w3c.dom.Element)": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+          "kind": "WRITE",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 109
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.classLoader",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 464
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.addOperationProvider(org.w3c.dom.Element)",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 378
+        }
+      ],
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.log": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 123
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.configure(java.net.URL)",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.log",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 203
+        }
+      ],
+      "org.apache.commons.vfs.impl.StandardFileSystemManager.PLUGIN_CONFIG_RESOURCE": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 126
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.configurePlugins()",
+          "to": "org.apache.commons.vfs.impl.StandardFileSystemManager.PLUGIN_CONFIG_RESOURCE",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 143
+        }
+      ],
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 129
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.filesCache",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+          "line": 463
+        }
+      ],
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 129
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileContentInfoFactory",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+          "line": 468
+        }
+      ],
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 129
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.fileCacheStrategy",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+          "line": 473
+        }
+      ],
+      "org.apache.commons.vfs.CacheStrategy.ON_RESOLVE": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 129
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.CacheStrategy.ON_RESOLVE",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+          "line": 475
+        }
+      ],
+      "org.apache.commons.vfs.impl.DefaultFileSystemManager.vfsProvider": [
+        {
+          "from": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/StandardFileSystemManager.java",
+          "line": 129
+        },
+        {
+          "from": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+          "to": "org.apache.commons.vfs.impl.DefaultFileSystemManager.vfsProvider",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/vfs/impl/DefaultFileSystemManager.java",
+          "line": 479
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 4953,
+      "ma_analysis": 4535,
+      "ma_refinement_fixed": 4464
+    },
+    "two_hop_calls": {
+      "sp": 5859,
+      "ma_analysis": 5441,
+      "ma_refinement_fixed": 5370
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [],
+    "proposed_field_writes": [],
+    "possible_overrides": [
+      {
+        "seed": "org.apache.commons.vfs.impl.StandardFileSystemManager.init()",
+        "target": "org.apache.commons.vfs.impl.DefaultFileSystemManager.init()",
+        "edge": "POSSIBLE_OVERRIDE"
+      }
+    ]
+  },
+  "seed_field_accesses": [],
+  "indexed_targets": [
+    "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+    "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)",
+    "org.apache.commons.vfs.impl.StandardFileSystemManager.findClassLoader()"
+  ],
+  "unindexed_targets": [],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 9,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClassLoader()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClassLoader()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 14,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClassLoader()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClassLoader()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "multihop": {
+      "candidate_count": 32,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClassLoader()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClassLoader()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 42,
+      "hits": [
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClassLoader()"
+      ],
+      "misses": [
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)"
+      ],
+      "indexed_recall": 0.3333333333333333
+    },
+    "diff_and_override": {
+      "candidate_count": 42,
+      "hits": [
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClassLoader()"
+      ],
+      "misses": [
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)"
+      ],
+      "indexed_recall": 0.3333333333333333
+    },
+    "mixed_field_paths": {
+      "candidate_count": 46,
+      "hits": [
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClassLoader()"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "seed_field_accesses": {
+      "candidate_count": 42,
+      "hits": [
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClassLoader()"
+      ],
+      "misses": [
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)"
+      ],
+      "indexed_recall": 0.3333333333333333
+    },
+    "combined_field_paths": {
+      "candidate_count": 46,
+      "hits": [
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClassLoader()"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    }
+  }
+}

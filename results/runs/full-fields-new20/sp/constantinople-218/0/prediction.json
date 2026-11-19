@@ -1,0 +1,18 @@
+{
+  "id": "constantinople-218",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 0,
+  "predictions": [
+    "org.apache.bcel.Repository.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)",
+    "org.apache.bcel.generic.ReferenceType.isCastableTo(org.apache.bcel.generic.Type)",
+    "org.apache.bcel.generic.Type.normalizeForStackOrLocal()",
+    "org.apache.bcel.verifier.structurals.Frame.getStack()",
+    "org.apache.bcel.verifier.structurals.InstructionContext.getInFrame()",
+    "org.apache.bcel.verifier.structurals.OperandStack.peek()",
+    "org.apache.bcel.verifier.structurals.OperandStack.size()"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "9751c5e7698dcff1687c52660813de8cf2940604cea7249bd616daf5a8a32acd",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

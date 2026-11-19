@@ -1,0 +1,21 @@
+{
+  "id": "constantinople-101",
+  "fingerprint": "17051a3b6cb254cc1557a61797fef29b5b3da8efa395a03f2b2be9ee77925693",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "458ddd8f92d7dab8428c7bf481cd2797b05b278e",
+  "candidates": [
+    "org.apache.giraph.edge.MutableEdgesWrapper.setCurrentEdge(org.apache.giraph.edge.MutableEdge)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.giraph.edge.MutableEdgesIterable.iterator.<anonymous>@55.remove()",
+      "type": "executable",
+      "relations": {
+        "org.apache.giraph.edge.MutableEdgesWrapper.setCurrentEdge(org.apache.giraph.edge.MutableEdge)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

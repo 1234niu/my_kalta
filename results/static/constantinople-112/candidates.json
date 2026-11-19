@@ -1,0 +1,95 @@
+{
+  "id": "constantinople-112",
+  "fingerprint": "bc604aa7d92d97219b091fe3f09af076efcece49c0ac0db054b8f6dcdfd16169",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "b5963fa0204995a66558cb97375711098b00af18",
+  "candidates": [
+    "org.apache.gora.avro.PersistentDatumReader.cloneObject(org.apache.avro.Schema,java.lang.Object,java.lang.Object)",
+    "org.apache.gora.avro.PersistentDatumReader.newRecord(java.lang.Object,org.apache.avro.Schema)",
+    "org.apache.gora.avro.PersistentDatumReader.read(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.Decoder)",
+    "org.apache.gora.cassandra.store.CassandraStore.put(java.lang.Object,org.apache.gora.persistency.Persistent)",
+    "org.apache.gora.hbase.store.HBaseStore.setField(org.apache.gora.persistency.Persistent,org.apache.avro.Schema.Field,java.util.Map)",
+    "org.apache.gora.persistency.Persistent.clear()",
+    "org.apache.gora.persistency.Persistent.setDirty(int)",
+    "org.apache.gora.persistency.State.values()",
+    "org.apache.gora.persistency.StatefulHashMap.StatefulHashMap()",
+    "org.apache.gora.persistency.StatefulHashMap.clearStates()",
+    "org.apache.gora.persistency.StatefulMap.clearStates()",
+    "org.apache.gora.util.IOUtils.readBoolArray(java.io.DataInput)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.gora.avro.PersistentDatumReader.readRecord(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+      "type": "executable",
+      "relations": {
+        "org.apache.gora.avro.PersistentDatumReader.newRecord(java.lang.Object,org.apache.avro.Schema)": [
+          "CALLS"
+        ],
+        "org.apache.gora.avro.PersistentDatumReader.read(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.Decoder)": [
+          "CALLS"
+        ],
+        "org.apache.gora.persistency.Persistent.clear()": [
+          "CALLS"
+        ],
+        "org.apache.gora.util.IOUtils.readBoolArray(java.io.DataInput)": [
+          "CALLS"
+        ],
+        "org.apache.gora.persistency.Persistent.setDirty(int)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.gora.avro.PersistentDatumReader.readMap(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+      "type": "executable",
+      "relations": {
+        "org.apache.gora.persistency.StatefulMap.clearStates()": [
+          "CALLS"
+        ],
+        "org.apache.gora.avro.PersistentDatumReader.newMap(java.lang.Object,int)": [
+          "CALLS"
+        ],
+        "org.apache.gora.persistency.State.values()": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.gora.avro.PersistentDatumReader.newMap(java.lang.Object,int)",
+      "type": "executable",
+      "relations": {
+        "org.apache.gora.persistency.StatefulHashMap.clearStates()": [
+          "CALLS"
+        ],
+        "org.apache.gora.avro.PersistentDatumReader.readMap(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.gora.avro.PersistentDatumReader.cloneObject(org.apache.avro.Schema,java.lang.Object,java.lang.Object)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.gora.persistency.StatefulHashMap.StatefulHashMap()": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.gora.persistency.StatefulHashMap.StatefulHashMap(java.util.Map)",
+      "type": "executable",
+      "relations": {
+        "org.apache.gora.hbase.store.HBaseStore.setField(org.apache.gora.persistency.Persistent,org.apache.avro.Schema.Field,java.util.Map)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.gora.cassandra.store.CassandraStore.put(java.lang.Object,org.apache.gora.persistency.Persistent)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.gora.persistency.StatefulHashMap.StatefulHashMap()": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

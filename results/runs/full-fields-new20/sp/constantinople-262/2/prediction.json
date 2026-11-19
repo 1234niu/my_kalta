@@ -1,0 +1,25 @@
+{
+  "id": "constantinople-262",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 2,
+  "predictions": [
+    "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+    "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.Throwable)",
+    "org.apache.commons.digester3.binder.AbstractRulesModule.configure(org.apache.commons.digester3.binder.RulesBinder)",
+    "org.apache.commons.digester3.binder.AbstractRulesModule.forPattern(java.lang.String)",
+    "org.apache.commons.digester3.binder.AbstractRulesModule.install(org.apache.commons.digester3.binder.RulesModule)",
+    "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+    "org.apache.commons.digester3.binder.DigesterLoader.DigesterLoader(java.lang.Iterable)",
+    "org.apache.commons.digester3.binder.DigesterLoader.addRules(org.apache.commons.digester3.Digester)",
+    "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()",
+    "org.apache.commons.digester3.binder.DigesterLoader.newDigester(javax.xml.parsers.SAXParser,org.apache.commons.digester3.Rules)",
+    "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader)",
+    "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)",
+    "org.apache.commons.digester3.binder.DigesterLoader.newLoader(java.lang.Iterable)",
+    "org.apache.commons.digester3.binder.DigesterLoader.setUseContextClassLoader(boolean)"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "7000c7fb37395bbb50a3843c55f26061ab00811ecc5e4f797acdb44be314c588",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

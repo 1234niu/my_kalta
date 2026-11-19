@@ -89,7 +89,44 @@ def two_hop_calls(graph, seeds):
             if entity not in {seed['fqn'] for seed in seeds}}
 
 
-def retrieve(row, cross_class_calls=False, seed_diff=False):
+def field_paths(graph, seeds, overlays=(), *, mixed=False):
+    """Trace fixed CALLS→READ and WRITE→READ←CALLS patterns."""
+    outgoing, incoming = defaultdict(list), defaultdict(list)
+    for edge in graph['edges']:
+        outgoing[edge['from']].append(edge)
+        incoming[edge['to']].append(edge)
+    roots = {seed['fqn'] for seed in seeds if seed['type'] == 'executable'}
+    paths = {}
+
+    def follow_readers(write):
+        field = write['to']
+        for reader in incoming[field]:
+            if reader['kind'] != 'READ' or reader['from'] == write['from']:
+                continue
+            paths.setdefault(reader['from'], [write, reader])
+            for caller in incoming[reader['from']]:
+                if caller['kind'] == 'CALLS' and caller['from'] != write['from']:
+                    paths.setdefault(caller['from'], [write, reader, caller])
+
+    if mixed:
+        for root in sorted(roots):
+            for edge in outgoing[root]:
+                if edge['kind'] == 'CALLS':
+                    for read in outgoing[edge['to']]:
+                        if read['kind'] == 'READ':
+                            paths.setdefault(read['to'], [edge, read])
+                if edge['kind'] == 'WRITE':
+                    follow_readers(edge)
+    for access in overlays:
+        edge = dict(access, **{'from': access['seed'], 'to': access['proposed_fqn']})
+        paths.setdefault(edge['to'], [edge])
+        if edge['edge'] == 'ADDED_WRITE':
+            follow_readers(edge)
+    return {name: evidence for name, evidence in paths.items()
+            if name not in {seed['fqn'] for seed in seeds}}
+
+
+def retrieve(row, cross_class_calls=False, seed_diff=False, field_ablation=False):
     task = katia.load_task(row)
     baseline = katia.static(task)['candidates']
     with tempfile.TemporaryDirectory() as tmp:
@@ -143,6 +180,17 @@ def retrieve(row, cross_class_calls=False, seed_diff=False):
             (set(previous) | additional) - {seed['fqn'] for seed in seeds})
         result['seed_diff_overlay'] = {'added_calls': calls, 'proposed_field_writes': fields,
                                        'possible_overrides': overrides}
+    if field_ablation:
+        from diff_overlay import seed_field_accesses
+        accesses = seed_field_accesses(graph, seeds)
+        mixed = field_paths(graph, seeds, mixed=True)
+        diff = field_paths(graph, seeds, accesses)
+        baseline = set(result['candidates']['diff_and_override'])
+        for name, additions in [('mixed_field_paths', mixed), ('seed_field_accesses', diff),
+                                ('combined_field_paths', mixed | diff)]:
+            result['evidence'][name] = additions
+            result['candidates'][name] = sorted(baseline | additions.keys())
+        result['seed_field_accesses'] = accesses
     return result
 
 
@@ -151,16 +199,21 @@ def main():
     parser.add_argument('--rows', default='0,1,2', help='Comma-separated CSV row positions')
     parser.add_argument('--cross-class-calls', action='store_true', help='Compare outgoing two-hop calls')
     parser.add_argument('--seed-diff-overlay', action='store_true', help='Record call sites added by the seed diff')
+    parser.add_argument('--field-ablation', action='store_true',
+                        help='Compare graph field paths and new diff accesses against the latest static arm')
     args = parser.parse_args()
     rows = list(dict.fromkeys(int(value) for value in args.rows.split(',')))
     if any(row < 0 for row in rows):
         parser.error('Row positions must be nonnegative')
-    results = [retrieve(row, args.cross_class_calls, args.seed_diff_overlay) for row in rows]
+    results = [retrieve(row, args.cross_class_calls or args.field_ablation,
+                        args.seed_diff_overlay or args.field_ablation, args.field_ablation) for row in rows]
     gold_path = katia.ROOT / 'dataset/processed/evaluation-only.jsonl'
     labels = {r['id']: r for r in map(json.loads, gold_path.read_text().splitlines())}
     folder = 'static-two-hop' if args.cross_class_calls else 'static-compare'
     if args.seed_diff_overlay:
         folder = 'static-seed-diff'
+    if args.field_ablation:
+        folder = 'static-field-ablation'
     output = katia.ROOT / 'results' / folder
     for result in results:
         target = {e['fqn'] for e in labels[result['id']]['impacted']}

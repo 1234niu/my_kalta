@@ -1,0 +1,682 @@
+{
+  "id": "constantinople-015",
+  "graph_edges": 17003,
+  "seeds": {
+    "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeField(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeRawValue(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeTopLevelMessage(java.lang.Object)"
+    ],
+    "fields": [
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeField(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeRawValue(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeTopLevelMessage(java.lang.Object)"
+    ],
+    "multihop": [
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setFieldName(java.lang.String)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setIndex(int)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeField(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeRawValue(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeTopLevelMessage(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.recordConsumer"
+    ],
+    "two_hop_calls": [
+      "org.apache.parquet.io.api.RecordConsumer.endField(java.lang.String,int)",
+      "org.apache.parquet.io.api.RecordConsumer.startField(java.lang.String,int)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setFieldName(java.lang.String)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setIndex(int)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeRawValue(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeField(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeRawValue(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeTopLevelMessage(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.recordConsumer"
+    ],
+    "diff_and_override": [
+      "org.apache.parquet.io.api.RecordConsumer.endField(java.lang.String,int)",
+      "org.apache.parquet.io.api.RecordConsumer.startField(java.lang.String,int)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setFieldName(java.lang.String)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setIndex(int)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeRawValue(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeField(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeRawValue(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeTopLevelMessage(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.recordConsumer"
+    ],
+    "mixed_field_paths": [
+      "org.apache.parquet.io.api.RecordConsumer.endField(java.lang.String,int)",
+      "org.apache.parquet.io.api.RecordConsumer.startField(java.lang.String,int)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setFieldName(java.lang.String)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setIndex(int)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeRawValue(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeField(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeRawValue(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeTopLevelMessage(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.recordConsumer"
+    ],
+    "seed_field_accesses": [
+      "org.apache.parquet.io.api.RecordConsumer.endField(java.lang.String,int)",
+      "org.apache.parquet.io.api.RecordConsumer.startField(java.lang.String,int)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setFieldName(java.lang.String)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setIndex(int)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeRawValue(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeField(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeRawValue(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeTopLevelMessage(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.recordConsumer"
+    ],
+    "combined_field_paths": [
+      "org.apache.parquet.io.api.RecordConsumer.endField(java.lang.String,int)",
+      "org.apache.parquet.io.api.RecordConsumer.startField(java.lang.String,int)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setFieldName(java.lang.String)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setIndex(int)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeRawValue(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeField(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeRawValue(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeTopLevelMessage(java.lang.Object)",
+      "org.apache.parquet.proto.ProtoWriteSupport.recordConsumer"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters": {
+        "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters": [
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters",
+            "kind": "READ",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 224
+          }
+        ]
+      },
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)": {
+        "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters": [
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters",
+            "kind": "READ",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 224
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters",
+            "kind": "WRITE",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 157
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters": {
+        "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters": [
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters",
+            "kind": "READ",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 224
+          }
+        ],
+        "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName": [
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 224
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName",
+            "kind": "READ",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 144
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setFieldName(java.lang.String)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName",
+            "kind": "WRITE",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setFieldName(java.lang.String)",
+            "kind": "CALLS",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 169
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters",
+            "kind": "READ",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 172
+          }
+        ],
+        "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index": [
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 224
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index",
+            "kind": "READ",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 144
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setIndex(int)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index",
+            "kind": "WRITE",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 134
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setIndex(int)",
+            "kind": "CALLS",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 170
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters",
+            "kind": "READ",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 172
+          }
+        ]
+      },
+      "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)": {
+        "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters": [
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters",
+            "kind": "READ",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 224
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.fieldWriters",
+            "kind": "WRITE",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 157
+          }
+        ],
+        "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName": [
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 224
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName",
+            "kind": "READ",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 144
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setFieldName(java.lang.String)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName",
+            "kind": "WRITE",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setFieldName(java.lang.String)",
+            "kind": "CALLS",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 169
+          }
+        ],
+        "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index": [
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 224
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index",
+            "kind": "READ",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 144
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setIndex(int)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index",
+            "kind": "WRITE",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 134
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setIndex(int)",
+            "kind": "CALLS",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 170
+          }
+        ]
+      },
+      "org.apache.parquet.proto.ProtoWriteSupport.recordConsumer": {
+        "org.apache.parquet.proto.ProtoWriteSupport.recordConsumer": [
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 224
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.recordConsumer",
+            "kind": "READ",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 144
+          }
+        ]
+      },
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName": {
+        "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName": [
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 224
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName",
+            "kind": "READ",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 144
+          }
+        ]
+      },
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setFieldName(java.lang.String)": {
+        "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName": [
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 224
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName",
+            "kind": "READ",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 144
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setFieldName(java.lang.String)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName",
+            "kind": "WRITE",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 129
+          }
+        ]
+      },
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index": {
+        "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index": [
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 224
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index",
+            "kind": "READ",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 144
+          }
+        ]
+      },
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setIndex(int)": {
+        "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index": [
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+            "kind": "CALLS",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 224
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index",
+            "kind": "READ",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 144
+          },
+          {
+            "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.setIndex(int)",
+            "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index",
+            "kind": "WRITE",
+            "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+            "line": 134
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.parquet.io.api.RecordConsumer.startField(java.lang.String,int)": [
+        {
+          "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+          "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+          "line": 224
+        },
+        {
+          "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+          "to": "org.apache.parquet.io.api.RecordConsumer.startField(java.lang.String,int)",
+          "kind": "CALLS",
+          "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+          "line": 144
+        }
+      ],
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeRawValue(java.lang.Object)": [
+        {
+          "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+          "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+          "line": 224
+        },
+        {
+          "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+          "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeRawValue(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+          "line": 145
+        }
+      ],
+      "org.apache.parquet.io.api.RecordConsumer.endField(java.lang.String,int)": [
+        {
+          "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+          "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+          "line": 224
+        },
+        {
+          "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+          "to": "org.apache.parquet.io.api.RecordConsumer.endField(java.lang.String,int)",
+          "kind": "CALLS",
+          "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+          "line": 146
+        }
+      ]
+    },
+    "mixed_field_paths": {
+      "org.apache.parquet.proto.ProtoWriteSupport.recordConsumer": [
+        {
+          "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+          "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+          "line": 224
+        },
+        {
+          "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+          "to": "org.apache.parquet.proto.ProtoWriteSupport.recordConsumer",
+          "kind": "READ",
+          "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+          "line": 144
+        }
+      ],
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName": [
+        {
+          "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+          "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+          "line": 224
+        },
+        {
+          "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+          "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName",
+          "kind": "READ",
+          "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+          "line": 144
+        }
+      ],
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index": [
+        {
+          "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+          "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+          "line": 224
+        },
+        {
+          "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+          "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index",
+          "kind": "READ",
+          "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+          "line": 144
+        }
+      ]
+    },
+    "seed_field_accesses": {},
+    "combined_field_paths": {
+      "org.apache.parquet.proto.ProtoWriteSupport.recordConsumer": [
+        {
+          "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+          "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+          "line": 224
+        },
+        {
+          "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+          "to": "org.apache.parquet.proto.ProtoWriteSupport.recordConsumer",
+          "kind": "READ",
+          "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+          "line": 144
+        }
+      ],
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName": [
+        {
+          "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+          "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+          "line": 224
+        },
+        {
+          "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+          "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.fieldName",
+          "kind": "READ",
+          "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+          "line": 144
+        }
+      ],
+      "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index": [
+        {
+          "from": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+          "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+          "line": 224
+        },
+        {
+          "from": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.writeField(java.lang.Object)",
+          "to": "org.apache.parquet.proto.ProtoWriteSupport.FieldWriter.index",
+          "kind": "READ",
+          "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+          "line": 144
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 4020,
+      "ma_analysis": 3602,
+      "ma_refinement_fixed": 2893
+    },
+    "two_hop_calls": {
+      "sp": 4262,
+      "ma_analysis": 3844,
+      "ma_refinement_fixed": 3135
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "isExtension",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "fieldDescriptor",
+        "after_line": 222,
+        "expression": "isExtension()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.writeAllFields(com.google.protobuf.MessageOrBuilder)",
+        "file": "parquet-protobuf/src/main/java/org/apache/parquet/proto/ProtoWriteSupport.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [],
+  "indexed_targets": [
+    "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)"
+  ],
+  "unindexed_targets": [],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 4,
+      "hits": [],
+      "misses": [
+        "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)"
+      ],
+      "indexed_misses": [
+        "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 6,
+      "hits": [
+        "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "multihop": {
+      "candidate_count": 11,
+      "hits": [
+        "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 14,
+      "hits": [
+        "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "diff_and_override": {
+      "candidate_count": 14,
+      "hits": [
+        "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "mixed_field_paths": {
+      "candidate_count": 14,
+      "hits": [
+        "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "seed_field_accesses": {
+      "candidate_count": 14,
+      "hits": [
+        "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "combined_field_paths": {
+      "candidate_count": 14,
+      "hits": [
+        "org.apache.parquet.proto.ProtoWriteSupport.MessageWriter.MessageWriter(com.google.protobuf.Descriptors.Descriptor,org.apache.parquet.schema.GroupType)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    }
+  }
+}

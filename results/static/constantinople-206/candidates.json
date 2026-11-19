@@ -1,0 +1,35 @@
+{
+  "id": "constantinople-206",
+  "fingerprint": "a561b36184366b2e2fe705c772fd1c7c56d05a6941026526df0ae5a8b7fa8473",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "3d6d908468f40a1839f5494d4bcec2c5b59d496f",
+  "candidates": [
+    "org.apache.commons.beanutils.DynaProperty.DynaProperty(java.lang.String,java.lang.Class)",
+    "org.apache.commons.beanutils.JDBCDynaClass.introspect(java.sql.ResultSet)",
+    "org.apache.commons.beanutils.JDBCDynaClass.loadClass(java.lang.String)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.beanutils.JDBCDynaClass.columnNameXref",
+      "type": "field",
+      "relations": {},
+      "resolution": "empty_unresolved_or_no_relations"
+    },
+    {
+      "fqn": "org.apache.commons.beanutils.JDBCDynaClass.createDynaProperty(java.sql.ResultSetMetaData,int)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.beanutils.JDBCDynaClass.loadClass(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.beanutils.DynaProperty.DynaProperty(java.lang.String,java.lang.Class)": [
+          "CALLS"
+        ],
+        "org.apache.commons.beanutils.JDBCDynaClass.introspect(java.sql.ResultSet)": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

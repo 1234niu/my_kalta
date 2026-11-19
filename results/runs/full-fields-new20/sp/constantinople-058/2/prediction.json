@@ -1,0 +1,13 @@
+{
+  "id": "constantinople-058",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 2,
+  "predictions": [
+    "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)",
+    "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "ea444f70b0a9b6afd1a943df725e720e9b55ea28b2e9a0cfcf9e827f9e53237c",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

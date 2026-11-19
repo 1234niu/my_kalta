@@ -1,0 +1,322 @@
+{
+  "id": "constantinople-095",
+  "graph_edges": 16490,
+  "seeds": {
+    "org.apache.giraph.comm.netty.NettyClient.stop()": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.giraph.comm.netty.ChannelRotater.closeChannels(io.netty.channel.ChannelFutureListener)",
+      "org.apache.giraph.comm.netty.ChannelRotater.size()",
+      "org.apache.giraph.comm.netty.NettyMasterClient.closeConnections()",
+      "org.apache.giraph.comm.netty.NettyWorkerClient.closeConnections()"
+    ],
+    "fields": [
+      "org.apache.giraph.comm.netty.ChannelRotater.closeChannels(io.netty.channel.ChannelFutureListener)",
+      "org.apache.giraph.comm.netty.ChannelRotater.size()",
+      "org.apache.giraph.comm.netty.NettyClient.addressChannelMap",
+      "org.apache.giraph.comm.netty.NettyMasterClient.closeConnections()",
+      "org.apache.giraph.comm.netty.NettyWorkerClient.closeConnections()"
+    ],
+    "multihop": [
+      "org.apache.giraph.comm.netty.ChannelRotater.closeChannels(io.netty.channel.ChannelFutureListener)",
+      "org.apache.giraph.comm.netty.ChannelRotater.size()",
+      "org.apache.giraph.comm.netty.NettyClient.addressChannelMap",
+      "org.apache.giraph.comm.netty.NettyMasterClient.closeConnections()",
+      "org.apache.giraph.comm.netty.NettyWorkerClient.closeConnections()"
+    ],
+    "two_hop_calls": [
+      "org.apache.giraph.comm.netty.ChannelRotater.closeChannels(io.netty.channel.ChannelFutureListener)",
+      "org.apache.giraph.comm.netty.ChannelRotater.size()",
+      "org.apache.giraph.comm.netty.NettyClient.addressChannelMap",
+      "org.apache.giraph.comm.netty.NettyMasterClient.closeConnections()",
+      "org.apache.giraph.comm.netty.NettyWorkerClient.closeConnections()"
+    ],
+    "diff_and_override": [
+      "org.apache.giraph.comm.netty.ChannelRotater.closeChannels(io.netty.channel.ChannelFutureListener)",
+      "org.apache.giraph.comm.netty.ChannelRotater.size()",
+      "org.apache.giraph.comm.netty.NettyClient.addressChannelMap",
+      "org.apache.giraph.comm.netty.NettyMasterClient.closeConnections()",
+      "org.apache.giraph.comm.netty.NettyWorkerClient.closeConnections()"
+    ],
+    "mixed_field_paths": [
+      "org.apache.giraph.comm.netty.ChannelRotater.channelList",
+      "org.apache.giraph.comm.netty.ChannelRotater.closeChannels(io.netty.channel.ChannelFutureListener)",
+      "org.apache.giraph.comm.netty.ChannelRotater.size()",
+      "org.apache.giraph.comm.netty.NettyClient.addressChannelMap",
+      "org.apache.giraph.comm.netty.NettyMasterClient.closeConnections()",
+      "org.apache.giraph.comm.netty.NettyWorkerClient.closeConnections()"
+    ],
+    "seed_field_accesses": [
+      "org.apache.giraph.comm.netty.ChannelRotater.closeChannels(io.netty.channel.ChannelFutureListener)",
+      "org.apache.giraph.comm.netty.ChannelRotater.size()",
+      "org.apache.giraph.comm.netty.NettyClient.addressChannelMap",
+      "org.apache.giraph.comm.netty.NettyClient.executionGroup",
+      "org.apache.giraph.comm.netty.NettyMasterClient.closeConnections()",
+      "org.apache.giraph.comm.netty.NettyWorkerClient.closeConnections()"
+    ],
+    "combined_field_paths": [
+      "org.apache.giraph.comm.netty.ChannelRotater.channelList",
+      "org.apache.giraph.comm.netty.ChannelRotater.closeChannels(io.netty.channel.ChannelFutureListener)",
+      "org.apache.giraph.comm.netty.ChannelRotater.size()",
+      "org.apache.giraph.comm.netty.NettyClient.addressChannelMap",
+      "org.apache.giraph.comm.netty.NettyClient.executionGroup",
+      "org.apache.giraph.comm.netty.NettyMasterClient.closeConnections()",
+      "org.apache.giraph.comm.netty.NettyWorkerClient.closeConnections()"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.giraph.comm.netty.NettyClient.addressChannelMap": {
+        "org.apache.giraph.comm.netty.NettyClient.addressChannelMap": [
+          {
+            "from": "org.apache.giraph.comm.netty.NettyClient.stop()",
+            "to": "org.apache.giraph.comm.netty.NettyClient.addressChannelMap",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/comm/netty/NettyClient.java",
+            "line": 550
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.giraph.comm.netty.NettyClient.addressChannelMap": {
+        "org.apache.giraph.comm.netty.NettyClient.addressChannelMap": [
+          {
+            "from": "org.apache.giraph.comm.netty.NettyClient.stop()",
+            "to": "org.apache.giraph.comm.netty.NettyClient.addressChannelMap",
+            "kind": "READ",
+            "file": "giraph-core/src/main/java/org/apache/giraph/comm/netty/NettyClient.java",
+            "line": 550
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {},
+    "mixed_field_paths": {
+      "org.apache.giraph.comm.netty.ChannelRotater.channelList": [
+        {
+          "from": "org.apache.giraph.comm.netty.NettyClient.stop()",
+          "to": "org.apache.giraph.comm.netty.ChannelRotater.size()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/comm/netty/NettyClient.java",
+          "line": 551
+        },
+        {
+          "from": "org.apache.giraph.comm.netty.ChannelRotater.size()",
+          "to": "org.apache.giraph.comm.netty.ChannelRotater.channelList",
+          "kind": "READ",
+          "file": "giraph-core/src/main/java/org/apache/giraph/comm/netty/ChannelRotater.java",
+          "line": 101
+        }
+      ]
+    },
+    "seed_field_accesses": {
+      "org.apache.giraph.comm.netty.NettyClient.executionGroup": [
+        {
+          "seed": "org.apache.giraph.comm.netty.NettyClient.stop()",
+          "edge": "ADDED_READ",
+          "after_line": 578,
+          "proposed_fqn": "org.apache.giraph.comm.netty.NettyClient.executionGroup",
+          "file": "giraph-core/src/main/java/org/apache/giraph/comm/netty/NettyClient.java",
+          "from": "org.apache.giraph.comm.netty.NettyClient.stop()",
+          "to": "org.apache.giraph.comm.netty.NettyClient.executionGroup"
+        }
+      ]
+    },
+    "combined_field_paths": {
+      "org.apache.giraph.comm.netty.ChannelRotater.channelList": [
+        {
+          "from": "org.apache.giraph.comm.netty.NettyClient.stop()",
+          "to": "org.apache.giraph.comm.netty.ChannelRotater.size()",
+          "kind": "CALLS",
+          "file": "giraph-core/src/main/java/org/apache/giraph/comm/netty/NettyClient.java",
+          "line": 551
+        },
+        {
+          "from": "org.apache.giraph.comm.netty.ChannelRotater.size()",
+          "to": "org.apache.giraph.comm.netty.ChannelRotater.channelList",
+          "kind": "READ",
+          "file": "giraph-core/src/main/java/org/apache/giraph/comm/netty/ChannelRotater.java",
+          "line": 101
+        }
+      ],
+      "org.apache.giraph.comm.netty.NettyClient.executionGroup": [
+        {
+          "seed": "org.apache.giraph.comm.netty.NettyClient.stop()",
+          "edge": "ADDED_READ",
+          "after_line": 578,
+          "proposed_fqn": "org.apache.giraph.comm.netty.NettyClient.executionGroup",
+          "file": "giraph-core/src/main/java/org/apache/giraph/comm/netty/NettyClient.java",
+          "from": "org.apache.giraph.comm.netty.NettyClient.stop()",
+          "to": "org.apache.giraph.comm.netty.NettyClient.executionGroup"
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 3663,
+      "ma_analysis": 3245,
+      "ma_refinement_fixed": 2680
+    },
+    "two_hop_calls": {
+      "sp": 3663,
+      "ma_analysis": 3245,
+      "ma_refinement_fixed": 2680
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "isInfoEnabled",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "LOG",
+        "after_line": 546,
+        "expression": "isInfoEnabled()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.giraph.comm.netty.NettyClient.stop()",
+        "file": "giraph-core/src/main/java/org/apache/giraph/comm/netty/NettyClient.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "info",
+        "arity": 1,
+        "arguments": [
+          "\"stop: Halting netty client\""
+        ],
+        "receiver": "LOG",
+        "after_line": 547,
+        "expression": "info(\"stop: Halting netty client\")",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.giraph.comm.netty.NettyClient.stop()",
+        "file": "giraph-core/src/main/java/org/apache/giraph/comm/netty/NettyClient.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "isInfoEnabled",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "LOG",
+        "after_line": 581,
+        "expression": "isInfoEnabled()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.giraph.comm.netty.NettyClient.stop()",
+        "file": "giraph-core/src/main/java/org/apache/giraph/comm/netty/NettyClient.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "info",
+        "arity": 1,
+        "arguments": [
+          "\"stop: Netty client halted\""
+        ],
+        "receiver": "LOG",
+        "after_line": 582,
+        "expression": "info(\"stop: Netty client halted\")",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.giraph.comm.netty.NettyClient.stop()",
+        "file": "giraph-core/src/main/java/org/apache/giraph/comm/netty/NettyClient.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [
+    {
+      "seed": "org.apache.giraph.comm.netty.NettyClient.stop()",
+      "edge": "ADDED_READ",
+      "after_line": 578,
+      "proposed_fqn": "org.apache.giraph.comm.netty.NettyClient.executionGroup",
+      "file": "giraph-core/src/main/java/org/apache/giraph/comm/netty/NettyClient.java"
+    }
+  ],
+  "indexed_targets": [],
+  "unindexed_targets": [
+    "org.apache.giraph.comm.netty.NettyClient.stop.<anonymous>@556.operationComplete(io.netty.channel.ChannelFuture)"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 4,
+      "hits": [],
+      "misses": [
+        "org.apache.giraph.comm.netty.NettyClient.stop.<anonymous>@556.operationComplete(io.netty.channel.ChannelFuture)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "fields": {
+      "candidate_count": 5,
+      "hits": [],
+      "misses": [
+        "org.apache.giraph.comm.netty.NettyClient.stop.<anonymous>@556.operationComplete(io.netty.channel.ChannelFuture)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "multihop": {
+      "candidate_count": 5,
+      "hits": [],
+      "misses": [
+        "org.apache.giraph.comm.netty.NettyClient.stop.<anonymous>@556.operationComplete(io.netty.channel.ChannelFuture)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "two_hop_calls": {
+      "candidate_count": 5,
+      "hits": [],
+      "misses": [
+        "org.apache.giraph.comm.netty.NettyClient.stop.<anonymous>@556.operationComplete(io.netty.channel.ChannelFuture)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "diff_and_override": {
+      "candidate_count": 5,
+      "hits": [],
+      "misses": [
+        "org.apache.giraph.comm.netty.NettyClient.stop.<anonymous>@556.operationComplete(io.netty.channel.ChannelFuture)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "mixed_field_paths": {
+      "candidate_count": 6,
+      "hits": [],
+      "misses": [
+        "org.apache.giraph.comm.netty.NettyClient.stop.<anonymous>@556.operationComplete(io.netty.channel.ChannelFuture)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "seed_field_accesses": {
+      "candidate_count": 6,
+      "hits": [],
+      "misses": [
+        "org.apache.giraph.comm.netty.NettyClient.stop.<anonymous>@556.operationComplete(io.netty.channel.ChannelFuture)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "combined_field_paths": {
+      "candidate_count": 7,
+      "hits": [],
+      "misses": [
+        "org.apache.giraph.comm.netty.NettyClient.stop.<anonymous>@556.operationComplete(io.netty.channel.ChannelFuture)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    }
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "id": "constantinople-068",
+  "graph_edges": 2791,
+  "seeds": {
+    "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.logging.Log,java.util.Collection)": false
+  },
+  "candidates": {
+    "baseline": [],
+    "fields": [],
+    "multihop": [],
+    "two_hop_calls": [],
+    "diff_and_override": [],
+    "mixed_field_paths": [],
+    "seed_field_accesses": [
+      "org.apache.commons.scxml2.model.If.execute",
+      "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.scxml2.model.Log,java.util.Collection)"
+    ],
+    "combined_field_paths": [
+      "org.apache.commons.scxml2.model.If.execute",
+      "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.scxml2.model.Log,java.util.Collection)"
+    ]
+  },
+  "evidence": {
+    "fields": {},
+    "multihop": {},
+    "two_hop_calls": {},
+    "mixed_field_paths": {},
+    "seed_field_accesses": {
+      "org.apache.commons.scxml2.model.If.execute": [
+        {
+          "seed": "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.logging.Log,java.util.Collection)",
+          "edge": "ADDED_WRITE",
+          "after_line": 139,
+          "proposed_fqn": "org.apache.commons.scxml2.model.If.execute",
+          "file": "src/main/java/org/apache/commons/scxml2/model/If.java",
+          "from": "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.logging.Log,java.util.Collection)",
+          "to": "org.apache.commons.scxml2.model.If.execute"
+        }
+      ],
+      "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.scxml2.model.Log,java.util.Collection)": [
+        {
+          "seed": "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.logging.Log,java.util.Collection)",
+          "edge": "ADDED_WRITE",
+          "after_line": 139,
+          "proposed_fqn": "org.apache.commons.scxml2.model.If.execute",
+          "file": "src/main/java/org/apache/commons/scxml2/model/If.java",
+          "from": "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.logging.Log,java.util.Collection)",
+          "to": "org.apache.commons.scxml2.model.If.execute"
+        },
+        {
+          "from": "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.scxml2.model.Log,java.util.Collection)",
+          "to": "org.apache.commons.scxml2.model.If.execute",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/scxml2/model/If.java",
+          "line": 128
+        }
+      ]
+    },
+    "combined_field_paths": {
+      "org.apache.commons.scxml2.model.If.execute": [
+        {
+          "seed": "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.logging.Log,java.util.Collection)",
+          "edge": "ADDED_WRITE",
+          "after_line": 139,
+          "proposed_fqn": "org.apache.commons.scxml2.model.If.execute",
+          "file": "src/main/java/org/apache/commons/scxml2/model/If.java",
+          "from": "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.logging.Log,java.util.Collection)",
+          "to": "org.apache.commons.scxml2.model.If.execute"
+        }
+      ],
+      "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.scxml2.model.Log,java.util.Collection)": [
+        {
+          "seed": "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.logging.Log,java.util.Collection)",
+          "edge": "ADDED_WRITE",
+          "after_line": 139,
+          "proposed_fqn": "org.apache.commons.scxml2.model.If.execute",
+          "file": "src/main/java/org/apache/commons/scxml2/model/If.java",
+          "from": "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.logging.Log,java.util.Collection)",
+          "to": "org.apache.commons.scxml2.model.If.execute"
+        },
+        {
+          "from": "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.scxml2.model.Log,java.util.Collection)",
+          "to": "org.apache.commons.scxml2.model.If.execute",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/scxml2/model/If.java",
+          "line": 128
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 3876,
+      "ma_analysis": 3458,
+      "ma_refinement_fixed": 2425
+    },
+    "two_hop_calls": {
+      "sp": 3876,
+      "ma_analysis": 3458,
+      "ma_refinement_fixed": 2425
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "isDebugEnabled",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "appLog",
+        "after_line": 129,
+        "expression": "isDebugEnabled()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.logging.Log,java.util.Collection)",
+        "file": "src/main/java/org/apache/commons/scxml2/model/If.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "debug",
+        "arity": 1,
+        "arguments": [
+          "\"Treating as false because the cond expression was evaluated as null: '\" + cond + \"'\""
+        ],
+        "receiver": "appLog",
+        "after_line": 130,
+        "expression": "debug(\"Treating as false because the cond expression was evaluated as null: '\" + cond + \"'\")",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.logging.Log,java.util.Collection)",
+        "file": "src/main/java/org/apache/commons/scxml2/model/If.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "onError",
+        "arity": 3,
+        "arguments": [
+          "ErrorConstants.EXPRESSION_ERROR",
+          "\"Treating as false due to error: \" + e.getMessage()",
+          "this"
+        ],
+        "receiver": "errRep",
+        "after_line": 136,
+        "expression": "onError(ErrorConstants.EXPRESSION_ERROR, \"Treating as false due to error: \" + e.getMessage(), this)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.logging.Log,java.util.Collection)",
+        "file": "src/main/java/org/apache/commons/scxml2/model/If.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getMessage",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "e",
+        "after_line": 136,
+        "expression": "getMessage()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.logging.Log,java.util.Collection)",
+        "file": "src/main/java/org/apache/commons/scxml2/model/If.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "booleanValue",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "rslt",
+        "after_line": 139,
+        "expression": "booleanValue()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.logging.Log,java.util.Collection)",
+        "file": "src/main/java/org/apache/commons/scxml2/model/If.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [
+    {
+      "seed": "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.logging.Log,java.util.Collection)",
+      "edge": "ADDED_WRITE",
+      "after_line": 139,
+      "proposed_fqn": "org.apache.commons.scxml2.model.If.execute",
+      "file": "src/main/java/org/apache/commons/scxml2/model/If.java"
+    }
+  ],
+  "indexed_targets": [
+    "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.filterTransitionsSet(org.apache.commons.scxml2.Step,org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance)"
+  ],
+  "unindexed_targets": [],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 0,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.filterTransitionsSet(org.apache.commons.scxml2.Step,org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.filterTransitionsSet(org.apache.commons.scxml2.Step,org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 0,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.filterTransitionsSet(org.apache.commons.scxml2.Step,org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.filterTransitionsSet(org.apache.commons.scxml2.Step,org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "multihop": {
+      "candidate_count": 0,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.filterTransitionsSet(org.apache.commons.scxml2.Step,org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.filterTransitionsSet(org.apache.commons.scxml2.Step,org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 0,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.filterTransitionsSet(org.apache.commons.scxml2.Step,org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.filterTransitionsSet(org.apache.commons.scxml2.Step,org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "diff_and_override": {
+      "candidate_count": 0,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.filterTransitionsSet(org.apache.commons.scxml2.Step,org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.filterTransitionsSet(org.apache.commons.scxml2.Step,org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "mixed_field_paths": {
+      "candidate_count": 0,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.filterTransitionsSet(org.apache.commons.scxml2.Step,org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.filterTransitionsSet(org.apache.commons.scxml2.Step,org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "seed_field_accesses": {
+      "candidate_count": 2,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.filterTransitionsSet(org.apache.commons.scxml2.Step,org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.filterTransitionsSet(org.apache.commons.scxml2.Step,org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "combined_field_paths": {
+      "candidate_count": 2,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.filterTransitionsSet(org.apache.commons.scxml2.Step,org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.filterTransitionsSet(org.apache.commons.scxml2.Step,org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance)"
+      ],
+      "indexed_recall": 0.0
+    }
+  }
+}

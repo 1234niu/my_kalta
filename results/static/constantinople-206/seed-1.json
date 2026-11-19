@@ -1,0 +1,1 @@
+{"org.apache.commons.beanutils.JDBCDynaClass.loadClass(java.lang.String)":["CALLS"],"org.apache.commons.beanutils.DynaProperty.DynaProperty(java.lang.String,java.lang.Class)":["CALLS"],"org.apache.commons.beanutils.JDBCDynaClass.introspect(java.sql.ResultSet)":["IS_CALLED_BY"]}

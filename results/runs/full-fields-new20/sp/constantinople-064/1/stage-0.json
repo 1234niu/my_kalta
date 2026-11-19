@@ -1,0 +1,48 @@
+{
+  "request_sha256": "a2904e0a28d44e6cff312093df7cae261ebe00fd1f588b7c98902351ff62d935",
+  "request": {
+    "model": "deepseek-v4.1-flash-1017",
+    "temperature": 0,
+    "messages": [
+      {
+        "role": "user",
+        "content": "# System Information\nYou are an expert in Java and in analyzing the impact of source code changes on other code entities in a project's production code.\n\n# General Information\nYou receive information about a set of changes, called seed changes, that were made to fix a bug reported in Jira.\nYou also receive the Jira bug report title and description and an initial impact set consisting of the fully qualified names of code entities that are statically related to the seed changes.\n\n# Task\nYour task is to refine the initial impact set.\nA code entity is part of the impact set if it requires modification or, if it does not already exist, must be created as a consequence of the seed changes.\nFirst, remove code entities unless the provided information indicates that they must be modified.\nSecond, add code entities that must be modified or created according to the provided evidence.\n\nYour goal is to report a final impact set that consists of the fully qualified names of code entities that must be modified or created because of the seed changes.\n\n# Inputs\n- Jira bug report title: Issue in HashCodeBuilder which only shows up under high load multi-threaded usage.\n- Jira bug report description: We found we were having problems with HashCodeBuilder under multi-threaded high load.\\n\\nI narrowed this down to the following attached test case.\\n\\nWhen I dug into the code, I found the problem was solved by commenting out the isRegistered method (though this would break the infinite loop problem).\\n( I did a lot of other digging that I wont bore you with).\\n\\nSo instead I replaced the HashSet with an ArrayList and just added the object, rather than the toIdentityHashCodeInteger(object)\\n\\nThis results in about 5 lines of change. \\n\\nMy suspicion is that System.identityHashCode does not return unique values (it is after all a hashcode method). The code assumes it will return a unique value and this causes the problem at high loads.\\n\\nThe downside is a List vs. a Set, but I believe this is necessary.\\n\\nI'd like to submit this fix and have it verified (and perhaps improved). I am convinced it is a necessary fix which we have seen show up under high loads.\\n\\nKindest regards, \\nAndrew.\n- Seed changes and their Git diff hunks: [{\"fqn\": \"org.apache.commons.lang.builder.HashCodeBuilder.isRegistered(java.lang.Object)\", \"git_diff_hunk\": \"@@ -137 +156 @@ static boolean isRegistered(Object value) {\\n- return getRegistry().contains(toIdentityHashCodeInteger(value));\\n+ return getRegistry().contains(new IDKey(value));\"}, {\"fqn\": \"org.apache.commons.lang.builder.HashCodeBuilder.register(java.lang.Object)\", \"git_diff_hunk\": \"@@ -509,13 +528 @@ static void register(Object value) {\\n- getRegistry().add(toIdentityHashCodeInteger(value));\\n- }\\n+ getRegistry().add(new IDKey(value));\"}, {\"fqn\": \"org.apache.commons.lang.builder.HashCodeBuilder.unregister(java.lang.Object)\", \"git_diff_hunk\": \"@@ -537 +544 @@ static void unregister(Object value) {\\n- getRegistry().remove(toIdentityHashCodeInteger(value));\\n+ getRegistry().remove(new IDKey(value));\"}]\n- Initial static code change impact set: [\"org.apache.commons.lang.builder.HashCodeBuilder.getRegistry()\", \"org.apache.commons.lang.builder.HashCodeBuilder.reflectionAppend(java.lang.Object,java.lang.Class,org.apache.commons.lang.builder.HashCodeBuilder,boolean,java.lang.String[])\", \"org.apache.commons.lang.builder.HashCodeBuilder.registry\", \"org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)\"]\n\n# Output Format\nReturn exactly one valid single-line JSON array of strings.\nEach string must be the fully qualified name of an impacted code entity.\nDo not include any additional text, formatting, or meta-information.\nDo not include seed changes in the output.\n\nExample output (four impacted code entities):\n[\"com.example.Foo.someMethod(java.lang.String, int)\", \"com.example.bar.attribute1\", \"com.example.bar.Class.NestedClass\", \"com.example.bar.Class.Class()\"]\n\nExample output (two impacted code entities):\n[\"com.example.package.ParentClass.ChildClass.field\", \"com.example.package.ParentClass.apply(long, com.example.package.ParentClass)\"]\n\nExample output (zero impacted code entities):\n[]"
+      }
+    ],
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096
+  },
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "[\"org.apache.commons.lang.builder.HashCodeBuilder.getRegistry()\", \"org.apache.commons.lang.builder.HashCodeBuilder.registry\", \"org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)\", \"org.apache.commons.lang.builder.HashCodeBuilder.IDKey\", \"org.apache.commons.lang.builder.HashCodeBuilder.IDKey.IDKey(java.lang.Object)\", \"org.apache.commons.lang.builder.HashCodeBuilder.IDKey.equals(java.lang.Object)\", \"org.apache.commons.lang.builder.HashCodeBuilder.IDKey.hashCode()\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1794905823,
+    "id": "0217949058218049436a70d8fd44afb73ab39bbb6df35ba2d8ad9",
+    "model": "deepseek-v4.1-flash-1017",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 120,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 59,
+      "prompt_tokens": 955,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "total_tokens": 1075
+    }
+  },
+  "seconds": 1.58984625,
+  "endpoint": "http://api.aicnic.cn/v1"
+}

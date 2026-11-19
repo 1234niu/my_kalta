@@ -1,0 +1,97 @@
+{
+  "id": "constantinople-128",
+  "fingerprint": "98c01ca387d060eeb228bb3d3240e0c74af9a179abe685dbd15fd34d52c02cff",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "4fdca223ea9a9a001a5c7fb8b7a1a9e1e2601c91",
+  "candidates": [
+    "org.apache.commons.validator.routines.DomainValidator.getInstance()",
+    "org.apache.commons.validator.routines.DomainValidator.isValidCountryCodeTld(java.lang.String)",
+    "org.apache.commons.validator.routines.DomainValidator.isValidGenericTld(java.lang.String)",
+    "org.apache.commons.validator.routines.DomainValidator.isValidInfrastructureTld(java.lang.String)",
+    "org.apache.commons.validator.routines.EmailValidator.isValid(java.lang.String)",
+    "org.apache.commons.validator.routines.InetAddressValidator.getInstance()",
+    "org.apache.commons.validator.routines.InetAddressValidator.isValid(java.lang.String)",
+    "org.apache.commons.validator.routines.RegexValidator.match(java.lang.String)",
+    "org.apache.commons.validator.routines.UrlValidator.isValidAuthority(java.lang.String)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.validator.routines.EmailValidator.isValidDomain(java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.validator.routines.RegexValidator.match(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.validator.routines.UrlValidator.isValidAuthority(java.lang.String)": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.validator.routines.DomainValidator.getInstance(boolean)",
+      "type": "executable",
+      "relations": {},
+      "resolution": "empty_unresolved_or_no_relations"
+    },
+    {
+      "fqn": "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.validator.routines.DomainValidator.isValidCountryCodeTld(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.validator.routines.DomainValidator.isValidGenericTld(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.validator.routines.DomainValidator.isValidInfrastructureTld(java.lang.String)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.validator.routines.DomainValidator.isValidLocalTld(java.lang.String)",
+      "type": "executable",
+      "relations": {},
+      "resolution": "empty_unresolved_or_no_relations"
+    },
+    {
+      "fqn": "org.apache.commons.validator.routines.EmailValidator.getInstance(boolean)",
+      "type": "executable",
+      "relations": {},
+      "resolution": "empty_unresolved_or_no_relations"
+    },
+    {
+      "fqn": "org.apache.commons.validator.routines.EmailValidator.isValidDomain(java.lang.String)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.validator.routines.EmailValidator.isValid(java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.validator.routines.InetAddressValidator.getInstance()": [
+          "CALLS"
+        ],
+        "org.apache.commons.validator.routines.DomainValidator.getInstance()": [
+          "CALLS"
+        ],
+        "org.apache.commons.validator.routines.InetAddressValidator.isValid(java.lang.String)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "constantinople-142",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 0,
+  "predictions": [
+    "org.apache.commons.vfs2.provider.http.HttpFileContentInfoFactory.create(org.apache.commons.vfs2.FileContent)",
+    "org.apache.commons.vfs2.provider.http.HttpFileObject.doDetach()",
+    "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetContentSize()",
+    "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetLastModifiedTime()",
+    "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "062b3a2fe49f14def3a4a2703362387e21db7a4b9fdd9217d2bba590ce20c40e",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

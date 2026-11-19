@@ -1,0 +1,2185 @@
+{
+  "id": "constantinople-040",
+  "graph_edges": 9638,
+  "seeds": {
+    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.checkBounds(int,int,java.lang.String)": false,
+    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bsR(org.apache.commons.compress.utils.BitInputStream,int)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode()"
+    ],
+    "fields": [
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.base",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.limit",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.minLens",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.perm",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.selector",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bsR(org.apache.commons.compress.utils.BitInputStream,int)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.close()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.complete()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()"
+    ],
+    "multihop": [
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.base",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.limit",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.minLens",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.perm",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.selector",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.EOF",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_A_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_B_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_C_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_A_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_B_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_C_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.START_BLOCK_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.blockRandomised",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.blockSize100k",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bsR(org.apache.commons.compress.utils.BitInputStream,int)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.close()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.complete()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.computedCombinedCRC",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.crc",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.currentState",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.decompressConcatenated",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.last",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.origPtr",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.read0()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartB()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartC()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartC()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.storedCombinedCRC",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_ch2",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_chPrev",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_count",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_i2",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_j2",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_rNToGo",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_rTPos",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_tPos",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_z"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.base",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.limit",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.minLens",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.perm",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.selector",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.EOF",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_A_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_B_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_C_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_A_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_B_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_C_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.START_BLOCK_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.blockRandomised",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.blockSize100k",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bsR(org.apache.commons.compress.utils.BitInputStream,int)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.close()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.complete()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.computedCombinedCRC",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.crc",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.currentState",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.decompressConcatenated",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.last",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.origPtr",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.read0()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartB()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartC()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartC()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.storedCombinedCRC",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_ch2",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_chPrev",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_count",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_i2",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_j2",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_rNToGo",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_rTPos",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_tPos",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_z",
+      "org.apache.commons.compress.utils.BitInputStream.readBits(int)"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.base",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.limit",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.minLens",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.perm",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.selector",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.EOF",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_A_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_B_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_C_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_A_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_B_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_C_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.START_BLOCK_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.blockRandomised",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.blockSize100k",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bsR(org.apache.commons.compress.utils.BitInputStream,int)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.close()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.complete()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.computedCombinedCRC",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.crc",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.currentState",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.decompressConcatenated",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.last",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.origPtr",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.read0()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartB()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartC()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartC()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.storedCombinedCRC",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_ch2",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_chPrev",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_count",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_i2",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_j2",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_rNToGo",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_rTPos",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_tPos",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_z",
+      "org.apache.commons.compress.utils.BitInputStream.readBits(int)"
+    ],
+    "mixed_field_paths": [
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.base",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.limit",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.minLens",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.perm",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.selector",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.EOF",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_A_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_B_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_C_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_A_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_B_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_C_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.START_BLOCK_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.blockRandomised",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.blockSize100k",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bsR(org.apache.commons.compress.utils.BitInputStream,int)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.close()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.complete()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.computedCombinedCRC",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.crc",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.currentState",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.decompressConcatenated",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.last",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.origPtr",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.read0()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartB()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartC()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartC()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.storedCombinedCRC",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_ch2",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_chPrev",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_count",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_i2",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_j2",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_rNToGo",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_rTPos",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_tPos",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_z",
+      "org.apache.commons.compress.utils.BitInputStream.readBits(int)"
+    ],
+    "seed_field_accesses": [
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.base",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.limit",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.minLens",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.perm",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.selector",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.EOF",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_A_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_B_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_C_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_A_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_B_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_C_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.START_BLOCK_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.blockRandomised",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.blockSize100k",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bsR(org.apache.commons.compress.utils.BitInputStream,int)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.close()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.complete()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.computedCombinedCRC",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.crc",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.currentState",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.decompressConcatenated",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.last",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.origPtr",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.read0()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartB()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartC()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartC()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.storedCombinedCRC",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_ch2",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_chPrev",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_count",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_i2",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_j2",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_rNToGo",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_rTPos",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_tPos",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_z",
+      "org.apache.commons.compress.utils.BitInputStream.readBits(int)"
+    ],
+    "combined_field_paths": [
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.base",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.limit",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.minLens",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.perm",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.selector",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.EOF",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_A_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_B_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_C_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_A_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_B_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_C_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.START_BLOCK_STATE",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.blockRandomised",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.blockSize100k",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bsR(org.apache.commons.compress.utils.BitInputStream,int)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.close()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.complete()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.computedCombinedCRC",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.crc",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.currentState",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.decompressConcatenated",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.last",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.origPtr",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.read0()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartB()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartC()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartC()",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.storedCombinedCRC",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_ch2",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_chPrev",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_count",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_i2",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_j2",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_rNToGo",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_rTPos",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_tPos",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_z",
+      "org.apache.commons.compress.utils.BitInputStream.readBits(int)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.complete()": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.complete()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 352
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.close()": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.close()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 370
+          }
+        ],
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 686
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.close()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 371
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.selector": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.selector": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.selector",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 683
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.limit": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.limit": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.limit",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 684
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.minLens": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.minLens": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.minLens",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 685
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 686
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 686
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 130
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.perm": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.perm": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.perm",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 692
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.base": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.base": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.base",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 692
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 271
+          }
+        ],
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 686
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.EOF": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.EOF",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 309
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.blockSize100k": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.blockSize100k",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.crc": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.crc",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 326
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.START_BLOCK_STATE": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.START_BLOCK_STATE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 327
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 135
+          }
+        ],
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 686
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 130
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream)": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 135
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 112
+          }
+        ],
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 686
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 130
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 112
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 752
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_i2": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 752
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_i2",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 733
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.last": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 752
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.last",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 733
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_ch2": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 752
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_ch2",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 734
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_tPos": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 752
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_tPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 735
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_rNToGo": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 752
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_rNToGo",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 737
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_rTPos": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 752
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_rTPos",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 738
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_B_STATE": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 752
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_B_STATE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 747
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 752
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 727
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.currentState": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 752
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 727
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.currentState",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 696
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.origPtr": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 752
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 727
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.origPtr",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 715
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.blockRandomised": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 752
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 727
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.blockRandomised",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 724
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.read0()": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 752
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 727
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.read0()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 206
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_A_STATE": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 752
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 777
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_A_STATE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 775
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_C_STATE": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 752
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 777
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.RAND_PART_C_STATE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 790
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_A_STATE": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 769
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_A_STATE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 767
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_B_STATE": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 769
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_B_STATE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 763
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_C_STATE": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 769
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartC()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 837
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartC()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.NO_RAND_PART_C_STATE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 832
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 769
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 752
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 777
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_chPrev": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 752
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 777
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_chPrev",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 774
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_count": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 752
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 777
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_count",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 778
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_z": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 752
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 777
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_z",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 792
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartC()": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 752
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartC()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 810
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_j2": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 752
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartC()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 810
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartC()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.su_j2",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 802
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartB()": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 769
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartB()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 816
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartC()": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 320
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 769
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartC()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 837
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.complete()": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.complete()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 352
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.storedCombinedCRC": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.complete()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 352
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.complete()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.storedCombinedCRC",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 354
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.computedCombinedCRC": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.complete()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 352
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.complete()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.computedCombinedCRC",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 354
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.decompressConcatenated": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.complete()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 352
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.complete()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.decompressConcatenated",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 360
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.close()": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 682
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.close()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.data",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 370
+          }
+        ],
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 686
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.close()",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bin",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 371
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.selector": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.selector": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.selector",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 683
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.limit": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.limit": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.limit",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 684
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.minLens": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.minLens": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.minLens",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 685
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.perm": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.perm": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.perm",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 692
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.base": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.base": [
+          {
+            "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+            "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.Data.base",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+            "line": 692
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.commons.compress.utils.BitInputStream.readBits(int)": [
+        {
+          "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+          "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bsR(org.apache.commons.compress.utils.BitInputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+          "line": 686
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bsR(org.apache.commons.compress.utils.BitInputStream,int)",
+          "to": "org.apache.commons.compress.utils.BitInputStream.readBits(int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+          "line": 383
+        }
+      ]
+    },
+    "mixed_field_paths": {},
+    "seed_field_accesses": {},
+    "combined_field_paths": {}
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 11143,
+      "ma_analysis": 10725,
+      "ma_refinement_fixed": 7713
+    },
+    "two_hop_calls": {
+      "sp": 11209,
+      "ma_analysis": 10791,
+      "ma_refinement_fixed": 7779
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "checkBounds",
+        "arity": 3,
+        "arguments": [
+          "zt",
+          "N_GROUPS",
+          "\"zt\""
+        ],
+        "receiver": null,
+        "after_line": 716,
+        "expression": "checkBounds(zt, N_GROUPS, \"zt\")",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+        "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "checkBounds",
+        "arity": 3,
+        "arguments": [
+          "zn",
+          "MAX_ALPHA_SIZE",
+          "\"zn\""
+        ],
+        "receiver": null,
+        "after_line": 719,
+        "expression": "checkBounds(zn, MAX_ALPHA_SIZE, \"zn\")",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+        "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "checkBounds",
+        "arity": 3,
+        "arguments": [
+          "++zn",
+          "MAX_ALPHA_SIZE",
+          "\"zn\""
+        ],
+        "receiver": null,
+        "after_line": 722,
+        "expression": "checkBounds(++zn, MAX_ALPHA_SIZE, \"zn\")",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+        "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "checkBounds",
+        "arity": 3,
+        "arguments": [
+          "tmp",
+          "MAX_ALPHA_SIZE",
+          "\"zvec\""
+        ],
+        "receiver": null,
+        "after_line": 726,
+        "expression": "checkBounds(tmp, MAX_ALPHA_SIZE, \"zvec\")",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+        "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [],
+  "indexed_targets": [
+    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.createHuffmanDecodingTables(int,int)",
+    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode()",
+    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.hbCreateDecodeTables(int[],int[],int[],char[],int,int,int)",
+    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.recvDecodingTables()",
+    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartB()",
+    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()"
+  ],
+  "unindexed_targets": [],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 2,
+      "hits": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode()"
+      ],
+      "misses": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.createHuffmanDecodingTables(int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.hbCreateDecodeTables(int[],int[],int[],char[],int,int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.recvDecodingTables()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartB()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.createHuffmanDecodingTables(int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.hbCreateDecodeTables(int[],int[],int[],char[],int,int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.recvDecodingTables()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartB()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()"
+      ],
+      "indexed_recall": 0.1111111111111111
+    },
+    "fields": {
+      "candidate_count": 13,
+      "hits": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode()"
+      ],
+      "misses": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.createHuffmanDecodingTables(int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.hbCreateDecodeTables(int[],int[],int[],char[],int,int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.recvDecodingTables()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartB()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.createHuffmanDecodingTables(int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.hbCreateDecodeTables(int[],int[],int[],char[],int,int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.recvDecodingTables()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartB()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()"
+      ],
+      "indexed_recall": 0.1111111111111111
+    },
+    "multihop": {
+      "candidate_count": 48,
+      "hits": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartB()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()"
+      ],
+      "misses": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.createHuffmanDecodingTables(int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.hbCreateDecodeTables(int[],int[],int[],char[],int,int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.recvDecodingTables()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.createHuffmanDecodingTables(int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.hbCreateDecodeTables(int[],int[],int[],char[],int,int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.recvDecodingTables()"
+      ],
+      "indexed_recall": 0.6666666666666666
+    },
+    "two_hop_calls": {
+      "candidate_count": 49,
+      "hits": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartB()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()"
+      ],
+      "misses": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.createHuffmanDecodingTables(int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.hbCreateDecodeTables(int[],int[],int[],char[],int,int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.recvDecodingTables()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.createHuffmanDecodingTables(int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.hbCreateDecodeTables(int[],int[],int[],char[],int,int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.recvDecodingTables()"
+      ],
+      "indexed_recall": 0.6666666666666666
+    },
+    "diff_and_override": {
+      "candidate_count": 49,
+      "hits": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartB()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()"
+      ],
+      "misses": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.createHuffmanDecodingTables(int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.hbCreateDecodeTables(int[],int[],int[],char[],int,int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.recvDecodingTables()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.createHuffmanDecodingTables(int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.hbCreateDecodeTables(int[],int[],int[],char[],int,int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.recvDecodingTables()"
+      ],
+      "indexed_recall": 0.6666666666666666
+    },
+    "mixed_field_paths": {
+      "candidate_count": 49,
+      "hits": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartB()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()"
+      ],
+      "misses": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.createHuffmanDecodingTables(int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.hbCreateDecodeTables(int[],int[],int[],char[],int,int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.recvDecodingTables()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.createHuffmanDecodingTables(int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.hbCreateDecodeTables(int[],int[],int[],char[],int,int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.recvDecodingTables()"
+      ],
+      "indexed_recall": 0.6666666666666666
+    },
+    "seed_field_accesses": {
+      "candidate_count": 49,
+      "hits": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartB()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()"
+      ],
+      "misses": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.createHuffmanDecodingTables(int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.hbCreateDecodeTables(int[],int[],int[],char[],int,int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.recvDecodingTables()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.createHuffmanDecodingTables(int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.hbCreateDecodeTables(int[],int[],int[],char[],int,int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.recvDecodingTables()"
+      ],
+      "indexed_recall": 0.6666666666666666
+    },
+    "combined_field_paths": {
+      "candidate_count": 49,
+      "hits": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartB()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()"
+      ],
+      "misses": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.createHuffmanDecodingTables(int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.hbCreateDecodeTables(int[],int[],int[],char[],int,int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.recvDecodingTables()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.createHuffmanDecodingTables(int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.hbCreateDecodeTables(int[],int[],int[],char[],int,int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.recvDecodingTables()"
+      ],
+      "indexed_recall": 0.6666666666666666
+    }
+  }
+}

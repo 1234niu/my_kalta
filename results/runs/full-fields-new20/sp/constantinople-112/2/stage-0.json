@@ -1,0 +1,48 @@
+{
+  "request_sha256": "6da9c911b18475b8c0b4a68608a0d89bbd1730f706e7b14b7fbb77c1148cf103",
+  "request": {
+    "model": "deepseek-v4.1-flash-1017",
+    "temperature": 0,
+    "messages": [
+      {
+        "role": "user",
+        "content": "# System Information\nYou are an expert in Java and in analyzing the impact of source code changes on other code entities in a project's production code.\n\n# General Information\nYou receive information about a set of changes, called seed changes, that were made to fix a bug reported in Jira.\nYou also receive the Jira bug report title and description and an initial impact set consisting of the fully qualified names of code entities that are statically related to the seed changes.\n\n# Task\nYour task is to refine the initial impact set.\nA code entity is part of the impact set if it requires modification or, if it does not already exist, must be created as a consequence of the seed changes.\nFirst, remove code entities unless the provided information indicates that they must be modified.\nSecond, add code entities that must be modified or created according to the provided evidence.\n\nYour goal is to report a final impact set that consists of the fully qualified names of code entities that must be modified or created because of the seed changes.\n\n# Inputs\n- Jira bug report title: Dirty fields are not correctly applied after serialization and map clearance\n- Jira bug report description: Dirty fields are not correctly applied in these situations:\\n\\n-All entries in the map are incorrectly made dirty when a Persistent is deserialized.\\n-Also, due to a separate bug all non-map entries that are deserialized are made dirty too. (This is pure coincidence as the bugs have different causes).\\n-Finally, when a map is cleared but some entries that are put afterwards are actually the same as before, it should be noticed as non-dirty. (This happens in Nutchgora a lot: getInlinks.clear(), getOutlinks.clear(), getHeaders.clear() etc.).\\n\\nBecause of this a lot of fields are dirty when they in fact are not. It is never the other way around. Therefore, this bug purely affects performance.\\n\\nPatch will follow shortly. Let me know if you have any comments.\n- Seed changes and their Git diff hunks: [{\"fqn\": \"org.apache.gora.avro.PersistentDatumReader.readRecord(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)\", \"git_diff_hunk\": \"@@ -143,0 +146,3 @@ public class PersistentDatumReader<T extends Persistent>\\n+ } \\n+ else {\\n+ persistent.clearDirty(i);\"}, {\"fqn\": \"org.apache.gora.avro.PersistentDatumReader.readMap(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)\", \"git_diff_hunk\": \"@@ -166 +170,0 @@ public class PersistentDatumReader<T extends Persistent>\\n-\\n@@ -168 +172 @@ public class PersistentDatumReader<T extends Persistent>\\n- map.clearStates();\\n+ Map<Utf8, State> tempStates = null;\\n@@ -169,0 +174 @@ public class PersistentDatumReader<T extends Persistent>\\n+ tempStates = new HashMap<Utf8, State>();\\n@@ -174 +179,8 @@ public class PersistentDatumReader<T extends Persistent>\\n- map.putState(key, state);\\n+ tempStates.put(key, state);\\n+ }\\n+ }\\n+ super.readMap(map, expected, in);\\n+ map.clearStates();\\n+ if (readDirtyBits) {\\n+ for (Entry<Utf8, State> entry : tempStates.entrySet()) {\\n+ map.putState(entry.getKey(), entry.getValue());\\n@@ -177 +189 @@ public class PersistentDatumReader<T extends Persistent>\\n- return super.readMap(map, expected, in);\\n+ return map;\"}, {\"fqn\": \"org.apache.gora.avro.PersistentDatumReader.newMap(java.lang.Object,int)\", \"git_diff_hunk\": \"@@ -184,2 +196 @@ public class PersistentDatumReader<T extends Persistent>\\n- ((Map) old).clear();\\n- ((StatefulHashMap)old).clearStates();\\n+ ((StatefulHashMap)old).reuse();\"}, {\"fqn\": \"org.apache.gora.persistency.StatefulHashMap.StatefulHashMap(java.util.Map)\", \"git_diff_hunk\": \"@@ -41 +50,4 @@ public class StatefulHashMap<K, V> extends HashMap<K, V>\\n- super.putAll(m);\\n+ for (java.util.Map.Entry<K, V> entry : m.entrySet()) {\\n+ put(entry.getKey(), entry.getValue());\\n+ }\\n+ clearStates();\"}]\n- Initial static code change impact set: [\"T.clearDirty(int)\", \"org.apache.gora.avro.PersistentDatumReader.PersistentDatumReader(org.apache.avro.Schema,boolean)\", \"org.apache.gora.avro.PersistentDatumReader.cloneObject(org.apache.avro.Schema,java.lang.Object,java.lang.Object)\", \"org.apache.gora.avro.PersistentDatumReader.getResolvingDecoder(org.apache.avro.io.Decoder)\", \"org.apache.gora.avro.PersistentDatumReader.newPersistent()\", \"org.apache.gora.avro.PersistentDatumReader.newRecord(java.lang.Object,org.apache.avro.Schema)\", \"org.apache.gora.avro.PersistentDatumReader.read(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.Decoder)\", \"org.apache.gora.avro.PersistentDatumReader.readDirtyBits\", \"org.apache.gora.avro.PersistentDatumReader.rootSchema\", \"org.apache.gora.avro.PersistentDatumReader.setSchema(org.apache.avro.Schema)\", \"org.apache.gora.avro.PersistentDatumReader.tempStates\", \"org.apache.gora.cassandra.store.CassandraStore.put(java.lang.Object,org.apache.gora.persistency.Persistent)\", \"org.apache.gora.hbase.store.HBaseStore.setField(org.apache.gora.persistency.Persistent,org.apache.avro.Schema.Field,java.util.Map)\", \"org.apache.gora.persistency.Persistent.clear()\", \"org.apache.gora.persistency.Persistent.setDirty(int)\", \"org.apache.gora.persistency.State.values()\", \"org.apache.gora.persistency.StatefulHashMap.StatefulHashMap()\", \"org.apache.gora.persistency.StatefulHashMap.clearStates()\", \"org.apache.gora.persistency.StatefulHashMap.keyStates\", \"org.apache.gora.persistency.StatefulHashMap.put(K,V)\", \"org.apache.gora.persistency.StatefulMap.clearStates()\", \"org.apache.gora.util.IOUtils.readBoolArray(java.io.DataInput)\"]\n\n# Output Format\nReturn exactly one valid single-line JSON array of strings.\nEach string must be the fully qualified name of an impacted code entity.\nDo not include any additional text, formatting, or meta-information.\nDo not include seed changes in the output.\n\nExample output (four impacted code entities):\n[\"com.example.Foo.someMethod(java.lang.String, int)\", \"com.example.bar.attribute1\", \"com.example.bar.Class.NestedClass\", \"com.example.bar.Class.Class()\"]\n\nExample output (two impacted code entities):\n[\"com.example.package.ParentClass.ChildClass.field\", \"com.example.package.ParentClass.apply(long, com.example.package.ParentClass)\"]\n\nExample output (zero impacted code entities):\n[]"
+      }
+    ],
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096
+  },
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "[\"org.apache.gora.persistency.StatefulHashMap.reuse()\", \"org.apache.gora.persistency.StatefulHashMap.clearStates()\", \"org.apache.gora.persistency.StatefulHashMap.put(K,V)\", \"org.apache.gora.persistency.StatefulHashMap.StatefulHashMap(java.util.Map)\", \"org.apache.gora.persistency.Persistent.clearDirty(int)\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1794905829,
+    "id": "0217949058279462dc0f013dd9de882804ee1715bc98a4a17212e",
+    "model": "deepseek-v4.1-flash-1017",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 81,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 1536,
+      "prompt_cache_miss_tokens": 80,
+      "prompt_tokens": 1616,
+      "prompt_tokens_details": {
+        "cached_tokens": 1536
+      },
+      "total_tokens": 1697
+    }
+  },
+  "seconds": 1.288551375,
+  "endpoint": "http://api.aicnic.cn/v1"
+}

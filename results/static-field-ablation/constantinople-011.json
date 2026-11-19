@@ -1,0 +1,592 @@
+{
+  "id": "constantinople-011",
+  "graph_edges": 6193,
+  "seeds": {
+    "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()": true
+  },
+  "candidates": {
+    "baseline": [
+      "examples.mail.SMTPMail.main(java.lang.String[])"
+    ],
+    "fields": [
+      "examples.mail.SMTPMail.main(java.lang.String[])",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.SimpleSMTPHeader(java.lang.String,java.lang.String,java.lang.String)",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__from",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__headerFields",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__subject",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__to",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.addCC(java.lang.String)"
+    ],
+    "multihop": [
+      "examples.mail.SMTPMail.main(java.lang.String[])",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.SimpleSMTPHeader(java.lang.String,java.lang.String,java.lang.String)",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__from",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__headerFields",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__subject",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__to",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.addCC(java.lang.String)"
+    ],
+    "two_hop_calls": [
+      "examples.mail.SMTPMail.main(java.lang.String[])",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.SimpleSMTPHeader(java.lang.String,java.lang.String,java.lang.String)",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__from",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__headerFields",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__subject",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__to",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.addCC(java.lang.String)"
+    ],
+    "diff_and_override": [
+      "examples.mail.SMTPMail.main(java.lang.String[])",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.SimpleSMTPHeader(java.lang.String,java.lang.String,java.lang.String)",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__from",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__headerFields",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__subject",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__to",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.addCC(java.lang.String)",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.addHeaderField(java.lang.String,java.lang.String)"
+    ],
+    "mixed_field_paths": [
+      "examples.mail.SMTPMail.main(java.lang.String[])",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.SimpleSMTPHeader(java.lang.String,java.lang.String,java.lang.String)",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__from",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__headerFields",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__subject",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__to",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.addCC(java.lang.String)",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.addHeaderField(java.lang.String,java.lang.String)"
+    ],
+    "seed_field_accesses": [
+      "examples.mail.SMTPMail.main(java.lang.String[])",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.SimpleSMTPHeader(java.lang.String,java.lang.String,java.lang.String)",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__from",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__headerFields",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__subject",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__to",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.addCC(java.lang.String)",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.addHeaderField(java.lang.String,java.lang.String)",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.hasHeaderDate"
+    ],
+    "combined_field_paths": [
+      "examples.mail.SMTPMail.main(java.lang.String[])",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.SimpleSMTPHeader(java.lang.String,java.lang.String,java.lang.String)",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__from",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__headerFields",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__subject",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__to",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.addCC(java.lang.String)",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.addHeaderField(java.lang.String,java.lang.String)",
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.hasHeaderDate"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__headerFields": {
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__headerFields": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__headerFields",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 133
+          }
+        ]
+      },
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.SimpleSMTPHeader(java.lang.String,java.lang.String,java.lang.String)": {
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__headerFields": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__headerFields",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 133
+          },
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.SimpleSMTPHeader(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__headerFields",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 78
+          }
+        ],
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__from": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__from",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 137
+          },
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.SimpleSMTPHeader(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__from",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 76
+          }
+        ],
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__to": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__to",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 139
+          },
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.SimpleSMTPHeader(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__to",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 75
+          }
+        ],
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 143
+          },
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.SimpleSMTPHeader(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 79
+          }
+        ],
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__subject": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__subject",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 148
+          },
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.SimpleSMTPHeader(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__subject",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 77
+          }
+        ]
+      },
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__from": {
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__from": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__from",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 137
+          }
+        ]
+      },
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__to": {
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__to": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__to",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 139
+          }
+        ]
+      },
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc": {
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 143
+          }
+        ]
+      },
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.addCC(java.lang.String)": {
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 143
+          },
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.addCC(java.lang.String)",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 111
+          }
+        ]
+      },
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__subject": {
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__subject": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__subject",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 148
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__headerFields": {
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__headerFields": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__headerFields",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 133
+          }
+        ]
+      },
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.SimpleSMTPHeader(java.lang.String,java.lang.String,java.lang.String)": {
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__headerFields": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__headerFields",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 133
+          },
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.SimpleSMTPHeader(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__headerFields",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 78
+          }
+        ],
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__from": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__from",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 137
+          },
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.SimpleSMTPHeader(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__from",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 76
+          }
+        ],
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__to": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__to",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 139
+          },
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.SimpleSMTPHeader(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__to",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 75
+          }
+        ],
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 143
+          },
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.SimpleSMTPHeader(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 79
+          }
+        ],
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__subject": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__subject",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 148
+          },
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.SimpleSMTPHeader(java.lang.String,java.lang.String,java.lang.String)",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__subject",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 77
+          }
+        ]
+      },
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__from": {
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__from": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__from",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 137
+          }
+        ]
+      },
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__to": {
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__to": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__to",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 139
+          }
+        ]
+      },
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc": {
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 143
+          }
+        ]
+      },
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.addCC(java.lang.String)": {
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 143
+          },
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.addCC(java.lang.String)",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__cc",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 111
+          }
+        ]
+      },
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.__subject": {
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.__subject": [
+          {
+            "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+            "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.__subject",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+            "line": 148
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {},
+    "mixed_field_paths": {},
+    "seed_field_accesses": {
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.hasHeaderDate": [
+        {
+          "seed": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+          "edge": "ADDED_READ",
+          "after_line": 144,
+          "proposed_fqn": "org.apache.commons.net.smtp.SimpleSMTPHeader.hasHeaderDate",
+          "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+          "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+          "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.hasHeaderDate"
+        }
+      ]
+    },
+    "combined_field_paths": {
+      "org.apache.commons.net.smtp.SimpleSMTPHeader.hasHeaderDate": [
+        {
+          "seed": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+          "edge": "ADDED_READ",
+          "after_line": 144,
+          "proposed_fqn": "org.apache.commons.net.smtp.SimpleSMTPHeader.hasHeaderDate",
+          "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+          "from": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+          "to": "org.apache.commons.net.smtp.SimpleSMTPHeader.hasHeaderDate"
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 3213,
+      "ma_analysis": 2795,
+      "ma_refinement_fixed": 2395
+    },
+    "two_hop_calls": {
+      "sp": 3213,
+      "ma_analysis": 2795,
+      "ma_refinement_fixed": 2395
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "addHeaderField",
+        "arity": 2,
+        "arguments": [
+          "\"Date\"",
+          "format.format(new Date())"
+        ],
+        "receiver": null,
+        "after_line": 145,
+        "expression": "addHeaderField(\"Date\", format.format(new Date()))",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+        "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+        "status": "possible_parent_targets",
+        "possible_parent_targets": [
+          "org.apache.commons.net.smtp.SimpleSMTPHeader.addHeaderField(java.lang.String,java.lang.String)"
+        ],
+        "inferred_targets": []
+      },
+      {
+        "name": "format",
+        "arity": 1,
+        "arguments": [
+          "new Date()"
+        ],
+        "receiver": "format",
+        "after_line": 145,
+        "expression": "format(new Date())",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+        "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [
+    {
+      "seed": "org.apache.commons.net.smtp.SimpleSMTPHeader.toString()",
+      "edge": "ADDED_READ",
+      "after_line": 144,
+      "proposed_fqn": "org.apache.commons.net.smtp.SimpleSMTPHeader.hasHeaderDate",
+      "file": "src/main/java/org/apache/commons/net/smtp/SimpleSMTPHeader.java"
+    }
+  ],
+  "indexed_targets": [
+    "org.apache.commons.net.smtp.SimpleSMTPHeader.addHeaderField(java.lang.String,java.lang.String)"
+  ],
+  "unindexed_targets": [
+    "org.apache.commons.net.smtp.SimpleSMTPHeader.hasHeaderDate"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 1,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.addHeaderField(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.hasHeaderDate"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.addHeaderField(java.lang.String,java.lang.String)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 8,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.addHeaderField(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.hasHeaderDate"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.addHeaderField(java.lang.String,java.lang.String)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "multihop": {
+      "candidate_count": 8,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.addHeaderField(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.hasHeaderDate"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.addHeaderField(java.lang.String,java.lang.String)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 8,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.addHeaderField(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.hasHeaderDate"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.addHeaderField(java.lang.String,java.lang.String)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "diff_and_override": {
+      "candidate_count": 9,
+      "hits": [
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.addHeaderField(java.lang.String,java.lang.String)"
+      ],
+      "misses": [
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.hasHeaderDate"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "mixed_field_paths": {
+      "candidate_count": 9,
+      "hits": [
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.addHeaderField(java.lang.String,java.lang.String)"
+      ],
+      "misses": [
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.hasHeaderDate"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "seed_field_accesses": {
+      "candidate_count": 10,
+      "hits": [
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.addHeaderField(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.hasHeaderDate"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "combined_field_paths": {
+      "candidate_count": 10,
+      "hits": [
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.addHeaderField(java.lang.String,java.lang.String)",
+        "org.apache.commons.net.smtp.SimpleSMTPHeader.hasHeaderDate"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    }
+  }
+}

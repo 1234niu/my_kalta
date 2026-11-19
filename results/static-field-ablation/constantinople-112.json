@@ -1,0 +1,867 @@
+{
+  "id": "constantinople-112",
+  "graph_edges": 2506,
+  "seeds": {
+    "org.apache.gora.avro.PersistentDatumReader.readRecord(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)": true,
+    "org.apache.gora.avro.PersistentDatumReader.readMap(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)": true,
+    "org.apache.gora.avro.PersistentDatumReader.newMap(java.lang.Object,int)": true,
+    "org.apache.gora.persistency.StatefulHashMap.StatefulHashMap(java.util.Map)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.gora.avro.PersistentDatumReader.cloneObject(org.apache.avro.Schema,java.lang.Object,java.lang.Object)",
+      "org.apache.gora.avro.PersistentDatumReader.newRecord(java.lang.Object,org.apache.avro.Schema)",
+      "org.apache.gora.avro.PersistentDatumReader.read(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.Decoder)",
+      "org.apache.gora.cassandra.store.CassandraStore.put(java.lang.Object,org.apache.gora.persistency.Persistent)",
+      "org.apache.gora.hbase.store.HBaseStore.setField(org.apache.gora.persistency.Persistent,org.apache.avro.Schema.Field,java.util.Map)",
+      "org.apache.gora.persistency.Persistent.clear()",
+      "org.apache.gora.persistency.Persistent.setDirty(int)",
+      "org.apache.gora.persistency.State.values()",
+      "org.apache.gora.persistency.StatefulHashMap.StatefulHashMap()",
+      "org.apache.gora.persistency.StatefulHashMap.clearStates()",
+      "org.apache.gora.persistency.StatefulMap.clearStates()",
+      "org.apache.gora.util.IOUtils.readBoolArray(java.io.DataInput)"
+    ],
+    "fields": [
+      "org.apache.gora.avro.PersistentDatumReader.PersistentDatumReader(org.apache.avro.Schema,boolean)",
+      "org.apache.gora.avro.PersistentDatumReader.cloneObject(org.apache.avro.Schema,java.lang.Object,java.lang.Object)",
+      "org.apache.gora.avro.PersistentDatumReader.newRecord(java.lang.Object,org.apache.avro.Schema)",
+      "org.apache.gora.avro.PersistentDatumReader.read(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.Decoder)",
+      "org.apache.gora.avro.PersistentDatumReader.readDirtyBits",
+      "org.apache.gora.avro.PersistentDatumReader.rootSchema",
+      "org.apache.gora.avro.PersistentDatumReader.setSchema(org.apache.avro.Schema)",
+      "org.apache.gora.cassandra.store.CassandraStore.put(java.lang.Object,org.apache.gora.persistency.Persistent)",
+      "org.apache.gora.hbase.store.HBaseStore.setField(org.apache.gora.persistency.Persistent,org.apache.avro.Schema.Field,java.util.Map)",
+      "org.apache.gora.persistency.Persistent.clear()",
+      "org.apache.gora.persistency.Persistent.setDirty(int)",
+      "org.apache.gora.persistency.State.values()",
+      "org.apache.gora.persistency.StatefulHashMap.StatefulHashMap()",
+      "org.apache.gora.persistency.StatefulHashMap.clearStates()",
+      "org.apache.gora.persistency.StatefulMap.clearStates()",
+      "org.apache.gora.util.IOUtils.readBoolArray(java.io.DataInput)"
+    ],
+    "multihop": [
+      "org.apache.gora.avro.PersistentDatumReader.PersistentDatumReader(org.apache.avro.Schema,boolean)",
+      "org.apache.gora.avro.PersistentDatumReader.cloneObject(org.apache.avro.Schema,java.lang.Object,java.lang.Object)",
+      "org.apache.gora.avro.PersistentDatumReader.newRecord(java.lang.Object,org.apache.avro.Schema)",
+      "org.apache.gora.avro.PersistentDatumReader.read(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.Decoder)",
+      "org.apache.gora.avro.PersistentDatumReader.readDirtyBits",
+      "org.apache.gora.avro.PersistentDatumReader.rootSchema",
+      "org.apache.gora.avro.PersistentDatumReader.setSchema(org.apache.avro.Schema)",
+      "org.apache.gora.cassandra.store.CassandraStore.put(java.lang.Object,org.apache.gora.persistency.Persistent)",
+      "org.apache.gora.hbase.store.HBaseStore.setField(org.apache.gora.persistency.Persistent,org.apache.avro.Schema.Field,java.util.Map)",
+      "org.apache.gora.persistency.Persistent.clear()",
+      "org.apache.gora.persistency.Persistent.setDirty(int)",
+      "org.apache.gora.persistency.State.values()",
+      "org.apache.gora.persistency.StatefulHashMap.StatefulHashMap()",
+      "org.apache.gora.persistency.StatefulHashMap.clearStates()",
+      "org.apache.gora.persistency.StatefulMap.clearStates()",
+      "org.apache.gora.util.IOUtils.readBoolArray(java.io.DataInput)"
+    ],
+    "two_hop_calls": [
+      "org.apache.gora.avro.PersistentDatumReader.PersistentDatumReader(org.apache.avro.Schema,boolean)",
+      "org.apache.gora.avro.PersistentDatumReader.cloneObject(org.apache.avro.Schema,java.lang.Object,java.lang.Object)",
+      "org.apache.gora.avro.PersistentDatumReader.getResolvingDecoder(org.apache.avro.io.Decoder)",
+      "org.apache.gora.avro.PersistentDatumReader.newPersistent()",
+      "org.apache.gora.avro.PersistentDatumReader.newRecord(java.lang.Object,org.apache.avro.Schema)",
+      "org.apache.gora.avro.PersistentDatumReader.read(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.Decoder)",
+      "org.apache.gora.avro.PersistentDatumReader.readDirtyBits",
+      "org.apache.gora.avro.PersistentDatumReader.rootSchema",
+      "org.apache.gora.avro.PersistentDatumReader.setSchema(org.apache.avro.Schema)",
+      "org.apache.gora.cassandra.store.CassandraStore.put(java.lang.Object,org.apache.gora.persistency.Persistent)",
+      "org.apache.gora.hbase.store.HBaseStore.setField(org.apache.gora.persistency.Persistent,org.apache.avro.Schema.Field,java.util.Map)",
+      "org.apache.gora.persistency.Persistent.clear()",
+      "org.apache.gora.persistency.Persistent.setDirty(int)",
+      "org.apache.gora.persistency.State.values()",
+      "org.apache.gora.persistency.StatefulHashMap.StatefulHashMap()",
+      "org.apache.gora.persistency.StatefulHashMap.clearStates()",
+      "org.apache.gora.persistency.StatefulMap.clearStates()",
+      "org.apache.gora.util.IOUtils.readBoolArray(java.io.DataInput)"
+    ],
+    "diff_and_override": [
+      "T.clearDirty(int)",
+      "org.apache.gora.avro.PersistentDatumReader.PersistentDatumReader(org.apache.avro.Schema,boolean)",
+      "org.apache.gora.avro.PersistentDatumReader.cloneObject(org.apache.avro.Schema,java.lang.Object,java.lang.Object)",
+      "org.apache.gora.avro.PersistentDatumReader.getResolvingDecoder(org.apache.avro.io.Decoder)",
+      "org.apache.gora.avro.PersistentDatumReader.newPersistent()",
+      "org.apache.gora.avro.PersistentDatumReader.newRecord(java.lang.Object,org.apache.avro.Schema)",
+      "org.apache.gora.avro.PersistentDatumReader.read(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.Decoder)",
+      "org.apache.gora.avro.PersistentDatumReader.readDirtyBits",
+      "org.apache.gora.avro.PersistentDatumReader.rootSchema",
+      "org.apache.gora.avro.PersistentDatumReader.setSchema(org.apache.avro.Schema)",
+      "org.apache.gora.avro.PersistentDatumReader.tempStates",
+      "org.apache.gora.cassandra.store.CassandraStore.put(java.lang.Object,org.apache.gora.persistency.Persistent)",
+      "org.apache.gora.hbase.store.HBaseStore.setField(org.apache.gora.persistency.Persistent,org.apache.avro.Schema.Field,java.util.Map)",
+      "org.apache.gora.persistency.Persistent.clear()",
+      "org.apache.gora.persistency.Persistent.setDirty(int)",
+      "org.apache.gora.persistency.State.values()",
+      "org.apache.gora.persistency.StatefulHashMap.StatefulHashMap()",
+      "org.apache.gora.persistency.StatefulHashMap.clearStates()",
+      "org.apache.gora.persistency.StatefulHashMap.put(K,V)",
+      "org.apache.gora.persistency.StatefulMap.clearStates()",
+      "org.apache.gora.util.IOUtils.readBoolArray(java.io.DataInput)"
+    ],
+    "mixed_field_paths": [
+      "T.clearDirty(int)",
+      "org.apache.gora.avro.PersistentDatumReader.PersistentDatumReader(org.apache.avro.Schema,boolean)",
+      "org.apache.gora.avro.PersistentDatumReader.cloneObject(org.apache.avro.Schema,java.lang.Object,java.lang.Object)",
+      "org.apache.gora.avro.PersistentDatumReader.getResolvingDecoder(org.apache.avro.io.Decoder)",
+      "org.apache.gora.avro.PersistentDatumReader.newPersistent()",
+      "org.apache.gora.avro.PersistentDatumReader.newRecord(java.lang.Object,org.apache.avro.Schema)",
+      "org.apache.gora.avro.PersistentDatumReader.read(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.Decoder)",
+      "org.apache.gora.avro.PersistentDatumReader.readDirtyBits",
+      "org.apache.gora.avro.PersistentDatumReader.rootSchema",
+      "org.apache.gora.avro.PersistentDatumReader.setSchema(org.apache.avro.Schema)",
+      "org.apache.gora.avro.PersistentDatumReader.tempStates",
+      "org.apache.gora.cassandra.store.CassandraStore.put(java.lang.Object,org.apache.gora.persistency.Persistent)",
+      "org.apache.gora.hbase.store.HBaseStore.setField(org.apache.gora.persistency.Persistent,org.apache.avro.Schema.Field,java.util.Map)",
+      "org.apache.gora.persistency.Persistent.clear()",
+      "org.apache.gora.persistency.Persistent.setDirty(int)",
+      "org.apache.gora.persistency.State.values()",
+      "org.apache.gora.persistency.StatefulHashMap.StatefulHashMap()",
+      "org.apache.gora.persistency.StatefulHashMap.clearStates()",
+      "org.apache.gora.persistency.StatefulHashMap.keyStates",
+      "org.apache.gora.persistency.StatefulHashMap.put(K,V)",
+      "org.apache.gora.persistency.StatefulMap.clearStates()",
+      "org.apache.gora.util.IOUtils.readBoolArray(java.io.DataInput)"
+    ],
+    "seed_field_accesses": [
+      "T.clearDirty(int)",
+      "org.apache.gora.avro.PersistentDatumReader.PersistentDatumReader(org.apache.avro.Schema,boolean)",
+      "org.apache.gora.avro.PersistentDatumReader.cloneObject(org.apache.avro.Schema,java.lang.Object,java.lang.Object)",
+      "org.apache.gora.avro.PersistentDatumReader.getResolvingDecoder(org.apache.avro.io.Decoder)",
+      "org.apache.gora.avro.PersistentDatumReader.newPersistent()",
+      "org.apache.gora.avro.PersistentDatumReader.newRecord(java.lang.Object,org.apache.avro.Schema)",
+      "org.apache.gora.avro.PersistentDatumReader.read(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.Decoder)",
+      "org.apache.gora.avro.PersistentDatumReader.readDirtyBits",
+      "org.apache.gora.avro.PersistentDatumReader.rootSchema",
+      "org.apache.gora.avro.PersistentDatumReader.setSchema(org.apache.avro.Schema)",
+      "org.apache.gora.avro.PersistentDatumReader.tempStates",
+      "org.apache.gora.cassandra.store.CassandraStore.put(java.lang.Object,org.apache.gora.persistency.Persistent)",
+      "org.apache.gora.hbase.store.HBaseStore.setField(org.apache.gora.persistency.Persistent,org.apache.avro.Schema.Field,java.util.Map)",
+      "org.apache.gora.persistency.Persistent.clear()",
+      "org.apache.gora.persistency.Persistent.setDirty(int)",
+      "org.apache.gora.persistency.State.values()",
+      "org.apache.gora.persistency.StatefulHashMap.StatefulHashMap()",
+      "org.apache.gora.persistency.StatefulHashMap.clearStates()",
+      "org.apache.gora.persistency.StatefulHashMap.put(K,V)",
+      "org.apache.gora.persistency.StatefulMap.clearStates()",
+      "org.apache.gora.util.IOUtils.readBoolArray(java.io.DataInput)"
+    ],
+    "combined_field_paths": [
+      "T.clearDirty(int)",
+      "org.apache.gora.avro.PersistentDatumReader.PersistentDatumReader(org.apache.avro.Schema,boolean)",
+      "org.apache.gora.avro.PersistentDatumReader.cloneObject(org.apache.avro.Schema,java.lang.Object,java.lang.Object)",
+      "org.apache.gora.avro.PersistentDatumReader.getResolvingDecoder(org.apache.avro.io.Decoder)",
+      "org.apache.gora.avro.PersistentDatumReader.newPersistent()",
+      "org.apache.gora.avro.PersistentDatumReader.newRecord(java.lang.Object,org.apache.avro.Schema)",
+      "org.apache.gora.avro.PersistentDatumReader.read(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.Decoder)",
+      "org.apache.gora.avro.PersistentDatumReader.readDirtyBits",
+      "org.apache.gora.avro.PersistentDatumReader.rootSchema",
+      "org.apache.gora.avro.PersistentDatumReader.setSchema(org.apache.avro.Schema)",
+      "org.apache.gora.avro.PersistentDatumReader.tempStates",
+      "org.apache.gora.cassandra.store.CassandraStore.put(java.lang.Object,org.apache.gora.persistency.Persistent)",
+      "org.apache.gora.hbase.store.HBaseStore.setField(org.apache.gora.persistency.Persistent,org.apache.avro.Schema.Field,java.util.Map)",
+      "org.apache.gora.persistency.Persistent.clear()",
+      "org.apache.gora.persistency.Persistent.setDirty(int)",
+      "org.apache.gora.persistency.State.values()",
+      "org.apache.gora.persistency.StatefulHashMap.StatefulHashMap()",
+      "org.apache.gora.persistency.StatefulHashMap.clearStates()",
+      "org.apache.gora.persistency.StatefulHashMap.keyStates",
+      "org.apache.gora.persistency.StatefulHashMap.put(K,V)",
+      "org.apache.gora.persistency.StatefulMap.clearStates()",
+      "org.apache.gora.util.IOUtils.readBoolArray(java.io.DataInput)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.gora.avro.PersistentDatumReader.rootSchema": {
+        "org.apache.gora.avro.PersistentDatumReader.rootSchema": [
+          {
+            "from": "org.apache.gora.avro.PersistentDatumReader.readRecord(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+            "to": "org.apache.gora.avro.PersistentDatumReader.rootSchema",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+            "line": 121
+          }
+        ]
+      },
+      "org.apache.gora.avro.PersistentDatumReader.setSchema(org.apache.avro.Schema)": {
+        "org.apache.gora.avro.PersistentDatumReader.rootSchema": [
+          {
+            "from": "org.apache.gora.avro.PersistentDatumReader.readRecord(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+            "to": "org.apache.gora.avro.PersistentDatumReader.rootSchema",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+            "line": 121
+          },
+          {
+            "from": "org.apache.gora.avro.PersistentDatumReader.setSchema(org.apache.avro.Schema)",
+            "to": "org.apache.gora.avro.PersistentDatumReader.rootSchema",
+            "kind": "WRITE",
+            "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+            "line": 66
+          }
+        ]
+      },
+      "org.apache.gora.avro.PersistentDatumReader.readDirtyBits": {
+        "org.apache.gora.avro.PersistentDatumReader.readDirtyBits": [
+          {
+            "from": "org.apache.gora.avro.PersistentDatumReader.readRecord(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+            "to": "org.apache.gora.avro.PersistentDatumReader.readDirtyBits",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+            "line": 121
+          }
+        ]
+      },
+      "org.apache.gora.avro.PersistentDatumReader.PersistentDatumReader(org.apache.avro.Schema,boolean)": {
+        "org.apache.gora.avro.PersistentDatumReader.readDirtyBits": [
+          {
+            "from": "org.apache.gora.avro.PersistentDatumReader.readRecord(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+            "to": "org.apache.gora.avro.PersistentDatumReader.readDirtyBits",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+            "line": 121
+          },
+          {
+            "from": "org.apache.gora.avro.PersistentDatumReader.PersistentDatumReader(org.apache.avro.Schema,boolean)",
+            "to": "org.apache.gora.avro.PersistentDatumReader.readDirtyBits",
+            "kind": "WRITE",
+            "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+            "line": 60
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.gora.avro.PersistentDatumReader.rootSchema": {
+        "org.apache.gora.avro.PersistentDatumReader.rootSchema": [
+          {
+            "from": "org.apache.gora.avro.PersistentDatumReader.readRecord(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+            "to": "org.apache.gora.avro.PersistentDatumReader.rootSchema",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+            "line": 121
+          }
+        ]
+      },
+      "org.apache.gora.avro.PersistentDatumReader.setSchema(org.apache.avro.Schema)": {
+        "org.apache.gora.avro.PersistentDatumReader.rootSchema": [
+          {
+            "from": "org.apache.gora.avro.PersistentDatumReader.readRecord(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+            "to": "org.apache.gora.avro.PersistentDatumReader.rootSchema",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+            "line": 121
+          },
+          {
+            "from": "org.apache.gora.avro.PersistentDatumReader.setSchema(org.apache.avro.Schema)",
+            "to": "org.apache.gora.avro.PersistentDatumReader.rootSchema",
+            "kind": "WRITE",
+            "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+            "line": 66
+          }
+        ]
+      },
+      "org.apache.gora.avro.PersistentDatumReader.PersistentDatumReader(org.apache.avro.Schema,boolean)": {
+        "org.apache.gora.avro.PersistentDatumReader.rootSchema": [
+          {
+            "from": "org.apache.gora.avro.PersistentDatumReader.readRecord(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+            "to": "org.apache.gora.avro.PersistentDatumReader.rootSchema",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+            "line": 121
+          },
+          {
+            "from": "org.apache.gora.avro.PersistentDatumReader.setSchema(org.apache.avro.Schema)",
+            "to": "org.apache.gora.avro.PersistentDatumReader.rootSchema",
+            "kind": "WRITE",
+            "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+            "line": 66
+          },
+          {
+            "from": "org.apache.gora.avro.PersistentDatumReader.PersistentDatumReader(org.apache.avro.Schema,boolean)",
+            "to": "org.apache.gora.avro.PersistentDatumReader.setSchema(org.apache.avro.Schema)",
+            "kind": "CALLS",
+            "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+            "line": 61
+          }
+        ],
+        "org.apache.gora.avro.PersistentDatumReader.readDirtyBits": [
+          {
+            "from": "org.apache.gora.avro.PersistentDatumReader.readRecord(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+            "to": "org.apache.gora.avro.PersistentDatumReader.readDirtyBits",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+            "line": 121
+          },
+          {
+            "from": "org.apache.gora.avro.PersistentDatumReader.PersistentDatumReader(org.apache.avro.Schema,boolean)",
+            "to": "org.apache.gora.avro.PersistentDatumReader.readDirtyBits",
+            "kind": "WRITE",
+            "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+            "line": 60
+          }
+        ]
+      },
+      "org.apache.gora.avro.PersistentDatumReader.readDirtyBits": {
+        "org.apache.gora.avro.PersistentDatumReader.readDirtyBits": [
+          {
+            "from": "org.apache.gora.avro.PersistentDatumReader.readRecord(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+            "to": "org.apache.gora.avro.PersistentDatumReader.readDirtyBits",
+            "kind": "READ",
+            "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+            "line": 121
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.gora.persistency.StatefulHashMap.clearStates()": [
+        {
+          "from": "org.apache.gora.avro.PersistentDatumReader.readMap(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+          "to": "org.apache.gora.avro.PersistentDatumReader.newMap(java.lang.Object,int)",
+          "kind": "CALLS",
+          "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+          "line": 167
+        },
+        {
+          "from": "org.apache.gora.avro.PersistentDatumReader.newMap(java.lang.Object,int)",
+          "to": "org.apache.gora.persistency.StatefulHashMap.clearStates()",
+          "kind": "CALLS",
+          "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+          "line": 185
+        }
+      ],
+      "org.apache.gora.persistency.StatefulHashMap.StatefulHashMap()": [
+        {
+          "from": "org.apache.gora.avro.PersistentDatumReader.readMap(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+          "to": "org.apache.gora.avro.PersistentDatumReader.newMap(java.lang.Object,int)",
+          "kind": "CALLS",
+          "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+          "line": 167
+        },
+        {
+          "from": "org.apache.gora.avro.PersistentDatumReader.newMap(java.lang.Object,int)",
+          "to": "org.apache.gora.persistency.StatefulHashMap.StatefulHashMap()",
+          "kind": "CALLS",
+          "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+          "line": 188
+        }
+      ],
+      "org.apache.gora.avro.PersistentDatumReader.newPersistent()": [
+        {
+          "from": "org.apache.gora.avro.PersistentDatumReader.readRecord(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+          "to": "org.apache.gora.avro.PersistentDatumReader.newRecord(java.lang.Object,org.apache.avro.Schema)",
+          "kind": "CALLS",
+          "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+          "line": 118
+        },
+        {
+          "from": "org.apache.gora.avro.PersistentDatumReader.newRecord(java.lang.Object,org.apache.avro.Schema)",
+          "to": "org.apache.gora.avro.PersistentDatumReader.newPersistent()",
+          "kind": "CALLS",
+          "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+          "line": 86
+        }
+      ],
+      "org.apache.gora.avro.PersistentDatumReader.getResolvingDecoder(org.apache.avro.io.Decoder)": [
+        {
+          "from": "org.apache.gora.avro.PersistentDatumReader.readRecord(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+          "to": "org.apache.gora.avro.PersistentDatumReader.read(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.Decoder)",
+          "kind": "CALLS",
+          "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+          "line": 136
+        },
+        {
+          "from": "org.apache.gora.avro.PersistentDatumReader.read(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.Decoder)",
+          "to": "org.apache.gora.avro.PersistentDatumReader.getResolvingDecoder(org.apache.avro.io.Decoder)",
+          "kind": "CALLS",
+          "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+          "line": 100
+        }
+      ]
+    },
+    "mixed_field_paths": {
+      "org.apache.gora.persistency.StatefulHashMap.keyStates": [
+        {
+          "from": "org.apache.gora.avro.PersistentDatumReader.newMap(java.lang.Object,int)",
+          "to": "org.apache.gora.persistency.StatefulHashMap.clearStates()",
+          "kind": "CALLS",
+          "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+          "line": 185
+        },
+        {
+          "from": "org.apache.gora.persistency.StatefulHashMap.clearStates()",
+          "to": "org.apache.gora.persistency.StatefulHashMap.keyStates",
+          "kind": "READ",
+          "file": "gora-core/src/main/java/org/apache/gora/persistency/StatefulHashMap.java",
+          "line": 82
+        }
+      ],
+      "org.apache.gora.avro.PersistentDatumReader.rootSchema": [
+        {
+          "from": "org.apache.gora.avro.PersistentDatumReader.readRecord(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+          "to": "org.apache.gora.avro.PersistentDatumReader.newRecord(java.lang.Object,org.apache.avro.Schema)",
+          "kind": "CALLS",
+          "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+          "line": 118
+        },
+        {
+          "from": "org.apache.gora.avro.PersistentDatumReader.newRecord(java.lang.Object,org.apache.avro.Schema)",
+          "to": "org.apache.gora.avro.PersistentDatumReader.rootSchema",
+          "kind": "READ",
+          "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+          "line": 85
+        }
+      ]
+    },
+    "seed_field_accesses": {
+      "org.apache.gora.avro.PersistentDatumReader.tempStates": [
+        {
+          "seed": "org.apache.gora.avro.PersistentDatumReader.readMap(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+          "edge": "ADDED_WRITE",
+          "after_line": 174,
+          "proposed_fqn": "org.apache.gora.avro.PersistentDatumReader.tempStates",
+          "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+          "from": "org.apache.gora.avro.PersistentDatumReader.readMap(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+          "to": "org.apache.gora.avro.PersistentDatumReader.tempStates"
+        }
+      ],
+      "org.apache.gora.avro.PersistentDatumReader.readDirtyBits": [
+        {
+          "seed": "org.apache.gora.avro.PersistentDatumReader.readMap(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+          "edge": "ADDED_READ",
+          "after_line": 184,
+          "proposed_fqn": "org.apache.gora.avro.PersistentDatumReader.readDirtyBits",
+          "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+          "from": "org.apache.gora.avro.PersistentDatumReader.readMap(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+          "to": "org.apache.gora.avro.PersistentDatumReader.readDirtyBits"
+        }
+      ]
+    },
+    "combined_field_paths": {
+      "org.apache.gora.persistency.StatefulHashMap.keyStates": [
+        {
+          "from": "org.apache.gora.avro.PersistentDatumReader.newMap(java.lang.Object,int)",
+          "to": "org.apache.gora.persistency.StatefulHashMap.clearStates()",
+          "kind": "CALLS",
+          "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+          "line": 185
+        },
+        {
+          "from": "org.apache.gora.persistency.StatefulHashMap.clearStates()",
+          "to": "org.apache.gora.persistency.StatefulHashMap.keyStates",
+          "kind": "READ",
+          "file": "gora-core/src/main/java/org/apache/gora/persistency/StatefulHashMap.java",
+          "line": 82
+        }
+      ],
+      "org.apache.gora.avro.PersistentDatumReader.rootSchema": [
+        {
+          "from": "org.apache.gora.avro.PersistentDatumReader.readRecord(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+          "to": "org.apache.gora.avro.PersistentDatumReader.newRecord(java.lang.Object,org.apache.avro.Schema)",
+          "kind": "CALLS",
+          "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+          "line": 118
+        },
+        {
+          "from": "org.apache.gora.avro.PersistentDatumReader.newRecord(java.lang.Object,org.apache.avro.Schema)",
+          "to": "org.apache.gora.avro.PersistentDatumReader.rootSchema",
+          "kind": "READ",
+          "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+          "line": 85
+        }
+      ],
+      "org.apache.gora.avro.PersistentDatumReader.tempStates": [
+        {
+          "seed": "org.apache.gora.avro.PersistentDatumReader.readMap(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+          "edge": "ADDED_WRITE",
+          "after_line": 174,
+          "proposed_fqn": "org.apache.gora.avro.PersistentDatumReader.tempStates",
+          "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+          "from": "org.apache.gora.avro.PersistentDatumReader.readMap(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+          "to": "org.apache.gora.avro.PersistentDatumReader.tempStates"
+        }
+      ],
+      "org.apache.gora.avro.PersistentDatumReader.readDirtyBits": [
+        {
+          "seed": "org.apache.gora.avro.PersistentDatumReader.readMap(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+          "edge": "ADDED_READ",
+          "after_line": 184,
+          "proposed_fqn": "org.apache.gora.avro.PersistentDatumReader.readDirtyBits",
+          "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+          "from": "org.apache.gora.avro.PersistentDatumReader.readMap(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+          "to": "org.apache.gora.avro.PersistentDatumReader.readDirtyBits"
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 5864,
+      "ma_analysis": 5446,
+      "ma_refinement_fixed": 4597
+    },
+    "two_hop_calls": {
+      "sp": 6020,
+      "ma_analysis": 5602,
+      "ma_refinement_fixed": 4753
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "clearDirty",
+        "arity": 1,
+        "arguments": [
+          "i"
+        ],
+        "receiver": "persistent",
+        "after_line": 148,
+        "expression": "clearDirty(i)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.gora.avro.PersistentDatumReader.readRecord(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+        "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "T.clearDirty(int)"
+        ]
+      },
+      {
+        "name": "put",
+        "arity": 2,
+        "arguments": [
+          "key",
+          "state"
+        ],
+        "receiver": "tempStates",
+        "after_line": 179,
+        "expression": "put(key, state)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.gora.avro.PersistentDatumReader.readMap(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+        "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "entrySet",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "tempStates",
+        "after_line": 185,
+        "expression": "entrySet()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.gora.avro.PersistentDatumReader.readMap(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+        "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getKey",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "entry",
+        "after_line": 186,
+        "expression": "getKey()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.gora.avro.PersistentDatumReader.readMap(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+        "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getValue",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "entry",
+        "after_line": 186,
+        "expression": "getValue()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.gora.avro.PersistentDatumReader.readMap(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+        "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "reuse",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "((StatefulHashMap)old)",
+        "after_line": 196,
+        "expression": "reuse()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.gora.avro.PersistentDatumReader.newMap(java.lang.Object,int)",
+        "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "entrySet",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "m",
+        "after_line": 50,
+        "expression": "entrySet()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.gora.persistency.StatefulHashMap.StatefulHashMap(java.util.Map)",
+        "file": "gora-core/src/main/java/org/apache/gora/persistency/StatefulHashMap.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "put",
+        "arity": 2,
+        "arguments": [
+          "entry.getKey()",
+          "entry.getValue()"
+        ],
+        "receiver": null,
+        "after_line": 51,
+        "expression": "put(entry.getKey(), entry.getValue())",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.gora.persistency.StatefulHashMap.StatefulHashMap(java.util.Map)",
+        "file": "gora-core/src/main/java/org/apache/gora/persistency/StatefulHashMap.java",
+        "status": "possible_parent_targets",
+        "possible_parent_targets": [
+          "org.apache.gora.persistency.StatefulHashMap.put(K,V)"
+        ],
+        "inferred_targets": []
+      },
+      {
+        "name": "getKey",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "entry",
+        "after_line": 51,
+        "expression": "getKey()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.gora.persistency.StatefulHashMap.StatefulHashMap(java.util.Map)",
+        "file": "gora-core/src/main/java/org/apache/gora/persistency/StatefulHashMap.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getValue",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "entry",
+        "after_line": 51,
+        "expression": "getValue()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.gora.persistency.StatefulHashMap.StatefulHashMap(java.util.Map)",
+        "file": "gora-core/src/main/java/org/apache/gora/persistency/StatefulHashMap.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "clearStates",
+        "arity": 0,
+        "arguments": [],
+        "receiver": null,
+        "after_line": 53,
+        "expression": "clearStates()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.gora.persistency.StatefulHashMap.StatefulHashMap(java.util.Map)",
+        "file": "gora-core/src/main/java/org/apache/gora/persistency/StatefulHashMap.java",
+        "status": "possible_parent_targets",
+        "possible_parent_targets": [
+          "org.apache.gora.persistency.StatefulHashMap.clearStates()"
+        ],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [
+      {
+        "seed": "org.apache.gora.avro.PersistentDatumReader.readMap(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+        "edge": "ADDED_WRITE",
+        "after_line": 174,
+        "proposed_fqn": "org.apache.gora.avro.PersistentDatumReader.tempStates",
+        "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java"
+      }
+    ],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [
+    {
+      "seed": "org.apache.gora.avro.PersistentDatumReader.readMap(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+      "edge": "ADDED_WRITE",
+      "after_line": 174,
+      "proposed_fqn": "org.apache.gora.avro.PersistentDatumReader.tempStates",
+      "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java"
+    },
+    {
+      "seed": "org.apache.gora.avro.PersistentDatumReader.readMap(java.lang.Object,org.apache.avro.Schema,org.apache.avro.io.ResolvingDecoder)",
+      "edge": "ADDED_READ",
+      "after_line": 184,
+      "proposed_fqn": "org.apache.gora.avro.PersistentDatumReader.readDirtyBits",
+      "file": "gora-core/src/main/java/org/apache/gora/avro/PersistentDatumReader.java"
+    }
+  ],
+  "indexed_targets": [
+    "org.apache.gora.persistency.StatefulHashMap.clear()",
+    "org.apache.gora.persistency.StatefulHashMap.remove(java.lang.Object)",
+    "org.apache.gora.persistency.impl.PersistentBase.clear()"
+  ],
+  "unindexed_targets": [
+    "org.apache.gora.persistency.StatefulHashMap.put(java.lang.Object,java.lang.Object)",
+    "org.apache.gora.persistency.StatefulHashMap.reuse()",
+    "org.apache.gora.persistency.StatefulMap.reuse()"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 12,
+      "hits": [],
+      "misses": [
+        "org.apache.gora.persistency.StatefulHashMap.clear()",
+        "org.apache.gora.persistency.StatefulHashMap.put(java.lang.Object,java.lang.Object)",
+        "org.apache.gora.persistency.StatefulHashMap.remove(java.lang.Object)",
+        "org.apache.gora.persistency.StatefulHashMap.reuse()",
+        "org.apache.gora.persistency.StatefulMap.reuse()",
+        "org.apache.gora.persistency.impl.PersistentBase.clear()"
+      ],
+      "indexed_misses": [
+        "org.apache.gora.persistency.StatefulHashMap.clear()",
+        "org.apache.gora.persistency.StatefulHashMap.remove(java.lang.Object)",
+        "org.apache.gora.persistency.impl.PersistentBase.clear()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 16,
+      "hits": [],
+      "misses": [
+        "org.apache.gora.persistency.StatefulHashMap.clear()",
+        "org.apache.gora.persistency.StatefulHashMap.put(java.lang.Object,java.lang.Object)",
+        "org.apache.gora.persistency.StatefulHashMap.remove(java.lang.Object)",
+        "org.apache.gora.persistency.StatefulHashMap.reuse()",
+        "org.apache.gora.persistency.StatefulMap.reuse()",
+        "org.apache.gora.persistency.impl.PersistentBase.clear()"
+      ],
+      "indexed_misses": [
+        "org.apache.gora.persistency.StatefulHashMap.clear()",
+        "org.apache.gora.persistency.StatefulHashMap.remove(java.lang.Object)",
+        "org.apache.gora.persistency.impl.PersistentBase.clear()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "multihop": {
+      "candidate_count": 16,
+      "hits": [],
+      "misses": [
+        "org.apache.gora.persistency.StatefulHashMap.clear()",
+        "org.apache.gora.persistency.StatefulHashMap.put(java.lang.Object,java.lang.Object)",
+        "org.apache.gora.persistency.StatefulHashMap.remove(java.lang.Object)",
+        "org.apache.gora.persistency.StatefulHashMap.reuse()",
+        "org.apache.gora.persistency.StatefulMap.reuse()",
+        "org.apache.gora.persistency.impl.PersistentBase.clear()"
+      ],
+      "indexed_misses": [
+        "org.apache.gora.persistency.StatefulHashMap.clear()",
+        "org.apache.gora.persistency.StatefulHashMap.remove(java.lang.Object)",
+        "org.apache.gora.persistency.impl.PersistentBase.clear()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 18,
+      "hits": [],
+      "misses": [
+        "org.apache.gora.persistency.StatefulHashMap.clear()",
+        "org.apache.gora.persistency.StatefulHashMap.put(java.lang.Object,java.lang.Object)",
+        "org.apache.gora.persistency.StatefulHashMap.remove(java.lang.Object)",
+        "org.apache.gora.persistency.StatefulHashMap.reuse()",
+        "org.apache.gora.persistency.StatefulMap.reuse()",
+        "org.apache.gora.persistency.impl.PersistentBase.clear()"
+      ],
+      "indexed_misses": [
+        "org.apache.gora.persistency.StatefulHashMap.clear()",
+        "org.apache.gora.persistency.StatefulHashMap.remove(java.lang.Object)",
+        "org.apache.gora.persistency.impl.PersistentBase.clear()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "diff_and_override": {
+      "candidate_count": 21,
+      "hits": [],
+      "misses": [
+        "org.apache.gora.persistency.StatefulHashMap.clear()",
+        "org.apache.gora.persistency.StatefulHashMap.put(java.lang.Object,java.lang.Object)",
+        "org.apache.gora.persistency.StatefulHashMap.remove(java.lang.Object)",
+        "org.apache.gora.persistency.StatefulHashMap.reuse()",
+        "org.apache.gora.persistency.StatefulMap.reuse()",
+        "org.apache.gora.persistency.impl.PersistentBase.clear()"
+      ],
+      "indexed_misses": [
+        "org.apache.gora.persistency.StatefulHashMap.clear()",
+        "org.apache.gora.persistency.StatefulHashMap.remove(java.lang.Object)",
+        "org.apache.gora.persistency.impl.PersistentBase.clear()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "mixed_field_paths": {
+      "candidate_count": 22,
+      "hits": [],
+      "misses": [
+        "org.apache.gora.persistency.StatefulHashMap.clear()",
+        "org.apache.gora.persistency.StatefulHashMap.put(java.lang.Object,java.lang.Object)",
+        "org.apache.gora.persistency.StatefulHashMap.remove(java.lang.Object)",
+        "org.apache.gora.persistency.StatefulHashMap.reuse()",
+        "org.apache.gora.persistency.StatefulMap.reuse()",
+        "org.apache.gora.persistency.impl.PersistentBase.clear()"
+      ],
+      "indexed_misses": [
+        "org.apache.gora.persistency.StatefulHashMap.clear()",
+        "org.apache.gora.persistency.StatefulHashMap.remove(java.lang.Object)",
+        "org.apache.gora.persistency.impl.PersistentBase.clear()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "seed_field_accesses": {
+      "candidate_count": 21,
+      "hits": [],
+      "misses": [
+        "org.apache.gora.persistency.StatefulHashMap.clear()",
+        "org.apache.gora.persistency.StatefulHashMap.put(java.lang.Object,java.lang.Object)",
+        "org.apache.gora.persistency.StatefulHashMap.remove(java.lang.Object)",
+        "org.apache.gora.persistency.StatefulHashMap.reuse()",
+        "org.apache.gora.persistency.StatefulMap.reuse()",
+        "org.apache.gora.persistency.impl.PersistentBase.clear()"
+      ],
+      "indexed_misses": [
+        "org.apache.gora.persistency.StatefulHashMap.clear()",
+        "org.apache.gora.persistency.StatefulHashMap.remove(java.lang.Object)",
+        "org.apache.gora.persistency.impl.PersistentBase.clear()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "combined_field_paths": {
+      "candidate_count": 22,
+      "hits": [],
+      "misses": [
+        "org.apache.gora.persistency.StatefulHashMap.clear()",
+        "org.apache.gora.persistency.StatefulHashMap.put(java.lang.Object,java.lang.Object)",
+        "org.apache.gora.persistency.StatefulHashMap.remove(java.lang.Object)",
+        "org.apache.gora.persistency.StatefulHashMap.reuse()",
+        "org.apache.gora.persistency.StatefulMap.reuse()",
+        "org.apache.gora.persistency.impl.PersistentBase.clear()"
+      ],
+      "indexed_misses": [
+        "org.apache.gora.persistency.StatefulHashMap.clear()",
+        "org.apache.gora.persistency.StatefulHashMap.remove(java.lang.Object)",
+        "org.apache.gora.persistency.impl.PersistentBase.clear()"
+      ],
+      "indexed_recall": 0.0
+    }
+  }
+}

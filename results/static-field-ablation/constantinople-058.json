@@ -1,0 +1,1112 @@
+{
+  "id": "constantinople-058",
+  "graph_edges": 10216,
+  "seeds": {
+    "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount()",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)",
+      "org.apache.commons.compress.archivers.zip.ZipEncoding.encode(java.lang.String)"
+    ],
+    "fields": [
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount()",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.setName(java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)",
+      "org.apache.commons.compress.archivers.zip.ZipEncoding.encode(java.lang.String)"
+    ],
+    "multihop": [
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.io.File,java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String,long)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.io.File,java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String,long)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount()",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.setName(java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)",
+      "org.apache.commons.compress.archivers.zip.ZipEncoding.encode(java.lang.String)"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.io.File,java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String,long)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.io.File,java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String,long)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount()",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.setName(java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)",
+      "org.apache.commons.compress.archivers.zip.ZipEncoding.encode(java.lang.String)"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.io.File,java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String,long)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.io.File,java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String,long)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount()",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.setName(java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)",
+      "org.apache.commons.compress.archivers.zip.ZipEncoding.encode(java.lang.String)"
+    ],
+    "mixed_field_paths": [
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.io.File,java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String,long)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.io.File,java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String,long)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount()",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.setName(java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)",
+      "org.apache.commons.compress.archivers.zip.ZipEncoding.encode(java.lang.String)"
+    ],
+    "seed_field_accesses": [
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.io.File,java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String,long)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.io.File,java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String,long)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.charset",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount()",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.setName(java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)",
+      "org.apache.commons.compress.archivers.zip.ZipEncoding.encode(java.lang.String)"
+    ],
+    "combined_field_paths": [
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.io.File,java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String,long)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.io.File,java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String,long)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.charset",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount()",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.setName(java.lang.String)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)",
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)",
+      "org.apache.commons.compress.archivers.zip.ZipEncoding.encode(java.lang.String)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name": {
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 491
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)": {
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 491
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 262
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.setName(java.lang.String)": {
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 491
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.setName(java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 837
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name": {
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 491
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)": {
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 491
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 262
+          }
+        ],
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 495
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 517
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 211
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 261
+          }
+        ],
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 495
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 518
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 210
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 261
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String)": {
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 491
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 262
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 239
+          }
+        ],
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 495
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 517
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 211
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 261
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 239
+          }
+        ],
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 495
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 518
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 210
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 261
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 239
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String,long)": {
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 491
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 262
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 239
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String,long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 275
+          }
+        ],
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 495
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 517
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 211
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 261
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 239
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String,long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 275
+          }
+        ],
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 495
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 518
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 210
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 261
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 239
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String,long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 275
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String,long)": {
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 491
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 262
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String,long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 301
+          }
+        ],
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 495
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 517
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 211
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 261
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String,long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 301
+          }
+        ],
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 495
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 518
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 210
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 261
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String,long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 301
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.io.File,java.lang.String)": {
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 491
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 262
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String,long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 301
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.io.File,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String,long)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 342
+          }
+        ],
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 495
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 517
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 211
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 261
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String,long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 301
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.io.File,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String,long)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 342
+          }
+        ],
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 495
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 518
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 210
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 261
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String,long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 301
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.io.File,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String,long)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 342
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.io.File,java.lang.String)": {
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 491
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 262
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String,long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 301
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.io.File,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String,long)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 342
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.io.File,java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.io.File,java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 316
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.setName(java.lang.String)": {
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 491
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.setName(java.lang.String)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 837
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary": {
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 495
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 517
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)": {
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 495
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 517
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 211
+          }
+        ],
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 495
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 518
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 210
+          }
+        ]
+      },
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize": {
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize": [
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 495
+          },
+          {
+            "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+            "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+            "line": 518
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {},
+    "mixed_field_paths": {
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary": [
+        {
+          "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+          "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+          "line": 495
+        },
+        {
+          "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+          "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+          "line": 517
+        }
+      ],
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize": [
+        {
+          "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+          "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+          "line": 495
+        },
+        {
+          "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+          "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+          "line": 518
+        }
+      ],
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name": [
+        {
+          "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+          "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+          "line": 495
+        },
+        {
+          "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+          "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+          "line": 519
+        }
+      ]
+    },
+    "seed_field_accesses": {
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.charset": [
+        {
+          "seed": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+          "edge": "ADDED_READ",
+          "after_line": 492,
+          "proposed_fqn": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.charset",
+          "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+          "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+          "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.charset"
+        }
+      ]
+    },
+    "combined_field_paths": {
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary": [
+        {
+          "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+          "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+          "line": 495
+        },
+        {
+          "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+          "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+          "line": 517
+        }
+      ],
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize": [
+        {
+          "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+          "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+          "line": 495
+        },
+        {
+          "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+          "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+          "line": 518
+        }
+      ],
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name": [
+        {
+          "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+          "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+          "line": 495
+        },
+        {
+          "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+          "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+          "line": 519
+        }
+      ],
+      "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.charset": [
+        {
+          "seed": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+          "edge": "ADDED_READ",
+          "after_line": 492,
+          "proposed_fqn": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.charset",
+          "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+          "from": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+          "to": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.charset"
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 5271,
+      "ma_analysis": 4853,
+      "ma_refinement_fixed": 3939
+    },
+    "two_hop_calls": {
+      "sp": 5271,
+      "ma_analysis": 4853,
+      "ma_refinement_fixed": 3939
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "getBytes",
+        "arity": 1,
+        "arguments": [
+          "charset"
+        ],
+        "receiver": "name",
+        "after_line": 495,
+        "expression": "getBytes(charset)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+        "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [
+    {
+      "seed": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+      "edge": "ADDED_READ",
+      "after_line": 492,
+      "proposed_fqn": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.charset",
+      "file": "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveEntry.java"
+    }
+  ],
+  "indexed_targets": [
+    "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)",
+    "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)"
+  ],
+  "unindexed_targets": [],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 5,
+      "hits": [
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "fields": {
+      "candidate_count": 8,
+      "hits": [
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "multihop": {
+      "candidate_count": 16,
+      "hits": [
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 16,
+      "hits": [
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "diff_and_override": {
+      "candidate_count": 16,
+      "hits": [
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "mixed_field_paths": {
+      "candidate_count": 16,
+      "hits": [
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "seed_field_accesses": {
+      "candidate_count": 17,
+      "hits": [
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "combined_field_paths": {
+      "candidate_count": 17,
+      "hits": [
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    }
+  }
+}

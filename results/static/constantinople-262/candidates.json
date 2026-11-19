@@ -1,0 +1,56 @@
+{
+  "id": "constantinople-262",
+  "fingerprint": "0c86c585745e9824c02ea30240491f753ad3b7521ce24c125a4653527679146c",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "b9a2cd846922536904c71eed878deb327e318f21",
+  "candidates": [
+    "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+    "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.Throwable)",
+    "org.apache.commons.digester3.binder.AbstractRulesModule.configure(org.apache.commons.digester3.binder.RulesBinder)",
+    "org.apache.commons.digester3.binder.AbstractRulesModule.forPattern(java.lang.String)",
+    "org.apache.commons.digester3.binder.AbstractRulesModule.install(org.apache.commons.digester3.binder.RulesModule)",
+    "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+    "org.apache.commons.digester3.binder.BinderClassLoader.createBinderClassLoader(java.lang.ClassLoader)",
+    "org.apache.commons.digester3.binder.DigesterLoader.setUseContextClassLoader(boolean)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinders",
+      "type": "field",
+      "relations": {
+        "org.apache.commons.digester3.binder.AbstractRulesModule.install(org.apache.commons.digester3.binder.RulesModule)": [
+          "READ"
+        ],
+        "org.apache.commons.digester3.binder.AbstractRulesModule.forPattern(java.lang.String)": [
+          "READ"
+        ],
+        "org.apache.commons.digester3.binder.AbstractRulesModule.configure(org.apache.commons.digester3.binder.RulesBinder)": [
+          "READ"
+        ],
+        "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])": [
+          "READ"
+        ],
+        "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()": [
+          "READ"
+        ],
+        "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.Throwable)": [
+          "READ"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.digester3.binder.BinderClassLoader.createBinderClassLoader(java.lang.ClassLoader)": [
+          "CALLS"
+        ],
+        "org.apache.commons.digester3.binder.DigesterLoader.setUseContextClassLoader(boolean)": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

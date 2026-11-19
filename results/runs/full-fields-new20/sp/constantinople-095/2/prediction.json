@@ -1,0 +1,13 @@
+{
+  "id": "constantinople-095",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 2,
+  "predictions": [
+    "org.apache.giraph.comm.netty.NettyMasterClient.closeConnections()",
+    "org.apache.giraph.comm.netty.NettyWorkerClient.closeConnections()"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "5272c4489786d5ca1b139e9eafd2137b89092ac3d18c75cf0f99d1871a4ebcf1",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

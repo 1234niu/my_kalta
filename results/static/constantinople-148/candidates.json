@@ -1,0 +1,37 @@
+{
+  "id": "constantinople-148",
+  "fingerprint": "765c9a63a16f0fd1a7802ebca14a2ad0fbf13160a53a33dcdec52774c192b07f",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "5e4b91b1451aed5f1e78d1d8b93f814867071900",
+  "candidates": [
+    "org.apache.commons.digester3.Digester.getClassLoader()",
+    "org.apache.commons.digester3.Digester.getLogger()",
+    "org.apache.commons.digester3.Digester.getMatch()",
+    "org.apache.commons.digester3.Digester.push(java.lang.Object)",
+    "org.apache.commons.digester3.Rule.getDigester()"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.digester3.ObjectCreateRule.begin(java.lang.String,java.lang.String,org.xml.sax.Attributes)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.digester3.Digester.push(java.lang.Object)": [
+          "CALLS"
+        ],
+        "org.apache.commons.digester3.Digester.getClassLoader()": [
+          "CALLS"
+        ],
+        "org.apache.commons.digester3.Digester.getMatch()": [
+          "CALLS"
+        ],
+        "org.apache.commons.digester3.Rule.getDigester()": [
+          "CALLS"
+        ],
+        "org.apache.commons.digester3.Digester.getLogger()": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

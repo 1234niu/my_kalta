@@ -1,0 +1,48 @@
+{
+  "request_sha256": "65a49e14ad8ad634ac66276287a5bff38d41c2dc93202dff2ecef1a159bce6c6",
+  "request": {
+    "model": "deepseek-v4.1-flash-1017",
+    "temperature": 0,
+    "messages": [
+      {
+        "role": "user",
+        "content": "# System Information\nYou are an expert in Java and in analyzing the impact of source code changes on other code entities in a project's production code.\n\n# General Information\nYou receive information about a set of changes, called seed changes, that were made to fix a bug reported in Jira.\nYou also receive the Jira bug report title and description and an initial impact set consisting of the fully qualified names of code entities that are statically related to the seed changes.\n\n# Task\nYour task is to refine the initial impact set.\nA code entity is part of the impact set if it requires modification or, if it does not already exist, must be created as a consequence of the seed changes.\nFirst, remove code entities unless the provided information indicates that they must be modified.\nSecond, add code entities that must be modified or created according to the provided evidence.\n\nYour goal is to report a final impact set that consists of the fully qualified names of code entities that must be modified or created because of the seed changes.\n\n# Inputs\n- Jira bug report title: AccumuloStore.put deletes entire row when updating map/array field\n- Jira bug report description: In {{AccumuloStore.put(k, v)}} fields of type MAP or ARRAY are cleared first before they are set to the new value. This is done in the methods {{putMap}}/{{putArray}} using a call to {{deleteByQuery(q)}}. The name for fields to be deleted is taken from the current column. However, {{deleteByQuery}} tries to translate the field names of the query to column names again, which fails with a log message like\\n\\n{code}\\n2015-04-13 13:43:35.084 ERROR 16733 --- [ool-46-thread-1] o.a.gora.accumulo.store.AccumuloStore : Mapping not found for field: ol\\n2015-04-13 13:43:35.104 ERROR 16733 --- [ool-46-thread-1] o.a.gora.accumulo.store.AccumuloStore : Mapping not found for field: mk\\n2015-04-13 13:43:35.115 ERROR 16733 --- [ool-46-thread-1] o.a.gora.accumulo.store.AccumuloStore : Mapping not found for field: mtdt\\n{code}\\n\\nAs a result, the query is not restricted to any field and the *entire row is deleted*.\n- Seed changes and their Git diff hunks: [{\"fqn\": \"org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)\", \"git_diff_hunk\": \"@@ -676 +676 @@ public class AccumuloStore<K,T extends PersistentBase> extends DataStoreBase<K,T\\n- count = putMap(m, count, field.schema().getValueType(), o, col);\\n+ count = putMap(m, count, field.schema().getValueType(), o, col, field.name());\\n@@ -679 +679 @@ public class AccumuloStore<K,T extends PersistentBase> extends DataStoreBase<K,T\\n- count = putArray(m, count, o, col);\\n+ count = putArray(m, count, o, col, field.name());\\n@@ -686 +686 @@ public class AccumuloStore<K,T extends PersistentBase> extends DataStoreBase<K,T\\n- count = putArray(m, count, o, col);\\n+ count = putArray(m, count, o, col, field.name());\\n@@ -690 +690 @@ public class AccumuloStore<K,T extends PersistentBase> extends DataStoreBase<K,T\\n- count = putMap(m, count, effectiveSchema.getValueType(), o, col);\\n+ count = putMap(m, count, effectiveSchema.getValueType(), o, col, field.name());\"}]\n- Initial static code change impact set: [\"org.apache.gora.accumulo.store.AccumuloStore.count\"]\n\n# Output Format\nReturn exactly one valid single-line JSON array of strings.\nEach string must be the fully qualified name of an impacted code entity.\nDo not include any additional text, formatting, or meta-information.\nDo not include seed changes in the output.\n\nExample output (four impacted code entities):\n[\"com.example.Foo.someMethod(java.lang.String, int)\", \"com.example.bar.attribute1\", \"com.example.bar.Class.NestedClass\", \"com.example.bar.Class.Class()\"]\n\nExample output (two impacted code entities):\n[\"com.example.package.ParentClass.ChildClass.field\", \"com.example.package.ParentClass.apply(long, com.example.package.ParentClass)\"]\n\nExample output (zero impacted code entities):\n[]"
+      }
+    ],
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096
+  },
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "[\"org.apache.gora.accumulo.store.AccumuloStore.putMap(java.util.Map, int, org.apache.avro.Schema, org.apache.gora.persistency.impl.PersistentBase, org.apache.accumulo.core.data.Key, java.lang.String)\", \"org.apache.gora.accumulo.store.AccumuloStore.putArray(java.util.List, int, org.apache.gora.persistency.impl.PersistentBase, org.apache.accumulo.core.data.Key, java.lang.String)\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1794905825,
+    "id": "0217949058237759436a70d8fd44afb73ab39bbb6df35ba4741f2",
+    "model": "deepseek-v4.1-flash-1017",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 104,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 896,
+      "prompt_cache_miss_tokens": 113,
+      "prompt_tokens": 1009,
+      "prompt_tokens_details": {
+        "cached_tokens": 896
+      },
+      "total_tokens": 1113
+    }
+  },
+  "seconds": 1.5731624169999998,
+  "endpoint": "http://api.aicnic.cn/v1"
+}

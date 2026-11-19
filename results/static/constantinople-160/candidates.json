@@ -1,0 +1,21 @@
+{
+  "id": "constantinople-160",
+  "fingerprint": "eb3865d63754c9abac51aa8d57fc85d4d9e11168f624ac0f1a7a78a08ec02b69",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "c6598775e060bddfab7c8f314da504ecb2c90d57",
+  "candidates": [
+    "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

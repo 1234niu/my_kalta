@@ -1,0 +1,16 @@
+{
+  "id": "constantinople-090",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 0,
+  "predictions": [
+    "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream,int)",
+    "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean,int)",
+    "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)"
+  ],
+  "excluded_seeds": [
+    "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)"
+  ],
+  "static_fingerprint": "70d161e2a37fc0708c8af4b67bd5443ad1e8e2a8d795c6a9c18b7ed94faea0cf",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

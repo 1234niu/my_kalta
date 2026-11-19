@@ -1,0 +1,1 @@
+{"org.apache.gora.persistency.StatefulMap.clearStates()":["CALLS"],"org.apache.gora.avro.PersistentDatumReader.newMap(java.lang.Object,int)":["CALLS"],"org.apache.gora.persistency.State.values()":["CALLS"]}

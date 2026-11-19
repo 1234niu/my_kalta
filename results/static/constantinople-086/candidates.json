@@ -1,0 +1,15 @@
+{
+  "id": "constantinople-086",
+  "fingerprint": "84284852ea513ad10a7354b3cc477b0e6b279c2ec5fe75b4d8e9c258bf77665b",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "1f6ba329ecaa8d3c06c8b4bd159cca933e59c23a",
+  "candidates": [],
+  "seeds": [
+    {
+      "fqn": "org.apache.gora.accumulo.store.AccumuloStore.put(java.lang.Object,org.apache.gora.persistency.impl.PersistentBase)",
+      "type": "executable",
+      "relations": {},
+      "resolution": "empty_unresolved_or_no_relations"
+    }
+  ]
+}

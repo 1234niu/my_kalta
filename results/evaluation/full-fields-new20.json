@@ -1,0 +1,2354 @@
+{
+  "cases": 20,
+  "repetitions": 3,
+  "summary": {
+    "before": {
+      "metrics": {
+        "FQN": {
+          "precision": 0.10929978888106967,
+          "recall": 0.3013095238095238,
+          "f1": 0.14319144443967305
+        },
+        "CE": {
+          "precision": 0.11665584415584415,
+          "recall": 0.31547619047619047,
+          "f1": 0.15290176541026046
+        }
+      },
+      "fqn_hits": 34,
+      "candidates": 380,
+      "set_consistent": 20
+    },
+    "static": {
+      "metrics": {
+        "FQN": {
+          "precision": 0.09456339496134075,
+          "recall": 0.3508928571428571,
+          "f1": 0.1313817042433843
+        },
+        "CE": {
+          "precision": 0.10574304048441979,
+          "recall": 0.36714285714285716,
+          "f1": 0.1445550778170117
+        }
+      },
+      "fqn_hits": 39,
+      "candidates": 471,
+      "set_consistent": 20
+    },
+    "sp": {
+      "metrics": {
+        "FQN": {
+          "precision": 0.48857142857142855,
+          "recall": 0.2968650793650794,
+          "f1": 0.31956709956709956
+        },
+        "CE": {
+          "precision": 0.6394047619047619,
+          "recall": 0.4232936507936508,
+          "f1": 0.45888861138861137
+        }
+      },
+      "fqn_hits": 26,
+      "candidates": 55,
+      "set_consistent": 12
+    },
+    "ma": {
+      "metrics": {
+        "FQN": {
+          "precision": 0.13509458514553008,
+          "recall": 0.48311507936507936,
+          "f1": 0.18773471232011604
+        },
+        "CE": {
+          "precision": 0.14877088282662554,
+          "recall": 0.49936507936507935,
+          "f1": 0.20359273708503625
+        }
+      },
+      "fqn_hits": 45,
+      "candidates": 496,
+      "set_consistent": 3
+    },
+    "confirmed": {
+      "metrics": {
+        "FQN": {
+          "precision": 0.24166666666666667,
+          "recall": 0.18978174603174602,
+          "f1": 0.18024281274281273
+        },
+        "CE": {
+          "precision": 0.25416666666666665,
+          "recall": 0.20561507936507936,
+          "f1": 0.19856893106893106
+        }
+      },
+      "fqn_hits": 13,
+      "candidates": 40,
+      "set_consistent": 2
+    }
+  },
+  "per_case": [
+    {
+      "id": "constantinople-040",
+      "repo": "apache/commons-compress",
+      "gold": [
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.createHuffmanDecodingTables(int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.hbCreateDecodeTables(int[],int[],int[],char[],int,int,int)",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.recvDecodingTables()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupBlock()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartB()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartA()",
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupRandPartB()"
+      ],
+      "scores": {
+        "before": {
+          "FQN": {
+            "precision": 0.12244897959183673,
+            "recall": 0.6666666666666666,
+            "f1": 0.20689655172413793
+          },
+          "CE": {
+            "precision": 0.125,
+            "recall": 0.6666666666666666,
+            "f1": 0.21052631578947367
+          }
+        },
+        "static": {
+          "FQN": {
+            "precision": 0.12244897959183673,
+            "recall": 0.6666666666666666,
+            "f1": 0.20689655172413793
+          },
+          "CE": {
+            "precision": 0.125,
+            "recall": 0.6666666666666666,
+            "f1": 0.21052631578947367
+          }
+        },
+        "sp": {
+          "FQN": {
+            "precision": 1.0,
+            "recall": 0.1111111111111111,
+            "f1": 0.2
+          },
+          "CE": {
+            "precision": 1.0,
+            "recall": 0.1111111111111111,
+            "f1": 0.2
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.12962962962962962,
+            "recall": 0.7777777777777778,
+            "f1": 0.2222222222222222
+          },
+          "CE": {
+            "precision": 0.1320754716981132,
+            "recall": 0.7777777777777778,
+            "f1": 0.22580645161290322
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 0.1111111111111111,
+            "f1": 0.15384615384615385
+          },
+          "CE": {
+            "precision": 0.25,
+            "recall": 0.1111111111111111,
+            "f1": 0.15384615384615385
+          }
+        }
+      },
+      "model_turns": [
+        4,
+        4,
+        4
+      ],
+      "tool_counts": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "query_breakdown": [
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        }
+      ],
+      "exhausted": []
+    },
+    {
+      "id": "constantinople-064",
+      "repo": "apache/commons-lang",
+      "gold": [
+        "org.apache.commons.lang.IDKey",
+        "org.apache.commons.lang.IDKey.IDKey(java.lang.Object)",
+        "org.apache.commons.lang.IDKey.equals(java.lang.Object)",
+        "org.apache.commons.lang.IDKey.hashCode()",
+        "org.apache.commons.lang.IDKey.id",
+        "org.apache.commons.lang.IDKey.value",
+        "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)"
+      ],
+      "scores": {
+        "before": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 0.14285714285714285,
+            "f1": 0.18181818181818182
+          },
+          "CE": {
+            "precision": 0.25,
+            "recall": 0.14285714285714285,
+            "f1": 0.18181818181818182
+          }
+        },
+        "static": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 0.14285714285714285,
+            "f1": 0.18181818181818182
+          },
+          "CE": {
+            "precision": 0.25,
+            "recall": 0.14285714285714285,
+            "f1": 0.18181818181818182
+          }
+        },
+        "sp": {
+          "FQN": {
+            "precision": 0.14285714285714285,
+            "recall": 0.14285714285714285,
+            "f1": 0.14285714285714285
+          },
+          "CE": {
+            "precision": 0.5714285714285714,
+            "recall": 0.5714285714285714,
+            "f1": 0.5714285714285714
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 0.14285714285714285,
+            "f1": 0.18181818181818182
+          },
+          "CE": {
+            "precision": 0.25,
+            "recall": 0.14285714285714285,
+            "f1": 0.18181818181818182
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 0.14285714285714285,
+            "f1": 0.18181818181818182
+          },
+          "CE": {
+            "precision": 0.25,
+            "recall": 0.14285714285714285,
+            "f1": 0.18181818181818182
+          }
+        }
+      },
+      "model_turns": [
+        4,
+        4,
+        4
+      ],
+      "tool_counts": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "query_breakdown": [
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 4
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 4
+        }
+      ],
+      "exhausted": []
+    },
+    {
+      "id": "constantinople-068",
+      "repo": "apache/commons-scxml",
+      "gold": [
+        "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.filterTransitionsSet(org.apache.commons.scxml2.Step,org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance)"
+      ],
+      "scores": {
+        "before": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "static": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "sp": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 1.0,
+            "f1": 0.4
+          },
+          "CE": {
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "f1": 0.5
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          },
+          "CE": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          }
+        }
+      },
+      "model_turns": [
+        4,
+        4,
+        4
+      ],
+      "tool_counts": [
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "query_breakdown": [
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 3
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 4
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 4
+        }
+      ],
+      "exhausted": []
+    },
+    {
+      "id": "constantinople-086",
+      "repo": "apache/gora",
+      "gold": [
+        "org.apache.gora.accumulo.store.AccumuloStore.putArray(org.apache.accumulo.core.data.Mutation,int,java.lang.Object,org.apache.accumulo.core.util.Pair)",
+        "org.apache.gora.accumulo.store.AccumuloStore.putMap(org.apache.accumulo.core.data.Mutation,int,org.apache.avro.Schema,java.lang.Object,org.apache.accumulo.core.util.Pair)"
+      ],
+      "scores": {
+        "before": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "static": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "sp": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285714
+          },
+          "CE": {
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285714
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          },
+          "CE": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          }
+        }
+      },
+      "model_turns": [
+        4,
+        4,
+        4
+      ],
+      "tool_counts": [
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "query_breakdown": [
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 5
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 1
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 5
+        }
+      ],
+      "exhausted": []
+    },
+    {
+      "id": "constantinople-095",
+      "repo": "apache/giraph",
+      "gold": [
+        "org.apache.giraph.comm.netty.NettyClient.stop.<anonymous>@556.operationComplete(io.netty.channel.ChannelFuture)"
+      ],
+      "scores": {
+        "before": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "static": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "sp": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "model_turns": [
+        4,
+        4,
+        4
+      ],
+      "tool_counts": [
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "query_breakdown": [
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 3,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        }
+      ],
+      "exhausted": []
+    },
+    {
+      "id": "constantinople-128",
+      "repo": "apache/commons-validator",
+      "gold": [
+        "org.apache.commons.validator.routines.DomainValidator.DOMAIN_VALIDATOR",
+        "org.apache.commons.validator.routines.DomainValidator.DOMAIN_VALIDATOR_WITH_LOCAL",
+        "org.apache.commons.validator.routines.DomainValidator.DomainValidator()",
+        "org.apache.commons.validator.routines.DomainValidator.LOCAL_TLDS",
+        "org.apache.commons.validator.routines.DomainValidator.LOCAL_TLD_LIST",
+        "org.apache.commons.validator.routines.DomainValidator.allowLocal",
+        "org.apache.commons.validator.routines.EmailValidator.EMAIL_VALIDATOR",
+        "org.apache.commons.validator.routines.EmailValidator.EMAIL_VALIDATOR_WITH_LOCAL",
+        "org.apache.commons.validator.routines.EmailValidator.EmailValidator()",
+        "org.apache.commons.validator.routines.EmailValidator.allowLocal"
+      ],
+      "scores": {
+        "before": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "static": {
+          "FQN": {
+            "precision": 0.1,
+            "recall": 0.2,
+            "f1": 0.13333333333333333
+          },
+          "CE": {
+            "precision": 0.1,
+            "recall": 0.2,
+            "f1": 0.13333333333333333
+          }
+        },
+        "sp": {
+          "FQN": {
+            "precision": 0.8,
+            "recall": 0.4,
+            "f1": 0.5333333333333333
+          },
+          "CE": {
+            "precision": 0.8,
+            "recall": 0.4,
+            "f1": 0.5333333333333333
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.09090909090909091,
+            "recall": 0.2,
+            "f1": 0.125
+          },
+          "CE": {
+            "precision": 0.09523809523809523,
+            "recall": 0.2,
+            "f1": 0.12903225806451613
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "model_turns": [
+        4,
+        4,
+        4
+      ],
+      "tool_counts": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "query_breakdown": [
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        }
+      ],
+      "exhausted": []
+    },
+    {
+      "id": "constantinople-142",
+      "repo": "apache/commons-vfs",
+      "gold": [
+        "org.apache.commons.vfs2.provider.http.HttpFileContentInfoFactory.create(org.apache.commons.vfs2.FileContent)",
+        "org.apache.commons.vfs2.provider.http.HttpFileObject.doGetType()"
+      ],
+      "scores": {
+        "before": {
+          "FQN": {
+            "precision": 0.2857142857142857,
+            "recall": 1.0,
+            "f1": 0.4444444444444444
+          },
+          "CE": {
+            "precision": 0.2857142857142857,
+            "recall": 1.0,
+            "f1": 0.4444444444444444
+          }
+        },
+        "static": {
+          "FQN": {
+            "precision": 0.2222222222222222,
+            "recall": 1.0,
+            "f1": 0.36363636363636365
+          },
+          "CE": {
+            "precision": 0.2222222222222222,
+            "recall": 1.0,
+            "f1": 0.36363636363636365
+          }
+        },
+        "sp": {
+          "FQN": {
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285714
+          },
+          "CE": {
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285714
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "f1": 0.3333333333333333
+          },
+          "CE": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "f1": 0.3333333333333333
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.3333333333333333,
+            "recall": 0.5,
+            "f1": 0.5
+          },
+          "CE": {
+            "precision": 0.3333333333333333,
+            "recall": 0.5,
+            "f1": 0.5
+          }
+        }
+      },
+      "model_turns": [
+        4,
+        4,
+        4
+      ],
+      "tool_counts": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "query_breakdown": [
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        }
+      ],
+      "exhausted": []
+    },
+    {
+      "id": "constantinople-148",
+      "repo": "apache/commons-digester",
+      "gold": [
+        "org.apache.commons.digester3.ObjectCreateRule.ObjectCreateRule(java.lang.Class)",
+        "org.apache.commons.digester3.ObjectCreateRule.ObjectCreateRule(java.lang.String,java.lang.Class)",
+        "org.apache.commons.digester3.ObjectCreateRule.clazz"
+      ],
+      "scores": {
+        "before": {
+          "FQN": {
+            "precision": 0.13333333333333333,
+            "recall": 0.6666666666666666,
+            "f1": 0.2222222222222222
+          },
+          "CE": {
+            "precision": 0.08333333333333333,
+            "recall": 0.5,
+            "f1": 0.14285714285714285
+          }
+        },
+        "static": {
+          "FQN": {
+            "precision": 0.09523809523809523,
+            "recall": 0.6666666666666666,
+            "f1": 0.16666666666666666
+          },
+          "CE": {
+            "precision": 0.05555555555555555,
+            "recall": 0.5,
+            "f1": 0.1
+          }
+        },
+        "sp": {
+          "FQN": {
+            "precision": 1.0,
+            "recall": 0.3333333333333333,
+            "f1": 0.5
+          },
+          "CE": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.09090909090909091,
+            "recall": 0.6666666666666666,
+            "f1": 0.16
+          },
+          "CE": {
+            "precision": 0.05263157894736842,
+            "recall": 0.5,
+            "f1": 0.09523809523809523
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "model_turns": [
+        4,
+        4,
+        4
+      ],
+      "tool_counts": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "query_breakdown": [
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        }
+      ],
+      "exhausted": []
+    },
+    {
+      "id": "constantinople-160",
+      "repo": "apache/commons-beanutils",
+      "gold": [
+        "org.apache.commons.beanutils.MethodUtils.invokeExactMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeExactStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.toArray(java.lang.Object)"
+      ],
+      "scores": {
+        "before": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 0.25,
+            "f1": 0.25
+          },
+          "CE": {
+            "precision": 0.3333333333333333,
+            "recall": 0.25,
+            "f1": 0.2857142857142857
+          }
+        },
+        "static": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 0.25,
+            "f1": 0.25
+          },
+          "CE": {
+            "precision": 0.3333333333333333,
+            "recall": 0.25,
+            "f1": 0.2857142857142857
+          }
+        },
+        "sp": {
+          "FQN": {
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4
+          },
+          "CE": {
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 0.25,
+            "f1": 0.25
+          },
+          "CE": {
+            "precision": 0.3333333333333333,
+            "recall": 0.25,
+            "f1": 0.2857142857142857
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "model_turns": [
+        4,
+        4,
+        4
+      ],
+      "tool_counts": [
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "query_breakdown": [
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 4
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 4
+        }
+      ],
+      "exhausted": []
+    },
+    {
+      "id": "constantinople-218",
+      "repo": "apache/commons-bcel",
+      "gold": [
+        "org.apache.bcel.generic.ReferenceType.isCastableTo(org.apache.bcel.generic.Type)",
+        "org.apache.bcel.generic.Type.normalizeForStackOrLocal()",
+        "org.apache.bcel.verifier.structurals.Pass3bVerifier.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)"
+      ],
+      "scores": {
+        "before": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "static": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "sp": {
+          "FQN": {
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1": 0.8571428571428571
+          },
+          "CE": {
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1": 0.8571428571428571
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.011494252873563218,
+            "recall": 0.3333333333333333,
+            "f1": 0.022222222222222223
+          },
+          "CE": {
+            "precision": 0.011627906976744186,
+            "recall": 0.3333333333333333,
+            "f1": 0.02247191011235955
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "model_turns": [
+        4,
+        4,
+        4
+      ],
+      "tool_counts": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "query_breakdown": [
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        }
+      ],
+      "exhausted": []
+    },
+    {
+      "id": "constantinople-058",
+      "repo": "apache/commons-compress",
+      "gold": [
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)",
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)"
+      ],
+      "scores": {
+        "before": {
+          "FQN": {
+            "precision": 0.125,
+            "recall": 1.0,
+            "f1": 0.2222222222222222
+          },
+          "CE": {
+            "precision": 0.2222222222222222,
+            "recall": 1.0,
+            "f1": 0.36363636363636365
+          }
+        },
+        "static": {
+          "FQN": {
+            "precision": 0.11764705882352941,
+            "recall": 1.0,
+            "f1": 0.21052631578947367
+          },
+          "CE": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "f1": 0.3333333333333333
+          }
+        },
+        "sp": {
+          "FQN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "CE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.09523809523809523,
+            "recall": 1.0,
+            "f1": 0.17391304347826086
+          },
+          "CE": {
+            "precision": 0.14285714285714285,
+            "recall": 1.0,
+            "f1": 0.25
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "model_turns": [
+        4,
+        4,
+        4
+      ],
+      "tool_counts": [
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "query_breakdown": [
+        {
+          "initial": 3,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 3,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        }
+      ],
+      "exhausted": []
+    },
+    {
+      "id": "constantinople-065",
+      "repo": "apache/commons-lang",
+      "gold": [
+        "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)",
+        "org.apache.commons.lang3.time.FastDateParser.century",
+        "org.apache.commons.lang3.time.FastDateParser.escapeRegex(java.lang.StringBuilder,java.lang.String,boolean)",
+        "org.apache.commons.lang3.time.FastDateParser.init()",
+        "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+        "org.apache.commons.lang3.time.FastDateParser.serialVersionUID",
+        "org.apache.commons.lang3.time.FastDateParser.startYear",
+        "org.apache.commons.lang3.time.FastDateParser.thisYear"
+      ],
+      "scores": {
+        "before": {
+          "FQN": {
+            "precision": 0.375,
+            "recall": 0.75,
+            "f1": 0.5
+          },
+          "CE": {
+            "precision": 0.375,
+            "recall": 0.75,
+            "f1": 0.5
+          }
+        },
+        "static": {
+          "FQN": {
+            "precision": 0.1875,
+            "recall": 0.75,
+            "f1": 0.3
+          },
+          "CE": {
+            "precision": 0.20689655172413793,
+            "recall": 0.75,
+            "f1": 0.32432432432432434
+          }
+        },
+        "sp": {
+          "FQN": {
+            "precision": 0.3333333333333333,
+            "recall": 0.125,
+            "f1": 0.18181818181818182
+          },
+          "CE": {
+            "precision": 0.6666666666666666,
+            "recall": 0.25,
+            "f1": 0.36363636363636365
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.1875,
+            "recall": 0.75,
+            "f1": 0.3
+          },
+          "CE": {
+            "precision": 0.20689655172413793,
+            "recall": 0.75,
+            "f1": 0.32432432432432434
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 1.0,
+            "recall": 0.125,
+            "f1": 0.2222222222222222
+          },
+          "CE": {
+            "precision": 1.0,
+            "recall": 0.125,
+            "f1": 0.2222222222222222
+          }
+        }
+      },
+      "model_turns": [
+        4,
+        4,
+        4
+      ],
+      "tool_counts": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "query_breakdown": [
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        }
+      ],
+      "exhausted": []
+    },
+    {
+      "id": "constantinople-079",
+      "repo": "apache/commons-scxml",
+      "gold": [
+        "org.apache.commons.scxml.io.SCXMLParser.initRules(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.PathResolver,java.util.List)",
+        "org.apache.commons.scxml.io.SCXMLSerializer.serializeNamespaceDeclarations(org.apache.commons.scxml.model.NamespacePrefixesHolder)",
+        "org.apache.commons.scxml.model.SCXML",
+        "org.apache.commons.scxml.model.SCXML.getNamespaces()",
+        "org.apache.commons.scxml.model.SCXML.namespaces",
+        "org.apache.commons.scxml.model.SCXML.setNamespaces(java.util.Map)"
+      ],
+      "scores": {
+        "before": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.02857142857142857,
+            "recall": 0.16666666666666666,
+            "f1": 0.04878048780487805
+          }
+        },
+        "static": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.02564102564102564,
+            "recall": 0.16666666666666666,
+            "f1": 0.044444444444444446
+          }
+        },
+        "sp": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.5,
+            "recall": 0.16666666666666666,
+            "f1": 0.25
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.025,
+            "recall": 0.16666666666666666,
+            "f1": 0.043478260869565216
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "model_turns": [
+        4,
+        4,
+        4
+      ],
+      "tool_counts": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "query_breakdown": [
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 3,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        }
+      ],
+      "exhausted": []
+    },
+    {
+      "id": "constantinople-112",
+      "repo": "apache/gora",
+      "gold": [
+        "org.apache.gora.persistency.StatefulHashMap.clear()",
+        "org.apache.gora.persistency.StatefulHashMap.put(java.lang.Object,java.lang.Object)",
+        "org.apache.gora.persistency.StatefulHashMap.remove(java.lang.Object)",
+        "org.apache.gora.persistency.StatefulHashMap.reuse()",
+        "org.apache.gora.persistency.StatefulMap.reuse()",
+        "org.apache.gora.persistency.impl.PersistentBase.clear()"
+      ],
+      "scores": {
+        "before": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.047619047619047616,
+            "recall": 0.16666666666666666,
+            "f1": 0.07407407407407407
+          }
+        },
+        "static": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.045454545454545456,
+            "recall": 0.16666666666666666,
+            "f1": 0.07142857142857142
+          }
+        },
+        "sp": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 0.16666666666666666,
+            "f1": 0.2
+          },
+          "CE": {
+            "precision": 0.5,
+            "recall": 0.3333333333333333,
+            "f1": 0.4
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.041666666666666664,
+            "recall": 0.16666666666666666,
+            "f1": 0.06666666666666667
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.25,
+            "recall": 0.16666666666666666,
+            "f1": 0.2
+          }
+        }
+      },
+      "model_turns": [
+        4,
+        4,
+        4
+      ],
+      "tool_counts": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "query_breakdown": [
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        }
+      ],
+      "exhausted": []
+    },
+    {
+      "id": "constantinople-101",
+      "repo": "apache/giraph",
+      "gold": [
+        "org.apache.giraph.edge.MutableEdgesWrapper.MutableEdgesWrapper(org.apache.giraph.edge.OutEdges,org.apache.giraph.edge.OutEdges)",
+        "org.apache.giraph.edge.MutableEdgesWrapper.decrementEdges()",
+        "org.apache.giraph.edge.MutableEdgesWrapper.numEdges",
+        "org.apache.giraph.edge.MutableEdgesWrapper.size()"
+      ],
+      "scores": {
+        "before": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "static": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "sp": {
+          "FQN": {
+            "precision": 0.6666666666666666,
+            "recall": 0.5,
+            "f1": 0.5714285714285714
+          },
+          "CE": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571428571428571
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "model_turns": [
+        4,
+        4,
+        4
+      ],
+      "tool_counts": [
+        [
+          6,
+          5
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "query_breakdown": [
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 5
+        },
+        {
+          "initial": 3,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 2
+        },
+        {
+          "initial": 3,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 1
+        }
+      ],
+      "exhausted": []
+    },
+    {
+      "id": "constantinople-132",
+      "repo": "apache/commons-validator",
+      "gold": [
+        "org.apache.commons.validator.routines.DomainValidator.DOMAIN_LABEL_REGEX",
+        "org.apache.commons.validator.routines.DomainValidator.TOP_LABEL_REGEX"
+      ],
+      "scores": {
+        "before": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "static": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "sp": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "model_turns": [
+        4,
+        4,
+        4
+      ],
+      "tool_counts": [
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "query_breakdown": [
+        {
+          "initial": 3,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 3,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        }
+      ],
+      "exhausted": []
+    },
+    {
+      "id": "constantinople-156",
+      "repo": "apache/commons-vfs",
+      "gold": [
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.createInstance(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClass(java.lang.String)",
+        "org.apache.commons.vfs.impl.StandardFileSystemManager.findClassLoader()"
+      ],
+      "scores": {
+        "before": {
+          "FQN": {
+            "precision": 0.023809523809523808,
+            "recall": 0.3333333333333333,
+            "f1": 0.044444444444444446
+          },
+          "CE": {
+            "precision": 0.027777777777777776,
+            "recall": 0.3333333333333333,
+            "f1": 0.05128205128205128
+          }
+        },
+        "static": {
+          "FQN": {
+            "precision": 0.06521739130434782,
+            "recall": 1.0,
+            "f1": 0.12244897959183673
+          },
+          "CE": {
+            "precision": 0.075,
+            "recall": 1.0,
+            "f1": 0.13953488372093023
+          }
+        },
+        "sp": {
+          "FQN": {
+            "precision": 1.0,
+            "recall": 0.3333333333333333,
+            "f1": 0.5
+          },
+          "CE": {
+            "precision": 1.0,
+            "recall": 0.3333333333333333,
+            "f1": 0.5
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.06521739130434782,
+            "recall": 1.0,
+            "f1": 0.12244897959183673
+          },
+          "CE": {
+            "precision": 0.075,
+            "recall": 1.0,
+            "f1": 0.13953488372093023
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.5,
+            "recall": 0.3333333333333333,
+            "f1": 0.4
+          },
+          "CE": {
+            "precision": 0.5,
+            "recall": 0.3333333333333333,
+            "f1": 0.4
+          }
+        }
+      },
+      "model_turns": [
+        4,
+        4,
+        4
+      ],
+      "tool_counts": [
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "query_breakdown": [
+        {
+          "initial": 3,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 3,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        }
+      ],
+      "exhausted": []
+    },
+    {
+      "id": "constantinople-262",
+      "repo": "apache/commons-digester",
+      "gold": [
+        "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.Throwable)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.configure(org.apache.commons.digester3.binder.RulesBinder)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.forPattern(java.lang.String)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.install(org.apache.commons.digester3.binder.RulesModule)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+        "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()"
+      ],
+      "scores": {
+        "before": {
+          "FQN": {
+            "precision": 0.5,
+            "recall": 0.75,
+            "f1": 0.6
+          },
+          "CE": {
+            "precision": 0.45454545454545453,
+            "recall": 0.8333333333333334,
+            "f1": 0.5882352941176471
+          }
+        },
+        "static": {
+          "FQN": {
+            "precision": 0.3888888888888889,
+            "recall": 0.875,
+            "f1": 0.5384615384615384
+          },
+          "CE": {
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285714
+          }
+        },
+        "sp": {
+          "FQN": {
+            "precision": 0.42857142857142855,
+            "recall": 0.375,
+            "f1": 0.4
+          },
+          "CE": {
+            "precision": 0.6,
+            "recall": 0.5,
+            "f1": 0.5454545454545454
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.3888888888888889,
+            "recall": 0.875,
+            "f1": 0.5384615384615384
+          },
+          "CE": {
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285714
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.6666666666666666,
+            "recall": 0.25,
+            "f1": 0.36363636363636365
+          },
+          "CE": {
+            "precision": 0.6666666666666666,
+            "recall": 0.3333333333333333,
+            "f1": 0.4444444444444444
+          }
+        }
+      },
+      "model_turns": [
+        4,
+        4,
+        4
+      ],
+      "tool_counts": [
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "query_breakdown": [
+        {
+          "initial": 3,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 3,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        }
+      ],
+      "exhausted": []
+    },
+    {
+      "id": "constantinople-206",
+      "repo": "apache/commons-beanutils",
+      "gold": [
+        "org.apache.commons.beanutils.JDBCDynaClass.getColumnName(java.lang.String)",
+        "org.apache.commons.beanutils.JDBCDynaClass.getObject(java.sql.ResultSet,java.lang.String)",
+        "org.apache.commons.beanutils.ResultSetDynaClass.getObjectFromResultSet(java.lang.String)",
+        "org.apache.commons.beanutils.ResultSetIterator.get(java.lang.String)",
+        "org.apache.commons.beanutils.RowSetDynaClass.copy(java.sql.ResultSet)"
+      ],
+      "scores": {
+        "before": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "static": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "sp": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.2,
+            "recall": 0.2,
+            "f1": 0.2
+          },
+          "CE": {
+            "precision": 0.2,
+            "recall": 0.2,
+            "f1": 0.2
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.3333333333333333,
+            "recall": 0.2,
+            "f1": 0.25
+          },
+          "CE": {
+            "precision": 0.3333333333333333,
+            "recall": 0.2,
+            "f1": 0.25
+          }
+        }
+      },
+      "model_turns": [
+        4,
+        4,
+        4
+      ],
+      "tool_counts": [
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "query_breakdown": [
+        {
+          "initial": 3,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 4
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 5
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 5
+        }
+      ],
+      "exhausted": []
+    },
+    {
+      "id": "constantinople-090",
+      "repo": "apache/commons-compress",
+      "gold": [
+        "org.apache.commons.compress.MemoryLimit",
+        "org.apache.commons.compress.MemoryLimit.MEMORY_LIMIT_IN_KB",
+        "org.apache.commons.compress.MemoryLimit.NO_LIMIT",
+        "org.apache.commons.compress.MemoryLimit.getMemoryLimitInKb()",
+        "org.apache.commons.compress.MemoryLimit.setMemoryLimitInKb(int)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream)",
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream,int)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean,int)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)"
+      ],
+      "scores": {
+        "before": {
+          "FQN": {
+            "precision": 0.1206896551724138,
+            "recall": 0.4666666666666667,
+            "f1": 0.1917808219178082
+          },
+          "CE": {
+            "precision": 0.1,
+            "recall": 0.5,
+            "f1": 0.16666666666666666
+          }
+        },
+        "static": {
+          "FQN": {
+            "precision": 0.09210526315789473,
+            "recall": 0.4666666666666667,
+            "f1": 0.15384615384615385
+          },
+          "CE": {
+            "precision": 0.07575757575757576,
+            "recall": 0.5,
+            "f1": 0.13157894736842105
+          }
+        },
+        "sp": {
+          "FQN": {
+            "precision": 1.0,
+            "recall": 0.2,
+            "f1": 0.3333333333333333
+          },
+          "CE": {
+            "precision": 1.0,
+            "recall": 0.3,
+            "f1": 0.46153846153846156
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.09210526315789473,
+            "recall": 0.4666666666666667,
+            "f1": 0.15384615384615385
+          },
+          "CE": {
+            "precision": 0.07575757575757576,
+            "recall": 0.5,
+            "f1": 0.13157894736842105
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.5,
+            "recall": 0.13333333333333333,
+            "f1": 0.2
+          },
+          "CE": {
+            "precision": 0.5,
+            "recall": 0.2,
+            "f1": 0.2857142857142857
+          }
+        }
+      },
+      "model_turns": [
+        4,
+        4,
+        4
+      ],
+      "tool_counts": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "query_breakdown": [
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        },
+        {
+          "initial": 4,
+          "ranked": 2,
+          "analyze": 0,
+          "review": 6
+        }
+      ],
+      "exhausted": []
+    }
+  ]
+}

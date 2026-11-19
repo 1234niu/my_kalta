@@ -1,0 +1,204 @@
+{
+  "id": "constantinople-101",
+  "graph_edges": 11953,
+  "seeds": {
+    "org.apache.giraph.edge.MutableEdgesIterable.iterator.<anonymous>@55.remove()": false
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.giraph.edge.MutableEdgesWrapper.setCurrentEdge(org.apache.giraph.edge.MutableEdge)"
+    ],
+    "fields": [
+      "org.apache.giraph.edge.MutableEdgesWrapper.setCurrentEdge(org.apache.giraph.edge.MutableEdge)"
+    ],
+    "multihop": [
+      "org.apache.giraph.edge.MutableEdgesWrapper.setCurrentEdge(org.apache.giraph.edge.MutableEdge)"
+    ],
+    "two_hop_calls": [
+      "org.apache.giraph.edge.MutableEdgesWrapper.setCurrentEdge(org.apache.giraph.edge.MutableEdge)"
+    ],
+    "diff_and_override": [
+      "org.apache.giraph.edge.MutableEdgesWrapper.setCurrentEdge(org.apache.giraph.edge.MutableEdge)"
+    ],
+    "mixed_field_paths": [
+      "org.apache.giraph.edge.MutableEdgesWrapper.setCurrentEdge(org.apache.giraph.edge.MutableEdge)"
+    ],
+    "seed_field_accesses": [
+      "org.apache.giraph.edge.MutableEdgesWrapper.setCurrentEdge(org.apache.giraph.edge.MutableEdge)"
+    ],
+    "combined_field_paths": [
+      "org.apache.giraph.edge.MutableEdgesWrapper.setCurrentEdge(org.apache.giraph.edge.MutableEdge)"
+    ]
+  },
+  "evidence": {
+    "fields": {},
+    "multihop": {},
+    "two_hop_calls": {},
+    "mixed_field_paths": {},
+    "seed_field_accesses": {},
+    "combined_field_paths": {}
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 2750,
+      "ma_analysis": 2332,
+      "ma_refinement_fixed": 1797
+    },
+    "two_hop_calls": {
+      "sp": 2750,
+      "ma_analysis": 2332,
+      "ma_refinement_fixed": 1797
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "decrementEdges",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "mutableEdgesWrapper",
+        "after_line": 99,
+        "expression": "decrementEdges()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.giraph.edge.MutableEdgesIterable.iterator.<anonymous>@55.remove()",
+        "file": "giraph-core/src/main/java/org/apache/giraph/edge/MutableEdgesIterable.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [],
+  "indexed_targets": [
+    "org.apache.giraph.edge.MutableEdgesWrapper.MutableEdgesWrapper(org.apache.giraph.edge.OutEdges,org.apache.giraph.edge.OutEdges)",
+    "org.apache.giraph.edge.MutableEdgesWrapper.size()"
+  ],
+  "unindexed_targets": [
+    "org.apache.giraph.edge.MutableEdgesWrapper.decrementEdges()",
+    "org.apache.giraph.edge.MutableEdgesWrapper.numEdges"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 1,
+      "hits": [],
+      "misses": [
+        "org.apache.giraph.edge.MutableEdgesWrapper.MutableEdgesWrapper(org.apache.giraph.edge.OutEdges,org.apache.giraph.edge.OutEdges)",
+        "org.apache.giraph.edge.MutableEdgesWrapper.decrementEdges()",
+        "org.apache.giraph.edge.MutableEdgesWrapper.numEdges",
+        "org.apache.giraph.edge.MutableEdgesWrapper.size()"
+      ],
+      "indexed_misses": [
+        "org.apache.giraph.edge.MutableEdgesWrapper.MutableEdgesWrapper(org.apache.giraph.edge.OutEdges,org.apache.giraph.edge.OutEdges)",
+        "org.apache.giraph.edge.MutableEdgesWrapper.size()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 1,
+      "hits": [],
+      "misses": [
+        "org.apache.giraph.edge.MutableEdgesWrapper.MutableEdgesWrapper(org.apache.giraph.edge.OutEdges,org.apache.giraph.edge.OutEdges)",
+        "org.apache.giraph.edge.MutableEdgesWrapper.decrementEdges()",
+        "org.apache.giraph.edge.MutableEdgesWrapper.numEdges",
+        "org.apache.giraph.edge.MutableEdgesWrapper.size()"
+      ],
+      "indexed_misses": [
+        "org.apache.giraph.edge.MutableEdgesWrapper.MutableEdgesWrapper(org.apache.giraph.edge.OutEdges,org.apache.giraph.edge.OutEdges)",
+        "org.apache.giraph.edge.MutableEdgesWrapper.size()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "multihop": {
+      "candidate_count": 1,
+      "hits": [],
+      "misses": [
+        "org.apache.giraph.edge.MutableEdgesWrapper.MutableEdgesWrapper(org.apache.giraph.edge.OutEdges,org.apache.giraph.edge.OutEdges)",
+        "org.apache.giraph.edge.MutableEdgesWrapper.decrementEdges()",
+        "org.apache.giraph.edge.MutableEdgesWrapper.numEdges",
+        "org.apache.giraph.edge.MutableEdgesWrapper.size()"
+      ],
+      "indexed_misses": [
+        "org.apache.giraph.edge.MutableEdgesWrapper.MutableEdgesWrapper(org.apache.giraph.edge.OutEdges,org.apache.giraph.edge.OutEdges)",
+        "org.apache.giraph.edge.MutableEdgesWrapper.size()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 1,
+      "hits": [],
+      "misses": [
+        "org.apache.giraph.edge.MutableEdgesWrapper.MutableEdgesWrapper(org.apache.giraph.edge.OutEdges,org.apache.giraph.edge.OutEdges)",
+        "org.apache.giraph.edge.MutableEdgesWrapper.decrementEdges()",
+        "org.apache.giraph.edge.MutableEdgesWrapper.numEdges",
+        "org.apache.giraph.edge.MutableEdgesWrapper.size()"
+      ],
+      "indexed_misses": [
+        "org.apache.giraph.edge.MutableEdgesWrapper.MutableEdgesWrapper(org.apache.giraph.edge.OutEdges,org.apache.giraph.edge.OutEdges)",
+        "org.apache.giraph.edge.MutableEdgesWrapper.size()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "diff_and_override": {
+      "candidate_count": 1,
+      "hits": [],
+      "misses": [
+        "org.apache.giraph.edge.MutableEdgesWrapper.MutableEdgesWrapper(org.apache.giraph.edge.OutEdges,org.apache.giraph.edge.OutEdges)",
+        "org.apache.giraph.edge.MutableEdgesWrapper.decrementEdges()",
+        "org.apache.giraph.edge.MutableEdgesWrapper.numEdges",
+        "org.apache.giraph.edge.MutableEdgesWrapper.size()"
+      ],
+      "indexed_misses": [
+        "org.apache.giraph.edge.MutableEdgesWrapper.MutableEdgesWrapper(org.apache.giraph.edge.OutEdges,org.apache.giraph.edge.OutEdges)",
+        "org.apache.giraph.edge.MutableEdgesWrapper.size()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "mixed_field_paths": {
+      "candidate_count": 1,
+      "hits": [],
+      "misses": [
+        "org.apache.giraph.edge.MutableEdgesWrapper.MutableEdgesWrapper(org.apache.giraph.edge.OutEdges,org.apache.giraph.edge.OutEdges)",
+        "org.apache.giraph.edge.MutableEdgesWrapper.decrementEdges()",
+        "org.apache.giraph.edge.MutableEdgesWrapper.numEdges",
+        "org.apache.giraph.edge.MutableEdgesWrapper.size()"
+      ],
+      "indexed_misses": [
+        "org.apache.giraph.edge.MutableEdgesWrapper.MutableEdgesWrapper(org.apache.giraph.edge.OutEdges,org.apache.giraph.edge.OutEdges)",
+        "org.apache.giraph.edge.MutableEdgesWrapper.size()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "seed_field_accesses": {
+      "candidate_count": 1,
+      "hits": [],
+      "misses": [
+        "org.apache.giraph.edge.MutableEdgesWrapper.MutableEdgesWrapper(org.apache.giraph.edge.OutEdges,org.apache.giraph.edge.OutEdges)",
+        "org.apache.giraph.edge.MutableEdgesWrapper.decrementEdges()",
+        "org.apache.giraph.edge.MutableEdgesWrapper.numEdges",
+        "org.apache.giraph.edge.MutableEdgesWrapper.size()"
+      ],
+      "indexed_misses": [
+        "org.apache.giraph.edge.MutableEdgesWrapper.MutableEdgesWrapper(org.apache.giraph.edge.OutEdges,org.apache.giraph.edge.OutEdges)",
+        "org.apache.giraph.edge.MutableEdgesWrapper.size()"
+      ],
+      "indexed_recall": 0.0
+    },
+    "combined_field_paths": {
+      "candidate_count": 1,
+      "hits": [],
+      "misses": [
+        "org.apache.giraph.edge.MutableEdgesWrapper.MutableEdgesWrapper(org.apache.giraph.edge.OutEdges,org.apache.giraph.edge.OutEdges)",
+        "org.apache.giraph.edge.MutableEdgesWrapper.decrementEdges()",
+        "org.apache.giraph.edge.MutableEdgesWrapper.numEdges",
+        "org.apache.giraph.edge.MutableEdgesWrapper.size()"
+      ],
+      "indexed_misses": [
+        "org.apache.giraph.edge.MutableEdgesWrapper.MutableEdgesWrapper(org.apache.giraph.edge.OutEdges,org.apache.giraph.edge.OutEdges)",
+        "org.apache.giraph.edge.MutableEdgesWrapper.size()"
+      ],
+      "indexed_recall": 0.0
+    }
+  }
+}

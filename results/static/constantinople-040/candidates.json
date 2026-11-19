@@ -1,0 +1,31 @@
+{
+  "id": "constantinople-040",
+  "fingerprint": "55ca4425b12a2313d2533c9c313bc27a0d08ea2e10c3baac08de29aed901bf45",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "abd47125414b2bc66830bb511b213594ebf43437",
+  "candidates": [
+    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bsR(org.apache.commons.compress.utils.BitInputStream,int)",
+    "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode()"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.checkBounds(int,int,java.lang.String)",
+      "type": "executable",
+      "relations": {},
+      "resolution": "empty_unresolved_or_no_relations"
+    },
+    {
+      "fqn": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode0(int)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.bsR(org.apache.commons.compress.utils.BitInputStream,int)": [
+          "CALLS"
+        ],
+        "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.getAndMoveToFrontDecode()": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

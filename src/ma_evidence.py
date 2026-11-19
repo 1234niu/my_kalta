@@ -189,6 +189,51 @@ class Run:
         return decisions
 
 
+def run_case(task, model, base, key, experiment, candidates, candidate_arm, *,
+             repo=None, analyze_review_only=False):
+    if repo is None:
+        repo = Repository(task)
+    output = katia.ROOT / 'results/ma-evidence' / experiment / task['id']
+    runner = Run(repo, model, base, key, output)
+    context = dict(issue=task['jira_title'], description=task['jira_description'],
+                   seeds=task['seed_changes'], static_candidates=candidates)
+    plan = {}
+    if not analyze_review_only:
+        plan = runner.phase('planner', 'Plan evidence checks for change impact. '
+                            'Return {"checks":["specific question or retrieval target"]}.',
+                            context, 'checks')
+    analysis = runner.phase('analyze', 'Find impacted Java entities using parent graph and source. '
+                            'Use concrete evidence and preserve uncertain candidates. ' + CANDIDATES,
+                            dict(context, plan=plan), 'candidates')
+    review = runner.phase('review', 'Independently verify signatures and impact with source. ' + DECISIONS,
+                           dict(context, analysis=analysis, evidence=list(runner.evidence.values())),
+                           'decisions')
+    analyses = [analysis]
+    followup = review.get('followup')
+    if isinstance(followup, list) and followup:
+        extra = runner.phase('analyze-followup', 'Address the targeted review questions. ' + CANDIDATES,
+                             dict(context, questions=followup[:3], analysis=analysis),
+                             'candidates')
+        analyses.append(extra)
+        final_review = runner.phase('review-final', 'Resolve the prior review after supplementary evidence. '
+                              'Return all decisions again and leave followup empty. ' + DECISIONS,
+                              dict(context, analyses=analyses, prior_review=review,
+                                   evidence=list(runner.evidence.values())), 'decisions')
+        if not runner.usage['review-final'].get('exhausted'):
+            review = final_review
+    seed_names = {seed['fqn'] for seed in task['seed_changes']}
+    decisions = runner.decide(candidates, seed_names, analyses, review)
+    confirmed = sorted(fqn for fqn, d in decisions.items() if d['status'] == 'confirmed')
+    pending = sorted(fqn for fqn, d in decisions.items() if d['status'] == 'pending')
+    katia.dump(output/'result.json', dict(id=task['id'], parent_commit=task['parent_commit'],
+                graph_fingerprint=repo.fingerprint, candidate_arm=candidate_arm, model=model,
+                planner_enabled=not analyze_review_only, plan=plan,
+                confirmed=confirmed, pending=pending, recall_candidates=sorted(confirmed + pending),
+                decisions=decisions, evidence_count=len(runner.evidence),
+                phase_usage=runner.usage, phase_query_limits=PHASE_QUERY_LIMITS))
+    print(task['id'], f'confirmed={len(confirmed)} pending={len(pending)} evidence={len(runner.evidence)}', flush=True)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--rows', default='0', help='Comma-separated dataset row positions')
@@ -217,45 +262,8 @@ def main():
         else:
             candidates = katia.static(task)['candidates']
             candidate_arm = 'author_static'
-        output = katia.ROOT / 'results/ma-evidence' / args.experiment / task['id']
-        runner = Run(repo, args.model, base, key, output)
-        context = dict(issue=task['jira_title'], description=task['jira_description'],
-                       seeds=task['seed_changes'], static_candidates=candidates)
-        plan = {}
-        if not args.analyze_review_only:
-            plan = runner.phase('planner', 'Plan evidence checks for change impact. '
-                                'Return {"checks":["specific question or retrieval target"]}.',
-                                context, 'checks')
-        analysis = runner.phase('analyze', 'Find impacted Java entities using parent graph and source. '
-                                'Use concrete evidence and preserve uncertain candidates. ' + CANDIDATES,
-                                dict(context, plan=plan), 'candidates')
-        review = runner.phase('review', 'Independently verify signatures and impact with source. ' + DECISIONS,
-                               dict(context, analysis=analysis, evidence=list(runner.evidence.values())),
-                               'decisions')
-        analyses = [analysis]
-        followup = review.get('followup')
-        if isinstance(followup, list) and followup:
-            extra = runner.phase('analyze-followup', 'Address the targeted review questions. ' + CANDIDATES,
-                                 dict(context, questions=followup[:3], analysis=analysis),
-                                 'candidates')
-            analyses.append(extra)
-            final_review = runner.phase('review-final', 'Resolve the prior review after supplementary evidence. '
-                                  'Return all decisions again and leave followup empty. ' + DECISIONS,
-                                  dict(context, analyses=analyses, prior_review=review,
-                                       evidence=list(runner.evidence.values())), 'decisions')
-            if not runner.usage['review-final'].get('exhausted'):
-                review = final_review
-        seed_names = {seed['fqn'] for seed in task['seed_changes']}
-        decisions = runner.decide(candidates, seed_names, analyses, review)
-        confirmed = sorted(fqn for fqn, d in decisions.items() if d['status'] == 'confirmed')
-        pending = sorted(fqn for fqn, d in decisions.items() if d['status'] == 'pending')
-        katia.dump(output/'result.json', dict(id=task['id'], parent_commit=task['parent_commit'],
-                    graph_fingerprint=repo.fingerprint, candidate_arm=candidate_arm, model=args.model,
-                    planner_enabled=not args.analyze_review_only, plan=plan,
-                    confirmed=confirmed, pending=pending, recall_candidates=sorted(confirmed + pending),
-                    decisions=decisions, evidence_count=len(runner.evidence),
-                    phase_usage=runner.usage, phase_query_limits=PHASE_QUERY_LIMITS))
-        print(task['id'], f'confirmed={len(confirmed)} pending={len(pending)} evidence={len(runner.evidence)}', flush=True)
+        run_case(task, args.model, base, key, args.experiment, candidates, candidate_arm,
+                 repo=repo, analyze_review_only=args.analyze_review_only)
 
 
 if __name__ == '__main__':

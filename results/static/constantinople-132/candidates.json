@@ -1,0 +1,47 @@
+{
+  "id": "constantinople-132",
+  "fingerprint": "2cbd512729932c83810a5fe249dab1b6ff926b1df3f7ad05c1e6f5911f2b950c",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "07e0466c3bfbfee16e500f2d329206842575d690",
+  "candidates": [
+    "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)",
+    "org.apache.commons.validator.routines.EmailValidator.isValidDomain(java.lang.String)",
+    "org.apache.commons.validator.routines.RegexValidator.isValid(java.lang.String)",
+    "org.apache.commons.validator.routines.RegexValidator.match(java.lang.String)",
+    "org.apache.commons.validator.routines.UrlValidator.isValidAuthority(java.lang.String)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.validator.routines.EmailValidator.isValidDomain(java.lang.String)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.validator.routines.RegexValidator.isValid(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.validator.routines.RegexValidator.match(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.validator.routines.UrlValidator.isValidAuthority(java.lang.String)": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.validator.routines.DomainValidator.isValidDomainSyntax(java.lang.String)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.validator.routines.RegexValidator.match(java.lang.String)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "id": "constantinople-218",
+  "fingerprint": "471b6aa02564a971dc92b0344ab2f1f000cbed63755ae6fb9c9edae091a90460",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "a667105d323cfaa5584b8067bd6840a4a39d2b5e",
+  "candidates": [
+    "org.apache.bcel.generic.FieldGenOrMethodGen.getConstantPool()",
+    "org.apache.bcel.generic.FieldInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+    "org.apache.bcel.generic.InstructionHandle.getInstruction()",
+    "org.apache.bcel.generic.InstructionHandle.getNext()",
+    "org.apache.bcel.generic.InstructionHandle.getPrev()",
+    "org.apache.bcel.generic.InvokeInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+    "org.apache.bcel.generic.JsrInstruction.physicalSuccessor()",
+    "org.apache.bcel.generic.LocalVariableInstruction.getIndex()",
+    "org.apache.bcel.generic.MethodGen.getReturnType()",
+    "org.apache.bcel.generic.RET.getIndex()",
+    "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+    "org.apache.bcel.generic.ReturnaddressType.getTarget()",
+    "org.apache.bcel.generic.Type.equals(java.lang.Object)",
+    "org.apache.bcel.verifier.PassVerifier.addMessage(java.lang.String)",
+    "org.apache.bcel.verifier.exc.AssertionViolatedException.AssertionViolatedException(java.lang.String)",
+    "org.apache.bcel.verifier.exc.StructuralCodeConstraintException.StructuralCodeConstraintException(java.lang.String)",
+    "org.apache.bcel.verifier.structurals.ControlFlowGraph.contextOf(org.apache.bcel.generic.InstructionHandle)",
+    "org.apache.bcel.verifier.structurals.ControlFlowGraph.isDead(org.apache.bcel.generic.InstructionHandle)",
+    "org.apache.bcel.verifier.structurals.ExceptionHandler.getExceptionType()",
+    "org.apache.bcel.verifier.structurals.ExceptionHandler.getHandlerStart()",
+    "org.apache.bcel.verifier.structurals.Frame.Frame(org.apache.bcel.verifier.structurals.LocalVariables,org.apache.bcel.verifier.structurals.OperandStack)",
+    "org.apache.bcel.verifier.structurals.Frame.getLocals()",
+    "org.apache.bcel.verifier.structurals.Frame.getStack()",
+    "org.apache.bcel.verifier.structurals.InstructionContext.execute(org.apache.bcel.verifier.structurals.Frame,java.util.ArrayList,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+    "org.apache.bcel.verifier.structurals.InstructionContext.getExceptionHandlers()",
+    "org.apache.bcel.verifier.structurals.InstructionContext.getInstruction()",
+    "org.apache.bcel.verifier.structurals.InstructionContext.getOutFrame(java.util.ArrayList)",
+    "org.apache.bcel.verifier.structurals.InstructionContext.getSuccessors()",
+    "org.apache.bcel.verifier.structurals.LocalVariables.get(int)",
+    "org.apache.bcel.verifier.structurals.LocalVariables.maxLocals()",
+    "org.apache.bcel.verifier.structurals.OperandStack.OperandStack(int,org.apache.bcel.generic.ObjectType)",
+    "org.apache.bcel.verifier.structurals.OperandStack.maxStack()",
+    "org.apache.bcel.verifier.structurals.OperandStack.peek(int)",
+    "org.apache.bcel.verifier.structurals.OperandStack.size()",
+    "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.InstructionContextQueue()",
+    "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.add(org.apache.bcel.verifier.structurals.InstructionContext,java.util.ArrayList)",
+    "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.getEC(int)",
+    "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.getIC(int)",
+    "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.isEmpty()",
+    "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.remove(int)",
+    "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.size()",
+    "org.apache.bcel.verifier.structurals.Pass3bVerifier.do_verify()"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+      "type": "executable",
+      "relations": {
+        "org.apache.bcel.generic.FieldGenOrMethodGen.getConstantPool()": [
+          "CALLS"
+        ],
+        "org.apache.bcel.generic.InstructionHandle.getNext()": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.InstructionContext.getOutFrame(java.util.ArrayList)": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.getEC(int)": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.exc.StructuralCodeConstraintException.StructuralCodeConstraintException(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.OperandStack.size()": [
+          "CALLS"
+        ],
+        "org.apache.bcel.generic.RET.getIndex()": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.exc.AssertionViolatedException.AssertionViolatedException(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.InstructionContext.execute(org.apache.bcel.verifier.structurals.Frame,java.util.ArrayList,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.remove(int)": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.ControlFlowGraph.isDead(org.apache.bcel.generic.InstructionHandle)": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.InstructionContext.getInstruction()": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.ExceptionHandler.getHandlerStart()": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.OperandStack.peek(int)": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.add(org.apache.bcel.verifier.structurals.InstructionContext,java.util.ArrayList)": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.LocalVariables.get(int)": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.getIC(int)": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.ExceptionHandler.getExceptionType()": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.size()": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.ControlFlowGraph.contextOf(org.apache.bcel.generic.InstructionHandle)": [
+          "CALLS"
+        ],
+        "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.InstructionContext.getSuccessors()": [
+          "CALLS"
+        ],
+        "org.apache.bcel.generic.JsrInstruction.physicalSuccessor()": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.isEmpty()": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.PassVerifier.addMessage(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.bcel.generic.LocalVariableInstruction.getIndex()": [
+          "CALLS"
+        ],
+        "org.apache.bcel.generic.InstructionHandle.getInstruction()": [
+          "CALLS"
+        ],
+        "org.apache.bcel.generic.ReturnaddressType.getTarget()": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.InstructionContextQueue()": [
+          "CALLS"
+        ],
+        "org.apache.bcel.generic.InstructionHandle.getPrev()": [
+          "CALLS"
+        ],
+        "org.apache.bcel.generic.FieldInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.OperandStack.maxStack()": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.Pass3bVerifier.do_verify()": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.bcel.verifier.structurals.InstructionContext.getExceptionHandlers()": [
+          "CALLS"
+        ],
+        "org.apache.bcel.generic.Type.equals(java.lang.Object)": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.Frame.getLocals()": [
+          "CALLS"
+        ],
+        "org.apache.bcel.generic.MethodGen.getReturnType()": [
+          "CALLS"
+        ],
+        "org.apache.bcel.generic.InvokeInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.OperandStack.OperandStack(int,org.apache.bcel.generic.ObjectType)": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.Frame.Frame(org.apache.bcel.verifier.structurals.LocalVariables,org.apache.bcel.verifier.structurals.OperandStack)": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.Frame.getStack()": [
+          "CALLS"
+        ],
+        "org.apache.bcel.verifier.structurals.LocalVariables.maxLocals()": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

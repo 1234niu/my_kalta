@@ -1,0 +1,13 @@
+{
+  "id": "constantinople-079",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 1,
+  "predictions": [
+    "org.apache.commons.scxml.SCXMLHelper.serializeNamespaceDeclarations(org.apache.commons.scxml.model.SCXML)",
+    "org.apache.commons.scxml.io.SCXMLSerializer.serializeNamespaceDeclarations(org.apache.commons.scxml.model.SCXML)"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "cfcfc8beb8411d02aab702acd7d9375ee31bb0aaf0425b423e6397e10709a518",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "constantinople-068",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 1,
+  "predictions": [],
+  "excluded_seeds": [
+    "org.apache.commons.scxml2.model.If.execute(org.apache.commons.scxml2.EventDispatcher,org.apache.commons.scxml2.ErrorReporter,org.apache.commons.scxml2.SCInstance,org.apache.commons.logging.Log,java.util.Collection)"
+  ],
+  "static_fingerprint": "ed2f59b0eda8a4775d5aa2b78fffa2741731b9ca9a132cb633f9afb76142e503",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

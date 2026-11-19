@@ -1,0 +1,33 @@
+{
+  "id": "constantinople-095",
+  "fingerprint": "2c9e653da62682d24d36d4790e7a3030268769dcaf62caf95fec47fd7543b100",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "4d227c289ad98c3ff58e49812b47bdea92976c39",
+  "candidates": [
+    "org.apache.giraph.comm.netty.ChannelRotater.closeChannels(io.netty.channel.ChannelFutureListener)",
+    "org.apache.giraph.comm.netty.ChannelRotater.size()",
+    "org.apache.giraph.comm.netty.NettyMasterClient.closeConnections()",
+    "org.apache.giraph.comm.netty.NettyWorkerClient.closeConnections()"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.giraph.comm.netty.NettyClient.stop()",
+      "type": "executable",
+      "relations": {
+        "org.apache.giraph.comm.netty.NettyMasterClient.closeConnections()": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.giraph.comm.netty.NettyWorkerClient.closeConnections()": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.giraph.comm.netty.ChannelRotater.size()": [
+          "CALLS"
+        ],
+        "org.apache.giraph.comm.netty.ChannelRotater.closeChannels(io.netty.channel.ChannelFutureListener)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

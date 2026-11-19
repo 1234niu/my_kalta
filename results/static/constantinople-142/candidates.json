@@ -1,0 +1,21 @@
+{
+  "id": "constantinople-142",
+  "fingerprint": "3892f6d679660a26f90b06a74ce6c50caf1fbabccb9c43f1e7ec376adaae014d",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "4b9ef61dfe2b904af86a09be6d5dbe77482ba32c",
+  "candidates": [
+    "org.apache.commons.vfs2.provider.http.HttpFileContentInfoFactory.create(org.apache.commons.vfs2.FileContent)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.vfs2.provider.http.HttpFileObject.getHeadMethod()",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.vfs2.provider.http.HttpFileContentInfoFactory.create(org.apache.commons.vfs2.FileContent)": [
+          "IS_CALLED_BY"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

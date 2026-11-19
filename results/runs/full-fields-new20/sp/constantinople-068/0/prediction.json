@@ -1,0 +1,15 @@
+{
+  "id": "constantinople-068",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 0,
+  "predictions": [
+    "org.apache.commons.scxml2.SCXMLExecutor.go()",
+    "org.apache.commons.scxml2.SCXMLExecutor.reset(org.apache.commons.scxml2.model.State)",
+    "org.apache.commons.scxml2.SCXMLExecutor.triggerEvents(org.apache.commons.scxml2.SCXMLIOProcessor.EventDispatcher,java.util.Set)",
+    "org.apache.commons.scxml2.semantics.SCXMLSemanticsImpl.filterTransitionsSet(org.apache.commons.scxml2.model.Transition[],org.apache.commons.scxml2.model.Transition[],java.util.Set)"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "ed2f59b0eda8a4775d5aa2b78fffa2741731b9ca9a132cb633f9afb76142e503",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

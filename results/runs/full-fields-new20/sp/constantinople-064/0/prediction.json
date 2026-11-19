@@ -1,0 +1,14 @@
+{
+  "id": "constantinople-064",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 0,
+  "predictions": [
+    "org.apache.commons.lang.builder.HashCodeBuilder.getRegistry()",
+    "org.apache.commons.lang.builder.HashCodeBuilder.registry",
+    "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "0a3039604e85a826610fbdc7c668bef59bf206b4dffe4237025c4628886da6d5",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

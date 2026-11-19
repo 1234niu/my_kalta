@@ -1,0 +1,2792 @@
+{
+  "id": "constantinople-065",
+  "graph_edges": 4973,
+  "seeds": {
+    "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)": false,
+    "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)",
+      "org.apache.commons.lang3.time.FastDateParser.init()"
+    ],
+    "fields": [
+      "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)",
+      "org.apache.commons.lang3.time.FastDateParser.init()",
+      "org.apache.commons.lang3.time.FastDateParser.locale",
+      "org.apache.commons.lang3.time.FastDateParser.pattern",
+      "org.apache.commons.lang3.time.FastDateParser.timeZone"
+    ],
+    "multihop": [
+      "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)",
+      "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+      "org.apache.commons.lang3.time.FastDateParser.formatPattern",
+      "org.apache.commons.lang3.time.FastDateParser.init()",
+      "org.apache.commons.lang3.time.FastDateParser.locale",
+      "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+      "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+      "org.apache.commons.lang3.time.FastDateParser.pattern",
+      "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+      "org.apache.commons.lang3.time.FastDateParser.strategies",
+      "org.apache.commons.lang3.time.FastDateParser.thisYear",
+      "org.apache.commons.lang3.time.FastDateParser.timeZone"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)",
+      "org.apache.commons.lang3.time.FastDateParser.Strategy.addRegex(org.apache.commons.lang3.time.FastDateParser,java.lang.StringBuilder)",
+      "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+      "org.apache.commons.lang3.time.FastDateParser.formatPattern",
+      "org.apache.commons.lang3.time.FastDateParser.getStrategy(java.lang.String,java.util.Calendar)",
+      "org.apache.commons.lang3.time.FastDateParser.init()",
+      "org.apache.commons.lang3.time.FastDateParser.locale",
+      "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+      "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+      "org.apache.commons.lang3.time.FastDateParser.pattern",
+      "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+      "org.apache.commons.lang3.time.FastDateParser.strategies",
+      "org.apache.commons.lang3.time.FastDateParser.thisYear",
+      "org.apache.commons.lang3.time.FastDateParser.timeZone"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)",
+      "org.apache.commons.lang3.time.FastDateParser.Strategy.addRegex(org.apache.commons.lang3.time.FastDateParser,java.lang.StringBuilder)",
+      "org.apache.commons.lang3.time.FastDateParser.century",
+      "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+      "org.apache.commons.lang3.time.FastDateParser.formatPattern",
+      "org.apache.commons.lang3.time.FastDateParser.getStrategy(java.lang.String,java.util.Calendar)",
+      "org.apache.commons.lang3.time.FastDateParser.init()",
+      "org.apache.commons.lang3.time.FastDateParser.locale",
+      "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+      "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+      "org.apache.commons.lang3.time.FastDateParser.pattern",
+      "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+      "org.apache.commons.lang3.time.FastDateParser.startYear",
+      "org.apache.commons.lang3.time.FastDateParser.strategies",
+      "org.apache.commons.lang3.time.FastDateParser.thisYear",
+      "org.apache.commons.lang3.time.FastDateParser.timeZone"
+    ],
+    "mixed_field_paths": [
+      "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)",
+      "org.apache.commons.lang3.time.FastDateFormat.parse(java.lang.String)",
+      "org.apache.commons.lang3.time.FastDateFormat.parse(java.lang.String,java.text.ParsePosition)",
+      "org.apache.commons.lang3.time.FastDateParser.Strategy.addRegex(org.apache.commons.lang3.time.FastDateParser,java.lang.StringBuilder)",
+      "org.apache.commons.lang3.time.FastDateParser.century",
+      "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+      "org.apache.commons.lang3.time.FastDateParser.equals(java.lang.Object)",
+      "org.apache.commons.lang3.time.FastDateParser.formatPattern",
+      "org.apache.commons.lang3.time.FastDateParser.getLocale()",
+      "org.apache.commons.lang3.time.FastDateParser.getLocaleSpecificStrategy(int,java.util.Calendar)",
+      "org.apache.commons.lang3.time.FastDateParser.getPattern()",
+      "org.apache.commons.lang3.time.FastDateParser.getStrategy(java.lang.String,java.util.Calendar)",
+      "org.apache.commons.lang3.time.FastDateParser.getTimeZone()",
+      "org.apache.commons.lang3.time.FastDateParser.hashCode()",
+      "org.apache.commons.lang3.time.FastDateParser.init()",
+      "org.apache.commons.lang3.time.FastDateParser.locale",
+      "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+      "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)",
+      "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String,java.text.ParsePosition)",
+      "org.apache.commons.lang3.time.FastDateParser.parseObject(java.lang.String)",
+      "org.apache.commons.lang3.time.FastDateParser.parseObject(java.lang.String,java.text.ParsePosition)",
+      "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+      "org.apache.commons.lang3.time.FastDateParser.pattern",
+      "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+      "org.apache.commons.lang3.time.FastDateParser.startYear",
+      "org.apache.commons.lang3.time.FastDateParser.strategies",
+      "org.apache.commons.lang3.time.FastDateParser.thisYear",
+      "org.apache.commons.lang3.time.FastDateParser.timeZone",
+      "org.apache.commons.lang3.time.FastDateParser.toString()"
+    ],
+    "seed_field_accesses": [
+      "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)",
+      "org.apache.commons.lang3.time.FastDateFormat.parse(java.lang.String)",
+      "org.apache.commons.lang3.time.FastDateFormat.parse(java.lang.String,java.text.ParsePosition)",
+      "org.apache.commons.lang3.time.FastDateFormat.parseObject(java.lang.String,java.text.ParsePosition)",
+      "org.apache.commons.lang3.time.FastDateFormat.parser",
+      "org.apache.commons.lang3.time.FastDateParser.Strategy.addRegex(org.apache.commons.lang3.time.FastDateParser,java.lang.StringBuilder)",
+      "org.apache.commons.lang3.time.FastDateParser.century",
+      "org.apache.commons.lang3.time.FastDateParser.centuryStart",
+      "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+      "org.apache.commons.lang3.time.FastDateParser.formatPattern",
+      "org.apache.commons.lang3.time.FastDateParser.getStrategy(java.lang.String,java.util.Calendar)",
+      "org.apache.commons.lang3.time.FastDateParser.init()",
+      "org.apache.commons.lang3.time.FastDateParser.locale",
+      "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+      "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+      "org.apache.commons.lang3.time.FastDateParser.pattern",
+      "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+      "org.apache.commons.lang3.time.FastDateParser.startYear",
+      "org.apache.commons.lang3.time.FastDateParser.strategies",
+      "org.apache.commons.lang3.time.FastDateParser.thisYear",
+      "org.apache.commons.lang3.time.FastDateParser.timeZone"
+    ],
+    "combined_field_paths": [
+      "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)",
+      "org.apache.commons.lang3.time.FastDateFormat.parse(java.lang.String)",
+      "org.apache.commons.lang3.time.FastDateFormat.parse(java.lang.String,java.text.ParsePosition)",
+      "org.apache.commons.lang3.time.FastDateFormat.parseObject(java.lang.String,java.text.ParsePosition)",
+      "org.apache.commons.lang3.time.FastDateFormat.parser",
+      "org.apache.commons.lang3.time.FastDateParser.Strategy.addRegex(org.apache.commons.lang3.time.FastDateParser,java.lang.StringBuilder)",
+      "org.apache.commons.lang3.time.FastDateParser.century",
+      "org.apache.commons.lang3.time.FastDateParser.centuryStart",
+      "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+      "org.apache.commons.lang3.time.FastDateParser.equals(java.lang.Object)",
+      "org.apache.commons.lang3.time.FastDateParser.formatPattern",
+      "org.apache.commons.lang3.time.FastDateParser.getLocale()",
+      "org.apache.commons.lang3.time.FastDateParser.getLocaleSpecificStrategy(int,java.util.Calendar)",
+      "org.apache.commons.lang3.time.FastDateParser.getPattern()",
+      "org.apache.commons.lang3.time.FastDateParser.getStrategy(java.lang.String,java.util.Calendar)",
+      "org.apache.commons.lang3.time.FastDateParser.getTimeZone()",
+      "org.apache.commons.lang3.time.FastDateParser.hashCode()",
+      "org.apache.commons.lang3.time.FastDateParser.init()",
+      "org.apache.commons.lang3.time.FastDateParser.locale",
+      "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+      "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)",
+      "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String,java.text.ParsePosition)",
+      "org.apache.commons.lang3.time.FastDateParser.parseObject(java.lang.String)",
+      "org.apache.commons.lang3.time.FastDateParser.parseObject(java.lang.String,java.text.ParsePosition)",
+      "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+      "org.apache.commons.lang3.time.FastDateParser.pattern",
+      "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+      "org.apache.commons.lang3.time.FastDateParser.startYear",
+      "org.apache.commons.lang3.time.FastDateParser.strategies",
+      "org.apache.commons.lang3.time.FastDateParser.thisYear",
+      "org.apache.commons.lang3.time.FastDateParser.timeZone",
+      "org.apache.commons.lang3.time.FastDateParser.toString()"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.lang3.time.FastDateParser.pattern": {
+        "org.apache.commons.lang3.time.FastDateParser.pattern": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 101
+          }
+        ]
+      },
+      "org.apache.commons.lang3.time.FastDateParser.timeZone": {
+        "org.apache.commons.lang3.time.FastDateParser.timeZone": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 102
+          }
+        ]
+      },
+      "org.apache.commons.lang3.time.FastDateParser.locale": {
+        "org.apache.commons.lang3.time.FastDateParser.locale": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 103
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.lang3.time.FastDateParser.pattern": {
+        "org.apache.commons.lang3.time.FastDateParser.pattern": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 101
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.thisYear": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.thisYear",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.thisYear",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 118
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.currentFormatField": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 124
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 124
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 118
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.nextStrategy": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 118
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.strategies": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.strategies",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 147
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.strategies",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 147
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 118
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.parsePattern": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 148
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 148
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 118
+          }
+        ]
+      },
+      "org.apache.commons.lang3.time.FastDateParser.timeZone": {
+        "org.apache.commons.lang3.time.FastDateParser.timeZone": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 102
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.thisYear": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.thisYear",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.thisYear",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 112
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.currentFormatField": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 124
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 124
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 112
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.nextStrategy": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 112
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.strategies": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.strategies",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 147
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.strategies",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 147
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 112
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.parsePattern": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 148
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 148
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 112
+          }
+        ]
+      },
+      "org.apache.commons.lang3.time.FastDateParser.locale": {
+        "org.apache.commons.lang3.time.FastDateParser.locale": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 103
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.thisYear": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.thisYear",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.thisYear",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 112
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.currentFormatField": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 124
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 124
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 112
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.nextStrategy": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 112
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.strategies": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.strategies",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 147
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.strategies",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 147
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 112
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.parsePattern": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 148
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 148
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 112
+          }
+        ]
+      },
+      "org.apache.commons.lang3.time.FastDateParser.thisYear": {
+        "org.apache.commons.lang3.time.FastDateParser.thisYear": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.thisYear",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 113
+          }
+        ]
+      },
+      "org.apache.commons.lang3.time.FastDateParser.init()": {
+        "org.apache.commons.lang3.time.FastDateParser.thisYear": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.thisYear",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.thisYear",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 113
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.currentFormatField": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 124
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 124
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.nextStrategy": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 129
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.strategies": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.strategies",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 147
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.strategies",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 147
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.parsePattern": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 148
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 148
+          }
+        ]
+      },
+      "org.apache.commons.lang3.time.FastDateParser.formatPattern": {
+        "org.apache.commons.lang3.time.FastDateParser.thisYear": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.thisYear",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.thisYear",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.formatPattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 118
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.formatPattern": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.formatPattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 118
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.currentFormatField": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 124
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 124
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.formatPattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 118
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.nextStrategy": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.formatPattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 118
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.strategies": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.strategies",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 147
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.strategies",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 147
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.formatPattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 118
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.parsePattern": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 148
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 148
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.formatPattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 118
+          }
+        ]
+      },
+      "org.apache.commons.lang3.time.FastDateParser.currentFormatField": {
+        "org.apache.commons.lang3.time.FastDateParser.thisYear": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.thisYear",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.thisYear",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 125
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.currentFormatField": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 124
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.nextStrategy": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 125
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.strategies": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.strategies",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 147
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.strategies",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 147
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 125
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.parsePattern": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 148
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 148
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 125
+          }
+        ]
+      },
+      "org.apache.commons.lang3.time.FastDateParser.nextStrategy": {
+        "org.apache.commons.lang3.time.FastDateParser.thisYear": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.thisYear",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.thisYear",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 138
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.currentFormatField": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 124
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 124
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 138
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.nextStrategy": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 129
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.strategies": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.strategies",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 147
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.strategies",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 147
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 138
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.parsePattern": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 148
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 148
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 138
+          }
+        ]
+      },
+      "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)": {
+        "org.apache.commons.lang3.time.FastDateParser.thisYear": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.thisYear",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.thisYear",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 113
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 237
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.currentFormatField": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 124
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 124
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 237
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.nextStrategy": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 129
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 237
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.strategies": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.strategies",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 147
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.strategies",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 147
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 237
+          }
+        ],
+        "org.apache.commons.lang3.time.FastDateParser.parsePattern": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 148
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 148
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 237
+          }
+        ]
+      },
+      "org.apache.commons.lang3.time.FastDateParser.strategies": {
+        "org.apache.commons.lang3.time.FastDateParser.strategies": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.strategies",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 147
+          }
+        ]
+      },
+      "org.apache.commons.lang3.time.FastDateParser.parsePattern": {
+        "org.apache.commons.lang3.time.FastDateParser.parsePattern": [
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+            "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 104
+          },
+          {
+            "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+            "to": "org.apache.commons.lang3.time.FastDateParser.parsePattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "line": 148
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.commons.lang3.time.FastDateParser.getStrategy(java.lang.String,java.util.Calendar)": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 104
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.getStrategy(java.lang.String,java.util.Calendar)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 125
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.Strategy.addRegex(org.apache.commons.lang3.time.FastDateParser,java.lang.StringBuilder)": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 104
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.Strategy.addRegex(org.apache.commons.lang3.time.FastDateParser,java.lang.StringBuilder)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 134
+        }
+      ]
+    },
+    "mixed_field_paths": {
+      "org.apache.commons.lang3.time.FastDateParser.init()": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 101
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 118
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 101
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 118
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 237
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.getPattern()": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 101
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.getPattern()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 158
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.equals(java.lang.Object)": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 101
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.equals(java.lang.Object)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 200
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.hashCode()": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 101
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.hashCode()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 212
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.toString()": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 101
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.toString()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 222
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.getTimeZone()": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 102
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.getTimeZone()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 166
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String,java.text.ParsePosition)": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 102
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String,java.text.ParsePosition)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 285
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateFormat.parse(java.lang.String,java.text.ParsePosition)": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 102
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String,java.text.ParsePosition)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 285
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateFormat.parse(java.lang.String,java.text.ParsePosition)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String,java.text.ParsePosition)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateFormat.java",
+          "line": 480
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 102
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String,java.text.ParsePosition)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 285
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String,java.text.ParsePosition)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 253
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.parseObject(java.lang.String,java.text.ParsePosition)": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 102
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String,java.text.ParsePosition)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 285
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.parseObject(java.lang.String,java.text.ParsePosition)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String,java.text.ParsePosition)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 271
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.getLocale()": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 103
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.getLocale()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 174
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateFormat.parse(java.lang.String)": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 103
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 256
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateFormat.parse(java.lang.String)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateFormat.java",
+          "line": 472
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.parseObject(java.lang.String)": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 103
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 256
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.parseObject(java.lang.String)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 245
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.getLocaleSpecificStrategy(int,java.util.Calendar)": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 103
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.getLocaleSpecificStrategy(int,java.util.Calendar)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 507
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.getStrategy(java.lang.String,java.util.Calendar)": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 103
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.getLocaleSpecificStrategy(int,java.util.Calendar)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 507
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.getStrategy(java.lang.String,java.util.Calendar)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.getLocaleSpecificStrategy(int,java.util.Calendar)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 445
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.timeZone": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 104
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 112
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.locale": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 104
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 112
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.formatPattern": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 104
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.formatPattern",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 118
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.pattern": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 104
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 118
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.currentFormatField": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 104
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 125
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.nextStrategy": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 104
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 138
+        }
+      ]
+    },
+    "seed_field_accesses": {
+      "org.apache.commons.lang3.time.FastDateFormat.parser": [
+        {
+          "seed": "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)",
+          "edge": "ADDED_WRITE",
+          "after_line": 385,
+          "proposed_fqn": "org.apache.commons.lang3.time.FastDateFormat.parser",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateFormat.java",
+          "from": "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)",
+          "to": "org.apache.commons.lang3.time.FastDateFormat.parser"
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateFormat.parse(java.lang.String)": [
+        {
+          "seed": "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)",
+          "edge": "ADDED_WRITE",
+          "after_line": 385,
+          "proposed_fqn": "org.apache.commons.lang3.time.FastDateFormat.parser",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateFormat.java",
+          "from": "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)",
+          "to": "org.apache.commons.lang3.time.FastDateFormat.parser"
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateFormat.parse(java.lang.String)",
+          "to": "org.apache.commons.lang3.time.FastDateFormat.parser",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateFormat.java",
+          "line": 472
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateFormat.parse(java.lang.String,java.text.ParsePosition)": [
+        {
+          "seed": "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)",
+          "edge": "ADDED_WRITE",
+          "after_line": 385,
+          "proposed_fqn": "org.apache.commons.lang3.time.FastDateFormat.parser",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateFormat.java",
+          "from": "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)",
+          "to": "org.apache.commons.lang3.time.FastDateFormat.parser"
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateFormat.parse(java.lang.String,java.text.ParsePosition)",
+          "to": "org.apache.commons.lang3.time.FastDateFormat.parser",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateFormat.java",
+          "line": 480
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateFormat.parseObject(java.lang.String,java.text.ParsePosition)": [
+        {
+          "seed": "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)",
+          "edge": "ADDED_WRITE",
+          "after_line": 385,
+          "proposed_fqn": "org.apache.commons.lang3.time.FastDateFormat.parser",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateFormat.java",
+          "from": "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)",
+          "to": "org.apache.commons.lang3.time.FastDateFormat.parser"
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateFormat.parseObject(java.lang.String,java.text.ParsePosition)",
+          "to": "org.apache.commons.lang3.time.FastDateFormat.parser",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateFormat.java",
+          "line": 488
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.startYear": [
+        {
+          "seed": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "edge": "ADDED_WRITE",
+          "after_line": 122,
+          "proposed_fqn": "org.apache.commons.lang3.time.FastDateParser.startYear",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.startYear"
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.century": [
+        {
+          "seed": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "edge": "ADDED_WRITE",
+          "after_line": 121,
+          "proposed_fqn": "org.apache.commons.lang3.time.FastDateParser.century",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.century"
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.centuryStart": [
+        {
+          "seed": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "edge": "ADDED_READ",
+          "after_line": 109,
+          "proposed_fqn": "org.apache.commons.lang3.time.FastDateParser.centuryStart",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.centuryStart"
+        }
+      ]
+    },
+    "combined_field_paths": {
+      "org.apache.commons.lang3.time.FastDateParser.init()": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 101
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 118
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 101
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 118
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 237
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.getPattern()": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 101
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.getPattern()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 158
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.equals(java.lang.Object)": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 101
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.equals(java.lang.Object)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 200
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.hashCode()": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 101
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.hashCode()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 212
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.toString()": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 101
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.toString()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 222
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.getTimeZone()": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 102
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.getTimeZone()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 166
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String,java.text.ParsePosition)": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 102
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String,java.text.ParsePosition)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 285
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateFormat.parse(java.lang.String,java.text.ParsePosition)": [
+        {
+          "seed": "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)",
+          "edge": "ADDED_WRITE",
+          "after_line": 385,
+          "proposed_fqn": "org.apache.commons.lang3.time.FastDateFormat.parser",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateFormat.java",
+          "from": "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)",
+          "to": "org.apache.commons.lang3.time.FastDateFormat.parser"
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateFormat.parse(java.lang.String,java.text.ParsePosition)",
+          "to": "org.apache.commons.lang3.time.FastDateFormat.parser",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateFormat.java",
+          "line": 480
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 102
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String,java.text.ParsePosition)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 285
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String,java.text.ParsePosition)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 253
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.parseObject(java.lang.String,java.text.ParsePosition)": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 102
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String,java.text.ParsePosition)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 285
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.parseObject(java.lang.String,java.text.ParsePosition)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String,java.text.ParsePosition)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 271
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.getLocale()": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 103
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.getLocale()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 174
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateFormat.parse(java.lang.String)": [
+        {
+          "seed": "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)",
+          "edge": "ADDED_WRITE",
+          "after_line": 385,
+          "proposed_fqn": "org.apache.commons.lang3.time.FastDateFormat.parser",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateFormat.java",
+          "from": "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)",
+          "to": "org.apache.commons.lang3.time.FastDateFormat.parser"
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateFormat.parse(java.lang.String)",
+          "to": "org.apache.commons.lang3.time.FastDateFormat.parser",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateFormat.java",
+          "line": 472
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.parseObject(java.lang.String)": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 103
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 256
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.parseObject(java.lang.String)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 245
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.getLocaleSpecificStrategy(int,java.util.Calendar)": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 103
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.getLocaleSpecificStrategy(int,java.util.Calendar)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 507
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.getStrategy(java.lang.String,java.util.Calendar)": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+          "kind": "WRITE",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 103
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.getLocaleSpecificStrategy(int,java.util.Calendar)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 507
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.getStrategy(java.lang.String,java.util.Calendar)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.getLocaleSpecificStrategy(int,java.util.Calendar)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 445
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.timeZone": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 104
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.timeZone",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 112
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.locale": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 104
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.locale",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 112
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.formatPattern": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 104
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.formatPattern",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 118
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.pattern": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 104
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.pattern",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 118
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.currentFormatField": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 104
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.currentFormatField",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 125
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.nextStrategy": [
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 104
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateParser.init()",
+          "to": "org.apache.commons.lang3.time.FastDateParser.nextStrategy",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "line": 138
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateFormat.parser": [
+        {
+          "seed": "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)",
+          "edge": "ADDED_WRITE",
+          "after_line": 385,
+          "proposed_fqn": "org.apache.commons.lang3.time.FastDateFormat.parser",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateFormat.java",
+          "from": "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)",
+          "to": "org.apache.commons.lang3.time.FastDateFormat.parser"
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateFormat.parseObject(java.lang.String,java.text.ParsePosition)": [
+        {
+          "seed": "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)",
+          "edge": "ADDED_WRITE",
+          "after_line": 385,
+          "proposed_fqn": "org.apache.commons.lang3.time.FastDateFormat.parser",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateFormat.java",
+          "from": "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)",
+          "to": "org.apache.commons.lang3.time.FastDateFormat.parser"
+        },
+        {
+          "from": "org.apache.commons.lang3.time.FastDateFormat.parseObject(java.lang.String,java.text.ParsePosition)",
+          "to": "org.apache.commons.lang3.time.FastDateFormat.parser",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateFormat.java",
+          "line": 488
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.startYear": [
+        {
+          "seed": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "edge": "ADDED_WRITE",
+          "after_line": 122,
+          "proposed_fqn": "org.apache.commons.lang3.time.FastDateParser.startYear",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.startYear"
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.century": [
+        {
+          "seed": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "edge": "ADDED_WRITE",
+          "after_line": 121,
+          "proposed_fqn": "org.apache.commons.lang3.time.FastDateParser.century",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.century"
+        }
+      ],
+      "org.apache.commons.lang3.time.FastDateParser.centuryStart": [
+        {
+          "seed": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "edge": "ADDED_READ",
+          "after_line": 109,
+          "proposed_fqn": "org.apache.commons.lang3.time.FastDateParser.centuryStart",
+          "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+          "from": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+          "to": "org.apache.commons.lang3.time.FastDateParser.centuryStart"
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 4604,
+      "ma_analysis": 4186,
+      "ma_refinement_fixed": 4020
+    },
+    "two_hop_calls": {
+      "sp": 4837,
+      "ma_analysis": 4419,
+      "ma_refinement_fixed": 4253
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "getInstance",
+        "arity": 2,
+        "arguments": [
+          "timeZone",
+          "locale"
+        ],
+        "receiver": "Calendar",
+        "after_line": 107,
+        "expression": "getInstance(timeZone, locale)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+        "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "setTime",
+        "arity": 1,
+        "arguments": [
+          "centuryStart"
+        ],
+        "receiver": "definingCalendar",
+        "after_line": 110,
+        "expression": "setTime(centuryStart)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+        "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "get",
+        "arity": 1,
+        "arguments": [
+          "Calendar.YEAR"
+        ],
+        "receiver": "definingCalendar",
+        "after_line": 111,
+        "expression": "get(Calendar.YEAR)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+        "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "equals",
+        "arity": 1,
+        "arguments": [
+          "JAPANESE_IMPERIAL"
+        ],
+        "receiver": "locale",
+        "after_line": 113,
+        "expression": "equals(JAPANESE_IMPERIAL)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+        "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "setTime",
+        "arity": 1,
+        "arguments": [
+          "new Date()"
+        ],
+        "receiver": "definingCalendar",
+        "after_line": 118,
+        "expression": "setTime(new Date())",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+        "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "get",
+        "arity": 1,
+        "arguments": [
+          "Calendar.YEAR"
+        ],
+        "receiver": "definingCalendar",
+        "after_line": 119,
+        "expression": "get(Calendar.YEAR)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+        "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "init",
+        "arity": 1,
+        "arguments": [
+          "definingCalendar"
+        ],
+        "receiver": null,
+        "after_line": 124,
+        "expression": "init(definingCalendar)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+        "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [
+      {
+        "seed": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+        "edge": "ADDED_WRITE",
+        "after_line": 122,
+        "proposed_fqn": "org.apache.commons.lang3.time.FastDateParser.startYear",
+        "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java"
+      },
+      {
+        "seed": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+        "edge": "ADDED_WRITE",
+        "after_line": 121,
+        "proposed_fqn": "org.apache.commons.lang3.time.FastDateParser.century",
+        "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java"
+      }
+    ],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [
+    {
+      "seed": "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)",
+      "edge": "ADDED_WRITE",
+      "after_line": 385,
+      "proposed_fqn": "org.apache.commons.lang3.time.FastDateFormat.parser",
+      "file": "src/main/java/org/apache/commons/lang3/time/FastDateFormat.java"
+    },
+    {
+      "seed": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+      "edge": "ADDED_WRITE",
+      "after_line": 122,
+      "proposed_fqn": "org.apache.commons.lang3.time.FastDateParser.startYear",
+      "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java"
+    },
+    {
+      "seed": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+      "edge": "ADDED_WRITE",
+      "after_line": 121,
+      "proposed_fqn": "org.apache.commons.lang3.time.FastDateParser.century",
+      "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java"
+    },
+    {
+      "seed": "org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)",
+      "edge": "ADDED_READ",
+      "after_line": 109,
+      "proposed_fqn": "org.apache.commons.lang3.time.FastDateParser.centuryStart",
+      "file": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java"
+    }
+  ],
+  "indexed_targets": [
+    "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)",
+    "org.apache.commons.lang3.time.FastDateParser.escapeRegex(java.lang.StringBuilder,java.lang.String,boolean)",
+    "org.apache.commons.lang3.time.FastDateParser.init()",
+    "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+    "org.apache.commons.lang3.time.FastDateParser.serialVersionUID",
+    "org.apache.commons.lang3.time.FastDateParser.thisYear"
+  ],
+  "unindexed_targets": [
+    "org.apache.commons.lang3.time.FastDateParser.century",
+    "org.apache.commons.lang3.time.FastDateParser.startYear"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 2,
+      "hits": [
+        "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)",
+        "org.apache.commons.lang3.time.FastDateParser.init()"
+      ],
+      "misses": [
+        "org.apache.commons.lang3.time.FastDateParser.century",
+        "org.apache.commons.lang3.time.FastDateParser.escapeRegex(java.lang.StringBuilder,java.lang.String,boolean)",
+        "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+        "org.apache.commons.lang3.time.FastDateParser.serialVersionUID",
+        "org.apache.commons.lang3.time.FastDateParser.startYear",
+        "org.apache.commons.lang3.time.FastDateParser.thisYear"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.lang3.time.FastDateParser.escapeRegex(java.lang.StringBuilder,java.lang.String,boolean)",
+        "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+        "org.apache.commons.lang3.time.FastDateParser.serialVersionUID",
+        "org.apache.commons.lang3.time.FastDateParser.thisYear"
+      ],
+      "indexed_recall": 0.3333333333333333
+    },
+    "fields": {
+      "candidate_count": 5,
+      "hits": [
+        "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)",
+        "org.apache.commons.lang3.time.FastDateParser.init()"
+      ],
+      "misses": [
+        "org.apache.commons.lang3.time.FastDateParser.century",
+        "org.apache.commons.lang3.time.FastDateParser.escapeRegex(java.lang.StringBuilder,java.lang.String,boolean)",
+        "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+        "org.apache.commons.lang3.time.FastDateParser.serialVersionUID",
+        "org.apache.commons.lang3.time.FastDateParser.startYear",
+        "org.apache.commons.lang3.time.FastDateParser.thisYear"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.lang3.time.FastDateParser.escapeRegex(java.lang.StringBuilder,java.lang.String,boolean)",
+        "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+        "org.apache.commons.lang3.time.FastDateParser.serialVersionUID",
+        "org.apache.commons.lang3.time.FastDateParser.thisYear"
+      ],
+      "indexed_recall": 0.3333333333333333
+    },
+    "multihop": {
+      "candidate_count": 12,
+      "hits": [
+        "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)",
+        "org.apache.commons.lang3.time.FastDateParser.init()",
+        "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+        "org.apache.commons.lang3.time.FastDateParser.thisYear"
+      ],
+      "misses": [
+        "org.apache.commons.lang3.time.FastDateParser.century",
+        "org.apache.commons.lang3.time.FastDateParser.escapeRegex(java.lang.StringBuilder,java.lang.String,boolean)",
+        "org.apache.commons.lang3.time.FastDateParser.serialVersionUID",
+        "org.apache.commons.lang3.time.FastDateParser.startYear"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.lang3.time.FastDateParser.escapeRegex(java.lang.StringBuilder,java.lang.String,boolean)",
+        "org.apache.commons.lang3.time.FastDateParser.serialVersionUID"
+      ],
+      "indexed_recall": 0.6666666666666666
+    },
+    "two_hop_calls": {
+      "candidate_count": 14,
+      "hits": [
+        "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)",
+        "org.apache.commons.lang3.time.FastDateParser.init()",
+        "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+        "org.apache.commons.lang3.time.FastDateParser.thisYear"
+      ],
+      "misses": [
+        "org.apache.commons.lang3.time.FastDateParser.century",
+        "org.apache.commons.lang3.time.FastDateParser.escapeRegex(java.lang.StringBuilder,java.lang.String,boolean)",
+        "org.apache.commons.lang3.time.FastDateParser.serialVersionUID",
+        "org.apache.commons.lang3.time.FastDateParser.startYear"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.lang3.time.FastDateParser.escapeRegex(java.lang.StringBuilder,java.lang.String,boolean)",
+        "org.apache.commons.lang3.time.FastDateParser.serialVersionUID"
+      ],
+      "indexed_recall": 0.6666666666666666
+    },
+    "diff_and_override": {
+      "candidate_count": 16,
+      "hits": [
+        "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)",
+        "org.apache.commons.lang3.time.FastDateParser.century",
+        "org.apache.commons.lang3.time.FastDateParser.init()",
+        "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+        "org.apache.commons.lang3.time.FastDateParser.startYear",
+        "org.apache.commons.lang3.time.FastDateParser.thisYear"
+      ],
+      "misses": [
+        "org.apache.commons.lang3.time.FastDateParser.escapeRegex(java.lang.StringBuilder,java.lang.String,boolean)",
+        "org.apache.commons.lang3.time.FastDateParser.serialVersionUID"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.lang3.time.FastDateParser.escapeRegex(java.lang.StringBuilder,java.lang.String,boolean)",
+        "org.apache.commons.lang3.time.FastDateParser.serialVersionUID"
+      ],
+      "indexed_recall": 0.6666666666666666
+    },
+    "mixed_field_paths": {
+      "candidate_count": 29,
+      "hits": [
+        "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)",
+        "org.apache.commons.lang3.time.FastDateParser.century",
+        "org.apache.commons.lang3.time.FastDateParser.init()",
+        "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+        "org.apache.commons.lang3.time.FastDateParser.startYear",
+        "org.apache.commons.lang3.time.FastDateParser.thisYear"
+      ],
+      "misses": [
+        "org.apache.commons.lang3.time.FastDateParser.escapeRegex(java.lang.StringBuilder,java.lang.String,boolean)",
+        "org.apache.commons.lang3.time.FastDateParser.serialVersionUID"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.lang3.time.FastDateParser.escapeRegex(java.lang.StringBuilder,java.lang.String,boolean)",
+        "org.apache.commons.lang3.time.FastDateParser.serialVersionUID"
+      ],
+      "indexed_recall": 0.6666666666666666
+    },
+    "seed_field_accesses": {
+      "candidate_count": 21,
+      "hits": [
+        "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)",
+        "org.apache.commons.lang3.time.FastDateParser.century",
+        "org.apache.commons.lang3.time.FastDateParser.init()",
+        "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+        "org.apache.commons.lang3.time.FastDateParser.startYear",
+        "org.apache.commons.lang3.time.FastDateParser.thisYear"
+      ],
+      "misses": [
+        "org.apache.commons.lang3.time.FastDateParser.escapeRegex(java.lang.StringBuilder,java.lang.String,boolean)",
+        "org.apache.commons.lang3.time.FastDateParser.serialVersionUID"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.lang3.time.FastDateParser.escapeRegex(java.lang.StringBuilder,java.lang.String,boolean)",
+        "org.apache.commons.lang3.time.FastDateParser.serialVersionUID"
+      ],
+      "indexed_recall": 0.6666666666666666
+    },
+    "combined_field_paths": {
+      "candidate_count": 32,
+      "hits": [
+        "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)",
+        "org.apache.commons.lang3.time.FastDateParser.century",
+        "org.apache.commons.lang3.time.FastDateParser.init()",
+        "org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)",
+        "org.apache.commons.lang3.time.FastDateParser.startYear",
+        "org.apache.commons.lang3.time.FastDateParser.thisYear"
+      ],
+      "misses": [
+        "org.apache.commons.lang3.time.FastDateParser.escapeRegex(java.lang.StringBuilder,java.lang.String,boolean)",
+        "org.apache.commons.lang3.time.FastDateParser.serialVersionUID"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.lang3.time.FastDateParser.escapeRegex(java.lang.StringBuilder,java.lang.String,boolean)",
+        "org.apache.commons.lang3.time.FastDateParser.serialVersionUID"
+      ],
+      "indexed_recall": 0.6666666666666666
+    }
+  }
+}

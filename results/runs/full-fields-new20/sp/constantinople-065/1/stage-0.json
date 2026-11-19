@@ -1,0 +1,48 @@
+{
+  "request_sha256": "84b67784d3f558c7e00b7ca8d8423f8f5212ce74e3722a14a4562e39c615d643",
+  "request": {
+    "model": "deepseek-v4.1-flash-1017",
+    "temperature": 0,
+    "messages": [
+      {
+        "role": "user",
+        "content": "# System Information\nYou are an expert in Java and in analyzing the impact of source code changes on other code entities in a project's production code.\n\n# General Information\nYou receive information about a set of changes, called seed changes, that were made to fix a bug reported in Jira.\nYou also receive the Jira bug report title and description and an initial impact set consisting of the fully qualified names of code entities that are statically related to the seed changes.\n\n# Task\nYour task is to refine the initial impact set.\nA code entity is part of the impact set if it requires modification or, if it does not already exist, must be created as a consequence of the seed changes.\nFirst, remove code entities unless the provided information indicates that they must be modified.\nSecond, add code entities that must be modified or created according to the provided evidence.\n\nYour goal is to report a final impact set that consists of the fully qualified names of code entities that must be modified or created because of the seed changes.\n\n# Inputs\n- Jira bug report title: FastDateParserTest.testParses does not test FastDateParser\n- Jira bug report description: FastDateParserTest.testParses tests SimpleDateFormat parsing. It does not test FastDateParser parsing.\n- Seed changes and their Git diff hunks: [{\"fqn\": \"org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale,java.util.Date)\", \"git_diff_hunk\": \"@@ -368,0 +383 @@ protected FastDateFormat(final String pattern, final TimeZone timeZone, final Lo\\n+ protected FastDateFormat(final String pattern, final TimeZone timeZone, final Locale locale, final Date centuryStart) {\\n@@ -370 +385 @@ protected FastDateFormat(final String pattern, final TimeZone timeZone, final Lo\\n- parser= new FastDateParser(pattern, timeZone, locale);\\n+ parser= new FastDateParser(pattern, timeZone, locale, centuryStart);\"}, {\"fqn\": \"org.apache.commons.lang3.time.FastDateParser.FastDateParser(java.lang.String,java.util.TimeZone,java.util.Locale)\", \"git_diff_hunk\": \"@@ -100 +102 @@ public class FastDateParser implements DateParser, Serializable {\\n- protected FastDateParser(final String pattern, final TimeZone timeZone, final Locale locale) {\\n+ protected FastDateParser(final String pattern, final TimeZone timeZone, final Locale locale, Date centuryStart) {\\n@@ -104 +106,19 @@ protected FastDateParser(final String pattern, final TimeZone timeZone, final Lo\\n- init();\\n+\\n+ final Calendar definingCalendar = Calendar.getInstance(timeZone, locale);\\n+ int centuryStartYear;\\n+ if(centuryStart!=null) {\\n+ definingCalendar.setTime(centuryStart);\\n+ centuryStartYear= definingCalendar.get(Calendar.YEAR);\\n+ }\\n+ else if(locale.equals(JAPANESE_IMPERIAL)) {\\n+ centuryStartYear= 0;\\n+ }\\n+ else {\\n+ // from 80 years ago to 20 years from now\\n+ definingCalendar.setTime(new Date());\\n+ centuryStartYear= definingCalendar.get(Calendar.YEAR)-80;\\n+ }\\n+ century= centuryStartYear / 100 * 100;\\n+ startYear= centuryStartYear - century;\\n+\\n+ init(definingCalendar);\"}]\n- Initial static code change impact set: [\"org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)\", \"org.apache.commons.lang3.time.FastDateFormat.parse(java.lang.String)\", \"org.apache.commons.lang3.time.FastDateFormat.parse(java.lang.String,java.text.ParsePosition)\", \"org.apache.commons.lang3.time.FastDateFormat.parseObject(java.lang.String,java.text.ParsePosition)\", \"org.apache.commons.lang3.time.FastDateFormat.parser\", \"org.apache.commons.lang3.time.FastDateParser.Strategy.addRegex(org.apache.commons.lang3.time.FastDateParser,java.lang.StringBuilder)\", \"org.apache.commons.lang3.time.FastDateParser.century\", \"org.apache.commons.lang3.time.FastDateParser.centuryStart\", \"org.apache.commons.lang3.time.FastDateParser.currentFormatField\", \"org.apache.commons.lang3.time.FastDateParser.equals(java.lang.Object)\", \"org.apache.commons.lang3.time.FastDateParser.formatPattern\", \"org.apache.commons.lang3.time.FastDateParser.getLocale()\", \"org.apache.commons.lang3.time.FastDateParser.getLocaleSpecificStrategy(int,java.util.Calendar)\", \"org.apache.commons.lang3.time.FastDateParser.getPattern()\", \"org.apache.commons.lang3.time.FastDateParser.getStrategy(java.lang.String,java.util.Calendar)\", \"org.apache.commons.lang3.time.FastDateParser.getTimeZone()\", \"org.apache.commons.lang3.time.FastDateParser.hashCode()\", \"org.apache.commons.lang3.time.FastDateParser.init()\", \"org.apache.commons.lang3.time.FastDateParser.locale\", \"org.apache.commons.lang3.time.FastDateParser.nextStrategy\", \"org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String)\", \"org.apache.commons.lang3.time.FastDateParser.parse(java.lang.String,java.text.ParsePosition)\", \"org.apache.commons.lang3.time.FastDateParser.parseObject(java.lang.String)\", \"org.apache.commons.lang3.time.FastDateParser.parseObject(java.lang.String,java.text.ParsePosition)\", \"org.apache.commons.lang3.time.FastDateParser.parsePattern\", \"org.apache.commons.lang3.time.FastDateParser.pattern\", \"org.apache.commons.lang3.time.FastDateParser.readObject(java.io.ObjectInputStream)\", \"org.apache.commons.lang3.time.FastDateParser.startYear\", \"org.apache.commons.lang3.time.FastDateParser.strategies\", \"org.apache.commons.lang3.time.FastDateParser.thisYear\", \"org.apache.commons.lang3.time.FastDateParser.timeZone\", \"org.apache.commons.lang3.time.FastDateParser.toString()\"]\n\n# Output Format\nReturn exactly one valid single-line JSON array of strings.\nEach string must be the fully qualified name of an impacted code entity.\nDo not include any additional text, formatting, or meta-information.\nDo not include seed changes in the output.\n\nExample output (four impacted code entities):\n[\"com.example.Foo.someMethod(java.lang.String, int)\", \"com.example.bar.attribute1\", \"com.example.bar.Class.NestedClass\", \"com.example.bar.Class.Class()\"]\n\nExample output (two impacted code entities):\n[\"com.example.package.ParentClass.ChildClass.field\", \"com.example.package.ParentClass.apply(long, com.example.package.ParentClass)\"]\n\nExample output (zero impacted code entities):\n[]"
+      }
+    ],
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096
+  },
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "[\"org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)\",\"org.apache.commons.lang3.time.FastDateParser.init(java.util.Calendar)\",\"org.apache.commons.lang3.time.FastDateParser.centuryStart\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1794905826,
+    "id": "02179490582561768a4d5226e4976fceebdcfa7e5c0e7224b59f5",
+    "model": "deepseek-v4.1-flash-1017",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 67,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 1408,
+      "prompt_cache_miss_tokens": 87,
+      "prompt_tokens": 1495,
+      "prompt_tokens_details": {
+        "cached_tokens": 1408
+      },
+      "total_tokens": 1562
+    }
+  },
+  "seconds": 1.2779269160000002,
+  "endpoint": "http://api.aicnic.cn/v1"
+}

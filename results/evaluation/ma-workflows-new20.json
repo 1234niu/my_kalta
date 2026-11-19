@@ -1,0 +1,1883 @@
+{
+  "cases": 20,
+  "static_arm": "combined_field_paths",
+  "repetitions": 3,
+  "summary": {
+    "old": {
+      "metrics": {
+        "FQN": {
+          "precision": 0.1505251203601123,
+          "recall": 0.5183928571428571,
+          "f1": 0.2091262855588935
+        },
+        "CE": {
+          "precision": 0.17626166558017314,
+          "recall": 0.5946428571428571,
+          "f1": 0.24159976953286022
+        }
+      },
+      "fqn_hits": 53,
+      "outputs": 518,
+      "static_hits_kept": 39,
+      "outside_static_hits": 14
+    },
+    "ma": {
+      "metrics": {
+        "FQN": {
+          "precision": 0.13509458514553008,
+          "recall": 0.48311507936507936,
+          "f1": 0.18773471232011604
+        },
+        "CE": {
+          "precision": 0.14877088282662554,
+          "recall": 0.49936507936507935,
+          "f1": 0.20359273708503625
+        }
+      },
+      "fqn_hits": 45,
+      "outputs": 496,
+      "static_hits_kept": 39,
+      "outside_static_hits": 6
+    },
+    "old_confirmed": {
+      "metrics": {
+        "FQN": {
+          "precision": 0.2,
+          "recall": 0.08630952380952381,
+          "f1": 0.10716153127917834
+        },
+        "CE": {
+          "precision": 0.2,
+          "recall": 0.08964285714285715,
+          "f1": 0.11206349206349206
+        }
+      },
+      "fqn_hits": 7,
+      "outputs": 29,
+      "static_hits_kept": 1,
+      "outside_static_hits": 4
+    },
+    "confirmed": {
+      "metrics": {
+        "FQN": {
+          "precision": 0.24166666666666667,
+          "recall": 0.18978174603174602,
+          "f1": 0.18024281274281273
+        },
+        "CE": {
+          "precision": 0.25416666666666665,
+          "recall": 0.20561507936507936,
+          "f1": 0.19856893106893106
+        }
+      },
+      "fqn_hits": 13,
+      "outputs": 40,
+      "static_hits_kept": 8,
+      "outside_static_hits": 4
+    }
+  },
+  "per_case": [
+    {
+      "id": "constantinople-040",
+      "scores": {
+        "old": {
+          "FQN": {
+            "precision": 0.11320754716981132,
+            "recall": 0.6666666666666666,
+            "f1": 0.1935483870967742
+          },
+          "CE": {
+            "precision": 0.17647058823529413,
+            "recall": 1.0,
+            "f1": 0.3
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.12962962962962962,
+            "recall": 0.7777777777777778,
+            "f1": 0.2222222222222222
+          },
+          "CE": {
+            "precision": 0.1320754716981132,
+            "recall": 0.7777777777777778,
+            "f1": 0.22580645161290322
+          }
+        },
+        "old_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 0.1111111111111111,
+            "f1": 0.15384615384615385
+          },
+          "CE": {
+            "precision": 0.25,
+            "recall": 0.1111111111111111,
+            "f1": 0.15384615384615385
+          }
+        }
+      },
+      "old_usage": [
+        {
+          "queries": 5,
+          "model_turns": 10,
+          "review_exhausted": [
+            "review"
+          ]
+        },
+        {
+          "queries": 18,
+          "model_turns": 13,
+          "review_exhausted": []
+        },
+        {
+          "queries": 10,
+          "model_turns": 10,
+          "review_exhausted": []
+        }
+      ],
+      "new_tools": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "new_turns": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "constantinople-064",
+      "scores": {
+        "old": {
+          "FQN": {
+            "precision": 0.16666666666666666,
+            "recall": 0.14285714285714285,
+            "f1": 0.15384615384615385
+          },
+          "CE": {
+            "precision": 0.2,
+            "recall": 0.14285714285714285,
+            "f1": 0.16666666666666666
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 0.14285714285714285,
+            "f1": 0.18181818181818182
+          },
+          "CE": {
+            "precision": 0.25,
+            "recall": 0.14285714285714285,
+            "f1": 0.18181818181818182
+          }
+        },
+        "old_confirmed": {
+          "FQN": {
+            "precision": 0.5,
+            "recall": 0.14285714285714285,
+            "f1": 0.2222222222222222
+          },
+          "CE": {
+            "precision": 0.5,
+            "recall": 0.14285714285714285,
+            "f1": 0.2222222222222222
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 0.14285714285714285,
+            "f1": 0.18181818181818182
+          },
+          "CE": {
+            "precision": 0.25,
+            "recall": 0.14285714285714285,
+            "f1": 0.18181818181818182
+          }
+        }
+      },
+      "old_usage": [
+        {
+          "queries": 11,
+          "model_turns": 11,
+          "review_exhausted": []
+        },
+        {
+          "queries": 8,
+          "model_turns": 9,
+          "review_exhausted": []
+        },
+        {
+          "queries": 8,
+          "model_turns": 10,
+          "review_exhausted": []
+        }
+      ],
+      "new_tools": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "new_turns": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "constantinople-068",
+      "scores": {
+        "old": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.16666666666666666,
+            "recall": 1.0,
+            "f1": 0.2857142857142857
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 1.0,
+            "f1": 0.4
+          },
+          "CE": {
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "f1": 0.5
+          }
+        },
+        "old_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          },
+          "CE": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          }
+        }
+      },
+      "old_usage": [
+        {
+          "queries": 16,
+          "model_turns": 13,
+          "review_exhausted": []
+        },
+        {
+          "queries": 13,
+          "model_turns": 13,
+          "review_exhausted": [
+            "review"
+          ]
+        },
+        {
+          "queries": 14,
+          "model_turns": 13,
+          "review_exhausted": []
+        }
+      ],
+      "new_tools": [
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "new_turns": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "constantinople-086",
+      "scores": {
+        "old": {
+          "FQN": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          },
+          "CE": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285714
+          },
+          "CE": {
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285714
+          }
+        },
+        "old_confirmed": {
+          "FQN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "CE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          },
+          "CE": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          }
+        }
+      },
+      "old_usage": [
+        {
+          "queries": 13,
+          "model_turns": 14,
+          "review_exhausted": [
+            "review-final"
+          ]
+        },
+        {
+          "queries": 16,
+          "model_turns": 14,
+          "review_exhausted": []
+        },
+        {
+          "queries": 14,
+          "model_turns": 14,
+          "review_exhausted": []
+        }
+      ],
+      "new_tools": [
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "new_turns": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "constantinople-095",
+      "scores": {
+        "old": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "old_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "old_usage": [
+        {
+          "queries": 10,
+          "model_turns": 11,
+          "review_exhausted": []
+        },
+        {
+          "queries": 12,
+          "model_turns": 12,
+          "review_exhausted": []
+        },
+        {
+          "queries": 13,
+          "model_turns": 12,
+          "review_exhausted": []
+        }
+      ],
+      "new_tools": [
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "new_turns": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "constantinople-128",
+      "scores": {
+        "old": {
+          "FQN": {
+            "precision": 0.13636363636363635,
+            "recall": 0.3,
+            "f1": 0.1875
+          },
+          "CE": {
+            "precision": 0.13636363636363635,
+            "recall": 0.3,
+            "f1": 0.1875
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.09090909090909091,
+            "recall": 0.2,
+            "f1": 0.125
+          },
+          "CE": {
+            "precision": 0.09523809523809523,
+            "recall": 0.2,
+            "f1": 0.12903225806451613
+          }
+        },
+        "old_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "old_usage": [
+        {
+          "queries": 7,
+          "model_turns": 9,
+          "review_exhausted": []
+        },
+        {
+          "queries": 13,
+          "model_turns": 13,
+          "review_exhausted": [
+            "review"
+          ]
+        },
+        {
+          "queries": 9,
+          "model_turns": 12,
+          "review_exhausted": []
+        }
+      ],
+      "new_tools": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "new_turns": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "constantinople-142",
+      "scores": {
+        "old": {
+          "FQN": {
+            "precision": 0.2222222222222222,
+            "recall": 1.0,
+            "f1": 0.36363636363636365
+          },
+          "CE": {
+            "precision": 0.2222222222222222,
+            "recall": 1.0,
+            "f1": 0.36363636363636365
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "f1": 0.3333333333333333
+          },
+          "CE": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "f1": 0.3333333333333333
+          }
+        },
+        "old_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.3333333333333333,
+            "recall": 0.5,
+            "f1": 0.5
+          },
+          "CE": {
+            "precision": 0.3333333333333333,
+            "recall": 0.5,
+            "f1": 0.5
+          }
+        }
+      },
+      "old_usage": [
+        {
+          "queries": 13,
+          "model_turns": 12,
+          "review_exhausted": []
+        },
+        {
+          "queries": 13,
+          "model_turns": 12,
+          "review_exhausted": []
+        },
+        {
+          "queries": 13,
+          "model_turns": 13,
+          "review_exhausted": []
+        }
+      ],
+      "new_tools": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "new_turns": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "constantinople-148",
+      "scores": {
+        "old": {
+          "FQN": {
+            "precision": 0.07142857142857142,
+            "recall": 0.6666666666666666,
+            "f1": 0.12903225806451613
+          },
+          "CE": {
+            "precision": 0.04,
+            "recall": 0.5,
+            "f1": 0.07407407407407407
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.09090909090909091,
+            "recall": 0.6666666666666666,
+            "f1": 0.16
+          },
+          "CE": {
+            "precision": 0.05263157894736842,
+            "recall": 0.5,
+            "f1": 0.09523809523809523
+          }
+        },
+        "old_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "old_usage": [
+        {
+          "queries": 15,
+          "model_turns": 12,
+          "review_exhausted": []
+        },
+        {
+          "queries": 15,
+          "model_turns": 12,
+          "review_exhausted": []
+        },
+        {
+          "queries": 15,
+          "model_turns": 14,
+          "review_exhausted": [
+            "review-final"
+          ]
+        }
+      ],
+      "new_tools": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "new_turns": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "constantinople-160",
+      "scores": {
+        "old": {
+          "FQN": {
+            "precision": 0.3333333333333333,
+            "recall": 0.5,
+            "f1": 0.4
+          },
+          "CE": {
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 0.25,
+            "f1": 0.25
+          },
+          "CE": {
+            "precision": 0.3333333333333333,
+            "recall": 0.25,
+            "f1": 0.2857142857142857
+          }
+        },
+        "old_confirmed": {
+          "FQN": {
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4
+          },
+          "CE": {
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "old_usage": [
+        {
+          "queries": 15,
+          "model_turns": 14,
+          "review_exhausted": [
+            "review-final"
+          ]
+        },
+        {
+          "queries": 13,
+          "model_turns": 12,
+          "review_exhausted": []
+        },
+        {
+          "queries": 11,
+          "model_turns": 11,
+          "review_exhausted": []
+        }
+      ],
+      "new_tools": [
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "new_turns": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "constantinople-218",
+      "scores": {
+        "old": {
+          "FQN": {
+            "precision": 0.033707865168539325,
+            "recall": 1.0,
+            "f1": 0.06521739130434782
+          },
+          "CE": {
+            "precision": 0.034482758620689655,
+            "recall": 1.0,
+            "f1": 0.06666666666666667
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.011494252873563218,
+            "recall": 0.3333333333333333,
+            "f1": 0.022222222222222223
+          },
+          "CE": {
+            "precision": 0.011627906976744186,
+            "recall": 0.3333333333333333,
+            "f1": 0.02247191011235955
+          }
+        },
+        "old_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "old_usage": [
+        {
+          "queries": 13,
+          "model_turns": 13,
+          "review_exhausted": [
+            "review"
+          ]
+        },
+        {
+          "queries": 13,
+          "model_turns": 12,
+          "review_exhausted": []
+        },
+        {
+          "queries": 18,
+          "model_turns": 16,
+          "review_exhausted": [
+            "review-final"
+          ]
+        }
+      ],
+      "new_tools": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "new_turns": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "constantinople-058",
+      "scores": {
+        "old": {
+          "FQN": {
+            "precision": 0.1111111111111111,
+            "recall": 1.0,
+            "f1": 0.2
+          },
+          "CE": {
+            "precision": 0.18181818181818182,
+            "recall": 1.0,
+            "f1": 0.3076923076923077
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.09523809523809523,
+            "recall": 1.0,
+            "f1": 0.17391304347826086
+          },
+          "CE": {
+            "precision": 0.14285714285714285,
+            "recall": 1.0,
+            "f1": 0.25
+          }
+        },
+        "old_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "old_usage": [
+        {
+          "queries": 10,
+          "model_turns": 10,
+          "review_exhausted": []
+        },
+        {
+          "queries": 7,
+          "model_turns": 9,
+          "review_exhausted": []
+        },
+        {
+          "queries": 7,
+          "model_turns": 9,
+          "review_exhausted": []
+        }
+      ],
+      "new_tools": [
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "new_turns": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "constantinople-065",
+      "scores": {
+        "old": {
+          "FQN": {
+            "precision": 0.17647058823529413,
+            "recall": 0.75,
+            "f1": 0.2857142857142857
+          },
+          "CE": {
+            "precision": 0.1935483870967742,
+            "recall": 0.75,
+            "f1": 0.3076923076923077
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.1875,
+            "recall": 0.75,
+            "f1": 0.3
+          },
+          "CE": {
+            "precision": 0.20689655172413793,
+            "recall": 0.75,
+            "f1": 0.32432432432432434
+          }
+        },
+        "old_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 1.0,
+            "recall": 0.125,
+            "f1": 0.2222222222222222
+          },
+          "CE": {
+            "precision": 1.0,
+            "recall": 0.125,
+            "f1": 0.2222222222222222
+          }
+        }
+      },
+      "old_usage": [
+        {
+          "queries": 15,
+          "model_turns": 13,
+          "review_exhausted": []
+        },
+        {
+          "queries": 15,
+          "model_turns": 13,
+          "review_exhausted": []
+        },
+        {
+          "queries": 15,
+          "model_turns": 15,
+          "review_exhausted": [
+            "review-final"
+          ]
+        }
+      ],
+      "new_tools": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "new_turns": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "constantinople-079",
+      "scores": {
+        "old": {
+          "FQN": {
+            "precision": 0.024390243902439025,
+            "recall": 0.16666666666666666,
+            "f1": 0.0425531914893617
+          },
+          "CE": {
+            "precision": 0.04878048780487805,
+            "recall": 0.3333333333333333,
+            "f1": 0.0851063829787234
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.025,
+            "recall": 0.16666666666666666,
+            "f1": 0.043478260869565216
+          }
+        },
+        "old_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "old_usage": [
+        {
+          "queries": 15,
+          "model_turns": 13,
+          "review_exhausted": []
+        },
+        {
+          "queries": 15,
+          "model_turns": 13,
+          "review_exhausted": []
+        },
+        {
+          "queries": 15,
+          "model_turns": 13,
+          "review_exhausted": []
+        }
+      ],
+      "new_tools": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "new_turns": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "constantinople-112",
+      "scores": {
+        "old": {
+          "FQN": {
+            "precision": 0.07692307692307693,
+            "recall": 0.3333333333333333,
+            "f1": 0.125
+          },
+          "CE": {
+            "precision": 0.11538461538461539,
+            "recall": 0.5,
+            "f1": 0.1875
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.041666666666666664,
+            "recall": 0.16666666666666666,
+            "f1": 0.06666666666666667
+          }
+        },
+        "old_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.25,
+            "recall": 0.16666666666666666,
+            "f1": 0.2
+          }
+        }
+      },
+      "old_usage": [
+        {
+          "queries": 14,
+          "model_turns": 12,
+          "review_exhausted": []
+        },
+        {
+          "queries": 11,
+          "model_turns": 11,
+          "review_exhausted": []
+        },
+        {
+          "queries": 11,
+          "model_turns": 12,
+          "review_exhausted": [
+            "review"
+          ]
+        }
+      ],
+      "new_tools": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "new_turns": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "constantinople-101",
+      "scores": {
+        "old": {
+          "FQN": {
+            "precision": 0.4,
+            "recall": 0.5,
+            "f1": 0.4444444444444444
+          },
+          "CE": {
+            "precision": 0.4,
+            "recall": 0.5,
+            "f1": 0.4444444444444444
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "old_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "old_usage": [
+        {
+          "queries": 10,
+          "model_turns": 11,
+          "review_exhausted": []
+        },
+        {
+          "queries": 15,
+          "model_turns": 13,
+          "review_exhausted": []
+        },
+        {
+          "queries": 13,
+          "model_turns": 12,
+          "review_exhausted": []
+        }
+      ],
+      "new_tools": [
+        [
+          6,
+          5
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "new_turns": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "constantinople-132",
+      "scores": {
+        "old": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "old_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "old_usage": [
+        {
+          "queries": 16,
+          "model_turns": 13,
+          "review_exhausted": []
+        },
+        {
+          "queries": 13,
+          "model_turns": 12,
+          "review_exhausted": []
+        },
+        {
+          "queries": 12,
+          "model_turns": 12,
+          "review_exhausted": []
+        }
+      ],
+      "new_tools": [
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "new_turns": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "constantinople-156",
+      "scores": {
+        "old": {
+          "FQN": {
+            "precision": 0.044444444444444446,
+            "recall": 0.6666666666666666,
+            "f1": 0.08333333333333333
+          },
+          "CE": {
+            "precision": 0.05128205128205128,
+            "recall": 0.6666666666666666,
+            "f1": 0.09523809523809523
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.06521739130434782,
+            "recall": 1.0,
+            "f1": 0.12244897959183673
+          },
+          "CE": {
+            "precision": 0.075,
+            "recall": 1.0,
+            "f1": 0.13953488372093023
+          }
+        },
+        "old_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.5,
+            "recall": 0.3333333333333333,
+            "f1": 0.4
+          },
+          "CE": {
+            "precision": 0.5,
+            "recall": 0.3333333333333333,
+            "f1": 0.4
+          }
+        }
+      },
+      "old_usage": [
+        {
+          "queries": 13,
+          "model_turns": 11,
+          "review_exhausted": []
+        },
+        {
+          "queries": 10,
+          "model_turns": 10,
+          "review_exhausted": []
+        },
+        {
+          "queries": 13,
+          "model_turns": 12,
+          "review_exhausted": []
+        }
+      ],
+      "new_tools": [
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "new_turns": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "constantinople-262",
+      "scores": {
+        "old": {
+          "FQN": {
+            "precision": 0.3181818181818182,
+            "recall": 0.875,
+            "f1": 0.4666666666666667
+          },
+          "CE": {
+            "precision": 0.3157894736842105,
+            "recall": 1.0,
+            "f1": 0.48
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.3888888888888889,
+            "recall": 0.875,
+            "f1": 0.5384615384615384
+          },
+          "CE": {
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285714
+          }
+        },
+        "old_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.6666666666666666,
+            "recall": 0.25,
+            "f1": 0.36363636363636365
+          },
+          "CE": {
+            "precision": 0.6666666666666666,
+            "recall": 0.3333333333333333,
+            "f1": 0.4444444444444444
+          }
+        }
+      },
+      "old_usage": [
+        {
+          "queries": 18,
+          "model_turns": 14,
+          "review_exhausted": []
+        },
+        {
+          "queries": 15,
+          "model_turns": 13,
+          "review_exhausted": []
+        },
+        {
+          "queries": 15,
+          "model_turns": 13,
+          "review_exhausted": []
+        }
+      ],
+      "new_tools": [
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "new_turns": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "constantinople-206",
+      "scores": {
+        "old": {
+          "FQN": {
+            "precision": 0.16666666666666666,
+            "recall": 0.2,
+            "f1": 0.18181818181818182
+          },
+          "CE": {
+            "precision": 0.16666666666666666,
+            "recall": 0.2,
+            "f1": 0.18181818181818182
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.2,
+            "recall": 0.2,
+            "f1": 0.2
+          },
+          "CE": {
+            "precision": 0.2,
+            "recall": 0.2,
+            "f1": 0.2
+          }
+        },
+        "old_confirmed": {
+          "FQN": {
+            "precision": 0.5,
+            "recall": 0.2,
+            "f1": 0.2857142857142857
+          },
+          "CE": {
+            "precision": 0.5,
+            "recall": 0.2,
+            "f1": 0.2857142857142857
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.3333333333333333,
+            "recall": 0.2,
+            "f1": 0.25
+          },
+          "CE": {
+            "precision": 0.3333333333333333,
+            "recall": 0.2,
+            "f1": 0.25
+          }
+        }
+      },
+      "old_usage": [
+        {
+          "queries": 13,
+          "model_turns": 12,
+          "review_exhausted": []
+        },
+        {
+          "queries": 16,
+          "model_turns": 14,
+          "review_exhausted": [
+            "review-final"
+          ]
+        },
+        {
+          "queries": 13,
+          "model_turns": 12,
+          "review_exhausted": []
+        }
+      ],
+      "new_tools": [
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "new_turns": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "constantinople-090",
+      "scores": {
+        "old": {
+          "FQN": {
+            "precision": 0.11538461538461539,
+            "recall": 0.6,
+            "f1": 0.1935483870967742
+          },
+          "CE": {
+            "precision": 0.07575757575757576,
+            "recall": 0.5,
+            "f1": 0.13157894736842105
+          }
+        },
+        "ma": {
+          "FQN": {
+            "precision": 0.09210526315789473,
+            "recall": 0.4666666666666667,
+            "f1": 0.15384615384615385
+          },
+          "CE": {
+            "precision": 0.07575757575757576,
+            "recall": 0.5,
+            "f1": 0.13157894736842105
+          }
+        },
+        "old_confirmed": {
+          "FQN": {
+            "precision": 1.0,
+            "recall": 0.13333333333333333,
+            "f1": 0.23529411764705882
+          },
+          "CE": {
+            "precision": 1.0,
+            "recall": 0.2,
+            "f1": 0.3333333333333333
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.5,
+            "recall": 0.13333333333333333,
+            "f1": 0.2
+          },
+          "CE": {
+            "precision": 0.5,
+            "recall": 0.2,
+            "f1": 0.2857142857142857
+          }
+        }
+      },
+      "old_usage": [
+        {
+          "queries": 10,
+          "model_turns": 10,
+          "review_exhausted": []
+        },
+        {
+          "queries": 13,
+          "model_turns": 12,
+          "review_exhausted": []
+        },
+        {
+          "queries": 15,
+          "model_turns": 13,
+          "review_exhausted": []
+        }
+      ],
+      "new_tools": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "new_turns": [
+        4,
+        4,
+        4
+      ]
+    }
+  ]
+}

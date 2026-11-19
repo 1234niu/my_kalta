@@ -1,0 +1,1 @@
+{"org.apache.giraph.comm.netty.NettyMasterClient.closeConnections()":["IS_CALLED_BY"],"org.apache.giraph.comm.netty.NettyWorkerClient.closeConnections()":["IS_CALLED_BY"],"org.apache.giraph.comm.netty.ChannelRotater.size()":["CALLS"],"org.apache.giraph.comm.netty.ChannelRotater.closeChannels(io.netty.channel.ChannelFutureListener)":["CALLS"]}

@@ -1,0 +1,181 @@
+{
+  "id": "constantinople-000",
+  "graph_edges": 28379,
+  "seeds": {
+    "org.apache.commons.math3.optimization.univariate.BrentOptimizer.best(org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair,org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair,boolean)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize()",
+      "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.getValue()"
+    ],
+    "fields": [
+      "org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize()",
+      "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.getValue()"
+    ],
+    "multihop": [
+      "org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize()",
+      "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.getValue()"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize()",
+      "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.getValue()"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize()",
+      "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.getValue()"
+    ],
+    "mixed_field_paths": [
+      "org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize()",
+      "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.getValue()",
+      "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.value"
+    ],
+    "seed_field_accesses": [
+      "org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize()",
+      "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.getValue()"
+    ],
+    "combined_field_paths": [
+      "org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize()",
+      "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.getValue()",
+      "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.value"
+    ]
+  },
+  "evidence": {
+    "fields": {},
+    "multihop": {},
+    "two_hop_calls": {},
+    "mixed_field_paths": {
+      "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.value": [
+        {
+          "from": "org.apache.commons.math3.optimization.univariate.BrentOptimizer.best(org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair,org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair,boolean)",
+          "to": "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.getValue()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java",
+          "line": 294
+        },
+        {
+          "from": "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.getValue()",
+          "to": "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.value",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/math3/optimization/univariate/UnivariatePointValuePair.java",
+          "line": 65
+        }
+      ]
+    },
+    "seed_field_accesses": {},
+    "combined_field_paths": {
+      "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.value": [
+        {
+          "from": "org.apache.commons.math3.optimization.univariate.BrentOptimizer.best(org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair,org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair,boolean)",
+          "to": "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.getValue()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java",
+          "line": 294
+        },
+        {
+          "from": "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.getValue()",
+          "to": "org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.value",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/math3/optimization/univariate/UnivariatePointValuePair.java",
+          "line": 65
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 2975,
+      "ma_analysis": 2557,
+      "ma_refinement_fixed": 2259
+    },
+    "two_hop_calls": {
+      "sp": 2975,
+      "ma_analysis": 2557,
+      "ma_refinement_fixed": 2259
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [],
+  "indexed_targets": [
+    "org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize()"
+  ],
+  "unindexed_targets": [],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 2,
+      "hits": [
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize()"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "fields": {
+      "candidate_count": 2,
+      "hits": [
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize()"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "multihop": {
+      "candidate_count": 2,
+      "hits": [
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize()"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 2,
+      "hits": [
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize()"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "diff_and_override": {
+      "candidate_count": 2,
+      "hits": [
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize()"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "mixed_field_paths": {
+      "candidate_count": 3,
+      "hits": [
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize()"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "seed_field_accesses": {
+      "candidate_count": 2,
+      "hits": [
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize()"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "combined_field_paths": {
+      "candidate_count": 3,
+      "hits": [
+        "org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize()"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    }
+  }
+}

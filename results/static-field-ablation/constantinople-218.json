@@ -1,0 +1,1949 @@
+{
+  "id": "constantinople-218",
+  "graph_edges": 14454,
+  "seeds": {
+    "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.bcel.generic.FieldGenOrMethodGen.getConstantPool()",
+      "org.apache.bcel.generic.FieldInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.InstructionHandle.getInstruction()",
+      "org.apache.bcel.generic.InstructionHandle.getNext()",
+      "org.apache.bcel.generic.InstructionHandle.getPrev()",
+      "org.apache.bcel.generic.InvokeInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.JsrInstruction.physicalSuccessor()",
+      "org.apache.bcel.generic.LocalVariableInstruction.getIndex()",
+      "org.apache.bcel.generic.MethodGen.getReturnType()",
+      "org.apache.bcel.generic.RET.getIndex()",
+      "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+      "org.apache.bcel.generic.ReturnaddressType.getTarget()",
+      "org.apache.bcel.generic.Type.equals(java.lang.Object)",
+      "org.apache.bcel.verifier.PassVerifier.addMessage(java.lang.String)",
+      "org.apache.bcel.verifier.exc.AssertionViolatedException.AssertionViolatedException(java.lang.String)",
+      "org.apache.bcel.verifier.exc.StructuralCodeConstraintException.StructuralCodeConstraintException(java.lang.String)",
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.contextOf(org.apache.bcel.generic.InstructionHandle)",
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.isDead(org.apache.bcel.generic.InstructionHandle)",
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.getExceptionType()",
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.getHandlerStart()",
+      "org.apache.bcel.verifier.structurals.Frame.Frame(org.apache.bcel.verifier.structurals.LocalVariables,org.apache.bcel.verifier.structurals.OperandStack)",
+      "org.apache.bcel.verifier.structurals.Frame.getLocals()",
+      "org.apache.bcel.verifier.structurals.Frame.getStack()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.execute(org.apache.bcel.verifier.structurals.Frame,java.util.ArrayList,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getExceptionHandlers()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getInstruction()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getOutFrame(java.util.ArrayList)",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getSuccessors()",
+      "org.apache.bcel.verifier.structurals.LocalVariables.get(int)",
+      "org.apache.bcel.verifier.structurals.LocalVariables.maxLocals()",
+      "org.apache.bcel.verifier.structurals.OperandStack.OperandStack(int,org.apache.bcel.generic.ObjectType)",
+      "org.apache.bcel.verifier.structurals.OperandStack.maxStack()",
+      "org.apache.bcel.verifier.structurals.OperandStack.peek(int)",
+      "org.apache.bcel.verifier.structurals.OperandStack.size()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.InstructionContextQueue()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.add(org.apache.bcel.verifier.structurals.InstructionContext,java.util.ArrayList)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.getEC(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.getIC(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.isEmpty()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.remove(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.size()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.do_verify()"
+    ],
+    "fields": [
+      "org.apache.bcel.generic.FieldGenOrMethodGen.getConstantPool()",
+      "org.apache.bcel.generic.FieldInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.InstructionHandle.getInstruction()",
+      "org.apache.bcel.generic.InstructionHandle.getNext()",
+      "org.apache.bcel.generic.InstructionHandle.getPrev()",
+      "org.apache.bcel.generic.InvokeInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.JsrInstruction.physicalSuccessor()",
+      "org.apache.bcel.generic.LocalVariableInstruction.getIndex()",
+      "org.apache.bcel.generic.MethodGen.getReturnType()",
+      "org.apache.bcel.generic.RET.getIndex()",
+      "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+      "org.apache.bcel.generic.ReturnaddressType.getTarget()",
+      "org.apache.bcel.generic.Type.THROWABLE",
+      "org.apache.bcel.generic.Type.equals(java.lang.Object)",
+      "org.apache.bcel.verifier.PassVerifier.addMessage(java.lang.String)",
+      "org.apache.bcel.verifier.exc.AssertionViolatedException.AssertionViolatedException(java.lang.String)",
+      "org.apache.bcel.verifier.exc.StructuralCodeConstraintException.StructuralCodeConstraintException(java.lang.String)",
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.contextOf(org.apache.bcel.generic.InstructionHandle)",
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.isDead(org.apache.bcel.generic.InstructionHandle)",
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.getExceptionType()",
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.getHandlerStart()",
+      "org.apache.bcel.verifier.structurals.Frame.Frame(org.apache.bcel.verifier.structurals.LocalVariables,org.apache.bcel.verifier.structurals.OperandStack)",
+      "org.apache.bcel.verifier.structurals.Frame.getLocals()",
+      "org.apache.bcel.verifier.structurals.Frame.getStack()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.execute(org.apache.bcel.verifier.structurals.Frame,java.util.ArrayList,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getExceptionHandlers()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getInstruction()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getOutFrame(java.util.ArrayList)",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getSuccessors()",
+      "org.apache.bcel.verifier.structurals.LocalVariables.get(int)",
+      "org.apache.bcel.verifier.structurals.LocalVariables.maxLocals()",
+      "org.apache.bcel.verifier.structurals.OperandStack.OperandStack(int,org.apache.bcel.generic.ObjectType)",
+      "org.apache.bcel.verifier.structurals.OperandStack.maxStack()",
+      "org.apache.bcel.verifier.structurals.OperandStack.peek(int)",
+      "org.apache.bcel.verifier.structurals.OperandStack.size()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.DEBUG",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.InstructionContextQueue()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.add(org.apache.bcel.verifier.structurals.InstructionContext,java.util.ArrayList)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.getEC(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.getIC(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.isEmpty()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.remove(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.size()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.do_verify()"
+    ],
+    "multihop": [
+      "org.apache.bcel.generic.FieldGenOrMethodGen.getConstantPool()",
+      "org.apache.bcel.generic.FieldInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.InstructionHandle.getInstruction()",
+      "org.apache.bcel.generic.InstructionHandle.getNext()",
+      "org.apache.bcel.generic.InstructionHandle.getPrev()",
+      "org.apache.bcel.generic.InvokeInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.JsrInstruction.physicalSuccessor()",
+      "org.apache.bcel.generic.LocalVariableInstruction.getIndex()",
+      "org.apache.bcel.generic.MethodGen.getReturnType()",
+      "org.apache.bcel.generic.RET.getIndex()",
+      "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+      "org.apache.bcel.generic.ReturnaddressType.getTarget()",
+      "org.apache.bcel.generic.Type.THROWABLE",
+      "org.apache.bcel.generic.Type.equals(java.lang.Object)",
+      "org.apache.bcel.verifier.PassVerifier.addMessage(java.lang.String)",
+      "org.apache.bcel.verifier.PassVerifier.messages",
+      "org.apache.bcel.verifier.exc.AssertionViolatedException.AssertionViolatedException(java.lang.String)",
+      "org.apache.bcel.verifier.exc.StructuralCodeConstraintException.StructuralCodeConstraintException(java.lang.String)",
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.contextOf(org.apache.bcel.generic.InstructionHandle)",
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.isDead(org.apache.bcel.generic.InstructionHandle)",
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.getExceptionType()",
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.getHandlerStart()",
+      "org.apache.bcel.verifier.structurals.Frame.Frame(org.apache.bcel.verifier.structurals.LocalVariables,org.apache.bcel.verifier.structurals.OperandStack)",
+      "org.apache.bcel.verifier.structurals.Frame.getLocals()",
+      "org.apache.bcel.verifier.structurals.Frame.getStack()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.execute(org.apache.bcel.verifier.structurals.Frame,java.util.ArrayList,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getExceptionHandlers()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getInstruction()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getOutFrame(java.util.ArrayList)",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getSuccessors()",
+      "org.apache.bcel.verifier.structurals.LocalVariables.get(int)",
+      "org.apache.bcel.verifier.structurals.LocalVariables.maxLocals()",
+      "org.apache.bcel.verifier.structurals.OperandStack.OperandStack(int,org.apache.bcel.generic.ObjectType)",
+      "org.apache.bcel.verifier.structurals.OperandStack.maxStack()",
+      "org.apache.bcel.verifier.structurals.OperandStack.peek(int)",
+      "org.apache.bcel.verifier.structurals.OperandStack.size()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.DEBUG",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.InstructionContextQueue()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.add(org.apache.bcel.verifier.structurals.InstructionContext,java.util.ArrayList)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.getEC(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.getIC(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.isEmpty()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.remove(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.size()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.do_verify()"
+    ],
+    "two_hop_calls": [
+      "org.apache.bcel.Repository.implementationOf(java.lang.String,java.lang.String)",
+      "org.apache.bcel.Repository.instanceOf(java.lang.String,java.lang.String)",
+      "org.apache.bcel.generic.ArrayType.getElementType()",
+      "org.apache.bcel.generic.FieldGenOrMethodGen.getConstantPool()",
+      "org.apache.bcel.generic.FieldGenOrMethodGen.getType()",
+      "org.apache.bcel.generic.FieldInstruction.getFieldType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.FieldInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.InstructionHandle.getInstruction()",
+      "org.apache.bcel.generic.InstructionHandle.getNext()",
+      "org.apache.bcel.generic.InstructionHandle.getPrev()",
+      "org.apache.bcel.generic.InvokeInstruction.getReturnType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.InvokeInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.JsrInstruction.physicalSuccessor()",
+      "org.apache.bcel.generic.LocalVariableInstruction.getIndex()",
+      "org.apache.bcel.generic.MethodGen.getReturnType()",
+      "org.apache.bcel.generic.ObjectType.getClassName()",
+      "org.apache.bcel.generic.ObjectType.getInstance(java.lang.String)",
+      "org.apache.bcel.generic.ObjectType.referencesClassExact()",
+      "org.apache.bcel.generic.ObjectType.referencesInterfaceExact()",
+      "org.apache.bcel.generic.RET.getIndex()",
+      "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+      "org.apache.bcel.generic.ReturnaddressType.getTarget()",
+      "org.apache.bcel.generic.Type.THROWABLE",
+      "org.apache.bcel.generic.Type.equals(java.lang.Object)",
+      "org.apache.bcel.verifier.PassVerifier.addMessage(java.lang.String)",
+      "org.apache.bcel.verifier.PassVerifier.messages",
+      "org.apache.bcel.verifier.exc.AssertionViolatedException.AssertionViolatedException(java.lang.String)",
+      "org.apache.bcel.verifier.exc.CodeConstraintException.CodeConstraintException(java.lang.String)",
+      "org.apache.bcel.verifier.exc.StructuralCodeConstraintException.StructuralCodeConstraintException(java.lang.String)",
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.contextOf(org.apache.bcel.generic.InstructionHandle)",
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.isDead(org.apache.bcel.generic.InstructionHandle)",
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.getExceptionType()",
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.getHandlerStart()",
+      "org.apache.bcel.verifier.structurals.Frame.Frame(org.apache.bcel.verifier.structurals.LocalVariables,org.apache.bcel.verifier.structurals.OperandStack)",
+      "org.apache.bcel.verifier.structurals.Frame.getLocals()",
+      "org.apache.bcel.verifier.structurals.Frame.getStack()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.execute(org.apache.bcel.verifier.structurals.Frame,java.util.ArrayList,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getExceptionHandlers()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getInstruction()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getOutFrame(java.util.ArrayList)",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getSuccessors()",
+      "org.apache.bcel.verifier.structurals.LocalVariables.get(int)",
+      "org.apache.bcel.verifier.structurals.LocalVariables.maxLocals()",
+      "org.apache.bcel.verifier.structurals.OperandStack.OperandStack(int,org.apache.bcel.generic.ObjectType)",
+      "org.apache.bcel.verifier.structurals.OperandStack.maxStack()",
+      "org.apache.bcel.verifier.structurals.OperandStack.peek(int)",
+      "org.apache.bcel.verifier.structurals.OperandStack.push(org.apache.bcel.generic.Type)",
+      "org.apache.bcel.verifier.structurals.OperandStack.size()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.DEBUG",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.InstructionContextQueue()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.add(org.apache.bcel.verifier.structurals.InstructionContext,java.util.ArrayList)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.getEC(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.getIC(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.isEmpty()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.remove(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.size()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.do_verify()",
+      "org.apache.bcel.verifier.structurals.Subroutines.subroutineOf(org.apache.bcel.generic.InstructionHandle)"
+    ],
+    "diff_and_override": [
+      "org.apache.bcel.Repository.implementationOf(java.lang.String,java.lang.String)",
+      "org.apache.bcel.Repository.instanceOf(java.lang.String,java.lang.String)",
+      "org.apache.bcel.Repository.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)",
+      "org.apache.bcel.generic.ArrayType.getElementType()",
+      "org.apache.bcel.generic.FieldGenOrMethodGen.getConstantPool()",
+      "org.apache.bcel.generic.FieldGenOrMethodGen.getType()",
+      "org.apache.bcel.generic.FieldInstruction.getFieldType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.FieldInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.InstructionHandle.getInstruction()",
+      "org.apache.bcel.generic.InstructionHandle.getNext()",
+      "org.apache.bcel.generic.InstructionHandle.getPrev()",
+      "org.apache.bcel.generic.InvokeInstruction.getReturnType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.InvokeInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.JsrInstruction.physicalSuccessor()",
+      "org.apache.bcel.generic.LocalVariableInstruction.getIndex()",
+      "org.apache.bcel.generic.MethodGen.getReturnType()",
+      "org.apache.bcel.generic.ObjectType.getClassName()",
+      "org.apache.bcel.generic.ObjectType.getInstance(java.lang.String)",
+      "org.apache.bcel.generic.ObjectType.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)",
+      "org.apache.bcel.generic.ObjectType.referencesClassExact()",
+      "org.apache.bcel.generic.ObjectType.referencesInterfaceExact()",
+      "org.apache.bcel.generic.RET.getIndex()",
+      "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+      "org.apache.bcel.generic.ReturnaddressType.getTarget()",
+      "org.apache.bcel.generic.Type.THROWABLE",
+      "org.apache.bcel.generic.Type.equals(java.lang.Object)",
+      "org.apache.bcel.verifier.PassVerifier.addMessage(java.lang.String)",
+      "org.apache.bcel.verifier.PassVerifier.messages",
+      "org.apache.bcel.verifier.exc.AssertionViolatedException.AssertionViolatedException(java.lang.String)",
+      "org.apache.bcel.verifier.exc.CodeConstraintException.CodeConstraintException(java.lang.String)",
+      "org.apache.bcel.verifier.exc.StructuralCodeConstraintException.StructuralCodeConstraintException(java.lang.String)",
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.contextOf(org.apache.bcel.generic.InstructionHandle)",
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.isDead(org.apache.bcel.generic.InstructionHandle)",
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.getExceptionType()",
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.getHandlerStart()",
+      "org.apache.bcel.verifier.structurals.Frame.Frame(org.apache.bcel.verifier.structurals.LocalVariables,org.apache.bcel.verifier.structurals.OperandStack)",
+      "org.apache.bcel.verifier.structurals.Frame.getLocals()",
+      "org.apache.bcel.verifier.structurals.Frame.getStack()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.execute(org.apache.bcel.verifier.structurals.Frame,java.util.ArrayList,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getExceptionHandlers()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getInFrame()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getInstruction()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getOutFrame(java.util.ArrayList)",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getSuccessors()",
+      "org.apache.bcel.verifier.structurals.LocalVariables.get(int)",
+      "org.apache.bcel.verifier.structurals.LocalVariables.maxLocals()",
+      "org.apache.bcel.verifier.structurals.OperandStack.OperandStack(int,org.apache.bcel.generic.ObjectType)",
+      "org.apache.bcel.verifier.structurals.OperandStack.maxStack()",
+      "org.apache.bcel.verifier.structurals.OperandStack.peek(int)",
+      "org.apache.bcel.verifier.structurals.OperandStack.push(org.apache.bcel.generic.Type)",
+      "org.apache.bcel.verifier.structurals.OperandStack.size()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.DEBUG",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.InstructionContextQueue()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.add(org.apache.bcel.verifier.structurals.InstructionContext,java.util.ArrayList)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.getEC(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.getIC(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.isEmpty()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.remove(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.size()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.do_verify()",
+      "org.apache.bcel.verifier.structurals.Subroutines.subroutineOf(org.apache.bcel.generic.InstructionHandle)"
+    ],
+    "mixed_field_paths": [
+      "org.apache.bcel.Constants.INTERFACES_IMPLEMENTED_BY_ARRAYS",
+      "org.apache.bcel.Repository.implementationOf(java.lang.String,java.lang.String)",
+      "org.apache.bcel.Repository.instanceOf(java.lang.String,java.lang.String)",
+      "org.apache.bcel.Repository.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)",
+      "org.apache.bcel.generic.ArrayType.getElementType()",
+      "org.apache.bcel.generic.BranchInstruction.target",
+      "org.apache.bcel.generic.FieldGenOrMethodGen.cp",
+      "org.apache.bcel.generic.FieldGenOrMethodGen.getConstantPool()",
+      "org.apache.bcel.generic.FieldGenOrMethodGen.getType()",
+      "org.apache.bcel.generic.FieldInstruction.getFieldType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.FieldInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.InstructionHandle.getInstruction()",
+      "org.apache.bcel.generic.InstructionHandle.getNext()",
+      "org.apache.bcel.generic.InstructionHandle.getPrev()",
+      "org.apache.bcel.generic.InstructionHandle.instruction",
+      "org.apache.bcel.generic.InstructionHandle.next",
+      "org.apache.bcel.generic.InstructionHandle.prev",
+      "org.apache.bcel.generic.InvokeInstruction.getReturnType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.InvokeInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.JsrInstruction.physicalSuccessor()",
+      "org.apache.bcel.generic.LocalVariableInstruction.getIndex()",
+      "org.apache.bcel.generic.LocalVariableInstruction.n",
+      "org.apache.bcel.generic.MethodGen.getReturnType()",
+      "org.apache.bcel.generic.ObjectType.getClassName()",
+      "org.apache.bcel.generic.ObjectType.getInstance(java.lang.String)",
+      "org.apache.bcel.generic.ObjectType.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)",
+      "org.apache.bcel.generic.ObjectType.referencesClassExact()",
+      "org.apache.bcel.generic.ObjectType.referencesInterfaceExact()",
+      "org.apache.bcel.generic.RET.getIndex()",
+      "org.apache.bcel.generic.RET.index",
+      "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+      "org.apache.bcel.generic.ReturnaddressType.getTarget()",
+      "org.apache.bcel.generic.ReturnaddressType.returnTarget",
+      "org.apache.bcel.generic.Type.NULL",
+      "org.apache.bcel.generic.Type.OBJECT",
+      "org.apache.bcel.generic.Type.THROWABLE",
+      "org.apache.bcel.generic.Type.equals(java.lang.Object)",
+      "org.apache.bcel.generic.Type.signature",
+      "org.apache.bcel.generic.Type.type",
+      "org.apache.bcel.verifier.PassVerifier.addMessage(java.lang.String)",
+      "org.apache.bcel.verifier.PassVerifier.messages",
+      "org.apache.bcel.verifier.exc.AssertionViolatedException.AssertionViolatedException(java.lang.String)",
+      "org.apache.bcel.verifier.exc.CodeConstraintException.CodeConstraintException(java.lang.String)",
+      "org.apache.bcel.verifier.exc.StructuralCodeConstraintException.StructuralCodeConstraintException(java.lang.String)",
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.contextOf(org.apache.bcel.generic.InstructionHandle)",
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.instructionContexts",
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.isDead(org.apache.bcel.generic.InstructionHandle)",
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.subroutines",
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.catchtype",
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.getExceptionType()",
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.getHandlerStart()",
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.handlerpc",
+      "org.apache.bcel.verifier.structurals.Frame.Frame(org.apache.bcel.verifier.structurals.LocalVariables,org.apache.bcel.verifier.structurals.OperandStack)",
+      "org.apache.bcel.verifier.structurals.Frame.getLocals()",
+      "org.apache.bcel.verifier.structurals.Frame.getStack()",
+      "org.apache.bcel.verifier.structurals.Frame.locals",
+      "org.apache.bcel.verifier.structurals.Frame.stack",
+      "org.apache.bcel.verifier.structurals.InstructionContext.execute(org.apache.bcel.verifier.structurals.Frame,java.util.ArrayList,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getExceptionHandlers()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getInFrame()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getInstruction()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getOutFrame(java.util.ArrayList)",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getSuccessors()",
+      "org.apache.bcel.verifier.structurals.LocalVariables.get(int)",
+      "org.apache.bcel.verifier.structurals.LocalVariables.locals",
+      "org.apache.bcel.verifier.structurals.LocalVariables.maxLocals()",
+      "org.apache.bcel.verifier.structurals.OperandStack.OperandStack(int,org.apache.bcel.generic.ObjectType)",
+      "org.apache.bcel.verifier.structurals.OperandStack.maxStack",
+      "org.apache.bcel.verifier.structurals.OperandStack.maxStack()",
+      "org.apache.bcel.verifier.structurals.OperandStack.peek(int)",
+      "org.apache.bcel.verifier.structurals.OperandStack.push(org.apache.bcel.generic.Type)",
+      "org.apache.bcel.verifier.structurals.OperandStack.size()",
+      "org.apache.bcel.verifier.structurals.OperandStack.stack",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.DEBUG",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.InstructionContextQueue()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.add(org.apache.bcel.verifier.structurals.InstructionContext,java.util.ArrayList)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.ecs",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.getEC(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.getIC(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.ics",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.isEmpty()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.remove(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.size()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.do_verify()",
+      "org.apache.bcel.verifier.structurals.Subroutines.subroutineOf(org.apache.bcel.generic.InstructionHandle)"
+    ],
+    "seed_field_accesses": [
+      "org.apache.bcel.Repository.implementationOf(java.lang.String,java.lang.String)",
+      "org.apache.bcel.Repository.instanceOf(java.lang.String,java.lang.String)",
+      "org.apache.bcel.Repository.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)",
+      "org.apache.bcel.generic.ArrayType.getElementType()",
+      "org.apache.bcel.generic.FieldGenOrMethodGen.getConstantPool()",
+      "org.apache.bcel.generic.FieldGenOrMethodGen.getType()",
+      "org.apache.bcel.generic.FieldInstruction.getFieldType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.FieldInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.InstructionHandle.getInstruction()",
+      "org.apache.bcel.generic.InstructionHandle.getNext()",
+      "org.apache.bcel.generic.InstructionHandle.getPrev()",
+      "org.apache.bcel.generic.InvokeInstruction.getReturnType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.InvokeInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.JsrInstruction.physicalSuccessor()",
+      "org.apache.bcel.generic.LocalVariableInstruction.getIndex()",
+      "org.apache.bcel.generic.MethodGen.getReturnType()",
+      "org.apache.bcel.generic.ObjectType.getClassName()",
+      "org.apache.bcel.generic.ObjectType.getInstance(java.lang.String)",
+      "org.apache.bcel.generic.ObjectType.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)",
+      "org.apache.bcel.generic.ObjectType.referencesClassExact()",
+      "org.apache.bcel.generic.ObjectType.referencesInterfaceExact()",
+      "org.apache.bcel.generic.RET.getIndex()",
+      "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+      "org.apache.bcel.generic.ReturnaddressType.getTarget()",
+      "org.apache.bcel.generic.Type.THROWABLE",
+      "org.apache.bcel.generic.Type.equals(java.lang.Object)",
+      "org.apache.bcel.verifier.PassVerifier.addMessage(java.lang.String)",
+      "org.apache.bcel.verifier.PassVerifier.messages",
+      "org.apache.bcel.verifier.exc.AssertionViolatedException.AssertionViolatedException(java.lang.String)",
+      "org.apache.bcel.verifier.exc.CodeConstraintException.CodeConstraintException(java.lang.String)",
+      "org.apache.bcel.verifier.exc.StructuralCodeConstraintException.StructuralCodeConstraintException(java.lang.String)",
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.contextOf(org.apache.bcel.generic.InstructionHandle)",
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.isDead(org.apache.bcel.generic.InstructionHandle)",
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.getExceptionType()",
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.getHandlerStart()",
+      "org.apache.bcel.verifier.structurals.Frame.Frame(org.apache.bcel.verifier.structurals.LocalVariables,org.apache.bcel.verifier.structurals.OperandStack)",
+      "org.apache.bcel.verifier.structurals.Frame.getLocals()",
+      "org.apache.bcel.verifier.structurals.Frame.getStack()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.execute(org.apache.bcel.verifier.structurals.Frame,java.util.ArrayList,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getExceptionHandlers()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getInFrame()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getInstruction()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getOutFrame(java.util.ArrayList)",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getSuccessors()",
+      "org.apache.bcel.verifier.structurals.LocalVariables.get(int)",
+      "org.apache.bcel.verifier.structurals.LocalVariables.maxLocals()",
+      "org.apache.bcel.verifier.structurals.OperandStack.OperandStack(int,org.apache.bcel.generic.ObjectType)",
+      "org.apache.bcel.verifier.structurals.OperandStack.maxStack()",
+      "org.apache.bcel.verifier.structurals.OperandStack.peek(int)",
+      "org.apache.bcel.verifier.structurals.OperandStack.push(org.apache.bcel.generic.Type)",
+      "org.apache.bcel.verifier.structurals.OperandStack.size()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.DEBUG",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.InstructionContextQueue()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.add(org.apache.bcel.verifier.structurals.InstructionContext,java.util.ArrayList)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.getEC(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.getIC(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.isEmpty()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.remove(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.size()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.do_verify()",
+      "org.apache.bcel.verifier.structurals.Subroutines.subroutineOf(org.apache.bcel.generic.InstructionHandle)"
+    ],
+    "combined_field_paths": [
+      "org.apache.bcel.Constants.INTERFACES_IMPLEMENTED_BY_ARRAYS",
+      "org.apache.bcel.Repository.implementationOf(java.lang.String,java.lang.String)",
+      "org.apache.bcel.Repository.instanceOf(java.lang.String,java.lang.String)",
+      "org.apache.bcel.Repository.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)",
+      "org.apache.bcel.generic.ArrayType.getElementType()",
+      "org.apache.bcel.generic.BranchInstruction.target",
+      "org.apache.bcel.generic.FieldGenOrMethodGen.cp",
+      "org.apache.bcel.generic.FieldGenOrMethodGen.getConstantPool()",
+      "org.apache.bcel.generic.FieldGenOrMethodGen.getType()",
+      "org.apache.bcel.generic.FieldInstruction.getFieldType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.FieldInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.InstructionHandle.getInstruction()",
+      "org.apache.bcel.generic.InstructionHandle.getNext()",
+      "org.apache.bcel.generic.InstructionHandle.getPrev()",
+      "org.apache.bcel.generic.InstructionHandle.instruction",
+      "org.apache.bcel.generic.InstructionHandle.next",
+      "org.apache.bcel.generic.InstructionHandle.prev",
+      "org.apache.bcel.generic.InvokeInstruction.getReturnType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.InvokeInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+      "org.apache.bcel.generic.JsrInstruction.physicalSuccessor()",
+      "org.apache.bcel.generic.LocalVariableInstruction.getIndex()",
+      "org.apache.bcel.generic.LocalVariableInstruction.n",
+      "org.apache.bcel.generic.MethodGen.getReturnType()",
+      "org.apache.bcel.generic.ObjectType.getClassName()",
+      "org.apache.bcel.generic.ObjectType.getInstance(java.lang.String)",
+      "org.apache.bcel.generic.ObjectType.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)",
+      "org.apache.bcel.generic.ObjectType.referencesClassExact()",
+      "org.apache.bcel.generic.ObjectType.referencesInterfaceExact()",
+      "org.apache.bcel.generic.RET.getIndex()",
+      "org.apache.bcel.generic.RET.index",
+      "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+      "org.apache.bcel.generic.ReturnaddressType.getTarget()",
+      "org.apache.bcel.generic.ReturnaddressType.returnTarget",
+      "org.apache.bcel.generic.Type.NULL",
+      "org.apache.bcel.generic.Type.OBJECT",
+      "org.apache.bcel.generic.Type.THROWABLE",
+      "org.apache.bcel.generic.Type.equals(java.lang.Object)",
+      "org.apache.bcel.generic.Type.signature",
+      "org.apache.bcel.generic.Type.type",
+      "org.apache.bcel.verifier.PassVerifier.addMessage(java.lang.String)",
+      "org.apache.bcel.verifier.PassVerifier.messages",
+      "org.apache.bcel.verifier.exc.AssertionViolatedException.AssertionViolatedException(java.lang.String)",
+      "org.apache.bcel.verifier.exc.CodeConstraintException.CodeConstraintException(java.lang.String)",
+      "org.apache.bcel.verifier.exc.StructuralCodeConstraintException.StructuralCodeConstraintException(java.lang.String)",
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.contextOf(org.apache.bcel.generic.InstructionHandle)",
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.instructionContexts",
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.isDead(org.apache.bcel.generic.InstructionHandle)",
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.subroutines",
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.catchtype",
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.getExceptionType()",
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.getHandlerStart()",
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.handlerpc",
+      "org.apache.bcel.verifier.structurals.Frame.Frame(org.apache.bcel.verifier.structurals.LocalVariables,org.apache.bcel.verifier.structurals.OperandStack)",
+      "org.apache.bcel.verifier.structurals.Frame.getLocals()",
+      "org.apache.bcel.verifier.structurals.Frame.getStack()",
+      "org.apache.bcel.verifier.structurals.Frame.locals",
+      "org.apache.bcel.verifier.structurals.Frame.stack",
+      "org.apache.bcel.verifier.structurals.InstructionContext.execute(org.apache.bcel.verifier.structurals.Frame,java.util.ArrayList,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getExceptionHandlers()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getInFrame()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getInstruction()",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getOutFrame(java.util.ArrayList)",
+      "org.apache.bcel.verifier.structurals.InstructionContext.getSuccessors()",
+      "org.apache.bcel.verifier.structurals.LocalVariables.get(int)",
+      "org.apache.bcel.verifier.structurals.LocalVariables.locals",
+      "org.apache.bcel.verifier.structurals.LocalVariables.maxLocals()",
+      "org.apache.bcel.verifier.structurals.OperandStack.OperandStack(int,org.apache.bcel.generic.ObjectType)",
+      "org.apache.bcel.verifier.structurals.OperandStack.maxStack",
+      "org.apache.bcel.verifier.structurals.OperandStack.maxStack()",
+      "org.apache.bcel.verifier.structurals.OperandStack.peek(int)",
+      "org.apache.bcel.verifier.structurals.OperandStack.push(org.apache.bcel.generic.Type)",
+      "org.apache.bcel.verifier.structurals.OperandStack.size()",
+      "org.apache.bcel.verifier.structurals.OperandStack.stack",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.DEBUG",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.InstructionContextQueue()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.add(org.apache.bcel.verifier.structurals.InstructionContext,java.util.ArrayList)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.ecs",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.getEC(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.getIC(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.ics",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.isEmpty()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.remove(int)",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.size()",
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.do_verify()",
+      "org.apache.bcel.verifier.structurals.Subroutines.subroutineOf(org.apache.bcel.generic.InstructionHandle)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.DEBUG": {
+        "org.apache.bcel.verifier.structurals.Pass3bVerifier.DEBUG": [
+          {
+            "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+            "to": "org.apache.bcel.verifier.structurals.Pass3bVerifier.DEBUG",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+            "line": 144
+          }
+        ]
+      },
+      "org.apache.bcel.generic.Type.THROWABLE": {
+        "org.apache.bcel.generic.Type.THROWABLE": [
+          {
+            "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+            "to": "org.apache.bcel.generic.Type.THROWABLE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+            "line": 231
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.DEBUG": {
+        "org.apache.bcel.verifier.structurals.Pass3bVerifier.DEBUG": [
+          {
+            "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+            "to": "org.apache.bcel.verifier.structurals.Pass3bVerifier.DEBUG",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+            "line": 144
+          }
+        ]
+      },
+      "org.apache.bcel.generic.Type.THROWABLE": {
+        "org.apache.bcel.generic.Type.THROWABLE": [
+          {
+            "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+            "to": "org.apache.bcel.generic.Type.THROWABLE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+            "line": 231
+          }
+        ]
+      },
+      "org.apache.bcel.verifier.PassVerifier.messages": {
+        "org.apache.bcel.verifier.PassVerifier.messages": [
+          {
+            "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+            "to": "org.apache.bcel.verifier.PassVerifier.addMessage(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+            "line": 246
+          },
+          {
+            "from": "org.apache.bcel.verifier.PassVerifier.addMessage(java.lang.String)",
+            "to": "org.apache.bcel.verifier.PassVerifier.messages",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/bcel/verifier/PassVerifier.java",
+            "line": 91
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.bcel.verifier.exc.AssertionViolatedException.AssertionViolatedException(java.lang.String)": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.ControlFlowGraph.contextOf(org.apache.bcel.generic.InstructionHandle)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 168
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.ControlFlowGraph.contextOf(org.apache.bcel.generic.InstructionHandle)",
+          "to": "org.apache.bcel.verifier.exc.AssertionViolatedException.AssertionViolatedException(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/ControlFlowGraph.java",
+          "line": 421
+        }
+      ],
+      "org.apache.bcel.generic.InstructionHandle.getPrev()": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.JsrInstruction.physicalSuccessor()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 193
+        },
+        {
+          "from": "org.apache.bcel.generic.JsrInstruction.physicalSuccessor()",
+          "to": "org.apache.bcel.generic.InstructionHandle.getPrev()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/generic/JsrInstruction.java",
+          "line": 66
+        }
+      ],
+      "org.apache.bcel.generic.InstructionHandle.getInstruction()": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.JsrInstruction.physicalSuccessor()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 193
+        },
+        {
+          "from": "org.apache.bcel.generic.JsrInstruction.physicalSuccessor()",
+          "to": "org.apache.bcel.generic.InstructionHandle.getInstruction()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/generic/JsrInstruction.java",
+          "line": 70
+        }
+      ],
+      "org.apache.bcel.generic.InstructionHandle.getNext()": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.JsrInstruction.physicalSuccessor()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 193
+        },
+        {
+          "from": "org.apache.bcel.generic.JsrInstruction.physicalSuccessor()",
+          "to": "org.apache.bcel.generic.InstructionHandle.getNext()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/generic/JsrInstruction.java",
+          "line": 71
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.OperandStack.push(org.apache.bcel.generic.Type)": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.OperandStack.OperandStack(int,org.apache.bcel.generic.ObjectType)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 231
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.OperandStack.OperandStack(int,org.apache.bcel.generic.ObjectType)",
+          "to": "org.apache.bcel.verifier.structurals.OperandStack.push(org.apache.bcel.generic.Type)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/OperandStack.java",
+          "line": 57
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.Subroutines.subroutineOf(org.apache.bcel.generic.InstructionHandle)": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.ControlFlowGraph.isDead(org.apache.bcel.generic.InstructionHandle)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 240
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.ControlFlowGraph.isDead(org.apache.bcel.generic.InstructionHandle)",
+          "to": "org.apache.bcel.verifier.structurals.Subroutines.subroutineOf(org.apache.bcel.generic.InstructionHandle)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/ControlFlowGraph.java",
+          "line": 453
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.OperandStack.size()": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.OperandStack.peek(int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 251
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.OperandStack.peek(int)",
+          "to": "org.apache.bcel.verifier.structurals.OperandStack.size()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/OperandStack.java",
+          "line": 132
+        }
+      ],
+      "org.apache.bcel.generic.InvokeInstruction.getReturnType(org.apache.bcel.generic.ConstantPoolGen)": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.InvokeInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 265
+        },
+        {
+          "from": "org.apache.bcel.generic.InvokeInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+          "to": "org.apache.bcel.generic.InvokeInstruction.getReturnType(org.apache.bcel.generic.ConstantPoolGen)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/generic/InvokeInstruction.java",
+          "line": 101
+        }
+      ],
+      "org.apache.bcel.generic.FieldInstruction.getFieldType(org.apache.bcel.generic.ConstantPoolGen)": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.FieldInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 274
+        },
+        {
+          "from": "org.apache.bcel.generic.FieldInstruction.getType(org.apache.bcel.generic.ConstantPoolGen)",
+          "to": "org.apache.bcel.generic.FieldInstruction.getFieldType(org.apache.bcel.generic.ConstantPoolGen)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/generic/FieldInstruction.java",
+          "line": 70
+        }
+      ],
+      "org.apache.bcel.generic.Type.equals(java.lang.Object)": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 284
+        },
+        {
+          "from": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "to": "org.apache.bcel.generic.Type.equals(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/generic/ReferenceType.java",
+          "line": 81
+        }
+      ],
+      "org.apache.bcel.generic.ObjectType.referencesClassExact()": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 284
+        },
+        {
+          "from": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "to": "org.apache.bcel.generic.ObjectType.referencesClassExact()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/generic/ReferenceType.java",
+          "line": 86
+        }
+      ],
+      "org.apache.bcel.Repository.instanceOf(java.lang.String,java.lang.String)": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 284
+        },
+        {
+          "from": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "to": "org.apache.bcel.Repository.instanceOf(java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/generic/ReferenceType.java",
+          "line": 94
+        }
+      ],
+      "org.apache.bcel.generic.ObjectType.getClassName()": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 284
+        },
+        {
+          "from": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "to": "org.apache.bcel.generic.ObjectType.getClassName()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/generic/ReferenceType.java",
+          "line": 94
+        }
+      ],
+      "org.apache.bcel.generic.ObjectType.referencesInterfaceExact()": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 284
+        },
+        {
+          "from": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "to": "org.apache.bcel.generic.ObjectType.referencesInterfaceExact()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/generic/ReferenceType.java",
+          "line": 101
+        }
+      ],
+      "org.apache.bcel.Repository.implementationOf(java.lang.String,java.lang.String)": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 284
+        },
+        {
+          "from": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "to": "org.apache.bcel.Repository.implementationOf(java.lang.String,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/generic/ReferenceType.java",
+          "line": 102
+        }
+      ],
+      "org.apache.bcel.generic.ArrayType.getElementType()": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 284
+        },
+        {
+          "from": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "to": "org.apache.bcel.generic.ArrayType.getElementType()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/generic/ReferenceType.java",
+          "line": 148
+        }
+      ],
+      "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 284
+        },
+        {
+          "from": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "to": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/generic/ReferenceType.java",
+          "line": 157
+        }
+      ],
+      "org.apache.bcel.generic.ObjectType.getInstance(java.lang.String)": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 284
+        },
+        {
+          "from": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "to": "org.apache.bcel.generic.ObjectType.getInstance(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/generic/ReferenceType.java",
+          "line": 169
+        }
+      ],
+      "org.apache.bcel.generic.FieldGenOrMethodGen.getType()": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.MethodGen.getReturnType()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 284
+        },
+        {
+          "from": "org.apache.bcel.generic.MethodGen.getReturnType()",
+          "to": "org.apache.bcel.generic.FieldGenOrMethodGen.getType()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/generic/MethodGen.java",
+          "line": 779
+        }
+      ],
+      "org.apache.bcel.verifier.exc.CodeConstraintException.CodeConstraintException(java.lang.String)": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.exc.StructuralCodeConstraintException.StructuralCodeConstraintException(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 286
+        },
+        {
+          "from": "org.apache.bcel.verifier.exc.StructuralCodeConstraintException.StructuralCodeConstraintException(java.lang.String)",
+          "to": "org.apache.bcel.verifier.exc.CodeConstraintException.CodeConstraintException(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/exc/StructuralCodeConstraintException.java",
+          "line": 39
+        }
+      ]
+    },
+    "mixed_field_paths": {
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.ics": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.add(org.apache.bcel.verifier.structurals.InstructionContext,java.util.ArrayList)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 138
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.add(org.apache.bcel.verifier.structurals.InstructionContext,java.util.ArrayList)",
+          "to": "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.ics",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 85
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.ecs": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.add(org.apache.bcel.verifier.structurals.InstructionContext,java.util.ArrayList)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 138
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.add(org.apache.bcel.verifier.structurals.InstructionContext,java.util.ArrayList)",
+          "to": "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.ecs",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 86
+        }
+      ],
+      "org.apache.bcel.generic.InstructionHandle.instruction": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.InstructionHandle.getInstruction()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 162
+        },
+        {
+          "from": "org.apache.bcel.generic.InstructionHandle.getInstruction()",
+          "to": "org.apache.bcel.generic.InstructionHandle.instruction",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/InstructionHandle.java",
+          "line": 66
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.LocalVariables.locals": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.LocalVariables.get(int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 167
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.LocalVariables.get(int)",
+          "to": "org.apache.bcel.verifier.structurals.LocalVariables.locals",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/LocalVariables.java",
+          "line": 65
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.Frame.locals": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.Frame.getLocals()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 167
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.Frame.getLocals()",
+          "to": "org.apache.bcel.verifier.structurals.Frame.locals",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Frame.java",
+          "line": 86
+        }
+      ],
+      "org.apache.bcel.generic.RET.index": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.RET.getIndex()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 167
+        },
+        {
+          "from": "org.apache.bcel.generic.RET.getIndex()",
+          "to": "org.apache.bcel.generic.RET.index",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/RET.java",
+          "line": 101
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.instructionContexts": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.ControlFlowGraph.contextOf(org.apache.bcel.generic.InstructionHandle)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 168
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.ControlFlowGraph.contextOf(org.apache.bcel.generic.InstructionHandle)",
+          "to": "org.apache.bcel.verifier.structurals.ControlFlowGraph.instructionContexts",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/ControlFlowGraph.java",
+          "line": 419
+        }
+      ],
+      "org.apache.bcel.generic.ReturnaddressType.returnTarget": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.ReturnaddressType.getTarget()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 168
+        },
+        {
+          "from": "org.apache.bcel.generic.ReturnaddressType.getTarget()",
+          "to": "org.apache.bcel.generic.ReturnaddressType.returnTarget",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/ReturnaddressType.java",
+          "line": 84
+        }
+      ],
+      "org.apache.bcel.generic.BranchInstruction.target": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.JsrInstruction.physicalSuccessor()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 193
+        },
+        {
+          "from": "org.apache.bcel.generic.JsrInstruction.physicalSuccessor()",
+          "to": "org.apache.bcel.generic.BranchInstruction.target",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/JsrInstruction.java",
+          "line": 64
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.handlerpc": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.ExceptionHandler.getHandlerStart()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 220
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.ExceptionHandler.getHandlerStart()",
+          "to": "org.apache.bcel.verifier.structurals.ExceptionHandler.handlerpc",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/ExceptionHandler.java",
+          "line": 56
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.OperandStack.maxStack": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.OperandStack.maxStack()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 231
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.OperandStack.maxStack()",
+          "to": "org.apache.bcel.verifier.structurals.OperandStack.maxStack",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/OperandStack.java",
+          "line": 117
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.Frame.stack": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.Frame.getStack()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 231
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.Frame.getStack()",
+          "to": "org.apache.bcel.verifier.structurals.Frame.stack",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Frame.java",
+          "line": 93
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.catchtype": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.ExceptionHandler.getExceptionType()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 231
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.ExceptionHandler.getExceptionType()",
+          "to": "org.apache.bcel.verifier.structurals.ExceptionHandler.catchtype",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/ExceptionHandler.java",
+          "line": 49
+        }
+      ],
+      "org.apache.bcel.generic.InstructionHandle.next": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.InstructionHandle.getNext()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 301
+        },
+        {
+          "from": "org.apache.bcel.generic.InstructionHandle.getNext()",
+          "to": "org.apache.bcel.generic.InstructionHandle.next",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/InstructionHandle.java",
+          "line": 56
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.subroutines": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.ControlFlowGraph.isDead(org.apache.bcel.generic.InstructionHandle)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 240
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.ControlFlowGraph.isDead(org.apache.bcel.generic.InstructionHandle)",
+          "to": "org.apache.bcel.verifier.structurals.ControlFlowGraph.subroutines",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/ControlFlowGraph.java",
+          "line": 453
+        }
+      ],
+      "org.apache.bcel.verifier.PassVerifier.messages": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.PassVerifier.addMessage(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 246
+        },
+        {
+          "from": "org.apache.bcel.verifier.PassVerifier.addMessage(java.lang.String)",
+          "to": "org.apache.bcel.verifier.PassVerifier.messages",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/PassVerifier.java",
+          "line": 91
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.OperandStack.stack": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.OperandStack.size()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 250
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.OperandStack.size()",
+          "to": "org.apache.bcel.verifier.structurals.OperandStack.stack",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/OperandStack.java",
+          "line": 173
+        }
+      ],
+      "org.apache.bcel.generic.InstructionHandle.prev": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.InstructionHandle.getPrev()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 259
+        },
+        {
+          "from": "org.apache.bcel.generic.InstructionHandle.getPrev()",
+          "to": "org.apache.bcel.generic.InstructionHandle.prev",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/InstructionHandle.java",
+          "line": 61
+        }
+      ],
+      "org.apache.bcel.generic.FieldGenOrMethodGen.cp": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.FieldGenOrMethodGen.getConstantPool()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 265
+        },
+        {
+          "from": "org.apache.bcel.generic.FieldGenOrMethodGen.getConstantPool()",
+          "to": "org.apache.bcel.generic.FieldGenOrMethodGen.cp",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/FieldGenOrMethodGen.java",
+          "line": 74
+        }
+      ],
+      "org.apache.bcel.generic.LocalVariableInstruction.n": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.LocalVariableInstruction.getIndex()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 269
+        },
+        {
+          "from": "org.apache.bcel.generic.LocalVariableInstruction.getIndex()",
+          "to": "org.apache.bcel.generic.LocalVariableInstruction.n",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/LocalVariableInstruction.java",
+          "line": 147
+        }
+      ],
+      "org.apache.bcel.generic.Type.NULL": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 284
+        },
+        {
+          "from": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "to": "org.apache.bcel.generic.Type.NULL",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/ReferenceType.java",
+          "line": 81
+        }
+      ],
+      "org.apache.bcel.generic.Type.OBJECT": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 284
+        },
+        {
+          "from": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "to": "org.apache.bcel.generic.Type.OBJECT",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/ReferenceType.java",
+          "line": 114
+        }
+      ],
+      "org.apache.bcel.Constants.INTERFACES_IMPLEMENTED_BY_ARRAYS": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 284
+        },
+        {
+          "from": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "to": "org.apache.bcel.Constants.INTERFACES_IMPLEMENTED_BY_ARRAYS",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/ReferenceType.java",
+          "line": 168
+        }
+      ],
+      "org.apache.bcel.generic.Type.type": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.Type.equals(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 295
+        },
+        {
+          "from": "org.apache.bcel.generic.Type.equals(java.lang.Object)",
+          "to": "org.apache.bcel.generic.Type.type",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/Type.java",
+          "line": 88
+        }
+      ],
+      "org.apache.bcel.generic.Type.signature": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.Type.equals(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 295
+        },
+        {
+          "from": "org.apache.bcel.generic.Type.equals(java.lang.Object)",
+          "to": "org.apache.bcel.generic.Type.signature",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/Type.java",
+          "line": 88
+        }
+      ]
+    },
+    "seed_field_accesses": {},
+    "combined_field_paths": {
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.ics": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.add(org.apache.bcel.verifier.structurals.InstructionContext,java.util.ArrayList)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 138
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.add(org.apache.bcel.verifier.structurals.InstructionContext,java.util.ArrayList)",
+          "to": "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.ics",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 85
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.ecs": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.add(org.apache.bcel.verifier.structurals.InstructionContext,java.util.ArrayList)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 138
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.add(org.apache.bcel.verifier.structurals.InstructionContext,java.util.ArrayList)",
+          "to": "org.apache.bcel.verifier.structurals.Pass3bVerifier.InstructionContextQueue.ecs",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 86
+        }
+      ],
+      "org.apache.bcel.generic.InstructionHandle.instruction": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.InstructionHandle.getInstruction()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 162
+        },
+        {
+          "from": "org.apache.bcel.generic.InstructionHandle.getInstruction()",
+          "to": "org.apache.bcel.generic.InstructionHandle.instruction",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/InstructionHandle.java",
+          "line": 66
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.LocalVariables.locals": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.LocalVariables.get(int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 167
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.LocalVariables.get(int)",
+          "to": "org.apache.bcel.verifier.structurals.LocalVariables.locals",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/LocalVariables.java",
+          "line": 65
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.Frame.locals": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.Frame.getLocals()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 167
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.Frame.getLocals()",
+          "to": "org.apache.bcel.verifier.structurals.Frame.locals",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Frame.java",
+          "line": 86
+        }
+      ],
+      "org.apache.bcel.generic.RET.index": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.RET.getIndex()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 167
+        },
+        {
+          "from": "org.apache.bcel.generic.RET.getIndex()",
+          "to": "org.apache.bcel.generic.RET.index",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/RET.java",
+          "line": 101
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.instructionContexts": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.ControlFlowGraph.contextOf(org.apache.bcel.generic.InstructionHandle)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 168
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.ControlFlowGraph.contextOf(org.apache.bcel.generic.InstructionHandle)",
+          "to": "org.apache.bcel.verifier.structurals.ControlFlowGraph.instructionContexts",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/ControlFlowGraph.java",
+          "line": 419
+        }
+      ],
+      "org.apache.bcel.generic.ReturnaddressType.returnTarget": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.ReturnaddressType.getTarget()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 168
+        },
+        {
+          "from": "org.apache.bcel.generic.ReturnaddressType.getTarget()",
+          "to": "org.apache.bcel.generic.ReturnaddressType.returnTarget",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/ReturnaddressType.java",
+          "line": 84
+        }
+      ],
+      "org.apache.bcel.generic.BranchInstruction.target": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.JsrInstruction.physicalSuccessor()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 193
+        },
+        {
+          "from": "org.apache.bcel.generic.JsrInstruction.physicalSuccessor()",
+          "to": "org.apache.bcel.generic.BranchInstruction.target",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/JsrInstruction.java",
+          "line": 64
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.handlerpc": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.ExceptionHandler.getHandlerStart()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 220
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.ExceptionHandler.getHandlerStart()",
+          "to": "org.apache.bcel.verifier.structurals.ExceptionHandler.handlerpc",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/ExceptionHandler.java",
+          "line": 56
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.OperandStack.maxStack": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.OperandStack.maxStack()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 231
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.OperandStack.maxStack()",
+          "to": "org.apache.bcel.verifier.structurals.OperandStack.maxStack",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/OperandStack.java",
+          "line": 117
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.Frame.stack": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.Frame.getStack()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 231
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.Frame.getStack()",
+          "to": "org.apache.bcel.verifier.structurals.Frame.stack",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Frame.java",
+          "line": 93
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.ExceptionHandler.catchtype": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.ExceptionHandler.getExceptionType()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 231
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.ExceptionHandler.getExceptionType()",
+          "to": "org.apache.bcel.verifier.structurals.ExceptionHandler.catchtype",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/ExceptionHandler.java",
+          "line": 49
+        }
+      ],
+      "org.apache.bcel.generic.InstructionHandle.next": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.InstructionHandle.getNext()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 301
+        },
+        {
+          "from": "org.apache.bcel.generic.InstructionHandle.getNext()",
+          "to": "org.apache.bcel.generic.InstructionHandle.next",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/InstructionHandle.java",
+          "line": 56
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.ControlFlowGraph.subroutines": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.ControlFlowGraph.isDead(org.apache.bcel.generic.InstructionHandle)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 240
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.ControlFlowGraph.isDead(org.apache.bcel.generic.InstructionHandle)",
+          "to": "org.apache.bcel.verifier.structurals.ControlFlowGraph.subroutines",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/ControlFlowGraph.java",
+          "line": 453
+        }
+      ],
+      "org.apache.bcel.verifier.PassVerifier.messages": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.PassVerifier.addMessage(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 246
+        },
+        {
+          "from": "org.apache.bcel.verifier.PassVerifier.addMessage(java.lang.String)",
+          "to": "org.apache.bcel.verifier.PassVerifier.messages",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/PassVerifier.java",
+          "line": 91
+        }
+      ],
+      "org.apache.bcel.verifier.structurals.OperandStack.stack": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.verifier.structurals.OperandStack.size()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 250
+        },
+        {
+          "from": "org.apache.bcel.verifier.structurals.OperandStack.size()",
+          "to": "org.apache.bcel.verifier.structurals.OperandStack.stack",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/OperandStack.java",
+          "line": 173
+        }
+      ],
+      "org.apache.bcel.generic.InstructionHandle.prev": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.InstructionHandle.getPrev()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 259
+        },
+        {
+          "from": "org.apache.bcel.generic.InstructionHandle.getPrev()",
+          "to": "org.apache.bcel.generic.InstructionHandle.prev",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/InstructionHandle.java",
+          "line": 61
+        }
+      ],
+      "org.apache.bcel.generic.FieldGenOrMethodGen.cp": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.FieldGenOrMethodGen.getConstantPool()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 265
+        },
+        {
+          "from": "org.apache.bcel.generic.FieldGenOrMethodGen.getConstantPool()",
+          "to": "org.apache.bcel.generic.FieldGenOrMethodGen.cp",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/FieldGenOrMethodGen.java",
+          "line": 74
+        }
+      ],
+      "org.apache.bcel.generic.LocalVariableInstruction.n": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.LocalVariableInstruction.getIndex()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 269
+        },
+        {
+          "from": "org.apache.bcel.generic.LocalVariableInstruction.getIndex()",
+          "to": "org.apache.bcel.generic.LocalVariableInstruction.n",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/LocalVariableInstruction.java",
+          "line": 147
+        }
+      ],
+      "org.apache.bcel.generic.Type.NULL": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 284
+        },
+        {
+          "from": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "to": "org.apache.bcel.generic.Type.NULL",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/ReferenceType.java",
+          "line": 81
+        }
+      ],
+      "org.apache.bcel.generic.Type.OBJECT": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 284
+        },
+        {
+          "from": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "to": "org.apache.bcel.generic.Type.OBJECT",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/ReferenceType.java",
+          "line": 114
+        }
+      ],
+      "org.apache.bcel.Constants.INTERFACES_IMPLEMENTED_BY_ARRAYS": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 284
+        },
+        {
+          "from": "org.apache.bcel.generic.ReferenceType.isAssignmentCompatibleWith(org.apache.bcel.generic.Type)",
+          "to": "org.apache.bcel.Constants.INTERFACES_IMPLEMENTED_BY_ARRAYS",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/ReferenceType.java",
+          "line": 168
+        }
+      ],
+      "org.apache.bcel.generic.Type.type": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.Type.equals(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 295
+        },
+        {
+          "from": "org.apache.bcel.generic.Type.equals(java.lang.Object)",
+          "to": "org.apache.bcel.generic.Type.type",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/Type.java",
+          "line": 88
+        }
+      ],
+      "org.apache.bcel.generic.Type.signature": [
+        {
+          "from": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+          "to": "org.apache.bcel.generic.Type.equals(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+          "line": 295
+        },
+        {
+          "from": "org.apache.bcel.generic.Type.equals(java.lang.Object)",
+          "to": "org.apache.bcel.generic.Type.signature",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/bcel/generic/Type.java",
+          "line": 88
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 8978,
+      "ma_analysis": 8560,
+      "ma_refinement_fixed": 7963
+    },
+    "two_hop_calls": {
+      "sp": 9986,
+      "ma_analysis": 9568,
+      "ma_refinement_fixed": 8971
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "getStack",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "ic.getInFrame()",
+        "after_line": 255,
+        "expression": "getStack()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+        "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.bcel.verifier.structurals.Frame.getStack()"
+        ]
+      },
+      {
+        "name": "getInFrame",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "ic",
+        "after_line": 255,
+        "expression": "getInFrame()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+        "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.bcel.verifier.structurals.InstructionContext.getInFrame()"
+        ]
+      },
+      {
+        "name": "size",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "inStack",
+        "after_line": 256,
+        "expression": "size()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+        "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "peek",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "inStack",
+        "after_line": 257,
+        "expression": "peek()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+        "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "isCastableTo",
+        "arity": 1,
+        "arguments": [
+          "m.getReturnType()"
+        ],
+        "receiver": "((ReferenceType) returnedType)",
+        "after_line": 265,
+        "expression": "isCastableTo(m.getReturnType())",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+        "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "invalidReturnTypeError",
+        "arity": 2,
+        "arguments": [
+          "returnedType",
+          "m"
+        ],
+        "receiver": null,
+        "after_line": 266,
+        "expression": "invalidReturnTypeError(returnedType, m)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+        "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.bcel.Repository.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)",
+          "org.apache.bcel.generic.ObjectType.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)"
+        ]
+      },
+      {
+        "name": "invalidReturnTypeError",
+        "arity": 2,
+        "arguments": [
+          "returnedType",
+          "m"
+        ],
+        "receiver": null,
+        "after_line": 273,
+        "expression": "invalidReturnTypeError(returnedType, m)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.bcel.verifier.structurals.Pass3bVerifier.circulationPump(org.apache.bcel.generic.MethodGen,org.apache.bcel.verifier.structurals.ControlFlowGraph,org.apache.bcel.verifier.structurals.InstructionContext,org.apache.bcel.verifier.structurals.Frame,org.apache.bcel.verifier.structurals.InstConstraintVisitor,org.apache.bcel.verifier.structurals.ExecutionVisitor)",
+        "file": "src/main/java/org/apache/bcel/verifier/structurals/Pass3bVerifier.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.bcel.Repository.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)",
+          "org.apache.bcel.generic.ObjectType.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)"
+        ]
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [],
+  "indexed_targets": [
+    "org.apache.bcel.generic.ReferenceType.isCastableTo(org.apache.bcel.generic.Type)"
+  ],
+  "unindexed_targets": [
+    "org.apache.bcel.generic.Type.normalizeForStackOrLocal()",
+    "org.apache.bcel.verifier.structurals.Pass3bVerifier.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 42,
+      "hits": [],
+      "misses": [
+        "org.apache.bcel.generic.ReferenceType.isCastableTo(org.apache.bcel.generic.Type)",
+        "org.apache.bcel.generic.Type.normalizeForStackOrLocal()",
+        "org.apache.bcel.verifier.structurals.Pass3bVerifier.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)"
+      ],
+      "indexed_misses": [
+        "org.apache.bcel.generic.ReferenceType.isCastableTo(org.apache.bcel.generic.Type)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 44,
+      "hits": [],
+      "misses": [
+        "org.apache.bcel.generic.ReferenceType.isCastableTo(org.apache.bcel.generic.Type)",
+        "org.apache.bcel.generic.Type.normalizeForStackOrLocal()",
+        "org.apache.bcel.verifier.structurals.Pass3bVerifier.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)"
+      ],
+      "indexed_misses": [
+        "org.apache.bcel.generic.ReferenceType.isCastableTo(org.apache.bcel.generic.Type)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "multihop": {
+      "candidate_count": 45,
+      "hits": [],
+      "misses": [
+        "org.apache.bcel.generic.ReferenceType.isCastableTo(org.apache.bcel.generic.Type)",
+        "org.apache.bcel.generic.Type.normalizeForStackOrLocal()",
+        "org.apache.bcel.verifier.structurals.Pass3bVerifier.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)"
+      ],
+      "indexed_misses": [
+        "org.apache.bcel.generic.ReferenceType.isCastableTo(org.apache.bcel.generic.Type)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 58,
+      "hits": [],
+      "misses": [
+        "org.apache.bcel.generic.ReferenceType.isCastableTo(org.apache.bcel.generic.Type)",
+        "org.apache.bcel.generic.Type.normalizeForStackOrLocal()",
+        "org.apache.bcel.verifier.structurals.Pass3bVerifier.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)"
+      ],
+      "indexed_misses": [
+        "org.apache.bcel.generic.ReferenceType.isCastableTo(org.apache.bcel.generic.Type)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "diff_and_override": {
+      "candidate_count": 61,
+      "hits": [],
+      "misses": [
+        "org.apache.bcel.generic.ReferenceType.isCastableTo(org.apache.bcel.generic.Type)",
+        "org.apache.bcel.generic.Type.normalizeForStackOrLocal()",
+        "org.apache.bcel.verifier.structurals.Pass3bVerifier.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)"
+      ],
+      "indexed_misses": [
+        "org.apache.bcel.generic.ReferenceType.isCastableTo(org.apache.bcel.generic.Type)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "mixed_field_paths": {
+      "candidate_count": 85,
+      "hits": [],
+      "misses": [
+        "org.apache.bcel.generic.ReferenceType.isCastableTo(org.apache.bcel.generic.Type)",
+        "org.apache.bcel.generic.Type.normalizeForStackOrLocal()",
+        "org.apache.bcel.verifier.structurals.Pass3bVerifier.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)"
+      ],
+      "indexed_misses": [
+        "org.apache.bcel.generic.ReferenceType.isCastableTo(org.apache.bcel.generic.Type)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "seed_field_accesses": {
+      "candidate_count": 61,
+      "hits": [],
+      "misses": [
+        "org.apache.bcel.generic.ReferenceType.isCastableTo(org.apache.bcel.generic.Type)",
+        "org.apache.bcel.generic.Type.normalizeForStackOrLocal()",
+        "org.apache.bcel.verifier.structurals.Pass3bVerifier.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)"
+      ],
+      "indexed_misses": [
+        "org.apache.bcel.generic.ReferenceType.isCastableTo(org.apache.bcel.generic.Type)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "combined_field_paths": {
+      "candidate_count": 85,
+      "hits": [],
+      "misses": [
+        "org.apache.bcel.generic.ReferenceType.isCastableTo(org.apache.bcel.generic.Type)",
+        "org.apache.bcel.generic.Type.normalizeForStackOrLocal()",
+        "org.apache.bcel.verifier.structurals.Pass3bVerifier.invalidReturnTypeError(org.apache.bcel.generic.Type,org.apache.bcel.generic.MethodGen)"
+      ],
+      "indexed_misses": [
+        "org.apache.bcel.generic.ReferenceType.isCastableTo(org.apache.bcel.generic.Type)"
+      ],
+      "indexed_recall": 0.0
+    }
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "id": "constantinople-064",
+  "graph_edges": 4253,
+  "seeds": {
+    "org.apache.commons.lang.builder.HashCodeBuilder.isRegistered(java.lang.Object)": true,
+    "org.apache.commons.lang.builder.HashCodeBuilder.register(java.lang.Object)": true,
+    "org.apache.commons.lang.builder.HashCodeBuilder.unregister(java.lang.Object)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.lang.builder.HashCodeBuilder.getRegistry()",
+      "org.apache.commons.lang.builder.HashCodeBuilder.reflectionAppend(java.lang.Object,java.lang.Class,org.apache.commons.lang.builder.HashCodeBuilder,boolean,java.lang.String[])",
+      "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)"
+    ],
+    "fields": [
+      "org.apache.commons.lang.builder.HashCodeBuilder.getRegistry()",
+      "org.apache.commons.lang.builder.HashCodeBuilder.reflectionAppend(java.lang.Object,java.lang.Class,org.apache.commons.lang.builder.HashCodeBuilder,boolean,java.lang.String[])",
+      "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)"
+    ],
+    "multihop": [
+      "org.apache.commons.lang.builder.HashCodeBuilder.getRegistry()",
+      "org.apache.commons.lang.builder.HashCodeBuilder.reflectionAppend(java.lang.Object,java.lang.Class,org.apache.commons.lang.builder.HashCodeBuilder,boolean,java.lang.String[])",
+      "org.apache.commons.lang.builder.HashCodeBuilder.registry",
+      "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.lang.builder.HashCodeBuilder.getRegistry()",
+      "org.apache.commons.lang.builder.HashCodeBuilder.reflectionAppend(java.lang.Object,java.lang.Class,org.apache.commons.lang.builder.HashCodeBuilder,boolean,java.lang.String[])",
+      "org.apache.commons.lang.builder.HashCodeBuilder.registry",
+      "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.lang.builder.HashCodeBuilder.getRegistry()",
+      "org.apache.commons.lang.builder.HashCodeBuilder.reflectionAppend(java.lang.Object,java.lang.Class,org.apache.commons.lang.builder.HashCodeBuilder,boolean,java.lang.String[])",
+      "org.apache.commons.lang.builder.HashCodeBuilder.registry",
+      "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)"
+    ],
+    "mixed_field_paths": [
+      "org.apache.commons.lang.builder.HashCodeBuilder.getRegistry()",
+      "org.apache.commons.lang.builder.HashCodeBuilder.reflectionAppend(java.lang.Object,java.lang.Class,org.apache.commons.lang.builder.HashCodeBuilder,boolean,java.lang.String[])",
+      "org.apache.commons.lang.builder.HashCodeBuilder.registry",
+      "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)"
+    ],
+    "seed_field_accesses": [
+      "org.apache.commons.lang.builder.HashCodeBuilder.getRegistry()",
+      "org.apache.commons.lang.builder.HashCodeBuilder.reflectionAppend(java.lang.Object,java.lang.Class,org.apache.commons.lang.builder.HashCodeBuilder,boolean,java.lang.String[])",
+      "org.apache.commons.lang.builder.HashCodeBuilder.registry",
+      "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)"
+    ],
+    "combined_field_paths": [
+      "org.apache.commons.lang.builder.HashCodeBuilder.getRegistry()",
+      "org.apache.commons.lang.builder.HashCodeBuilder.reflectionAppend(java.lang.Object,java.lang.Class,org.apache.commons.lang.builder.HashCodeBuilder,boolean,java.lang.String[])",
+      "org.apache.commons.lang.builder.HashCodeBuilder.registry",
+      "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)"
+    ]
+  },
+  "evidence": {
+    "fields": {},
+    "multihop": {
+      "org.apache.commons.lang.builder.HashCodeBuilder.registry": {
+        "org.apache.commons.lang.builder.HashCodeBuilder.registry": [
+          {
+            "from": "org.apache.commons.lang.builder.HashCodeBuilder.isRegistered(java.lang.Object)",
+            "to": "org.apache.commons.lang.builder.HashCodeBuilder.getRegistry()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/lang/builder/HashCodeBuilder.java",
+            "line": 137
+          },
+          {
+            "from": "org.apache.commons.lang.builder.HashCodeBuilder.getRegistry()",
+            "to": "org.apache.commons.lang.builder.HashCodeBuilder.registry",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/lang/builder/HashCodeBuilder.java",
+            "line": 122
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {},
+    "mixed_field_paths": {
+      "org.apache.commons.lang.builder.HashCodeBuilder.registry": [
+        {
+          "from": "org.apache.commons.lang.builder.HashCodeBuilder.isRegistered(java.lang.Object)",
+          "to": "org.apache.commons.lang.builder.HashCodeBuilder.getRegistry()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/lang/builder/HashCodeBuilder.java",
+          "line": 137
+        },
+        {
+          "from": "org.apache.commons.lang.builder.HashCodeBuilder.getRegistry()",
+          "to": "org.apache.commons.lang.builder.HashCodeBuilder.registry",
+          "kind": "READ",
+          "file": "src/java/org/apache/commons/lang/builder/HashCodeBuilder.java",
+          "line": 122
+        }
+      ]
+    },
+    "seed_field_accesses": {},
+    "combined_field_paths": {
+      "org.apache.commons.lang.builder.HashCodeBuilder.registry": [
+        {
+          "from": "org.apache.commons.lang.builder.HashCodeBuilder.isRegistered(java.lang.Object)",
+          "to": "org.apache.commons.lang.builder.HashCodeBuilder.getRegistry()",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/lang/builder/HashCodeBuilder.java",
+          "line": 137
+        },
+        {
+          "from": "org.apache.commons.lang.builder.HashCodeBuilder.getRegistry()",
+          "to": "org.apache.commons.lang.builder.HashCodeBuilder.registry",
+          "kind": "READ",
+          "file": "src/java/org/apache/commons/lang/builder/HashCodeBuilder.java",
+          "line": 122
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 4195,
+      "ma_analysis": 3777,
+      "ma_refinement_fixed": 2688
+    },
+    "two_hop_calls": {
+      "sp": 4195,
+      "ma_analysis": 3777,
+      "ma_refinement_fixed": 2688
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [],
+  "indexed_targets": [
+    "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)"
+  ],
+  "unindexed_targets": [
+    "org.apache.commons.lang.IDKey",
+    "org.apache.commons.lang.IDKey.IDKey(java.lang.Object)",
+    "org.apache.commons.lang.IDKey.equals(java.lang.Object)",
+    "org.apache.commons.lang.IDKey.hashCode()",
+    "org.apache.commons.lang.IDKey.id",
+    "org.apache.commons.lang.IDKey.value"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 3,
+      "hits": [
+        "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)"
+      ],
+      "misses": [
+        "org.apache.commons.lang.IDKey",
+        "org.apache.commons.lang.IDKey.IDKey(java.lang.Object)",
+        "org.apache.commons.lang.IDKey.equals(java.lang.Object)",
+        "org.apache.commons.lang.IDKey.hashCode()",
+        "org.apache.commons.lang.IDKey.id",
+        "org.apache.commons.lang.IDKey.value"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "fields": {
+      "candidate_count": 3,
+      "hits": [
+        "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)"
+      ],
+      "misses": [
+        "org.apache.commons.lang.IDKey",
+        "org.apache.commons.lang.IDKey.IDKey(java.lang.Object)",
+        "org.apache.commons.lang.IDKey.equals(java.lang.Object)",
+        "org.apache.commons.lang.IDKey.hashCode()",
+        "org.apache.commons.lang.IDKey.id",
+        "org.apache.commons.lang.IDKey.value"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "multihop": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)"
+      ],
+      "misses": [
+        "org.apache.commons.lang.IDKey",
+        "org.apache.commons.lang.IDKey.IDKey(java.lang.Object)",
+        "org.apache.commons.lang.IDKey.equals(java.lang.Object)",
+        "org.apache.commons.lang.IDKey.hashCode()",
+        "org.apache.commons.lang.IDKey.id",
+        "org.apache.commons.lang.IDKey.value"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)"
+      ],
+      "misses": [
+        "org.apache.commons.lang.IDKey",
+        "org.apache.commons.lang.IDKey.IDKey(java.lang.Object)",
+        "org.apache.commons.lang.IDKey.equals(java.lang.Object)",
+        "org.apache.commons.lang.IDKey.hashCode()",
+        "org.apache.commons.lang.IDKey.id",
+        "org.apache.commons.lang.IDKey.value"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "diff_and_override": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)"
+      ],
+      "misses": [
+        "org.apache.commons.lang.IDKey",
+        "org.apache.commons.lang.IDKey.IDKey(java.lang.Object)",
+        "org.apache.commons.lang.IDKey.equals(java.lang.Object)",
+        "org.apache.commons.lang.IDKey.hashCode()",
+        "org.apache.commons.lang.IDKey.id",
+        "org.apache.commons.lang.IDKey.value"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "mixed_field_paths": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)"
+      ],
+      "misses": [
+        "org.apache.commons.lang.IDKey",
+        "org.apache.commons.lang.IDKey.IDKey(java.lang.Object)",
+        "org.apache.commons.lang.IDKey.equals(java.lang.Object)",
+        "org.apache.commons.lang.IDKey.hashCode()",
+        "org.apache.commons.lang.IDKey.id",
+        "org.apache.commons.lang.IDKey.value"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "seed_field_accesses": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)"
+      ],
+      "misses": [
+        "org.apache.commons.lang.IDKey",
+        "org.apache.commons.lang.IDKey.IDKey(java.lang.Object)",
+        "org.apache.commons.lang.IDKey.equals(java.lang.Object)",
+        "org.apache.commons.lang.IDKey.hashCode()",
+        "org.apache.commons.lang.IDKey.id",
+        "org.apache.commons.lang.IDKey.value"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "combined_field_paths": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)"
+      ],
+      "misses": [
+        "org.apache.commons.lang.IDKey",
+        "org.apache.commons.lang.IDKey.IDKey(java.lang.Object)",
+        "org.apache.commons.lang.IDKey.equals(java.lang.Object)",
+        "org.apache.commons.lang.IDKey.hashCode()",
+        "org.apache.commons.lang.IDKey.id",
+        "org.apache.commons.lang.IDKey.value"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    }
+  }
+}

@@ -1,0 +1,597 @@
+{
+  "id": "constantinople-014",
+  "graph_edges": 4404,
+  "seeds": {
+    "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.configuration.AbstractConfiguration.interpolate(java.lang.Object)",
+      "org.apache.commons.configuration.Configuration.containsKey(java.lang.String)",
+      "org.apache.commons.configuration.Configuration.getList(java.lang.String)"
+    ],
+    "fields": [
+      "org.apache.commons.configuration.AbstractConfiguration.interpolate(java.lang.Object)",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration)",
+      "org.apache.commons.configuration.CompositeConfiguration.clear()",
+      "org.apache.commons.configuration.CompositeConfiguration.clone()",
+      "org.apache.commons.configuration.CompositeConfiguration.configList",
+      "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+      "org.apache.commons.configuration.Configuration.containsKey(java.lang.String)",
+      "org.apache.commons.configuration.Configuration.getList(java.lang.String)"
+    ],
+    "multihop": [
+      "org.apache.commons.configuration.AbstractConfiguration.interpolate(java.lang.Object)",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration()",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(java.util.Collection)",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration)",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration,java.util.Collection)",
+      "org.apache.commons.configuration.CompositeConfiguration.clear()",
+      "org.apache.commons.configuration.CompositeConfiguration.clone()",
+      "org.apache.commons.configuration.CompositeConfiguration.configList",
+      "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+      "org.apache.commons.configuration.Configuration.containsKey(java.lang.String)",
+      "org.apache.commons.configuration.Configuration.getList(java.lang.String)"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.configuration.AbstractConfiguration.interpolate(java.lang.Object)",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration()",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(java.util.Collection)",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration)",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration,java.util.Collection)",
+      "org.apache.commons.configuration.CompositeConfiguration.clear()",
+      "org.apache.commons.configuration.CompositeConfiguration.clone()",
+      "org.apache.commons.configuration.CompositeConfiguration.configList",
+      "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+      "org.apache.commons.configuration.Configuration.containsKey(java.lang.String)",
+      "org.apache.commons.configuration.Configuration.getList(java.lang.String)",
+      "org.apache.commons.configuration.PropertyConverter.interpolate(java.lang.Object,org.apache.commons.configuration.AbstractConfiguration)"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.configuration.AbstractConfiguration.getList(java.lang.String,java.util.List)",
+      "org.apache.commons.configuration.AbstractConfiguration.interpolate(java.lang.Object)",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration()",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(java.util.Collection)",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration)",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration,java.util.Collection)",
+      "org.apache.commons.configuration.CompositeConfiguration.clear()",
+      "org.apache.commons.configuration.CompositeConfiguration.clone()",
+      "org.apache.commons.configuration.CompositeConfiguration.configList",
+      "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+      "org.apache.commons.configuration.Configuration.containsKey(java.lang.String)",
+      "org.apache.commons.configuration.Configuration.getList(java.lang.String)",
+      "org.apache.commons.configuration.ConfigurationUtils.appendListProperty(java.util.List,org.apache.commons.configuration.Configuration,java.lang.String)",
+      "org.apache.commons.configuration.PropertyConverter.interpolate(java.lang.Object,org.apache.commons.configuration.AbstractConfiguration)"
+    ],
+    "mixed_field_paths": [
+      "org.apache.commons.configuration.AbstractConfiguration.getList(java.lang.String,java.util.List)",
+      "org.apache.commons.configuration.AbstractConfiguration.interpolate(java.lang.Object)",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration()",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(java.util.Collection)",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration)",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration,java.util.Collection)",
+      "org.apache.commons.configuration.CompositeConfiguration.clear()",
+      "org.apache.commons.configuration.CompositeConfiguration.clone()",
+      "org.apache.commons.configuration.CompositeConfiguration.configList",
+      "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+      "org.apache.commons.configuration.Configuration.containsKey(java.lang.String)",
+      "org.apache.commons.configuration.Configuration.getList(java.lang.String)",
+      "org.apache.commons.configuration.ConfigurationUtils.appendListProperty(java.util.List,org.apache.commons.configuration.Configuration,java.lang.String)",
+      "org.apache.commons.configuration.PropertyConverter.interpolate(java.lang.Object,org.apache.commons.configuration.AbstractConfiguration)"
+    ],
+    "seed_field_accesses": [
+      "org.apache.commons.configuration.AbstractConfiguration.getList(java.lang.String,java.util.List)",
+      "org.apache.commons.configuration.AbstractConfiguration.interpolate(java.lang.Object)",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration()",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(java.util.Collection)",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration)",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration,java.util.Collection)",
+      "org.apache.commons.configuration.CompositeConfiguration.clear()",
+      "org.apache.commons.configuration.CompositeConfiguration.clone()",
+      "org.apache.commons.configuration.CompositeConfiguration.configList",
+      "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+      "org.apache.commons.configuration.Configuration.containsKey(java.lang.String)",
+      "org.apache.commons.configuration.Configuration.getList(java.lang.String)",
+      "org.apache.commons.configuration.ConfigurationUtils.appendListProperty(java.util.List,org.apache.commons.configuration.Configuration,java.lang.String)",
+      "org.apache.commons.configuration.PropertyConverter.interpolate(java.lang.Object,org.apache.commons.configuration.AbstractConfiguration)"
+    ],
+    "combined_field_paths": [
+      "org.apache.commons.configuration.AbstractConfiguration.getList(java.lang.String,java.util.List)",
+      "org.apache.commons.configuration.AbstractConfiguration.interpolate(java.lang.Object)",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration()",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(java.util.Collection)",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration)",
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration,java.util.Collection)",
+      "org.apache.commons.configuration.CompositeConfiguration.clear()",
+      "org.apache.commons.configuration.CompositeConfiguration.clone()",
+      "org.apache.commons.configuration.CompositeConfiguration.configList",
+      "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+      "org.apache.commons.configuration.Configuration.containsKey(java.lang.String)",
+      "org.apache.commons.configuration.Configuration.getList(java.lang.String)",
+      "org.apache.commons.configuration.ConfigurationUtils.appendListProperty(java.util.List,org.apache.commons.configuration.Configuration,java.lang.String)",
+      "org.apache.commons.configuration.PropertyConverter.interpolate(java.lang.Object,org.apache.commons.configuration.AbstractConfiguration)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.configuration.CompositeConfiguration.configList": {
+        "org.apache.commons.configuration.CompositeConfiguration.configList": [
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.configList",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 291
+          }
+        ]
+      },
+      "org.apache.commons.configuration.CompositeConfiguration.clone()": {
+        "org.apache.commons.configuration.CompositeConfiguration.configList": [
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.configList",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 291
+          },
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.clone()",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.configList",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 372
+          }
+        ],
+        "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration": [
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 295
+          },
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.clone()",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 373
+          }
+        ]
+      },
+      "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration": {
+        "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration": [
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 295
+          }
+        ]
+      },
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration)": {
+        "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration": [
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 295
+          },
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 69
+          }
+        ]
+      },
+      "org.apache.commons.configuration.CompositeConfiguration.clear()": {
+        "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration": [
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 295
+          },
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.clear()",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 159
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.configuration.CompositeConfiguration.configList": {
+        "org.apache.commons.configuration.CompositeConfiguration.configList": [
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.configList",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 291
+          }
+        ],
+        "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration": [
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 295
+          },
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 69
+          },
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.configList",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 68
+          }
+        ]
+      },
+      "org.apache.commons.configuration.CompositeConfiguration.clone()": {
+        "org.apache.commons.configuration.CompositeConfiguration.configList": [
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.configList",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 291
+          },
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.clone()",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.configList",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 372
+          }
+        ],
+        "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration": [
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 295
+          },
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.clone()",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 373
+          }
+        ]
+      },
+      "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration": {
+        "org.apache.commons.configuration.CompositeConfiguration.configList": [
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.configList",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 291
+          },
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.clone()",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.configList",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 372
+          },
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.clone()",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 375
+          }
+        ],
+        "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration": [
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 295
+          }
+        ]
+      },
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration)": {
+        "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration": [
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 295
+          },
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 69
+          }
+        ]
+      },
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration,java.util.Collection)": {
+        "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration": [
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 295
+          },
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 69
+          },
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration,java.util.Collection)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 93
+          }
+        ]
+      },
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(java.util.Collection)": {
+        "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration": [
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 295
+          },
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 69
+          },
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration,java.util.Collection)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 93
+          },
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(java.util.Collection)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration(org.apache.commons.configuration.Configuration,java.util.Collection)",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 81
+          }
+        ]
+      },
+      "org.apache.commons.configuration.CompositeConfiguration.clear()": {
+        "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration": [
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 295
+          },
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.clear()",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 159
+          }
+        ]
+      },
+      "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration()": {
+        "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration": [
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "READ",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 295
+          },
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.clear()",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.inMemoryConfiguration",
+            "kind": "WRITE",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 159
+          },
+          {
+            "from": "org.apache.commons.configuration.CompositeConfiguration.CompositeConfiguration()",
+            "to": "org.apache.commons.configuration.CompositeConfiguration.clear()",
+            "kind": "CALLS",
+            "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+            "line": 56
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.commons.configuration.PropertyConverter.interpolate(java.lang.Object,org.apache.commons.configuration.AbstractConfiguration)": [
+        {
+          "from": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+          "to": "org.apache.commons.configuration.AbstractConfiguration.interpolate(java.lang.Object)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+          "line": 312
+        },
+        {
+          "from": "org.apache.commons.configuration.AbstractConfiguration.interpolate(java.lang.Object)",
+          "to": "org.apache.commons.configuration.PropertyConverter.interpolate(java.lang.Object,org.apache.commons.configuration.AbstractConfiguration)",
+          "kind": "CALLS",
+          "file": "src/java/org/apache/commons/configuration/AbstractConfiguration.java",
+          "line": 446
+        }
+      ]
+    },
+    "mixed_field_paths": {},
+    "seed_field_accesses": {},
+    "combined_field_paths": {}
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 4316,
+      "ma_analysis": 3898,
+      "ma_refinement_fixed": 2860
+    },
+    "two_hop_calls": {
+      "sp": 4455,
+      "ma_analysis": 4037,
+      "ma_refinement_fixed": 2999
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "appendListProperty",
+        "arity": 3,
+        "arguments": [
+          "list",
+          "config",
+          "key"
+        ],
+        "receiver": null,
+        "after_line": 297,
+        "expression": "appendListProperty(list, config, key)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+        "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.commons.configuration.ConfigurationUtils.appendListProperty(java.util.List,org.apache.commons.configuration.Configuration,java.lang.String)"
+        ]
+      },
+      {
+        "name": "appendListProperty",
+        "arity": 3,
+        "arguments": [
+          "list",
+          "inMemoryConfiguration",
+          "key"
+        ],
+        "receiver": null,
+        "after_line": 302,
+        "expression": "appendListProperty(list, inMemoryConfiguration, key)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+        "file": "src/java/org/apache/commons/configuration/CompositeConfiguration.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.commons.configuration.ConfigurationUtils.appendListProperty(java.util.List,org.apache.commons.configuration.Configuration,java.lang.String)"
+        ]
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": [
+      {
+        "seed": "org.apache.commons.configuration.CompositeConfiguration.getList(java.lang.String,java.util.List)",
+        "target": "org.apache.commons.configuration.AbstractConfiguration.getList(java.lang.String,java.util.List)",
+        "edge": "POSSIBLE_OVERRIDE"
+      }
+    ]
+  },
+  "seed_field_accesses": [],
+  "indexed_targets": [],
+  "unindexed_targets": [
+    "org.apache.commons.configuration.CompositeConfiguration.appendListProperty(java.util.List,org.apache.commons.configuration.Configuration,java.lang.String)"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 3,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.configuration.CompositeConfiguration.appendListProperty(java.util.List,org.apache.commons.configuration.Configuration,java.lang.String)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "fields": {
+      "candidate_count": 8,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.configuration.CompositeConfiguration.appendListProperty(java.util.List,org.apache.commons.configuration.Configuration,java.lang.String)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "multihop": {
+      "candidate_count": 11,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.configuration.CompositeConfiguration.appendListProperty(java.util.List,org.apache.commons.configuration.Configuration,java.lang.String)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "two_hop_calls": {
+      "candidate_count": 12,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.configuration.CompositeConfiguration.appendListProperty(java.util.List,org.apache.commons.configuration.Configuration,java.lang.String)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "diff_and_override": {
+      "candidate_count": 14,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.configuration.CompositeConfiguration.appendListProperty(java.util.List,org.apache.commons.configuration.Configuration,java.lang.String)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "mixed_field_paths": {
+      "candidate_count": 14,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.configuration.CompositeConfiguration.appendListProperty(java.util.List,org.apache.commons.configuration.Configuration,java.lang.String)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "seed_field_accesses": {
+      "candidate_count": 14,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.configuration.CompositeConfiguration.appendListProperty(java.util.List,org.apache.commons.configuration.Configuration,java.lang.String)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "combined_field_paths": {
+      "candidate_count": 14,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.configuration.CompositeConfiguration.appendListProperty(java.util.List,org.apache.commons.configuration.Configuration,java.lang.String)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"org.apache.gora.hbase.store.HBaseStore.setField(org.apache.gora.persistency.Persistent,org.apache.avro.Schema.Field,java.util.Map)":["IS_CALLED_BY"],"org.apache.gora.cassandra.store.CassandraStore.put(java.lang.Object,org.apache.gora.persistency.Persistent)":["IS_CALLED_BY"],"org.apache.gora.persistency.StatefulHashMap.StatefulHashMap()":["IS_CALLED_BY"]}

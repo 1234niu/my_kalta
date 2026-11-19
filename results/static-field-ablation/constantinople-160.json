@@ -1,0 +1,305 @@
+{
+  "id": "constantinople-160",
+  "graph_edges": 3148,
+  "seeds": {
+    "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])"
+    ],
+    "fields": [
+      "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])"
+    ],
+    "multihop": [
+      "org.apache.commons.beanutils.MethodUtils.EMPTY_OBJECT_ARRAY",
+      "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.beanutils.MethodUtils.EMPTY_OBJECT_ARRAY",
+      "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])",
+      "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[],java.lang.Class[])"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.beanutils.MethodUtils.EMPTY_OBJECT_ARRAY",
+      "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])",
+      "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[],java.lang.Class[])",
+      "org.apache.commons.beanutils.MethodUtils.toArray(java.lang.Object)"
+    ],
+    "mixed_field_paths": [
+      "org.apache.commons.beanutils.MethodUtils.EMPTY_OBJECT_ARRAY",
+      "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])",
+      "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[],java.lang.Class[])",
+      "org.apache.commons.beanutils.MethodUtils.toArray(java.lang.Object)"
+    ],
+    "seed_field_accesses": [
+      "org.apache.commons.beanutils.MethodUtils.EMPTY_OBJECT_ARRAY",
+      "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])",
+      "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[],java.lang.Class[])",
+      "org.apache.commons.beanutils.MethodUtils.toArray(java.lang.Object)"
+    ],
+    "combined_field_paths": [
+      "org.apache.commons.beanutils.MethodUtils.EMPTY_OBJECT_ARRAY",
+      "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])",
+      "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[],java.lang.Class[])",
+      "org.apache.commons.beanutils.MethodUtils.toArray(java.lang.Object)"
+    ]
+  },
+  "evidence": {
+    "fields": {},
+    "multihop": {
+      "org.apache.commons.beanutils.MethodUtils.EMPTY_OBJECT_ARRAY": {
+        "org.apache.commons.beanutils.MethodUtils.EMPTY_OBJECT_ARRAY": [
+          {
+            "from": "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+            "to": "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/beanutils/MethodUtils.java",
+            "line": 177
+          },
+          {
+            "from": "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])",
+            "to": "org.apache.commons.beanutils.MethodUtils.EMPTY_OBJECT_ARRAY",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/beanutils/MethodUtils.java",
+            "line": 218
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[],java.lang.Class[])": [
+        {
+          "from": "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+          "to": "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/beanutils/MethodUtils.java",
+          "line": 177
+        },
+        {
+          "from": "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])",
+          "to": "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[],java.lang.Class[])",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/beanutils/MethodUtils.java",
+          "line": 225
+        }
+      ]
+    },
+    "mixed_field_paths": {
+      "org.apache.commons.beanutils.MethodUtils.EMPTY_OBJECT_ARRAY": [
+        {
+          "from": "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+          "to": "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/beanutils/MethodUtils.java",
+          "line": 177
+        },
+        {
+          "from": "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])",
+          "to": "org.apache.commons.beanutils.MethodUtils.EMPTY_OBJECT_ARRAY",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/beanutils/MethodUtils.java",
+          "line": 218
+        }
+      ]
+    },
+    "seed_field_accesses": {},
+    "combined_field_paths": {
+      "org.apache.commons.beanutils.MethodUtils.EMPTY_OBJECT_ARRAY": [
+        {
+          "from": "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+          "to": "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/beanutils/MethodUtils.java",
+          "line": 177
+        },
+        {
+          "from": "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])",
+          "to": "org.apache.commons.beanutils.MethodUtils.EMPTY_OBJECT_ARRAY",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/beanutils/MethodUtils.java",
+          "line": 218
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 5404,
+      "ma_analysis": 4986,
+      "ma_refinement_fixed": 1884
+    },
+    "two_hop_calls": {
+      "sp": 5533,
+      "ma_analysis": 5115,
+      "ma_refinement_fixed": 2013
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "toArray",
+        "arity": 1,
+        "arguments": [
+          "arg"
+        ],
+        "receiver": null,
+        "after_line": 176,
+        "expression": "toArray(arg)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.beanutils.MethodUtils.invokeMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+        "file": "src/main/java/org/apache/commons/beanutils/MethodUtils.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.commons.beanutils.MethodUtils.toArray(java.lang.Object)"
+        ]
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [],
+  "indexed_targets": [
+    "org.apache.commons.beanutils.MethodUtils.invokeExactMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+    "org.apache.commons.beanutils.MethodUtils.invokeExactStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+    "org.apache.commons.beanutils.MethodUtils.invokeStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)"
+  ],
+  "unindexed_targets": [
+    "org.apache.commons.beanutils.MethodUtils.toArray(java.lang.Object)"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 1,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.beanutils.MethodUtils.invokeExactMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeExactStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.toArray(java.lang.Object)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.beanutils.MethodUtils.invokeExactMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeExactStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 1,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.beanutils.MethodUtils.invokeExactMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeExactStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.toArray(java.lang.Object)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.beanutils.MethodUtils.invokeExactMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeExactStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "multihop": {
+      "candidate_count": 2,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.beanutils.MethodUtils.invokeExactMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeExactStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.toArray(java.lang.Object)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.beanutils.MethodUtils.invokeExactMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeExactStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 3,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.beanutils.MethodUtils.invokeExactMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeExactStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.toArray(java.lang.Object)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.beanutils.MethodUtils.invokeExactMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeExactStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "diff_and_override": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.beanutils.MethodUtils.toArray(java.lang.Object)"
+      ],
+      "misses": [
+        "org.apache.commons.beanutils.MethodUtils.invokeExactMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeExactStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.beanutils.MethodUtils.invokeExactMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeExactStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "mixed_field_paths": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.beanutils.MethodUtils.toArray(java.lang.Object)"
+      ],
+      "misses": [
+        "org.apache.commons.beanutils.MethodUtils.invokeExactMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeExactStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.beanutils.MethodUtils.invokeExactMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeExactStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "seed_field_accesses": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.beanutils.MethodUtils.toArray(java.lang.Object)"
+      ],
+      "misses": [
+        "org.apache.commons.beanutils.MethodUtils.invokeExactMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeExactStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.beanutils.MethodUtils.invokeExactMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeExactStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "combined_field_paths": {
+      "candidate_count": 4,
+      "hits": [
+        "org.apache.commons.beanutils.MethodUtils.toArray(java.lang.Object)"
+      ],
+      "misses": [
+        "org.apache.commons.beanutils.MethodUtils.invokeExactMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeExactStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.beanutils.MethodUtils.invokeExactMethod(java.lang.Object,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeExactStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)",
+        "org.apache.commons.beanutils.MethodUtils.invokeStaticMethod(java.lang.Class,java.lang.String,java.lang.Object)"
+      ],
+      "indexed_recall": 0.0
+    }
+  }
+}

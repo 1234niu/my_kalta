@@ -1,0 +1,2644 @@
+{
+  "id": "constantinople-090",
+  "graph_edges": 9425,
+  "seeds": {
+    "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.compress.compressors.CompressorException.CompressorException(java.lang.String)",
+      "org.apache.commons.compress.compressors.CompressorException.CompressorException(java.lang.String,java.lang.Throwable)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.toKey(java.lang.String)",
+      "org.apache.commons.compress.compressors.CompressorStreamProvider.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream.DeflateCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream.GzipCompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream.BlockLZ4CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStream.FramedLZ4CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+      "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.Pack200CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.FramedSnappyCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.SnappyCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean,int)",
+      "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)"
+    ],
+    "fields": [
+      "org.apache.commons.compress.compressors.CompressorException.CompressorException(java.lang.String)",
+      "org.apache.commons.compress.compressors.CompressorException.CompressorException(java.lang.String,java.lang.Throwable)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.BZIP2",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.DEFLATE",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.GZIP",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_BLOCK",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_FRAMED",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZMA",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.PACK200",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_FRAMED",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_RAW",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.XZ",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.Z",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.toKey(java.lang.String)",
+      "org.apache.commons.compress.compressors.CompressorStreamProvider.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream.DeflateCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream.GzipCompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream.BlockLZ4CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStream.FramedLZ4CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+      "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.Pack200CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.FramedSnappyCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.SnappyCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean,int)",
+      "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)"
+    ],
+    "multihop": [
+      "org.apache.commons.compress.compressors.CompressorException.CompressorException(java.lang.String)",
+      "org.apache.commons.compress.compressors.CompressorException.CompressorException(java.lang.String,java.lang.Throwable)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.BZIP2",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.DEFLATE",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.GZIP",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_BLOCK",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_FRAMED",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZMA",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.PACK200",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_FRAMED",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_RAW",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.XZ",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.Z",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.decompressConcatenated",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.toKey(java.lang.String)",
+      "org.apache.commons.compress.compressors.CompressorStreamProvider.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream.DeflateCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream.GzipCompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream.BlockLZ4CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStream.FramedLZ4CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+      "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.Pack200CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.FramedSnappyCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.SnappyCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean,int)",
+      "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.compress.MemoryLimitException.MemoryLimitException(java.lang.String,java.lang.Exception)",
+      "org.apache.commons.compress.compressors.CompressorException.CompressorException(java.lang.String)",
+      "org.apache.commons.compress.compressors.CompressorException.CompressorException(java.lang.String,java.lang.Throwable)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.BZIP2",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.DEFLATE",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.GZIP",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_BLOCK",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_FRAMED",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZMA",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.PACK200",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_FRAMED",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_RAW",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.XZ",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.Z",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.decompressConcatenated",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.findAvailableCompressorInputStreamProviders()",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.toKey(java.lang.String)",
+      "org.apache.commons.compress.compressors.CompressorStreamProvider.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.init(boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+      "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream.DeflateCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream.DeflateCompressorInputStream(java.io.InputStream,org.apache.commons.compress.compressors.deflate.DeflateParameters)",
+      "org.apache.commons.compress.compressors.deflate.DeflateParameters.DeflateParameters()",
+      "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream.GzipCompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream.init(boolean)",
+      "org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream.BlockLZ4CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStream.FramedLZ4CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStream.init(boolean)",
+      "org.apache.commons.compress.compressors.lz77support.AbstractLZ77CompressorInputStream.AbstractLZ77CompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.internalIsLZMACompressionAvailable()",
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.LZWInputStream(java.io.InputStream,java.nio.ByteOrder)",
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.initializeTables(int,int)",
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.setClearCode(int)",
+      "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.Pack200CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.Pack200CompressorInputStream(java.io.InputStream,org.apache.commons.compress.compressors.pack200.Pack200Strategy)",
+      "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.FramedSnappyCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.FramedSnappyCompressorInputStream(java.io.InputStream,org.apache.commons.compress.compressors.snappy.FramedSnappyDialect)",
+      "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.SnappyCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.SnappyCompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean,int)",
+      "org.apache.commons.compress.compressors.xz.XZUtils.internalIsXZCompressionAvailable()",
+      "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.clearEntries()",
+      "org.apache.commons.compress.utils.BitInputStream.BitInputStream(java.io.InputStream,java.nio.ByteOrder)",
+      "org.apache.commons.compress.utils.BitInputStream.readBits(int)",
+      "org.apache.commons.compress.utils.CloseShieldFilterInputStream.CloseShieldFilterInputStream(java.io.InputStream)"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.compress.MemoryLimitException.MemoryLimitException(java.lang.String,java.lang.Exception)",
+      "org.apache.commons.compress.compressors.CompressorException.CompressorException(java.lang.String)",
+      "org.apache.commons.compress.compressors.CompressorException.CompressorException(java.lang.String,java.lang.Throwable)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.BZIP2",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.DEFLATE",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.GZIP",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_BLOCK",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_FRAMED",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZMA",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.PACK200",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_FRAMED",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_RAW",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.XZ",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.Z",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.decompressConcatenated",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.findAvailableCompressorInputStreamProviders()",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.toKey(java.lang.String)",
+      "org.apache.commons.compress.compressors.CompressorStreamProvider.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.init(boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+      "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream.DeflateCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream.DeflateCompressorInputStream(java.io.InputStream,org.apache.commons.compress.compressors.deflate.DeflateParameters)",
+      "org.apache.commons.compress.compressors.deflate.DeflateParameters.DeflateParameters()",
+      "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream.GzipCompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream.init(boolean)",
+      "org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream.BlockLZ4CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStream.FramedLZ4CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStream.init(boolean)",
+      "org.apache.commons.compress.compressors.lz77support.AbstractLZ77CompressorInputStream.AbstractLZ77CompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.internalIsLZMACompressionAvailable()",
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.LZWInputStream(java.io.InputStream,java.nio.ByteOrder)",
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.initializeTables(int,int)",
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.setClearCode(int)",
+      "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.Pack200CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.Pack200CompressorInputStream(java.io.InputStream,org.apache.commons.compress.compressors.pack200.Pack200Strategy)",
+      "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.FramedSnappyCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.FramedSnappyCompressorInputStream(java.io.InputStream,org.apache.commons.compress.compressors.snappy.FramedSnappyDialect)",
+      "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.SnappyCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.SnappyCompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean,int)",
+      "org.apache.commons.compress.compressors.xz.XZUtils.internalIsXZCompressionAvailable()",
+      "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.clearEntries()",
+      "org.apache.commons.compress.utils.BitInputStream.BitInputStream(java.io.InputStream,java.nio.ByteOrder)",
+      "org.apache.commons.compress.utils.BitInputStream.readBits(int)",
+      "org.apache.commons.compress.utils.CloseShieldFilterInputStream.CloseShieldFilterInputStream(java.io.InputStream)"
+    ],
+    "mixed_field_paths": [
+      "org.apache.commons.compress.MemoryLimitException.MemoryLimitException(java.lang.String,java.lang.Exception)",
+      "org.apache.commons.compress.compressors.CompressorException.CompressorException(java.lang.String)",
+      "org.apache.commons.compress.compressors.CompressorException.CompressorException(java.lang.String,java.lang.Throwable)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.BZIP2",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.DEFLATE",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.GZIP",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_BLOCK",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_FRAMED",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZMA",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.PACK200",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_FRAMED",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_RAW",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.XZ",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.Z",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.decompressConcatenated",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.findAvailableCompressorInputStreamProviders()",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.toKey(java.lang.String)",
+      "org.apache.commons.compress.compressors.CompressorStreamProvider.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.init(boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+      "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream.DeflateCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream.DeflateCompressorInputStream(java.io.InputStream,org.apache.commons.compress.compressors.deflate.DeflateParameters)",
+      "org.apache.commons.compress.compressors.deflate.DeflateParameters.DeflateParameters()",
+      "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream.GzipCompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream.init(boolean)",
+      "org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream.BlockLZ4CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream.WINDOW_SIZE",
+      "org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStream.FramedLZ4CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStream.init(boolean)",
+      "org.apache.commons.compress.compressors.lz77support.AbstractLZ77CompressorInputStream.AbstractLZ77CompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.CachedAvailability.CACHED_AVAILABLE",
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.CachedAvailability.DONT_CACHE",
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.cachedLZMAAvailability",
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.internalIsLZMACompressionAvailable()",
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.DEFAULT_CODE_SIZE",
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.LZWInputStream(java.io.InputStream,java.nio.ByteOrder)",
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.in",
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.initializeTables(int,int)",
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.setClearCode(int)",
+      "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.Pack200CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.Pack200CompressorInputStream(java.io.InputStream,org.apache.commons.compress.compressors.pack200.Pack200Strategy)",
+      "org.apache.commons.compress.compressors.pack200.Pack200Strategy.IN_MEMORY",
+      "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.FramedSnappyCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.FramedSnappyCompressorInputStream(java.io.InputStream,org.apache.commons.compress.compressors.snappy.FramedSnappyDialect)",
+      "org.apache.commons.compress.compressors.snappy.FramedSnappyDialect.STANDARD",
+      "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.DEFAULT_BLOCK_SIZE",
+      "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.SnappyCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.SnappyCompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean,int)",
+      "org.apache.commons.compress.compressors.xz.XZUtils.CachedAvailability.CACHED_AVAILABLE",
+      "org.apache.commons.compress.compressors.xz.XZUtils.CachedAvailability.DONT_CACHE",
+      "org.apache.commons.compress.compressors.xz.XZUtils.cachedXZAvailability",
+      "org.apache.commons.compress.compressors.xz.XZUtils.internalIsXZCompressionAvailable()",
+      "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.BLOCK_MODE_MASK",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.MAGIC_1",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.MAGIC_2",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.MAX_CODE_SIZE_MASK",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.blockMode",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.clearEntries()",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.maxCodeSize",
+      "org.apache.commons.compress.utils.BitInputStream.BitInputStream(java.io.InputStream,java.nio.ByteOrder)",
+      "org.apache.commons.compress.utils.BitInputStream.readBits(int)",
+      "org.apache.commons.compress.utils.CloseShieldFilterInputStream.CloseShieldFilterInputStream(java.io.InputStream)"
+    ],
+    "seed_field_accesses": [
+      "org.apache.commons.compress.MemoryLimitException.MemoryLimitException(java.lang.String,java.lang.Exception)",
+      "org.apache.commons.compress.compressors.CompressorException.CompressorException(java.lang.String)",
+      "org.apache.commons.compress.compressors.CompressorException.CompressorException(java.lang.String,java.lang.Throwable)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.BZIP2",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.DEFLATE",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.GZIP",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_BLOCK",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_FRAMED",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZMA",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.PACK200",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_FRAMED",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_RAW",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.XZ",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.Z",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.decompressConcatenated",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.findAvailableCompressorInputStreamProviders()",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.toKey(java.lang.String)",
+      "org.apache.commons.compress.compressors.CompressorStreamProvider.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.init(boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+      "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream.DeflateCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream.DeflateCompressorInputStream(java.io.InputStream,org.apache.commons.compress.compressors.deflate.DeflateParameters)",
+      "org.apache.commons.compress.compressors.deflate.DeflateParameters.DeflateParameters()",
+      "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream.GzipCompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream.init(boolean)",
+      "org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream.BlockLZ4CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStream.FramedLZ4CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStream.init(boolean)",
+      "org.apache.commons.compress.compressors.lz77support.AbstractLZ77CompressorInputStream.AbstractLZ77CompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.internalIsLZMACompressionAvailable()",
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.LZWInputStream(java.io.InputStream,java.nio.ByteOrder)",
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.initializeTables(int,int)",
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.setClearCode(int)",
+      "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.Pack200CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.Pack200CompressorInputStream(java.io.InputStream,org.apache.commons.compress.compressors.pack200.Pack200Strategy)",
+      "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.FramedSnappyCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.FramedSnappyCompressorInputStream(java.io.InputStream,org.apache.commons.compress.compressors.snappy.FramedSnappyDialect)",
+      "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.SnappyCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.SnappyCompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean,int)",
+      "org.apache.commons.compress.compressors.xz.XZUtils.internalIsXZCompressionAvailable()",
+      "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.clearEntries()",
+      "org.apache.commons.compress.utils.BitInputStream.BitInputStream(java.io.InputStream,java.nio.ByteOrder)",
+      "org.apache.commons.compress.utils.BitInputStream.readBits(int)",
+      "org.apache.commons.compress.utils.CloseShieldFilterInputStream.CloseShieldFilterInputStream(java.io.InputStream)"
+    ],
+    "combined_field_paths": [
+      "org.apache.commons.compress.MemoryLimitException.MemoryLimitException(java.lang.String,java.lang.Exception)",
+      "org.apache.commons.compress.compressors.CompressorException.CompressorException(java.lang.String)",
+      "org.apache.commons.compress.compressors.CompressorException.CompressorException(java.lang.String,java.lang.Throwable)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.BZIP2",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.DEFLATE",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.GZIP",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_BLOCK",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_FRAMED",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZMA",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.PACK200",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_FRAMED",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_RAW",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.XZ",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.Z",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream)",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.decompressConcatenated",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.findAvailableCompressorInputStreamProviders()",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.toKey(java.lang.String)",
+      "org.apache.commons.compress.compressors.CompressorStreamProvider.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.init(boolean)",
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+      "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream.DeflateCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream.DeflateCompressorInputStream(java.io.InputStream,org.apache.commons.compress.compressors.deflate.DeflateParameters)",
+      "org.apache.commons.compress.compressors.deflate.DeflateParameters.DeflateParameters()",
+      "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream.GzipCompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream.init(boolean)",
+      "org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream.BlockLZ4CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream.WINDOW_SIZE",
+      "org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStream.FramedLZ4CompressorInputStream(java.io.InputStream,boolean)",
+      "org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStream.init(boolean)",
+      "org.apache.commons.compress.compressors.lz77support.AbstractLZ77CompressorInputStream.AbstractLZ77CompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.CachedAvailability.CACHED_AVAILABLE",
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.CachedAvailability.DONT_CACHE",
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.cachedLZMAAvailability",
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.internalIsLZMACompressionAvailable()",
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.DEFAULT_CODE_SIZE",
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.LZWInputStream(java.io.InputStream,java.nio.ByteOrder)",
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.in",
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.initializeTables(int,int)",
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.setClearCode(int)",
+      "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.Pack200CompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.Pack200CompressorInputStream(java.io.InputStream,org.apache.commons.compress.compressors.pack200.Pack200Strategy)",
+      "org.apache.commons.compress.compressors.pack200.Pack200Strategy.IN_MEMORY",
+      "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.FramedSnappyCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.FramedSnappyCompressorInputStream(java.io.InputStream,org.apache.commons.compress.compressors.snappy.FramedSnappyDialect)",
+      "org.apache.commons.compress.compressors.snappy.FramedSnappyDialect.STANDARD",
+      "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.DEFAULT_BLOCK_SIZE",
+      "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.SnappyCompressorInputStream(java.io.InputStream)",
+      "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.SnappyCompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean,int)",
+      "org.apache.commons.compress.compressors.xz.XZUtils.CachedAvailability.CACHED_AVAILABLE",
+      "org.apache.commons.compress.compressors.xz.XZUtils.CachedAvailability.DONT_CACHE",
+      "org.apache.commons.compress.compressors.xz.XZUtils.cachedXZAvailability",
+      "org.apache.commons.compress.compressors.xz.XZUtils.internalIsXZCompressionAvailable()",
+      "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.BLOCK_MODE_MASK",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.MAGIC_1",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.MAGIC_2",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.MAX_CODE_SIZE_MASK",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.blockMode",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.clearEntries()",
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.maxCodeSize",
+      "org.apache.commons.compress.utils.BitInputStream.BitInputStream(java.io.InputStream,java.nio.ByteOrder)",
+      "org.apache.commons.compress.utils.BitInputStream.readBits(int)",
+      "org.apache.commons.compress.utils.CloseShieldFilterInputStream.CloseShieldFilterInputStream(java.io.InputStream)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.GZIP": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.GZIP": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.GZIP",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 520
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.BZIP2": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.BZIP2": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.BZIP2",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 524
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.XZ": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.XZ": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.XZ",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 528
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 532
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 532
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 358
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 532
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 382
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZMA": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.LZMA": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.LZMA",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 535
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.PACK200": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.PACK200": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.PACK200",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 542
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_RAW": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_RAW": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_RAW",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 546
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_FRAMED": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_FRAMED": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_FRAMED",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 550
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.Z": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.Z": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.Z",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 554
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.DEFLATE": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.DEFLATE": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.DEFLATE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 558
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_BLOCK": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_BLOCK": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_BLOCK",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 562
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_FRAMED": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_FRAMED": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_FRAMED",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 566
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.GZIP": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.GZIP": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.GZIP",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 520
+          }
+        ],
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 654
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 655
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.GZIP",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 520
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.BZIP2": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.BZIP2": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.BZIP2",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 524
+          }
+        ],
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 654
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 655
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.BZIP2",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 524
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.XZ": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.XZ": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.XZ",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 528
+          }
+        ],
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 654
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 655
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.XZ",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 528
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 532
+          }
+        ],
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 654
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 655
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 532
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 532
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 358
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 532
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 382
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean)": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 532
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 382
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 397
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZMA": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.LZMA": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.LZMA",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 535
+          }
+        ],
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 654
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 655
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.LZMA",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 535
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.PACK200": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.PACK200": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.PACK200",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 542
+          }
+        ],
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 654
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 655
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.PACK200",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 542
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_RAW": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_RAW": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_RAW",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 546
+          }
+        ],
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 654
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 655
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_RAW",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 546
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_FRAMED": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_FRAMED": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_FRAMED",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 550
+          }
+        ],
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 654
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 655
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.SNAPPY_FRAMED",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 550
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.Z": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.Z": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.Z",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 554
+          }
+        ],
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 654
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 655
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.Z",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 554
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.DEFLATE": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.DEFLATE": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.DEFLATE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 558
+          }
+        ],
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 654
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 655
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.DEFLATE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 558
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_BLOCK": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_BLOCK": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_BLOCK",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 562
+          }
+        ],
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 654
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 655
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_BLOCK",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 562
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_FRAMED": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_FRAMED": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_FRAMED",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 566
+          }
+        ],
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 654
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 655
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.LZ4_FRAMED",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 566
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 654
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 654
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 655
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream)": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 654
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 655
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 508
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.decompressConcatenated": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 654
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 655
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 508
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.decompressConcatenated",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 508
+          }
+        ]
+      },
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.io.InputStream)": {
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders": [
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 654
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 655
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 573
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 508
+          },
+          {
+            "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.io.InputStream)",
+            "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+            "line": 483
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream.init(boolean)": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream.GzipCompressorInputStream(java.io.InputStream,boolean)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 521
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream.GzipCompressorInputStream(java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream.init(boolean)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/gzip/GzipCompressorInputStream.java",
+          "line": 137
+        }
+      ],
+      "org.apache.commons.compress.utils.BitInputStream.BitInputStream(java.io.InputStream,java.nio.ByteOrder)": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 525
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.utils.BitInputStream.BitInputStream(java.io.InputStream,java.nio.ByteOrder)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+          "line": 130
+        }
+      ],
+      "org.apache.commons.compress.utils.CloseShieldFilterInputStream.CloseShieldFilterInputStream(java.io.InputStream)": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 525
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.utils.CloseShieldFilterInputStream.CloseShieldFilterInputStream(java.io.InputStream)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+          "line": 130
+        }
+      ],
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.init(boolean)": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 525
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.init(boolean)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+          "line": 134
+        }
+      ],
+      "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 525
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.BZip2CompressorInputStream(java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/bzip2/BZip2CompressorInputStream.java",
+          "line": 135
+        }
+      ],
+      "org.apache.commons.compress.compressors.xz.XZUtils.internalIsXZCompressionAvailable()": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 529
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+          "to": "org.apache.commons.compress.compressors.xz.XZUtils.internalIsXZCompressionAvailable()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/xz/XZUtils.java",
+          "line": 104
+        }
+      ],
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.internalIsLZMACompressionAvailable()": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 536
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+          "to": "org.apache.commons.compress.compressors.lzma.LZMAUtils.internalIsLZMACompressionAvailable()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/lzma/LZMAUtils.java",
+          "line": 95
+        }
+      ],
+      "org.apache.commons.compress.MemoryLimitException.MemoryLimitException(java.lang.String,java.lang.Exception)": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 539
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.MemoryLimitException.MemoryLimitException(java.lang.String,java.lang.Exception)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/lzma/LZMACompressorInputStream.java",
+          "line": 64
+        }
+      ],
+      "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.Pack200CompressorInputStream(java.io.InputStream,org.apache.commons.compress.compressors.pack200.Pack200Strategy)": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.Pack200CompressorInputStream(java.io.InputStream)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 543
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.Pack200CompressorInputStream(java.io.InputStream)",
+          "to": "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.Pack200CompressorInputStream(java.io.InputStream,org.apache.commons.compress.compressors.pack200.Pack200Strategy)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/pack200/Pack200CompressorInputStream.java",
+          "line": 59
+        }
+      ],
+      "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.SnappyCompressorInputStream(java.io.InputStream,int)": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.SnappyCompressorInputStream(java.io.InputStream)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 547
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.SnappyCompressorInputStream(java.io.InputStream)",
+          "to": "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.SnappyCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/snappy/SnappyCompressorInputStream.java",
+          "line": 69
+        }
+      ],
+      "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.FramedSnappyCompressorInputStream(java.io.InputStream,org.apache.commons.compress.compressors.snappy.FramedSnappyDialect)": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.FramedSnappyCompressorInputStream(java.io.InputStream)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 551
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.FramedSnappyCompressorInputStream(java.io.InputStream)",
+          "to": "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.FramedSnappyCompressorInputStream(java.io.InputStream,org.apache.commons.compress.compressors.snappy.FramedSnappyDialect)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/snappy/FramedSnappyCompressorInputStream.java",
+          "line": 94
+        }
+      ],
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.LZWInputStream(java.io.InputStream,java.nio.ByteOrder)": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 555
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.compressors.lzw.LZWInputStream.LZWInputStream(java.io.InputStream,java.nio.ByteOrder)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/z/ZCompressorInputStream.java",
+          "line": 43
+        }
+      ],
+      "org.apache.commons.compress.utils.BitInputStream.readBits(int)": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 555
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.utils.BitInputStream.readBits(int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/z/ZCompressorInputStream.java",
+          "line": 44
+        }
+      ],
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.setClearCode(int)": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 555
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.compressors.lzw.LZWInputStream.setClearCode(int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/z/ZCompressorInputStream.java",
+          "line": 53
+        }
+      ],
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.initializeTables(int,int)": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 555
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.compressors.lzw.LZWInputStream.initializeTables(int,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/z/ZCompressorInputStream.java",
+          "line": 55
+        }
+      ],
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.clearEntries()": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 555
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.clearEntries()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/z/ZCompressorInputStream.java",
+          "line": 56
+        }
+      ],
+      "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream.DeflateCompressorInputStream(java.io.InputStream,org.apache.commons.compress.compressors.deflate.DeflateParameters)": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream.DeflateCompressorInputStream(java.io.InputStream)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 559
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream.DeflateCompressorInputStream(java.io.InputStream)",
+          "to": "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream.DeflateCompressorInputStream(java.io.InputStream,org.apache.commons.compress.compressors.deflate.DeflateParameters)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/deflate/DeflateCompressorInputStream.java",
+          "line": 50
+        }
+      ],
+      "org.apache.commons.compress.compressors.deflate.DeflateParameters.DeflateParameters()": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream.DeflateCompressorInputStream(java.io.InputStream)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 559
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.deflate.DeflateCompressorInputStream.DeflateCompressorInputStream(java.io.InputStream)",
+          "to": "org.apache.commons.compress.compressors.deflate.DeflateParameters.DeflateParameters()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/deflate/DeflateCompressorInputStream.java",
+          "line": 50
+        }
+      ],
+      "org.apache.commons.compress.compressors.lz77support.AbstractLZ77CompressorInputStream.AbstractLZ77CompressorInputStream(java.io.InputStream,int)": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream.BlockLZ4CompressorInputStream(java.io.InputStream)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 563
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream.BlockLZ4CompressorInputStream(java.io.InputStream)",
+          "to": "org.apache.commons.compress.compressors.lz77support.AbstractLZ77CompressorInputStream.AbstractLZ77CompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/lz4/BlockLZ4CompressorInputStream.java",
+          "line": 56
+        }
+      ],
+      "org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStream.init(boolean)": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStream.FramedLZ4CompressorInputStream(java.io.InputStream,boolean)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 567
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStream.FramedLZ4CompressorInputStream(java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.lz4.FramedLZ4CompressorInputStream.init(boolean)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/lz4/FramedLZ4CompressorInputStream.java",
+          "line": 114
+        }
+      ],
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.findAvailableCompressorInputStreamProviders()": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 573
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+          "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.findAvailableCompressorInputStreamProviders()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 656
+        }
+      ]
+    },
+    "mixed_field_paths": {
+      "org.apache.commons.compress.compressors.xz.XZUtils.cachedXZAvailability": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 529
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+          "to": "org.apache.commons.compress.compressors.xz.XZUtils.cachedXZAvailability",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/xz/XZUtils.java",
+          "line": 100
+        }
+      ],
+      "org.apache.commons.compress.compressors.xz.XZUtils.CachedAvailability.DONT_CACHE": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 529
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+          "to": "org.apache.commons.compress.compressors.xz.XZUtils.CachedAvailability.DONT_CACHE",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/xz/XZUtils.java",
+          "line": 101
+        }
+      ],
+      "org.apache.commons.compress.compressors.xz.XZUtils.CachedAvailability.CACHED_AVAILABLE": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 529
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+          "to": "org.apache.commons.compress.compressors.xz.XZUtils.CachedAvailability.CACHED_AVAILABLE",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/xz/XZUtils.java",
+          "line": 102
+        }
+      ],
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.cachedLZMAAvailability": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 536
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+          "to": "org.apache.commons.compress.compressors.lzma.LZMAUtils.cachedLZMAAvailability",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/lzma/LZMAUtils.java",
+          "line": 91
+        }
+      ],
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.CachedAvailability.DONT_CACHE": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 536
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+          "to": "org.apache.commons.compress.compressors.lzma.LZMAUtils.CachedAvailability.DONT_CACHE",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/lzma/LZMAUtils.java",
+          "line": 92
+        }
+      ],
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.CachedAvailability.CACHED_AVAILABLE": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 536
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+          "to": "org.apache.commons.compress.compressors.lzma.LZMAUtils.CachedAvailability.CACHED_AVAILABLE",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/lzma/LZMAUtils.java",
+          "line": 93
+        }
+      ],
+      "org.apache.commons.compress.compressors.pack200.Pack200Strategy.IN_MEMORY": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.Pack200CompressorInputStream(java.io.InputStream)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 543
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.Pack200CompressorInputStream(java.io.InputStream)",
+          "to": "org.apache.commons.compress.compressors.pack200.Pack200Strategy.IN_MEMORY",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/pack200/Pack200CompressorInputStream.java",
+          "line": 59
+        }
+      ],
+      "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.DEFAULT_BLOCK_SIZE": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.SnappyCompressorInputStream(java.io.InputStream)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 547
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.SnappyCompressorInputStream(java.io.InputStream)",
+          "to": "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.DEFAULT_BLOCK_SIZE",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/snappy/SnappyCompressorInputStream.java",
+          "line": 69
+        }
+      ],
+      "org.apache.commons.compress.compressors.snappy.FramedSnappyDialect.STANDARD": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.FramedSnappyCompressorInputStream(java.io.InputStream)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 551
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.FramedSnappyCompressorInputStream(java.io.InputStream)",
+          "to": "org.apache.commons.compress.compressors.snappy.FramedSnappyDialect.STANDARD",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/snappy/FramedSnappyCompressorInputStream.java",
+          "line": 94
+        }
+      ],
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.in": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 555
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.compressors.lzw.LZWInputStream.in",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/z/ZCompressorInputStream.java",
+          "line": 44
+        }
+      ],
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.MAGIC_1": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 555
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.MAGIC_1",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/z/ZCompressorInputStream.java",
+          "line": 47
+        }
+      ],
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.MAGIC_2": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 555
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.MAGIC_2",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/z/ZCompressorInputStream.java",
+          "line": 47
+        }
+      ],
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.BLOCK_MODE_MASK": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 555
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.BLOCK_MODE_MASK",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/z/ZCompressorInputStream.java",
+          "line": 50
+        }
+      ],
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.MAX_CODE_SIZE_MASK": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 555
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.MAX_CODE_SIZE_MASK",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/z/ZCompressorInputStream.java",
+          "line": 51
+        }
+      ],
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.blockMode": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 555
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.blockMode",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/z/ZCompressorInputStream.java",
+          "line": 52
+        }
+      ],
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.DEFAULT_CODE_SIZE": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 555
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.compressors.lzw.LZWInputStream.DEFAULT_CODE_SIZE",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/z/ZCompressorInputStream.java",
+          "line": 53
+        }
+      ],
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.maxCodeSize": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 555
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.maxCodeSize",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/z/ZCompressorInputStream.java",
+          "line": 55
+        }
+      ],
+      "org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream.WINDOW_SIZE": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream.BlockLZ4CompressorInputStream(java.io.InputStream)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 563
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream.BlockLZ4CompressorInputStream(java.io.InputStream)",
+          "to": "org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream.WINDOW_SIZE",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/lz4/BlockLZ4CompressorInputStream.java",
+          "line": 56
+        }
+      ],
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 573
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+          "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 654
+        }
+      ]
+    },
+    "seed_field_accesses": {},
+    "combined_field_paths": {
+      "org.apache.commons.compress.compressors.xz.XZUtils.cachedXZAvailability": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 529
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+          "to": "org.apache.commons.compress.compressors.xz.XZUtils.cachedXZAvailability",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/xz/XZUtils.java",
+          "line": 100
+        }
+      ],
+      "org.apache.commons.compress.compressors.xz.XZUtils.CachedAvailability.DONT_CACHE": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 529
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+          "to": "org.apache.commons.compress.compressors.xz.XZUtils.CachedAvailability.DONT_CACHE",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/xz/XZUtils.java",
+          "line": 101
+        }
+      ],
+      "org.apache.commons.compress.compressors.xz.XZUtils.CachedAvailability.CACHED_AVAILABLE": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 529
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable()",
+          "to": "org.apache.commons.compress.compressors.xz.XZUtils.CachedAvailability.CACHED_AVAILABLE",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/xz/XZUtils.java",
+          "line": 102
+        }
+      ],
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.cachedLZMAAvailability": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 536
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+          "to": "org.apache.commons.compress.compressors.lzma.LZMAUtils.cachedLZMAAvailability",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/lzma/LZMAUtils.java",
+          "line": 91
+        }
+      ],
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.CachedAvailability.DONT_CACHE": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 536
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+          "to": "org.apache.commons.compress.compressors.lzma.LZMAUtils.CachedAvailability.DONT_CACHE",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/lzma/LZMAUtils.java",
+          "line": 92
+        }
+      ],
+      "org.apache.commons.compress.compressors.lzma.LZMAUtils.CachedAvailability.CACHED_AVAILABLE": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 536
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.lzma.LZMAUtils.isLZMACompressionAvailable()",
+          "to": "org.apache.commons.compress.compressors.lzma.LZMAUtils.CachedAvailability.CACHED_AVAILABLE",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/lzma/LZMAUtils.java",
+          "line": 93
+        }
+      ],
+      "org.apache.commons.compress.compressors.pack200.Pack200Strategy.IN_MEMORY": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.Pack200CompressorInputStream(java.io.InputStream)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 543
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.Pack200CompressorInputStream(java.io.InputStream)",
+          "to": "org.apache.commons.compress.compressors.pack200.Pack200Strategy.IN_MEMORY",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/pack200/Pack200CompressorInputStream.java",
+          "line": 59
+        }
+      ],
+      "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.DEFAULT_BLOCK_SIZE": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.SnappyCompressorInputStream(java.io.InputStream)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 547
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.SnappyCompressorInputStream(java.io.InputStream)",
+          "to": "org.apache.commons.compress.compressors.snappy.SnappyCompressorInputStream.DEFAULT_BLOCK_SIZE",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/snappy/SnappyCompressorInputStream.java",
+          "line": 69
+        }
+      ],
+      "org.apache.commons.compress.compressors.snappy.FramedSnappyDialect.STANDARD": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.FramedSnappyCompressorInputStream(java.io.InputStream)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 551
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.FramedSnappyCompressorInputStream(java.io.InputStream)",
+          "to": "org.apache.commons.compress.compressors.snappy.FramedSnappyDialect.STANDARD",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/snappy/FramedSnappyCompressorInputStream.java",
+          "line": 94
+        }
+      ],
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.in": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 555
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.compressors.lzw.LZWInputStream.in",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/z/ZCompressorInputStream.java",
+          "line": 44
+        }
+      ],
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.MAGIC_1": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 555
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.MAGIC_1",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/z/ZCompressorInputStream.java",
+          "line": 47
+        }
+      ],
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.MAGIC_2": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 555
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.MAGIC_2",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/z/ZCompressorInputStream.java",
+          "line": 47
+        }
+      ],
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.BLOCK_MODE_MASK": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 555
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.BLOCK_MODE_MASK",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/z/ZCompressorInputStream.java",
+          "line": 50
+        }
+      ],
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.MAX_CODE_SIZE_MASK": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 555
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.MAX_CODE_SIZE_MASK",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/z/ZCompressorInputStream.java",
+          "line": 51
+        }
+      ],
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.blockMode": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 555
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.blockMode",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/z/ZCompressorInputStream.java",
+          "line": 52
+        }
+      ],
+      "org.apache.commons.compress.compressors.lzw.LZWInputStream.DEFAULT_CODE_SIZE": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 555
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.compressors.lzw.LZWInputStream.DEFAULT_CODE_SIZE",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/z/ZCompressorInputStream.java",
+          "line": 53
+        }
+      ],
+      "org.apache.commons.compress.compressors.z.ZCompressorInputStream.maxCodeSize": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 555
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)",
+          "to": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.maxCodeSize",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/z/ZCompressorInputStream.java",
+          "line": 55
+        }
+      ],
+      "org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream.WINDOW_SIZE": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream.BlockLZ4CompressorInputStream(java.io.InputStream)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 563
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream.BlockLZ4CompressorInputStream(java.io.InputStream)",
+          "to": "org.apache.commons.compress.compressors.lz4.BlockLZ4CompressorInputStream.WINDOW_SIZE",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/lz4/BlockLZ4CompressorInputStream.java",
+          "line": 56
+        }
+      ],
+      "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders": [
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.createCompressorInputStream(java.lang.String,java.io.InputStream,boolean)",
+          "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 573
+        },
+        {
+          "from": "org.apache.commons.compress.compressors.CompressorStreamFactory.getCompressorInputStreamProviders()",
+          "to": "org.apache.commons.compress.compressors.CompressorStreamFactory.compressorInputStreamProviders",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java",
+          "line": 654
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 9278,
+      "ma_analysis": 8860,
+      "ma_refinement_fixed": 6088
+    },
+    "two_hop_calls": {
+      "sp": 11665,
+      "ma_analysis": 11247,
+      "ma_refinement_fixed": 8475
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [],
+  "indexed_targets": [
+    "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()",
+    "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean)",
+    "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+    "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+    "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream)",
+    "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream,int)",
+    "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean)",
+    "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean,int)",
+    "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream)",
+    "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)"
+  ],
+  "unindexed_targets": [
+    "org.apache.commons.compress.MemoryLimit",
+    "org.apache.commons.compress.MemoryLimit.MEMORY_LIMIT_IN_KB",
+    "org.apache.commons.compress.MemoryLimit.NO_LIMIT",
+    "org.apache.commons.compress.MemoryLimit.getMemoryLimitInKb()",
+    "org.apache.commons.compress.MemoryLimit.setMemoryLimitInKb(int)"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 19,
+      "hits": [
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream,int)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean,int)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)"
+      ],
+      "misses": [
+        "org.apache.commons.compress.MemoryLimit",
+        "org.apache.commons.compress.MemoryLimit.MEMORY_LIMIT_IN_KB",
+        "org.apache.commons.compress.MemoryLimit.NO_LIMIT",
+        "org.apache.commons.compress.MemoryLimit.getMemoryLimitInKb()",
+        "org.apache.commons.compress.MemoryLimit.setMemoryLimitInKb(int)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream)"
+      ],
+      "indexed_recall": 0.3
+    },
+    "fields": {
+      "candidate_count": 33,
+      "hits": [
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream,int)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean,int)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)"
+      ],
+      "misses": [
+        "org.apache.commons.compress.MemoryLimit",
+        "org.apache.commons.compress.MemoryLimit.MEMORY_LIMIT_IN_KB",
+        "org.apache.commons.compress.MemoryLimit.NO_LIMIT",
+        "org.apache.commons.compress.MemoryLimit.getMemoryLimitInKb()",
+        "org.apache.commons.compress.MemoryLimit.setMemoryLimitInKb(int)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean)",
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean)",
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream)"
+      ],
+      "indexed_recall": 0.6
+    },
+    "multihop": {
+      "candidate_count": 37,
+      "hits": [
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream,int)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean,int)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)"
+      ],
+      "misses": [
+        "org.apache.commons.compress.MemoryLimit",
+        "org.apache.commons.compress.MemoryLimit.MEMORY_LIMIT_IN_KB",
+        "org.apache.commons.compress.MemoryLimit.NO_LIMIT",
+        "org.apache.commons.compress.MemoryLimit.getMemoryLimitInKb()",
+        "org.apache.commons.compress.MemoryLimit.setMemoryLimitInKb(int)",
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream)"
+      ],
+      "indexed_recall": 0.7
+    },
+    "two_hop_calls": {
+      "candidate_count": 58,
+      "hits": [
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream,int)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean,int)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)"
+      ],
+      "misses": [
+        "org.apache.commons.compress.MemoryLimit",
+        "org.apache.commons.compress.MemoryLimit.MEMORY_LIMIT_IN_KB",
+        "org.apache.commons.compress.MemoryLimit.NO_LIMIT",
+        "org.apache.commons.compress.MemoryLimit.getMemoryLimitInKb()",
+        "org.apache.commons.compress.MemoryLimit.setMemoryLimitInKb(int)",
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream)"
+      ],
+      "indexed_recall": 0.7
+    },
+    "diff_and_override": {
+      "candidate_count": 58,
+      "hits": [
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream,int)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean,int)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)"
+      ],
+      "misses": [
+        "org.apache.commons.compress.MemoryLimit",
+        "org.apache.commons.compress.MemoryLimit.MEMORY_LIMIT_IN_KB",
+        "org.apache.commons.compress.MemoryLimit.NO_LIMIT",
+        "org.apache.commons.compress.MemoryLimit.getMemoryLimitInKb()",
+        "org.apache.commons.compress.MemoryLimit.setMemoryLimitInKb(int)",
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream)"
+      ],
+      "indexed_recall": 0.7
+    },
+    "mixed_field_paths": {
+      "candidate_count": 76,
+      "hits": [
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream,int)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean,int)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)"
+      ],
+      "misses": [
+        "org.apache.commons.compress.MemoryLimit",
+        "org.apache.commons.compress.MemoryLimit.MEMORY_LIMIT_IN_KB",
+        "org.apache.commons.compress.MemoryLimit.NO_LIMIT",
+        "org.apache.commons.compress.MemoryLimit.getMemoryLimitInKb()",
+        "org.apache.commons.compress.MemoryLimit.setMemoryLimitInKb(int)",
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream)"
+      ],
+      "indexed_recall": 0.7
+    },
+    "seed_field_accesses": {
+      "candidate_count": 58,
+      "hits": [
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream,int)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean,int)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)"
+      ],
+      "misses": [
+        "org.apache.commons.compress.MemoryLimit",
+        "org.apache.commons.compress.MemoryLimit.MEMORY_LIMIT_IN_KB",
+        "org.apache.commons.compress.MemoryLimit.NO_LIMIT",
+        "org.apache.commons.compress.MemoryLimit.getMemoryLimitInKb()",
+        "org.apache.commons.compress.MemoryLimit.setMemoryLimitInKb(int)",
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream)"
+      ],
+      "indexed_recall": 0.7
+    },
+    "combined_field_paths": {
+      "candidate_count": 76,
+      "hits": [
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory()",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.CompressorStreamFactory(boolean,int)",
+        "org.apache.commons.compress.compressors.CompressorStreamFactory.memoryLimitInKb",
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream,int)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean,int)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream,int)"
+      ],
+      "misses": [
+        "org.apache.commons.compress.MemoryLimit",
+        "org.apache.commons.compress.MemoryLimit.MEMORY_LIMIT_IN_KB",
+        "org.apache.commons.compress.MemoryLimit.NO_LIMIT",
+        "org.apache.commons.compress.MemoryLimit.getMemoryLimitInKb()",
+        "org.apache.commons.compress.MemoryLimit.setMemoryLimitInKb(int)",
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.compress.compressors.lzma.LZMACompressorInputStream.LZMACompressorInputStream(java.io.InputStream)",
+        "org.apache.commons.compress.compressors.xz.XZCompressorInputStream.XZCompressorInputStream(java.io.InputStream,boolean)",
+        "org.apache.commons.compress.compressors.z.ZCompressorInputStream.ZCompressorInputStream(java.io.InputStream)"
+      ],
+      "indexed_recall": 0.7
+    }
+  }
+}

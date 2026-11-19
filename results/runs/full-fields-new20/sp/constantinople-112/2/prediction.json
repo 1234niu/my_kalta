@@ -1,0 +1,17 @@
+{
+  "id": "constantinople-112",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 2,
+  "predictions": [
+    "org.apache.gora.persistency.Persistent.clearDirty(int)",
+    "org.apache.gora.persistency.StatefulHashMap.clearStates()",
+    "org.apache.gora.persistency.StatefulHashMap.put(K,V)",
+    "org.apache.gora.persistency.StatefulHashMap.reuse()"
+  ],
+  "excluded_seeds": [
+    "org.apache.gora.persistency.StatefulHashMap.StatefulHashMap(java.util.Map)"
+  ],
+  "static_fingerprint": "9433144f90add7588bb1fe2c231d19c9344580c2f2d329958d4c91e24e7eb5c7",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

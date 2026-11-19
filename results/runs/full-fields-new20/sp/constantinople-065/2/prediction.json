@@ -1,0 +1,14 @@
+{
+  "id": "constantinople-065",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 2,
+  "predictions": [
+    "org.apache.commons.lang3.time.FastDateFormat.FastDateFormat(java.lang.String,java.util.TimeZone,java.util.Locale)",
+    "org.apache.commons.lang3.time.FastDateParser.centuryStart",
+    "org.apache.commons.lang3.time.FastDateParser.init(java.util.Calendar)"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "7baf4e182cc2c4865cd73b4e07abda8c40bc50cc1e647e2ced412fa422304d77",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

@@ -1,0 +1,725 @@
+{
+  "id": "constantinople-017",
+  "graph_edges": 27394,
+  "seeds": {
+    "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.math3.linear.RealMatrix.getRowVector(int)",
+      "org.apache.commons.math3.linear.RealMatrix.setRowVector(int,org.apache.commons.math3.linear.RealVector)",
+      "org.apache.commons.math3.linear.RealVector.mapMultiply(double)",
+      "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+      "org.apache.commons.math3.optimization.linear.SimplexSolver.doIteration(org.apache.commons.math3.optimization.linear.SimplexTableau)"
+    ],
+    "fields": [
+      "org.apache.commons.math3.linear.RealMatrix.getRowVector(int)",
+      "org.apache.commons.math3.linear.RealMatrix.setRowVector(int,org.apache.commons.math3.linear.RealVector)",
+      "org.apache.commons.math3.linear.RealVector.mapMultiply(double)",
+      "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+      "org.apache.commons.math3.optimization.linear.SimplexSolver.doIteration(org.apache.commons.math3.optimization.linear.SimplexTableau)",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double,int)",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.dropPhase1Objective()",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau"
+    ],
+    "multihop": [
+      "org.apache.commons.math3.linear.RealMatrix.getRowVector(int)",
+      "org.apache.commons.math3.linear.RealMatrix.setRowVector(int,org.apache.commons.math3.linear.RealVector)",
+      "org.apache.commons.math3.linear.RealVector.mapMultiply(double)",
+      "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+      "org.apache.commons.math3.optimization.linear.SimplexSolver.doIteration(org.apache.commons.math3.optimization.linear.SimplexTableau)",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.DEFAULT_ULPS",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double)",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double,int)",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.columnLabels",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.dropPhase1Objective()",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.epsilon",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.math3.linear.RealMatrix.getRowVector(int)",
+      "org.apache.commons.math3.linear.RealMatrix.setRowVector(int,org.apache.commons.math3.linear.RealVector)",
+      "org.apache.commons.math3.linear.RealVector.Entry.getIndex()",
+      "org.apache.commons.math3.linear.RealVector.Entry.getValue()",
+      "org.apache.commons.math3.linear.RealVector.checkVectorDimensions(org.apache.commons.math3.linear.RealVector)",
+      "org.apache.commons.math3.linear.RealVector.copy()",
+      "org.apache.commons.math3.linear.RealVector.getEntry(int)",
+      "org.apache.commons.math3.linear.RealVector.mapMultiply(double)",
+      "org.apache.commons.math3.linear.RealVector.mapMultiplyToSelf(double)",
+      "org.apache.commons.math3.linear.RealVector.setEntry(int,double)",
+      "org.apache.commons.math3.linear.RealVector.sparseIterator()",
+      "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+      "org.apache.commons.math3.optimization.linear.SimplexSolver.doIteration(org.apache.commons.math3.optimization.linear.SimplexTableau)",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.DEFAULT_ULPS",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double)",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double,int)",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.columnLabels",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.dropPhase1Objective()",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.epsilon",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.math3.linear.RealMatrix.getRowVector(int)",
+      "org.apache.commons.math3.linear.RealMatrix.setRowVector(int,org.apache.commons.math3.linear.RealVector)",
+      "org.apache.commons.math3.linear.RealVector.Entry.getIndex()",
+      "org.apache.commons.math3.linear.RealVector.Entry.getValue()",
+      "org.apache.commons.math3.linear.RealVector.checkVectorDimensions(org.apache.commons.math3.linear.RealVector)",
+      "org.apache.commons.math3.linear.RealVector.copy()",
+      "org.apache.commons.math3.linear.RealVector.getEntry(int)",
+      "org.apache.commons.math3.linear.RealVector.mapMultiply(double)",
+      "org.apache.commons.math3.linear.RealVector.mapMultiplyToSelf(double)",
+      "org.apache.commons.math3.linear.RealVector.setEntry(int,double)",
+      "org.apache.commons.math3.linear.RealVector.sparseIterator()",
+      "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+      "org.apache.commons.math3.optimization.linear.SimplexSolver.doIteration(org.apache.commons.math3.optimization.linear.SimplexTableau)",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.DEFAULT_ULPS",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double)",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double,int)",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.columnLabels",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.dropPhase1Objective()",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.epsilon",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.getWidth()",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau"
+    ],
+    "mixed_field_paths": [
+      "org.apache.commons.math3.linear.RealMatrix.getRowVector(int)",
+      "org.apache.commons.math3.linear.RealMatrix.setRowVector(int,org.apache.commons.math3.linear.RealVector)",
+      "org.apache.commons.math3.linear.RealVector.Entry.getIndex()",
+      "org.apache.commons.math3.linear.RealVector.Entry.getValue()",
+      "org.apache.commons.math3.linear.RealVector.checkVectorDimensions(org.apache.commons.math3.linear.RealVector)",
+      "org.apache.commons.math3.linear.RealVector.copy()",
+      "org.apache.commons.math3.linear.RealVector.getEntry(int)",
+      "org.apache.commons.math3.linear.RealVector.mapMultiply(double)",
+      "org.apache.commons.math3.linear.RealVector.mapMultiplyToSelf(double)",
+      "org.apache.commons.math3.linear.RealVector.setEntry(int,double)",
+      "org.apache.commons.math3.linear.RealVector.sparseIterator()",
+      "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+      "org.apache.commons.math3.optimization.linear.SimplexSolver.doIteration(org.apache.commons.math3.optimization.linear.SimplexTableau)",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.DEFAULT_ULPS",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double)",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double,int)",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.columnLabels",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.dropPhase1Objective()",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.epsilon",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.getWidth()",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau"
+    ],
+    "seed_field_accesses": [
+      "org.apache.commons.math3.linear.RealMatrix.getRowVector(int)",
+      "org.apache.commons.math3.linear.RealMatrix.setRowVector(int,org.apache.commons.math3.linear.RealVector)",
+      "org.apache.commons.math3.linear.RealVector.Entry.getIndex()",
+      "org.apache.commons.math3.linear.RealVector.Entry.getValue()",
+      "org.apache.commons.math3.linear.RealVector.checkVectorDimensions(org.apache.commons.math3.linear.RealVector)",
+      "org.apache.commons.math3.linear.RealVector.copy()",
+      "org.apache.commons.math3.linear.RealVector.getEntry(int)",
+      "org.apache.commons.math3.linear.RealVector.mapMultiply(double)",
+      "org.apache.commons.math3.linear.RealVector.mapMultiplyToSelf(double)",
+      "org.apache.commons.math3.linear.RealVector.setEntry(int,double)",
+      "org.apache.commons.math3.linear.RealVector.sparseIterator()",
+      "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+      "org.apache.commons.math3.optimization.linear.SimplexSolver.doIteration(org.apache.commons.math3.optimization.linear.SimplexTableau)",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.CUTOFF_THRESHOLD",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.DEFAULT_ULPS",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double)",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double,int)",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.columnLabels",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.dropPhase1Objective()",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.epsilon",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.getWidth()",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau"
+    ],
+    "combined_field_paths": [
+      "org.apache.commons.math3.linear.RealMatrix.getRowVector(int)",
+      "org.apache.commons.math3.linear.RealMatrix.setRowVector(int,org.apache.commons.math3.linear.RealVector)",
+      "org.apache.commons.math3.linear.RealVector.Entry.getIndex()",
+      "org.apache.commons.math3.linear.RealVector.Entry.getValue()",
+      "org.apache.commons.math3.linear.RealVector.checkVectorDimensions(org.apache.commons.math3.linear.RealVector)",
+      "org.apache.commons.math3.linear.RealVector.copy()",
+      "org.apache.commons.math3.linear.RealVector.getEntry(int)",
+      "org.apache.commons.math3.linear.RealVector.mapMultiply(double)",
+      "org.apache.commons.math3.linear.RealVector.mapMultiplyToSelf(double)",
+      "org.apache.commons.math3.linear.RealVector.setEntry(int,double)",
+      "org.apache.commons.math3.linear.RealVector.sparseIterator()",
+      "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+      "org.apache.commons.math3.optimization.linear.SimplexSolver.doIteration(org.apache.commons.math3.optimization.linear.SimplexTableau)",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.CUTOFF_THRESHOLD",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.DEFAULT_ULPS",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double)",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double,int)",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.columnLabels",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.dropPhase1Objective()",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.epsilon",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.getWidth()",
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau": {
+        "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau": [
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 456
+          }
+        ]
+      },
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double,int)": {
+        "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau": [
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 456
+          },
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double,int)",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 146
+          }
+        ]
+      },
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.dropPhase1Objective()": {
+        "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau": [
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 456
+          },
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.dropPhase1Objective()",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 365
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau": {
+        "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau": [
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 456
+          }
+        ]
+      },
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double,int)": {
+        "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau": [
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 456
+          },
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double,int)",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 146
+          }
+        ]
+      },
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double)": {
+        "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau": [
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 456
+          },
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double,int)",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 146
+          },
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double)",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 117
+          }
+        ]
+      },
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.DEFAULT_ULPS": {
+        "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau": [
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 456
+          },
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double,int)",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 146
+          },
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double)",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 117
+          },
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.SimplexTableau(org.apache.commons.math3.optimization.linear.LinearObjectiveFunction,java.util.Collection,org.apache.commons.math3.optimization.GoalType,boolean,double)",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.DEFAULT_ULPS",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 117
+          }
+        ]
+      },
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.dropPhase1Objective()": {
+        "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau": [
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 456
+          },
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.dropPhase1Objective()",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 365
+          }
+        ]
+      },
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.epsilon": {
+        "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau": [
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 456
+          },
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.dropPhase1Objective()",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 365
+          },
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.dropPhase1Objective()",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.epsilon",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 338
+          }
+        ]
+      },
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.columnLabels": {
+        "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau": [
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 456
+          },
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.dropPhase1Objective()",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.tableau",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 365
+          },
+          {
+            "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.dropPhase1Objective()",
+            "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.columnLabels",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+            "line": 362
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.commons.math3.linear.RealVector.checkVectorDimensions(org.apache.commons.math3.linear.RealVector)": [
+        {
+          "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+          "to": "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+          "line": 456
+        },
+        {
+          "from": "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+          "to": "org.apache.commons.math3.linear.RealVector.checkVectorDimensions(org.apache.commons.math3.linear.RealVector)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/math3/linear/RealVector.java",
+          "line": 252
+        }
+      ],
+      "org.apache.commons.math3.linear.RealVector.mapMultiply(double)": [
+        {
+          "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+          "to": "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+          "line": 456
+        },
+        {
+          "from": "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+          "to": "org.apache.commons.math3.linear.RealVector.mapMultiply(double)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/math3/linear/RealVector.java",
+          "line": 253
+        }
+      ],
+      "org.apache.commons.math3.linear.RealVector.sparseIterator()": [
+        {
+          "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+          "to": "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+          "line": 456
+        },
+        {
+          "from": "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+          "to": "org.apache.commons.math3.linear.RealVector.sparseIterator()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/math3/linear/RealVector.java",
+          "line": 254
+        }
+      ],
+      "org.apache.commons.math3.linear.RealVector.Entry.getIndex()": [
+        {
+          "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+          "to": "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+          "line": 456
+        },
+        {
+          "from": "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+          "to": "org.apache.commons.math3.linear.RealVector.Entry.getIndex()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/math3/linear/RealVector.java",
+          "line": 257
+        }
+      ],
+      "org.apache.commons.math3.linear.RealVector.setEntry(int,double)": [
+        {
+          "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+          "to": "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+          "line": 456
+        },
+        {
+          "from": "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+          "to": "org.apache.commons.math3.linear.RealVector.setEntry(int,double)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/math3/linear/RealVector.java",
+          "line": 258
+        }
+      ],
+      "org.apache.commons.math3.linear.RealVector.Entry.getValue()": [
+        {
+          "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+          "to": "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+          "line": 456
+        },
+        {
+          "from": "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+          "to": "org.apache.commons.math3.linear.RealVector.Entry.getValue()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/math3/linear/RealVector.java",
+          "line": 258
+        }
+      ],
+      "org.apache.commons.math3.linear.RealVector.getEntry(int)": [
+        {
+          "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+          "to": "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+          "line": 456
+        },
+        {
+          "from": "org.apache.commons.math3.linear.RealVector.subtract(org.apache.commons.math3.linear.RealVector)",
+          "to": "org.apache.commons.math3.linear.RealVector.getEntry(int)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/math3/linear/RealVector.java",
+          "line": 258
+        }
+      ],
+      "org.apache.commons.math3.linear.RealVector.mapMultiplyToSelf(double)": [
+        {
+          "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+          "to": "org.apache.commons.math3.linear.RealVector.mapMultiply(double)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+          "line": 457
+        },
+        {
+          "from": "org.apache.commons.math3.linear.RealVector.mapMultiply(double)",
+          "to": "org.apache.commons.math3.linear.RealVector.mapMultiplyToSelf(double)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/math3/linear/RealVector.java",
+          "line": 580
+        }
+      ],
+      "org.apache.commons.math3.linear.RealVector.copy()": [
+        {
+          "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+          "to": "org.apache.commons.math3.linear.RealVector.mapMultiply(double)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+          "line": 457
+        },
+        {
+          "from": "org.apache.commons.math3.linear.RealVector.mapMultiply(double)",
+          "to": "org.apache.commons.math3.linear.RealVector.copy()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/math3/linear/RealVector.java",
+          "line": 580
+        }
+      ]
+    },
+    "mixed_field_paths": {},
+    "seed_field_accesses": {
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.CUTOFF_THRESHOLD": [
+        {
+          "seed": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+          "edge": "ADDED_READ",
+          "after_line": 464,
+          "proposed_fqn": "org.apache.commons.math3.optimization.linear.SimplexTableau.CUTOFF_THRESHOLD",
+          "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+          "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+          "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.CUTOFF_THRESHOLD"
+        }
+      ]
+    },
+    "combined_field_paths": {
+      "org.apache.commons.math3.optimization.linear.SimplexTableau.CUTOFF_THRESHOLD": [
+        {
+          "seed": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+          "edge": "ADDED_READ",
+          "after_line": 464,
+          "proposed_fqn": "org.apache.commons.math3.optimization.linear.SimplexTableau.CUTOFF_THRESHOLD",
+          "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+          "from": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+          "to": "org.apache.commons.math3.optimization.linear.SimplexTableau.CUTOFF_THRESHOLD"
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 5079,
+      "ma_analysis": 4661,
+      "ma_refinement_fixed": 3481
+    },
+    "two_hop_calls": {
+      "sp": 5632,
+      "ma_analysis": 5214,
+      "ma_refinement_fixed": 4034
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "getWidth",
+        "arity": 0,
+        "arguments": [],
+        "receiver": null,
+        "after_line": 461,
+        "expression": "getWidth()",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+        "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+        "status": "possible_parent_targets",
+        "possible_parent_targets": [
+          "org.apache.commons.math3.optimization.linear.SimplexTableau.getWidth()"
+        ],
+        "inferred_targets": []
+      },
+      {
+        "name": "getEntry",
+        "arity": 2,
+        "arguments": [
+          "minuendRow",
+          "i"
+        ],
+        "receiver": "tableau",
+        "after_line": 462,
+        "expression": "getEntry(minuendRow, i)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+        "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "getEntry",
+        "arity": 2,
+        "arguments": [
+          "subtrahendRow",
+          "i"
+        ],
+        "receiver": "tableau",
+        "after_line": 462,
+        "expression": "getEntry(subtrahendRow, i)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+        "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "abs",
+        "arity": 1,
+        "arguments": [
+          "result"
+        ],
+        "receiver": "FastMath",
+        "after_line": 464,
+        "expression": "abs(result)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+        "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "setEntry",
+        "arity": 3,
+        "arguments": [
+          "minuendRow",
+          "i",
+          "result"
+        ],
+        "receiver": "tableau",
+        "after_line": 467,
+        "expression": "setEntry(minuendRow, i, result)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+        "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [
+    {
+      "seed": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow(int,int,double)",
+      "edge": "ADDED_READ",
+      "after_line": 464,
+      "proposed_fqn": "org.apache.commons.math3.optimization.linear.SimplexTableau.CUTOFF_THRESHOLD",
+      "file": "src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java"
+    }
+  ],
+  "indexed_targets": [],
+  "unindexed_targets": [
+    "org.apache.commons.math3.optimization.linear.SimplexTableau.CUTOFF_THRESHOLD"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 5,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.math3.optimization.linear.SimplexTableau.CUTOFF_THRESHOLD"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "fields": {
+      "candidate_count": 8,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.math3.optimization.linear.SimplexTableau.CUTOFF_THRESHOLD"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "multihop": {
+      "candidate_count": 12,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.math3.optimization.linear.SimplexTableau.CUTOFF_THRESHOLD"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "two_hop_calls": {
+      "candidate_count": 20,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.math3.optimization.linear.SimplexTableau.CUTOFF_THRESHOLD"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "diff_and_override": {
+      "candidate_count": 21,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.math3.optimization.linear.SimplexTableau.CUTOFF_THRESHOLD"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "mixed_field_paths": {
+      "candidate_count": 21,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.math3.optimization.linear.SimplexTableau.CUTOFF_THRESHOLD"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "seed_field_accesses": {
+      "candidate_count": 22,
+      "hits": [
+        "org.apache.commons.math3.optimization.linear.SimplexTableau.CUTOFF_THRESHOLD"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": null
+    },
+    "combined_field_paths": {
+      "candidate_count": 22,
+      "hits": [
+        "org.apache.commons.math3.optimization.linear.SimplexTableau.CUTOFF_THRESHOLD"
+      ],
+      "misses": [],
+      "indexed_misses": [],
+      "indexed_recall": null
+    }
+  }
+}

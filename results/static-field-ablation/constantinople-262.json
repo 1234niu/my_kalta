@@ -1,0 +1,734 @@
+{
+  "id": "constantinople-262",
+  "graph_edges": 3281,
+  "seeds": {
+    "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinders": true,
+    "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.Throwable)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.configure(org.apache.commons.digester3.binder.RulesBinder)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.forPattern(java.lang.String)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.install(org.apache.commons.digester3.binder.RulesModule)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+      "org.apache.commons.digester3.binder.BinderClassLoader.createBinderClassLoader(java.lang.ClassLoader)",
+      "org.apache.commons.digester3.binder.DigesterLoader.setUseContextClassLoader(boolean)"
+    ],
+    "fields": [
+      "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.Throwable)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.configure(org.apache.commons.digester3.binder.RulesBinder)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.forPattern(java.lang.String)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.install(org.apache.commons.digester3.binder.RulesModule)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+      "org.apache.commons.digester3.binder.BinderClassLoader.createBinderClassLoader(java.lang.ClassLoader)",
+      "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+      "org.apache.commons.digester3.binder.DigesterLoader.setUseContextClassLoader(boolean)"
+    ],
+    "multihop": [
+      "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.Throwable)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.configure(org.apache.commons.digester3.binder.RulesBinder)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.forPattern(java.lang.String)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.install(org.apache.commons.digester3.binder.RulesModule)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+      "org.apache.commons.digester3.binder.BinderClassLoader.createBinderClassLoader(java.lang.ClassLoader)",
+      "org.apache.commons.digester3.binder.DigesterLoader.DigesterLoader(java.lang.Iterable)",
+      "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+      "org.apache.commons.digester3.binder.DigesterLoader.newLoader(java.lang.Iterable)",
+      "org.apache.commons.digester3.binder.DigesterLoader.setUseContextClassLoader(boolean)"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.Throwable)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.configure(org.apache.commons.digester3.binder.RulesBinder)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.forPattern(java.lang.String)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.install(org.apache.commons.digester3.binder.RulesModule)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+      "org.apache.commons.digester3.binder.BinderClassLoader.1.1()",
+      "org.apache.commons.digester3.binder.BinderClassLoader.createBinderClassLoader(java.lang.ClassLoader)",
+      "org.apache.commons.digester3.binder.DigesterLoader.DigesterLoader(java.lang.Iterable)",
+      "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+      "org.apache.commons.digester3.binder.DigesterLoader.newLoader(java.lang.Iterable)",
+      "org.apache.commons.digester3.binder.DigesterLoader.setUseContextClassLoader(boolean)"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.Throwable)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.configure(org.apache.commons.digester3.binder.RulesBinder)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.forPattern(java.lang.String)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.install(org.apache.commons.digester3.binder.RulesModule)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+      "org.apache.commons.digester3.binder.BinderClassLoader.1.1()",
+      "org.apache.commons.digester3.binder.BinderClassLoader.createBinderClassLoader(java.lang.ClassLoader)",
+      "org.apache.commons.digester3.binder.DigesterLoader.DigesterLoader(java.lang.Iterable)",
+      "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+      "org.apache.commons.digester3.binder.DigesterLoader.newLoader(java.lang.Iterable)",
+      "org.apache.commons.digester3.binder.DigesterLoader.setUseContextClassLoader(boolean)"
+    ],
+    "mixed_field_paths": [
+      "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.Throwable)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.configure(org.apache.commons.digester3.binder.RulesBinder)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.forPattern(java.lang.String)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.install(org.apache.commons.digester3.binder.RulesModule)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+      "org.apache.commons.digester3.binder.BinderClassLoader.1.1()",
+      "org.apache.commons.digester3.binder.BinderClassLoader.createBinderClassLoader(java.lang.ClassLoader)",
+      "org.apache.commons.digester3.binder.DigesterLoader.DigesterLoader(java.lang.Iterable)",
+      "org.apache.commons.digester3.binder.DigesterLoader.addRules(org.apache.commons.digester3.Digester)",
+      "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+      "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()",
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester(javax.xml.parsers.SAXParser,org.apache.commons.digester3.Rules)",
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader)",
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)",
+      "org.apache.commons.digester3.binder.DigesterLoader.newLoader(java.lang.Iterable)",
+      "org.apache.commons.digester3.binder.DigesterLoader.setUseContextClassLoader(boolean)",
+      "org.apache.commons.digester3.plugins.strategies.LoaderFromStream.addRules(org.apache.commons.digester3.Digester,java.lang.String)"
+    ],
+    "seed_field_accesses": [
+      "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.Throwable)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.configure(org.apache.commons.digester3.binder.RulesBinder)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.forPattern(java.lang.String)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.install(org.apache.commons.digester3.binder.RulesModule)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+      "org.apache.commons.digester3.binder.BinderClassLoader.1.1()",
+      "org.apache.commons.digester3.binder.BinderClassLoader.createBinderClassLoader(java.lang.ClassLoader)",
+      "org.apache.commons.digester3.binder.DigesterLoader.DigesterLoader(java.lang.Iterable)",
+      "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+      "org.apache.commons.digester3.binder.DigesterLoader.newLoader(java.lang.Iterable)",
+      "org.apache.commons.digester3.binder.DigesterLoader.setUseContextClassLoader(boolean)"
+    ],
+    "combined_field_paths": [
+      "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.Throwable)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.configure(org.apache.commons.digester3.binder.RulesBinder)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.forPattern(java.lang.String)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.install(org.apache.commons.digester3.binder.RulesModule)",
+      "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+      "org.apache.commons.digester3.binder.BinderClassLoader.1.1()",
+      "org.apache.commons.digester3.binder.BinderClassLoader.createBinderClassLoader(java.lang.ClassLoader)",
+      "org.apache.commons.digester3.binder.DigesterLoader.DigesterLoader(java.lang.Iterable)",
+      "org.apache.commons.digester3.binder.DigesterLoader.addRules(org.apache.commons.digester3.Digester)",
+      "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+      "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()",
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester(javax.xml.parsers.SAXParser,org.apache.commons.digester3.Rules)",
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader)",
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)",
+      "org.apache.commons.digester3.binder.DigesterLoader.newLoader(java.lang.Iterable)",
+      "org.apache.commons.digester3.binder.DigesterLoader.setUseContextClassLoader(boolean)",
+      "org.apache.commons.digester3.plugins.strategies.LoaderFromStream.addRules(org.apache.commons.digester3.Digester,java.lang.String)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.digester3.binder.DigesterLoader.classLoader": {
+        "org.apache.commons.digester3.binder.DigesterLoader.classLoader": [
+          {
+            "from": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+            "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+            "line": 201
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.digester3.binder.DigesterLoader.classLoader": {
+        "org.apache.commons.digester3.binder.DigesterLoader.classLoader": [
+          {
+            "from": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+            "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+            "line": 201
+          }
+        ]
+      },
+      "org.apache.commons.digester3.binder.DigesterLoader.setUseContextClassLoader(boolean)": {
+        "org.apache.commons.digester3.binder.DigesterLoader.classLoader": [
+          {
+            "from": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+            "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+            "line": 201
+          },
+          {
+            "from": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+            "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+            "line": 201
+          },
+          {
+            "from": "org.apache.commons.digester3.binder.DigesterLoader.setUseContextClassLoader(boolean)",
+            "to": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+            "line": 179
+          }
+        ]
+      },
+      "org.apache.commons.digester3.binder.DigesterLoader.DigesterLoader(java.lang.Iterable)": {
+        "org.apache.commons.digester3.binder.DigesterLoader.classLoader": [
+          {
+            "from": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+            "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+            "line": 201
+          },
+          {
+            "from": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+            "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+            "line": 201
+          },
+          {
+            "from": "org.apache.commons.digester3.binder.DigesterLoader.setUseContextClassLoader(boolean)",
+            "to": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+            "line": 179
+          },
+          {
+            "from": "org.apache.commons.digester3.binder.DigesterLoader.DigesterLoader(java.lang.Iterable)",
+            "to": "org.apache.commons.digester3.binder.DigesterLoader.setUseContextClassLoader(boolean)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+            "line": 162
+          }
+        ]
+      },
+      "org.apache.commons.digester3.binder.DigesterLoader.newLoader(java.lang.Iterable)": {
+        "org.apache.commons.digester3.binder.DigesterLoader.classLoader": [
+          {
+            "from": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+            "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+            "line": 201
+          },
+          {
+            "from": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+            "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+            "kind": "WRITE",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+            "line": 201
+          },
+          {
+            "from": "org.apache.commons.digester3.binder.DigesterLoader.setUseContextClassLoader(boolean)",
+            "to": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+            "line": 179
+          },
+          {
+            "from": "org.apache.commons.digester3.binder.DigesterLoader.DigesterLoader(java.lang.Iterable)",
+            "to": "org.apache.commons.digester3.binder.DigesterLoader.setUseContextClassLoader(boolean)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+            "line": 162
+          },
+          {
+            "from": "org.apache.commons.digester3.binder.DigesterLoader.newLoader(java.lang.Iterable)",
+            "to": "org.apache.commons.digester3.binder.DigesterLoader.DigesterLoader(java.lang.Iterable)",
+            "kind": "CALLS",
+            "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+            "line": 91
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.commons.digester3.binder.BinderClassLoader.1.1()": [
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+          "to": "org.apache.commons.digester3.binder.BinderClassLoader.createBinderClassLoader(java.lang.ClassLoader)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 201
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.BinderClassLoader.createBinderClassLoader(java.lang.ClassLoader)",
+          "to": "org.apache.commons.digester3.binder.BinderClassLoader.1.1()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/BinderClassLoader.java",
+          "line": 51
+        }
+      ]
+    },
+    "mixed_field_paths": {
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)": [
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "WRITE",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 201
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 563
+        }
+      ],
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester(javax.xml.parsers.SAXParser,org.apache.commons.digester3.Rules)": [
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "WRITE",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 201
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 563
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.newDigester(javax.xml.parsers.SAXParser,org.apache.commons.digester3.Rules)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 516
+        }
+      ],
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader)": [
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "WRITE",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 201
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 563
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 536
+        }
+      ],
+      "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()": [
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "WRITE",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 201
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 597
+        }
+      ],
+      "org.apache.commons.digester3.binder.DigesterLoader.addRules(org.apache.commons.digester3.Digester)": [
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "WRITE",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 201
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 597
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.addRules(org.apache.commons.digester3.Digester)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 586
+        }
+      ],
+      "org.apache.commons.digester3.plugins.strategies.LoaderFromStream.addRules(org.apache.commons.digester3.Digester,java.lang.String)": [
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "WRITE",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 201
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 597
+        },
+        {
+          "from": "org.apache.commons.digester3.plugins.strategies.LoaderFromStream.addRules(org.apache.commons.digester3.Digester,java.lang.String)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/plugins/strategies/LoaderFromStream.java",
+          "line": 112
+        }
+      ]
+    },
+    "seed_field_accesses": {},
+    "combined_field_paths": {
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)": [
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "WRITE",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 201
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 563
+        }
+      ],
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester(javax.xml.parsers.SAXParser,org.apache.commons.digester3.Rules)": [
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "WRITE",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 201
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 563
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.newDigester(javax.xml.parsers.SAXParser,org.apache.commons.digester3.Rules)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 516
+        }
+      ],
+      "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader)": [
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "WRITE",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 201
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 563
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.newDigester(org.xml.sax.XMLReader,org.apache.commons.digester3.Rules)",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 536
+        }
+      ],
+      "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()": [
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "WRITE",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 201
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 597
+        }
+      ],
+      "org.apache.commons.digester3.binder.DigesterLoader.addRules(org.apache.commons.digester3.Digester)": [
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "WRITE",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 201
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 597
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.addRules(org.apache.commons.digester3.Digester)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 586
+        }
+      ],
+      "org.apache.commons.digester3.plugins.strategies.LoaderFromStream.addRules(org.apache.commons.digester3.Digester,java.lang.String)": [
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "WRITE",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 201
+        },
+        {
+          "from": "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.classLoader",
+          "kind": "READ",
+          "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+          "line": 597
+        },
+        {
+          "from": "org.apache.commons.digester3.plugins.strategies.LoaderFromStream.addRules(org.apache.commons.digester3.Digester,java.lang.String)",
+          "to": "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()",
+          "kind": "CALLS",
+          "file": "core/src/main/java/org/apache/commons/digester3/plugins/strategies/LoaderFromStream.java",
+          "line": 112
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 4861,
+      "ma_analysis": 4443,
+      "ma_refinement_fixed": 3065
+    },
+    "two_hop_calls": {
+      "sp": 4924,
+      "ma_analysis": 4506,
+      "ma_refinement_fixed": 3128
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "initialize",
+        "arity": 1,
+        "arguments": [
+          "this.classLoader"
+        ],
+        "receiver": "rulesBinder",
+        "after_line": 203,
+        "expression": "initialize( this.classLoader )",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+        "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "configure",
+        "arity": 1,
+        "arguments": [
+          "rulesBinder"
+        ],
+        "receiver": "rulesModule",
+        "after_line": 206,
+        "expression": "configure( rulesBinder )",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.digester3.binder.DigesterLoader.setClassLoader(java.lang.ClassLoader)",
+        "file": "core/src/main/java/org/apache/commons/digester3/binder/DigesterLoader.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [],
+  "indexed_targets": [
+    "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+    "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.Throwable)",
+    "org.apache.commons.digester3.binder.AbstractRulesModule.configure(org.apache.commons.digester3.binder.RulesBinder)",
+    "org.apache.commons.digester3.binder.AbstractRulesModule.forPattern(java.lang.String)",
+    "org.apache.commons.digester3.binder.AbstractRulesModule.install(org.apache.commons.digester3.binder.RulesModule)",
+    "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+    "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()"
+  ],
+  "unindexed_targets": [
+    "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 8,
+      "hits": [
+        "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.Throwable)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.configure(org.apache.commons.digester3.binder.RulesBinder)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.forPattern(java.lang.String)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.install(org.apache.commons.digester3.binder.RulesModule)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()"
+      ],
+      "misses": [
+        "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder",
+        "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()"
+      ],
+      "indexed_recall": 0.8571428571428571
+    },
+    "fields": {
+      "candidate_count": 9,
+      "hits": [
+        "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.Throwable)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.configure(org.apache.commons.digester3.binder.RulesBinder)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.forPattern(java.lang.String)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.install(org.apache.commons.digester3.binder.RulesModule)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()"
+      ],
+      "misses": [
+        "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder",
+        "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()"
+      ],
+      "indexed_recall": 0.8571428571428571
+    },
+    "multihop": {
+      "candidate_count": 11,
+      "hits": [
+        "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.Throwable)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.configure(org.apache.commons.digester3.binder.RulesBinder)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.forPattern(java.lang.String)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.install(org.apache.commons.digester3.binder.RulesModule)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()"
+      ],
+      "misses": [
+        "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder",
+        "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()"
+      ],
+      "indexed_recall": 0.8571428571428571
+    },
+    "two_hop_calls": {
+      "candidate_count": 12,
+      "hits": [
+        "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.Throwable)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.configure(org.apache.commons.digester3.binder.RulesBinder)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.forPattern(java.lang.String)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.install(org.apache.commons.digester3.binder.RulesModule)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()"
+      ],
+      "misses": [
+        "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder",
+        "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()"
+      ],
+      "indexed_recall": 0.8571428571428571
+    },
+    "diff_and_override": {
+      "candidate_count": 12,
+      "hits": [
+        "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.Throwable)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.configure(org.apache.commons.digester3.binder.RulesBinder)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.forPattern(java.lang.String)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.install(org.apache.commons.digester3.binder.RulesModule)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()"
+      ],
+      "misses": [
+        "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder",
+        "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()"
+      ],
+      "indexed_recall": 0.8571428571428571
+    },
+    "mixed_field_paths": {
+      "candidate_count": 18,
+      "hits": [
+        "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.Throwable)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.configure(org.apache.commons.digester3.binder.RulesBinder)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.forPattern(java.lang.String)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.install(org.apache.commons.digester3.binder.RulesModule)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+        "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()"
+      ],
+      "misses": [
+        "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "seed_field_accesses": {
+      "candidate_count": 12,
+      "hits": [
+        "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.Throwable)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.configure(org.apache.commons.digester3.binder.RulesBinder)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.forPattern(java.lang.String)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.install(org.apache.commons.digester3.binder.RulesModule)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()"
+      ],
+      "misses": [
+        "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder",
+        "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()"
+      ],
+      "indexed_recall": 0.8571428571428571
+    },
+    "combined_field_paths": {
+      "candidate_count": 18,
+      "hits": [
+        "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.String,java.lang.Object[])",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.addError(java.lang.Throwable)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.configure(org.apache.commons.digester3.binder.RulesBinder)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.forPattern(java.lang.String)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.install(org.apache.commons.digester3.binder.RulesModule)",
+        "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder()",
+        "org.apache.commons.digester3.binder.DigesterLoader.createRuleSet()"
+      ],
+      "misses": [
+        "org.apache.commons.digester3.binder.AbstractRulesModule.rulesBinder"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    }
+  }
+}

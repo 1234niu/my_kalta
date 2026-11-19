@@ -163,7 +163,7 @@ def inferred_signatures(call, seed, graph):
     return sorted({f"{candidate}.{call['name']}({','.join(args)})" for candidate in owners})
 
 
-def field_writes(parser, lines, seed, graph):
+def field_writes(parser, lines, seed, graph, *, include_existing=False):
     if not lines:
         return []
     owner = seed.split('(', 1)[0].rsplit('.', 1)[0]
@@ -195,10 +195,12 @@ def field_writes(parser, lines, seed, graph):
         name = text.removeprefix('this.')
         if text == name and name in locals_seen:
             continue
-        if any(f'{ancestor}.{name}' in entities for ancestor in lineage(owner, graph['parents'])):
+        known = next((f'{ancestor}.{name}' for ancestor in lineage(owner, graph['parents'])
+                      if f'{ancestor}.{name}' in entities), None)
+        if known and not include_existing:
             continue
         results.append(dict(seed=seed, edge='ADDED_WRITE', after_line=lines[idx][1],
-                            proposed_fqn=f'{owner}.{name}'))
+                            proposed_fqn=known or f'{owner}.{name}'))
     return results
 
 
@@ -246,3 +248,66 @@ def inferred_fields(graph, seeds):
             results.extend(dict(write, file=seed['file'])
                            for write in field_writes(parser, after, seed['fqn'], graph))
     return results
+
+
+def condition_field_reads(parser, lines, seed, graph):
+    """Find field reads in added Java conditions without treating method names as fields."""
+    if not lines:
+        return []
+    owner = seed.split('(', 1)[0].rsplit('.', 1)[0]
+    source = ('class Snippet { void snippet() {\n'
+              + '\n'.join(line[0] for line in lines) + '\n} }').encode()
+    locals_seen = set(graph['variables'].get(seed, {}))
+    tree = parser.parse(source)
+    stack = [tree.root_node]
+    conditions = []
+    while stack:
+        node = stack.pop()
+        stack.extend(reversed(node.named_children))
+        if node.type in ('variable_declarator', 'formal_parameter', 'catch_formal_parameter'):
+            name = node.child_by_field_name('name')
+            if name:
+                locals_seen.add(name.text.decode())
+        if node.type in ('if_statement', 'while_statement', 'do_statement', 'for_statement',
+                         'ternary_expression'):
+            condition = node.child_by_field_name('condition')
+            if condition:
+                conditions.append(condition)
+    results = []
+    for condition in conditions:
+        stack = [condition]
+        while stack:
+            node = stack.pop()
+            if node.type in ('parenthesized_expression', 'binary_expression', 'unary_expression'):
+                stack.extend(reversed(node.named_children))
+                continue
+            raw = node.text.decode()
+            if node.type not in ('identifier', 'field_access') or not re.fullmatch(r'(?:this\.)?[A-Za-z_$][\w$]*', raw):
+                continue
+            name = raw.removeprefix('this.')
+            if raw == name and name in locals_seen:
+                continue
+            idx = node.start_point.row - 1
+            if not 0 <= idx < len(lines) or not lines[idx][2]:
+                continue
+            known = next((f'{ancestor}.{name}' for ancestor in lineage(owner, graph['parents'])
+                          if f'{ancestor}.{name}' in graph['fieldTypes']), None)
+            results.append(dict(seed=seed, edge='ADDED_READ', after_line=lines[idx][1],
+                                proposed_fqn=known or f'{owner}.{name}'))
+    return results
+
+
+def seed_field_accesses(graph, seeds):
+    from tree_sitter import Language, Parser
+    import tree_sitter_java
+
+    parser = Parser(Language(tree_sitter_java.language()))
+    accesses = []
+    for seed in seeds:
+        if seed['type'] != 'executable':
+            continue
+        for _, after in hunks(seed['git_diff_hunk']):
+            writes = field_writes(parser, after, seed['fqn'], graph, include_existing=True)
+            reads = condition_field_reads(parser, after, seed['fqn'], graph)
+            accesses.extend(dict(access, file=seed['file']) for access in writes + reads)
+    return accesses

@@ -1,0 +1,1133 @@
+{
+  "id": "constantinople-079",
+  "graph_edges": 2294,
+  "seeds": {
+    "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeParallel(java.lang.StringBuffer,org.apache.commons.scxml.model.Parallel,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+      "org.apache.commons.scxml.model.SCXML.getChildren()",
+      "org.apache.commons.scxml.model.SCXML.getDatamodel()",
+      "org.apache.commons.scxml.model.SCXML.getInitial()",
+      "org.apache.commons.scxml.model.SCXML.getVersion()",
+      "org.apache.commons.scxml.test.StandaloneUtils.execute(java.lang.String,org.apache.commons.scxml.Evaluator)"
+    ],
+    "fields": [
+      "org.apache.commons.scxml.io.SCXMLSerializer.INDENT",
+      "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_COMMONS_SCXML",
+      "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_SCXML",
+      "org.apache.commons.scxml.io.SCXMLSerializer.XFORMER",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeParallel(java.lang.StringBuffer,org.apache.commons.scxml.model.Parallel,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+      "org.apache.commons.scxml.model.SCXML.getChildren()",
+      "org.apache.commons.scxml.model.SCXML.getDatamodel()",
+      "org.apache.commons.scxml.model.SCXML.getInitial()",
+      "org.apache.commons.scxml.model.SCXML.getVersion()",
+      "org.apache.commons.scxml.test.StandaloneUtils.execute(java.lang.String,org.apache.commons.scxml.Evaluator)"
+    ],
+    "multihop": [
+      "org.apache.commons.scxml.io.SCXMLSerializer.INDENT",
+      "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_COMMONS_SCXML",
+      "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_SCXML",
+      "org.apache.commons.scxml.io.SCXMLSerializer.XFORMER",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeParallel(java.lang.StringBuffer,org.apache.commons.scxml.model.Parallel,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+      "org.apache.commons.scxml.model.SCXML.getChildren()",
+      "org.apache.commons.scxml.model.SCXML.getDatamodel()",
+      "org.apache.commons.scxml.model.SCXML.getInitial()",
+      "org.apache.commons.scxml.model.SCXML.getVersion()",
+      "org.apache.commons.scxml.test.StandaloneUtils.execute(java.lang.String,org.apache.commons.scxml.Evaluator)"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.scxml.SCXMLHelper.escapeXML(java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.INDENT",
+      "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_COMMONS_SCXML",
+      "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_SCXML",
+      "org.apache.commons.scxml.io.SCXMLSerializer.XFORMER",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeHistory(java.lang.StringBuffer,java.util.List,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeInitial(java.lang.StringBuffer,org.apache.commons.scxml.model.Initial,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeInvoke(java.lang.StringBuffer,org.apache.commons.scxml.model.Invoke,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeOnEntry(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeOnExit(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeParallel(java.lang.StringBuffer,org.apache.commons.scxml.model.Parallel,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeTransition(java.lang.StringBuffer,org.apache.commons.scxml.model.Transition,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeTransitionTargetAttributes(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget)",
+      "org.apache.commons.scxml.model.Data.getExpr()",
+      "org.apache.commons.scxml.model.Data.getId()",
+      "org.apache.commons.scxml.model.Data.getNode()",
+      "org.apache.commons.scxml.model.Datamodel.getData()",
+      "org.apache.commons.scxml.model.Parallel.getChildren()",
+      "org.apache.commons.scxml.model.SCXML.getChildren()",
+      "org.apache.commons.scxml.model.SCXML.getDatamodel()",
+      "org.apache.commons.scxml.model.SCXML.getInitial()",
+      "org.apache.commons.scxml.model.SCXML.getVersion()",
+      "org.apache.commons.scxml.model.State.getChildren()",
+      "org.apache.commons.scxml.model.State.getInitial()",
+      "org.apache.commons.scxml.model.State.getInvoke()",
+      "org.apache.commons.scxml.model.State.getParallel()",
+      "org.apache.commons.scxml.model.State.isFinal()",
+      "org.apache.commons.scxml.model.TransitionTarget.getDatamodel()",
+      "org.apache.commons.scxml.model.TransitionTarget.getHistory()",
+      "org.apache.commons.scxml.model.TransitionTarget.getTransitionsList()",
+      "org.apache.commons.scxml.test.StandaloneUtils.execute(java.lang.String,org.apache.commons.scxml.Evaluator)"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.scxml.SCXMLHelper.escapeXML(java.lang.String)",
+      "org.apache.commons.scxml.SCXMLHelper.serializeNamespaceDeclarations(org.apache.commons.scxml.model.SCXML)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.INDENT",
+      "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_COMMONS_SCXML",
+      "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_SCXML",
+      "org.apache.commons.scxml.io.SCXMLSerializer.XFORMER",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeHistory(java.lang.StringBuffer,java.util.List,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeInitial(java.lang.StringBuffer,org.apache.commons.scxml.model.Initial,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeInvoke(java.lang.StringBuffer,org.apache.commons.scxml.model.Invoke,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeNamespaceDeclarations(org.apache.commons.scxml.model.SCXML)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeOnEntry(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeOnExit(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeParallel(java.lang.StringBuffer,org.apache.commons.scxml.model.Parallel,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeTransition(java.lang.StringBuffer,org.apache.commons.scxml.model.Transition,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeTransitionTargetAttributes(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget)",
+      "org.apache.commons.scxml.model.Data.getExpr()",
+      "org.apache.commons.scxml.model.Data.getId()",
+      "org.apache.commons.scxml.model.Data.getNode()",
+      "org.apache.commons.scxml.model.Datamodel.getData()",
+      "org.apache.commons.scxml.model.Parallel.getChildren()",
+      "org.apache.commons.scxml.model.SCXML.getChildren()",
+      "org.apache.commons.scxml.model.SCXML.getDatamodel()",
+      "org.apache.commons.scxml.model.SCXML.getInitial()",
+      "org.apache.commons.scxml.model.SCXML.getVersion()",
+      "org.apache.commons.scxml.model.State.getChildren()",
+      "org.apache.commons.scxml.model.State.getInitial()",
+      "org.apache.commons.scxml.model.State.getInvoke()",
+      "org.apache.commons.scxml.model.State.getParallel()",
+      "org.apache.commons.scxml.model.State.isFinal()",
+      "org.apache.commons.scxml.model.TransitionTarget.getDatamodel()",
+      "org.apache.commons.scxml.model.TransitionTarget.getHistory()",
+      "org.apache.commons.scxml.model.TransitionTarget.getTransitionsList()",
+      "org.apache.commons.scxml.test.StandaloneUtils.execute(java.lang.String,org.apache.commons.scxml.Evaluator)"
+    ],
+    "mixed_field_paths": [
+      "org.apache.commons.scxml.SCXMLHelper.escapeXML(java.lang.String)",
+      "org.apache.commons.scxml.SCXMLHelper.serializeNamespaceDeclarations(org.apache.commons.scxml.model.SCXML)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.INDENT",
+      "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_COMMONS_SCXML",
+      "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_SCXML",
+      "org.apache.commons.scxml.io.SCXMLSerializer.XFORMER",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeHistory(java.lang.StringBuffer,java.util.List,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeInitial(java.lang.StringBuffer,org.apache.commons.scxml.model.Initial,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeInvoke(java.lang.StringBuffer,org.apache.commons.scxml.model.Invoke,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeNamespaceDeclarations(org.apache.commons.scxml.model.SCXML)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeOnEntry(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeOnExit(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeParallel(java.lang.StringBuffer,org.apache.commons.scxml.model.Parallel,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeTransition(java.lang.StringBuffer,org.apache.commons.scxml.model.Transition,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeTransitionTargetAttributes(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget)",
+      "org.apache.commons.scxml.model.Data.getExpr()",
+      "org.apache.commons.scxml.model.Data.getId()",
+      "org.apache.commons.scxml.model.Data.getNode()",
+      "org.apache.commons.scxml.model.Datamodel.getData()",
+      "org.apache.commons.scxml.model.Parallel.getChildren()",
+      "org.apache.commons.scxml.model.SCXML.children",
+      "org.apache.commons.scxml.model.SCXML.datamodel",
+      "org.apache.commons.scxml.model.SCXML.getChildren()",
+      "org.apache.commons.scxml.model.SCXML.getDatamodel()",
+      "org.apache.commons.scxml.model.SCXML.getInitial()",
+      "org.apache.commons.scxml.model.SCXML.getVersion()",
+      "org.apache.commons.scxml.model.SCXML.initial",
+      "org.apache.commons.scxml.model.SCXML.version",
+      "org.apache.commons.scxml.model.State.getChildren()",
+      "org.apache.commons.scxml.model.State.getInitial()",
+      "org.apache.commons.scxml.model.State.getInvoke()",
+      "org.apache.commons.scxml.model.State.getParallel()",
+      "org.apache.commons.scxml.model.State.isFinal()",
+      "org.apache.commons.scxml.model.TransitionTarget.getDatamodel()",
+      "org.apache.commons.scxml.model.TransitionTarget.getHistory()",
+      "org.apache.commons.scxml.model.TransitionTarget.getTransitionsList()",
+      "org.apache.commons.scxml.test.StandaloneUtils.execute(java.lang.String,org.apache.commons.scxml.Evaluator)"
+    ],
+    "seed_field_accesses": [
+      "org.apache.commons.scxml.SCXMLHelper.escapeXML(java.lang.String)",
+      "org.apache.commons.scxml.SCXMLHelper.serializeNamespaceDeclarations(org.apache.commons.scxml.model.SCXML)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.INDENT",
+      "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_COMMONS_SCXML",
+      "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_SCXML",
+      "org.apache.commons.scxml.io.SCXMLSerializer.XFORMER",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeHistory(java.lang.StringBuffer,java.util.List,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeInitial(java.lang.StringBuffer,org.apache.commons.scxml.model.Initial,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeInvoke(java.lang.StringBuffer,org.apache.commons.scxml.model.Invoke,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeNamespaceDeclarations(org.apache.commons.scxml.model.SCXML)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeOnEntry(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeOnExit(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeParallel(java.lang.StringBuffer,org.apache.commons.scxml.model.Parallel,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeTransition(java.lang.StringBuffer,org.apache.commons.scxml.model.Transition,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeTransitionTargetAttributes(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget)",
+      "org.apache.commons.scxml.model.Data.getExpr()",
+      "org.apache.commons.scxml.model.Data.getId()",
+      "org.apache.commons.scxml.model.Data.getNode()",
+      "org.apache.commons.scxml.model.Datamodel.getData()",
+      "org.apache.commons.scxml.model.Parallel.getChildren()",
+      "org.apache.commons.scxml.model.SCXML.getChildren()",
+      "org.apache.commons.scxml.model.SCXML.getDatamodel()",
+      "org.apache.commons.scxml.model.SCXML.getInitial()",
+      "org.apache.commons.scxml.model.SCXML.getVersion()",
+      "org.apache.commons.scxml.model.State.getChildren()",
+      "org.apache.commons.scxml.model.State.getInitial()",
+      "org.apache.commons.scxml.model.State.getInvoke()",
+      "org.apache.commons.scxml.model.State.getParallel()",
+      "org.apache.commons.scxml.model.State.isFinal()",
+      "org.apache.commons.scxml.model.TransitionTarget.getDatamodel()",
+      "org.apache.commons.scxml.model.TransitionTarget.getHistory()",
+      "org.apache.commons.scxml.model.TransitionTarget.getTransitionsList()",
+      "org.apache.commons.scxml.test.StandaloneUtils.execute(java.lang.String,org.apache.commons.scxml.Evaluator)"
+    ],
+    "combined_field_paths": [
+      "org.apache.commons.scxml.SCXMLHelper.escapeXML(java.lang.String)",
+      "org.apache.commons.scxml.SCXMLHelper.serializeNamespaceDeclarations(org.apache.commons.scxml.model.SCXML)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.INDENT",
+      "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_COMMONS_SCXML",
+      "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_SCXML",
+      "org.apache.commons.scxml.io.SCXMLSerializer.XFORMER",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeHistory(java.lang.StringBuffer,java.util.List,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeInitial(java.lang.StringBuffer,org.apache.commons.scxml.model.Initial,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeInvoke(java.lang.StringBuffer,org.apache.commons.scxml.model.Invoke,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeNamespaceDeclarations(org.apache.commons.scxml.model.SCXML)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeOnEntry(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeOnExit(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeParallel(java.lang.StringBuffer,org.apache.commons.scxml.model.Parallel,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeTransition(java.lang.StringBuffer,org.apache.commons.scxml.model.Transition,java.lang.String)",
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeTransitionTargetAttributes(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget)",
+      "org.apache.commons.scxml.model.Data.getExpr()",
+      "org.apache.commons.scxml.model.Data.getId()",
+      "org.apache.commons.scxml.model.Data.getNode()",
+      "org.apache.commons.scxml.model.Datamodel.getData()",
+      "org.apache.commons.scxml.model.Parallel.getChildren()",
+      "org.apache.commons.scxml.model.SCXML.children",
+      "org.apache.commons.scxml.model.SCXML.datamodel",
+      "org.apache.commons.scxml.model.SCXML.getChildren()",
+      "org.apache.commons.scxml.model.SCXML.getDatamodel()",
+      "org.apache.commons.scxml.model.SCXML.getInitial()",
+      "org.apache.commons.scxml.model.SCXML.getVersion()",
+      "org.apache.commons.scxml.model.SCXML.initial",
+      "org.apache.commons.scxml.model.SCXML.version",
+      "org.apache.commons.scxml.model.State.getChildren()",
+      "org.apache.commons.scxml.model.State.getInitial()",
+      "org.apache.commons.scxml.model.State.getInvoke()",
+      "org.apache.commons.scxml.model.State.getParallel()",
+      "org.apache.commons.scxml.model.State.isFinal()",
+      "org.apache.commons.scxml.model.TransitionTarget.getDatamodel()",
+      "org.apache.commons.scxml.model.TransitionTarget.getHistory()",
+      "org.apache.commons.scxml.model.TransitionTarget.getTransitionsList()",
+      "org.apache.commons.scxml.test.StandaloneUtils.execute(java.lang.String,org.apache.commons.scxml.Evaluator)"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_SCXML": {
+        "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_SCXML": [
+          {
+            "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+            "to": "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_SCXML",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+            "line": 94
+          }
+        ]
+      },
+      "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_COMMONS_SCXML": {
+        "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_COMMONS_SCXML": [
+          {
+            "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+            "to": "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_COMMONS_SCXML",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+            "line": 95
+          }
+        ]
+      },
+      "org.apache.commons.scxml.io.SCXMLSerializer.XFORMER": {
+        "org.apache.commons.scxml.io.SCXMLSerializer.XFORMER": [
+          {
+            "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+            "to": "org.apache.commons.scxml.io.SCXMLSerializer.XFORMER",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+            "line": 99
+          }
+        ]
+      },
+      "org.apache.commons.scxml.io.SCXMLSerializer.INDENT": {
+        "org.apache.commons.scxml.io.SCXMLSerializer.INDENT": [
+          {
+            "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+            "to": "org.apache.commons.scxml.io.SCXMLSerializer.INDENT",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+            "line": 108
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_SCXML": {
+        "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_SCXML": [
+          {
+            "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+            "to": "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_SCXML",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+            "line": 94
+          }
+        ]
+      },
+      "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_COMMONS_SCXML": {
+        "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_COMMONS_SCXML": [
+          {
+            "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+            "to": "org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_COMMONS_SCXML",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+            "line": 95
+          }
+        ]
+      },
+      "org.apache.commons.scxml.io.SCXMLSerializer.XFORMER": {
+        "org.apache.commons.scxml.io.SCXMLSerializer.XFORMER": [
+          {
+            "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+            "to": "org.apache.commons.scxml.io.SCXMLSerializer.XFORMER",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+            "line": 99
+          }
+        ]
+      },
+      "org.apache.commons.scxml.io.SCXMLSerializer.INDENT": {
+        "org.apache.commons.scxml.io.SCXMLSerializer.INDENT": [
+          {
+            "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+            "to": "org.apache.commons.scxml.io.SCXMLSerializer.INDENT",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+            "line": 108
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.commons.scxml.model.Datamodel.getData()": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 108
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+          "to": "org.apache.commons.scxml.model.Datamodel.getData()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 341
+        }
+      ],
+      "org.apache.commons.scxml.model.Data.getNode()": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 108
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+          "to": "org.apache.commons.scxml.model.Data.getNode()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 352
+        }
+      ],
+      "org.apache.commons.scxml.model.Data.getId()": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 108
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+          "to": "org.apache.commons.scxml.model.Data.getId()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 369
+        }
+      ],
+      "org.apache.commons.scxml.SCXMLHelper.escapeXML(java.lang.String)": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 108
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+          "to": "org.apache.commons.scxml.SCXMLHelper.escapeXML(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 370
+        }
+      ],
+      "org.apache.commons.scxml.model.Data.getExpr()": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 108
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+          "to": "org.apache.commons.scxml.model.Data.getExpr()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 370
+        }
+      ],
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeTransitionTargetAttributes(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget)": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 115
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeTransitionTargetAttributes(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 134
+        }
+      ],
+      "org.apache.commons.scxml.model.State.isFinal()": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 115
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "to": "org.apache.commons.scxml.model.State.isFinal()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 135
+        }
+      ],
+      "org.apache.commons.scxml.model.State.getInitial()": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 115
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "to": "org.apache.commons.scxml.model.State.getInitial()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 140
+        }
+      ],
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeInitial(java.lang.StringBuffer,org.apache.commons.scxml.model.Initial,java.lang.String)": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 115
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeInitial(java.lang.StringBuffer,org.apache.commons.scxml.model.Initial,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 142
+        }
+      ],
+      "org.apache.commons.scxml.model.TransitionTarget.getHistory()": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 115
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "to": "org.apache.commons.scxml.model.TransitionTarget.getHistory()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 144
+        }
+      ],
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeHistory(java.lang.StringBuffer,java.util.List,java.lang.String)": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 115
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeHistory(java.lang.StringBuffer,java.util.List,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 146
+        }
+      ],
+      "org.apache.commons.scxml.model.TransitionTarget.getDatamodel()": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 115
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "to": "org.apache.commons.scxml.model.TransitionTarget.getDatamodel()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 148
+        }
+      ],
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 115
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 150
+        }
+      ],
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeOnEntry(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget,java.lang.String)": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 115
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeOnEntry(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 152
+        }
+      ],
+      "org.apache.commons.scxml.model.TransitionTarget.getTransitionsList()": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 115
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "to": "org.apache.commons.scxml.model.TransitionTarget.getTransitionsList()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 153
+        }
+      ],
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeTransition(java.lang.StringBuffer,org.apache.commons.scxml.model.Transition,java.lang.String)": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 115
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeTransition(java.lang.StringBuffer,org.apache.commons.scxml.model.Transition,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 155
+        }
+      ],
+      "org.apache.commons.scxml.model.State.getParallel()": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 115
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "to": "org.apache.commons.scxml.model.State.getParallel()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 157
+        }
+      ],
+      "org.apache.commons.scxml.model.State.getInvoke()": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 115
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "to": "org.apache.commons.scxml.model.State.getInvoke()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 158
+        }
+      ],
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeParallel(java.lang.StringBuffer,org.apache.commons.scxml.model.Parallel,java.lang.String)": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 115
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeParallel(java.lang.StringBuffer,org.apache.commons.scxml.model.Parallel,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 160
+        }
+      ],
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeInvoke(java.lang.StringBuffer,org.apache.commons.scxml.model.Invoke,java.lang.String)": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 115
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeInvoke(java.lang.StringBuffer,org.apache.commons.scxml.model.Invoke,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 162
+        }
+      ],
+      "org.apache.commons.scxml.model.State.getChildren()": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 115
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "to": "org.apache.commons.scxml.model.State.getChildren()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 164
+        }
+      ],
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 115
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 169
+        }
+      ],
+      "org.apache.commons.scxml.io.SCXMLSerializer.serializeOnExit(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget,java.lang.String)": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 115
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeOnExit(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 175
+        }
+      ],
+      "org.apache.commons.scxml.model.Parallel.getChildren()": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeParallel(java.lang.StringBuffer,org.apache.commons.scxml.model.Parallel,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 117
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeParallel(java.lang.StringBuffer,org.apache.commons.scxml.model.Parallel,java.lang.String)",
+          "to": "org.apache.commons.scxml.model.Parallel.getChildren()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 192
+        }
+      ]
+    },
+    "mixed_field_paths": {
+      "org.apache.commons.scxml.model.SCXML.version": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.model.SCXML.getVersion()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 96
+        },
+        {
+          "from": "org.apache.commons.scxml.model.SCXML.getVersion()",
+          "to": "org.apache.commons.scxml.model.SCXML.version",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/scxml/model/SCXML.java",
+          "line": 236
+        }
+      ],
+      "org.apache.commons.scxml.model.SCXML.initial": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.model.SCXML.getInitial()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 97
+        },
+        {
+          "from": "org.apache.commons.scxml.model.SCXML.getInitial()",
+          "to": "org.apache.commons.scxml.model.SCXML.initial",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/scxml/model/SCXML.java",
+          "line": 296
+        }
+      ],
+      "org.apache.commons.scxml.model.SCXML.datamodel": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.model.SCXML.getDatamodel()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 106
+        },
+        {
+          "from": "org.apache.commons.scxml.model.SCXML.getDatamodel()",
+          "to": "org.apache.commons.scxml.model.SCXML.datamodel",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/scxml/model/SCXML.java",
+          "line": 151
+        }
+      ],
+      "org.apache.commons.scxml.io.SCXMLSerializer.XFORMER": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 108
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.XFORMER",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 344
+        }
+      ],
+      "org.apache.commons.scxml.io.SCXMLSerializer.INDENT": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 108
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.INDENT",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 345
+        }
+      ],
+      "org.apache.commons.scxml.model.SCXML.children": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.model.SCXML.getChildren()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 110
+        },
+        {
+          "from": "org.apache.commons.scxml.model.SCXML.getChildren()",
+          "to": "org.apache.commons.scxml.model.SCXML.children",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/scxml/model/SCXML.java",
+          "line": 193
+        }
+      ]
+    },
+    "seed_field_accesses": {},
+    "combined_field_paths": {
+      "org.apache.commons.scxml.model.SCXML.version": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.model.SCXML.getVersion()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 96
+        },
+        {
+          "from": "org.apache.commons.scxml.model.SCXML.getVersion()",
+          "to": "org.apache.commons.scxml.model.SCXML.version",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/scxml/model/SCXML.java",
+          "line": 236
+        }
+      ],
+      "org.apache.commons.scxml.model.SCXML.initial": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.model.SCXML.getInitial()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 97
+        },
+        {
+          "from": "org.apache.commons.scxml.model.SCXML.getInitial()",
+          "to": "org.apache.commons.scxml.model.SCXML.initial",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/scxml/model/SCXML.java",
+          "line": 296
+        }
+      ],
+      "org.apache.commons.scxml.model.SCXML.datamodel": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.model.SCXML.getDatamodel()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 106
+        },
+        {
+          "from": "org.apache.commons.scxml.model.SCXML.getDatamodel()",
+          "to": "org.apache.commons.scxml.model.SCXML.datamodel",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/scxml/model/SCXML.java",
+          "line": 151
+        }
+      ],
+      "org.apache.commons.scxml.io.SCXMLSerializer.XFORMER": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 108
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.XFORMER",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 344
+        }
+      ],
+      "org.apache.commons.scxml.io.SCXMLSerializer.INDENT": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 108
+        },
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+          "to": "org.apache.commons.scxml.io.SCXMLSerializer.INDENT",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 345
+        }
+      ],
+      "org.apache.commons.scxml.model.SCXML.children": [
+        {
+          "from": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+          "to": "org.apache.commons.scxml.model.SCXML.getChildren()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+          "line": 110
+        },
+        {
+          "from": "org.apache.commons.scxml.model.SCXML.getChildren()",
+          "to": "org.apache.commons.scxml.model.SCXML.children",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/scxml/model/SCXML.java",
+          "line": 193
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 4556,
+      "ma_analysis": 4138,
+      "ma_refinement_fixed": 3025
+    },
+    "two_hop_calls": {
+      "sp": 6361,
+      "ma_analysis": 5943,
+      "ma_refinement_fixed": 4830
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "serializeNamespaceDeclarations",
+        "arity": 1,
+        "arguments": [
+          "scxml"
+        ],
+        "receiver": null,
+        "after_line": 107,
+        "expression": "serializeNamespaceDeclarations(scxml)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+        "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "org.apache.commons.scxml.SCXMLHelper.serializeNamespaceDeclarations(org.apache.commons.scxml.model.SCXML)",
+          "org.apache.commons.scxml.io.SCXMLSerializer.serializeNamespaceDeclarations(org.apache.commons.scxml.model.SCXML)"
+        ]
+      },
+      {
+        "name": "append",
+        "arity": 1,
+        "arguments": [
+          "\"<!-- http://commons.apache.org/scxml -->\\n\""
+        ],
+        "receiver": "b.append(INDENT)",
+        "after_line": 118,
+        "expression": "append(\"<!-- http://commons.apache.org/scxml -->\\n\")",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+        "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      },
+      {
+        "name": "append",
+        "arity": 1,
+        "arguments": [
+          "INDENT"
+        ],
+        "receiver": "b",
+        "after_line": 118,
+        "expression": "append(INDENT)",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+        "file": "src/main/java/org/apache/commons/scxml/io/SCXMLSerializer.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [],
+  "indexed_targets": [
+    "org.apache.commons.scxml.io.SCXMLParser.initRules(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.PathResolver,java.util.List)",
+    "org.apache.commons.scxml.model.SCXML"
+  ],
+  "unindexed_targets": [
+    "org.apache.commons.scxml.io.SCXMLSerializer.serializeNamespaceDeclarations(org.apache.commons.scxml.model.NamespacePrefixesHolder)",
+    "org.apache.commons.scxml.model.SCXML.getNamespaces()",
+    "org.apache.commons.scxml.model.SCXML.namespaces",
+    "org.apache.commons.scxml.model.SCXML.setNamespaces(java.util.Map)"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 8,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.scxml.io.SCXMLParser.initRules(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.PathResolver,java.util.List)",
+        "org.apache.commons.scxml.io.SCXMLSerializer.serializeNamespaceDeclarations(org.apache.commons.scxml.model.NamespacePrefixesHolder)",
+        "org.apache.commons.scxml.model.SCXML",
+        "org.apache.commons.scxml.model.SCXML.getNamespaces()",
+        "org.apache.commons.scxml.model.SCXML.namespaces",
+        "org.apache.commons.scxml.model.SCXML.setNamespaces(java.util.Map)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml.io.SCXMLParser.initRules(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.PathResolver,java.util.List)",
+        "org.apache.commons.scxml.model.SCXML"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 12,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.scxml.io.SCXMLParser.initRules(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.PathResolver,java.util.List)",
+        "org.apache.commons.scxml.io.SCXMLSerializer.serializeNamespaceDeclarations(org.apache.commons.scxml.model.NamespacePrefixesHolder)",
+        "org.apache.commons.scxml.model.SCXML",
+        "org.apache.commons.scxml.model.SCXML.getNamespaces()",
+        "org.apache.commons.scxml.model.SCXML.namespaces",
+        "org.apache.commons.scxml.model.SCXML.setNamespaces(java.util.Map)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml.io.SCXMLParser.initRules(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.PathResolver,java.util.List)",
+        "org.apache.commons.scxml.model.SCXML"
+      ],
+      "indexed_recall": 0.0
+    },
+    "multihop": {
+      "candidate_count": 12,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.scxml.io.SCXMLParser.initRules(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.PathResolver,java.util.List)",
+        "org.apache.commons.scxml.io.SCXMLSerializer.serializeNamespaceDeclarations(org.apache.commons.scxml.model.NamespacePrefixesHolder)",
+        "org.apache.commons.scxml.model.SCXML",
+        "org.apache.commons.scxml.model.SCXML.getNamespaces()",
+        "org.apache.commons.scxml.model.SCXML.namespaces",
+        "org.apache.commons.scxml.model.SCXML.setNamespaces(java.util.Map)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml.io.SCXMLParser.initRules(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.PathResolver,java.util.List)",
+        "org.apache.commons.scxml.model.SCXML"
+      ],
+      "indexed_recall": 0.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 33,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.scxml.io.SCXMLParser.initRules(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.PathResolver,java.util.List)",
+        "org.apache.commons.scxml.io.SCXMLSerializer.serializeNamespaceDeclarations(org.apache.commons.scxml.model.NamespacePrefixesHolder)",
+        "org.apache.commons.scxml.model.SCXML",
+        "org.apache.commons.scxml.model.SCXML.getNamespaces()",
+        "org.apache.commons.scxml.model.SCXML.namespaces",
+        "org.apache.commons.scxml.model.SCXML.setNamespaces(java.util.Map)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml.io.SCXMLParser.initRules(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.PathResolver,java.util.List)",
+        "org.apache.commons.scxml.model.SCXML"
+      ],
+      "indexed_recall": 0.0
+    },
+    "diff_and_override": {
+      "candidate_count": 35,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.scxml.io.SCXMLParser.initRules(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.PathResolver,java.util.List)",
+        "org.apache.commons.scxml.io.SCXMLSerializer.serializeNamespaceDeclarations(org.apache.commons.scxml.model.NamespacePrefixesHolder)",
+        "org.apache.commons.scxml.model.SCXML",
+        "org.apache.commons.scxml.model.SCXML.getNamespaces()",
+        "org.apache.commons.scxml.model.SCXML.namespaces",
+        "org.apache.commons.scxml.model.SCXML.setNamespaces(java.util.Map)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml.io.SCXMLParser.initRules(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.PathResolver,java.util.List)",
+        "org.apache.commons.scxml.model.SCXML"
+      ],
+      "indexed_recall": 0.0
+    },
+    "mixed_field_paths": {
+      "candidate_count": 39,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.scxml.io.SCXMLParser.initRules(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.PathResolver,java.util.List)",
+        "org.apache.commons.scxml.io.SCXMLSerializer.serializeNamespaceDeclarations(org.apache.commons.scxml.model.NamespacePrefixesHolder)",
+        "org.apache.commons.scxml.model.SCXML",
+        "org.apache.commons.scxml.model.SCXML.getNamespaces()",
+        "org.apache.commons.scxml.model.SCXML.namespaces",
+        "org.apache.commons.scxml.model.SCXML.setNamespaces(java.util.Map)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml.io.SCXMLParser.initRules(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.PathResolver,java.util.List)",
+        "org.apache.commons.scxml.model.SCXML"
+      ],
+      "indexed_recall": 0.0
+    },
+    "seed_field_accesses": {
+      "candidate_count": 35,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.scxml.io.SCXMLParser.initRules(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.PathResolver,java.util.List)",
+        "org.apache.commons.scxml.io.SCXMLSerializer.serializeNamespaceDeclarations(org.apache.commons.scxml.model.NamespacePrefixesHolder)",
+        "org.apache.commons.scxml.model.SCXML",
+        "org.apache.commons.scxml.model.SCXML.getNamespaces()",
+        "org.apache.commons.scxml.model.SCXML.namespaces",
+        "org.apache.commons.scxml.model.SCXML.setNamespaces(java.util.Map)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml.io.SCXMLParser.initRules(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.PathResolver,java.util.List)",
+        "org.apache.commons.scxml.model.SCXML"
+      ],
+      "indexed_recall": 0.0
+    },
+    "combined_field_paths": {
+      "candidate_count": 39,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.scxml.io.SCXMLParser.initRules(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.PathResolver,java.util.List)",
+        "org.apache.commons.scxml.io.SCXMLSerializer.serializeNamespaceDeclarations(org.apache.commons.scxml.model.NamespacePrefixesHolder)",
+        "org.apache.commons.scxml.model.SCXML",
+        "org.apache.commons.scxml.model.SCXML.getNamespaces()",
+        "org.apache.commons.scxml.model.SCXML.namespaces",
+        "org.apache.commons.scxml.model.SCXML.setNamespaces(java.util.Map)"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.scxml.io.SCXMLParser.initRules(org.apache.commons.scxml.model.SCXML,org.apache.commons.scxml.PathResolver,java.util.List)",
+        "org.apache.commons.scxml.model.SCXML"
+      ],
+      "indexed_recall": 0.0
+    }
+  }
+}

@@ -1,0 +1,993 @@
+{
+  "id": "constantinople-018",
+  "graph_edges": 19504,
+  "seeds": {
+    "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)": true
+  },
+  "candidates": {
+    "baseline": [
+      "opennlp.tools.namefind.DefaultNameContextGenerator.getContext(int,java.lang.String[],java.lang.String[],java.lang.Object[])",
+      "opennlp.tools.util.featuregen.BigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.BrownTokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.StringPattern.containsComma()",
+      "opennlp.tools.util.featuregen.StringPattern.containsDigit()",
+      "opennlp.tools.util.featuregen.StringPattern.containsHyphen()",
+      "opennlp.tools.util.featuregen.StringPattern.containsLetters()",
+      "opennlp.tools.util.featuregen.StringPattern.containsPeriod()",
+      "opennlp.tools.util.featuregen.StringPattern.containsSlash()",
+      "opennlp.tools.util.featuregen.StringPattern.digits()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllCapitalLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllLowerCaseLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.isInitialCapitalLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+      "opennlp.tools.util.featuregen.TokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.TokenPatternFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.TrigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])"
+    ],
+    "fields": [
+      "opennlp.tools.namefind.DefaultNameContextGenerator.getContext(int,java.lang.String[],java.lang.String[],java.lang.Object[])",
+      "opennlp.tools.util.featuregen.BigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.BrownTokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.FeatureGeneratorUtil.capPeriod",
+      "opennlp.tools.util.featuregen.StringPattern.containsComma()",
+      "opennlp.tools.util.featuregen.StringPattern.containsDigit()",
+      "opennlp.tools.util.featuregen.StringPattern.containsHyphen()",
+      "opennlp.tools.util.featuregen.StringPattern.containsLetters()",
+      "opennlp.tools.util.featuregen.StringPattern.containsPeriod()",
+      "opennlp.tools.util.featuregen.StringPattern.containsSlash()",
+      "opennlp.tools.util.featuregen.StringPattern.digits()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllCapitalLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllLowerCaseLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.isInitialCapitalLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+      "opennlp.tools.util.featuregen.TokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.TokenPatternFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.TrigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])"
+    ],
+    "multihop": [
+      "opennlp.tools.namefind.DefaultNameContextGenerator.getContext(int,java.lang.String[],java.lang.String[],java.lang.Object[])",
+      "opennlp.tools.util.featuregen.BigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.BrownTokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.FeatureGeneratorUtil.capPeriod",
+      "opennlp.tools.util.featuregen.StringPattern.containsComma()",
+      "opennlp.tools.util.featuregen.StringPattern.containsDigit()",
+      "opennlp.tools.util.featuregen.StringPattern.containsHyphen()",
+      "opennlp.tools.util.featuregen.StringPattern.containsLetters()",
+      "opennlp.tools.util.featuregen.StringPattern.containsPeriod()",
+      "opennlp.tools.util.featuregen.StringPattern.containsSlash()",
+      "opennlp.tools.util.featuregen.StringPattern.digits()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllCapitalLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllLowerCaseLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.isInitialCapitalLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+      "opennlp.tools.util.featuregen.TokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.TokenPatternFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.TrigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])"
+    ],
+    "two_hop_calls": [
+      "opennlp.tools.namefind.DefaultNameContextGenerator.getContext(int,java.lang.String[],java.lang.String[],java.lang.Object[])",
+      "opennlp.tools.util.featuregen.BigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.BrownTokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.FeatureGeneratorUtil.capPeriod",
+      "opennlp.tools.util.featuregen.StringPattern.StringPattern(int,int)",
+      "opennlp.tools.util.featuregen.StringPattern.containsComma()",
+      "opennlp.tools.util.featuregen.StringPattern.containsDigit()",
+      "opennlp.tools.util.featuregen.StringPattern.containsHyphen()",
+      "opennlp.tools.util.featuregen.StringPattern.containsLetters()",
+      "opennlp.tools.util.featuregen.StringPattern.containsPeriod()",
+      "opennlp.tools.util.featuregen.StringPattern.containsSlash()",
+      "opennlp.tools.util.featuregen.StringPattern.digits()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllCapitalLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllLowerCaseLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.isInitialCapitalLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+      "opennlp.tools.util.featuregen.TokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.TokenPatternFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.TrigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])"
+    ],
+    "diff_and_override": [
+      "opennlp.tools.namefind.DefaultNameContextGenerator.getContext(int,java.lang.String[],java.lang.String[],java.lang.Object[])",
+      "opennlp.tools.util.featuregen.BigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.BrownTokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.FeatureGeneratorUtil.capPeriod",
+      "opennlp.tools.util.featuregen.StringPattern.StringPattern(int,int)",
+      "opennlp.tools.util.featuregen.StringPattern.containsComma()",
+      "opennlp.tools.util.featuregen.StringPattern.containsDigit()",
+      "opennlp.tools.util.featuregen.StringPattern.containsHyphen()",
+      "opennlp.tools.util.featuregen.StringPattern.containsLetters()",
+      "opennlp.tools.util.featuregen.StringPattern.containsPeriod()",
+      "opennlp.tools.util.featuregen.StringPattern.containsSlash()",
+      "opennlp.tools.util.featuregen.StringPattern.digits()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllCapitalLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllHiragana()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllKatakana()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllLowerCaseLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.isInitialCapitalLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+      "opennlp.tools.util.featuregen.TokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.TokenPatternFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.TrigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])"
+    ],
+    "mixed_field_paths": [
+      "opennlp.tools.namefind.DefaultNameContextGenerator.getContext(int,java.lang.String[],java.lang.String[],java.lang.Object[])",
+      "opennlp.tools.util.featuregen.BigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.BrownTokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.FeatureGeneratorUtil.capPeriod",
+      "opennlp.tools.util.featuregen.StringPattern.ALL_CAPITAL_LETTER",
+      "opennlp.tools.util.featuregen.StringPattern.ALL_DIGIT",
+      "opennlp.tools.util.featuregen.StringPattern.ALL_LETTERS",
+      "opennlp.tools.util.featuregen.StringPattern.ALL_LOWERCASE_LETTER",
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_COMMA",
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_DIGIT",
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_HYPHEN",
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_LETTERS",
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_PERIOD",
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_SLASH",
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_UPPERCASE",
+      "opennlp.tools.util.featuregen.StringPattern.INITAL_CAPITAL_LETTER",
+      "opennlp.tools.util.featuregen.StringPattern.StringPattern(int,int)",
+      "opennlp.tools.util.featuregen.StringPattern.containsComma()",
+      "opennlp.tools.util.featuregen.StringPattern.containsDigit()",
+      "opennlp.tools.util.featuregen.StringPattern.containsHyphen()",
+      "opennlp.tools.util.featuregen.StringPattern.containsLetters()",
+      "opennlp.tools.util.featuregen.StringPattern.containsPeriod()",
+      "opennlp.tools.util.featuregen.StringPattern.containsSlash()",
+      "opennlp.tools.util.featuregen.StringPattern.digits",
+      "opennlp.tools.util.featuregen.StringPattern.digits()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllCapitalLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllHiragana()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllKatakana()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllLowerCaseLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.isInitialCapitalLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.pattern",
+      "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+      "opennlp.tools.util.featuregen.TokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.TokenPatternFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.TrigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])"
+    ],
+    "seed_field_accesses": [
+      "opennlp.tools.namefind.DefaultNameContextGenerator.getContext(int,java.lang.String[],java.lang.String[],java.lang.Object[])",
+      "opennlp.tools.util.featuregen.BigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.BrownTokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.FeatureGeneratorUtil.capPeriod",
+      "opennlp.tools.util.featuregen.StringPattern.StringPattern(int,int)",
+      "opennlp.tools.util.featuregen.StringPattern.containsComma()",
+      "opennlp.tools.util.featuregen.StringPattern.containsDigit()",
+      "opennlp.tools.util.featuregen.StringPattern.containsHyphen()",
+      "opennlp.tools.util.featuregen.StringPattern.containsLetters()",
+      "opennlp.tools.util.featuregen.StringPattern.containsPeriod()",
+      "opennlp.tools.util.featuregen.StringPattern.containsSlash()",
+      "opennlp.tools.util.featuregen.StringPattern.digits()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllCapitalLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllHiragana()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllKatakana()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllLowerCaseLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.isInitialCapitalLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+      "opennlp.tools.util.featuregen.TokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.TokenPatternFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.TrigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])"
+    ],
+    "combined_field_paths": [
+      "opennlp.tools.namefind.DefaultNameContextGenerator.getContext(int,java.lang.String[],java.lang.String[],java.lang.Object[])",
+      "opennlp.tools.util.featuregen.BigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.BrownTokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.FeatureGeneratorUtil.capPeriod",
+      "opennlp.tools.util.featuregen.StringPattern.ALL_CAPITAL_LETTER",
+      "opennlp.tools.util.featuregen.StringPattern.ALL_DIGIT",
+      "opennlp.tools.util.featuregen.StringPattern.ALL_LETTERS",
+      "opennlp.tools.util.featuregen.StringPattern.ALL_LOWERCASE_LETTER",
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_COMMA",
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_DIGIT",
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_HYPHEN",
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_LETTERS",
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_PERIOD",
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_SLASH",
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_UPPERCASE",
+      "opennlp.tools.util.featuregen.StringPattern.INITAL_CAPITAL_LETTER",
+      "opennlp.tools.util.featuregen.StringPattern.StringPattern(int,int)",
+      "opennlp.tools.util.featuregen.StringPattern.containsComma()",
+      "opennlp.tools.util.featuregen.StringPattern.containsDigit()",
+      "opennlp.tools.util.featuregen.StringPattern.containsHyphen()",
+      "opennlp.tools.util.featuregen.StringPattern.containsLetters()",
+      "opennlp.tools.util.featuregen.StringPattern.containsPeriod()",
+      "opennlp.tools.util.featuregen.StringPattern.containsSlash()",
+      "opennlp.tools.util.featuregen.StringPattern.digits",
+      "opennlp.tools.util.featuregen.StringPattern.digits()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllCapitalLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllHiragana()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllKatakana()",
+      "opennlp.tools.util.featuregen.StringPattern.isAllLowerCaseLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.isInitialCapitalLetter()",
+      "opennlp.tools.util.featuregen.StringPattern.pattern",
+      "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+      "opennlp.tools.util.featuregen.TokenClassFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.TokenPatternFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])",
+      "opennlp.tools.util.featuregen.TrigramNameFeatureGenerator.createFeatures(java.util.List,java.lang.String[],int,java.lang.String[])"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "opennlp.tools.util.featuregen.FeatureGeneratorUtil.capPeriod": {
+        "opennlp.tools.util.featuregen.FeatureGeneratorUtil.capPeriod": [
+          {
+            "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+            "to": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.capPeriod",
+            "kind": "READ",
+            "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+            "line": 96
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "opennlp.tools.util.featuregen.FeatureGeneratorUtil.capPeriod": {
+        "opennlp.tools.util.featuregen.FeatureGeneratorUtil.capPeriod": [
+          {
+            "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+            "to": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.capPeriod",
+            "kind": "READ",
+            "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+            "line": 96
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "opennlp.tools.util.featuregen.StringPattern.StringPattern(int,int)": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.StringPattern(int,int)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 114
+        }
+      ]
+    },
+    "mixed_field_paths": {
+      "opennlp.tools.util.featuregen.StringPattern.ALL_CAPITAL_LETTER": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.ALL_CAPITAL_LETTER",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 49
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.ALL_LOWERCASE_LETTER": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.ALL_LOWERCASE_LETTER",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 49
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.ALL_DIGIT": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.ALL_DIGIT",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 49
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.ALL_LETTERS": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.ALL_LETTERS",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 49
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_LETTERS": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.CONTAINS_LETTERS",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 63
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.INITAL_CAPITAL_LETTER": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.INITAL_CAPITAL_LETTER",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 68
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_UPPERCASE": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.CONTAINS_UPPERCASE",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 71
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_DIGIT": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.CONTAINS_DIGIT",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 85
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_COMMA": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.CONTAINS_COMMA",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 93
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_PERIOD": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.CONTAINS_PERIOD",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 97
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_SLASH": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.CONTAINS_SLASH",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 101
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_HYPHEN": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.CONTAINS_HYPHEN",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 105
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.pattern": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.isAllLowerCaseLetter()",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 59
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.isAllLowerCaseLetter()",
+          "to": "opennlp.tools.util.featuregen.StringPattern.pattern",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 142
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.digits": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.digits()",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 62
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.digits()",
+          "to": "opennlp.tools.util.featuregen.StringPattern.digits",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 156
+        }
+      ]
+    },
+    "seed_field_accesses": {},
+    "combined_field_paths": {
+      "opennlp.tools.util.featuregen.StringPattern.ALL_CAPITAL_LETTER": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.ALL_CAPITAL_LETTER",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 49
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.ALL_LOWERCASE_LETTER": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.ALL_LOWERCASE_LETTER",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 49
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.ALL_DIGIT": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.ALL_DIGIT",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 49
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.ALL_LETTERS": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.ALL_LETTERS",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 49
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_LETTERS": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.CONTAINS_LETTERS",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 63
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.INITAL_CAPITAL_LETTER": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.INITAL_CAPITAL_LETTER",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 68
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_UPPERCASE": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.CONTAINS_UPPERCASE",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 71
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_DIGIT": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.CONTAINS_DIGIT",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 85
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_COMMA": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.CONTAINS_COMMA",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 93
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_PERIOD": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.CONTAINS_PERIOD",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 97
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_SLASH": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.CONTAINS_SLASH",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 101
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.CONTAINS_HYPHEN": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 56
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.CONTAINS_HYPHEN",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 105
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.pattern": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.isAllLowerCaseLetter()",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 59
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.isAllLowerCaseLetter()",
+          "to": "opennlp.tools.util.featuregen.StringPattern.pattern",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 142
+        }
+      ],
+      "opennlp.tools.util.featuregen.StringPattern.digits": [
+        {
+          "from": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+          "to": "opennlp.tools.util.featuregen.StringPattern.digits()",
+          "kind": "CALLS",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+          "line": 62
+        },
+        {
+          "from": "opennlp.tools.util.featuregen.StringPattern.digits()",
+          "to": "opennlp.tools.util.featuregen.StringPattern.digits",
+          "kind": "READ",
+          "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/StringPattern.java",
+          "line": 156
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 4686,
+      "ma_analysis": 4268,
+      "ma_refinement_fixed": 3431
+    },
+    "two_hop_calls": {
+      "sp": 4756,
+      "ma_analysis": 4338,
+      "ma_refinement_fixed": 3501
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "isAllHiragana",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "pattern",
+        "after_line": 61,
+        "expression": "isAllHiragana()",
+        "edge": "ADDED_CALL",
+        "seed": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+        "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "opennlp.tools.util.featuregen.StringPattern.isAllHiragana()"
+        ]
+      },
+      {
+        "name": "isAllKatakana",
+        "arity": 0,
+        "arguments": [],
+        "receiver": "pattern",
+        "after_line": 64,
+        "expression": "isAllKatakana()",
+        "edge": "ADDED_CALL",
+        "seed": "opennlp.tools.util.featuregen.FeatureGeneratorUtil.tokenFeature(java.lang.String)",
+        "file": "opennlp-tools/src/main/java/opennlp/tools/util/featuregen/FeatureGeneratorUtil.java",
+        "status": "inferred_targets",
+        "possible_parent_targets": [],
+        "inferred_targets": [
+          "opennlp.tools.util.featuregen.StringPattern.isAllKatakana()"
+        ]
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [],
+  "indexed_targets": [
+    "opennlp.tools.util.featuregen.StringPattern.CONTAINS_COMMA",
+    "opennlp.tools.util.featuregen.StringPattern.CONTAINS_DIGIT",
+    "opennlp.tools.util.featuregen.StringPattern.CONTAINS_HYPHEN",
+    "opennlp.tools.util.featuregen.StringPattern.CONTAINS_LETTERS",
+    "opennlp.tools.util.featuregen.StringPattern.CONTAINS_PERIOD",
+    "opennlp.tools.util.featuregen.StringPattern.CONTAINS_SLASH",
+    "opennlp.tools.util.featuregen.StringPattern.CONTAINS_UPPERCASE",
+    "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)"
+  ],
+  "unindexed_targets": [
+    "opennlp.tools.util.featuregen.StringPattern.ALL_HIRAGANA",
+    "opennlp.tools.util.featuregen.StringPattern.ALL_KATAKANA",
+    "opennlp.tools.util.featuregen.StringPattern.isAllHiragana()",
+    "opennlp.tools.util.featuregen.StringPattern.isAllKatakana()"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 17,
+      "hits": [
+        "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)"
+      ],
+      "misses": [
+        "opennlp.tools.util.featuregen.StringPattern.ALL_HIRAGANA",
+        "opennlp.tools.util.featuregen.StringPattern.ALL_KATAKANA",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_COMMA",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_DIGIT",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_HYPHEN",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_LETTERS",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_PERIOD",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_SLASH",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_UPPERCASE",
+        "opennlp.tools.util.featuregen.StringPattern.isAllHiragana()",
+        "opennlp.tools.util.featuregen.StringPattern.isAllKatakana()"
+      ],
+      "indexed_misses": [
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_COMMA",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_DIGIT",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_HYPHEN",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_LETTERS",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_PERIOD",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_SLASH",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_UPPERCASE"
+      ],
+      "indexed_recall": 0.125
+    },
+    "fields": {
+      "candidate_count": 18,
+      "hits": [
+        "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)"
+      ],
+      "misses": [
+        "opennlp.tools.util.featuregen.StringPattern.ALL_HIRAGANA",
+        "opennlp.tools.util.featuregen.StringPattern.ALL_KATAKANA",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_COMMA",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_DIGIT",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_HYPHEN",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_LETTERS",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_PERIOD",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_SLASH",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_UPPERCASE",
+        "opennlp.tools.util.featuregen.StringPattern.isAllHiragana()",
+        "opennlp.tools.util.featuregen.StringPattern.isAllKatakana()"
+      ],
+      "indexed_misses": [
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_COMMA",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_DIGIT",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_HYPHEN",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_LETTERS",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_PERIOD",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_SLASH",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_UPPERCASE"
+      ],
+      "indexed_recall": 0.125
+    },
+    "multihop": {
+      "candidate_count": 18,
+      "hits": [
+        "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)"
+      ],
+      "misses": [
+        "opennlp.tools.util.featuregen.StringPattern.ALL_HIRAGANA",
+        "opennlp.tools.util.featuregen.StringPattern.ALL_KATAKANA",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_COMMA",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_DIGIT",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_HYPHEN",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_LETTERS",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_PERIOD",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_SLASH",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_UPPERCASE",
+        "opennlp.tools.util.featuregen.StringPattern.isAllHiragana()",
+        "opennlp.tools.util.featuregen.StringPattern.isAllKatakana()"
+      ],
+      "indexed_misses": [
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_COMMA",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_DIGIT",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_HYPHEN",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_LETTERS",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_PERIOD",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_SLASH",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_UPPERCASE"
+      ],
+      "indexed_recall": 0.125
+    },
+    "two_hop_calls": {
+      "candidate_count": 19,
+      "hits": [
+        "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)"
+      ],
+      "misses": [
+        "opennlp.tools.util.featuregen.StringPattern.ALL_HIRAGANA",
+        "opennlp.tools.util.featuregen.StringPattern.ALL_KATAKANA",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_COMMA",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_DIGIT",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_HYPHEN",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_LETTERS",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_PERIOD",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_SLASH",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_UPPERCASE",
+        "opennlp.tools.util.featuregen.StringPattern.isAllHiragana()",
+        "opennlp.tools.util.featuregen.StringPattern.isAllKatakana()"
+      ],
+      "indexed_misses": [
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_COMMA",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_DIGIT",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_HYPHEN",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_LETTERS",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_PERIOD",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_SLASH",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_UPPERCASE"
+      ],
+      "indexed_recall": 0.125
+    },
+    "diff_and_override": {
+      "candidate_count": 21,
+      "hits": [
+        "opennlp.tools.util.featuregen.StringPattern.isAllHiragana()",
+        "opennlp.tools.util.featuregen.StringPattern.isAllKatakana()",
+        "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)"
+      ],
+      "misses": [
+        "opennlp.tools.util.featuregen.StringPattern.ALL_HIRAGANA",
+        "opennlp.tools.util.featuregen.StringPattern.ALL_KATAKANA",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_COMMA",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_DIGIT",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_HYPHEN",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_LETTERS",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_PERIOD",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_SLASH",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_UPPERCASE"
+      ],
+      "indexed_misses": [
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_COMMA",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_DIGIT",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_HYPHEN",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_LETTERS",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_PERIOD",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_SLASH",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_UPPERCASE"
+      ],
+      "indexed_recall": 0.125
+    },
+    "mixed_field_paths": {
+      "candidate_count": 35,
+      "hits": [
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_COMMA",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_DIGIT",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_HYPHEN",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_LETTERS",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_PERIOD",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_SLASH",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_UPPERCASE",
+        "opennlp.tools.util.featuregen.StringPattern.isAllHiragana()",
+        "opennlp.tools.util.featuregen.StringPattern.isAllKatakana()",
+        "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)"
+      ],
+      "misses": [
+        "opennlp.tools.util.featuregen.StringPattern.ALL_HIRAGANA",
+        "opennlp.tools.util.featuregen.StringPattern.ALL_KATAKANA"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "seed_field_accesses": {
+      "candidate_count": 21,
+      "hits": [
+        "opennlp.tools.util.featuregen.StringPattern.isAllHiragana()",
+        "opennlp.tools.util.featuregen.StringPattern.isAllKatakana()",
+        "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)"
+      ],
+      "misses": [
+        "opennlp.tools.util.featuregen.StringPattern.ALL_HIRAGANA",
+        "opennlp.tools.util.featuregen.StringPattern.ALL_KATAKANA",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_COMMA",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_DIGIT",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_HYPHEN",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_LETTERS",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_PERIOD",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_SLASH",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_UPPERCASE"
+      ],
+      "indexed_misses": [
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_COMMA",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_DIGIT",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_HYPHEN",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_LETTERS",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_PERIOD",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_SLASH",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_UPPERCASE"
+      ],
+      "indexed_recall": 0.125
+    },
+    "combined_field_paths": {
+      "candidate_count": 35,
+      "hits": [
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_COMMA",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_DIGIT",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_HYPHEN",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_LETTERS",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_PERIOD",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_SLASH",
+        "opennlp.tools.util.featuregen.StringPattern.CONTAINS_UPPERCASE",
+        "opennlp.tools.util.featuregen.StringPattern.isAllHiragana()",
+        "opennlp.tools.util.featuregen.StringPattern.isAllKatakana()",
+        "opennlp.tools.util.featuregen.StringPattern.recognize(java.lang.String)"
+      ],
+      "misses": [
+        "opennlp.tools.util.featuregen.StringPattern.ALL_HIRAGANA",
+        "opennlp.tools.util.featuregen.StringPattern.ALL_KATAKANA"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    }
+  }
+}

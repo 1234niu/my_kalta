@@ -1,0 +1,12 @@
+{
+  "id": "constantinople-132",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 0,
+  "predictions": [
+    "org.apache.commons.validator.routines.EmailValidator.isValidDomain(java.lang.String)"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "17f25b0f31059a24143168930f76021ef3d1128cc06ac13159531089f99965ca",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

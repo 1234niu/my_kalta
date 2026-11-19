@@ -1,0 +1,49 @@
+{
+  "id": "constantinople-079",
+  "fingerprint": "22e602af19a37463545a223753f5fae014307ea87d6e845bed73e34b9afad422",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "1ba7b4d1aa4371ce3f263fe1a880305fdbca290a",
+  "candidates": [
+    "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)",
+    "org.apache.commons.scxml.io.SCXMLSerializer.serializeParallel(java.lang.StringBuffer,org.apache.commons.scxml.model.Parallel,java.lang.String)",
+    "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)",
+    "org.apache.commons.scxml.model.SCXML.getChildren()",
+    "org.apache.commons.scxml.model.SCXML.getDatamodel()",
+    "org.apache.commons.scxml.model.SCXML.getInitial()",
+    "org.apache.commons.scxml.model.SCXML.getVersion()",
+    "org.apache.commons.scxml.test.StandaloneUtils.execute(java.lang.String,org.apache.commons.scxml.Evaluator)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.scxml.io.SCXMLSerializer.serializeParallel(java.lang.StringBuffer,org.apache.commons.scxml.model.Parallel,java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.scxml.model.SCXML.getInitial()": [
+          "CALLS"
+        ],
+        "org.apache.commons.scxml.model.SCXML.getChildren()": [
+          "CALLS"
+        ],
+        "org.apache.commons.scxml.test.StandaloneUtils.execute(java.lang.String,org.apache.commons.scxml.Evaluator)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.scxml.model.SCXML.getVersion()": [
+          "CALLS"
+        ],
+        "org.apache.commons.scxml.model.SCXML.getDatamodel()": [
+          "CALLS"
+        ],
+        "org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "constantinople-206",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 2,
+  "predictions": [
+    "org.apache.commons.beanutils.RowSetDynaClass.rows()"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "1ae520fb08d2f54ef54311927acf3189b66f740198605454e53473e2acf20714",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

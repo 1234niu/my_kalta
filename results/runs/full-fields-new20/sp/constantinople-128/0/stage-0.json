@@ -1,0 +1,48 @@
+{
+  "request_sha256": "a114d570a704782f6cb06765eccdfa0585980816aea2f115b4c8bf11f5cdd4d3",
+  "request": {
+    "model": "deepseek-v4.1-flash-1017",
+    "temperature": 0,
+    "messages": [
+      {
+        "role": "user",
+        "content": "# System Information\nYou are an expert in Java and in analyzing the impact of source code changes on other code entities in a project's production code.\n\n# General Information\nYou receive information about a set of changes, called seed changes, that were made to fix a bug reported in Jira.\nYou also receive the Jira bug report title and description and an initial impact set consisting of the fully qualified names of code entities that are statically related to the seed changes.\n\n# Task\nYour task is to refine the initial impact set.\nA code entity is part of the impact set if it requires modification or, if it does not already exist, must be created as a consequence of the seed changes.\nFirst, remove code entities unless the provided information indicates that they must be modified.\nSecond, add code entities that must be modified or created according to the provided evidence.\n\nYour goal is to report a final impact set that consists of the fully qualified names of code entities that must be modified or created because of the seed changes.\n\n# Inputs\n- Jira bug report title: [PATCH] @localhost and @localhost.localdomain email addresses aren't correctly detected as valid\n- Jira bug report description: Email addresses of the form <something>@localhost and <something>@localhost.localdomain are valid, but the Email Validator doesn't detect this.\\n\\nThe attached patch fixes the underlying issue in the domain validator, and adds unit tests for Domain + Email validation of these.\n- Seed changes and their Git diff hunks: [{\"fqn\": \"org.apache.commons.validator.routines.DomainValidator.isValid(java.lang.String)\", \"git_diff_hunk\": \"@@ -104,2 +128,4 @@ public class DomainValidator implements Serializable {\\n- } else {\\n- return false;\\n+ } else if(allowLocal) {\\n+ if (\\\"localhost\\\".equals(domain)) {\\n+ return true;\\n+ }\\n@@ -106,0 +133 @@ public class DomainValidator implements Serializable {\\n+ return false;\"}, {\"fqn\": \"org.apache.commons.validator.routines.DomainValidator.getInstance(boolean)\", \"git_diff_hunk\": \"@@ -88,0 +105,6 @@ public class DomainValidator implements Serializable {\\n+ public static DomainValidator getInstance(boolean allowLocal) {\\n+ if(allowLocal) {\\n+ return DOMAIN_VALIDATOR_WITH_LOCAL;\\n+ }\\n+ return DOMAIN_VALIDATOR;\\n+ }\"}, {\"fqn\": \"org.apache.commons.validator.routines.DomainValidator.isValidTld(java.lang.String)\", \"git_diff_hunk\": \"@@ -116,0 +144,3 @@ public class DomainValidator implements Serializable {\\n+ if(allowLocal && isValidLocalTld(tld)) {\\n+ return true;\\n+ }\"}, {\"fqn\": \"org.apache.commons.validator.routines.DomainValidator.isValidLocalTld(java.lang.String)\", \"git_diff_hunk\": \"@@ -154,0 +192,3 @@ public class DomainValidator implements Serializable {\\n+ public boolean isValidLocalTld(String iTld) {\\n+ return LOCAL_TLD_LIST.contains(chompLeadingDot(iTld.toLowerCase()));\\n+ }\"}, {\"fqn\": \"org.apache.commons.validator.routines.EmailValidator.getInstance(boolean)\", \"git_diff_hunk\": \"@@ -71,0 +86,6 @@ public class EmailValidator implements Serializable {\\n+ public static EmailValidator getInstance(boolean allowLocal) {\\n+ if(allowLocal) {\\n+ return EMAIL_VALIDATOR_WITH_LOCAL;\\n+ }\\n+ return EMAIL_VALIDATOR;\\n+ }\"}, {\"fqn\": \"org.apache.commons.validator.routines.EmailValidator.isValidDomain(java.lang.String)\", \"git_diff_hunk\": \"@@ -134 +156 @@ public class EmailValidator implements Serializable {\\n- DomainValidator.getInstance();\\n+ DomainValidator.getInstance(allowLocal);\"}]\n- Initial static code change impact set: [\"org.apache.commons.validator.routines.DomainValidator.COUNTRY_CODE_TLD_LIST\", \"org.apache.commons.validator.routines.DomainValidator.DOMAIN_VALIDATOR\", \"org.apache.commons.validator.routines.DomainValidator.GENERIC_TLD_LIST\", \"org.apache.commons.validator.routines.DomainValidator.INFRASTRUCTURE_TLD_LIST\", \"org.apache.commons.validator.routines.DomainValidator.allowLocal\", \"org.apache.commons.validator.routines.DomainValidator.chompLeadingDot(java.lang.String)\", \"org.apache.commons.validator.routines.DomainValidator.domainRegex\", \"org.apache.commons.validator.routines.DomainValidator.getInstance()\", \"org.apache.commons.validator.routines.DomainValidator.isValidCountryCodeTld(java.lang.String)\", \"org.apache.commons.validator.routines.DomainValidator.isValidGenericTld(java.lang.String)\", \"org.apache.commons.validator.routines.DomainValidator.isValidInfrastructureTld(java.lang.String)\", \"org.apache.commons.validator.routines.EmailValidator.IP_DOMAIN_PATTERN\", \"org.apache.commons.validator.routines.EmailValidator.isValid(java.lang.String)\", \"org.apache.commons.validator.routines.InetAddressValidator.VALIDATOR\", \"org.apache.commons.validator.routines.InetAddressValidator.getInstance()\", \"org.apache.commons.validator.routines.InetAddressValidator.isValid(java.lang.String)\", \"org.apache.commons.validator.routines.InetAddressValidator.isValidInet4Address(java.lang.String)\", \"org.apache.commons.validator.routines.RegexValidator.match(java.lang.String)\", \"org.apache.commons.validator.routines.RegexValidator.patterns\", \"org.apache.commons.validator.routines.UrlValidator.isValidAuthority(java.lang.String)\"]\n\n# Output Format\nReturn exactly one valid single-line JSON array of strings.\nEach string must be the fully qualified name of an impacted code entity.\nDo not include any additional text, formatting, or meta-information.\nDo not include seed changes in the output.\n\nExample output (four impacted code entities):\n[\"com.example.Foo.someMethod(java.lang.String, int)\", \"com.example.bar.attribute1\", \"com.example.bar.Class.NestedClass\", \"com.example.bar.Class.Class()\"]\n\nExample output (two impacted code entities):\n[\"com.example.package.ParentClass.ChildClass.field\", \"com.example.package.ParentClass.apply(long, com.example.package.ParentClass)\"]\n\nExample output (zero impacted code entities):\n[]"
+      }
+    ],
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096
+  },
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "[\"org.apache.commons.validator.routines.DomainValidator.getInstance()\", \"org.apache.commons.validator.routines.DomainValidator.LOCAL_TLD_LIST\", \"org.apache.commons.validator.routines.DomainValidator.DOMAIN_VALIDATOR_WITH_LOCAL\", \"org.apache.commons.validator.routines.EmailValidator.EMAIL_VALIDATOR_WITH_LOCAL\", \"org.apache.commons.validator.routines.EmailValidator.allowLocal\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1794905821,
+    "id": "0217949058205569436a70d8fd44afb73ab39bbb6df35ba356529",
+    "model": "deepseek-v4.1-flash-1017",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 92,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 1372,
+      "prompt_tokens": 1372,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 1464
+    }
+  },
+  "seconds": 1.3412499580000001,
+  "endpoint": "http://api.aicnic.cn/v1"
+}

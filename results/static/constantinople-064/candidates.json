@@ -1,0 +1,61 @@
+{
+  "id": "constantinople-064",
+  "fingerprint": "23bd52b4a77b0f0678f061509ab7126cf9f8d95d71ac2c61550f7dac4b4a7f1c",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "6f27e9bbd119e419fa417b9446abe7aae0fb9624",
+  "candidates": [
+    "org.apache.commons.lang.builder.HashCodeBuilder.getRegistry()",
+    "org.apache.commons.lang.builder.HashCodeBuilder.reflectionAppend(java.lang.Object,java.lang.Class,org.apache.commons.lang.builder.HashCodeBuilder,boolean,java.lang.String[])",
+    "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.lang.builder.HashCodeBuilder.isRegistered(java.lang.Object)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.lang.builder.HashCodeBuilder.reflectionAppend(java.lang.Object,java.lang.Class,org.apache.commons.lang.builder.HashCodeBuilder,boolean,java.lang.String[])": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.lang.builder.HashCodeBuilder.getRegistry()": [
+          "CALLS"
+        ],
+        "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.lang.builder.HashCodeBuilder.register(java.lang.Object)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.lang.builder.HashCodeBuilder.reflectionAppend(java.lang.Object,java.lang.Class,org.apache.commons.lang.builder.HashCodeBuilder,boolean,java.lang.String[])": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.lang.builder.HashCodeBuilder.getRegistry()": [
+          "CALLS"
+        ],
+        "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    },
+    {
+      "fqn": "org.apache.commons.lang.builder.HashCodeBuilder.unregister(java.lang.Object)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.lang.builder.HashCodeBuilder.reflectionAppend(java.lang.Object,java.lang.Class,org.apache.commons.lang.builder.HashCodeBuilder,boolean,java.lang.String[])": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.lang.builder.HashCodeBuilder.getRegistry()": [
+          "CALLS"
+        ],
+        "org.apache.commons.lang.builder.HashCodeBuilder.toIdentityHashCodeInteger(java.lang.Object)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

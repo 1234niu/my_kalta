@@ -1,0 +1,13 @@
+{
+  "id": "constantinople-086",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 0,
+  "predictions": [
+    "org.apache.gora.accumulo.store.AccumuloStore.putArray(java.lang.Object, int, org.apache.gora.persistency.impl.PersistentBase, java.lang.String, java.lang.String)",
+    "org.apache.gora.accumulo.store.AccumuloStore.putMap(java.lang.Object, int, org.apache.avro.Schema, org.apache.gora.persistency.impl.PersistentBase, java.lang.String, java.lang.String)"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "70d4a85130d05d20492d95556772bec394a6d2015817e8adb429c7da9418b5f0",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

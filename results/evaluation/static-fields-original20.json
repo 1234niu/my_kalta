@@ -1,0 +1,764 @@
+{
+  "cases": 20,
+  "repetitions": 1,
+  "aggregation": "per-commit set metrics, then macro mean",
+  "paper": "https://arxiv.org/html/2611.10958v1#S5.SS1",
+  "summary": {
+    "diff_and_override": {
+      "scores": {
+        "FQN": {
+          "precision": 0.15546993546993548,
+          "recall": 0.5766666666666667,
+          "f1": 0.17706620731135733
+        },
+        "CE": {
+          "precision": 0.1554746397393456,
+          "recall": 0.5833333333333334,
+          "f1": 0.1754429230899819
+        }
+      },
+      "candidate_count": 359,
+      "fqn_hits": 31,
+      "label_count": 65
+    },
+    "combined_field_paths": {
+      "scores": {
+        "FQN": {
+          "precision": 0.15783048347001835,
+          "recall": 0.7433333333333333,
+          "f1": 0.19053442627830988
+        },
+        "CE": {
+          "precision": 0.15731353812774185,
+          "recall": 0.7541666666666667,
+          "f1": 0.188517795227312
+        }
+      },
+      "candidate_count": 428,
+      "fqn_hits": 42,
+      "label_count": 65
+    }
+  },
+  "per_case": {
+    "constantinople-000": {
+      "diff_and_override": {
+        "candidate_count": 2,
+        "label_count": 1,
+        "fqn_hits": 1,
+        "scores": {
+          "FQN": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          },
+          "CE": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          }
+        }
+      },
+      "combined_field_paths": {
+        "candidate_count": 3,
+        "label_count": 1,
+        "fqn_hits": 1,
+        "scores": {
+          "FQN": {
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "f1": 0.5
+          },
+          "CE": {
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "f1": 0.5
+          }
+        }
+      }
+    },
+    "constantinople-001": {
+      "diff_and_override": {
+        "candidate_count": 14,
+        "label_count": 6,
+        "fqn_hits": 5,
+        "scores": {
+          "FQN": {
+            "precision": 0.35714285714285715,
+            "recall": 0.8333333333333334,
+            "f1": 0.5
+          },
+          "CE": {
+            "precision": 0.4,
+            "recall": 0.8,
+            "f1": 0.5333333333333333
+          }
+        }
+      },
+      "combined_field_paths": {
+        "candidate_count": 14,
+        "label_count": 6,
+        "fqn_hits": 5,
+        "scores": {
+          "FQN": {
+            "precision": 0.35714285714285715,
+            "recall": 0.8333333333333334,
+            "f1": 0.5
+          },
+          "CE": {
+            "precision": 0.4,
+            "recall": 0.8,
+            "f1": 0.5333333333333333
+          }
+        }
+      }
+    },
+    "constantinople-002": {
+      "diff_and_override": {
+        "candidate_count": 37,
+        "label_count": 4,
+        "fqn_hits": 2,
+        "scores": {
+          "FQN": {
+            "precision": 0.05405405405405406,
+            "recall": 0.5,
+            "f1": 0.0975609756097561
+          },
+          "CE": {
+            "precision": 0.06060606060606061,
+            "recall": 0.6666666666666666,
+            "f1": 0.1111111111111111
+          }
+        }
+      },
+      "combined_field_paths": {
+        "candidate_count": 39,
+        "label_count": 4,
+        "fqn_hits": 3,
+        "scores": {
+          "FQN": {
+            "precision": 0.07692307692307693,
+            "recall": 0.75,
+            "f1": 0.13953488372093023
+          },
+          "CE": {
+            "precision": 0.08571428571428572,
+            "recall": 1.0,
+            "f1": 0.15789473684210525
+          }
+        }
+      }
+    },
+    "constantinople-003": {
+      "diff_and_override": {
+        "candidate_count": 13,
+        "label_count": 1,
+        "fqn_hits": 1,
+        "scores": {
+          "FQN": {
+            "precision": 0.07692307692307693,
+            "recall": 1.0,
+            "f1": 0.14285714285714285
+          },
+          "CE": {
+            "precision": 0.07692307692307693,
+            "recall": 1.0,
+            "f1": 0.14285714285714285
+          }
+        }
+      },
+      "combined_field_paths": {
+        "candidate_count": 14,
+        "label_count": 1,
+        "fqn_hits": 1,
+        "scores": {
+          "FQN": {
+            "precision": 0.07142857142857142,
+            "recall": 1.0,
+            "f1": 0.13333333333333333
+          },
+          "CE": {
+            "precision": 0.07142857142857142,
+            "recall": 1.0,
+            "f1": 0.13333333333333333
+          }
+        }
+      }
+    },
+    "constantinople-004": {
+      "diff_and_override": {
+        "candidate_count": 35,
+        "label_count": 1,
+        "fqn_hits": 1,
+        "scores": {
+          "FQN": {
+            "precision": 0.02857142857142857,
+            "recall": 1.0,
+            "f1": 0.05555555555555555
+          },
+          "CE": {
+            "precision": 0.029411764705882353,
+            "recall": 1.0,
+            "f1": 0.05714285714285714
+          }
+        }
+      },
+      "combined_field_paths": {
+        "candidate_count": 35,
+        "label_count": 1,
+        "fqn_hits": 1,
+        "scores": {
+          "FQN": {
+            "precision": 0.02857142857142857,
+            "recall": 1.0,
+            "f1": 0.05555555555555555
+          },
+          "CE": {
+            "precision": 0.029411764705882353,
+            "recall": 1.0,
+            "f1": 0.05714285714285714
+          }
+        }
+      }
+    },
+    "constantinople-005": {
+      "diff_and_override": {
+        "candidate_count": 10,
+        "label_count": 2,
+        "fqn_hits": 2,
+        "scores": {
+          "FQN": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "f1": 0.3333333333333333
+          },
+          "CE": {
+            "precision": 0.1111111111111111,
+            "recall": 1.0,
+            "f1": 0.2
+          }
+        }
+      },
+      "combined_field_paths": {
+        "candidate_count": 10,
+        "label_count": 2,
+        "fqn_hits": 2,
+        "scores": {
+          "FQN": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "f1": 0.3333333333333333
+          },
+          "CE": {
+            "precision": 0.1111111111111111,
+            "recall": 1.0,
+            "f1": 0.2
+          }
+        }
+      }
+    },
+    "constantinople-006": {
+      "diff_and_override": {
+        "candidate_count": 13,
+        "label_count": 1,
+        "fqn_hits": 1,
+        "scores": {
+          "FQN": {
+            "precision": 0.07692307692307693,
+            "recall": 1.0,
+            "f1": 0.14285714285714285
+          },
+          "CE": {
+            "precision": 0.08333333333333333,
+            "recall": 1.0,
+            "f1": 0.15384615384615385
+          }
+        }
+      },
+      "combined_field_paths": {
+        "candidate_count": 13,
+        "label_count": 1,
+        "fqn_hits": 1,
+        "scores": {
+          "FQN": {
+            "precision": 0.07692307692307693,
+            "recall": 1.0,
+            "f1": 0.14285714285714285
+          },
+          "CE": {
+            "precision": 0.08333333333333333,
+            "recall": 1.0,
+            "f1": 0.15384615384615385
+          }
+        }
+      }
+    },
+    "constantinople-007": {
+      "diff_and_override": {
+        "candidate_count": 30,
+        "label_count": 4,
+        "fqn_hits": 3,
+        "scores": {
+          "FQN": {
+            "precision": 0.1,
+            "recall": 0.75,
+            "f1": 0.17647058823529413
+          },
+          "CE": {
+            "precision": 0.1,
+            "recall": 0.75,
+            "f1": 0.17647058823529413
+          }
+        }
+      },
+      "combined_field_paths": {
+        "candidate_count": 30,
+        "label_count": 4,
+        "fqn_hits": 3,
+        "scores": {
+          "FQN": {
+            "precision": 0.1,
+            "recall": 0.75,
+            "f1": 0.17647058823529413
+          },
+          "CE": {
+            "precision": 0.1,
+            "recall": 0.75,
+            "f1": 0.17647058823529413
+          }
+        }
+      }
+    },
+    "constantinople-008": {
+      "diff_and_override": {
+        "candidate_count": 22,
+        "label_count": 1,
+        "fqn_hits": 1,
+        "scores": {
+          "FQN": {
+            "precision": 0.045454545454545456,
+            "recall": 1.0,
+            "f1": 0.08695652173913043
+          },
+          "CE": {
+            "precision": 0.05,
+            "recall": 1.0,
+            "f1": 0.09523809523809523
+          }
+        }
+      },
+      "combined_field_paths": {
+        "candidate_count": 22,
+        "label_count": 1,
+        "fqn_hits": 1,
+        "scores": {
+          "FQN": {
+            "precision": 0.045454545454545456,
+            "recall": 1.0,
+            "f1": 0.08695652173913043
+          },
+          "CE": {
+            "precision": 0.05,
+            "recall": 1.0,
+            "f1": 0.09523809523809523
+          }
+        }
+      }
+    },
+    "constantinople-009": {
+      "diff_and_override": {
+        "candidate_count": 18,
+        "label_count": 5,
+        "fqn_hits": 4,
+        "scores": {
+          "FQN": {
+            "precision": 0.2222222222222222,
+            "recall": 0.8,
+            "f1": 0.34782608695652173
+          },
+          "CE": {
+            "precision": 0.25,
+            "recall": 0.8,
+            "f1": 0.38095238095238093
+          }
+        }
+      },
+      "combined_field_paths": {
+        "candidate_count": 43,
+        "label_count": 5,
+        "fqn_hits": 4,
+        "scores": {
+          "FQN": {
+            "precision": 0.09302325581395349,
+            "recall": 0.8,
+            "f1": 0.16666666666666666
+          },
+          "CE": {
+            "precision": 0.0975609756097561,
+            "recall": 0.8,
+            "f1": 0.17391304347826086
+          }
+        }
+      }
+    },
+    "constantinople-010": {
+      "diff_and_override": {
+        "candidate_count": 39,
+        "label_count": 5,
+        "fqn_hits": 2,
+        "scores": {
+          "FQN": {
+            "precision": 0.05128205128205128,
+            "recall": 0.4,
+            "f1": 0.09090909090909091
+          },
+          "CE": {
+            "precision": 0.05128205128205128,
+            "recall": 0.4,
+            "f1": 0.09090909090909091
+          }
+        }
+      },
+      "combined_field_paths": {
+        "candidate_count": 40,
+        "label_count": 5,
+        "fqn_hits": 2,
+        "scores": {
+          "FQN": {
+            "precision": 0.05,
+            "recall": 0.4,
+            "f1": 0.08888888888888889
+          },
+          "CE": {
+            "precision": 0.05,
+            "recall": 0.4,
+            "f1": 0.08888888888888889
+          }
+        }
+      }
+    },
+    "constantinople-011": {
+      "diff_and_override": {
+        "candidate_count": 9,
+        "label_count": 2,
+        "fqn_hits": 1,
+        "scores": {
+          "FQN": {
+            "precision": 0.1111111111111111,
+            "recall": 0.5,
+            "f1": 0.18181818181818182
+          },
+          "CE": {
+            "precision": 0.1111111111111111,
+            "recall": 0.5,
+            "f1": 0.18181818181818182
+          }
+        }
+      },
+      "combined_field_paths": {
+        "candidate_count": 10,
+        "label_count": 2,
+        "fqn_hits": 2,
+        "scores": {
+          "FQN": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "f1": 0.3333333333333333
+          },
+          "CE": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    "constantinople-012": {
+      "diff_and_override": {
+        "candidate_count": 14,
+        "label_count": 3,
+        "fqn_hits": 1,
+        "scores": {
+          "FQN": {
+            "precision": 0.07142857142857142,
+            "recall": 0.3333333333333333,
+            "f1": 0.11764705882352941
+          },
+          "CE": {
+            "precision": 0.07142857142857142,
+            "recall": 0.3333333333333333,
+            "f1": 0.11764705882352941
+          }
+        }
+      },
+      "combined_field_paths": {
+        "candidate_count": 33,
+        "label_count": 3,
+        "fqn_hits": 1,
+        "scores": {
+          "FQN": {
+            "precision": 0.030303030303030304,
+            "recall": 0.3333333333333333,
+            "f1": 0.05555555555555555
+          },
+          "CE": {
+            "precision": 0.030303030303030304,
+            "recall": 0.3333333333333333,
+            "f1": 0.05555555555555555
+          }
+        }
+      }
+    },
+    "constantinople-013": {
+      "diff_and_override": {
+        "candidate_count": 8,
+        "label_count": 1,
+        "fqn_hits": 0,
+        "scores": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "combined_field_paths": {
+        "candidate_count": 11,
+        "label_count": 1,
+        "fqn_hits": 1,
+        "scores": {
+          "FQN": {
+            "precision": 0.09090909090909091,
+            "recall": 1.0,
+            "f1": 0.16666666666666666
+          },
+          "CE": {
+            "precision": 0.09090909090909091,
+            "recall": 1.0,
+            "f1": 0.16666666666666666
+          }
+        }
+      }
+    },
+    "constantinople-014": {
+      "diff_and_override": {
+        "candidate_count": 14,
+        "label_count": 1,
+        "fqn_hits": 0,
+        "scores": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "combined_field_paths": {
+        "candidate_count": 14,
+        "label_count": 1,
+        "fqn_hits": 0,
+        "scores": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    "constantinople-015": {
+      "diff_and_override": {
+        "candidate_count": 14,
+        "label_count": 1,
+        "fqn_hits": 1,
+        "scores": {
+          "FQN": {
+            "precision": 0.07142857142857142,
+            "recall": 1.0,
+            "f1": 0.13333333333333333
+          },
+          "CE": {
+            "precision": 0.07142857142857142,
+            "recall": 1.0,
+            "f1": 0.13333333333333333
+          }
+        }
+      },
+      "combined_field_paths": {
+        "candidate_count": 14,
+        "label_count": 1,
+        "fqn_hits": 1,
+        "scores": {
+          "FQN": {
+            "precision": 0.07142857142857142,
+            "recall": 1.0,
+            "f1": 0.13333333333333333
+          },
+          "CE": {
+            "precision": 0.07142857142857142,
+            "recall": 1.0,
+            "f1": 0.13333333333333333
+          }
+        }
+      }
+    },
+    "constantinople-016": {
+      "diff_and_override": {
+        "candidate_count": 2,
+        "label_count": 12,
+        "fqn_hits": 2,
+        "scores": {
+          "FQN": {
+            "precision": 1.0,
+            "recall": 0.16666666666666666,
+            "f1": 0.2857142857142857
+          },
+          "CE": {
+            "precision": 1.0,
+            "recall": 0.16666666666666666,
+            "f1": 0.2857142857142857
+          }
+        }
+      },
+      "combined_field_paths": {
+        "candidate_count": 2,
+        "label_count": 12,
+        "fqn_hits": 2,
+        "scores": {
+          "FQN": {
+            "precision": 1.0,
+            "recall": 0.16666666666666666,
+            "f1": 0.2857142857142857
+          },
+          "CE": {
+            "precision": 1.0,
+            "recall": 0.16666666666666666,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    "constantinople-017": {
+      "diff_and_override": {
+        "candidate_count": 21,
+        "label_count": 1,
+        "fqn_hits": 0,
+        "scores": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "combined_field_paths": {
+        "candidate_count": 22,
+        "label_count": 1,
+        "fqn_hits": 1,
+        "scores": {
+          "FQN": {
+            "precision": 0.045454545454545456,
+            "recall": 1.0,
+            "f1": 0.08695652173913043
+          },
+          "CE": {
+            "precision": 0.047619047619047616,
+            "recall": 1.0,
+            "f1": 0.09090909090909091
+          }
+        }
+      }
+    },
+    "constantinople-018": {
+      "diff_and_override": {
+        "candidate_count": 21,
+        "label_count": 12,
+        "fqn_hits": 3,
+        "scores": {
+          "FQN": {
+            "precision": 0.14285714285714285,
+            "recall": 0.25,
+            "f1": 0.18181818181818182
+          },
+          "CE": {
+            "precision": 0.14285714285714285,
+            "recall": 0.25,
+            "f1": 0.18181818181818182
+          }
+        }
+      },
+      "combined_field_paths": {
+        "candidate_count": 35,
+        "label_count": 12,
+        "fqn_hits": 10,
+        "scores": {
+          "FQN": {
+            "precision": 0.2857142857142857,
+            "recall": 0.8333333333333334,
+            "f1": 0.425531914893617
+          },
+          "CE": {
+            "precision": 0.29411764705882354,
+            "recall": 0.8333333333333334,
+            "f1": 0.43478260869565216
+          }
+        }
+      }
+    },
+    "constantinople-019": {
+      "diff_and_override": {
+        "candidate_count": 23,
+        "label_count": 1,
+        "fqn_hits": 0,
+        "scores": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "combined_field_paths": {
+        "candidate_count": 24,
+        "label_count": 1,
+        "fqn_hits": 0,
+        "scores": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    }
+  }
+}

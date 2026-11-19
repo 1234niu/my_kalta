@@ -1,0 +1,48 @@
+{
+  "request_sha256": "c457f5c62e5c419f6e792e973ca8831aa06ceb19e0a25022f526ceea569792a3",
+  "request": {
+    "model": "deepseek-v4.1-flash-1017",
+    "temperature": 0,
+    "messages": [
+      {
+        "role": "user",
+        "content": "# System Information\nYou are an expert in Java and in analyzing the impact of source code changes on other code entities in a project's production code.\n\n# General Information\nYou receive information about a set of changes, called seed changes, that were made to fix a bug reported in Jira.\nYou also receive the Jira bug report title and description and an initial impact set consisting of the fully qualified names of code entities that are statically related to the seed changes.\n\n# Task\nYour task is to refine the initial impact set.\nA code entity is part of the impact set if it requires modification or, if it does not already exist, must be created as a consequence of the seed changes.\nFirst, remove code entities unless the provided information indicates that they must be modified.\nSecond, add code entities that must be modified or created according to the provided evidence.\n\nYour goal is to report a final impact set that consists of the fully qualified names of code entities that must be modified or created because of the seed changes.\n\n# Inputs\n- Jira bug report title: SCXMLSerializer does not serialize custom namespace declarations\n- Jira bug report description: The SCXMLSerializer writes the scxml namespace as the default namespace to the <scxml> root tag and adds a \"cs\" (\"commons-scxml\") namespace by default.\\n\\nBut it does not take into account that the original scxml document might contain other namespace declarations, e.g. on child tags:\\n\\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\\n<scxml xmlns=\"http://www.w3.org/2005/07/scxml\" xmlns:cs=\"http://commons.apache.org/scxml\" version=\"1.0\" initial=\"S1\">\\n <state id=\"S1\">\\n <!-- some E4X like condition using XML namespaces -->\\n <!-- redefine default namespace to \"foo\" and use explicit namespace prefix for scxml:transition tag -->\\n <scxml:transition event=\"foo\" cond=\"a.b.bar::c.* == 3\" target=\"S2\" xmlns=\"foo\" xmlns:scxml=\"http://www.w3.org/2005/07/scxml\" xmlns:bar=\"bar\">\\n </transition>\\n </state>\\n <state id=\"S2\" final=\"true\">\\n </state>\\n</scxml>\\n\\nThe above SCXML document is parsed properly and namespaces are forwarded to the executor (i.e. it works correct). But if it comes to serialization the namespaces are not serialized properly.\n- Seed changes and their Git diff hunks: [{\"fqn\": \"org.apache.commons.scxml.io.SCXMLSerializer.serialize(org.apache.commons.scxml.model.SCXML)\", \"git_diff_hunk\": \"@@ -95,2 +107,2 @@ public class SCXMLSerializer {\\n- append(\\\"\\\\\\\" xmlns:cs=\\\\\\\"\\\").append(NAMESPACE_COMMONS_SCXML).\\n- append(\\\"\\\\\\\" version=\\\\\\\"\\\").append(scxml.getVersion()).\\n+ append(\\\"\\\\\\\"\\\").append(serializeNamespaceDeclarations(scxml)).\\n+ append(\\\" version=\\\\\\\"\\\").append(scxml.getVersion()).\\n@@ -105,0 +118 @@ public class SCXMLSerializer {\\n+ b.append(INDENT).append(\\\"<!-- http://commons.apache.org/scxml -->\\\\n\\\");\"}]\n- Initial static code change impact set: [\"org.apache.commons.scxml.SCXMLHelper.escapeXML(java.lang.String)\", \"org.apache.commons.scxml.SCXMLHelper.serializeNamespaceDeclarations(org.apache.commons.scxml.model.SCXML)\", \"org.apache.commons.scxml.io.SCXMLSerializer.INDENT\", \"org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_COMMONS_SCXML\", \"org.apache.commons.scxml.io.SCXMLSerializer.NAMESPACE_SCXML\", \"org.apache.commons.scxml.io.SCXMLSerializer.XFORMER\", \"org.apache.commons.scxml.io.SCXMLSerializer.serializeDatamodel(java.lang.StringBuffer,org.apache.commons.scxml.model.Datamodel,java.lang.String)\", \"org.apache.commons.scxml.io.SCXMLSerializer.serializeHistory(java.lang.StringBuffer,java.util.List,java.lang.String)\", \"org.apache.commons.scxml.io.SCXMLSerializer.serializeInitial(java.lang.StringBuffer,org.apache.commons.scxml.model.Initial,java.lang.String)\", \"org.apache.commons.scxml.io.SCXMLSerializer.serializeInvoke(java.lang.StringBuffer,org.apache.commons.scxml.model.Invoke,java.lang.String)\", \"org.apache.commons.scxml.io.SCXMLSerializer.serializeNamespaceDeclarations(org.apache.commons.scxml.model.SCXML)\", \"org.apache.commons.scxml.io.SCXMLSerializer.serializeOnEntry(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget,java.lang.String)\", \"org.apache.commons.scxml.io.SCXMLSerializer.serializeOnExit(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget,java.lang.String)\", \"org.apache.commons.scxml.io.SCXMLSerializer.serializeParallel(java.lang.StringBuffer,org.apache.commons.scxml.model.Parallel,java.lang.String)\", \"org.apache.commons.scxml.io.SCXMLSerializer.serializeState(java.lang.StringBuffer,org.apache.commons.scxml.model.State,java.lang.String)\", \"org.apache.commons.scxml.io.SCXMLSerializer.serializeTransition(java.lang.StringBuffer,org.apache.commons.scxml.model.Transition,java.lang.String)\", \"org.apache.commons.scxml.io.SCXMLSerializer.serializeTransitionTargetAttributes(java.lang.StringBuffer,org.apache.commons.scxml.model.TransitionTarget)\", \"org.apache.commons.scxml.model.Data.getExpr()\", \"org.apache.commons.scxml.model.Data.getId()\", \"org.apache.commons.scxml.model.Data.getNode()\", \"org.apache.commons.scxml.model.Datamodel.getData()\", \"org.apache.commons.scxml.model.Parallel.getChildren()\", \"org.apache.commons.scxml.model.SCXML.children\", \"org.apache.commons.scxml.model.SCXML.datamodel\", \"org.apache.commons.scxml.model.SCXML.getChildren()\", \"org.apache.commons.scxml.model.SCXML.getDatamodel()\", \"org.apache.commons.scxml.model.SCXML.getInitial()\", \"org.apache.commons.scxml.model.SCXML.getVersion()\", \"org.apache.commons.scxml.model.SCXML.initial\", \"org.apache.commons.scxml.model.SCXML.version\", \"org.apache.commons.scxml.model.State.getChildren()\", \"org.apache.commons.scxml.model.State.getInitial()\", \"org.apache.commons.scxml.model.State.getInvoke()\", \"org.apache.commons.scxml.model.State.getParallel()\", \"org.apache.commons.scxml.model.State.isFinal()\", \"org.apache.commons.scxml.model.TransitionTarget.getDatamodel()\", \"org.apache.commons.scxml.model.TransitionTarget.getHistory()\", \"org.apache.commons.scxml.model.TransitionTarget.getTransitionsList()\", \"org.apache.commons.scxml.test.StandaloneUtils.execute(java.lang.String,org.apache.commons.scxml.Evaluator)\"]\n\n# Output Format\nReturn exactly one valid single-line JSON array of strings.\nEach string must be the fully qualified name of an impacted code entity.\nDo not include any additional text, formatting, or meta-information.\nDo not include seed changes in the output.\n\nExample output (four impacted code entities):\n[\"com.example.Foo.someMethod(java.lang.String, int)\", \"com.example.bar.attribute1\", \"com.example.bar.Class.NestedClass\", \"com.example.bar.Class.Class()\"]\n\nExample output (two impacted code entities):\n[\"com.example.package.ParentClass.ChildClass.field\", \"com.example.package.ParentClass.apply(long, com.example.package.ParentClass)\"]\n\nExample output (zero impacted code entities):\n[]"
+      }
+    ],
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096
+  },
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "[\"org.apache.commons.scxml.SCXMLHelper.serializeNamespaceDeclarations(org.apache.commons.scxml.model.SCXML)\",\"org.apache.commons.scxml.io.SCXMLSerializer.serializeNamespaceDeclarations(org.apache.commons.scxml.model.SCXML)\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1794905827,
+    "id": "0217949058262279436a70d8fd44afb73ab39bbb6df35ba5b7bc0",
+    "model": "deepseek-v4.1-flash-1017",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 60,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 1664,
+      "prompt_cache_miss_tokens": 52,
+      "prompt_tokens": 1716,
+      "prompt_tokens_details": {
+        "cached_tokens": 1664
+      },
+      "total_tokens": 1776
+    }
+  },
+  "seconds": 1.3508460000000007,
+  "endpoint": "http://api.aicnic.cn/v1"
+}

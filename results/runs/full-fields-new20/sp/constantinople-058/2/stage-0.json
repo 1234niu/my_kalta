@@ -1,0 +1,48 @@
+{
+  "request_sha256": "5fbfe885a2672e79fcc10449874147b3a952dc118672a0bca25540c3b53baadd",
+  "request": {
+    "model": "deepseek-v4.1-flash-1017",
+    "temperature": 0,
+    "messages": [
+      {
+        "role": "user",
+        "content": "# System Information\nYou are an expert in Java and in analyzing the impact of source code changes on other code entities in a project's production code.\n\n# General Information\nYou receive information about a set of changes, called seed changes, that were made to fix a bug reported in Jira.\nYou also receive the Jira bug report title and description and an initial impact set consisting of the fully qualified names of code entities that are statically related to the seed changes.\n\n# Task\nYour task is to refine the initial impact set.\nA code entity is part of the impact set if it requires modification or, if it does not already exist, must be created as a consequence of the seed changes.\nFirst, remove code entities unless the provided information indicates that they must be modified.\nSecond, add code entities that must be modified or created according to the provided evidence.\n\nYour goal is to report a final impact set that consists of the fully qualified names of code entities that must be modified or created because of the seed changes.\n\n# Inputs\n- Jira bug report title: CPIO fails decoding multibyte name entries\n- Jira bug report description: Having a CPIO archive in (e.g. UTF-8) mode and having a name entry with a name containing multi-byte characters the decoder fails.\\n\\nThe problem IMHO is the \"getHeaderPadCount\" method, which assumes a single byte per character:\\n\\n \\n{code:java}\\n public int getHeaderPadCount(){\\n if (this.alignmentBoundary == 0) { return 0; }\\n int size = this.headerSize + 1; // Name has terminating null\\n if (name != null) {\\n size += name.length();\\n }\\n final int remain = size % this.alignmentBoundary;\\n if (remain > 0){\\n return this.alignmentBoundary - remain;\\n }\\n return 0;\\n }\\n{code}\\nHowever this may (or may not) be true for UTF-8.\\n\\n \\n\\nAlso it wouldn't be enough to call \"String#getBytes(…)\" as this might already transform the underlying bytes.\\n\\nThe proper solution would be to provide the name size, as read from the CPIO stream, and pass it to the entry.\n- Seed changes and their Git diff hunks: [{\"fqn\": \"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)\", \"git_diff_hunk\": \"@@ -490 +488 @@ public int getHeaderPadCount(){\\n- public int getHeaderPadCount(ZipEncoding encoding) {\\n+ public int getHeaderPadCount(Charset charset) {\\n@@ -494 +492 @@ public int getHeaderPadCount(ZipEncoding encoding) {\\n- if (encoding == null) {\\n+ if (charset == null) {\\n@@ -497,7 +495 @@ public int getHeaderPadCount(ZipEncoding encoding) {\\n- try {\\n- final ByteBuffer buf = encoding.encode(name);\\n- return getHeaderPadCount(buf.limit() - buf.position());\\n- } catch (IOException ex) {\\n- // won't happen as the output stream has already encoded the name without error\\n- throw new RuntimeException(\\\"cannot encode \\\" + name, ex);\\n- }\\n+ return getHeaderPadCount(name.getBytes(charset).length);\"}]\n- Initial static code change impact set: [\"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.io.File,java.lang.String)\", \"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String)\", \"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(java.lang.String,long)\", \"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short)\", \"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.io.File,java.lang.String)\", \"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String)\", \"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.CpioArchiveEntry(short,java.lang.String,long)\", \"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.alignmentBoundary\", \"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.charset\", \"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount()\", \"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)\", \"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.headerSize\", \"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.name\", \"org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.setName(java.lang.String)\", \"org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)\", \"org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)\", \"org.apache.commons.compress.archivers.zip.ZipEncoding.encode(java.lang.String)\"]\n\n# Output Format\nReturn exactly one valid single-line JSON array of strings.\nEach string must be the fully qualified name of an impacted code entity.\nDo not include any additional text, formatting, or meta-information.\nDo not include seed changes in the output.\n\nExample output (four impacted code entities):\n[\"com.example.Foo.someMethod(java.lang.String, int)\", \"com.example.bar.attribute1\", \"com.example.bar.Class.NestedClass\", \"com.example.bar.Class.Class()\"]\n\nExample output (two impacted code entities):\n[\"com.example.package.ParentClass.ChildClass.field\", \"com.example.package.ParentClass.apply(long, com.example.package.ParentClass)\"]\n\nExample output (zero impacted code entities):\n[]"
+      }
+    ],
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 4096
+  },
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "[\"org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)\",\"org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)\"]",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1794905828,
+    "id": "0217949058272032de38e8299405d0a4d8e2bf74997350edd7f5c",
+    "model": "deepseek-v4.1-flash-1017",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 84,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 1280,
+      "prompt_cache_miss_tokens": 91,
+      "prompt_tokens": 1371,
+      "prompt_tokens_details": {
+        "cached_tokens": 1280
+      },
+      "total_tokens": 1455
+    }
+  },
+  "seconds": 1.6800176659999995,
+  "endpoint": "http://api.aicnic.cn/v1"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "constantinople-160",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 0,
+  "predictions": [
+    "org.apache.commons.beanutils.MethodUtils.invokeExactMethod(java.lang.Object,java.lang.String,java.lang.Object)"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "a8427bf1d50caccfb53106ae0f91520bfa45afc11fbfc5c83e09b4442cafcfed",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

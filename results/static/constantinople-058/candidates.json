@@ -1,0 +1,37 @@
+{
+  "id": "constantinople-058",
+  "fingerprint": "96fe10ccc596355f3ecfb713c263a4ba2249c82c226b5936edfc0c3e0b3b2064",
+  "jar_sha256": "3cda081c6b99a8eb4d86d018b43329e252159c2d62c97221c4ac6442d578be7a",
+  "parent_commit": "430e1267633bf2db0ee1c833c0c5f61f4a45702d",
+  "candidates": [
+    "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount()",
+    "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)",
+    "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)",
+    "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)",
+    "org.apache.commons.compress.archivers.zip.ZipEncoding.encode(java.lang.String)"
+  ],
+  "seeds": [
+    {
+      "fqn": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(org.apache.commons.compress.archivers.zip.ZipEncoding)",
+      "type": "executable",
+      "relations": {
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount()": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeOldBinaryEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry,boolean)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.compress.archivers.zip.ZipEncoding.encode(java.lang.String)": [
+          "CALLS"
+        ],
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveOutputStream.writeNewEntry(org.apache.commons.compress.archivers.cpio.CpioArchiveEntry)": [
+          "IS_CALLED_BY"
+        ],
+        "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount(long)": [
+          "CALLS"
+        ]
+      },
+      "resolution": "relations_found"
+    }
+  ]
+}

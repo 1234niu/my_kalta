@@ -1,0 +1,12 @@
+{
+  "id": "constantinople-156",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 2,
+  "predictions": [
+    "org.apache.commons.vfs.impl.StandardFileSystemManager.findClassLoader()"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "5ea1f97c4c4f5d624f123a97157b841dbe87bf5a34097874fc80b02d505fbeea",
+  "reconstruction": "author templates; custom sequential orchestration"
+}

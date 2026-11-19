@@ -1,0 +1,14 @@
+{
+  "id": "constantinople-101",
+  "variant": "sp",
+  "model": "deepseek-v4.1-flash-1017",
+  "repeat": 2,
+  "predictions": [
+    "org.apache.giraph.edge.MutableEdgesWrapper.MutableEdgesWrapper(org.apache.giraph.edge.Vertex, java.lang.Iterable)",
+    "org.apache.giraph.edge.MutableEdgesWrapper.decrementEdges()",
+    "org.apache.giraph.edge.MutableEdgesWrapper.numEdges"
+  ],
+  "excluded_seeds": [],
+  "static_fingerprint": "94eb5d433806d591edcc7ea20ad54c6fe370305049e587be6a85fe538740fd31",
+  "reconstruction": "author templates; custom sequential orchestration"
+}
