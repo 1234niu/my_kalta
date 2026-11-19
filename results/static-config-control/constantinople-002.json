@@ -1,0 +1,2101 @@
+{
+  "id": "constantinople-002",
+  "graph_edges": 6108,
+  "seeds": {
+    "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)": true
+  },
+  "candidates": {
+    "baseline": [
+      "org.apache.commons.net.ftp.FTPFile.FTPFile()",
+      "org.apache.commons.net.ftp.FTPFile.setGroup(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setHardLinkCount(int)",
+      "org.apache.commons.net.ftp.FTPFile.setLink(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setName(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setPermission(int,int,boolean)",
+      "org.apache.commons.net.ftp.FTPFile.setRawListing(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setSize(long)",
+      "org.apache.commons.net.ftp.FTPFile.setTimestamp(java.util.Calendar)",
+      "org.apache.commons.net.ftp.FTPFile.setType(int)",
+      "org.apache.commons.net.ftp.FTPFile.setUser(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.MVSFTPEntryParser.parseUnixList(org.apache.commons.net.ftp.FTPFile,java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.group(int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)"
+    ],
+    "fields": [
+      "org.apache.commons.net.ftp.FTPFile.DIRECTORY_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.EXECUTE_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile.FILE_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.FTPFile()",
+      "org.apache.commons.net.ftp.FTPFile.READ_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile.SYMBOLIC_LINK_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.UNKNOWN_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.WRITE_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile.setGroup(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setHardLinkCount(int)",
+      "org.apache.commons.net.ftp.FTPFile.setLink(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setName(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setPermission(int,int,boolean)",
+      "org.apache.commons.net.ftp.FTPFile.setRawListing(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setSize(long)",
+      "org.apache.commons.net.ftp.FTPFile.setTimestamp(java.util.Calendar)",
+      "org.apache.commons.net.ftp.FTPFile.setType(int)",
+      "org.apache.commons.net.ftp.FTPFile.setUser(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.MVSFTPEntryParser.parseUnixList(org.apache.commons.net.ftp.FTPFile,java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.group(int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)"
+    ],
+    "multihop": [
+      "org.apache.commons.net.ftp.FTPFile.DIRECTORY_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.EXECUTE_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile.FILE_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.FTPFile()",
+      "org.apache.commons.net.ftp.FTPFile.READ_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile.SYMBOLIC_LINK_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.UNKNOWN_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.WRITE_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile.setGroup(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setHardLinkCount(int)",
+      "org.apache.commons.net.ftp.FTPFile.setLink(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setName(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setPermission(int,int,boolean)",
+      "org.apache.commons.net.ftp.FTPFile.setRawListing(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setSize(long)",
+      "org.apache.commons.net.ftp.FTPFile.setTimestamp(java.util.Calendar)",
+      "org.apache.commons.net.ftp.FTPFile.setType(int)",
+      "org.apache.commons.net.ftp.FTPFile.setUser(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser",
+      "org.apache.commons.net.ftp.parser.MVSFTPEntryParser.parseUnixList(org.apache.commons.net.ftp.FTPFile,java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.group(int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.setRegex(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.setRegex(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser()",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)"
+    ],
+    "two_hop_calls": [
+      "org.apache.commons.net.ftp.FTPFile.DIRECTORY_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.EXECUTE_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile.FILE_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.FTPFile()",
+      "org.apache.commons.net.ftp.FTPFile.READ_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile.SYMBOLIC_LINK_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.UNKNOWN_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.WRITE_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile.setGroup(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setHardLinkCount(int)",
+      "org.apache.commons.net.ftp.FTPFile.setLink(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setName(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setPermission(int,int,boolean)",
+      "org.apache.commons.net.ftp.FTPFile.setRawListing(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setSize(long)",
+      "org.apache.commons.net.ftp.FTPFile.setTimestamp(java.util.Calendar)",
+      "org.apache.commons.net.ftp.FTPFile.setType(int)",
+      "org.apache.commons.net.ftp.FTPFile.setUser(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser",
+      "org.apache.commons.net.ftp.parser.FTPTimestampParser.parseTimestamp(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.MVSFTPEntryParser.parseUnixList(org.apache.commons.net.ftp.FTPFile,java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.group(int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.setRegex(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.setRegex(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser()",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)"
+    ],
+    "diff_and_override": [
+      "org.apache.commons.net.ftp.FTPFile.DIRECTORY_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.EXECUTE_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile.FILE_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.FTPFile()",
+      "org.apache.commons.net.ftp.FTPFile.READ_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile.SYMBOLIC_LINK_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.UNKNOWN_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.WRITE_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile.setGroup(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setHardLinkCount(int)",
+      "org.apache.commons.net.ftp.FTPFile.setLink(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setName(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setPermission(int,int,boolean)",
+      "org.apache.commons.net.ftp.FTPFile.setRawListing(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setSize(long)",
+      "org.apache.commons.net.ftp.FTPFile.setTimestamp(java.util.Calendar)",
+      "org.apache.commons.net.ftp.FTPFile.setType(int)",
+      "org.apache.commons.net.ftp.FTPFile.setUser(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser",
+      "org.apache.commons.net.ftp.parser.FTPTimestampParser.parseTimestamp(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.MVSFTPEntryParser.parseUnixList(org.apache.commons.net.ftp.FTPFile,java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.group(int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.setRegex(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.setRegex(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser()",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)"
+    ],
+    "mixed_field_paths": [
+      "org.apache.commons.net.ftp.FTPFile.DIRECTORY_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.EXECUTE_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile.FILE_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.FTPFile()",
+      "org.apache.commons.net.ftp.FTPFile.READ_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile.SYMBOLIC_LINK_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.UNKNOWN_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.WRITE_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile._permissions",
+      "org.apache.commons.net.ftp.FTPFile.setGroup(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setHardLinkCount(int)",
+      "org.apache.commons.net.ftp.FTPFile.setLink(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setName(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setPermission(int,int,boolean)",
+      "org.apache.commons.net.ftp.FTPFile.setRawListing(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setSize(long)",
+      "org.apache.commons.net.ftp.FTPFile.setTimestamp(java.util.Calendar)",
+      "org.apache.commons.net.ftp.FTPFile.setType(int)",
+      "org.apache.commons.net.ftp.FTPFile.setUser(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser",
+      "org.apache.commons.net.ftp.parser.FTPTimestampParser.parseTimestamp(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.MVSFTPEntryParser.parseUnixList(org.apache.commons.net.ftp.FTPFile,java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.group(int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.setRegex(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.setRegex(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser()",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)"
+    ],
+    "seed_field_accesses": [
+      "org.apache.commons.net.ftp.FTPFile.DIRECTORY_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.EXECUTE_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile.FILE_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.FTPFile()",
+      "org.apache.commons.net.ftp.FTPFile.READ_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile.SYMBOLIC_LINK_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.UNKNOWN_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.WRITE_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile.setGroup(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setHardLinkCount(int)",
+      "org.apache.commons.net.ftp.FTPFile.setLink(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setName(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setPermission(int,int,boolean)",
+      "org.apache.commons.net.ftp.FTPFile.setRawListing(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setSize(long)",
+      "org.apache.commons.net.ftp.FTPFile.setTimestamp(java.util.Calendar)",
+      "org.apache.commons.net.ftp.FTPFile.setType(int)",
+      "org.apache.commons.net.ftp.FTPFile.setUser(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser",
+      "org.apache.commons.net.ftp.parser.FTPTimestampParser.parseTimestamp(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.MVSFTPEntryParser.parseUnixList(org.apache.commons.net.ftp.FTPFile,java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.group(int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.setRegex(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.setRegex(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser()",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.trimLeadingSpaces"
+    ],
+    "combined_field_paths": [
+      "org.apache.commons.net.ftp.FTPFile.DIRECTORY_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.EXECUTE_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile.FILE_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.FTPFile()",
+      "org.apache.commons.net.ftp.FTPFile.READ_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile.SYMBOLIC_LINK_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.UNKNOWN_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.WRITE_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile._permissions",
+      "org.apache.commons.net.ftp.FTPFile.setGroup(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setHardLinkCount(int)",
+      "org.apache.commons.net.ftp.FTPFile.setLink(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setName(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setPermission(int,int,boolean)",
+      "org.apache.commons.net.ftp.FTPFile.setRawListing(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setSize(long)",
+      "org.apache.commons.net.ftp.FTPFile.setTimestamp(java.util.Calendar)",
+      "org.apache.commons.net.ftp.FTPFile.setType(int)",
+      "org.apache.commons.net.ftp.FTPFile.setUser(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser",
+      "org.apache.commons.net.ftp.parser.FTPTimestampParser.parseTimestamp(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.MVSFTPEntryParser.parseUnixList(org.apache.commons.net.ftp.FTPFile,java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.group(int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.setRegex(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.setRegex(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser()",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.trimLeadingSpaces"
+    ],
+    "config_control": [
+      "org.apache.commons.net.ftp.FTPFile.DIRECTORY_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.EXECUTE_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile.FILE_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.FTPFile()",
+      "org.apache.commons.net.ftp.FTPFile.READ_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile.SYMBOLIC_LINK_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.UNKNOWN_TYPE",
+      "org.apache.commons.net.ftp.FTPFile.WRITE_PERMISSION",
+      "org.apache.commons.net.ftp.FTPFile._link",
+      "org.apache.commons.net.ftp.FTPFile._name",
+      "org.apache.commons.net.ftp.FTPFile._permissions",
+      "org.apache.commons.net.ftp.FTPFile.getLink()",
+      "org.apache.commons.net.ftp.FTPFile.getName()",
+      "org.apache.commons.net.ftp.FTPFile.setGroup(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setHardLinkCount(int)",
+      "org.apache.commons.net.ftp.FTPFile.setLink(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setName(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setPermission(int,int,boolean)",
+      "org.apache.commons.net.ftp.FTPFile.setRawListing(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.setSize(long)",
+      "org.apache.commons.net.ftp.FTPFile.setTimestamp(java.util.Calendar)",
+      "org.apache.commons.net.ftp.FTPFile.setType(int)",
+      "org.apache.commons.net.ftp.FTPFile.setUser(java.lang.String)",
+      "org.apache.commons.net.ftp.FTPFile.toFormattedString(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser",
+      "org.apache.commons.net.ftp.parser.FTPTimestampParser.parseTimestamp(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.MVSFTPEntryParser.parseUnixList(org.apache.commons.net.ftp.FTPFile,java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.group(int)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.setRegex(java.lang.String)",
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.setRegex(java.lang.String,int)",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser()",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)",
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.trimLeadingSpaces"
+    ]
+  },
+  "evidence": {
+    "fields": {
+      "org.apache.commons.net.ftp.FTPFile.DIRECTORY_TYPE": {
+        "org.apache.commons.net.ftp.FTPFile.DIRECTORY_TYPE": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.FTPFile.DIRECTORY_TYPE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 219
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.FTPFile.SYMBOLIC_LINK_TYPE": {
+        "org.apache.commons.net.ftp.FTPFile.SYMBOLIC_LINK_TYPE": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.FTPFile.SYMBOLIC_LINK_TYPE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 222
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.FTPFile.FILE_TYPE": {
+        "org.apache.commons.net.ftp.FTPFile.FILE_TYPE": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.FTPFile.FILE_TYPE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 230
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.FTPFile.UNKNOWN_TYPE": {
+        "org.apache.commons.net.ftp.FTPFile.UNKNOWN_TYPE": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.FTPFile.UNKNOWN_TYPE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 237
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.FTPFile.READ_PERMISSION": {
+        "org.apache.commons.net.ftp.FTPFile.READ_PERMISSION": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.FTPFile.READ_PERMISSION",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 246
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.FTPFile.WRITE_PERMISSION": {
+        "org.apache.commons.net.ftp.FTPFile.WRITE_PERMISSION": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.FTPFile.WRITE_PERMISSION",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 248
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.FTPFile.EXECUTE_PERMISSION": {
+        "org.apache.commons.net.ftp.FTPFile.EXECUTE_PERMISSION": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.FTPFile.EXECUTE_PERMISSION",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 254
+          }
+        ]
+      }
+    },
+    "multihop": {
+      "org.apache.commons.net.ftp.FTPFile.DIRECTORY_TYPE": {
+        "org.apache.commons.net.ftp.FTPFile.DIRECTORY_TYPE": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.FTPFile.DIRECTORY_TYPE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 219
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.FTPFile.SYMBOLIC_LINK_TYPE": {
+        "org.apache.commons.net.ftp.FTPFile.SYMBOLIC_LINK_TYPE": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.FTPFile.SYMBOLIC_LINK_TYPE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 222
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.FTPFile.FILE_TYPE": {
+        "org.apache.commons.net.ftp.FTPFile.FILE_TYPE": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.FTPFile.FILE_TYPE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 230
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.FTPFile.UNKNOWN_TYPE": {
+        "org.apache.commons.net.ftp.FTPFile.UNKNOWN_TYPE": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.FTPFile.UNKNOWN_TYPE",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 237
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.FTPFile.READ_PERMISSION": {
+        "org.apache.commons.net.ftp.FTPFile.READ_PERMISSION": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.FTPFile.READ_PERMISSION",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 246
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.FTPFile.WRITE_PERMISSION": {
+        "org.apache.commons.net.ftp.FTPFile.WRITE_PERMISSION": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.FTPFile.WRITE_PERMISSION",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 248
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.FTPFile.EXECUTE_PERMISSION": {
+        "org.apache.commons.net.ftp.FTPFile.EXECUTE_PERMISSION": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.FTPFile.EXECUTE_PERMISSION",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 254
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result": {
+        "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 193
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 105
+          }
+        ],
+        "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 193
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 106
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 106
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 110
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)": {
+        "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 193
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 105
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 105
+          }
+        ],
+        "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 193
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 106
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 106
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern": {
+        "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 193
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 105
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 105
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 106
+          }
+        ],
+        "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 193
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 106
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 106
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 106
+          }
+        ],
+        "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 193
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 106
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_": {
+        "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 193
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 105
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 105
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 107
+          }
+        ],
+        "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 193
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 106
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)": {
+        "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 193
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 106
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 199
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String)": {
+        "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 193
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 106
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 199
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 73
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String)": {
+        "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 193
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 106
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 199
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 73
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/ConfigurableFTPFileEntryParserImpl.java",
+            "line": 55
+          }
+        ],
+        "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 205
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/ConfigurableFTPFileEntryParserImpl.java",
+            "line": 84
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/ConfigurableFTPFileEntryParserImpl.java",
+            "line": 56
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)": {
+        "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 193
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 106
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 199
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 73
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/ConfigurableFTPFileEntryParserImpl.java",
+            "line": 55
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 157
+          }
+        ],
+        "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 205
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/ConfigurableFTPFileEntryParserImpl.java",
+            "line": 84
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/ConfigurableFTPFileEntryParserImpl.java",
+            "line": 56
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 157
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX": {
+        "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 193
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 106
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 199
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 73
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/ConfigurableFTPFileEntryParserImpl.java",
+            "line": 55
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 157
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)",
+            "to": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 157
+          }
+        ],
+        "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 205
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/ConfigurableFTPFileEntryParserImpl.java",
+            "line": 84
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/ConfigurableFTPFileEntryParserImpl.java",
+            "line": 56
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 157
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)",
+            "to": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 157
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String,int)": {
+        "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 193
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 106
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 199
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String,int)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 93
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String,int)": {
+        "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 193
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 106
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 199
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String,int)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 93
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String,int)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.RegexFTPFileEntryParserImpl(java.lang.String,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/ConfigurableFTPFileEntryParserImpl.java",
+            "line": 69
+          }
+        ],
+        "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 205
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/ConfigurableFTPFileEntryParserImpl.java",
+            "line": 84
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String,int)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/ConfigurableFTPFileEntryParserImpl.java",
+            "line": 70
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.setRegex(java.lang.String)": {
+        "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 193
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 106
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 199
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.setRegex(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 168
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.setRegex(java.lang.String,int)": {
+        "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 193
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 106
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 199
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.setRegex(java.lang.String,int)",
+            "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.compileRegex(java.lang.String,int)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+            "line": 183
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser": {
+        "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 205
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/ConfigurableFTPFileEntryParserImpl.java",
+            "line": 84
+          }
+        ]
+      },
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser()": {
+        "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser": [
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 205
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser",
+            "kind": "READ",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/ConfigurableFTPFileEntryParserImpl.java",
+            "line": 84
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser",
+            "kind": "WRITE",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/ConfigurableFTPFileEntryParserImpl.java",
+            "line": 56
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)",
+            "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.ConfigurableFTPFileEntryParserImpl(java.lang.String)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 157
+          },
+          {
+            "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser()",
+            "to": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)",
+            "kind": "CALLS",
+            "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+            "line": 140
+          }
+        ]
+      }
+    },
+    "two_hop_calls": {
+      "org.apache.commons.net.ftp.parser.FTPTimestampParser.parseTimestamp(java.lang.String)": [
+        {
+          "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+          "line": 205
+        },
+        {
+          "from": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.parser.FTPTimestampParser.parseTimestamp(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/ConfigurableFTPFileEntryParserImpl.java",
+          "line": 84
+        }
+      ]
+    },
+    "mixed_field_paths": {
+      "org.apache.commons.net.ftp.FTPFile.UNKNOWN_TYPE": [
+        {
+          "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.FTPFile.FTPFile()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+          "line": 188
+        },
+        {
+          "from": "org.apache.commons.net.ftp.FTPFile.FTPFile()",
+          "to": "org.apache.commons.net.ftp.FTPFile.UNKNOWN_TYPE",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/net/ftp/FTPFile.java",
+          "line": 75
+        }
+      ],
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern": [
+        {
+          "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+          "line": 193
+        },
+        {
+          "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+          "line": 106
+        }
+      ],
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_": [
+        {
+          "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+          "line": 193
+        },
+        {
+          "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+          "line": 107
+        }
+      ],
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result": [
+        {
+          "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+          "line": 193
+        },
+        {
+          "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+          "line": 110
+        }
+      ],
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser": [
+        {
+          "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+          "line": 205
+        },
+        {
+          "from": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/ConfigurableFTPFileEntryParserImpl.java",
+          "line": 84
+        }
+      ],
+      "org.apache.commons.net.ftp.FTPFile._permissions": [
+        {
+          "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.FTPFile.setPermission(int,int,boolean)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+          "line": 246
+        },
+        {
+          "from": "org.apache.commons.net.ftp.FTPFile.setPermission(int,int,boolean)",
+          "to": "org.apache.commons.net.ftp.FTPFile._permissions",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/net/ftp/FTPFile.java",
+          "line": 389
+        }
+      ]
+    },
+    "seed_field_accesses": {
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.trimLeadingSpaces": [
+        {
+          "seed": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+          "edge": "ADDED_READ",
+          "after_line": 225,
+          "proposed_fqn": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.trimLeadingSpaces",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+          "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.trimLeadingSpaces"
+        }
+      ]
+    },
+    "combined_field_paths": {
+      "org.apache.commons.net.ftp.FTPFile.UNKNOWN_TYPE": [
+        {
+          "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.FTPFile.FTPFile()",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+          "line": 188
+        },
+        {
+          "from": "org.apache.commons.net.ftp.FTPFile.FTPFile()",
+          "to": "org.apache.commons.net.ftp.FTPFile.UNKNOWN_TYPE",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/net/ftp/FTPFile.java",
+          "line": 75
+        }
+      ],
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern": [
+        {
+          "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+          "line": 193
+        },
+        {
+          "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.pattern",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+          "line": 106
+        }
+      ],
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_": [
+        {
+          "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+          "line": 193
+        },
+        {
+          "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl._matcher_",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+          "line": 107
+        }
+      ],
+      "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result": [
+        {
+          "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+          "line": 193
+        },
+        {
+          "from": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.matches(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.parser.RegexFTPFileEntryParserImpl.result",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.java",
+          "line": 110
+        }
+      ],
+      "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser": [
+        {
+          "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+          "line": 205
+        },
+        {
+          "from": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.parseTimestamp(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.parser.ConfigurableFTPFileEntryParserImpl.timestampParser",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/ConfigurableFTPFileEntryParserImpl.java",
+          "line": 84
+        }
+      ],
+      "org.apache.commons.net.ftp.FTPFile._permissions": [
+        {
+          "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.FTPFile.setPermission(int,int,boolean)",
+          "kind": "CALLS",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+          "line": 246
+        },
+        {
+          "from": "org.apache.commons.net.ftp.FTPFile.setPermission(int,int,boolean)",
+          "to": "org.apache.commons.net.ftp.FTPFile._permissions",
+          "kind": "READ",
+          "file": "src/main/java/org/apache/commons/net/ftp/FTPFile.java",
+          "line": 389
+        }
+      ],
+      "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.trimLeadingSpaces": [
+        {
+          "seed": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+          "edge": "ADDED_READ",
+          "after_line": 225,
+          "proposed_fqn": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.trimLeadingSpaces",
+          "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+          "from": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+          "to": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.trimLeadingSpaces"
+        }
+      ]
+    },
+    "config_control": {
+      "org.apache.commons.net.ftp.FTPFile.setName(java.lang.String)": [
+        {
+          "source": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):528:595:merge",
+          "target": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3625:3629:local_read",
+          "kind": "VALUE_FLOW",
+          "certainty": "syntactic"
+        },
+        {
+          "source": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3625:3629:local_read",
+          "target": "parameter:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:0",
+          "kind": "ARGUMENT",
+          "certainty": "modelled",
+          "context": "root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612"
+        }
+      ],
+      "org.apache.commons.net.ftp.FTPFile.setLink(java.lang.String)": [
+        {
+          "source": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):528:595:merge",
+          "target": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3780:3784:local_read",
+          "kind": "VALUE_FLOW",
+          "certainty": "syntactic"
+        },
+        {
+          "source": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3780:3784:local_read",
+          "target": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3780:3803:call",
+          "kind": "OPAQUE_TRANSFORM",
+          "certainty": "may"
+        },
+        {
+          "source": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3780:3803:call",
+          "target": "parameter:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3767:0",
+          "kind": "ARGUMENT",
+          "certainty": "modelled",
+          "context": "root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3767"
+        }
+      ],
+      "org.apache.commons.net.ftp.FTPFile._name": [
+        {
+          "source": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):528:595:merge",
+          "target": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3625:3629:local_read",
+          "kind": "VALUE_FLOW",
+          "certainty": "syntactic"
+        },
+        {
+          "source": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3625:3629:local_read",
+          "target": "parameter:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:0",
+          "kind": "ARGUMENT",
+          "certainty": "modelled",
+          "context": "root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612"
+        },
+        {
+          "source": "parameter:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:0",
+          "target": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:6684:6688:local_read",
+          "kind": "VALUE_FLOW",
+          "certainty": "syntactic"
+        },
+        {
+          "source": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:6684:6688:local_read",
+          "target": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:6676:6688:assignment",
+          "kind": "VALUE_FLOW",
+          "certainty": "syntactic"
+        },
+        {
+          "source": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:6676:6688:assignment",
+          "target": "field:org.apache.commons.net.ftp.FTPFile._name",
+          "kind": "WRITE_VALUE",
+          "certainty": "may",
+          "state_model": "field_flow_insensitive"
+        }
+      ],
+      "org.apache.commons.net.ftp.FTPFile.getName()": [
+        {
+          "source": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):528:595:merge",
+          "target": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3625:3629:local_read",
+          "kind": "VALUE_FLOW",
+          "certainty": "syntactic"
+        },
+        {
+          "source": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3625:3629:local_read",
+          "target": "parameter:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:0",
+          "kind": "ARGUMENT",
+          "certainty": "modelled",
+          "context": "root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612"
+        },
+        {
+          "source": "parameter:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:0",
+          "target": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:6684:6688:local_read",
+          "kind": "VALUE_FLOW",
+          "certainty": "syntactic"
+        },
+        {
+          "source": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:6684:6688:local_read",
+          "target": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:6676:6688:assignment",
+          "kind": "VALUE_FLOW",
+          "certainty": "syntactic"
+        },
+        {
+          "source": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:6676:6688:assignment",
+          "target": "field:org.apache.commons.net.ftp.FTPFile._name",
+          "kind": "WRITE_VALUE",
+          "certainty": "may",
+          "state_model": "field_flow_insensitive"
+        },
+        {
+          "source": "field:org.apache.commons.net.ftp.FTPFile._name",
+          "target": "parent:root:org.apache.commons.net.ftp.FTPFile.getName():6849:6854:field_read",
+          "kind": "READ_VALUE",
+          "certainty": "syntactic"
+        }
+      ],
+      "org.apache.commons.net.ftp.FTPFile._link": [
+        {
+          "source": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):528:595:merge",
+          "target": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3780:3784:local_read",
+          "kind": "VALUE_FLOW",
+          "certainty": "syntactic"
+        },
+        {
+          "source": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3780:3784:local_read",
+          "target": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3780:3803:call",
+          "kind": "OPAQUE_TRANSFORM",
+          "certainty": "may"
+        },
+        {
+          "source": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3780:3803:call",
+          "target": "parameter:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3767:0",
+          "kind": "ARGUMENT",
+          "certainty": "modelled",
+          "context": "root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3767"
+        },
+        {
+          "source": "parameter:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3767:0",
+          "target": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3767:9147:9151:local_read",
+          "kind": "VALUE_FLOW",
+          "certainty": "syntactic"
+        },
+        {
+          "source": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3767:9147:9151:local_read",
+          "target": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3767:9139:9151:assignment",
+          "kind": "VALUE_FLOW",
+          "certainty": "syntactic"
+        },
+        {
+          "source": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3767:9139:9151:assignment",
+          "target": "field:org.apache.commons.net.ftp.FTPFile._link",
+          "kind": "WRITE_VALUE",
+          "certainty": "may",
+          "state_model": "field_flow_insensitive"
+        }
+      ],
+      "org.apache.commons.net.ftp.FTPFile.getLink()": [
+        {
+          "source": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):528:595:merge",
+          "target": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3780:3784:local_read",
+          "kind": "VALUE_FLOW",
+          "certainty": "syntactic"
+        },
+        {
+          "source": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3780:3784:local_read",
+          "target": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3780:3803:call",
+          "kind": "OPAQUE_TRANSFORM",
+          "certainty": "may"
+        },
+        {
+          "source": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3780:3803:call",
+          "target": "parameter:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3767:0",
+          "kind": "ARGUMENT",
+          "certainty": "modelled",
+          "context": "root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3767"
+        },
+        {
+          "source": "parameter:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3767:0",
+          "target": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3767:9147:9151:local_read",
+          "kind": "VALUE_FLOW",
+          "certainty": "syntactic"
+        },
+        {
+          "source": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3767:9147:9151:local_read",
+          "target": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3767:9139:9151:assignment",
+          "kind": "VALUE_FLOW",
+          "certainty": "syntactic"
+        },
+        {
+          "source": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3767:9139:9151:assignment",
+          "target": "field:org.apache.commons.net.ftp.FTPFile._link",
+          "kind": "WRITE_VALUE",
+          "certainty": "may",
+          "state_model": "field_flow_insensitive"
+        },
+        {
+          "source": "field:org.apache.commons.net.ftp.FTPFile._link",
+          "target": "parent:root:org.apache.commons.net.ftp.FTPFile.getLink():9514:9519:field_read",
+          "kind": "READ_VALUE",
+          "certainty": "syntactic"
+        }
+      ],
+      "org.apache.commons.net.ftp.FTPFile.toFormattedString(java.lang.String)": [
+        {
+          "source": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):528:595:merge",
+          "target": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3625:3629:local_read",
+          "kind": "VALUE_FLOW",
+          "certainty": "syntactic"
+        },
+        {
+          "source": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3625:3629:local_read",
+          "target": "parameter:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:0",
+          "kind": "ARGUMENT",
+          "certainty": "modelled",
+          "context": "root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612"
+        },
+        {
+          "source": "parameter:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:0",
+          "target": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:6684:6688:local_read",
+          "kind": "VALUE_FLOW",
+          "certainty": "syntactic"
+        },
+        {
+          "source": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:6684:6688:local_read",
+          "target": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:6676:6688:assignment",
+          "kind": "VALUE_FLOW",
+          "certainty": "syntactic"
+        },
+        {
+          "source": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:6676:6688:assignment",
+          "target": "field:org.apache.commons.net.ftp.FTPFile._name",
+          "kind": "WRITE_VALUE",
+          "certainty": "may",
+          "state_model": "field_flow_insensitive"
+        },
+        {
+          "source": "field:org.apache.commons.net.ftp.FTPFile._name",
+          "target": "parent:root:org.apache.commons.net.ftp.FTPFile.toFormattedString()/call@12604/call@15117:6849:6854:field_read",
+          "kind": "READ_VALUE",
+          "certainty": "syntactic"
+        },
+        {
+          "source": "parent:root:org.apache.commons.net.ftp.FTPFile.toFormattedString()/call@12604/call@15117:6849:6854:field_read",
+          "target": "parent:root:org.apache.commons.net.ftp.FTPFile.toFormattedString()/call@12604/call@15117:6842:6855:return",
+          "kind": "VALUE_FLOW",
+          "certainty": "syntactic"
+        },
+        {
+          "source": "parent:root:org.apache.commons.net.ftp.FTPFile.toFormattedString()/call@12604/call@15117:6842:6855:return",
+          "target": "return:root:org.apache.commons.net.ftp.FTPFile.toFormattedString()/call@12604/call@15117",
+          "kind": "RETURN_VALUE",
+          "certainty": "syntactic"
+        },
+        {
+          "source": "return:root:org.apache.commons.net.ftp.FTPFile.toFormattedString()/call@12604/call@15117",
+          "target": "parent:root:org.apache.commons.net.ftp.FTPFile.toFormattedString()/call@12604:15117:15126:call",
+          "kind": "RETURN_VALUE",
+          "certainty": "modelled"
+        }
+      ]
+    }
+  },
+  "prompt_chars": {
+    "multihop": {
+      "sp": 5450,
+      "ma_analysis": 5032,
+      "ma_refinement_fixed": 4544
+    },
+    "two_hop_calls": {
+      "sp": 5539,
+      "ma_analysis": 5121,
+      "ma_refinement_fixed": 4633
+    }
+  },
+  "seed_diff_overlay": {
+    "added_calls": [
+      {
+        "name": "replaceFirst",
+        "arity": 2,
+        "arguments": [
+          "\"^\\\\s+\"",
+          "\"\""
+        ],
+        "receiver": "name",
+        "after_line": 226,
+        "expression": "replaceFirst(\"^\\\\s+\", \"\")",
+        "edge": "ADDED_CALL",
+        "seed": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+        "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+        "status": "unresolved",
+        "possible_parent_targets": [],
+        "inferred_targets": []
+      }
+    ],
+    "proposed_field_writes": [],
+    "possible_overrides": []
+  },
+  "seed_field_accesses": [
+    {
+      "seed": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+      "edge": "ADDED_READ",
+      "after_line": 225,
+      "proposed_fqn": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.trimLeadingSpaces",
+      "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java"
+    }
+  ],
+  "fine_graph": {
+    "cache": "dataset/indexes/fine-ee1cd858227acbe2817d70cffb30e87bd61da48b046c77eca302036f1fb0e8a7.json",
+    "fingerprint": "ee1cd858227acbe2817d70cffb30e87bd61da48b046c77eca302036f1fb0e8a7",
+    "nodes": 1980,
+    "edges": 3079,
+    "truncated": false,
+    "config_models": {
+      "java.util.Properties": {
+        "write": "setProperty",
+        "read": "getProperty",
+        "substitute": null,
+        "basis": "jdk_api",
+        "certainty": "modelled"
+      },
+      "java.lang.System": {
+        "write": "setProperty",
+        "read": "getProperty",
+        "substitute": null,
+        "basis": "jdk_system_properties",
+        "certainty": "modelled"
+      }
+    },
+    "unresolved": [],
+    "evidence_nodes": [
+      {
+        "id": "field:org.apache.commons.net.ftp.FTPFile._name",
+        "kind": "field",
+        "fqn": "org.apache.commons.net.ftp.FTPFile._name",
+        "file": "src/main/java/org/apache/commons/net/ftp/FTPFile.java",
+        "start": 66,
+        "end": 66
+      },
+      {
+        "id": "field:org.apache.commons.net.ftp.FTPFile._link",
+        "kind": "field",
+        "fqn": "org.apache.commons.net.ftp.FTPFile._link",
+        "provenance": "source_declaration",
+        "file": "src/main/java/org/apache/commons/net/ftp/FTPFile.java",
+        "start": 66,
+        "end": 66
+      },
+      {
+        "id": "parent:root:org.apache.commons.net.ftp.FTPFile.getLink():9514:9519:field_read",
+        "kind": "field_read",
+        "method": "org.apache.commons.net.ftp.FTPFile.getLink()",
+        "file": "src/main/java/org/apache/commons/net/ftp/FTPFile.java",
+        "line": 347,
+        "end_line": 347,
+        "version": "parent",
+        "code": "_link",
+        "context": "root:org.apache.commons.net.ftp.FTPFile.getLink()"
+      },
+      {
+        "id": "parent:root:org.apache.commons.net.ftp.FTPFile.getName():6849:6854:field_read",
+        "kind": "field_read",
+        "method": "org.apache.commons.net.ftp.FTPFile.getName()",
+        "file": "src/main/java/org/apache/commons/net/ftp/FTPFile.java",
+        "line": 230,
+        "end_line": 230,
+        "version": "parent",
+        "code": "_name",
+        "context": "root:org.apache.commons.net.ftp.FTPFile.getName()"
+      },
+      {
+        "id": "parent:root:org.apache.commons.net.ftp.FTPFile.toFormattedString()/call@12604:15117:15126:call",
+        "kind": "call",
+        "method": "org.apache.commons.net.ftp.FTPFile.toFormattedString(java.lang.String)",
+        "file": "src/main/java/org/apache/commons/net/ftp/FTPFile.java",
+        "line": 500,
+        "end_line": 500,
+        "version": "parent",
+        "code": "getName()",
+        "context": "root:org.apache.commons.net.ftp.FTPFile.toFormattedString()/call@12604",
+        "callee": "org.apache.commons.net.ftp.FTPFile.getName()"
+      },
+      {
+        "id": "parent:root:org.apache.commons.net.ftp.FTPFile.toFormattedString()/call@12604/call@15117:6849:6854:field_read",
+        "kind": "field_read",
+        "method": "org.apache.commons.net.ftp.FTPFile.getName()",
+        "file": "src/main/java/org/apache/commons/net/ftp/FTPFile.java",
+        "line": 230,
+        "end_line": 230,
+        "version": "parent",
+        "code": "_name",
+        "context": "root:org.apache.commons.net.ftp.FTPFile.toFormattedString()/call@12604/call@15117"
+      },
+      {
+        "id": "parent:root:org.apache.commons.net.ftp.FTPFile.toFormattedString()/call@12604/call@15117:6842:6855:return",
+        "kind": "return",
+        "method": "org.apache.commons.net.ftp.FTPFile.getName()",
+        "file": "src/main/java/org/apache/commons/net/ftp/FTPFile.java",
+        "line": 230,
+        "end_line": 230,
+        "version": "parent",
+        "code": "return _name;",
+        "context": "root:org.apache.commons.net.ftp.FTPFile.toFormattedString()/call@12604/call@15117"
+      },
+      {
+        "id": "return:root:org.apache.commons.net.ftp.FTPFile.toFormattedString()/call@12604/call@15117",
+        "kind": "return_summary",
+        "method": "org.apache.commons.net.ftp.FTPFile.getName()",
+        "version": "parent",
+        "context": "root:org.apache.commons.net.ftp.FTPFile.toFormattedString()/call@12604/call@15117",
+        "file": "src/main/java/org/apache/commons/net/ftp/FTPFile.java",
+        "line": 228
+      },
+      {
+        "id": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):528:595:merge",
+        "kind": "merge",
+        "method": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+        "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+        "line": 225,
+        "end_line": 227,
+        "version": "seed_after",
+        "code": "if (trimLeadingSpaces) {\n name = name.replaceFirst(\"^\\\\s+\", \"\");\n }",
+        "context": "root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)"
+      },
+      {
+        "id": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3625:3629:local_read",
+        "kind": "local_read",
+        "method": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+        "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+        "line": 321,
+        "end_line": 321,
+        "version": "seed_after",
+        "code": "name",
+        "context": "root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)"
+      },
+      {
+        "id": "parameter:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:0",
+        "kind": "parameter",
+        "method": "org.apache.commons.net.ftp.FTPFile.setName(java.lang.String)",
+        "index": 0,
+        "name": "name",
+        "version": "parent",
+        "file": "src/main/java/org/apache/commons/net/ftp/FTPFile.java",
+        "line": 218
+      },
+      {
+        "id": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:6684:6688:local_read",
+        "kind": "local_read",
+        "method": "org.apache.commons.net.ftp.FTPFile.setName(java.lang.String)",
+        "file": "src/main/java/org/apache/commons/net/ftp/FTPFile.java",
+        "line": 220,
+        "end_line": 220,
+        "version": "parent",
+        "code": "name",
+        "context": "root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612"
+      },
+      {
+        "id": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612:6676:6688:assignment",
+        "kind": "assignment",
+        "method": "org.apache.commons.net.ftp.FTPFile.setName(java.lang.String)",
+        "file": "src/main/java/org/apache/commons/net/ftp/FTPFile.java",
+        "line": 220,
+        "end_line": 220,
+        "version": "parent",
+        "code": "_name = name",
+        "context": "root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3612"
+      },
+      {
+        "id": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3780:3784:local_read",
+        "kind": "local_read",
+        "method": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+        "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+        "line": 326,
+        "end_line": 326,
+        "version": "seed_after",
+        "code": "name",
+        "context": "root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)"
+      },
+      {
+        "id": "seed_after:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String):3780:3803:call",
+        "kind": "call",
+        "method": "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+        "file": "src/main/java/org/apache/commons/net/ftp/parser/UnixFTPEntryParser.java",
+        "line": 326,
+        "end_line": 326,
+        "version": "seed_after",
+        "code": "name.substring(end + 4)",
+        "context": "root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)",
+        "opaque": true
+      },
+      {
+        "id": "parameter:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3767:0",
+        "kind": "parameter",
+        "method": "org.apache.commons.net.ftp.FTPFile.setLink(java.lang.String)",
+        "index": 0,
+        "name": "link",
+        "version": "parent",
+        "file": "src/main/java/org/apache/commons/net/ftp/FTPFile.java",
+        "line": 332
+      },
+      {
+        "id": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3767:9147:9151:local_read",
+        "kind": "local_read",
+        "method": "org.apache.commons.net.ftp.FTPFile.setLink(java.lang.String)",
+        "file": "src/main/java/org/apache/commons/net/ftp/FTPFile.java",
+        "line": 334,
+        "end_line": 334,
+        "version": "parent",
+        "code": "link",
+        "context": "root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3767"
+      },
+      {
+        "id": "parent:root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3767:9139:9151:assignment",
+        "kind": "assignment",
+        "method": "org.apache.commons.net.ftp.FTPFile.setLink(java.lang.String)",
+        "file": "src/main/java/org/apache/commons/net/ftp/FTPFile.java",
+        "line": 334,
+        "end_line": 334,
+        "version": "parent",
+        "code": "_link = link",
+        "context": "root:org.apache.commons.net.ftp.parser.UnixFTPEntryParser.parseFTPEntry(java.lang.String)/call@3767"
+      }
+    ]
+  },
+  "indexed_targets": [
+    "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+    "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)"
+  ],
+  "unindexed_targets": [
+    "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig,boolean)",
+    "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.trimLeadingSpaces"
+  ],
+  "metrics": {
+    "baseline": {
+      "candidate_count": 15,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig,boolean)",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.trimLeadingSpaces"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "fields": {
+      "candidate_count": 22,
+      "hits": [],
+      "misses": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig,boolean)",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.trimLeadingSpaces"
+      ],
+      "indexed_misses": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)"
+      ],
+      "indexed_recall": 0.0
+    },
+    "multihop": {
+      "candidate_count": 36,
+      "hits": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)"
+      ],
+      "misses": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig,boolean)",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.trimLeadingSpaces"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "two_hop_calls": {
+      "candidate_count": 37,
+      "hits": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)"
+      ],
+      "misses": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig,boolean)",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.trimLeadingSpaces"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "diff_and_override": {
+      "candidate_count": 37,
+      "hits": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)"
+      ],
+      "misses": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig,boolean)",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.trimLeadingSpaces"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "mixed_field_paths": {
+      "candidate_count": 38,
+      "hits": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)"
+      ],
+      "misses": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig,boolean)",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.trimLeadingSpaces"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "seed_field_accesses": {
+      "candidate_count": 38,
+      "hits": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.trimLeadingSpaces"
+      ],
+      "misses": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig,boolean)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "combined_field_paths": {
+      "candidate_count": 39,
+      "hits": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.trimLeadingSpaces"
+      ],
+      "misses": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig,boolean)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    },
+    "config_control": {
+      "candidate_count": 44,
+      "hits": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.REGEX",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig)",
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.trimLeadingSpaces"
+      ],
+      "misses": [
+        "org.apache.commons.net.ftp.parser.UnixFTPEntryParser.UnixFTPEntryParser(org.apache.commons.net.ftp.FTPClientConfig,boolean)"
+      ],
+      "indexed_misses": [],
+      "indexed_recall": 1.0
+    }
+  }
+}

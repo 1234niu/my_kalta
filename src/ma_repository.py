@@ -11,6 +11,7 @@ import katia
 
 class Repository:
     def __init__(self, task):
+        self.task = task
         self.root = katia.source(task).resolve()
         exporter = katia.ROOT / 'src/StaticRelations.java'
         identity = [
@@ -28,6 +29,8 @@ class Repository:
                                 str(self.root), str(output)], check=True, timeout=300)
                 output.replace(cache)
         graph = json.loads(cache.read_text())
+        self.source_graph = graph
+        self._fine = None
         self.locations = graph['locations']
         self.entities = sorted(graph['entities'])
         self.neighbors = defaultdict(list)
@@ -62,8 +65,37 @@ class Repository:
             raise ValueError('Java source file unavailable in the parent snapshot')
         return path
 
+    def fine_neighbors(self, query):
+        """Expose evidence paths without changing the existing method-level query contract."""
+        if self._fine is None:
+            from fine_relations import build_fine
+            self._fine, _ = build_fine(self.task, self.source_graph, self.root)
+        node_id, fqn = query.get('node'), query.get('fqn')
+        direction, offset = query.get('direction','out'), query.get('offset',0)
+        if direction not in ('in','out') or type(offset) is not int or offset<0:
+            raise ValueError('Expected direction in/out and nonnegative offset')
+        nodes = {node['id']:node for node in self._fine['nodes']}
+        if node_id is not None:
+            if not isinstance(node_id,str) or node_id not in nodes:
+                raise ValueError('Unknown fine graph node')
+            selected = {node_id}
+        elif isinstance(fqn,str) and fqn in self.source_graph['entities']:
+            selected = {name for name,node in nodes.items() if node.get('fqn')==fqn or node.get('method')==fqn}
+        else:
+            raise ValueError('Expected a node ID or indexed FQN')
+        side = 'source' if direction=='out' else 'target'
+        edges = [edge for edge in self._fine['edges'] if edge[side] in selected
+                 and (query.get('kind') is None or edge['kind']==query['kind'])]
+        page = edges[offset:offset+20]
+        involved = {edge[key] for edge in page for key in ('source','target')}
+        return dict(edges=page,nodes=[nodes[key] for key in sorted(involved)],total=len(edges),
+                    next_offset=offset+20 if offset+20<len(edges) else None,
+                    fingerprint=self._fine['fingerprint'],truncated=self._fine['truncated'])
+
     def query(self, request):
         action = request.get('tool')
+        if action == 'fine_neighbors':
+            return self.fine_neighbors(request)
         if action == 'find_symbol':
             term = request['query']
             if not isinstance(term, str) or not term.strip() or len(term) > 300:

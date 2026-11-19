@@ -1,0 +1,45 @@
+{
+  "cases": [
+    {
+      "id": "constantinople-002",
+      "before_hits": 3,
+      "after_hits": 3,
+      "before_candidates": 39,
+      "after_candidates": 44,
+      "fine_nodes": 1980,
+      "fine_edges": 3079,
+      "truncated": false
+    },
+    {
+      "id": "constantinople-013",
+      "before_hits": 1,
+      "after_hits": 1,
+      "before_candidates": 11,
+      "after_candidates": 20,
+      "fine_nodes": 4229,
+      "fine_edges": 7224,
+      "truncated": false
+    },
+    {
+      "id": "constantinople-017",
+      "before_hits": 1,
+      "after_hits": 1,
+      "before_candidates": 22,
+      "after_candidates": 25,
+      "fine_nodes": 8179,
+      "fine_edges": 10715,
+      "truncated": false
+    },
+    {
+      "id": "constantinople-019",
+      "before_hits": 0,
+      "after_hits": 1,
+      "before_candidates": 24,
+      "after_candidates": 160,
+      "fine_nodes": 24640,
+      "fine_edges": 37288,
+      "truncated": false
+    }
+  ],
+  "validation": "source path and isolation tests; diagnostic examples only"
+}

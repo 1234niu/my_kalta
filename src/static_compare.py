@@ -126,7 +126,12 @@ def field_paths(graph, seeds, overlays=(), *, mixed=False):
             if name not in {seed['fqn'] for seed in seeds}}
 
 
-def retrieve(row, cross_class_calls=False, seed_diff=False, field_ablation=False):
+def retrieve(row, cross_class_calls=False, seed_diff=False, field_ablation=False, config_control=False):
+    if config_control:
+        field_ablation = True
+    if field_ablation:
+        cross_class_calls = True
+        seed_diff = True
     task = katia.load_task(row)
     baseline = katia.static(task)['candidates']
     with tempfile.TemporaryDirectory() as tmp:
@@ -191,6 +196,18 @@ def retrieve(row, cross_class_calls=False, seed_diff=False, field_ablation=False
             result['evidence'][name] = additions
             result['candidates'][name] = sorted(baseline | additions.keys())
         result['seed_field_accesses'] = accesses
+    if config_control:
+        from fine_relations import build_fine, impact_paths
+        fine, cache = build_fine(task, graph, katia.source(task))
+        paths = impact_paths(fine, seeds)
+        result['candidates']['config_control'] = sorted(set(result['candidates']['combined_field_paths']) | paths.keys())
+        result['evidence']['config_control'] = paths
+        used = {edge[key] for path in paths.values() for edge in path for key in ('source','target')}
+        result['fine_graph'] = dict(cache=str(cache.relative_to(katia.ROOT)),
+                                   fingerprint=fine['fingerprint'], nodes=len(fine['nodes']),
+                                   edges=len(fine['edges']), truncated=fine['truncated'],
+                                   config_models=fine['config_models'], unresolved=fine['unresolved'],
+                                   evidence_nodes=[node for node in fine['nodes'] if node['id'] in used])
     return result
 
 
@@ -201,12 +218,16 @@ def main():
     parser.add_argument('--seed-diff-overlay', action='store_true', help='Record call sites added by the seed diff')
     parser.add_argument('--field-ablation', action='store_true',
                         help='Compare graph field paths and new diff accesses against the latest static arm')
+    parser.add_argument('--config-control', action='store_true',
+                        help='Add bounded expression-level configuration, value and guard relations')
     args = parser.parse_args()
+    if args.config_control:
+        args.field_ablation = True
     rows = list(dict.fromkeys(int(value) for value in args.rows.split(',')))
     if any(row < 0 for row in rows):
         parser.error('Row positions must be nonnegative')
     results = [retrieve(row, args.cross_class_calls or args.field_ablation,
-                        args.seed_diff_overlay or args.field_ablation, args.field_ablation) for row in rows]
+                        args.seed_diff_overlay or args.field_ablation, args.field_ablation, args.config_control) for row in rows]
     gold_path = katia.ROOT / 'dataset/processed/evaluation-only.jsonl'
     labels = {r['id']: r for r in map(json.loads, gold_path.read_text().splitlines())}
     folder = 'static-two-hop' if args.cross_class_calls else 'static-compare'
@@ -214,6 +235,8 @@ def main():
         folder = 'static-seed-diff'
     if args.field_ablation:
         folder = 'static-field-ablation'
+    if args.config_control:
+        folder = 'static-config-control'
     output = katia.ROOT / 'results' / folder
     for result in results:
         target = {e['fqn'] for e in labels[result['id']]['impacted']}

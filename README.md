@@ -112,3 +112,5 @@ flowchart LR
 
 [^1]: Stengg, Macho, Pinzger. Hybrid Source Code Change Impact Analysis. https://arxiv.org/html/2611.10958v1
 [^2]: 作者补充材料（文件及 CC BY 4.0 许可信息见本地原始元数据）。https://doi.org/10.6084/m9.figshare.32924534
+
+[配置与条件细图](docs/static-config-control.md)说明静态值传递、配置读写、条件分支关系及定向验证结果。

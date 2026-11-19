@@ -1,0 +1,3198 @@
+{
+  "cases": 20,
+  "repetitions": 3,
+  "selection": {
+    "rows": [
+      40,
+      64,
+      68,
+      86,
+      95,
+      128,
+      142,
+      148,
+      160,
+      218,
+      58,
+      65,
+      79,
+      112,
+      101,
+      132,
+      156,
+      262,
+      206,
+      90
+    ],
+    "cases": [
+      {
+        "id": "constantinople-040",
+        "repo": "apache/commons-compress",
+        "parent_commit": "abd47125414b2bc66830bb511b213594ebf43437"
+      },
+      {
+        "id": "constantinople-064",
+        "repo": "apache/commons-lang",
+        "parent_commit": "6f27e9bbd119e419fa417b9446abe7aae0fb9624"
+      },
+      {
+        "id": "constantinople-068",
+        "repo": "apache/commons-scxml",
+        "parent_commit": "745885cc88a53a65378bfadf34cbab15a951c319"
+      },
+      {
+        "id": "constantinople-086",
+        "repo": "apache/gora",
+        "parent_commit": "1f6ba329ecaa8d3c06c8b4bd159cca933e59c23a"
+      },
+      {
+        "id": "constantinople-095",
+        "repo": "apache/giraph",
+        "parent_commit": "4d227c289ad98c3ff58e49812b47bdea92976c39"
+      },
+      {
+        "id": "constantinople-128",
+        "repo": "apache/commons-validator",
+        "parent_commit": "4fdca223ea9a9a001a5c7fb8b7a1a9e1e2601c91"
+      },
+      {
+        "id": "constantinople-142",
+        "repo": "apache/commons-vfs",
+        "parent_commit": "4b9ef61dfe2b904af86a09be6d5dbe77482ba32c"
+      },
+      {
+        "id": "constantinople-148",
+        "repo": "apache/commons-digester",
+        "parent_commit": "5e4b91b1451aed5f1e78d1d8b93f814867071900"
+      },
+      {
+        "id": "constantinople-160",
+        "repo": "apache/commons-beanutils",
+        "parent_commit": "c6598775e060bddfab7c8f314da504ecb2c90d57"
+      },
+      {
+        "id": "constantinople-218",
+        "repo": "apache/commons-bcel",
+        "parent_commit": "a667105d323cfaa5584b8067bd6840a4a39d2b5e"
+      },
+      {
+        "id": "constantinople-058",
+        "repo": "apache/commons-compress",
+        "parent_commit": "430e1267633bf2db0ee1c833c0c5f61f4a45702d"
+      },
+      {
+        "id": "constantinople-065",
+        "repo": "apache/commons-lang",
+        "parent_commit": "2abe2c8366bebe043fe7aef7d091f7b169fcec79"
+      },
+      {
+        "id": "constantinople-079",
+        "repo": "apache/commons-scxml",
+        "parent_commit": "1ba7b4d1aa4371ce3f263fe1a880305fdbca290a"
+      },
+      {
+        "id": "constantinople-112",
+        "repo": "apache/gora",
+        "parent_commit": "b5963fa0204995a66558cb97375711098b00af18"
+      },
+      {
+        "id": "constantinople-101",
+        "repo": "apache/giraph",
+        "parent_commit": "458ddd8f92d7dab8428c7bf481cd2797b05b278e"
+      },
+      {
+        "id": "constantinople-132",
+        "repo": "apache/commons-validator",
+        "parent_commit": "07e0466c3bfbfee16e500f2d329206842575d690"
+      },
+      {
+        "id": "constantinople-156",
+        "repo": "apache/commons-vfs",
+        "parent_commit": "c830b993cbbfd460138ee3ce846e820a911d6a07"
+      },
+      {
+        "id": "constantinople-262",
+        "repo": "apache/commons-digester",
+        "parent_commit": "b9a2cd846922536904c71eed878deb327e318f21"
+      },
+      {
+        "id": "constantinople-206",
+        "repo": "apache/commons-beanutils",
+        "parent_commit": "3d6d908468f40a1839f5494d4bcec2c5b59d496f"
+      },
+      {
+        "id": "constantinople-090",
+        "repo": "apache/commons-compress",
+        "parent_commit": "b10528a62e51b2c5fdc0c4b7884cc93f03f8ce96"
+      }
+    ],
+    "selection": "round-robin by first eligible row per repository; excluded prior evaluated and attempted cases, original 20 repositories, duplicate parent snapshots"
+  },
+  "baseline_commit": "182f133c8be6a9cf36c2e79cd229e838cfd1d4e1",
+  "code_sha256": {
+    "ma_traversal.py": "3dc24324af05aaa17e812f2daf33a082b4ef46d75200f41832d1d49c9a8d3262",
+    "ma_planned.py": "59b2ab49a354027142faf6667669b5a00c49b4debade7d51bd3cea223aea64b2",
+    "run_full_fields.py": "dfa04c62af11c6a21f446ff95bddf9e0180e8b84d33abb0cab4f8d8efdd00167"
+  },
+  "summary": {
+    "ma": {
+      "metrics": {
+        "FQN": {
+          "precision": 0.13509458514553008,
+          "recall": 0.48311507936507936,
+          "f1": 0.18773471232011604
+        },
+        "CE": {
+          "precision": 0.14877088282662554,
+          "recall": 0.49936507936507935,
+          "f1": 0.20359273708503625
+        }
+      },
+      "fqn_hits": 45,
+      "candidates": 496,
+      "static_hits_kept": 39,
+      "outside_static_hits": 6,
+      "tokens": {
+        "prompt_tokens": {
+          "total": 1346319,
+          "median": 21536.5
+        },
+        "completion_tokens": {
+          "total": 110108,
+          "median": 1826.0
+        },
+        "total_tokens": {
+          "total": 1456427,
+          "median": 23596.0
+        },
+        "model_calls": {
+          "total": 240,
+          "median": 4.0
+        }
+      }
+    },
+    "rule": {
+      "metrics": {
+        "FQN": {
+          "precision": 0.11892897221644361,
+          "recall": 0.514781746031746,
+          "f1": 0.1773923187173474
+        },
+        "CE": {
+          "precision": 0.1302964476036164,
+          "recall": 0.5310317460317461,
+          "f1": 0.19369156345498906
+        }
+      },
+      "fqn_hits": 47,
+      "candidates": 519,
+      "static_hits_kept": 39,
+      "outside_static_hits": 8,
+      "tokens": {
+        "prompt_tokens": {
+          "total": 6760696,
+          "median": 100355.0
+        },
+        "completion_tokens": {
+          "total": 162398,
+          "median": 2665.0
+        },
+        "total_tokens": {
+          "total": 6923094,
+          "median": 102815.5
+        },
+        "model_calls": {
+          "total": 574,
+          "median": 9.0
+        }
+      }
+    },
+    "confirmed": {
+      "metrics": {
+        "FQN": {
+          "precision": 0.24166666666666667,
+          "recall": 0.18978174603174602,
+          "f1": 0.18024281274281273
+        },
+        "CE": {
+          "precision": 0.25416666666666665,
+          "recall": 0.20561507936507936,
+          "f1": 0.19856893106893106
+        }
+      },
+      "fqn_hits": 13,
+      "candidates": 40,
+      "static_hits_kept": 8,
+      "outside_static_hits": 4
+    },
+    "rule_confirmed": {
+      "metrics": {
+        "FQN": {
+          "precision": 0.19666666666666666,
+          "recall": 0.2531150793650794,
+          "f1": 0.19130952380952382
+        },
+        "CE": {
+          "precision": 0.22666666666666666,
+          "recall": 0.2681150793650794,
+          "f1": 0.2158766233766234
+        }
+      },
+      "fqn_hits": 16,
+      "candidates": 75,
+      "static_hits_kept": 11,
+      "outside_static_hits": 5
+    }
+  },
+  "per_case": [
+    {
+      "id": "constantinople-040",
+      "audit": [
+        {
+          "queries": 17,
+          "explore": 11,
+          "review": 6,
+          "status": {
+            "checked": 11,
+            "unresolved": 36
+          },
+          "tools": {
+            "expand_edges": 4,
+            "search_code": 3,
+            "read_symbol": 4
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 4,
+          "budget_exhausted": false
+        },
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 48
+          },
+          "tools": {
+            "expand_edges": 5,
+            "search_code": 2,
+            "read_symbol": 5
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 6,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 32
+          },
+          "tools": {
+            "expand_edges": 4,
+            "search_code": 3,
+            "read_symbol": 5
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 5,
+          "budget_exhausted": true
+        }
+      ],
+      "tokens": {
+        "ma": [
+          {
+            "prompt_tokens": 28217,
+            "completion_tokens": 2282,
+            "total_tokens": 30499,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 34740,
+            "completion_tokens": 2593,
+            "total_tokens": 37333,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 27942,
+            "completion_tokens": 2560,
+            "total_tokens": 30502,
+            "model_calls": 4
+          }
+        ],
+        "rule": [
+          {
+            "prompt_tokens": 121613,
+            "completion_tokens": 3448,
+            "total_tokens": 125061,
+            "model_calls": 9
+          },
+          {
+            "prompt_tokens": 104771,
+            "completion_tokens": 2934,
+            "total_tokens": 107705,
+            "model_calls": 8
+          },
+          {
+            "prompt_tokens": 144794,
+            "completion_tokens": 3751,
+            "total_tokens": 148545,
+            "model_calls": 10
+          }
+        ]
+      },
+      "metrics": {
+        "ma": {
+          "FQN": {
+            "precision": 0.12962962962962962,
+            "recall": 0.7777777777777778,
+            "f1": 0.2222222222222222
+          },
+          "CE": {
+            "precision": 0.1320754716981132,
+            "recall": 0.7777777777777778,
+            "f1": 0.22580645161290322
+          }
+        },
+        "rule": {
+          "FQN": {
+            "precision": 0.14,
+            "recall": 0.7777777777777778,
+            "f1": 0.23728813559322035
+          },
+          "CE": {
+            "precision": 0.14285714285714285,
+            "recall": 0.7777777777777778,
+            "f1": 0.2413793103448276
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 0.1111111111111111,
+            "f1": 0.15384615384615385
+          },
+          "CE": {
+            "precision": 0.25,
+            "recall": 0.1111111111111111,
+            "f1": 0.15384615384615385
+          }
+        },
+        "rule_confirmed": {
+          "FQN": {
+            "precision": 0.16666666666666666,
+            "recall": 0.1111111111111111,
+            "f1": 0.13333333333333333
+          },
+          "CE": {
+            "precision": 0.16666666666666666,
+            "recall": 0.1111111111111111,
+            "f1": 0.13333333333333333
+          }
+        }
+      }
+    },
+    {
+      "id": "constantinople-064",
+      "audit": [
+        {
+          "queries": 16,
+          "explore": 12,
+          "review": 4,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 31
+          },
+          "tools": {
+            "expand_edges": 6,
+            "search_code": 3,
+            "read_symbol": 3
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 3,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 13,
+          "explore": 9,
+          "review": 4,
+          "status": {
+            "checked": 9,
+            "unresolved": 28
+          },
+          "tools": {
+            "expand_edges": 6,
+            "search_code": 2,
+            "read_symbol": 1
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 1,
+          "budget_exhausted": false
+        },
+        {
+          "queries": 14,
+          "explore": 10,
+          "review": 4,
+          "status": {
+            "checked": 10,
+            "unresolved": 33
+          },
+          "tools": {
+            "expand_edges": 6,
+            "search_code": 2,
+            "read_symbol": 2
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 2,
+          "budget_exhausted": false
+        }
+      ],
+      "tokens": {
+        "ma": [
+          {
+            "prompt_tokens": 18373,
+            "completion_tokens": 2446,
+            "total_tokens": 20819,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 16463,
+            "completion_tokens": 2040,
+            "total_tokens": 18503,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 18979,
+            "completion_tokens": 1843,
+            "total_tokens": 20822,
+            "model_calls": 4
+          }
+        ],
+        "rule": [
+          {
+            "prompt_tokens": 116075,
+            "completion_tokens": 3200,
+            "total_tokens": 119275,
+            "model_calls": 12
+          },
+          {
+            "prompt_tokens": 94915,
+            "completion_tokens": 2684,
+            "total_tokens": 97599,
+            "model_calls": 11
+          },
+          {
+            "prompt_tokens": 74775,
+            "completion_tokens": 2606,
+            "total_tokens": 77381,
+            "model_calls": 9
+          }
+        ]
+      },
+      "metrics": {
+        "ma": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 0.14285714285714285,
+            "f1": 0.18181818181818182
+          },
+          "CE": {
+            "precision": 0.25,
+            "recall": 0.14285714285714285,
+            "f1": 0.18181818181818182
+          }
+        },
+        "rule": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 0.14285714285714285,
+            "f1": 0.18181818181818182
+          },
+          "CE": {
+            "precision": 0.25,
+            "recall": 0.14285714285714285,
+            "f1": 0.18181818181818182
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 0.14285714285714285,
+            "f1": 0.18181818181818182
+          },
+          "CE": {
+            "precision": 0.25,
+            "recall": 0.14285714285714285,
+            "f1": 0.18181818181818182
+          }
+        },
+        "rule_confirmed": {
+          "FQN": {
+            "precision": 0.3333333333333333,
+            "recall": 0.14285714285714285,
+            "f1": 0.2
+          },
+          "CE": {
+            "precision": 0.3333333333333333,
+            "recall": 0.14285714285714285,
+            "f1": 0.2
+          }
+        }
+      }
+    },
+    {
+      "id": "constantinople-068",
+      "audit": [
+        {
+          "queries": 13,
+          "explore": 10,
+          "review": 3,
+          "status": {
+            "checked": 10,
+            "unresolved": 23
+          },
+          "tools": {
+            "expand_edges": 3,
+            "search_code": 3,
+            "read_symbol": 4
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 6,
+          "budget_exhausted": false
+        },
+        {
+          "queries": 17,
+          "explore": 11,
+          "review": 6,
+          "status": {
+            "checked": 11,
+            "unresolved": 46
+          },
+          "tools": {
+            "expand_edges": 3,
+            "search_code": 4,
+            "read_symbol": 4
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 7,
+          "budget_exhausted": false
+        },
+        {
+          "queries": 17,
+          "explore": 11,
+          "review": 6,
+          "status": {
+            "checked": 11,
+            "unresolved": 73
+          },
+          "tools": {
+            "expand_edges": 3,
+            "search_code": 6,
+            "read_symbol": 2
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 6,
+          "budget_exhausted": false
+        }
+      ],
+      "tokens": {
+        "ma": [
+          {
+            "prompt_tokens": 17368,
+            "completion_tokens": 1784,
+            "total_tokens": 19152,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 28862,
+            "completion_tokens": 1907,
+            "total_tokens": 30769,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 28985,
+            "completion_tokens": 1786,
+            "total_tokens": 30771,
+            "model_calls": 4
+          }
+        ],
+        "rule": [
+          {
+            "prompt_tokens": 71588,
+            "completion_tokens": 2292,
+            "total_tokens": 73880,
+            "model_calls": 9
+          },
+          {
+            "prompt_tokens": 99379,
+            "completion_tokens": 2453,
+            "total_tokens": 101832,
+            "model_calls": 9
+          },
+          {
+            "prompt_tokens": 101331,
+            "completion_tokens": 2468,
+            "total_tokens": 103799,
+            "model_calls": 9
+          }
+        ]
+      },
+      "metrics": {
+        "ma": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 1.0,
+            "f1": 0.4
+          },
+          "CE": {
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "f1": 0.5
+          }
+        },
+        "rule": {
+          "FQN": {
+            "precision": 0.16666666666666666,
+            "recall": 1.0,
+            "f1": 0.2857142857142857
+          },
+          "CE": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "f1": 0.3333333333333333
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          },
+          "CE": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          }
+        },
+        "rule_confirmed": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 1.0,
+            "f1": 0.4
+          },
+          "CE": {
+            "precision": 0.25,
+            "recall": 1.0,
+            "f1": 0.4
+          }
+        }
+      }
+    },
+    {
+      "id": "constantinople-086",
+      "audit": [
+        {
+          "queries": 17,
+          "explore": 11,
+          "review": 6,
+          "status": {
+            "checked": 11,
+            "unresolved": 13
+          },
+          "tools": {
+            "expand_edges": 3,
+            "search_code": 3,
+            "read_symbol": 5
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 7,
+          "budget_exhausted": false
+        },
+        {
+          "queries": 16,
+          "explore": 10,
+          "review": 6,
+          "status": {
+            "checked": 10,
+            "unresolved": 10
+          },
+          "tools": {
+            "expand_edges": 2,
+            "search_code": 3,
+            "read_symbol": 5
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 6,
+          "budget_exhausted": false
+        },
+        {
+          "queries": 16,
+          "explore": 10,
+          "review": 6,
+          "status": {
+            "checked": 10,
+            "unresolved": 12
+          },
+          "tools": {
+            "expand_edges": 2,
+            "search_code": 3,
+            "read_symbol": 5
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 6,
+          "budget_exhausted": false
+        }
+      ],
+      "tokens": {
+        "ma": [
+          {
+            "prompt_tokens": 15537,
+            "completion_tokens": 1815,
+            "total_tokens": 17352,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 11582,
+            "completion_tokens": 1485,
+            "total_tokens": 13067,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 15872,
+            "completion_tokens": 1789,
+            "total_tokens": 17661,
+            "model_calls": 4
+          }
+        ],
+        "rule": [
+          {
+            "prompt_tokens": 94519,
+            "completion_tokens": 2308,
+            "total_tokens": 96827,
+            "model_calls": 11
+          },
+          {
+            "prompt_tokens": 73465,
+            "completion_tokens": 2246,
+            "total_tokens": 75711,
+            "model_calls": 10
+          },
+          {
+            "prompt_tokens": 76101,
+            "completion_tokens": 2501,
+            "total_tokens": 78602,
+            "model_calls": 10
+          }
+        ]
+      },
+      "metrics": {
+        "ma": {
+          "FQN": {
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285714
+          },
+          "CE": {
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285714
+          }
+        },
+        "rule": {
+          "FQN": {
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "f1": 0.5
+          },
+          "CE": {
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "f1": 0.5
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          },
+          "CE": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          }
+        },
+        "rule_confirmed": {
+          "FQN": {
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1": 0.8
+          },
+          "CE": {
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1": 0.8
+          }
+        }
+      }
+    },
+    {
+      "id": "constantinople-095",
+      "audit": [
+        {
+          "queries": 16,
+          "explore": 10,
+          "review": 6,
+          "status": {
+            "checked": 10,
+            "unresolved": 43
+          },
+          "tools": {
+            "expand_edges": 4,
+            "search_code": 2,
+            "read_symbol": 4
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 5,
+          "budget_exhausted": false
+        },
+        {
+          "queries": 16,
+          "explore": 10,
+          "review": 6,
+          "status": {
+            "checked": 10,
+            "unresolved": 55
+          },
+          "tools": {
+            "expand_edges": 4,
+            "search_code": 2,
+            "read_symbol": 4
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 5,
+          "budget_exhausted": false
+        },
+        {
+          "queries": 16,
+          "explore": 10,
+          "review": 6,
+          "status": {
+            "checked": 10,
+            "unresolved": 45
+          },
+          "tools": {
+            "expand_edges": 5,
+            "search_code": 2,
+            "read_symbol": 3
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 5,
+          "budget_exhausted": false
+        }
+      ],
+      "tokens": {
+        "ma": [
+          {
+            "prompt_tokens": 19306,
+            "completion_tokens": 1815,
+            "total_tokens": 21121,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 20910,
+            "completion_tokens": 1751,
+            "total_tokens": 22661,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 21346,
+            "completion_tokens": 2223,
+            "total_tokens": 23569,
+            "model_calls": 4
+          }
+        ],
+        "rule": [
+          {
+            "prompt_tokens": 70349,
+            "completion_tokens": 2638,
+            "total_tokens": 72987,
+            "model_calls": 8
+          },
+          {
+            "prompt_tokens": 69663,
+            "completion_tokens": 2251,
+            "total_tokens": 71914,
+            "model_calls": 8
+          },
+          {
+            "prompt_tokens": 83769,
+            "completion_tokens": 2807,
+            "total_tokens": 86576,
+            "model_calls": 9
+          }
+        ]
+      },
+      "metrics": {
+        "ma": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "rule": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "rule_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "id": "constantinople-128",
+      "audit": [
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 42
+          },
+          "tools": {
+            "expand_edges": 11,
+            "read_symbol": 1
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 1,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 44
+          },
+          "tools": {
+            "expand_edges": 11,
+            "read_symbol": 1
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 1,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 43
+          },
+          "tools": {
+            "expand_edges": 11,
+            "read_symbol": 1
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 1,
+          "budget_exhausted": true
+        }
+      ],
+      "tokens": {
+        "ma": [
+          {
+            "prompt_tokens": 24612,
+            "completion_tokens": 2161,
+            "total_tokens": 26773,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 19045,
+            "completion_tokens": 2167,
+            "total_tokens": 21212,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 19856,
+            "completion_tokens": 2025,
+            "total_tokens": 21881,
+            "model_calls": 4
+          }
+        ],
+        "rule": [
+          {
+            "prompt_tokens": 129873,
+            "completion_tokens": 2799,
+            "total_tokens": 132672,
+            "model_calls": 10
+          },
+          {
+            "prompt_tokens": 128170,
+            "completion_tokens": 2479,
+            "total_tokens": 130649,
+            "model_calls": 10
+          },
+          {
+            "prompt_tokens": 182037,
+            "completion_tokens": 2937,
+            "total_tokens": 184974,
+            "model_calls": 12
+          }
+        ]
+      },
+      "metrics": {
+        "ma": {
+          "FQN": {
+            "precision": 0.09090909090909091,
+            "recall": 0.2,
+            "f1": 0.125
+          },
+          "CE": {
+            "precision": 0.09523809523809523,
+            "recall": 0.2,
+            "f1": 0.12903225806451613
+          }
+        },
+        "rule": {
+          "FQN": {
+            "precision": 0.1,
+            "recall": 0.2,
+            "f1": 0.13333333333333333
+          },
+          "CE": {
+            "precision": 0.1,
+            "recall": 0.2,
+            "f1": 0.13333333333333333
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "rule_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "id": "constantinople-142",
+      "audit": [
+        {
+          "queries": 13,
+          "explore": 7,
+          "review": 6,
+          "status": {
+            "checked": 7,
+            "unresolved": 22
+          },
+          "tools": {
+            "expand_edges": 4,
+            "read_symbol": 3
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 5,
+          "budget_exhausted": false
+        },
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 36
+          },
+          "tools": {
+            "expand_edges": 6,
+            "read_symbol": 6
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 10,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 38
+          },
+          "tools": {
+            "expand_edges": 6,
+            "search_code": 1,
+            "read_symbol": 5
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 9,
+          "budget_exhausted": true
+        }
+      ],
+      "tokens": {
+        "ma": [
+          {
+            "prompt_tokens": 18337,
+            "completion_tokens": 1937,
+            "total_tokens": 20274,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 19525,
+            "completion_tokens": 2043,
+            "total_tokens": 21568,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 22264,
+            "completion_tokens": 1756,
+            "total_tokens": 24020,
+            "model_calls": 4
+          }
+        ],
+        "rule": [
+          {
+            "prompt_tokens": 49459,
+            "completion_tokens": 2550,
+            "total_tokens": 52009,
+            "model_calls": 7
+          },
+          {
+            "prompt_tokens": 77898,
+            "completion_tokens": 2434,
+            "total_tokens": 80332,
+            "model_calls": 8
+          },
+          {
+            "prompt_tokens": 77943,
+            "completion_tokens": 2386,
+            "total_tokens": 80329,
+            "model_calls": 8
+          }
+        ]
+      },
+      "metrics": {
+        "ma": {
+          "FQN": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "f1": 0.3333333333333333
+          },
+          "CE": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "f1": 0.3333333333333333
+          }
+        },
+        "rule": {
+          "FQN": {
+            "precision": 0.2222222222222222,
+            "recall": 1.0,
+            "f1": 0.36363636363636365
+          },
+          "CE": {
+            "precision": 0.2222222222222222,
+            "recall": 1.0,
+            "f1": 0.36363636363636365
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.3333333333333333,
+            "recall": 0.5,
+            "f1": 0.5
+          },
+          "CE": {
+            "precision": 0.3333333333333333,
+            "recall": 0.5,
+            "f1": 0.5
+          }
+        },
+        "rule_confirmed": {
+          "FQN": {
+            "precision": 0.2,
+            "recall": 0.5,
+            "f1": 0.2857142857142857
+          },
+          "CE": {
+            "precision": 0.2,
+            "recall": 0.5,
+            "f1": 0.2857142857142857
+          }
+        }
+      }
+    },
+    {
+      "id": "constantinople-148",
+      "audit": [
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 55
+          },
+          "tools": {
+            "expand_edges": 5,
+            "search_code": 3,
+            "read_symbol": 4
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 6,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 40
+          },
+          "tools": {
+            "expand_edges": 4,
+            "search_code": 2,
+            "read_symbol": 6
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 7,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 15,
+          "explore": 9,
+          "review": 6,
+          "status": {
+            "checked": 9,
+            "unresolved": 43
+          },
+          "tools": {
+            "expand_edges": 5,
+            "search_code": 2,
+            "read_symbol": 2
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 4,
+          "budget_exhausted": false
+        }
+      ],
+      "tokens": {
+        "ma": [
+          {
+            "prompt_tokens": 28478,
+            "completion_tokens": 2291,
+            "total_tokens": 30769,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 23332,
+            "completion_tokens": 1112,
+            "total_tokens": 24444,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 24248,
+            "completion_tokens": 1140,
+            "total_tokens": 25388,
+            "model_calls": 4
+          }
+        ],
+        "rule": [
+          {
+            "prompt_tokens": 83230,
+            "completion_tokens": 3186,
+            "total_tokens": 86416,
+            "model_calls": 8
+          },
+          {
+            "prompt_tokens": 195785,
+            "completion_tokens": 2220,
+            "total_tokens": 198005,
+            "model_calls": 12
+          },
+          {
+            "prompt_tokens": 310594,
+            "completion_tokens": 2533,
+            "total_tokens": 313127,
+            "model_calls": 15
+          }
+        ]
+      },
+      "metrics": {
+        "ma": {
+          "FQN": {
+            "precision": 0.09090909090909091,
+            "recall": 0.6666666666666666,
+            "f1": 0.16
+          },
+          "CE": {
+            "precision": 0.05263157894736842,
+            "recall": 0.5,
+            "f1": 0.09523809523809523
+          }
+        },
+        "rule": {
+          "FQN": {
+            "precision": 0.08695652173913043,
+            "recall": 0.6666666666666666,
+            "f1": 0.15384615384615385
+          },
+          "CE": {
+            "precision": 0.05263157894736842,
+            "recall": 0.5,
+            "f1": 0.09523809523809523
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "rule_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "id": "constantinople-160",
+      "audit": [
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 63
+          },
+          "tools": {
+            "expand_edges": 3,
+            "search_code": 6,
+            "read_symbol": 3
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 7,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 17,
+          "explore": 11,
+          "review": 6,
+          "status": {
+            "checked": 11,
+            "unresolved": 60
+          },
+          "tools": {
+            "expand_edges": 4,
+            "search_code": 3,
+            "read_symbol": 4
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 6,
+          "budget_exhausted": false
+        },
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 83
+          },
+          "tools": {
+            "expand_edges": 2,
+            "search_code": 6,
+            "read_symbol": 4
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 7,
+          "budget_exhausted": true
+        }
+      ],
+      "tokens": {
+        "ma": [
+          {
+            "prompt_tokens": 24332,
+            "completion_tokens": 1763,
+            "total_tokens": 26095,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 29948,
+            "completion_tokens": 2050,
+            "total_tokens": 31998,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 26636,
+            "completion_tokens": 1891,
+            "total_tokens": 28527,
+            "model_calls": 4
+          }
+        ],
+        "rule": [
+          {
+            "prompt_tokens": 68839,
+            "completion_tokens": 3012,
+            "total_tokens": 71851,
+            "model_calls": 8
+          },
+          {
+            "prompt_tokens": 103031,
+            "completion_tokens": 2672,
+            "total_tokens": 105703,
+            "model_calls": 10
+          },
+          {
+            "prompt_tokens": 79893,
+            "completion_tokens": 2737,
+            "total_tokens": 82630,
+            "model_calls": 9
+          }
+        ]
+      },
+      "metrics": {
+        "ma": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 0.25,
+            "f1": 0.25
+          },
+          "CE": {
+            "precision": 0.3333333333333333,
+            "recall": 0.25,
+            "f1": 0.2857142857142857
+          }
+        },
+        "rule": {
+          "FQN": {
+            "precision": 0.16666666666666666,
+            "recall": 0.5,
+            "f1": 0.25
+          },
+          "CE": {
+            "precision": 0.2222222222222222,
+            "recall": 0.5,
+            "f1": 0.3076923076923077
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "rule_confirmed": {
+          "FQN": {
+            "precision": 0.3333333333333333,
+            "recall": 0.25,
+            "f1": 0.2857142857142857
+          },
+          "CE": {
+            "precision": 0.5,
+            "recall": 0.25,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    {
+      "id": "constantinople-218",
+      "audit": [
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 83
+          },
+          "tools": {
+            "expand_edges": 4,
+            "search_code": 4,
+            "read_symbol": 4
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 6,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 92
+          },
+          "tools": {
+            "expand_edges": 5,
+            "search_code": 3,
+            "read_symbol": 4
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 6,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 16,
+          "explore": 10,
+          "review": 6,
+          "status": {
+            "checked": 10,
+            "unresolved": 34
+          },
+          "tools": {
+            "expand_edges": 3,
+            "search_code": 3,
+            "read_symbol": 4
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 4,
+          "budget_exhausted": false
+        }
+      ],
+      "tokens": {
+        "ma": [
+          {
+            "prompt_tokens": 35633,
+            "completion_tokens": 2327,
+            "total_tokens": 37960,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 35013,
+            "completion_tokens": 2311,
+            "total_tokens": 37324,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 31161,
+            "completion_tokens": 2217,
+            "total_tokens": 33378,
+            "model_calls": 4
+          }
+        ],
+        "rule": [
+          {
+            "prompt_tokens": 165036,
+            "completion_tokens": 3497,
+            "total_tokens": 168533,
+            "model_calls": 9
+          },
+          {
+            "prompt_tokens": 168422,
+            "completion_tokens": 3673,
+            "total_tokens": 172095,
+            "model_calls": 9
+          },
+          {
+            "prompt_tokens": 161498,
+            "completion_tokens": 2868,
+            "total_tokens": 164366,
+            "model_calls": 10
+          }
+        ]
+      },
+      "metrics": {
+        "ma": {
+          "FQN": {
+            "precision": 0.011494252873563218,
+            "recall": 0.3333333333333333,
+            "f1": 0.022222222222222223
+          },
+          "CE": {
+            "precision": 0.011627906976744186,
+            "recall": 0.3333333333333333,
+            "f1": 0.02247191011235955
+          }
+        },
+        "rule": {
+          "FQN": {
+            "precision": 0.021739130434782608,
+            "recall": 0.6666666666666666,
+            "f1": 0.042105263157894736
+          },
+          "CE": {
+            "precision": 0.02197802197802198,
+            "recall": 0.6666666666666666,
+            "f1": 0.0425531914893617
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "rule_confirmed": {
+          "FQN": {
+            "precision": 0.2,
+            "recall": 0.3333333333333333,
+            "f1": 0.25
+          },
+          "CE": {
+            "precision": 0.2,
+            "recall": 0.3333333333333333,
+            "f1": 0.25
+          }
+        }
+      }
+    },
+    {
+      "id": "constantinople-058",
+      "audit": [
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 45
+          },
+          "tools": {
+            "expand_edges": 3,
+            "search_code": 4,
+            "read_symbol": 5
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 6,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 15,
+          "explore": 9,
+          "review": 6,
+          "status": {
+            "checked": 9,
+            "unresolved": 39
+          },
+          "tools": {
+            "expand_edges": 3,
+            "search_code": 2,
+            "read_symbol": 4
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 4,
+          "budget_exhausted": false
+        },
+        {
+          "queries": 17,
+          "explore": 11,
+          "review": 6,
+          "status": {
+            "checked": 11,
+            "unresolved": 59
+          },
+          "tools": {
+            "expand_edges": 4,
+            "search_code": 2,
+            "read_symbol": 5
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 6,
+          "budget_exhausted": false
+        }
+      ],
+      "tokens": {
+        "ma": [
+          {
+            "prompt_tokens": 23288,
+            "completion_tokens": 1891,
+            "total_tokens": 25179,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 24287,
+            "completion_tokens": 1305,
+            "total_tokens": 25592,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 34339,
+            "completion_tokens": 1950,
+            "total_tokens": 36289,
+            "model_calls": 4
+          }
+        ],
+        "rule": [
+          {
+            "prompt_tokens": 113149,
+            "completion_tokens": 2572,
+            "total_tokens": 115721,
+            "model_calls": 9
+          },
+          {
+            "prompt_tokens": 106810,
+            "completion_tokens": 2465,
+            "total_tokens": 109275,
+            "model_calls": 9
+          },
+          {
+            "prompt_tokens": 138233,
+            "completion_tokens": 2931,
+            "total_tokens": 141164,
+            "model_calls": 9
+          }
+        ]
+      },
+      "metrics": {
+        "ma": {
+          "FQN": {
+            "precision": 0.09523809523809523,
+            "recall": 1.0,
+            "f1": 0.17391304347826086
+          },
+          "CE": {
+            "precision": 0.14285714285714285,
+            "recall": 1.0,
+            "f1": 0.25
+          }
+        },
+        "rule": {
+          "FQN": {
+            "precision": 0.10526315789473684,
+            "recall": 1.0,
+            "f1": 0.19047619047619047
+          },
+          "CE": {
+            "precision": 0.16666666666666666,
+            "recall": 1.0,
+            "f1": 0.2857142857142857
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "rule_confirmed": {
+          "FQN": {
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285714
+          },
+          "CE": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          }
+        }
+      }
+    },
+    {
+      "id": "constantinople-065",
+      "audit": [
+        {
+          "queries": 16,
+          "explore": 10,
+          "review": 6,
+          "status": {
+            "checked": 10,
+            "unresolved": 26
+          },
+          "tools": {
+            "expand_edges": 5,
+            "search_code": 3,
+            "read_symbol": 2
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 3,
+          "budget_exhausted": false
+        },
+        {
+          "queries": 16,
+          "explore": 10,
+          "review": 6,
+          "status": {
+            "checked": 10,
+            "unresolved": 24
+          },
+          "tools": {
+            "expand_edges": 5,
+            "search_code": 3,
+            "read_symbol": 2
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 3,
+          "budget_exhausted": false
+        },
+        {
+          "queries": 17,
+          "explore": 11,
+          "review": 6,
+          "status": {
+            "checked": 11,
+            "unresolved": 44
+          },
+          "tools": {
+            "expand_edges": 6,
+            "search_code": 2,
+            "read_symbol": 3
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 5,
+          "budget_exhausted": false
+        }
+      ],
+      "tokens": {
+        "ma": [
+          {
+            "prompt_tokens": 17188,
+            "completion_tokens": 1837,
+            "total_tokens": 19025,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 14932,
+            "completion_tokens": 1499,
+            "total_tokens": 16431,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 14281,
+            "completion_tokens": 1340,
+            "total_tokens": 15621,
+            "model_calls": 4
+          }
+        ],
+        "rule": [
+          {
+            "prompt_tokens": 74587,
+            "completion_tokens": 2548,
+            "total_tokens": 77135,
+            "model_calls": 9
+          },
+          {
+            "prompt_tokens": 87599,
+            "completion_tokens": 2636,
+            "total_tokens": 90235,
+            "model_calls": 10
+          },
+          {
+            "prompt_tokens": 80593,
+            "completion_tokens": 2877,
+            "total_tokens": 83470,
+            "model_calls": 9
+          }
+        ]
+      },
+      "metrics": {
+        "ma": {
+          "FQN": {
+            "precision": 0.1875,
+            "recall": 0.75,
+            "f1": 0.3
+          },
+          "CE": {
+            "precision": 0.20689655172413793,
+            "recall": 0.75,
+            "f1": 0.32432432432432434
+          }
+        },
+        "rule": {
+          "FQN": {
+            "precision": 0.1875,
+            "recall": 0.75,
+            "f1": 0.3
+          },
+          "CE": {
+            "precision": 0.20689655172413793,
+            "recall": 0.75,
+            "f1": 0.32432432432432434
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 1.0,
+            "recall": 0.125,
+            "f1": 0.2222222222222222
+          },
+          "CE": {
+            "precision": 1.0,
+            "recall": 0.125,
+            "f1": 0.2222222222222222
+          }
+        },
+        "rule_confirmed": {
+          "FQN": {
+            "precision": 0.25,
+            "recall": 0.125,
+            "f1": 0.16666666666666666
+          },
+          "CE": {
+            "precision": 0.3333333333333333,
+            "recall": 0.125,
+            "f1": 0.18181818181818182
+          }
+        }
+      }
+    },
+    {
+      "id": "constantinople-079",
+      "audit": [
+        {
+          "queries": 15,
+          "explore": 9,
+          "review": 6,
+          "status": {
+            "checked": 9,
+            "unresolved": 36
+          },
+          "tools": {
+            "expand_edges": 4,
+            "search_code": 3,
+            "read_symbol": 2
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 3,
+          "budget_exhausted": false
+        },
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 46
+          },
+          "tools": {
+            "expand_edges": 4,
+            "search_code": 5,
+            "read_symbol": 3
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 6,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 15,
+          "explore": 9,
+          "review": 6,
+          "status": {
+            "checked": 9,
+            "unresolved": 35
+          },
+          "tools": {
+            "expand_edges": 3,
+            "search_code": 4,
+            "read_symbol": 2
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 4,
+          "budget_exhausted": false
+        }
+      ],
+      "tokens": {
+        "ma": [
+          {
+            "prompt_tokens": 20031,
+            "completion_tokens": 1587,
+            "total_tokens": 21618,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 22095,
+            "completion_tokens": 1568,
+            "total_tokens": 23663,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 19716,
+            "completion_tokens": 1595,
+            "total_tokens": 21311,
+            "model_calls": 4
+          }
+        ],
+        "rule": [
+          {
+            "prompt_tokens": 108583,
+            "completion_tokens": 2669,
+            "total_tokens": 111252,
+            "model_calls": 9
+          },
+          {
+            "prompt_tokens": 146516,
+            "completion_tokens": 2661,
+            "total_tokens": 149177,
+            "model_calls": 10
+          },
+          {
+            "prompt_tokens": 165514,
+            "completion_tokens": 2161,
+            "total_tokens": 167675,
+            "model_calls": 11
+          }
+        ]
+      },
+      "metrics": {
+        "ma": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.025,
+            "recall": 0.16666666666666666,
+            "f1": 0.043478260869565216
+          }
+        },
+        "rule": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.025,
+            "recall": 0.16666666666666666,
+            "f1": 0.043478260869565216
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "rule_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "id": "constantinople-112",
+      "audit": [
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 48
+          },
+          "tools": {
+            "expand_edges": 10,
+            "read_symbol": 2
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 3,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 49
+          },
+          "tools": {
+            "expand_edges": 10,
+            "read_symbol": 2
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 3,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 49
+          },
+          "tools": {
+            "expand_edges": 10,
+            "read_symbol": 2
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 3,
+          "budget_exhausted": true
+        }
+      ],
+      "tokens": {
+        "ma": [
+          {
+            "prompt_tokens": 21727,
+            "completion_tokens": 2148,
+            "total_tokens": 23875,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 25877,
+            "completion_tokens": 2122,
+            "total_tokens": 27999,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 27270,
+            "completion_tokens": 2316,
+            "total_tokens": 29586,
+            "model_calls": 4
+          }
+        ],
+        "rule": [
+          {
+            "prompt_tokens": 149560,
+            "completion_tokens": 2940,
+            "total_tokens": 152500,
+            "model_calls": 11
+          },
+          {
+            "prompt_tokens": 231144,
+            "completion_tokens": 3939,
+            "total_tokens": 235083,
+            "model_calls": 13
+          },
+          {
+            "prompt_tokens": 93619,
+            "completion_tokens": 3034,
+            "total_tokens": 96653,
+            "model_calls": 8
+          }
+        ]
+      },
+      "metrics": {
+        "ma": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.041666666666666664,
+            "recall": 0.16666666666666666,
+            "f1": 0.06666666666666667
+          }
+        },
+        "rule": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.045454545454545456,
+            "recall": 0.16666666666666666,
+            "f1": 0.07142857142857142
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.25,
+            "recall": 0.16666666666666666,
+            "f1": 0.2
+          }
+        },
+        "rule_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.25,
+            "recall": 0.16666666666666666,
+            "f1": 0.2
+          }
+        }
+      }
+    },
+    {
+      "id": "constantinople-101",
+      "audit": [
+        {
+          "queries": 17,
+          "explore": 11,
+          "review": 6,
+          "status": {
+            "checked": 11,
+            "unresolved": 16
+          },
+          "tools": {
+            "expand_edges": 2,
+            "search_code": 3,
+            "read_symbol": 6
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 7,
+          "budget_exhausted": false
+        },
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 32
+          },
+          "tools": {
+            "expand_edges": 3,
+            "search_code": 3,
+            "read_symbol": 6
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 8,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 6,
+          "explore": 5,
+          "review": 1,
+          "status": {
+            "checked": 5,
+            "unresolved": 48
+          },
+          "tools": {
+            "expand_edges": 1,
+            "search_code": 4
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 2,
+          "budget_exhausted": false
+        }
+      ],
+      "tokens": {
+        "ma": [
+          {
+            "prompt_tokens": 15986,
+            "completion_tokens": 1764,
+            "total_tokens": 17750,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 13801,
+            "completion_tokens": 1318,
+            "total_tokens": 15119,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 13363,
+            "completion_tokens": 1333,
+            "total_tokens": 14696,
+            "model_calls": 4
+          }
+        ],
+        "rule": [
+          {
+            "prompt_tokens": 66911,
+            "completion_tokens": 2463,
+            "total_tokens": 69374,
+            "model_calls": 9
+          },
+          {
+            "prompt_tokens": 58391,
+            "completion_tokens": 2579,
+            "total_tokens": 60970,
+            "model_calls": 8
+          },
+          {
+            "prompt_tokens": 48458,
+            "completion_tokens": 1465,
+            "total_tokens": 49923,
+            "model_calls": 8
+          }
+        ]
+      },
+      "metrics": {
+        "ma": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "rule": {
+          "FQN": {
+            "precision": 0.09090909090909091,
+            "recall": 0.25,
+            "f1": 0.13333333333333333
+          },
+          "CE": {
+            "precision": 0.09090909090909091,
+            "recall": 0.25,
+            "f1": 0.13333333333333333
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "rule_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "id": "constantinople-132",
+      "audit": [
+        {
+          "queries": 15,
+          "explore": 9,
+          "review": 6,
+          "status": {
+            "checked": 9,
+            "unresolved": 26
+          },
+          "tools": {
+            "expand_edges": 6,
+            "search_code": 1,
+            "read_symbol": 2
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 2,
+          "budget_exhausted": false
+        },
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 29
+          },
+          "tools": {
+            "expand_edges": 6,
+            "search_code": 2,
+            "read_symbol": 4
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 4,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 17,
+          "explore": 11,
+          "review": 6,
+          "status": {
+            "checked": 11,
+            "unresolved": 33
+          },
+          "tools": {
+            "expand_edges": 6,
+            "search_code": 3,
+            "read_symbol": 2
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 3,
+          "budget_exhausted": false
+        }
+      ],
+      "tokens": {
+        "ma": [
+          {
+            "prompt_tokens": 16929,
+            "completion_tokens": 1257,
+            "total_tokens": 18186,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 13131,
+            "completion_tokens": 1219,
+            "total_tokens": 14350,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 19126,
+            "completion_tokens": 1489,
+            "total_tokens": 20615,
+            "model_calls": 4
+          }
+        ],
+        "rule": [
+          {
+            "prompt_tokens": 70352,
+            "completion_tokens": 1697,
+            "total_tokens": 72049,
+            "model_calls": 9
+          },
+          {
+            "prompt_tokens": 74078,
+            "completion_tokens": 2064,
+            "total_tokens": 76142,
+            "model_calls": 9
+          },
+          {
+            "prompt_tokens": 145009,
+            "completion_tokens": 2456,
+            "total_tokens": 147465,
+            "model_calls": 12
+          }
+        ]
+      },
+      "metrics": {
+        "ma": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "rule": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "rule_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "id": "constantinople-156",
+      "audit": [
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 54
+          },
+          "tools": {
+            "expand_edges": 8,
+            "read_symbol": 4
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 8,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 69
+          },
+          "tools": {
+            "expand_edges": 9,
+            "read_symbol": 3
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 8,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 51
+          },
+          "tools": {
+            "expand_edges": 5,
+            "search_code": 1,
+            "read_symbol": 6
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 7,
+          "budget_exhausted": true
+        }
+      ],
+      "tokens": {
+        "ma": [
+          {
+            "prompt_tokens": 18817,
+            "completion_tokens": 1469,
+            "total_tokens": 20286,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 26152,
+            "completion_tokens": 1721,
+            "total_tokens": 27873,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 19305,
+            "completion_tokens": 1486,
+            "total_tokens": 20791,
+            "model_calls": 4
+          }
+        ],
+        "rule": [
+          {
+            "prompt_tokens": 86261,
+            "completion_tokens": 2049,
+            "total_tokens": 88310,
+            "model_calls": 8
+          },
+          {
+            "prompt_tokens": 105657,
+            "completion_tokens": 2435,
+            "total_tokens": 108092,
+            "model_calls": 9
+          },
+          {
+            "prompt_tokens": 111537,
+            "completion_tokens": 2441,
+            "total_tokens": 113978,
+            "model_calls": 9
+          }
+        ]
+      },
+      "metrics": {
+        "ma": {
+          "FQN": {
+            "precision": 0.06521739130434782,
+            "recall": 1.0,
+            "f1": 0.12244897959183673
+          },
+          "CE": {
+            "precision": 0.075,
+            "recall": 1.0,
+            "f1": 0.13953488372093023
+          }
+        },
+        "rule": {
+          "FQN": {
+            "precision": 0.06521739130434782,
+            "recall": 1.0,
+            "f1": 0.12244897959183673
+          },
+          "CE": {
+            "precision": 0.075,
+            "recall": 1.0,
+            "f1": 0.13953488372093023
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.5,
+            "recall": 0.3333333333333333,
+            "f1": 0.4
+          },
+          "CE": {
+            "precision": 0.5,
+            "recall": 0.3333333333333333,
+            "f1": 0.4
+          }
+        },
+        "rule_confirmed": {
+          "FQN": {
+            "precision": 0.3333333333333333,
+            "recall": 0.3333333333333333,
+            "f1": 0.3333333333333333
+          },
+          "CE": {
+            "precision": 0.3333333333333333,
+            "recall": 0.3333333333333333,
+            "f1": 0.3333333333333333
+          }
+        }
+      }
+    },
+    {
+      "id": "constantinople-262",
+      "audit": [
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 61
+          },
+          "tools": {
+            "expand_edges": 5,
+            "search_code": 2,
+            "read_symbol": 5
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 5,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 73
+          },
+          "tools": {
+            "expand_edges": 7,
+            "search_code": 2,
+            "read_symbol": 3
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 5,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 60
+          },
+          "tools": {
+            "expand_edges": 7,
+            "search_code": 1,
+            "read_symbol": 4
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 6,
+          "budget_exhausted": true
+        }
+      ],
+      "tokens": {
+        "ma": [
+          {
+            "prompt_tokens": 25586,
+            "completion_tokens": 2171,
+            "total_tokens": 27757,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 21857,
+            "completion_tokens": 1766,
+            "total_tokens": 23623,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 25287,
+            "completion_tokens": 1951,
+            "total_tokens": 27238,
+            "model_calls": 4
+          }
+        ],
+        "rule": [
+          {
+            "prompt_tokens": 113636,
+            "completion_tokens": 2986,
+            "total_tokens": 116622,
+            "model_calls": 9
+          },
+          {
+            "prompt_tokens": 164180,
+            "completion_tokens": 3229,
+            "total_tokens": 167409,
+            "model_calls": 12
+          },
+          {
+            "prompt_tokens": 77701,
+            "completion_tokens": 3164,
+            "total_tokens": 80865,
+            "model_calls": 8
+          }
+        ]
+      },
+      "metrics": {
+        "ma": {
+          "FQN": {
+            "precision": 0.3888888888888889,
+            "recall": 0.875,
+            "f1": 0.5384615384615384
+          },
+          "CE": {
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285714
+          }
+        },
+        "rule": {
+          "FQN": {
+            "precision": 0.35,
+            "recall": 0.875,
+            "f1": 0.5
+          },
+          "CE": {
+            "precision": 0.375,
+            "recall": 1.0,
+            "f1": 0.5454545454545454
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.6666666666666666,
+            "recall": 0.25,
+            "f1": 0.36363636363636365
+          },
+          "CE": {
+            "precision": 0.6666666666666666,
+            "recall": 0.3333333333333333,
+            "f1": 0.4444444444444444
+          }
+        },
+        "rule_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "id": "constantinople-206",
+      "audit": [
+        {
+          "queries": 17,
+          "explore": 11,
+          "review": 6,
+          "status": {
+            "checked": 11,
+            "unresolved": 18
+          },
+          "tools": {
+            "expand_edges": 7,
+            "search_code": 2,
+            "read_symbol": 2
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 4,
+          "budget_exhausted": false
+        },
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 15
+          },
+          "tools": {
+            "expand_edges": 6,
+            "search_code": 3,
+            "read_symbol": 3
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 4,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 41
+          },
+          "tools": {
+            "expand_edges": 6,
+            "search_code": 3,
+            "read_symbol": 3
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 4,
+          "budget_exhausted": true
+        }
+      ],
+      "tokens": {
+        "ma": [
+          {
+            "prompt_tokens": 11102,
+            "completion_tokens": 1263,
+            "total_tokens": 12365,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 12817,
+            "completion_tokens": 1403,
+            "total_tokens": 14220,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 19570,
+            "completion_tokens": 1802,
+            "total_tokens": 21372,
+            "model_calls": 4
+          }
+        ],
+        "rule": [
+          {
+            "prompt_tokens": 79854,
+            "completion_tokens": 2752,
+            "total_tokens": 82606,
+            "model_calls": 10
+          },
+          {
+            "prompt_tokens": 67802,
+            "completion_tokens": 2886,
+            "total_tokens": 70688,
+            "model_calls": 9
+          },
+          {
+            "prompt_tokens": 83666,
+            "completion_tokens": 2848,
+            "total_tokens": 86514,
+            "model_calls": 11
+          }
+        ]
+      },
+      "metrics": {
+        "ma": {
+          "FQN": {
+            "precision": 0.2,
+            "recall": 0.2,
+            "f1": 0.2
+          },
+          "CE": {
+            "precision": 0.2,
+            "recall": 0.2,
+            "f1": 0.2
+          }
+        },
+        "rule": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.3333333333333333,
+            "recall": 0.2,
+            "f1": 0.25
+          },
+          "CE": {
+            "precision": 0.3333333333333333,
+            "recall": 0.2,
+            "f1": 0.25
+          }
+        },
+        "rule_confirmed": {
+          "FQN": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "CE": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      }
+    },
+    {
+      "id": "constantinople-090",
+      "audit": [
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 87
+          },
+          "tools": {
+            "expand_edges": 7,
+            "search_code": 2,
+            "read_symbol": 3
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 7,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 18,
+          "explore": 12,
+          "review": 6,
+          "status": {
+            "checked": 12,
+            "budget_deferred": 103
+          },
+          "tools": {
+            "expand_edges": 7,
+            "search_code": 3,
+            "read_symbol": 2
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 6,
+          "budget_exhausted": true
+        },
+        {
+          "queries": 17,
+          "explore": 11,
+          "review": 6,
+          "status": {
+            "checked": 11,
+            "unresolved": 66
+          },
+          "tools": {
+            "expand_edges": 6,
+            "search_code": 2,
+            "read_symbol": 3
+          },
+          "required_unfinished": 0,
+          "continuation_queries": 6,
+          "budget_exhausted": false
+        }
+      ],
+      "tokens": {
+        "ma": [
+          {
+            "prompt_tokens": 32652,
+            "completion_tokens": 2007,
+            "total_tokens": 34659,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 32666,
+            "completion_tokens": 1915,
+            "total_tokens": 34581,
+            "model_calls": 4
+          },
+          {
+            "prompt_tokens": 36239,
+            "completion_tokens": 2306,
+            "total_tokens": 38545,
+            "model_calls": 4
+          }
+        ],
+        "rule": [
+          {
+            "prompt_tokens": 180846,
+            "completion_tokens": 2702,
+            "total_tokens": 183548,
+            "model_calls": 10
+          },
+          {
+            "prompt_tokens": 147972,
+            "completion_tokens": 2776,
+            "total_tokens": 150748,
+            "model_calls": 9
+          },
+          {
+            "prompt_tokens": 203663,
+            "completion_tokens": 3403,
+            "total_tokens": 207066,
+            "model_calls": 11
+          }
+        ]
+      },
+      "metrics": {
+        "ma": {
+          "FQN": {
+            "precision": 0.09210526315789473,
+            "recall": 0.4666666666666667,
+            "f1": 0.15384615384615385
+          },
+          "CE": {
+            "precision": 0.07575757575757576,
+            "recall": 0.5,
+            "f1": 0.13157894736842105
+          }
+        },
+        "rule": {
+          "FQN": {
+            "precision": 0.09210526315789473,
+            "recall": 0.4666666666666667,
+            "f1": 0.15384615384615385
+          },
+          "CE": {
+            "precision": 0.07575757575757576,
+            "recall": 0.5,
+            "f1": 0.13157894736842105
+          }
+        },
+        "confirmed": {
+          "FQN": {
+            "precision": 0.5,
+            "recall": 0.13333333333333333,
+            "f1": 0.2
+          },
+          "CE": {
+            "precision": 0.5,
+            "recall": 0.2,
+            "f1": 0.2857142857142857
+          }
+        },
+        "rule_confirmed": {
+          "FQN": {
+            "precision": 0.8,
+            "recall": 0.26666666666666666,
+            "f1": 0.4
+          },
+          "CE": {
+            "precision": 0.8,
+            "recall": 0.4,
+            "f1": 0.5333333333333333
+          }
+        }
+      }
+    }
+  ]
+}
